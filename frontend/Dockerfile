@@ -1,9 +1,7 @@
 FROM node:18-alpine
 
+# Munkakönyvtár beállítása
 WORKDIR /app
-
-# Globális Next.js telepítése
-RUN npm install -g next
 
 # Package fájlok másolása
 COPY package*.json ./
@@ -17,5 +15,5 @@ COPY . .
 # Port beállítása
 EXPOSE 3000
 
-# Alkalmazás indítása fejlesztői módban
-CMD ["next", "dev", "--hostname", "0.0.0.0"] 
+# Next.js dev server indítása npx-szel hogy biztosan megtalálja
+CMD ["npx", "next", "dev", "-H", "0.0.0.0"] 
