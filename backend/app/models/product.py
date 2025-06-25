@@ -10,6 +10,7 @@ class Product(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String(512), nullable=False, index=True)
     description = Column(Text, nullable=True)
+    full_text_content = Column(Text, nullable=True)
     sku = Column(String(100), nullable=True, unique=True, index=True)
     
     # Külső kulcsok
@@ -47,6 +48,7 @@ class Product(Base):
             "id": self.id,
             "name": self.name,
             "description": self.description,
+            "full_text_content": self.full_text_content,
             "sku": self.sku,
             "manufacturer_id": self.manufacturer_id,
             "category_id": self.category_id,
