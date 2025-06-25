@@ -1,0 +1,35 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.nox/
+.eggs/
+*.egg-info/
+dist/
+build/
+*.so
+
+# Database
+test.db
+
+# Installers
+node-installer.msi
+nvm-setup.zip
+nvm-installer/
+nvm-installer
+
+# Node
+frontend/node_modules/
+frontend/.next/ 
