@@ -20,27 +20,25 @@ async def run_rockwool_scrape():
     """Lefuttatja a Rockwool scraper-t és menti az adatokat."""
     logging.info("--- Rockwool Scraper Indítása ---")
     
-    scraper = RockwoolScraper()
-    # Mivel a scraperünk jelenleg szinkron, az async kontextus itt még csak előkészítés
-    # a jövőbeli, párhuzamos scraper futtatáshoz.
-    
     try:
-        # 1. Adatok begyűjtése
-        logging.info("Termékek begyűjtése a Rockwool.hu oldalról...")
-        scraped_products = scraper.scrape_all_products()
-        logging.info(f"Begyűjtött termékek száma: {len(scraped_products)}")
+        # 1. Scraper indítása async context manager-rel
+        async with RockwoolScraper() as scraper:
+            # 2. Adatok begyűjtése
+            logging.info("Termékek begyűjtése a Rockwool.com/hu oldalról...")
+            scraped_products = await scraper.scrape_for_demo()
+            logging.info(f"Begyűjtött termékek száma: {len(scraped_products)}")
 
-        # 2. Adatok mentése az adatbázisba
-        if scraped_products:
-            logging.info("Termékek mentése az adatbázisba...")
-            db = SessionLocal()
-            try:
-                for i, product in enumerate(scraped_products):
-                    logging.info(f"Mentés: {i+1}/{len(scraped_products)} - {product.name}")
-                    save_product_for_demo(db, product, "ROCKWOOL")
-                logging.info("Adatbázis mentés sikeresen befejeződött.")
-            finally:
-                db.close()
+            # 3. Adatok mentése az adatbázisba
+            if scraped_products:
+                logging.info("Termékek mentése az adatbázisba...")
+                db = SessionLocal()
+                try:
+                    for i, product_data in enumerate(scraped_products):
+                        logging.info(f"Mentés: {i+1}/{len(scraped_products)} - {product_data['name']}")
+                        save_product_for_demo(db, product_data, "ROCKWOOL")
+                    logging.info("Adatbázis mentés sikeresen befejeződött.")
+                finally:
+                    db.close()
         
     except Exception as e:
         logging.error(f"Hiba történt a Rockwool scraping során: {e}", exc_info=True)
