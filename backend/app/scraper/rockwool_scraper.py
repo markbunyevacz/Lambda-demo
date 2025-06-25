@@ -9,7 +9,7 @@ Ez az osztály kezeli a teljes Rockwool weboldal scraping folyamatát:
 5. Képek és dokumentumok mentése
 """
 
-import requests
+import asyncio
 import time
 import logging
 from typing import List, Dict, Optional, Set
@@ -19,6 +19,7 @@ from dataclasses import dataclass
 import json
 import os
 from datetime import datetime
+from playwright.async_api import async_playwright, Browser, Page
 
 from .product_parser import ProductParser
 from .category_mapper import CategoryMapper
@@ -29,12 +30,13 @@ logger = logging.getLogger(__name__)
 @dataclass
 class ScrapingConfig:
     """Scraping konfigurációs beállítások"""
-    base_url: str = "https://www.rockwool.hu"
+    base_url: str = "https://www.rockwool.com/hu/"
     max_requests_per_minute: int = 30
     request_delay: float = 2.0
     timeout: int = 30
     max_retries: int = 3
     user_agent: str = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    headless: bool = True
     
 @dataclass
 class ScrapedProduct:
@@ -52,7 +54,7 @@ class ScrapedProduct:
 
 class RockwoolScraper:
     """
-    Rockwool weboldal scraper osztály
+    Rockwool weboldal scraper osztály - Playwright alapú
     
     Funkcionalitás:
     - Weboldal struktúra elemzése
@@ -60,18 +62,13 @@ class RockwoolScraper:
     - Részletes termékadatok kinyerése
     - Műszaki adatlapok feldolgozása
     - Rate limiting és error handling
+    - JavaScript-rendered content támogatás
     """
     
     def __init__(self, config: ScrapingConfig = None):
         self.config = config or ScrapingConfig()
-        self.session = requests.Session()
-        self.session.headers.update({
-            'User-Agent': self.config.user_agent,
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-            'Accept-Language': 'hu-HU,hu;q=0.9,en;q=0.8',
-            'Accept-Encoding': 'gzip, deflate',
-            'Connection': 'keep-alive',
-        })
+        self.browser: Optional[Browser] = None
+        self.context = None
         
         self.product_parser = ProductParser()
         self.category_mapper = CategoryMapper()
@@ -83,6 +80,36 @@ class RockwoolScraper:
         self.last_request_time: float = 0
         
         logger.info(f"RockwoolScraper inicializálva: {self.config.base_url}")
+    
+    async def __aenter__(self):
+        """Async context manager entry"""
+        await self._init_browser()
+        return self
+    
+    async def __aexit__(self, exc_type, exc_val, exc_tb):
+        """Async context manager exit"""
+        await self._close_browser()
+    
+    async def _init_browser(self):
+        """Browser inicializálás"""
+        self.playwright = await async_playwright().start()
+        self.browser = await self.playwright.chromium.launch(
+            headless=self.config.headless,
+            args=['--no-sandbox', '--disable-dev-shm-usage']
+        )
+        self.context = await self.browser.new_context(
+            user_agent=self.config.user_agent,
+            locale='hu-HU'
+        )
+    
+    async def _close_browser(self):
+        """Browser bezárás"""
+        if self.context:
+            await self.context.close()
+        if self.browser:
+            await self.browser.close()
+        if hasattr(self, 'playwright'):
+            await self.playwright.stop()
     
     def _rate_limit(self):
         """Rate limiting - késleltetés kérések között"""
@@ -96,9 +123,9 @@ class RockwoolScraper:
         
         self.last_request_time = time.time()
     
-    def _fetch_page(self, url: str, retries: int = None) -> Optional[BeautifulSoup]:
+    async def _fetch_page(self, url: str, retries: int = None) -> Optional[BeautifulSoup]:
         """
-        Biztonságos oldal letöltés retry logikával
+        Biztonságos oldal letöltés retry logikával - Playwright alapú
         
         Args:
             url: Lekérni kívánt URL
@@ -116,27 +143,26 @@ class RockwoolScraper:
             try:
                 logger.debug(f"Oldal letöltése: {url} (kísérlet {attempt + 1}/{retries + 1})")
                 
-                response = self.session.get(
-                    url, 
-                    timeout=self.config.timeout,
-                    allow_redirects=True
-                )
-                response.raise_for_status()
+                page = await self.context.new_page()
+                await page.goto(url, timeout=self.config.timeout * 1000)
                 
-                # Encoding ellenőrzése és beállítása
-                if response.encoding != 'utf-8':
-                    response.encoding = 'utf-8'
+                # Várjuk meg, hogy a JavaScript betöltődjön
+                await page.wait_for_load_state('networkidle')
                 
-                soup = BeautifulSoup(response.content, 'html.parser')
+                # HTML tartalom lekérése
+                content = await page.content()
+                await page.close()
+                
+                soup = BeautifulSoup(content, 'html.parser')
                 logger.debug(f"Sikeres letöltés: {url}")
                 return soup
                 
-            except requests.exceptions.RequestException as e:
+            except Exception as e:
                 logger.warning(f"Hiba az oldal letöltésénél {url}: {e}")
                 if attempt < retries:
                     wait_time = (attempt + 1) * 2
                     logger.info(f"Újrapróbálkozás {wait_time} másodperc múlva...")
-                    time.sleep(wait_time)
+                    await asyncio.sleep(wait_time)
                 else:
                     logger.error(f"Végleg sikertelen: {url}")
                     self.failed_urls.add(url)
@@ -144,7 +170,7 @@ class RockwoolScraper:
         
         return None
     
-    def discover_website_structure(self) -> Dict[str, List[str]]:
+    async def discover_website_structure(self) -> Dict[str, List[str]]:
         """
         Weboldal struktúrájának feltérképezése
         
@@ -160,7 +186,7 @@ class RockwoolScraper:
         }
         
         # Főoldal elemzése
-        main_page = self._fetch_page(self.config.base_url)
+        main_page = await self._fetch_page(self.config.base_url)
         if not main_page:
             logger.error("Nem sikerült betölteni a főoldalt")
             return structure
@@ -179,6 +205,56 @@ class RockwoolScraper:
         
         logger.info(f"Weboldal struktúra feltérképezve: {len(structure['categories'])} kategória, {len(structure['product_pages'])} termék")
         return structure
+    
+    async def scrape_for_demo(self) -> List[Dict[str, str]]:
+        """
+        Egyszerűsített scraping DEMO célokra
+        
+        Returns:
+            Lista termékekkel (name, url, full_text_content)
+        """
+        logger.info("DEMO scraping indítása...")
+        
+        products = []
+        
+        try:
+            # Főoldal betöltése
+            main_page = await self._fetch_page(self.config.base_url)
+            if not main_page:
+                logger.error("Nem sikerült betölteni a főoldalt")
+                return products
+            
+            # Termék linkek keresése
+            product_links = self._find_product_links(main_page)
+            logger.info(f"Talált termék linkek: {len(product_links)}")
+            
+            # Első 10 termék feldolgozása (DEMO limitálás)
+            for i, link in enumerate(product_links[:10]):
+                logger.info(f"Termék scraping {i+1}/10: {link}")
+                
+                page_soup = await self._fetch_page(link)
+                if page_soup:
+                    # Teljes szöveges tartalom kinyerése
+                    text_content = page_soup.get_text(separator=' ', strip=True)
+                    
+                    # Termék név kinyerése (title vagy h1)
+                    name_elem = page_soup.find('h1') or page_soup.find('title')
+                    name = name_elem.get_text(strip=True) if name_elem else f"Rockwool termék {i+1}"
+                    
+                    products.append({
+                        'name': name,
+                        'url': link,
+                        'full_text_content': text_content[:10000]  # Első 10k karakter
+                    })
+                    
+                await asyncio.sleep(1)  # Rövid várakozás
+            
+            logger.info(f"DEMO scraping befejezve: {len(products)} termék")
+            return products
+            
+        except Exception as e:
+            logger.error(f"Hiba a DEMO scraping során: {e}")
+            return products
     
     def _extract_navigation_links(self, soup: BeautifulSoup) -> List[str]:
         """Navigációs linkek kinyerése"""
@@ -222,27 +298,42 @@ class RockwoolScraper:
         """Termék specifikus linkek keresése"""
         product_links = []
         
-        # Termék oldalak jellemzői alapján azonosítás
+        # Minden linket megvizsgálunk
+        links = soup.find_all('a', href=True)
+        logger.info(f"Összes link száma a főoldalon: {len(links)}")
+        
+        # Debug: első 10 link kiírása
+        for i, link in enumerate(links[:10]):
+            href = link.get('href', '')
+            text = link.get_text(strip=True)
+            logger.info(f"Link {i+1}: {href} - Text: {text}")
+        
+        # Termék oldalak jellemzői alapján azonosítás - bővített lista
         product_indicators = [
             'multirock', 'frontrock', 'deltarock', 'airrock', 
-            'steprock', 'roofrock', 'hardrock', 'termekek'
+            'steprock', 'roofrock', 'hardrock', 'termekek',
+            'products', 'product', 'solutions', 'megoldasok'
         ]
         
-        links = soup.find_all('a', href=True)
         for link in links:
             href = link.get('href', '').lower()
+            text = link.get_text(strip=True).lower()
             
-            if any(indicator in href for indicator in product_indicators):
+            # URL vagy szöveg alapján termék link azonosítás
+            if (any(indicator in href for indicator in product_indicators) or
+                any(indicator in text for indicator in product_indicators)):
                 full_url = urljoin(self.config.base_url, link.get('href'))
                 if self._is_rockwool_url(full_url):
                     product_links.append(full_url)
+                    logger.info(f"Termék link találva: {full_url}")
         
+        logger.info(f"Összes termék link: {len(product_links)}")
         return list(set(product_links))
     
     def _is_rockwool_url(self, url: str) -> bool:
         """Ellenőrzi, hogy az URL a Rockwool domain-hez tartozik-e"""
         parsed = urlparse(url)
-        return 'rockwool.hu' in parsed.netloc.lower()
+        return 'rockwool.com' in parsed.netloc.lower()
     
     def scrape_all_products(self) -> List[ScrapedProduct]:
         """

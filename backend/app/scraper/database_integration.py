@@ -474,10 +474,15 @@ class DatabaseIntegration:
         logger.debug("Database integration cache törölve")
 
 
-def save_product_for_demo(db: Session, scraped_product: ScrapedProduct, manufacturer_name: str):
+def save_product_for_demo(db: Session, product_data: Dict[str, str], manufacturer_name: str):
     """
     Egyszerűsített adatbázis mentési logika a DEMO számára.
     Frissíti a meglévő terméket az URL alapján, vagy újat hoz létre.
+    
+    Args:
+        db: Database session
+        product_data: Dictionary with keys: name, url, full_text_content
+        manufacturer_name: Manufacturer name
     """
     
     # 1. Gyártó biztosítása (egyszerűsített)
@@ -492,34 +497,34 @@ def save_product_for_demo(db: Session, scraped_product: ScrapedProduct, manufact
     # Alapértelmezett kategória (a DEMO-ban nem fókusz)
     default_category = db.query(Category).filter(Category.name == "Általános").first()
     if not default_category:
-        default_category = Category(name="Általános", is_active=True, level=0)
+        default_category = Category(name="Általános", is_active=1, level=0)
         db.add(default_category)
         db.commit()
         db.refresh(default_category)
 
     # 2. Létező termék keresése URL alapján
-    existing_product = db.query(Product).filter(Product.source_url == scraped_product.url).first()
+    existing_product = db.query(Product).filter(Product.source_url == product_data['url']).first()
     
     if existing_product:
         # 3. Frissítés
-        logger.info(f"DEMO: Termék frissítése: {scraped_product.name}")
-        existing_product.name = scraped_product.name
-        existing_product.full_text_content = scraped_product.full_text_content
+        logger.info(f"DEMO: Termék frissítése: {product_data['name']}")
+        existing_product.name = product_data['name']
+        existing_product.full_text_content = product_data['full_text_content']
         existing_product.scraped_at = datetime.now()
         existing_product.manufacturer_id = manufacturer.id
         existing_product.category_id = default_category.id
     else:
         # 4. Új termék létrehozása
-        logger.info(f"DEMO: Új termék mentése: {scraped_product.name}")
+        logger.info(f"DEMO: Új termék mentése: {product_data['name']}")
         new_product = Product(
-            name=scraped_product.name,
-            source_url=scraped_product.url,
-            full_text_content=scraped_product.full_text_content,
+            name=product_data['name'],
+            source_url=product_data['url'],
+            full_text_content=product_data['full_text_content'],
             scraped_at=datetime.now(),
             manufacturer_id=manufacturer.id,
             category_id=default_category.id,
-            is_active=True,
-            in_stock=True,
+            is_active=1,
+            in_stock=1,
             currency="HUF"
         )
         db.add(new_product)
@@ -527,5 +532,5 @@ def save_product_for_demo(db: Session, scraped_product: ScrapedProduct, manufact
     try:
         db.commit()
     except Exception as e:
-        logger.error(f"DEMO: Hiba a mentés során a '{scraped_product.name}' terméknél: {e}")
+        logger.error(f"DEMO: Hiba a mentés során a '{product_data['name']}' terméknél: {e}")
         db.rollback() 
