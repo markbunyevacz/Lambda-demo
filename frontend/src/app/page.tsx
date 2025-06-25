@@ -1,5 +1,3 @@
-import { Search, Bot } from 'lucide-react';
-
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
@@ -24,7 +22,7 @@ export default function Home() {
               placeholder="Miben segíthetek? Keressen termékre, vagy tegyen fel kérdést..."
               className="w-full p-4 pl-12 text-lg border rounded-lg shadow-sm focus:ring-2 focus:ring-orange-500 focus:outline-none"
             />
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={24} />
+            <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">🔍</span>
           </div>
 
           {/* Product List Placeholder */}
@@ -33,7 +31,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Placeholder Product Cards */}
               {[1, 2, 3].map((i) => (
-                <div key={i} className="border rounded-lg p-4 animate-pulse">
+                <div key={i} className="border rounded-lg p-4">
                   <div className="w-full h-32 bg-gray-200 rounded-md mb-3"></div>
                   <div className="h-6 bg-gray-200 rounded w-3/4 mb-2"></div>
                   <div className="h-4 bg-gray-200 rounded w-1/2"></div>
@@ -48,7 +46,7 @@ export default function Home() {
       {/* Floating AI Chat Button */}
       <div className="fixed bottom-8 right-8">
         <button className="bg-orange-500 text-white p-4 rounded-full shadow-lg hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 transition-transform hover:scale-110">
-          <Bot size={32} />
+          🤖
         </button>
       </div>
 

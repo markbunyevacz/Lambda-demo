@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
+  // Az appDir már alapértelmezett a Next.js 13+ verziókban
 }
 
 module.exports = nextConfig 
