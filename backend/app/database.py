@@ -15,4 +15,19 @@ engine = create_engine(
 )
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-Base = declarative_base() 
+Base = declarative_base()
+
+
+def get_db():
+    """
+    Adatbázis session dependency FastAPI-hoz és Celery feladatokhoz.
+
+    Ez a "dependency" egy adatbázis session-t biztosít a request-ek vagy
+    feladatok számára, és biztosítja, hogy a session a végén megfelelően
+    lezárásra kerüljön, még hiba esetén is.
+    """
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close() 

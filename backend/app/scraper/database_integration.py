@@ -471,4 +471,61 @@ class DatabaseIntegration:
         """Cache-ek törlése"""
         self._manufacturer_cache.clear()
         self._category_cache.clear()
-        logger.debug("Database integration cache törölve") 
+        logger.debug("Database integration cache törölve")
+
+
+def save_product_for_demo(db: Session, scraped_product: ScrapedProduct, manufacturer_name: str):
+    """
+    Egyszerűsített adatbázis mentési logika a DEMO számára.
+    Frissíti a meglévő terméket az URL alapján, vagy újat hoz létre.
+    """
+    
+    # 1. Gyártó biztosítása (egyszerűsített)
+    manufacturer = db.query(Manufacturer).filter(Manufacturer.name == manufacturer_name).first()
+    if not manufacturer:
+        manufacturer = Manufacturer(name=manufacturer_name, country="HU") # Egyszerűsített adat
+        db.add(manufacturer)
+        db.commit()
+        db.refresh(manufacturer)
+        logger.info(f"DEMO: Új gyártó létrehozva: {manufacturer_name}")
+
+    # Alapértelmezett kategória (a DEMO-ban nem fókusz)
+    default_category = db.query(Category).filter(Category.name == "Általános").first()
+    if not default_category:
+        default_category = Category(name="Általános", is_active=True, level=0)
+        db.add(default_category)
+        db.commit()
+        db.refresh(default_category)
+
+    # 2. Létező termék keresése URL alapján
+    existing_product = db.query(Product).filter(Product.source_url == scraped_product.url).first()
+    
+    if existing_product:
+        # 3. Frissítés
+        logger.info(f"DEMO: Termék frissítése: {scraped_product.name}")
+        existing_product.name = scraped_product.name
+        existing_product.full_text_content = scraped_product.full_text_content
+        existing_product.scraped_at = datetime.now()
+        existing_product.manufacturer_id = manufacturer.id
+        existing_product.category_id = default_category.id
+    else:
+        # 4. Új termék létrehozása
+        logger.info(f"DEMO: Új termék mentése: {scraped_product.name}")
+        new_product = Product(
+            name=scraped_product.name,
+            source_url=scraped_product.url,
+            full_text_content=scraped_product.full_text_content,
+            scraped_at=datetime.now(),
+            manufacturer_id=manufacturer.id,
+            category_id=default_category.id,
+            is_active=True,
+            in_stock=True,
+            currency="HUF"
+        )
+        db.add(new_product)
+
+    try:
+        db.commit()
+    except Exception as e:
+        logger.error(f"DEMO: Hiba a mentés során a '{scraped_product.name}' terméknél: {e}")
+        db.rollback() 
