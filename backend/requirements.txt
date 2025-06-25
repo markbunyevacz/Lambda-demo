@@ -4,4 +4,17 @@ sqlalchemy
 psycopg2-binary
 redis
 python-dotenv
-pydantic 
+pydantic
+
+# Web scraping dependencies
+requests
+beautifulsoup4
+lxml
+html5lib
+
+# Data processing dependencies  
+pandas
+numpy
+
+# Job scheduling (optional for later)
+celery 

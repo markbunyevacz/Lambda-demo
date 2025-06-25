@@ -14,12 +14,12 @@
 
 ## Teljes Projekt Fázisok és Feladatok
 
-### Fázis 1: Alapozás és Infrastruktúra (Hét 1-2)
+### Fázis 1: Alapozás és Infrastruktúra (Hét 1-2) ✅ KÉSZ
 - [x] Projektstruktúra felállítása (Backend, Docker)
 - [x] Docker-compose konfiguráció (FastAPI, PostgreSQL, Redis)
 - [x] Adatbázis sémák és SQLAlchemy modellek létrehozása (`manufacturers`, `categories`, `products`)
 - [x] Alapvető FastAPI alkalmazás létrehozása, CORS és DB kapcsolattal
-- [ ] Alapvető Next.js/React frontend váz létrehozása Tailwind CSS-szel
+- [x] Alapvető Next.js/React frontend váz létrehozása Tailwind CSS-szel (vizuális váz kész)
 
 ### Fázis 2: Adat-pipeline és Web Scraping (Hét 2-4)
 - [ ] Rockwool scraper implementációja a Rendszerterv alapján
