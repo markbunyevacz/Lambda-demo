@@ -25,6 +25,7 @@ from typing import List, Optional
 # Helyi importok
 from .database import get_db, engine
 from .models import category, manufacturer, product
+from .scraper.api_endpoints import scraper_router
 
 # Adatbázis táblák létrehozása az alkalmazás indításakor
 category.Base.metadata.create_all(bind=engine)
@@ -49,6 +50,9 @@ app.add_middleware(
     allow_methods=["*"],  # Minden HTTP metódus engedélyezése
     allow_headers=["*"],  # Minden header engedélyezése
 )
+
+# Scraper API routes hozzáadása
+app.include_router(scraper_router)
 
 @app.get("/")
 async def root():
