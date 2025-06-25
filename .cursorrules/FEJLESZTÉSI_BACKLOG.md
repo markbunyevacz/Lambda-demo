@@ -21,13 +21,41 @@
 - [x] Alapvető FastAPI alkalmazás létrehozása, CORS és DB kapcsolattal
 - [x] Alapvető Next.js/React frontend váz létrehozása Tailwind CSS-szel (vizuális váz kész)
 
-### Fázis 2: Adat-pipeline és Web Scraping (Hét 2-4)
-- [ ] Rockwool scraper implementációja a Rendszerterv alapján
-- [ ] Leier scraper implementációja
-- [ ] Baumit scraper implementációja
-- [ ] Scraped adatok validálása és normalizálása
-- [ ] Adatbázisba mentési logika implementálása
-- [ ] Celery és Celery Beat beállítása az automatikus, időzített frissítéshez
+### Fázis 2: Adat-pipeline és Web Scraping (Hét 2-4) ✅ KÉSZ
+- [x] **Rockwool scraper implementációja a Rendszerterv alapján** ✅ KÉSZ
+  - [x] Weboldal struktúra elemzése és térképezése
+  - [x] Termék adatok automatikus kinyerése (név, leírás, műszaki paraméterek)
+  - [x] Képek és dokumentumok letöltése
+  - [x] Rate limiting és hibakezelés implementálása
+  - [x] Moduláris scraper architektúra (RockwoolScraper, ProductParser, CategoryMapper, DataValidator)
+  - [x] REST API végpontok scraper kezelésére
+  - [x] Komprehenzív dokumentáció és tesztelési eszközök
+- [ ] Leier scraper implementációja (MCP után)
+- [ ] Baumit scraper implementációja (MCP után)
+- [x] **Scraped adatok validálása és normalizálása + Adatbázisba mentési logika** ✅ KÉSZ *(A pont)*
+  - [x] **DatabaseIntegration szolgáltatás:** ScrapedProduct → Product modell mappelés teljes automatizálással
+  - [x] **Gyártók és kategóriák:** automatikus létrehozása (`ensure_manufacturer`, `ensure_category`) cache-eléssel
+  - [x] **SKU generálás:** ROCK-{kategória}-{URL_hash} formátum duplikátum kezeléssel
+  - [x] **Bulk mentési műveletek:** hibatűrő logikával és source_url alapú felülírással
+  - [x] **Műszaki specifikációk normalizálása:** raw + processed adatok strukturálása
+  - [x] **API integráció:** `POST /api/scraper/scrape/single-product` és `/save-to-database` végpontok
+  - [x] **DataValidator:** teljes adatminőség biztosítás és konzisztencia vizsgálat
+- [x] **Celery és Celery Beat automatikus, időzített frissítés** ✅ KÉSZ *(B pont)*
+  - [x] **Celery alkalmazás konfiguráció:** Redis broker 4 specializált queue-val (scraping, database, notifications, default)
+  - [x] **Ütemezett feladatok:** beat scheduler napi/heti automatizmussal
+  - [x] **scraping_tasks.py:** `scheduled_rockwool_scraping()` (napi 20 termék/kategória), `weekly_full_scraping()`, `scrape_specific_urls()`
+  - [x] **database_tasks.py:** `database_maintenance()` (cleanup, deduplikáció, VACUUM), `backup_database_statistics()`, `check_database_health()`
+  - [x] **notification_tasks.py:** `send_daily_scraping_report()`, `send_scraping_error_alert()`, `monitor_scraper_health()`
+  - [x] **Docker integráció:** `celery_worker`, `celery_beat`, `celery_flower` (monitoring UI localhost:5555)
+  - [x] **Worker beállítások:** optimalizált prefetch, retry logika, részletes logging
+- [x] **Integrációs tesztelés éles Rockwool adatokon** ✅ KÉSZ *(C pont)*
+  - [x] **test_integration.py:** komprehenzív teszt framework 5 fő területtel
+  - [x] **Adatbázis kapcsolat:** connection, table counts, health check ellenőrzése
+  - [x] **Scraper alapvető működés:** weboldal struktúra feltérképezés, kategória bejárás, termék scraping
+  - [x] **Adatbázis integráció:** egyedi + bulk mentések validálása Product/Manufacturer/Category objektumokkal
+  - [x] **API végpontok:** health check, website-structure, scraping végpontok tesztelése
+  - [x] **Celery feladatok:** worker kapcsolat, debug task, queue monitoring ellenőrzése
+  - [x] **Hibakezelés és retry:** rate limiting, timeout, exponential backoff teljes lefedettséggel
 
 ### Fázis 3: AI Modul - RAG Pipeline (Hét 4-6)
 - [ ] Chroma vektor adatbázis inicializálása és perzisztálása

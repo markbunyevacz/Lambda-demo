@@ -13,9 +13,12 @@ import json
 
 from fastapi import APIRouter, HTTPException, BackgroundTasks, Depends
 from pydantic import BaseModel
+from sqlalchemy.orm import Session
 
 from .rockwool_scraper import RockwoolScraper, ScrapingConfig
 from .data_validator import DataValidator
+from .database_integration import DatabaseIntegration
+from ..database import get_db
 
 logger = logging.getLogger(__name__)
 
@@ -127,50 +130,78 @@ async def discover_website_structure():
 
 
 @scraper_router.post("/scrape/single-product")
-async def scrape_single_product(product_url: str):
+async def scrape_single_product(
+    product_url: str,
+    save_to_database: bool = True,
+    db: Session = Depends(get_db)
+):
     """
-    Egyetlen termék scraping-je
+    Egyetlen termék scraping-je és opcionális adatbázis mentés
     
     Args:
         product_url: Scraping-elni kívánt termék URL-je
+        save_to_database: Mentés adatbázisba (default: True)
+        db: Adatbázis session
         
     Returns:
-        Dict: Scraped termék adatok
+        Dict: Scraped termék adatok és mentési eredmény
     """
     try:
         scraper = get_scraper()
         validator = DataValidator()
         
         logger.info(f"Egyetlen termék scraping: {product_url}")
-        product = scraper._scrape_single_product(product_url)
+        scraped_product = scraper._scrape_single_product(product_url)
         
-        if not product:
+        if not scraped_product:
             raise HTTPException(
                 status_code=404,
                 detail="Termék scraping sikertelen vagy nem található"
             )
         
         # Validálás
-        is_valid = validator.validate_product(product)
+        is_valid = validator.validate_product(scraped_product)
+        
+        database_result = None
+        if save_to_database and is_valid:
+            try:
+                db_integration = DatabaseIntegration(db)
+                saved_product, is_new = db_integration.save_scraped_product(scraped_product)
+                
+                database_result = {
+                    "saved": True,
+                    "product_id": saved_product.id,
+                    "is_new_product": is_new,
+                    "sku": saved_product.sku
+                }
+                logger.info(f"Termék mentve adatbázisba: ID={saved_product.id}, SKU={saved_product.sku}")
+                
+            except Exception as db_error:
+                logger.error(f"Adatbázis mentési hiba: {db_error}")
+                database_result = {
+                    "saved": False,
+                    "error": str(db_error)
+                }
         
         return {
             "success": True,
-            "product": {
-                "name": product.name,
-                "url": product.url,
-                "category": product.category,
-                "description": product.description,
-                "technical_specs": product.technical_specs,
-                "images": product.images,
-                "documents": product.documents,
-                "price": product.price,
-                "availability": product.availability,
-                "scraped_at": product.scraped_at.isoformat() if product.scraped_at else None
+            "scraped_product": {
+                "name": scraped_product.name,
+                "url": scraped_product.url,
+                "category": scraped_product.category,
+                "description": scraped_product.description,
+                "technical_specs": scraped_product.technical_specs,
+                "images": scraped_product.images,
+                "documents": scraped_product.documents,
+                "price": scraped_product.price,
+                "availability": scraped_product.availability,
+                "scraped_at": scraped_product.scraped_at.isoformat() if scraped_product.scraped_at else None
             },
             "validation": {
                 "is_valid": is_valid,
                 "validator_used": True
-            }
+            },
+            "database": database_result
         }
         
     except HTTPException:
@@ -257,6 +288,61 @@ async def stop_scraping():
         "message": "Scraping leállítva",
         "stopped_at": datetime.now().isoformat()
     }
+
+
+@scraper_router.post("/scrape/save-to-database")
+async def save_scraped_products_to_database(
+    scraped_data: List[Dict],
+    db: Session = Depends(get_db)
+):
+    """
+    Scraped termékek tömeges mentése adatbázisba
+    
+    Args:
+        scraped_data: Lista scraped termék adatokkal
+        db: Adatbázis session
+        
+    Returns:
+        Dict: Mentési statisztikák
+    """
+    try:
+        from .rockwool_scraper import ScrapedProduct
+        from datetime import datetime
+        
+        # Dict-ek konvertálása ScrapedProduct objektumokra
+        scraped_products = []
+        for data in scraped_data:
+            scraped_product = ScrapedProduct(
+                name=data.get('name', ''),
+                url=data.get('url', ''),
+                category=data.get('category', ''),
+                description=data.get('description', ''),
+                technical_specs=data.get('technical_specs', {}),
+                images=data.get('images', []),
+                documents=data.get('documents', []),
+                price=data.get('price'),
+                availability=data.get('availability', True),
+                scraped_at=datetime.fromisoformat(data['scraped_at']) 
+                           if data.get('scraped_at') else datetime.now()
+            )
+            scraped_products.append(scraped_product)
+        
+        # Adatbázis integráció
+        db_integration = DatabaseIntegration(db)
+        stats = db_integration.save_scraped_products_bulk(scraped_products)
+        
+        return {
+            "success": True,
+            "statistics": stats,
+            "message": f"Feldolgozva {len(scraped_products)} termék"
+        }
+        
+    except Exception as e:
+        logger.error(f"Bulk adatbázis mentési hiba: {e}")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Bulk mentés sikertelen: {str(e)}"
+        )
 
 
 @scraper_router.get("/results/validation-report")

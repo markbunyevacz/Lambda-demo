@@ -15,10 +15,12 @@ from .rockwool_scraper import RockwoolScraper
 from .product_parser import ProductParser
 from .category_mapper import CategoryMapper
 from .data_validator import DataValidator
+from .database_integration import DatabaseIntegration
 
 __all__ = [
     'RockwoolScraper',
     'ProductParser', 
     'CategoryMapper',
-    'DataValidator'
+    'DataValidator',
+    'DatabaseIntegration'
 ] 
