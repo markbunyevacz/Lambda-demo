@@ -9,9 +9,10 @@ pydantic
 # Web scraping dependencies
 requests
 beautifulsoup4
+httpx
 lxml
 html5lib
-playwright
+PyMuPDF
 
 # Data processing dependencies  
 pandas
