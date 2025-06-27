@@ -77,8 +77,24 @@ class RockwoolScraper:
             props_str = props_match.group(1).replace('&quot;', '"')
             
             # Clean up known malformations in the JSON string
-            fixed_props_str = re.sub(r'"jsonDataObject":"{.*?}"', '"jsonDataObject":"placeholder"', props_str)
-            fixed_props_str = re.sub(r',"titleAsLink":".*?"', '', fixed_props_str)
+            # This is a more robust way to find the end of the JSON object
+            # by balancing curly braces, instead of fragile regex replacements.
+            open_braces = 0
+            end_index = -1
+            for i, char in enumerate(props_str):
+                if char == '{':
+                    open_braces += 1
+                elif char == '}':
+                    open_braces -= 1
+                    if open_braces == 0:
+                        end_index = i + 1
+                        break
+            
+            if end_index == -1:
+                logger.error("Could not determine the end of the JSON object.")
+                return []
+
+            fixed_props_str = props_str[:end_index]
 
             props_data = json.loads(fixed_props_str)
             download_list = props_data.get('downloadList', [])
