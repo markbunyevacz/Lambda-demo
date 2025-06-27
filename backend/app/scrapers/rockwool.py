@@ -1,40 +1,42 @@
 """
-PRODUCTION ROCKWOOL PDF Scraper - Hungary Termékadatlapok
-Real scraping implementation for Lambda.hu PROS scope
+ROCKWOOL PDF Scraper - Hungary Termékadatlapok
+Scraping implementation for Lambda.hu PROS scope
 """
-import asyncio
 import logging
 import os
-import hashlib
-from typing import List, Dict, Optional, Tuple
+from typing import List, Dict, Optional
 from urllib.parse import urljoin, urlparse
 from datetime import datetime
 import httpx
-import fitz  # PyMuPDF
 import re
 from pathlib import Path
-import json
 
 logger = logging.getLogger(__name__)
 
 # ROCKWOOL Hungary Configuration
 BASE_URL = "https://www.rockwool.com"
-TERMEK_URL = "https://www.rockwool.com/hu/muszaki-informaciok/termekadatlapok/"
+TERMEK_URL = (
+    "https://www.rockwool.com/hu/muszaki-informaciok/termekadatlapok/"
+)
 API_URL = "https://www.rockwool.com/sitecore/api/rockwool/documentationlist/search"
 
 # PDF Storage Configuration
-PDF_STORAGE_DIR = Path("data/pdfs/rockwool")
+PDF_STORAGE_DIR = Path("data/scraped_pdfs/rockwool")
 PDF_STORAGE_DIR.mkdir(parents=True, exist_ok=True)
 
-class ROCKWOOLProductionScraper:
-    """Production-ready ROCKWOOL termékadatlapok scraper"""
-    
-    def __init__(self):
-        self.session = None
-        self.scraped_products = []
-        
+
+class RockwoolScraper:
+    """ROCKWOOL termékadatlapok scraper"""
+
+    def __init__(self, proxy: Optional[str] = None):
+        self.session: Optional[httpx.AsyncClient] = None
+        self.scraped_products: list = []
+        self.proxy = proxy
+
     async def __aenter__(self):
+        proxies = {"http://": self.proxy, "https://": self.proxy} if self.proxy else None
         self.session = httpx.AsyncClient(
+            proxies=proxies,
             timeout=30.0,
             headers={
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
@@ -47,17 +49,17 @@ class ROCKWOOLProductionScraper:
             }
         )
         return self
-        
+
     async def __aexit__(self, exc_type, exc_val, exc_tb):
         if self.session:
             await self.session.aclose()
 
-    async def scrape_termekadatlapok_api(self, limit: Optional[int] = None) -> List[Dict]:
+    async def scrape_api(self, limit: Optional[int] = None) -> List[Dict]:
         """
         Scrape ROCKWOOL Hungary termékadatlapok using their API
         """
-        logger.info("🚀 Starting PRODUCTION ROCKWOOL termékadatlapok scraping...")
-        
+        logger.info("🚀 ROCKWOOL SCRAPING STARTED...")
+
         # API payload for Hungarian termékadatlapok
         payload = {
             "page": 1,
@@ -71,47 +73,57 @@ class ROCKWOOLProductionScraper:
                 }
             ]
         }
-        
+
         try:
             logger.info(f"📡 Calling ROCKWOOL API: {API_URL}")
             response = await self.session.post(API_URL, json=payload)
             response.raise_for_status()
-            
+
             data = response.json()
             products = data.get('results', [])
-            
-            logger.info(f"✅ Found {len(products)} termékadatlapok from API")
-            
+
+            logger.info(
+                f"✅ Found {len(products)} termékadatlapok from API"
+            )
+
             # Process each product
             processed_products = []
             for idx, product in enumerate(products[:limit] if limit else products):
                 try:
-                    processed_product = await self._process_product(product, idx + 1)
+                    processed_product = await self._process_product(
+                        product, idx + 1
+                    )
                     if processed_product:
                         processed_products.append(processed_product)
-                        
+
                 except Exception as e:
-                    logger.error(f"❌ Error processing product {idx + 1}: {e}")
+                    logger.error(
+                        f"❌ Error processing product {idx + 1}: {e}"
+                    )
                     continue
-                    
-            logger.info(f"🎯 Successfully processed {len(processed_products)} products")
+
+            logger.info(
+                f"🎯 Successfully processed {len(processed_products)} products"
+            )
             return processed_products
-            
+
         except Exception as e:
-            logger.error(f"❌ API scraping failed: {e}")
+            logger.error(f"❌ Scraping failed: {e}")
             return []
 
-    async def _process_product(self, product_data: Dict, index: int) -> Optional[Dict]:
+    async def _process_product(
+        self, product_data: Dict, index: int
+    ) -> Optional[Dict]:
         """Process individual product and download PDFs"""
         try:
             product_name = product_data.get('title', f'Product_{index}')
             product_url = product_data.get('url', '')
-            
+
             if product_url and not product_url.startswith('http'):
                 product_url = urljoin(BASE_URL, product_url)
-                
+
             logger.info(f"📄 Processing #{index}: {product_name}")
-            
+
             # Extract product details
             product_info = {
                 'name': product_name,
@@ -122,175 +134,170 @@ class ROCKWOOLProductionScraper:
                 'scraped_at': datetime.now().isoformat(),
                 'pdfs': []
             }
-            
-            # Look for PDF downloads in the product data
-            pdf_links = self._extract_pdf_links(product_data)
-            
-            for pdf_info in pdf_links:
-                try:
-                    pdf_result = await self._download_pdf(pdf_info, product_name)
-                    if pdf_result:
-                        product_info['pdfs'].append(pdf_result)
-                except Exception as e:
-                    logger.error(f"❌ PDF download failed for {pdf_info.get('url', 'unknown')}: {e}")
-                    
+
+            # Get the actual product page to find PDFs
+            if product_url:
+                await self._scrape_product_page_for_pdfs(
+                    product_info, product_url
+                )
+
             return product_info
-            
+
         except Exception as e:
             logger.error(f"❌ Product processing failed: {e}")
             return None
-            
-    def _extract_pdf_links(self, product_data: Dict) -> List[Dict]:
-        """Extract PDF download links from product data"""
-        pdf_links = []
-        
-        # Check for direct PDF URLs
-        attachments = product_data.get('attachments', [])
-        for attachment in attachments:
-            if attachment.get('url', '').lower().endswith('.pdf'):
-                pdf_links.append({
-                    'url': attachment['url'],
-                    'title': attachment.get('title', 'Product PDF'),
-                    'type': 'datasheet'
-                })
-                
-        # Check for documentation links
-        documents = product_data.get('documents', [])
-        for doc in documents:
-            if doc.get('url', '').lower().endswith('.pdf'):
-                pdf_links.append({
-                    'url': doc['url'],
-                    'title': doc.get('title', 'Technical Document'),
-                    'type': 'technical'
-                })
-                
-        return pdf_links
-        
-    async def _download_pdf(self, pdf_info: Dict, product_name: str) -> Optional[Dict]:
-        """Download and process individual PDF"""
+
+    async def _scrape_product_page_for_pdfs(
+        self, product_info: Dict, product_url: str
+    ):
+        """Scrape the actual product page to find PDF download links"""
         try:
-            pdf_url = pdf_info['url']
+            logger.info(f"🔍 Scraping product page: {product_url}")
+            response = await self.session.get(product_url)
+            response.raise_for_status()
+
+            html_content = response.text
+
+            # Find PDF links in the HTML
+            pdf_pattern = r'href=["\']([^"\']*\.pdf[^"\']*)["\']'
+            pdf_matches = re.findall(
+                pdf_pattern, html_content, re.IGNORECASE
+            )
+
+            # Also look for specific ROCKWOOL PDF patterns
+            termek_pattern = (
+                r'href=["\']([^"\']*termékadatlap[^"\']*\.pdf[^"\']*)["\']'
+            )
+            termek_matches = re.findall(
+                termek_pattern, html_content, re.IGNORECASE
+            )
+
+            # Look for "Termékadatlap letöltése" or "Datenblatt herunterladen"
+            download_pattern = (
+                r'href=["\']([^"\']*)["\'][^>]*>[^<]*'
+                r'(?:termékadatlap|letöltése|download|datenblatt)[^<]*</a>'
+            )
+            download_matches = re.findall(
+                download_pattern, html_content, re.IGNORECASE
+            )
+
+            all_pdf_urls = list(set(
+                pdf_matches + termek_matches + download_matches
+            ))
+
+            logger.info(
+                f"📎 Found {len(all_pdf_urls)} potential PDF links"
+            )
+
+            for pdf_url in all_pdf_urls:
+                if pdf_url.lower().endswith('.pdf'):
+                    try:
+                        pdf_result = await self._download_pdf(
+                            pdf_url, product_info['name']
+                        )
+                        if pdf_result:
+                            product_info['pdfs'].append(pdf_result)
+                    except Exception as e:
+                        logger.error(
+                            f"❌ PDF download failed for {pdf_url}: {e}"
+                        )
+
+        except Exception as e:
+            logger.error(
+                f"❌ Failed to scrape product page {product_url}: {e}"
+            )
+
+    async def _download_pdf(
+        self, pdf_url: str, product_name: str
+    ) -> Optional[Dict]:
+        """Download PDF"""
+        try:
             if not pdf_url.startswith('http'):
                 pdf_url = urljoin(BASE_URL, pdf_url)
-                
-            logger.info(f"⬇️ Downloading PDF: {pdf_info['title']}")
-            
+
+            logger.info(f"⬇️ Downloading PDF: {pdf_url}")
+
             # Download PDF
-            response = await self.session.get(pdf_url)
+            response = await self.session.get(pdf_url, follow_redirects=True)
             response.raise_for_status()
-            
+
+            # Check if it's actually a PDF
+            content_type = response.headers.get('content-type', '')
+            if 'pdf' not in content_type.lower():
+                logger.warning(f"⚠️ Not a PDF: {content_type}")
+                return None
+
             # Generate filename
             safe_product_name = re.sub(r'[^\w\s-]', '', product_name)[:50]
-            safe_title = re.sub(r'[^\w\s-]', '', pdf_info['title'])[:30]
-            filename = f"{safe_product_name}_{safe_title}.pdf"
+            url_filename = os.path.basename(urlparse(pdf_url).path)
+            if url_filename.endswith('.pdf'):
+                filename = f"{safe_product_name}_{url_filename}"
+            else:
+                filename = f"{safe_product_name}_datasheet.pdf"
+
             filepath = PDF_STORAGE_DIR / filename
-            
+
             # Save PDF
             with open(filepath, 'wb') as f:
                 f.write(response.content)
-                
-            # Extract PDF metadata and content
-            pdf_metadata = await self._extract_pdf_content(filepath)
-            
+
             result = {
-                'title': pdf_info['title'],
+                'title': url_filename or 'Product Datasheet',
                 'url': pdf_url,
                 'local_path': str(filepath),
                 'filename': filename,
                 'file_size': len(response.content),
-                'type': pdf_info.get('type', 'unknown'),
+                'content_type': content_type,
                 'downloaded_at': datetime.now().isoformat(),
-                **pdf_metadata
+                'status': 'success'
             }
-            
-            logger.info(f"✅ Downloaded: {filename} ({len(response.content)} bytes)")
+
+            logger.info(
+                f"✅ Downloaded {filename} ({len(response.content)} bytes)"
+            )
             return result
-            
+
         except Exception as e:
             logger.error(f"❌ PDF download failed: {e}")
             return None
-            
-    async def _extract_pdf_content(self, filepath: Path) -> Dict:
-        """Extract content and metadata from PDF"""
-        try:
-            doc = fitz.open(filepath)
-            
-            # Extract metadata
-            metadata = doc.metadata
-            
-            # Extract text content from first few pages
-            content_pages = []
-            for page_num in range(min(3, len(doc))):  # First 3 pages
-                page = doc[page_num]
-                text = page.get_text()
-                if text.strip():
-                    content_pages.append(text.strip())
-                    
-            doc.close()
-            
-            # Look for technical specifications
-            full_text = ' '.join(content_pages)
-            specs = self._extract_technical_specs(full_text)
-            
-            return {
-                'pdf_metadata': {
-                    'title': metadata.get('title', ''),
-                    'author': metadata.get('author', ''),
-                    'creator': metadata.get('creator', ''),
-                    'pages': len(doc)
-                },
-                'extracted_content': content_pages,
-                'technical_specs': specs
-            }
-            
-        except Exception as e:
-            logger.error(f"❌ PDF content extraction failed: {e}")
-            return {}
-            
-    def _extract_technical_specs(self, text: str) -> Dict:
-        """Extract technical specifications from PDF text"""
-        specs = {}
-        
-        # Common ROCKWOOL specifications
-        patterns = {
-            'r_value': r'R[- ]?értéke?:?\s*(\d+(?:,\d+)?)',
-            'lambda_value': r'λ[D]?\s*[≤=]\s*(\d+,\d+)',
-            'thickness': r'Vastagság.*?(\d+)\s*mm',
-            'density': r'sűrűség.*?(\d+)\s*kg/m',
-            'thermal_conductivity': r'hővezetési.*?(\d+,\d+)',
-            'fire_class': r'Tűzvédelmi.*?(A\d+)',
-            'melting_point': r'Olvadáspont.*?(\d+).*?°C'
-        }
-        
-        for spec_name, pattern in patterns.items():
-            match = re.search(pattern, text, re.IGNORECASE)
-            if match:
-                specs[spec_name] = match.group(1)
-                
-        return specs
 
-# Main scraping functions for integration
-async def scrape_rockwool_production(limit: Optional[int] = None) -> List[Dict]:
-    """
-    PRODUCTION function - Scrape ROCKWOOL termékadatlapok
-    """
-    async with ROCKWOOLProductionScraper() as scraper:
-        return await scraper.scrape_termekadatlapok_api(limit)
 
-async def scrape_and_store_rockwool_pdfs(limit: Optional[int] = 20) -> Dict:
+async def scrape_rockwool(limit: Optional[int] = None) -> List[Dict]:
     """
-    Complete ROCKWOOL PDF scraping and storage for Lambda.hu database
+    Scrape ROCKWOOL termékadatlapok and download PDFs
     """
-    logger.info("🎯 Starting ROCKWOOL PDF scraping for PROS scope...")
-    
+    # Construct Bright Data proxy URL if credentials are available
+    proxy = None
+    api_token = os.getenv('BRIGHTDATA_API_TOKEN')
+    zone = os.getenv('BRIGHTDATA_WEB_UNLOCKER_ZONE', 'web_unlocker')
+    if api_token:
+        proxy_user = f"brd-{api_token}"
+        proxy_pass = api_token
+        proxy_host = f"{zone}.brightdata.com"
+        proxy_port = 22225
+        proxy = f"http://{proxy_user}:{proxy_pass}@{proxy_host}:{proxy_port}"
+        logger.info("Using Bright Data proxy for scraping.")
+    else:
+        logger.info("No Bright Data proxy configured. Scraping directly.")
+        
+    async with RockwoolScraper(proxy=proxy) as scraper:
+        return await scraper.scrape_api(limit)
+
+
+async def run_rockwool_scrape(limit: Optional[int] = 20) -> Dict:
+    """
+    Complete ROCKWOOL PDF scraping and storage
+    """
+    logger.info("🎯 Starting ROCKWOOL PDF scraping...")
+
     try:
         # Scrape products
-        products = await scrape_rockwool_production(limit)
-        
+        products = await scrape_rockwool(limit)
+
         # Summary statistics
         total_products = len(products)
         total_pdfs = sum(len(p.get('pdfs', [])) for p in products)
-        
+
         result = {
             'success': True,
             'products_scraped': total_products,
@@ -299,20 +306,18 @@ async def scrape_and_store_rockwool_pdfs(limit: Optional[int] = 20) -> Dict:
             'storage_location': str(PDF_STORAGE_DIR),
             'scraped_at': datetime.now().isoformat()
         }
-        
-        logger.info(f"🎉 ROCKWOOL scraping completed: {total_products} products, {total_pdfs} PDFs")
+
+        logger.info(
+            f"🎉 COMPLETE: {total_products} products, "
+            f"{total_pdfs} PDFs downloaded"
+        )
         return result
-        
+
     except Exception as e:
-        logger.error(f"❌ ROCKWOOL scraping failed: {e}")
+        logger.error(f"❌ Scraping run failed: {e}")
         return {
             'success': False,
             'error': str(e),
             'products_scraped': 0,
             'pdfs_downloaded': 0
         }
-
-# Legacy compatibility
-async def scrape_rockwool_for_database(limit: Optional[int] = None) -> List[Dict]:
-    """Legacy function for existing integrations"""
-    return await scrape_rockwool_production(limit)

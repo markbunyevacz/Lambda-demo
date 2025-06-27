@@ -15,7 +15,7 @@ Főbb komponensek:
 """
 
 # Hagyományos scraper komponensek
-from .rockwool_scraper import RockwoolApiScraper as RockwoolScraper
+# from .rockwool_scraper import RockwoolApiScraper as RockwoolScraper
 from .product_parser import ProductParser
 from .category_mapper import CategoryMapper
 from .data_validator import DataValidator
