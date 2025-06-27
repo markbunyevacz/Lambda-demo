@@ -12,9 +12,11 @@ from typing import Dict, List, Optional, Union
 from datetime import datetime
 from enum import Enum
 
+from app.database import SessionLocal
+from app.models import Product, ScrapedData
+from app.scraper.data_validator import DataValidator
+from app.scrapers.rockwool import RockwoolScraper
 from .brightdata_agent import BrightDataMCPAgent
-from ..scraper.rockwool_scraper import RockwoolApiScraper
-from ..scraper.data_validator import DataValidator
 
 logger = logging.getLogger(__name__)
 
@@ -39,12 +41,15 @@ class ScrapingCoordinator:
     - Teljesítmény optimalizálás
     """
     
-    def __init__(self, strategy: ScrapingStrategy = ScrapingStrategy.API_FALLBACK_MCP):
-        self.strategy = strategy
-        self.validator = DataValidator()
+    def __init__(self):
+        """
+        Scraping Coordinator inicializálása
+        """
+        # Session inicializálása
+        self.db_session = SessionLocal()
         
         # Scraper inicializálás
-        self.api_scraper = RockwoolApiScraper()
+        self.api_scraper = RockwoolScraper()
         self.mcp_agent = BrightDataMCPAgent()
         
         # Koordináció statisztikák
