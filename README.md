@@ -187,6 +187,73 @@ docker-compose down && docker-compose up --build
 - Node_modules tisztítása
 - Függőség konfliktusok vizsgálata
 
+## 🚀 Új! BrightData MCP Integration
+
+A Lambda demo most már tartalmazza a **BrightData MCP (Model Context Protocol)** integrációt, amely fejlett AI-vezérelt web scraping képességeket biztosít:
+
+### ✨ Új Funkciók
+
+- **🤖 AI-vezérelt scraping** Claude Sonnet 4-gyel
+- **🛠️ 18 BrightData tool** (HTML/Markdown scraping, browser automation, stb.)
+- **🔒 Captcha megoldás** automatikusan
+- **🛡️ Fejlett anti-detection** funkciók
+- **🔄 Multi-strategy koordináció** fallback logikával
+- **📊 Performance monitoring** és metrics
+
+### 🎯 Scraping Stratégiák
+
+1. **API_ONLY** - Hagyományos Rockwool API (gyors, megbízható)
+2. **MCP_ONLY** - Csak BrightData AI scraping (fejlett, gazdag adatok)
+3. **API_FALLBACK_MCP** - API először, MCP backup (ajánlott)
+4. **MCP_FALLBACK_API** - MCP először, API backup
+5. **PARALLEL** - Mindkettő párhuzamosan (leggyorsabb)
+
+### 🔧 Gyors Setup
+
+1. **API kulcsok beszerzése:**
+   - [BrightData fiók](https://brdta.com/techwithtim_mcp) (ingyenes kreditek)
+   - [Anthropic API kulcs](https://console.anthropic.com)
+
+2. **Környezeti változók (.env):**
+   ```bash
+   BRIGHTDATA_API_TOKEN=your-brightdata-token
+   BRIGHTDATA_WEB_UNLOCKER_ZONE=web-unlocker
+   ANTHROPIC_API_KEY=your-anthropic-key
+   ```
+
+3. **Dependencies telepítése:**
+   ```bash
+   cd backend
+   pip install langchain langchain-anthropic langchain-mcp-adapters langgraph mcp
+   ```
+
+4. **Tesztelés:**
+   ```bash
+   docker-compose exec backend python -c "from app.agents import BrightDataMCPAgent; print('✅ MCP Ready!')"
+   ```
+
+### 📚 Részletes Dokumentáció
+
+- [BrightData MCP Setup Guide](backend/BRIGHTDATA_MCP_SETUP.md)
+- [AI Agent Specification](cursorrules/FEJLESZTÉSI_ELVEK.md#9-ai-agent-specifikációs-sablon)
+- [API Documentation](backend/app/scraper/README.md)
+
+### 🎮 Demo Használat
+
+```python
+from app.agents import BrightDataMCPAgent, ScrapingCoordinator
+
+# AI scraping
+agent = BrightDataMCPAgent()
+products = await agent.scrape_rockwool_with_ai(["https://www.rockwool.hu"])
+
+# Koordinált scraping
+coordinator = ScrapingCoordinator(strategy="api_fallback_mcp")
+results = await coordinator.scrape_products(max_products=10)
+```
+
+## Eredeti Demo Funkciók
+
 ---
 
 **Verzió**: 1.0.0  

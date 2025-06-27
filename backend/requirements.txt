@@ -13,6 +13,7 @@ httpx
 lxml
 html5lib
 PyMuPDF
+playwright
 
 # Data processing dependencies  
 pandas
@@ -21,4 +22,12 @@ numpy
 # Job scheduling and task queue
 celery[redis]==5.3.4
 flower==2.0.1
-kombu==5.3.3 
+kombu==5.3.3
+
+# BrightData MCP integration
+langchain
+langchain-anthropic
+langchain-mcp-adapters
+langgraph
+mcp
+httpx-sse 

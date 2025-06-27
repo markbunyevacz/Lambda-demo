@@ -115,4 +115,4 @@ class RockwoolApiScraper:
         all_products = [p for p in all_products_raw if p is not None]
         
         logger.info(f"PDF Scraping befejezve. Összesen {len(all_products)} termék sikeresen feldolgozva.")
-        return all_products 
+        return all_products
