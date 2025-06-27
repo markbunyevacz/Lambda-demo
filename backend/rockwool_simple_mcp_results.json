@@ -1,5 +1,5 @@
 {
   "success": false,
-  "error": "[WinError 2] A rendszer nem találja a megadott fájlt",
+  "error": "unhandled errors in a TaskGroup (2 sub-exceptions)",
   "products_scraped": 0
 }
