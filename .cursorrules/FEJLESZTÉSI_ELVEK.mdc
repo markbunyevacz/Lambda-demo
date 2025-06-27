@@ -1,3 +1,8 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
 FEJLESZTÉSI_ELVEK.md (Project Rules for Cursor)
 
 # Lambda.hu Építőanyag AI Projekt - Fejlesztési Szabályok
