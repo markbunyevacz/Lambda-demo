@@ -52,9 +52,12 @@ class BrightDataMCPAgent:
             api_key=os.getenv("ANTHROPIC_API_KEY")
         )
         
-        # MCP szerver paraméterek
+        # MCP szerver paraméterek - Windows PowerShell compatibility fix
+        import platform
+        npx_cmd = "npx.cmd" if platform.system() == "Windows" else "npx"
+        
         self.server_params = stdio.StdioServerParameters(
-            command="npx",
+            command=npx_cmd,
             env={
                 "API_TOKEN": os.getenv("BRIGHTDATA_API_TOKEN"),
                 "BROWSER_AUTH": os.getenv("BRIGHTDATA_BROWSER_AUTH"),
