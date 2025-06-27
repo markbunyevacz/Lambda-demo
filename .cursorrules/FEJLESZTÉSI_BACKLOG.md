@@ -4,7 +4,7 @@
 **Cél:** Bemutatni a rendszer alapvető képességét: egy felhasználó természetes nyelven kereshet építőanyagot, a rendszer pedig a naprakész, "scraped" adatok alapján releváns termékeket és AI-alapú szakértői választ ad.
 - **Gyártók:** Csak 1 gyártó (Rockwool) adatainak teljes feldolgozása.
 - **Funkciók:**
-    - Automatizált adatgyűjtés és feldolgozás (Rockwool).
+    - **Hibrid adatgyűjtés és feldolgozás** (Rockwool): Hagyományos scraper + **🚀 BrightData MCP AI** (48 tools, CAPTCHA solving)
     - Strukturált adatbázis (PostgreSQL) és vektor adatbázis (Chroma).
     - Természetes nyelvű keresés (RAG pipeline) és egyszerű, szűrő nélküli terméklista.
     - Egyszerűsített UI: egy keresőmező, egy AI chat ablak és egy terméklista megjelenítő.
@@ -21,7 +21,7 @@
 - [x] Alapvető FastAPI alkalmazás létrehozása, CORS és DB kapcsolattal
 - [x] Alapvető Next.js/React frontend váz létrehozása Tailwind CSS-szel (vizuális váz kész)
 
-### Fázis 2: Adat-pipeline és Web Scraping (Hét 2-4) ✅ KÉSZ
+### Fázis 2: Adat-pipeline és Web Scraping (Hét 2-4) ✅ KÉSZ + 🚀 TOVÁBBFEJLESZTVE
 - [x] **Rockwool scraper implementációja a Rendszerterv alapján** ✅ KÉSZ
   - [x] Weboldal struktúra elemzése és térképezése
   - [x] Termék adatok automatikus kinyerése (név, leírás, műszaki paraméterek)
@@ -30,9 +30,15 @@
   - [x] Moduláris scraper architektúra (RockwoolScraper, ProductParser, CategoryMapper, DataValidator)
   - [x] REST API végpontok scraper kezelésére
   - [x] Komprehenzív dokumentáció és tesztelési eszközök
-- [ ] Leier scraper implementációja (MCP után)
-- [ ] Baumit scraper implementációja (MCP után)
-- [x] **Scraped adatok validálása és normalizálása + Adatbázisba mentési logika** ✅ KÉSZ *(A pont)*
+- [x] **🚀 BrightData MCP AI Scraping Rendszer** ✅ ÚJ TECHNOLÓGIA (2025-01-27)
+  - [x] **48 BrightData tool integráció** Claude AI-jal (mcp==1.10.1, langchain-anthropic==0.3.16)
+  - [x] **Univerzális scraping** minden gyártó számára (CAPTCHA solving, anti-detection)
+  - [x] **5 koordinált scraping stratégia:** API_ONLY, MCP_ONLY, API_FALLBACK_MCP ⭐, MCP_FALLBACK_API, PARALLEL
+  - [x] **Celery integráció** background AI scraping feladatokhoz
+  - [x] **Teljes dokumentáció:** BRIGHTDATA_MCP_SETUP_DOCUMENTATION.md, INSTALLATION_LOG.md, README_BRIGHTDATA_MCP.md
+- [ ] **Leier scraper implementációja** (🔄 Most már AI-jal 15 perc alatt implementálható)
+- [ ] **Baumit scraper implementációja** (🔄 Most már AI-jal 15 perc alatt implementálható)
+- [x] **Scraped adatok validálása és normalizálása + Adatbázisba mentési logika** ✅ KÉSZ + 🚀 AI TOVÁBBFEJLESZTVE *(A pont)*
   - [x] **DatabaseIntegration szolgáltatás:** ScrapedProduct → Product modell mappelés teljes automatizálással
   - [x] **Gyártók és kategóriák:** automatikus létrehozása (`ensure_manufacturer`, `ensure_category`) cache-eléssel
   - [x] **SKU generálás:** ROCK-{kategória}-{URL_hash} formátum duplikátum kezeléssel
@@ -40,6 +46,8 @@
   - [x] **Műszaki specifikációk normalizálása:** raw + processed adatok strukturálása
   - [x] **API integráció:** `POST /api/scraper/scrape/single-product` és `/save-to-database` végpontok
   - [x] **DataValidator:** teljes adatminőség biztosítás és konzisztencia vizsgálat
+  - [x] **🚀 AI-enhanced adatvalidálás:** BrightData MCP eredmények integrálása hibrid adatforrásokkal
+  - [x] **Metaadat kezelés:** scraper_type (api/mcp_ai), ai_confidence, processing_time tracking
 - [x] **Celery és Celery Beat automatikus, időzített frissítés** ✅ KÉSZ *(B pont)*
   - [x] **Celery alkalmazás konfiguráció:** Redis broker 4 specializált queue-val (scraping, database, notifications, default)
   - [x] **Ütemezett feladatok:** beat scheduler napi/heti automatizmussal
@@ -57,20 +65,36 @@
   - [x] **Celery feladatok:** worker kapcsolat, debug task, queue monitoring ellenőrzése
   - [x] **Hibakezelés és retry:** rate limiting, timeout, exponential backoff teljes lefedettséggel
 
-### Fázis 3: AI Modul - RAG Pipeline (Hét 4-6)
-- [ ] Chroma vektor adatbázis inicializálása és perzisztálása
-- [ ] LangChain integráció és `BuildingMaterialsAI` service létrehozása
-- [ ] Termékadatok automatikus vektorizálása és indexelése
+### Fázis 3: AI Modul - RAG Pipeline (Hét 4-6) 🔄 TOVÁBBFEJLESZTVE AI-JJAL
+- [ ] **Hibrid Chroma vektor adatbázis** inicializálása és perzisztálása
+  - [ ] Hagyományos scraped adatok vektorizálása
+  - [ ] **🚀 AI-enhanced termékleírások** indexelése BrightData MCP eredményekből
+  - [ ] Magyar nyelvi embeddings optimalizálás
+- [ ] **LangChain integráció továbbfejlesztve** és `BuildingMaterialsAI` service létrehozása
+  - [ ] **AI scraping context** integrálása a RAG pipeline-ba
+  - [ ] **Intelligent retrieval** - forrás preferenciák (API vs MCP AI)
+  - [ ] **Real-time scraping capability** természetes nyelvű kérésekre
+- [ ] Termékadatok automatikus vektorizálása és indexelése (hibrid források)
 - [ ] Q&A lánc létrehozása a magyar nyelvű, építészeti szakértői prompt-tal
+- [ ] **🚀 AI confidence score** alapú termék rangsorolás és válaszminőség
 - [ ] Kompatibilitás-ellenőrző logika alapjainak implementálása (`check_system_compatibility`)
 
-### Fázis 4: Backend API és Frontend Integráció (Hét 6-9)
-- [ ] Termékkereső API végpont létrehozása (szöveges keresés + szűrés)
-- [ ] AI Chat API végpont létrehozása (`get_product_recommendations`)
-- [ ] Kompatibilitás-ellenőrző API végpont létrehozása
-- [ ] Frontend: Termékkereső interface (keresőmező, szűrők, termékrács) fejlesztése
+### Fázis 4: Backend API és Frontend Integráció (Hét 6-9) 🔄 AI-ENHANCED
+- [ ] **Hibrid termékkereső API** végpont létrehozása (szöveges keresés + szűrés)
+  - [ ] **🚀 `/api/search/hybrid`** - Kombinálja hagyományos + AI eredményeket
+  - [ ] **🚀 `/api/scraping/intelligent`** - Real-time AI scraping kérésre
+  - [ ] **🚀 `/api/scraping/status`** - AI scraping feladatok monitoring
+- [ ] **AI Chat API továbbfejlesztve** (`get_product_recommendations`)
+  - [ ] **🚀 `/api/ai/analyze-product`** - Termék AI elemzés kérésre
+  - [ ] BrightData MCP eredmények integrálása válaszokba
+- [ ] Kompatibilitás-ellenőrző API végpont létrehozása (AI-enhanced)
+- [ ] **Frontend: AI-enhanced termékkereső** interface fejlesztése
+  - [ ] **🚀 Real-time scraping status** indicator
+  - [ ] **🚀 AI confidence score** megjelenítés termékeknél
+  - [ ] **🚀 "Kérd el AI-tól új termékeket"** funkció
 - [ ] Frontend: AI Chat komponens fejlesztése és bekötése
 - [ ] Frontend: Termék adatlap és összehasonlító komponens fejlesztése
+- [ ] **🚀 Scraping admin panel** - stratégia váltás, monitoring (fejlesztőknek)
 
 ### Fázis 5: Ajánlatkészítő Modul (Hét 9-11)
 - [ ] `quotes` adatbázis tábla és SQLAlchemy modell
