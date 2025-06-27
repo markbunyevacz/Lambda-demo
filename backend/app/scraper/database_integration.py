@@ -6,9 +6,10 @@ adatbázis struktúrájába a megfelelő mappelésekkel és validálásokkal.
 """
 
 import logging
-from typing import List, Dict, Optional, Tuple
+from typing import List, Dict, Optional, Tuple, Any
 from datetime import datetime
 import hashlib
+from dataclasses import dataclass
 
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
@@ -17,10 +18,18 @@ from ..database import get_db
 from ..models.product import Product
 from ..models.manufacturer import Manufacturer
 from ..models.category import Category
-from .rockwool_scraper import ScrapedProduct
 from .category_mapper import CategoryMapper
 
 logger = logging.getLogger(__name__)
+
+# A ScrapedProduct definíciója ide került, mert itt használjuk
+@dataclass
+class ScrapedProduct:
+    """Scraped termék adatstruktúra"""
+    name: str
+    url: str
+    full_text_content: Optional[str] = None
+    # A többi mezőre a DEMO-ban nincs szükség
 
 
 class DatabaseIntegration:
@@ -474,14 +483,14 @@ class DatabaseIntegration:
         logger.debug("Database integration cache törölve")
 
 
-def save_product_for_demo(db: Session, product_data: Dict[str, str], manufacturer_name: str):
+def save_product_for_demo(db: Session, product_data: ScrapedProduct, manufacturer_name: str):
     """
     Egyszerűsített adatbázis mentési logika a DEMO számára.
     Frissíti a meglévő terméket az URL alapján, vagy újat hoz létre.
     
     Args:
         db: Database session
-        product_data: Dictionary with keys: name, url, full_text_content
+        product_data: ScrapedProduct objektum
         manufacturer_name: Manufacturer name
     """
     
@@ -503,23 +512,23 @@ def save_product_for_demo(db: Session, product_data: Dict[str, str], manufacture
         db.refresh(default_category)
 
     # 2. Létező termék keresése URL alapján
-    existing_product = db.query(Product).filter(Product.source_url == product_data['url']).first()
+    existing_product = db.query(Product).filter(Product.source_url == product_data.url).first()
     
     if existing_product:
         # 3. Frissítés
-        logger.info(f"DEMO: Termék frissítése: {product_data['name']}")
-        existing_product.name = product_data['name']
-        existing_product.full_text_content = product_data['full_text_content']
+        logger.info(f"DEMO: Termék frissítése: {product_data.name}")
+        existing_product.name = product_data.name
+        existing_product.full_text_content = product_data.full_text_content
         existing_product.scraped_at = datetime.now()
         existing_product.manufacturer_id = manufacturer.id
         existing_product.category_id = default_category.id
     else:
         # 4. Új termék létrehozása
-        logger.info(f"DEMO: Új termék mentése: {product_data['name']}")
+        logger.info(f"DEMO: Új termék mentése: {product_data.name}")
         new_product = Product(
-            name=product_data['name'],
-            source_url=product_data['url'],
-            full_text_content=product_data['full_text_content'],
+            name=product_data.name,
+            source_url=product_data.url,
+            full_text_content=product_data.full_text_content,
             scraped_at=datetime.now(),
             manufacturer_id=manufacturer.id,
             category_id=default_category.id,
@@ -532,5 +541,5 @@ def save_product_for_demo(db: Session, product_data: Dict[str, str], manufacture
     try:
         db.commit()
     except Exception as e:
-        logger.error(f"DEMO: Hiba a mentés során a '{product_data['name']}' terméknél: {e}")
+        logger.error(f"DEMO: Hiba a mentés során a '{product_data.name}' terméknél: {e}")
         db.rollback() 

@@ -60,141 +60,287 @@ FEJLESZTÉSI_ELVEK.md (Project Rules for Cursor)
     - Az árakat `HUF` pénznemben, `m2`, `db` stb. egységekkel add meg, ahogy a Rendszertervben szerepel.
     - A műszaki paramétereket a normalizált JSONB struktúrában tárold.
 
-## Lambda AI Agent Specification Template
+## 9. AI AGENT SPECIFIKÁCIÓS SABLON
 
-### Általános Agent Architektúra
-Minden Lambda.hu AI agent követi az alábbi alapelveket:
-- **Autonómia**: Az agent képes önállóan döntést hozni a saját hatókörében
-- **Reaktivitás**: Gyorsan reagál a környezet változásaira és eseményekre
-- **Proaktivitás**: Nem csak reagál, hanem kezdeményez és tervez előre
-- **Szociális képesség**: Kommunikál más agentekkel és szolgáltatásokkal
-- **Perzisztencia**: Állapotot tart fenn és tanul a tapasztalatokból
+### 9.1 Általános Agent Architektúra
 
-### Agent Típusok és Felelősségek
+A Lambda demo AI agentjei a következő alapelvek mentén működnek:
 
-#### 1. Data Collection Agent (Scraper Agent)
-- **Felelősség**: Multi-forrású termékadatok autonóm gyűjtése
-- **Technológia**: `async/await`, `aiohttp`, `BeautifulSoup`, `Celery`
-- **Helye**: `backend/app/scraper/`
-- **API**: `POST /api/scraper/`, `GET /api/scraper/status`
-- **Metrikák**: sikeres scraping %, frissítési gyakoriság, adatminőség pontszám
+#### Agent Tulajdonságok
+- **Autonómia**: Önálló döntéshozatal a feladatkörükben
+- **Reaktivitás**: Környezet változásaira való reagálás
+- **Proaktivitás**: Kezdeményező magatartás a célok elérése érdekében
+- **Társadalmi képesség**: Más agentekkel és rendszerekkel való együttműködés
+- **Perzisztencia**: Állapot megőrzése és folyamatos működés
 
-#### 2. Data Processing Agent (Normalization Agent)  
-- **Felelősség**: Nyers adatok tisztítása, kategorizálása, normalizálása
-- **Technológia**: `pandas`, `fuzzy matching`, `regex`, `LangChain`
-- **Helye**: `backend/app/services/data_processing_service.py`
-- **API**: `POST /api/data/normalize`, `GET /api/data/validation-report`
-- **Metrikák**: feldolgozási sebesség, hibaarány, kategóriazálási pontosság
+### 9.2 Agent Típusok
 
-#### 3. Recommendation Agent (RAG Agent)
-- **Felelősség**: Természetes nyelvű kérdések értelmezése és termékajánlások
-- **Technológia**: `LangChain`, `ChromaDB`, `OpenAI Embeddings`, `HuggingFace`
-- **Helye**: `backend/app/services/ai_service.py`
-- **API**: `POST /api/ai/query`, `GET /api/ai/recommendations`
-- **Metrikák**: válaszidő, relevancia pontszám, felhasználói elégedettség
-
-#### 4. Price Monitoring Agent
-- **Felelősség**: Árváltozások követése, trend elemzés, ajánlatok figyelése
-- **Technológia**: `asyncio`, `statistical analysis`, `alerting`
-- **Helye**: `backend/app/services/price_monitoring_service.py`
-- **API**: `GET /api/prices/trends`, `POST /api/prices/alerts`
-- **Metrikák**: árváltozás detektálási pontosság, előrejelzési precizitás
-
-#### 5. Compatibility Agent
-- **Felelősség**: Termékkompatibilitás ellenőrzése, rendszerintegritás biztosítása
-- **Technológia**: `rule engine`, `graph algorithms`, `constraint solving`
-- **Helye**: `backend/app/services/compatibility_service.py`
-- **API**: `POST /api/compatibility/check`, `GET /api/compatibility/systems`
-- **Metrikák**: kompatibilitási ellenőrzések száma, hibás ajánlások aránya
-
-### Agent Kommunikációs Protokoll
-
-#### Inter-Agent Messaging
+#### 9.2.1 Adatgyűjtő Agente (Data Collection Agent)
 ```python
-# Standard agent üzenet formátum
-class AgentMessage:
-    source_agent: str          # küldő agent azonosítója
-    target_agent: str          # címzett agent(ek)
-    message_type: str          # 'request', 'response', 'notification', 'error'
-    payload: Dict[str, Any]    # üzenet tartalma
-    priority: int              # 1-5 (5 = kritikus)
-    correlation_id: str        # kérés-válasz összekapcsolás
-    timestamp: datetime
+class DataCollectionAgent:
+    """
+    Funkcionalitás:
+    - Web scraping koordinálása
+    - API adatgyűjtés kezelése  
+    - Adatvalidálás és tisztítás
+    - Hibakezelés és retry logika
+    """
+    
+    def __init__(self, sources, validators, storage):
+        self.sources = sources
+        self.validators = validators
+        self.storage = storage
+        
+    async def collect_data(self, targets):
+        # Implementation
+        pass
 ```
 
-#### Event-Driven Communication
-- **Redis Pub/Sub**: Valós idejű event streaming agenteknek
-- **Celery Queues**: Aszinkron task ütemezés priority queue-kkal
-- **WebSocket**: Frontend real-time notifications
-- **Database Events**: PostgreSQL triggers agent aktiválására
-
-#### Agent Lifecycle Management
+#### 9.2.2 BrightData MCP Agent (AI-Enhanced Scraper)
 ```python
-# Agent állapot management
+class BrightDataMCPAgent:
+    """
+    Speciális AI-vezérelt scraping agent
+    
+    Képességek:
+    - 18 BrightData tool használata
+    - Claude AI integration
+    - Captcha megoldás
+    - Fejlett anti-detection
+    - Fallback logika
+    """
+    
+    async def scrape_with_ai(self, urls, task_description):
+        # AI-vezérelt scraping implementáció
+        pass
+```
+
+#### 9.2.3 Adatfeldolgozó Agent (Data Processing Agent)
+```python
+class DataProcessingAgent:
+    """
+    Funkcionalitás:
+    - Raw adatok normalizálása
+    - Duplikátumok eltávolítása
+    - Kategorizálás és címkézés
+    - Minőségbiztosítás
+    """
+    
+    def process_batch(self, raw_data):
+        # Implementation
+        pass
+```
+
+#### 9.2.4 Scraping Koordinátor (Scraping Coordinator)
+```python
+class ScrapingCoordinator:
+    """
+    Multi-agent koordináció
+    
+    Stratégiák:
+    - API_ONLY: Csak hagyományos API scraping
+    - MCP_ONLY: Csak BrightData MCP
+    - API_FALLBACK_MCP: API elsődleges, MCP fallback
+    - MCP_FALLBACK_API: MCP elsődleges, API fallback  
+    - PARALLEL: Párhuzamos végrehajtás
+    """
+    
+    async def coordinate_scraping(self, strategy, targets):
+        # Koordinációs logika
+        pass
+```
+
+#### 9.2.5 Ajánlási Agent (Recommendation Agent - RAG)
+```python
+class RecommendationAgent:
+    """
+    Funkcionalitás:
+    - Termék összehasonlítás
+    - Személyre szabott ajánlások
+    - RAG alapú válaszgenerálás
+    - Kontextus megértés
+    """
+    
+    def generate_recommendations(self, user_context, products):
+        # Implementation
+        pass
+```
+
+#### 9.2.6 Árfigyelő Agent (Price Monitoring Agent)
+```python
+class PriceMonitoringAgent:
+    """
+    Funkcionalitás:
+    - Ár tracking különböző forrásokon
+    - Trend analízis
+    - Riasztások generálása
+    - Historikus adatok kezelése
+    """
+    
+    async def monitor_prices(self, products):
+        # Implementation
+        pass
+```
+
+#### 9.2.7 Kompatibilitási Agent (Compatibility Agent)
+```python
+class CompatibilityAgent:
+    """
+    Funkcionalitás:
+    - Termékek kompatibilitásának ellenőrzése
+    - Műszaki specifikációk összehasonlítása
+    - Alkalmazási területek elemzése
+    - Szabványok ellenőrzése
+    """
+    
+    def check_compatibility(self, product_a, product_b):
+        # Implementation
+        pass
+```
+
+### 9.3 Agent Kommunikációs Protokollok
+
+#### 9.3.1 Üzenet Formátumok
+```python
+class AgentMessage:
+    def __init__(self, sender, recipient, message_type, payload, timestamp):
+        self.sender = sender
+        self.recipient = recipient
+        self.message_type = message_type  # REQUEST, RESPONSE, NOTIFICATION
+        self.payload = payload
+        self.timestamp = timestamp
+```
+
+#### 9.3.2 Event Bus Integráció
+```python
+class AgentEventBus:
+    """
+    Központi üzenet koordináció
+    - Agent-to-agent kommunikáció
+    - Event subscription/publishing
+    - Message queuing (Redis)
+    - Error handling
+    """
+    
+    async def publish_event(self, event_type, data):
+        pass
+        
+    async def subscribe_to_events(self, event_types, callback):
+        pass
+```
+
+### 9.4 Agent Lifecycle Management
+
+#### 9.4.1 Agent States
+```python
 class AgentState(Enum):
     INITIALIZING = "initializing"
-    IDLE = "idle" 
+    IDLE = "idle"
     WORKING = "working"
     ERROR = "error"
-    MAINTENANCE = "maintenance"
-    SHUTDOWN = "shutdown"
+    STOPPING = "stopping"
+    STOPPED = "stopped"
 ```
 
-### Agent Teljesítmény Metrikák
-
-#### Core KPI-k minden agenthez:
-- **Válaszidő**: átlagos/95. percentilis response time
-- **Throughput**: feldolgozott kérések száma/óra
-- **Sikerességi arány**: sikeres műveletek / összes művelet
-- **Erőforrás-használat**: CPU, memória, network utilizáció
-- **Hibaarány**: critical/warning/info szintű hibák száma
-
-#### Specialized Metrics:
-- **Scraper Agent**: frissített termékek száma, duplikáció arány, data freshness
-- **RAG Agent**: embedding generation speed, similarity search accuracy, hallucination rate
-- **Price Agent**: trend prediction accuracy, alert false positive rate
-
-#### Monitoring és Alerting:
+#### 9.4.2 Health Monitoring
 ```python
-# Prometheus metrics exportálás
-# Grafana dashboardok minden agenthez
-# Slack/email alerts critical küszöbök esetén
-# Weekly agent performance reports
-```
-
-### Agent Development Guidelines
-
-#### Agent Template Struktúra:
-```python
-# /backend/app/agents/base_agent.py
-class BaseAgent(ABC):
-    def __init__(self, config: AgentConfig):
-        self.agent_id = config.agent_id
-        self.state = AgentState.INITIALIZING
-        self.metrics_collector = MetricsCollector()
-        
-    @abstractmethod
-    async def process(self, task: AgentTask) -> AgentResult:
-        """Főlogika implementálása"""
-        pass
-        
-    async def health_check(self) -> HealthStatus:
-        """Agent állapot ellenőrzés"""
+class AgentHealthMonitor:
+    """
+    Agent egészség monitorozása
+    - Heartbeat ellenőrzés
+    - Performance metrikák
+    - Resource használat tracking
+    - Automatikus újraindítás
+    """
+    
+    async def check_agent_health(self, agent_id):
         pass
 ```
 
-#### Agent Tesztelési Protokoll:
-- **Unit Tests**: Minden agent core logikájához 90%+ coverage
-- **Integration Tests**: Agent kommunikáció és külső szolgáltatások
-- **Load Tests**: Teljesítmény tesztelés realistic workload mellett
-- **Chaos Engineering**: Resilience testing failure scenarios alatt
+### 9.5 Performance Metrikák
 
-#### Agent Deployment:
-- **Docker Containers**: Minden agent külön konténerben
-- **Health Checks**: Kubernetes/Docker Compose health endpoints
-- **Rolling Updates**: Zero-downtime deployment strategy
-- **Circuit Breaker**: Failure handling external dependencies felé
+#### 9.5.1 Agent Specific Metrics
+```python
+class AgentMetrics:
+    """
+    Agent teljesítmény metrikák
+    - Task completion rate
+    - Average response time
+    - Error rate
+    - Resource consumption
+    - Throughput (tasks/second)
+    """
+    
+    def record_task_completion(self, agent_id, duration, success):
+        pass
+```
 
+#### 9.5.2 System-wide Metrics
+- Total active agents
+- Message throughput
+- System resource usage
+- Cross-agent collaboration efficiency
+
+### 9.6 Fejlesztési Irányelvek
+
+#### 9.6.1 Agent Implementációs Szabályok
+1. **Moduláris felépítés**: Minden agent saját modulban
+2. **Dependency injection**: Konfigurálható függőségek
+3. **Error handling**: Graceful degradation
+4. **Logging**: Strukturált logok minden művelethez
+5. **Testing**: Unit és integration tesztek kötelezők
+
+#### 9.6.2 Agent Deployment Stratégiák
+1. **Container-based**: Docker containerekben futó agente
+2. **Scalable**: Horizontal scaling támogatása
+3. **Configuration**: Environment alapú konfiguráció
+4. **Service discovery**: Dinamikus agent felderítés
+
+#### 9.6.3 Biztonsági Megfontolások
+1. **API key management**: Biztonságos kulcs tárolás
+2. **Rate limiting**: API hívások korlátozása
+3. **Input validation**: Minden input validálása
+4. **Access control**: Agent jogosultságok kezelése
+
+### 9.7 Demo-specifikus Agent Implementáció
+
+#### 9.7.1 Jelenleg Implementált Agente
+- **RockwoolApiScraper**: PDF-alapú adatgyűjtés
+- **BrightDataMCPAgent**: AI-vezérelt web scraping
+- **ScrapingCoordinator**: Multi-strategy koordináció
+- **Celery Workers**: Aszinkron task végrehajtás
+
+#### 9.7.2 Tervezett Bővítések
+- Termék kompatibilitási elemzés
+- Árfigyelési funkciók
+- RAG-alapú termék ajánlás
+- Real-time monitoring dashboard
+
+### 9.8 Agent Template Használata
+
+#### 9.8.1 Új Agent Létrehozása
+```bash
+# Agent skeleton generálása
+python scripts/create_agent.py --name MyNewAgent --type data_processing
+
+# Konfiguráció
+export AGENT_CONFIG_PATH=/path/to/config.yaml
+
+# Agent indítása
+python -m app.agents.my_new_agent
+```
+
+#### 9.8.2 Integration Checklist
+- [ ] Agent osztály implementálása
+- [ ] Health check endpoint
+- [ ] Metrics collection
+- [ ] Error handling
+- [ ] Unit tesztek
+- [ ] Integration tesztek
+- [ ] Documentation
+- [ ] Deployment konfiguráció
+
+Ez az AI Agent specifikációs sablon biztosítja, hogy minden új agent konzisztens legyen a Lambda demo architektúrájával és támogassa a jövőbeli skálázhatóságot.
 
 ## Memory Management és Tanulás
 - **Tapasztalatok rögzítése**: Minden jelentős problémamegoldás után memory létrehozása a jövőbeli referenciára.

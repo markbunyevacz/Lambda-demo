@@ -15,7 +15,7 @@ from fastapi import APIRouter, HTTPException, BackgroundTasks, Depends
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
-from .rockwool_scraper import RockwoolScraper, ScrapingConfig
+from .rockwool_scraper import RockwoolApiScraper as RockwoolScraper
 from .data_validator import DataValidator
 from .database_integration import DatabaseIntegration
 from ..database import get_db

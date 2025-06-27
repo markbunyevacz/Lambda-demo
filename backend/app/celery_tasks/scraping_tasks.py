@@ -12,7 +12,7 @@ from datetime import datetime, timedelta
 from celery import shared_task
 from celery.exceptions import Retry, MaxRetriesExceededError
 
-from ..scraper import RockwoolScraper, ScrapingConfig, DatabaseIntegration, DataValidator
+from ..scraper import RockwoolScraper, DatabaseIntegration, DataValidator
 from ..database import get_db
 
 logger = logging.getLogger(__name__)
@@ -70,16 +70,8 @@ def scheduled_rockwool_scraping(self, max_products_per_category: int = 20):
     logger.info("Ütemezett Rockwool scraping indítása")
     
     try:
-        # Scraper konfiguráció (konzervatív beállítások)
-        config = ScrapingConfig(
-            request_delay=3.0,
-            max_requests_per_minute=20,
-            max_retries=3,
-            timeout=45
-        )
-        
-        # Scraper inicializálás
-        scraper = RockwoolScraper(config)
+        # Scraper inicializálás (alapértelmezett beállításokkal)
+        scraper = RockwoolScraper()
         validator = DataValidator()
         
         # Weboldal struktúra feltérképezése
