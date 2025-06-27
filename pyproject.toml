@@ -1,0 +1,65 @@
+[project]
+name = "lambda-hu"
+version = "1.0.0"
+description = "Lambda.hu Építőanyag AI Rendszer - AI-alapú építőanyag keresési és ajánlási rendszer"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    {name = "Lambda.hu AI Team"}
+]
+keywords = ["fastapi", "ai", "scraping", "brightdata", "building-materials", "nextjs"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "sqlalchemy",
+    "psycopg2-binary",
+    "redis",
+    "python-dotenv",
+    "pydantic",
+    "requests",
+    "beautifulsoup4",
+    "httpx",
+    "lxml",
+    "html5lib",
+    "PyMuPDF",
+    "playwright",
+    "pandas",
+    "numpy",
+    "celery[redis]==5.3.4",
+    "flower==2.0.1",
+    "kombu==5.3.3",
+    "langchain",
+    "langchain-anthropic",
+    "langchain-mcp-adapters",
+    "langgraph",
+    "mcp",
+    "httpx-sse"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "black",
+    "flake8",
+    "mypy"
+]
+
+[project.scripts]
+lambda-demo = "backend.run_demo_scrape:main"
+lambda-backend = "backend.app.main:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["backend"]

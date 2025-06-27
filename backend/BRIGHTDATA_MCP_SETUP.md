@@ -23,11 +23,11 @@ A Lambda demo BrightData MCP integrációja fejlett AI-vezérelt web scraping k�
 1. Regisztrálj a [BrightData oldalon](https://brdta.com/techwithtim_mcp) (ingyenes kreditek)
 2. Menj a **User Dashboard → Proxies and Scraping → Add**
 3. Hozz létre **Web Unlocker API**-t:
-   - Név: `web-unlocker`
+   - Név: `web_unlocker` (aláhúzással!)
    - Captcha solver: Engedélyezve
    - Másolj ki az API tokent
 4. Hozz létre **Browser API**-t (opcionális):
-   - Név: `scraping-browser`
+   - Név: `scraping_browser` (aláhúzással!)
    - Másold ki a connection stringet
 
 #### Anthropic API
@@ -63,11 +63,11 @@ ENVIRONMENT=production
 
 # BrightData MCP Konfiguráció
 BRIGHTDATA_API_TOKEN=your-token-here
-BRIGHTDATA_WEB_UNLOCKER_ZONE=web-unlocker
+BRIGHTDATA_WEB_UNLOCKER_ZONE=web_unlocker
 BRIGHTDATA_BROWSER_AUTH=your-browser-connection-string-here
 
 # Anthropic API (Claude)
-ANTHROPIC_API_KEY=your-anthropic-key
+ANTHROPIC_API_KEY=sk-ant-api03-YOUR-REAL-KEY-HERE
 
 # MCP Konfiguráció
 MCP_SERVER_TIMEOUT=60
@@ -265,7 +265,7 @@ logging.getLogger('app.agents').setLevel(logging.DEBUG)
 
 # Setup API keys in .env:
 BRIGHTDATA_API_TOKEN=your-token-here
-ANTHROPIC_API_KEY=your-anthropic-key
+ANTHROPIC_API_KEY=sk-ant-api03-YOUR-REAL-KEY-HERE
 
 # Test AI scraping
 docker-compose exec backend python -c "
