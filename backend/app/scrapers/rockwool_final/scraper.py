@@ -130,12 +130,17 @@ class RockwoolDirectScraper:
 
     def _parse_products_from_html(self, html_content: str):
         """Parses the product list from the raw HTML content."""
+        # The product data is stored in a JSON object within a 'data-component-props'
+        # attribute of a div with the name 'O74DocumentationList'.
         props_pattern = r'data-component-name="O74DocumentationList"[^>]*data-component-props="({.*?})"'
         props_match = re.search(props_pattern, html_content, re.DOTALL)
         if not props_match:
             logger.error("Could not find O74DocumentationList component data in HTML.")
             return
 
+        # The extracted JSON is often malformed (it's not proper JSON).
+        # We clean it up by replacing HTML entities and then manually finding the
+        # end of the main JSON object by balancing the curly braces.
         props_str = props_match.group(1).replace('&quot;', '"')
         
         open_braces = 0
