@@ -1,4 +1,0 @@
-{
-  "success": false,
-  "error": "Missing MCP dependencies: cannot import name 'stdio' from 'mcp' (C:\\Users\\Admin\\.cursor\\Lambda\\.venv\\Lib\\site-packages\\mcp\\__init__.py)"
-}

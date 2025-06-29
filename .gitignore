@@ -31,5 +31,29 @@ nvm-installer/
 nvm-installer
 
 # Node
-frontend/node_modules/
-frontend/.next/ 
+/src/frontend/node_modules/
+/src/frontend/.next/
+
+# --- Custom Rules & Generated Files ---
+# Ignore generated result and debug files
+*.log
+debug_*.html
+*_results.json
+plan_d_test_results.json
+rockwool_prod_run.json
+project_cleanup_report.txt
+
+# Ignore downloaded files from scrapers and generated data
+/downloads/
+/src/backend/data/
+/data/
+
+# Ignore other generated/cache files
+celerybeat-schedule
+*.spec
+*.manifest
+.mypy_cache/
+.pytest_cache/
+
+# Ignore IDE/Editor settings
+.vscode/ 

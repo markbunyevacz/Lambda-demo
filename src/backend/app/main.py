@@ -17,56 +17,82 @@ Technológiák:
 - Redis: Cache layer (jövőbeli használatra)
 """
 
-from fastapi import FastAPI, Depends, HTTPException
+from fastapi import FastAPI, Depends, HTTPException, APIRouter
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from typing import List, Optional
 
 # Helyi importok
+from . import models, schemas
 from .database import get_db, engine
-from .models import category, manufacturer, product
 from .scraper.api_endpoints import scraper_router
+from .celery_tasks.scraping_tasks import (
+    run_datasheet_scraping_task,
+    run_brochure_scraping_task,
+)
 
 # Adatbázis táblák létrehozása az alkalmazás indításakor
-category.Base.metadata.create_all(bind=engine)
-manufacturer.Base.metadata.create_all(bind=engine)  
-product.Base.metadata.create_all(bind=engine)
+models.Base.metadata.create_all(bind=engine)
 
 # FastAPI alkalmazás példány létrehozása
 app = FastAPI(
-    title="Lambda.hu Építőanyag AI API",
-    description="RESTful API építőanyag adatok kezeléséhez "
-               "AI-alapú keresési rendszerhez",
-    version="1.0.0",
-    docs_url="/docs",  # Swagger UI endpoint
-    redoc_url="/redoc"  # ReDoc dokumentáció endpoint
+    title="Lambda.hu API",
+    description="API for the Lambda.hu building material intelligence system.",
+    version="1.0.0"
 )
 
 # CORS middleware konfigurálása a frontend integrációhoz
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Next.js frontend URL
+    allow_origins=["*"],
     allow_credentials=True,
-    allow_methods=["*"],  # Minden HTTP metódus engedélyezése
-    allow_headers=["*"],  # Minden header engedélyezése
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # Scraper API routes hozzáadása
 app.include_router(scraper_router)
 
+# API v1 Router
+api_v1_router = APIRouter(prefix="/api/v1")
+
+@api_v1_router.post("/scrape", status_code=202)
+async def trigger_scraping(scrape_request: schemas.ScrapeRequest):
+    """
+    Triggers a background scraping task.
+    - **scraper_type**: 'datasheet' or 'brochure'.
+    """
+    if scrape_request.scraper_type == "datasheet":
+        task = run_datasheet_scraping_task.delay()
+    elif scrape_request.scraper_type == "brochure":
+        task = run_brochure_scraping_task.delay()
+    else:
+        raise HTTPException(
+            status_code=400,
+            detail="Invalid scraper_type. Use 'datasheet' or 'brochure'.",
+        )
+    return {"message": "Scraping task accepted.", "task_id": task.id}
+
+@api_v1_router.get("/products", response_model=List[schemas.Product])
+def read_products(
+    skip: int = 0, limit: int = 100, db: Session = Depends(get_db)
+):
+    products = db.query(models.Product).offset(skip).limit(limit).all()
+    return products
+
+@api_v1_router.get("/categories", response_model=List[schemas.Category])
+def read_categories(
+    skip: int = 0, limit: int = 100, db: Session = Depends(get_db)
+):
+    categories = db.query(models.Category).offset(skip).limit(limit).all()
+    return categories
+
+app.include_router(api_v1_router)
+
+# Root endpoint for basic health check
 @app.get("/")
 async def root():
-    """
-    Alapvető health check endpoint
-    
-    Returns:
-        dict: Alapvető információ az API-ról
-    """
-    return {
-        "message": "Lambda.hu Építőanyag AI Backend API", 
-        "version": "1.0.0",
-        "status": "running"
-    }
+    return {"message": "Lambda.hu API is running."}
 
 # ==================== KATEGÓRIA ENDPOINTS ====================
 
@@ -81,7 +107,7 @@ async def get_categories(db: Session = Depends(get_db)):
     Returns:
         List[dict]: Kategóriák listája to_dict() formátumban
     """
-    categories = db.query(category.Category).all()
+    categories = db.query(models.Category).all()
     return [cat.to_dict() for cat in categories]
 
 @app.post("/categories")  
@@ -109,8 +135,8 @@ async def create_category(
     """
     # Szülő kategória validálása ha meg van adva
     if parent_id:
-        parent = db.query(category.Category).filter(
-            category.Category.id == parent_id
+        parent = db.query(models.Category).filter(
+            models.Category.id == parent_id
         ).first()
         if not parent:
             raise HTTPException(
@@ -119,7 +145,7 @@ async def create_category(
             )
     
     # Új kategória létrehozása
-    new_category = category.Category(
+    new_category = models.Category(
         name=name,
         description=description, 
         parent_id=parent_id
@@ -145,7 +171,7 @@ async def get_manufacturers(db: Session = Depends(get_db)):
     Returns:
         List[dict]: Gyártók listája
     """
-    manufacturers = db.query(manufacturer.Manufacturer).all()
+    manufacturers = db.query(models.Manufacturer).all()
     return [mfr.to_dict() for mfr in manufacturers]
 
 @app.post("/manufacturers")
@@ -165,7 +191,7 @@ async def create_manufacturer(
     Returns:
         dict: Létrehozott gyártó adatai
     """
-    new_manufacturer = manufacturer.Manufacturer(
+    new_manufacturer = models.Manufacturer(
         name=name,
         contact_info=contact_info
     )
@@ -199,14 +225,14 @@ async def get_products(
     Returns:
         List[dict]: Termékek listája a megadott szűrőkkel
     """
-    query = db.query(product.Product)
+    query = db.query(models.Product)
     
     # Szűrők alkalmazása ha meg vannak adva
     if category_id:
-        query = query.filter(product.Product.category_id == category_id)
+        query = query.filter(models.Product.category_id == category_id)
     if manufacturer_id:
         query = query.filter(
-            product.Product.manufacturer_id == manufacturer_id
+            models.Product.manufacturer_id == manufacturer_id
         )
     
     # Lapozás alkalmazása
@@ -245,8 +271,8 @@ async def create_product(
     """
     # Kategória validálása
     if category_id:
-        cat = db.query(category.Category).filter(
-            category.Category.id == category_id
+        cat = db.query(models.Category).filter(
+            models.Category.id == category_id
         ).first()
         if not cat:
             raise HTTPException(
@@ -256,8 +282,8 @@ async def create_product(
     
     # Gyártó validálása  
     if manufacturer_id:
-        mfr = db.query(manufacturer.Manufacturer).filter(
-            manufacturer.Manufacturer.id == manufacturer_id
+        mfr = db.query(models.Manufacturer).filter(
+            models.Manufacturer.id == manufacturer_id
         ).first()
         if not mfr:
             raise HTTPException(
@@ -266,7 +292,7 @@ async def create_product(
             )
     
     # Új termék létrehozása
-    new_product = product.Product(
+    new_product = models.Product(
         name=name,
         description=description,
         price=price,

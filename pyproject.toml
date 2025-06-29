@@ -54,12 +54,12 @@ dev = [
 ]
 
 [project.scripts]
-lambda-demo = "backend.run_demo_scrape:main"
-lambda-backend = "backend.app.main:app"
+lambda-demo = "src.backend.run_demo_scrape:main"
+lambda-backend = "src.backend.app.main:app"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["backend"]
+packages = ["src/backend"]
