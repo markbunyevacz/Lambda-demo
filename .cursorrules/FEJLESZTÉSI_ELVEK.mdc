@@ -13,6 +13,23 @@ FEJLESZTÉSI_ELVEK.md (Project Rules for Cursor)
 - A "Teljes Rendszerterv" és az "Implementációs Útmutató" dokumentumokban lefektetett technológiai stacket (FastAPI, SQLAlchemy, Scrapy, React/Next.js, LangChain, Celery, PostgreSQL) használd.
 
 ## Fejlesztési Metodológia (Tapasztalatok Alapján)
+
+### PROVEN SUCCESS METHODOLOGY (2025-01-27 - Rockwool Termékadatlap)
+**🎯 Evidence-First Development Process:**
+1. **Evidence-First Approach** - Always start with existing working data (debug files, cached content)
+2. **Incremental Component Testing** - Test each component individually before integration
+3. **Zero Data Loss Policy** - Implement duplicate handling, never overwrite existing data
+4. **Fresh Data Strategy** - Auto-refresh content before scraping when possible
+5. **Production Validation** - Complete end-to-end testing before marking anything as complete
+
+**🔧 Technical Implementation Patterns:**
+- **Smart Duplicate Handling**: Use subdirectories (`duplicates/`) with URL hashing for unique filenames
+- **Debug File Strategy**: Use cached HTML content to bypass dynamic loading issues (cookie dialogs)
+- **Async Concurrent Downloads**: Implement async/await patterns for performance
+- **Comprehensive Logging**: Include success/failure counts, file locations, and processing time
+- **Graceful Fallbacks**: Always provide fallback mechanisms when primary methods fail
+
+### LEGACY METHODOLOGY (Pre-2025-01-27)
 - **Strukturált problémamegoldás**: Minden hibánál vagy feladatnál előbb elemezd a problémát, tervezd meg a megoldást, CSAK AZTÁN kezdj el kódolni.
 - **Dokumentálás közben**: Minden jelentős változtatásnál azonnal írd meg a dokumentációt és kommenteket - ez segít átgondolni a megoldást.
 - **Verzió kompatibilitás ellenőrzés**: Docker környezetben MINDIG ellenőrizd a függőség verziókat mielőtt implementálnál.
@@ -347,7 +364,44 @@ python -m app.agents.my_new_agent
 
 Ez az AI Agent specifikációs sablon biztosítja, hogy minden új agent konzisztens legyen a Lambda demo architektúrájával és támogassa a jövőbeli skálázhatóságot.
 
+## Client-Specific Architecture Methodology (2025-01-27)
+
+### Modular Scraper Design Principles
+**🏗️ Architecture Pattern (from ROCKWOOL_CLIENT_ARCHITECTURE.md):**
+```
+clients/
+├── rockwool/
+│   ├── scrapers/termekadatlapok.py    # Client-specific implementation
+│   ├── config/endpoints.py           # URL and selector configuration
+│   └── utils/file_manager.py         # Client-specific utilities
+├── shared/
+│   ├── base/scraper.py               # Abstract base classes
+│   └── mcp/brightdata_client.py      # Shared MCP functionality
+└── factory/client_factory.py         # Factory pattern for scalability
+```
+
+**🔧 Implementation Strategy:**
+1. **Separation of Concerns**: Each client has isolated codebase
+2. **Reusable Components**: Shared utilities for common functionality
+3. **Factory Pattern**: `ClientFactory.create_scraper("rockwool", "termekadatlapok")`
+4. **Clean API Interface**: `/api/clients/rockwool/scrape/termekadatlapok`
+5. **Comprehensive Testing**: Client-specific test suites with fixtures
+
+**📋 Migration Protocol:**
+- Phase 1: Extract working code to client-specific modules
+- Phase 2: Implement factory pattern and shared components
+- Phase 3: Create clean API interfaces
+- Phase 4: Add comprehensive testing and documentation
+
+### Success Metrics for Client Modules
+- **100% Data Preservation**: No files lost during processing
+- **Smart Duplicate Handling**: Subdirectory organization with unique naming
+- **Fresh Data Capability**: Auto-refresh before scraping
+- **Production Validation**: End-to-end testing with real data
+- **Clear Documentation**: API reference and troubleshooting guides
+
 ## Memory Management és Tanulás
 - **Tapasztalatok rögzítése**: Minden jelentős problémamegoldás után memory létrehozása a jövőbeli referenciára.
 - **Ismétlődő hibák elkerülése**: Memory ellenőrzés minden hasonló feladat előtt.
 - **Folyamatos fejlődés**: Rendszeres visszatekintés és módszertan finomítás.
+- **🎯 SUCCESS PATTERN REPLICATION**: Use proven Rockwool Termékadatlap methodology for all future scrapers.

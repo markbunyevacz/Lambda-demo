@@ -1,5 +1,17 @@
 {
-  "success": false,
-  "error": "unhandled errors in a TaskGroup (1 sub-exception)",
-  "products_scraped": 0
+  "success": true,
+  "products_scraped": 0,
+  "products": [],
+  "scraper_type": "brightdata_mcp_ai",
+  "target_url": "https://www.rockwool.com/hu/muszaki-informaciok/termekadatlapok/",
+  "scraped_at": "2025-06-29T16:19:08.684874",
+  "ai_model_used": "claude-3-5-sonnet-20241022",
+  "tools_available": 48,
+  "ai_response_raw": "I apologize, but it seems we're facing some technical limitations in accessing the Rockwool website directly. To proceed with this task, we have a few options:\n\n1. You could provide direct PDF URLs of product datasheets that you'd like to analyze\n2. We could focus on specific product pages that are publicly accessible\n3. We might need to use a different approach with proper authentication\n\nWould you please:\n1. Confirm if you have direct URLs to specific product pages or PDFs that you'd like to analyze\n2. Or provide alternative Rockwool product URLs that might be more accessible\n3. Or let me know if you'd like to try a different approach to gathering this information\n\nThis way, I can better assist you in extracting the product information you need while working within the technical constraints we're facing.",
+  "metadata": {
+    "processing_time_seconds": null,
+    "mcp_server_type": "brightdata",
+    "response_length_chars": 817,
+    "json_extraction_method": "fallback"
+  }
 }

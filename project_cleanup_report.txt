@@ -1,0 +1,78 @@
+
+=== DUPLICATE FILES ===
+
+Duplicate content (hash: 44136fa3):
+  - .mypy_cache\3.11\@plugins_snapshot.json
+  - frontend\.next\react-loadable-manifest.json
+  - frontend\.next\server\pages-manifest.json
+
+
+=== SIMILAR FUNCTIONS ===
+
+Similar function (hash: da1b80bf):
+  - rockwool_scraper_final.py: __init__() at line 35
+  - backend\app\scrapers\rockwool_final\scraper.py: __init__() at line 35
+
+Similar function (hash: bb900058):
+  - rockwool_scraper_final.py: _parse_products_from_html() at line 131
+  - backend\app\scrapers\rockwool_final\scraper.py: _parse_products_from_html() at line 131
+
+Similar function (hash: 0fdd5219):
+  - rockwool_scraper_final.py: _log_summary() at line 196
+  - backend\app\scrapers\rockwool_final\scraper.py: _log_summary() at line 201
+
+Similar function (hash: be5075e3):
+  - backend\app\agents\brightdata_agent.py: _extract_urls_from_response() at line 324
+  - backend\app\scraper\brightdata_agent.py: _extract_urls_from_response() at line 310
+
+
+=== OUTDATED FILES (90+ days) ===
+  - nvm-installer\nvm-setup.exe (last modified: 2025-01-01)
+
+
+=== EMPTY DIRECTORIES ===
+  - C:\Users\Admin\.cursor\Lambda\backend\data\scraped_pdfs\rockwool
+  - C:\Users\Admin\.cursor\Lambda\data\scraped_pdfs\rockwool
+  - C:\Users\Admin\.cursor\Lambda\downloads\brightdata_test
+  - C:\Users\Admin\.cursor\Lambda\downloads\rockwool_pricelists_brochures
+  - C:\Users\Admin\.cursor\Lambda\downloads\standalone_test
+  - C:\Users\Admin\.cursor\Lambda\frontend\.next\cache\swc\plugins\v7_linux_x86_64_0.106.15
+  - C:\Users\Admin\.cursor\Lambda\frontend\.next\cache\swc\plugins\v7_linux_x86_64_9.0.0
+
+
+=== UNDERUTILIZED DIRECTORIES ===
+  - C:\Users\Admin\.cursor\Lambda\.mypy_cache\3.11\langgraph\cache
+  - C:\Users\Admin\.cursor\Lambda\.mypy_cache\3.11\langgraph\checkpoint
+  - C:\Users\Admin\.cursor\Lambda\.mypy_cache\3.11\langgraph\store
+  - C:\Users\Admin\.cursor\Lambda\backend\data
+  - C:\Users\Admin\.cursor\Lambda\backend\data\pdfs
+  - C:\Users\Admin\.cursor\Lambda\backend\data\scraped_pdfs
+  - C:\Users\Admin\.cursor\Lambda\backend\data\scraped_pdfs\rockwool
+  - C:\Users\Admin\.cursor\Lambda\backend\downloads
+  - C:\Users\Admin\.cursor\Lambda\data
+  - C:\Users\Admin\.cursor\Lambda\data\scraped_pdfs
+  - C:\Users\Admin\.cursor\Lambda\data\scraped_pdfs\rockwool
+  - C:\Users\Admin\.cursor\Lambda\downloads
+  - C:\Users\Admin\.cursor\Lambda\downloads\brightdata_test
+  - C:\Users\Admin\.cursor\Lambda\downloads\rockwool_pricelists_brochures
+  - C:\Users\Admin\.cursor\Lambda\downloads\standalone_test
+  - C:\Users\Admin\.cursor\Lambda\frontend\.next\cache\swc
+  - C:\Users\Admin\.cursor\Lambda\frontend\.next\cache\swc\plugins
+  - C:\Users\Admin\.cursor\Lambda\frontend\.next\cache\swc\plugins\v7_linux_x86_64_0.106.15
+  - C:\Users\Admin\.cursor\Lambda\frontend\.next\cache\swc\plugins\v7_linux_x86_64_9.0.0
+  - C:\Users\Admin\.cursor\Lambda\frontend\.next\cache\webpack
+  - C:\Users\Admin\.cursor\Lambda\frontend\.next\static
+  - C:\Users\Admin\.cursor\Lambda\frontend\.next\static\css
+  - C:\Users\Admin\.cursor\Lambda\frontend\src
+
+
+=== DEPENDENCY MANAGEMENT ===
+
+Python dependency files:
+  - pyproject.toml
+  - backend\requirements.txt
+
+JavaScript dependency files:
+  - frontend\package.json
+  - frontend\.next\package.json
+  - frontend\.next\types\package.json
