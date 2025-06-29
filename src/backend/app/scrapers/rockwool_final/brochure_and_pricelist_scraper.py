@@ -1,14 +1,18 @@
 """
-Rockwool Brochure Scraper - Enhanced with Proven Success Methodology
-This module scrapes and downloads PDF brochures and pricelists
-from the Rockwool Hungary "Árlisták és Prospektusok" page.
+Rockwool Brochure and Pricelist Scraper
+---------------------------------------
 
-Enhanced Features:
-- Fresh debug file refresh before each scraping session
-- Smart duplicate handling with separate duplicates directory
-- URL hashing for unique duplicate filenames
-- Never deletes any content
-- Comprehensive logging and error handling
+Purpose:
+This script is responsible for downloading all supplementary documents,
+such as marketing brochures, official pricelists, and installation guides,
+from the Rockwool Hungary website. It complements the datasheet scraper.
+
+Key Features:
+- Targets the "Pricelists and Brochures" section of the website.
+- Uses a direct HTML parsing method on content fetched via BrightData.
+- Fully asynchronous downloads for high performance.
+
+This is a final, production-ready version.
 """
 import asyncio
 import logging
@@ -18,7 +22,9 @@ import re
 import hashlib
 from pathlib import Path
 from datetime import datetime
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin
+from bs4 import BeautifulSoup
+import os
 
 # --- Configuration ---
 logging.basicConfig(

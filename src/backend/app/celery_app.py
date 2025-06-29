@@ -75,82 +75,9 @@ celery_app.conf.update(
     task_ignore_result=False,
 )
 
-# Beat schedule - ütemezett feladatok
-celery_app.conf.beat_schedule = {
-    # Napi Rockwool scraping
-    'daily-rockwool-scraping': {
-        'task': 'app.celery_tasks.scraping_tasks.scheduled_rockwool_scraping',
-        'schedule': 60.0 * 60.0 * 24.0,  # 24 óránként (másodpercekben)
-        'options': {
-            'queue': 'scraping',
-            'expires': 60 * 60 * 2  # 2 óra alatt le kell futnia
-        }
-    },
-    
-    # Heti teljes scraping
-    'weekly-full-scraping': {
-        'task': 'app.celery_tasks.scraping_tasks.weekly_full_scraping',
-        'schedule': 60.0 * 60.0 * 24.0 * 7.0,  # Hetente
-        'options': {
-            'queue': 'scraping',
-            'expires': 60 * 60 * 6  # 6 óra alatt
-        }
-    },
-    
-    # Adatbázis karbantartás
-    'database-maintenance': {
-        'task': 'app.celery_tasks.database_tasks.database_maintenance',
-        'schedule': 60.0 * 60.0 * 24.0,  # Naponta
-        'options': {
-            'queue': 'database'
-        }
-    },
-    
-    # Scraping statisztikák riport
-    'daily-scraping-report': {
-        'task': 'app.celery_tasks.notification_tasks.send_daily_scraping_report',
-        'schedule': 60.0 * 60.0 * 24.0,  # Naponta
-        'options': {
-            'queue': 'notifications'
-        }
-    }
-}
-
-
-# Celery signals
-@celery_app.task(bind=True)
-def debug_task(self):
-    """Debug feladat a Celery tesztelésére"""
-    print(f'Request: {self.request!r}')
-    return 'Celery működik!'
-
-
-# Worker startup hook
-@celery_app.on_after_configure.connect
-def setup_periodic_tasks(sender, **kwargs):
-    """Worker indítás után futó setup"""
-    from app.celery_tasks.scraping_tasks import test_scraper_connection
-    
-    # Tesztelő feladat 30 másodperc múlva
-    sender.add_periodic_task(
-        30.0, 
-        test_scraper_connection.s(), 
-        name='Scraper kapcsolat teszt'
-    )
-
-
-# Worker ready hook
-@celery_app.on_after_finalize.connect
-def setup_periodic_tasks_finalize(sender, **kwargs):
-    """Worker teljes indítás után"""
-    import logging
-    
-    logger = logging.getLogger(__name__)
-    logger.info("Celery worker inicializálva és ready")
-    logger.info(f"Broker: {celery_app.conf.broker_url}")
-    logger.info(f"Backend: {celery_app.conf.result_backend}")
-    logger.info(f"Ütemezett feladatok: {len(celery_app.conf.beat_schedule)}")
-
+# A `beat_schedule` és a `setup_periodic_tasks` funkciók eltávolítva,
+# mivel az időzített feladatok logikája elavult. A Celery mostantól
+# csak az API-n keresztül manuálisan indított taskokat hajtja végre.
 
 if __name__ == '__main__':
     celery_app.start() 

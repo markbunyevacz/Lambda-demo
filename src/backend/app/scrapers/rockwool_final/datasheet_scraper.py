@@ -1,10 +1,20 @@
 """
-Rockwool Final Scraper - Direct Implementation
-This module contains the final, working implementation for scraping
-and downloading PDF datasheets from the Rockwool Hungary website.
+Rockwool Datasheet Scraper
+--------------------------
 
-It uses a direct scraping method with BrightData tools, bypassing
-any complex AI agent logic for the scraping step itself.
+Purpose:
+This script is responsible for scraping and downloading all official product
+datasheets (PDFs) from the Rockwool Hungary website. It is the primary tool
+for gathering detailed technical information about products.
+
+Key Features:
+- Uses a robust "debug file" strategy for reliability, refreshing from live
+  data when possible.
+- Handles duplicate files intelligently by saving them to a separate
+  subdirectory with unique names.
+- Fully asynchronous downloads for high performance.
+
+This is a final, production-ready version.
 """
 import asyncio
 import logging
@@ -14,7 +24,7 @@ import os
 import re
 from pathlib import Path
 from datetime import datetime
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin
 
 # --- Configuration ---
 logger = logging.getLogger(__name__)

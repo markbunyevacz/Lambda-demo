@@ -21,32 +21,27 @@ A Lambda.hu egy AI-alapú építőanyag keresési és ajánlási rendszer, amely
 ### DevOps
 - **Docker & Docker Compose** - Konténerizáció és orchestration
 - **Node.js 18 Alpine** - Könnyű production environment
+- **uv** - Python csomagkezelő
 
 ## Projekt Struktúra
 
 ```
 Lambda/
-├── backend/                 # FastAPI alkalmazás
-│   ├── app/
-│   │   ├── main.py         # FastAPI app entry point
-│   │   ├── database.py     # Adatbázis konfiguráció
-│   │   └── models/         # SQLAlchemy modellek
-│   │       ├── category.py
-│   │       ├── manufacturer.py
-│   │       └── product.py
-│   ├── requirements.txt    # Python függőségek
-│   └── Dockerfile
-├── frontend/               # Next.js alkalmazás
-│   ├── src/
-│   │   └── app/
-│   │       ├── globals.css # Globális stílusok
-│   │       ├── layout.tsx  # Főlayout komponens
-│   │       └── page.tsx    # Főoldal komponens
-│   ├── package.json        # Node.js függőségek
-│   ├── next.config.js      # Next.js konfiguráció
-│   ├── tailwind.config.js  # Tailwind konfiguráció
-│   └── Dockerfile
-└── docker-compose.yml      # Multi-service orchestration
+├── src/                           # Forráskód (backend, frontend)
+│   ├── backend/                   # FastAPI alkalmazás
+│   └── frontend/                  # Next.js alkalmazás
+├── scripts/                       # Segédscriptek (pl. elemzők, tesztelők)
+│   ├── archive/                   # Régi, már nem használt scriptek
+│   └── ...
+├── docs/                          # Projekt dokumentáció
+│   ├── README.md                  # Ez a fájl
+│   └── ...
+├── tools/                         # Külső, fejlesztést segítő eszközök
+├── .cursorrules/                  # Cursor AI szabályok
+├── .env.example                   # Környezeti változók sablonja
+├── docker-compose.yml             # Docker szolgáltatások definíciója
+├── pyproject.toml                 # Python projekt és függőségek (uv)
+└── uv.lock                        # Rögzített függőségi fa
 ```
 
 ## Telepítés és Futtatás
@@ -63,12 +58,15 @@ git clone <repository-url>
 cd Lambda
 ```
 
-2. **Docker szolgáltatások indítása**
+2. **`.env` fájl létrehozása**
+A projekt gyökerében hozz létre egy `.env` fájlt a `.env.example` sablon alapján, és töltsd ki a szükséges értékekkel (API kulcsok, jelszavak).
+
+3. **Docker szolgáltatások indítása**
 ```bash
 docker-compose up --build
 ```
 
-3. **Szolgáltatások elérése**
+4. **Szolgáltatások elérése**
 - Frontend: http://localhost:3000
 - Backend API: http://localhost:8000
 - API dokumentáció: http://localhost:8000/docs
@@ -78,7 +76,7 @@ docker-compose up --build
 ### Backend (Port: 8000)
 ```yaml
 backend:
-  build: ./backend
+  build: ./src/backend
   ports: ["8000:8000"]
   depends_on: [db, cache]
 ```
@@ -86,7 +84,7 @@ backend:
 ### Frontend (Port: 3000)  
 ```yaml
 frontend:
-  build: ./frontend
+  build: ./src/frontend
   ports: ["3000:3000"]
 ```
 
@@ -97,7 +95,7 @@ db:
   environment:
     POSTGRES_DB: lambda_db
     POSTGRES_USER: lambda_user
-    POSTGRES_PASSWORD: lambda_pass
+    POSTGRES_PASSWORD: your_db_password_here # .env fájlban beállítandó
 ```
 
 ### Redis Cache (Port: 6379)
@@ -167,6 +165,7 @@ cache:
 - [ ] Fejlett szűrési lehetőségek
 - [ ] Performance optimalizáció
 - [ ] Testing coverage növelése
+- [ ] **Celery taskok újraírása** az új scraper architektúrára.
 
 ## Hibakeresési Tippek
 
@@ -216,32 +215,30 @@ A Lambda demo most már tartalmazza a **BrightData MCP (Model Context Protocol)*
 
 2. **Környezeti változók (.env):**
    ```bash
+   # Hozd létre a .env fájlt az .env.example alapján!
    BRIGHTDATA_API_TOKEN=your-brightdata-token
-   BRIGHTDATA_WEB_UNLOCKER_ZONE=web-unlocker
    ANTHROPIC_API_KEY=your-anthropic-key
+   # ...
    ```
 
 3. **Dependencies telepítése:**
-   ```bash
-   cd backend
-   pip install langchain langchain-anthropic langchain-mcp-adapters langgraph mcp
-   ```
+   A függőségeket a `uv` automatikusan telepíti a `pyproject.toml` alapján a Docker image építésekor. Manuális telepítésre nincs szükség.
 
 4. **Tesztelés:**
    ```bash
-   docker-compose exec backend python -c "from app.agents import BrightDataMCPAgent; print('✅ MCP Ready!')"
+   docker-compose exec backend python -c "from src.backend.app.agents import BrightDataMCPAgent; print('✅ MCP Ready!')"
    ```
 
 ### 📚 Részletes Dokumentáció
 
-- [BrightData MCP Setup Guide](backend/BRIGHTDATA_MCP_SETUP.md)
-- [AI Agent Specification](cursorrules/FEJLESZTÉSI_ELVEK.md#9-ai-agent-specifikációs-sablon)
-- [API Documentation](backend/app/scraper/README.md)
+- [BrightData MCP Setup Guide](docs/BRIGHTDATA_MCP_SETUP_DOCUMENTATION.md)
+- [AI Agent Specification](.cursorrules/FEJLESZTÉSI_ELVEK.mdc)
+- [Scraper API Documentation](src/backend/app/scraper/README.md)
 
 ### 🎮 Demo Használat
 
 ```python
-from app.agents import BrightDataMCPAgent, ScrapingCoordinator
+from src.backend.app.agents import BrightDataMCPAgent, ScrapingCoordinator
 
 # AI scraping
 agent = BrightDataMCPAgent()
