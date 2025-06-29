@@ -5,99 +5,151 @@ alwaysApply: true
 ---
 # Lambda.hu Építőanyag AI Rendszer - Fejlesztési Backlog
 
-## Minimum Credible Product (MCP) Célja
-**Cél:** Bemutatni a rendszer alapvető képességét: egy felhasználó természetes nyelven kereshet építőanyagot, a rendszer pedig a naprakész, "scraped" adatok alapján releváns termékeket és AI-alapú szakértői választ ad.
-- **Gyártók:** Csak 1 gyártó (Rockwool) adatainak teljes feldolgozása.
-- **Funkciók:**
-    - **Hibrid adatgyűjtés és feldolgozás** (Rockwool): Hagyományos scraper + **🚀 BrightData MCP AI** (48 tools, CAPTCHA solving)
-    - Strukturált adatbázis (PostgreSQL) és vektor adatbázis (Chroma).
-    - Természetes nyelvű keresés (RAG pipeline) és egyszerű, szűrő nélküli terméklista.
-    - Egyszerűsített UI: egy keresőmező, egy AI chat ablak és egy terméklista megjelenítő.
-- **Nem része az MCP-nek:** Több gyártó, ajánlatkészítő modul, komplex szűrők, felhasználói fiókok.
+## 📋 TARTALOMJEGYZÉK
+1. [Projekt Áttekintés](mdc:#1-projekt-áttekintés)
+2. [Aktuális Státusz](mdc:#2-aktuális-státusz)
+3. [Fejlesztési Fázisok](mdc:#3-fejlesztési-fázisok)
+4. [AI Agent Fejlesztések](mdc:#4-ai-agent-fejlesztések)
+5. [Következő Lépések](mdc:#5-következő-lépések)
+6. [Proven Metodológia](mdc:#6-proven-metodológia)
 
 ---
 
-## Teljes Projekt Fázisok és Feladatok
+## 1. PROJEKT ÁTTEKINTÉS
 
-### Fázis 1: Alapozás és Infrastruktúra (Hét 1-2) ✅ VERIFIED COMPLETE
+### 1.1 Minimum Credible Product (MCP) Célja
+**🎯 Cél:** Bemutatni a rendszer alapvető képességét: egy felhasználó természetes nyelven kereshet építőanyagot, a rendszer pedig a naprakész, "scraped" adatok alapján releváns termékeket és AI-alapú szakértői választ ad.
+
+### 1.2 MCP Scope
+**✅ Része az MCP-nek:**
+- **Gyártók**: Csak 1 gyártó (Rockwool) adatainak teljes feldolgozása
+- **Hibrid adatgyűjtés**: Hagyományos scraper + **🚀 BrightData MCP AI** (48 tools, CAPTCHA solving)
+- **Adatbázisok**: Strukturált adatbázis (PostgreSQL) és vektor adatbázis (Chroma)
+- **Keresés**: Természetes nyelvű keresés (RAG pipeline) és egyszerű terméklista
+- **UI**: Egy keresőmező, egy AI chat ablak és egy terméklista megjelenítő
+
+**❌ Nem része az MCP-nek:**
+- Több gyártó támogatása
+- Ajánlatkészítő modul
+- Komplex szűrők
+- Felhasználói fiókok
+
+---
+
+## 2. AKTUÁLIS STÁTUSZ
+
+### 2.1 ✅ PRODUCTION COMPLETE (Verified & Tested)
+**Total: 2 major modules completed to production standard**
+
+#### **Rockwool Termékadatlap Scraper** ✅ PRODUCTION COMPLETE
+- **Evidence**: 45 product datasheets downloaded with 100% success rate
+- **Tested**: `rockwool_scraper_final.py` - End-to-end production testing completed
+- **Location**: `downloads/final_test/` (34 unique) + `downloads/final_test/duplicates/` (11 duplicates)
+- **Features**: Fresh debug file refresh, smart duplicate handling, zero data loss
+- **Performance**: 45 products found, 45 downloads successful, 0 failed
+
+#### **Rockwool Árlisták Scraper** ✅ PRODUCTION COMPLETE
+- **Evidence**: 12 brochures and pricelists downloaded with 100% success rate
+- **Tested**: `backend/app/scrapers/rockwool_final/brochure_scraper.py`
+- **Location**: `downloads/rockwool_brochures/` (12 unique files, 0 duplicates)
+- **Key Documents**: ROCKWOOL Árlista 2025 (8.48 MB), ProRox Árlista (6.61 MB)
+- **Enhancement**: Applied proven success methodology
+
+### 2.2 ✅ INFRASTRUCTURE READY (Awaiting Verification)
+**Total: 42 components with infrastructure completed**
+
+#### **Alapinfrastruktúra** ✅
+- Projektstruktúra felállítása (Backend, Docker)
+- Docker-compose konfiguráció (FastAPI, PostgreSQL, Redis)
+- Adatbázis sémák és SQLAlchemy modellek
+- Alapvető FastAPI alkalmazás (CORS és DB kapcsolattal)
+- Alapvető Next.js/React frontend váz
+
+#### **BrightData MCP AI Scraping Rendszer** ✅ INFRASTRUCTURE READY
+- **Evidence**: Connection to MCP server successful, all 48 tools loaded
+- **Tested**: Standalone scripts confirmed MCP server initialization
+- **Requires**: Human verification for full AI-driven scraping task
+
+#### **Adatbázis és Automatizálás** ✅ INFRASTRUCTURE READY
+- **Adatbázis Integrációs Logika**: All data models and integration services defined
+- **Celery és Celery Beat**: All tasks and scheduling configurations defined
+- **Integrációs Tesztelés**: `test_integration.py` framework exists
+
+### 2.3 🔄 IN DEVELOPMENT (Current Priority)
+**Immediate Next Steps:**
+1. **Client-Specific Architecture** - Modular design implementation
+2. **Factory Pattern Implementation** - Reusable scraper framework
+3. **Database Integration Testing** - Save 57 Rockwool documents to PostgreSQL
+
+### 2.4 🔍 AWAITING HUMAN VERIFICATION
+**Critical Items Requiring Testing:**
+1. **BrightData MCP Integration** - Production testing required
+2. **Database Integration** - Large-scale data processing verification
+3. **Celery Automation** - Production scheduling verification
+
+---
+
+## 3. FEJLESZTÉSI FÁZISOK
+
+### 3.1 Fázis 1: Alapozás és Infrastruktúra ✅ VERIFIED COMPLETE
 - [x] Projektstruktúra felállítása (Backend, Docker)
 - [x] Docker-compose konfiguráció (FastAPI, PostgreSQL, Redis)
 - [x] Adatbázis sémák és SQLAlchemy modellek létrehozása
 - [x] Alapvető FastAPI alkalmazás létrehozása, CORS és DB kapcsolattal
 - [x] Alapvető Next.js/React frontend váz létrehozása
 
-### Fázis 2: Adat-pipeline és Web Scraping (Hét 2-4) ✅ PRODUCTION READY
+### 3.2 Fázis 2: Adat-pipeline és Web Scraping ✅ PRODUCTION READY
 - [x] **Rockwool Termékadatlap Scraper** ✅ PRODUCTION COMPLETE
-  - **Evidence**: 45 product datasheets downloaded with 100% success rate
-  - **Tested**: `rockwool_scraper_final.py` - End-to-end production testing completed
-  - **Location**: `downloads/final_test/` (34 unique) + `downloads/final_test/duplicates/` (11 duplicates)
-  - **Features**: Fresh debug file refresh, smart duplicate handling, zero data loss
-  - **Performance**: 45 products found, 45 downloads successful, 0 failed
-  - **Komponens Riport:**
-    - [x] O74DocumentationList component parsing ✅ PRODUCTION COMPLETE
-    - [x] Cookie consent dialog bypass ✅ PRODUCTION COMPLETE
-    - [x] Concurrent async PDF downloads ✅ PRODUCTION COMPLETE
-    - [x] Duplicate file preservation system ✅ PRODUCTION COMPLETE
-    - [x] Fresh data refresh mechanism ✅ PRODUCTION COMPLETE
 - [x] **Rockwool Árlisták Scraper** ✅ PRODUCTION COMPLETE
-  - **Evidence**: 12 brochures and pricelists downloaded with 100% success rate
-  - **Tested**: `backend/app/scrapers/rockwool_final/brochure_scraper.py` - Enhanced with proven methodology
-  - **Location**: `downloads/rockwool_brochures/` (12 unique files, 0 duplicates)
-  - **Features**: Fresh debug file refresh, smart duplicate handling, enhanced logging
-  - **Performance**: 12 documents found, 12 downloads successful, 0 failed
-  - **Key Documents**: ROCKWOOL Árlista 2025 (8.48 MB), ProRox Árlista (6.61 MB)
-  - **Enhancement**: Applied same proven success methodology as termékadatlap scraper
 - [x] **BrightData MCP AI Scraping Rendszer** ✅ INFRASTRUCTURE READY
-  - **Evidence**: Connection to MCP server is successful, and all 48 tools are loaded.
-  - **Tested**: Standalone scripts confirmed that the MCP server can be initialized and tools can be listed.
-  - **Requires**: Human verification for a full, AI-driven scraping task on a new target.
+- [x] **Adatbázis Integrációs Logika** ✅ INFRASTRUCTURE READY
+- [x] **Celery és Celery Beat Időzítés** ✅ INFRASTRUCTURE READY
+- [x] **Integrációs Tesztelés** ✅ INFRASTRUCTURE READY
 - [ ] **Leier scraper implementációja** 🔄 PLANNED
 - [ ] **Baumit scraper implementációja** 🔄 PLANNED
-- [x] **Adatbázis Integrációs Logika** ✅ INFRASTRUCTURE READY
-  - **Evidence**: All data models and integration services are defined.
-  - **Tested**: Basic object creation and session initialization.
-  - **Requires**: End-to-end testing by saving the 57 scraped Rockwool documents into the PostgreSQL database.
-- [x] **Celery és Celery Beat Időzítés** ✅ INFRASTRUCTURE READY
-  - **Evidence**: All Celery tasks and scheduling configurations are defined.
-  - **Tested**: Celery worker and beat can be started within the Docker environment.
-  - **Requires**: Human verification of a scheduled scraping run.
-- [x] **Integrációs Tesztelés** ✅ INFRASTRUCTURE READY
-  - **Evidence**: `test_integration.py` framework exists.
-  - **Tested**: Individual components have been tested during debugging.
-  - **Requires**: A full, formal run of the entire test suite against the live, scraped data.
 
-### Fázis 3: AI Modul - RAG Pipeline (Hét 4-6) 🔄 PLANNED
+### 3.3 Fázis 3: AI Modul - RAG Pipeline 🔄 PLANNED
+#### **Hibrid Vektor Adatbázis**
 - [ ] **Hibrid Chroma vektor adatbázis** inicializálása és perzisztálása
-  - [ ] Hagyományos scraped adatok vektorizálása
-  - [ ] **🚀 AI-enhanced termékleírások** indexelése BrightData MCP eredményekből
-  - [ ] Magyar nyelvi embeddings optimalizálás
+- [ ] Hagyományos scraped adatok vektorizálása
+- [ ] **🚀 AI-enhanced termékleírások** indexelése BrightData MCP eredményekből
+- [ ] Magyar nyelvi embeddings optimalizálás
+
+#### **LangChain Integráció**
 - [ ] **LangChain integráció továbbfejlesztve** és `BuildingMaterialsAI` service létrehozása
-  - [ ] **AI scraping context** integrálása a RAG pipeline-ba
-  - [ ] **Intelligent retrieval** - forrás preferenciák (API vs MCP AI)
-  - [ ] **Real-time scraping capability** természetes nyelvű kérésekre
+- [ ] **AI scraping context** integrálása a RAG pipeline-ba
+- [ ] **Intelligent retrieval** - forrás preferenciák (API vs MCP AI)
+- [ ] **Real-time scraping capability** természetes nyelvű kérésekre
+
+#### **AI Képességek**
 - [ ] Termékadatok automatikus vektorizálása és indexelése (hibrid források)
 - [ ] Q&A lánc létrehozása a magyar nyelvű, építészeti szakértői prompt-tal
 - [ ] **🚀 AI confidence score** alapú termék rangsorolás és válaszminőség
 - [ ] Kompatibilitás-ellenőrző logika alapjainak implementálása (`check_system_compatibility`)
 
-### Fázis 4: Backend API és Frontend Integráció (Hét 6-9) 🔄 PLANNED
+### 3.4 Fázis 4: Backend API és Frontend Integráció 🔄 PLANNED
+#### **Hibrid API Végpontok**
 - [ ] **Hibrid termékkereső API** végpont létrehozása (szöveges keresés + szűrés)
-  - [ ] **🚀 `/api/search/hybrid`** - Kombinálja hagyományos + AI eredményeket
-  - [ ] **🚀 `/api/scraping/intelligent`** - Real-time AI scraping kérésre
-  - [ ] **🚀 `/api/scraping/status`** - AI scraping feladatok monitoring
+- [ ] **🚀 `/api/search/hybrid`** - Kombinálja hagyományos + AI eredményeket
+- [ ] **🚀 `/api/scraping/intelligent`** - Real-time AI scraping kérésre
+- [ ] **🚀 `/api/scraping/status`** - AI scraping feladatok monitoring
+
+#### **AI Chat API**
 - [ ] **AI Chat API továbbfejlesztve** (`get_product_recommendations`)
-  - [ ] **🚀 `/api/ai/analyze-product`** - Termék AI elemzés kérésre
-  - [ ] BrightData MCP eredmények integrálása válaszokba
+- [ ] **🚀 `/api/ai/analyze-product`** - Termék AI elemzés kérésre
+- [ ] BrightData MCP eredmények integrálása válaszokba
 - [ ] Kompatibilitás-ellenőrző API végpont létrehozása (AI-enhanced)
+
+#### **Frontend Fejlesztések**
 - [ ] **Frontend: AI-enhanced termékkereső** interface fejlesztése
-  - [ ] **🚀 Real-time scraping status** indicator
-  - [ ] **🚀 AI confidence score** megjelenítés termékeknél
-  - [ ] **🚀 "Kérd el AI-tól új termékeket"** funkció
+- [ ] **🚀 Real-time scraping status** indicator
+- [ ] **🚀 AI confidence score** megjelenítés termékeknél
+- [ ] **🚀 "Kérd el AI-tól új termékeket"** funkció
 - [ ] Frontend: AI Chat komponens fejlesztése és bekötése
 - [ ] Frontend: Termék adatlap és összehasonlító komponens fejlesztése
 - [ ] **🚀 Scraping admin panel** - stratégia váltás, monitoring (fejlesztőknek)
 
-### Fázis 5: Ajánlatkészítő Modul (Hét 9-11) 🔄 PLANNED
+### 3.5 Fázis 5: Ajánlatkészítő Modul 🔄 PLANNED
 - [ ] `quotes` adatbázis tábla és SQLAlchemy modell
 - [ ] `QuoteCalculator` service implementálása (árkalkuláció, veszteségszámítás)
 - [ ] Ajánlatkészítő API végpontok (létrehozás, lekérdezés)
@@ -105,7 +157,7 @@ alwaysApply: true
 - [ ] Email küldő szolgáltatás integrációja
 - [ ] Frontend: Ajánlatkészítő UI (kosár, véglegesítés)
 
-### Fázis 6: Finalizálás és Deployment (Hét 12) 🔄 PLANNED
+### 3.6 Fázis 6: Finalizálás és Deployment 🔄 PLANNED
 - [ ] Teljes körű API és frontend tesztelés (pytest, Jest/Playwright)
 - [ ] `Dockerfile`-ok finomhangolása éles környezetre
 - [ ] CI/CD pipeline alapjainak létrehozása (pl. GitHub Actions)
@@ -114,47 +166,133 @@ alwaysApply: true
 
 ---
 
-## 📊 SUMMARY STATUS
+## 4. AI AGENT FEJLESZTÉSEK
 
-### ✅ PRODUCTION COMPLETE (Verified & Tested)
-**Total: 2 major modules completed to production standard**
-- **Rockwool Termékadatlap Scraper** - 100% functional, tested, production-ready (45 PDFs)
-- **Rockwool Árlisták Scraper** - 100% functional, tested, production-ready (12 PDFs)
+### 4.1 🤖 AI Agent Implementációs Backlog
 
-### ✅ INFRASTRUCTURE READY (Phase 1 & 2)
-**Total: 42 components with infrastructure completed**
-- All basic project structure and configuration
-- All BrightData MCP integration components (infrastructure level)
-- All database integration components (infrastructure level)
-- All automation and testing frameworks (infrastructure level)
+#### **Adatfeldolgozó Agent** (`DataProcessingAgent`)
+- [ ] Raw adatok normalizálása és tisztítása
+- [ ] Duplikátumok intelligens eltávolítása
+- [ ] Kategorizálás és címkézés automatizálása
+- [ ] Minőségbiztosítási pipeline implementálása
 
-### 🔄 IN DEVELOPMENT (Current Priority)
-**Immediate Next Steps:**
-1. **Client-Specific Architecture** - Implement modular design from ROCKWOOL_CLIENT_ARCHITECTURE.md
-2. **Factory Pattern Implementation** - Create reusable scraper framework
-3. **Database Integration Testing** - Save 57 Rockwool documents to PostgreSQL
+#### **Ajánlási Agent - RAG** (`RecommendationAgent`)
+- [ ] Termék összehasonlítási logika
+- [ ] Személyre szabott ajánlások generálása
+- [ ] RAG alapú válaszgenerálás implementálása
+- [ ] Kontextus megértés és memória kezelés
 
-### 🔍 AWAITING HUMAN VERIFICATION
-**Critical Items Requiring Testing:**
-1. **BrightData MCP Integration** - Production testing required
-2. **Database Integration** - Large-scale data processing verification
-3. **Celery Automation** - Production scheduling verification
+#### **Árfigyelő Agent** (`PriceMonitoringAgent`)
+- [ ] Ár tracking különböző forrásokon keresztül
+- [ ] Trend analízis és előrejelzés
+- [ ] Riasztások generálása ár változásokra
+- [ ] Historikus adatok kezelése és archiválása
 
-### 🔄 PLANNED (Phase 3+)
-**22 components in planning/development phase**
+#### **Kompatibilitási Agent** (`CompatibilityAgent`)
+- [ ] Termékek kompatibilitásának automatikus ellenőrzése
+- [ ] Műszaki specifikációk összehasonlítása
+- [ ] Alkalmazási területek elemzése
+- [ ] Szabványok és előírások ellenőrzése
+
+### 4.2 🏗️ Agent Infrastruktúra Fejlesztések
+
+#### **Event Bus Integráció** (`AgentEventBus`)
+- [ ] Agent-to-agent kommunikációs rendszer
+- [ ] Event subscription/publishing mechanizmus
+- [ ] Message queuing (Redis) integráció
+- [ ] Error handling és retry logika
+
+#### **Agent Health Monitoring** (`AgentHealthMonitor`)
+- [ ] Heartbeat ellenőrzési rendszer
+- [ ] Performance metrikák gyűjtése
+- [ ] Resource használat tracking
+- [ ] Automatikus újraindítási mechanizmus
+
+#### **Agent Lifecycle Management**
+- [ ] State management (INITIALIZING → IDLE → WORKING → ERROR/STOPPING → STOPPED)
+- [ ] Graceful shutdown és restart
+- [ ] Configuration hot-reload
+- [ ] Service discovery implementálása
+
+#### **Performance Metrikák Rendszer** (`AgentMetrics`)
+- [ ] Task completion rate tracking
+- [ ] Average response time mérése
+- [ ] Error rate monitoring
+- [ ] Resource consumption analysis
+- [ ] System-wide metrikák (total active agents, message throughput)
+
+### 4.3 🛠️ Fejlesztői Tooling és Template-ek
+
+#### **Agent Template Script** implementálása
+- [ ] `python scripts/create_agent.py --name MyNewAgent --type data_processing`
+- [ ] Skeleton kódgenerálás
+- [ ] Konfiguráció template-ek
+- [ ] Testing boilerplate generálása
+
+#### **Integration Checklist** automatizálása
+- [ ] Agent osztály implementálás ellenőrzése
+- [ ] Health check endpoint validálása
+- [ ] Metrics collection tesztelése
+- [ ] Unit és integration tesztek futtatása
+
+#### **Migration Protocol** implementálása
+- [ ] Client-specific architecture átállási lépések
+- [ ] Modular scraper design pattern alkalmazása
+- [ ] Factory pattern implementálása (`ClientFactory.create_scraper()`)
+- [ ] Clean API interface létrehozása
 
 ---
 
-## 🎯 DEVELOPMENT METHODOLOGY PROVEN
+## 5. KÖVETKEZŐ LÉPÉSEK
 
-**SUCCESS PATTERN IDENTIFIED:**
+### 5.1 🎯 Azonnal Megvalósítandó (Hét 1-2)
+1. **Database Integration Testing** - Save 57 Rockwool documents to PostgreSQL
+2. **BrightData MCP Production Testing** - Full AI-driven scraping task verification
+3. **Client-Specific Architecture** - Modular design implementation
+
+### 5.2 🔄 Rövid Távú (Hét 3-4)
+1. **Factory Pattern Implementation** - Reusable scraper framework
+2. **Celery Automation Testing** - Production scheduling verification
+3. **RAG Pipeline Foundation** - Chroma vector database initialization
+
+### 5.3 📋 Közepes Távú (Hét 5-8)
+1. **AI Agent Infrastructure** - Event Bus, Health Monitoring
+2. **Hibrid API Endpoints** - Intelligent search and scraping
+3. **Frontend AI Integration** - Real-time status, confidence scores
+
+---
+
+## 6. PROVEN METODOLÓGIA
+
+### 6.1 🎯 SUCCESS PATTERN IDENTIFIED
 1. **Evidence-First Approach** - Start with existing working data (debug files)
 2. **Incremental Testing** - Test each component individually before integration
 3. **Zero Data Loss** - Implement duplicate handling, never overwrite
 4. **Fresh Data Strategy** - Auto-refresh content before scraping
 5. **Production Validation** - Complete end-to-end testing before marking complete
 
-**Key Insight:** **Working Code ≠ Infrastructure Existence**
+### 6.2 🔑 Key Insights
+**Working Code ≠ Infrastructure Existence**
 - Only mark items as PRODUCTION COMPLETE after successful end-to-end testing
 - Use "INFRASTRUCTURE READY" for components that exist but lack verification
 - Prioritize functional validation over feature expansion
+
+### 6.3 📊 Státusz Kategóriák
+- **✅ PRODUCTION COMPLETE**: Verified & Tested, ready for production use
+- **✅ INFRASTRUCTURE READY**: Code exists, basic tests pass, awaiting verification
+- **🔄 IN DEVELOPMENT**: Active development in progress
+- **🔍 AWAITING VERIFICATION**: Human testing required
+- **🔄 PLANNED**: Design/requirements ready, not yet started
+
+---
+
+## 📚 GYORS REFERENCIA
+
+### Legfontosabb Státuszok
+- **Production Complete**: 2 modulok (Rockwool scrapers)
+- **Infrastructure Ready**: 42 komponens
+- **Awaiting Verification**: 3 kritikus elem
+- **Planned**: 22+ komponens
+
+### Következő Milestone
+**🎯 Database Integration Completion** - 57 Rockwool dokumentum PostgreSQL-be mentése

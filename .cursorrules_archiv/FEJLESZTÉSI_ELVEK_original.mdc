@@ -1,0 +1,407 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+FEJLESZTÉSI_ELVEK.md (Project Rules for Cursor)
+
+# Lambda.hu Építőanyag AI Projekt - Fejlesztési Szabályok
+
+## Általános Elvek
+- Minden kódgenerálásnál és módosításnál vedd figyelembe a projekt teljes kontextusát (`@workspace`).
+- A generált kód legyen tiszta, karbantartható és kövesse a "production-ready" elveket. Nincsenek placeholder-ek vagy dummy adatok.
+- A "Teljes Rendszerterv" és az "Implementációs Útmutató" dokumentumokban lefektetett technológiai stacket (FastAPI, SQLAlchemy, Scrapy, React/Next.js, LangChain, Celery, PostgreSQL) használd.
+
+## Fejlesztési Metodológia (Tapasztalatok Alapján)
+
+### PROVEN SUCCESS METHODOLOGY (2025-01-27 - Rockwool Termékadatlap)
+**🎯 Evidence-First Development Process:**
+1. **Evidence-First Approach** - Always start with existing working data (debug files, cached content)
+2. **Incremental Component Testing** - Test each component individually before integration
+3. **Zero Data Loss Policy** - Implement duplicate handling, never overwrite existing data
+4. **Fresh Data Strategy** - Auto-refresh content before scraping when possible
+5. **Production Validation** - Complete end-to-end testing before marking anything as complete
+
+**🔧 Technical Implementation Patterns:**
+- **Smart Duplicate Handling**: Use subdirectories (`duplicates/`) with URL hashing for unique filenames
+- **Debug File Strategy**: Use cached HTML content to bypass dynamic loading issues (cookie dialogs)
+- **Async Concurrent Downloads**: Implement async/await patterns for performance
+- **Comprehensive Logging**: Include success/failure counts, file locations, and processing time
+- **Graceful Fallbacks**: Always provide fallback mechanisms when primary methods fail
+
+### LEGACY METHODOLOGY (Pre-2025-01-27)
+- **Strukturált problémamegoldás**: Minden hibánál vagy feladatnál előbb elemezd a problémát, tervezd meg a megoldást, CSAK AZTÁN kezdj el kódolni.
+- **Dokumentálás közben**: Minden jelentős változtatásnál azonnal írd meg a dokumentációt és kommenteket - ez segít átgondolni a megoldást.
+- **Verzió kompatibilitás ellenőrzés**: Docker környezetben MINDIG ellenőrizd a függőség verziókat mielőtt implementálnál.
+- **Minimális külső függőségek**: Kerüld a felesleges npm/pip csomagokat - egyszerű megoldások előnyben.
+- **Tesztelés minden lépésnél**: Ne várj a teljes implementáció végére - tesztelj építés közben.
+
+## Docker és DevOps Elvek (Kritikus Tanulságok)
+- **Next.js Docker**: MINDIG `npx next dev` használat a CMD-ben "next: not found" hibák elkerülésére.
+- **Függőség konfliktusok**: TypeScript és React verziók harmóniája kritikus - Next.js 14.2.18 + React 18 kombinációt használj.
+- **Container építés**: `--no-cache` flag használata problémák esetén, ne csak újraindítsd a service-t.
+- **Hibakeresés prioritás**: 
+  1. Container logok (`docker-compose logs [service]`)
+  2. Függőség verzió ellenőrzés
+  3. Dockerfile optimalizálás
+  4. Újabb megközelítés keresése
+- **Build estratégia**: Egyszerű single-stage Dockerfile fejlesztéshez, multi-stage csak production-ra.
+
+## Kódolási Stílus
+- **Python (Backend):**
+    - Formázó: `black`
+    - Típusellenőrzés (Type Hinting): Kötelező minden függvénydefiníciónál és változónál.
+    - API-k: Minden API végponthoz Pydantic séma szükséges a validációhoz.
+    - **Dokumentáció**: Minden funkciónál részletes docstring python konvenciókkal.
+- **TypeScript (Frontend):**
+    - Mód: `Strict mode`
+    - Típusok: Explicit `return type`-ok kötelezőek. Minden komponensnek saját `props` interface-szel kell rendelkeznie.
+    - Stílus: `Tailwind CSS`-t használj a megadott design tokenekkel.
+    - **Komponens dokumentáció**: Minden React komponens tetején komment a funkcióról.
+
+## Fájl- és Elnevezési Konvenciók
+- API route-ok: `/backend/app/api/[resource].py`
+- Adatbázis modellek: `/backend/app/models/[model].py`
+- Service-ek: `/backend/app/services/[service_name]_service.py`
+- React komponensek: `/frontend/src/components/[Feature]/[Component].tsx` (PascalCase)
+- React hook-ok: `/frontend/src/hooks/use[HookName].ts` (camelCase)
+
+## Hibakezelési Protokoll (Új)
+- **Első lépés**: Probléma pontos elemzése és dokumentálása
+- **Második lépés**: Lehetséges megoldások brainstormelése
+- **Harmadik lépés**: Legegyszerűbb megoldás implementálása
+- **Negyedik lépés**: Tesztelés és validálás
+- **Ötödik lépés**: Tapasztalatok dokumentálása a jövőre nézve
+- **TILTOTT**: Random próbálgatás és többszöri ugyanolyan megközelítés
+
+## Specifikus Projekt Követelmények
+- **Nyelv:** Minden felhasználó felé irányuló szöveg, kommentár, log üzenet és hibaüzenet legyen magyar nyelvű.
+- **Web Scraping:** Minden scraper az `async/await` patternt kövesse. A hibakezelés és az udvarias késleltetés (`asyncio.sleep`) kötelező.
+- **AI Válaszok:** Az AI asszisztens válaszainak formátuma és nyelvezete mindig feleljen meg a `Teljes Rendszerterv`-ben definiált "építészeti szakértői" stílusnak.
+- **Adatformátumok:**
+    - Az árakat `HUF` pénznemben, `m2`, `db` stb. egységekkel add meg, ahogy a Rendszertervben szerepel.
+    - A műszaki paramétereket a normalizált JSONB struktúrában tárold.
+
+## 9. AI AGENT SPECIFIKÁCIÓS SABLON
+
+### 9.1 Általános Agent Architektúra
+
+A Lambda demo AI agentjei a következő alapelvek mentén működnek:
+
+#### Agent Tulajdonságok
+- **Autonómia**: Önálló döntéshozatal a feladatkörükben
+- **Reaktivitás**: Környezet változásaira való reagálás
+- **Proaktivitás**: Kezdeményező magatartás a célok elérése érdekében
+- **Társadalmi képesség**: Más agentekkel és rendszerekkel való együttműködés
+- **Perzisztencia**: Állapot megőrzése és folyamatos működés
+
+### 9.2 Agent Típusok
+
+#### 9.2.1 Adatgyűjtő Agente (Data Collection Agent)
+```python
+class DataCollectionAgent:
+    """
+    Funkcionalitás:
+    - Web scraping koordinálása
+    - API adatgyűjtés kezelése  
+    - Adatvalidálás és tisztítás
+    - Hibakezelés és retry logika
+    """
+    
+    def __init__(self, sources, validators, storage):
+        self.sources = sources
+        self.validators = validators
+        self.storage = storage
+        
+    async def collect_data(self, targets):
+        # Implementation
+        pass
+```
+
+#### 9.2.2 BrightData MCP Agent (AI-Enhanced Scraper)
+```python
+class BrightDataMCPAgent:
+    """
+    Speciális AI-vezérelt scraping agent
+    
+    Képességek:
+    - 18 BrightData tool használata
+    - Claude AI integration
+    - Captcha megoldás
+    - Fejlett anti-detection
+    - Fallback logika
+    """
+    
+    async def scrape_with_ai(self, urls, task_description):
+        # AI-vezérelt scraping implementáció
+        pass
+```
+
+#### 9.2.3 Adatfeldolgozó Agent (Data Processing Agent)
+```python
+class DataProcessingAgent:
+    """
+    Funkcionalitás:
+    - Raw adatok normalizálása
+    - Duplikátumok eltávolítása
+    - Kategorizálás és címkézés
+    - Minőségbiztosítás
+    """
+    
+    def process_batch(self, raw_data):
+        # Implementation
+        pass
+```
+
+#### 9.2.4 Scraping Koordinátor (Scraping Coordinator)
+```python
+class ScrapingCoordinator:
+    """
+    Multi-agent koordináció
+    
+    Stratégiák:
+    - API_ONLY: Csak hagyományos API scraping
+    - MCP_ONLY: Csak BrightData MCP
+    - API_FALLBACK_MCP: API elsődleges, MCP fallback
+    - MCP_FALLBACK_API: MCP elsődleges, API fallback  
+    - PARALLEL: Párhuzamos végrehajtás
+    """
+    
+    async def coordinate_scraping(self, strategy, targets):
+        # Koordinációs logika
+        pass
+```
+
+#### 9.2.5 Ajánlási Agent (Recommendation Agent - RAG)
+```python
+class RecommendationAgent:
+    """
+    Funkcionalitás:
+    - Termék összehasonlítás
+    - Személyre szabott ajánlások
+    - RAG alapú válaszgenerálás
+    - Kontextus megértés
+    """
+    
+    def generate_recommendations(self, user_context, products):
+        # Implementation
+        pass
+```
+
+#### 9.2.6 Árfigyelő Agent (Price Monitoring Agent)
+```python
+class PriceMonitoringAgent:
+    """
+    Funkcionalitás:
+    - Ár tracking különböző forrásokon
+    - Trend analízis
+    - Riasztások generálása
+    - Historikus adatok kezelése
+    """
+    
+    async def monitor_prices(self, products):
+        # Implementation
+        pass
+```
+
+#### 9.2.7 Kompatibilitási Agent (Compatibility Agent)
+```python
+class CompatibilityAgent:
+    """
+    Funkcionalitás:
+    - Termékek kompatibilitásának ellenőrzése
+    - Műszaki specifikációk összehasonlítása
+    - Alkalmazási területek elemzése
+    - Szabványok ellenőrzése
+    """
+    
+    def check_compatibility(self, product_a, product_b):
+        # Implementation
+        pass
+```
+
+### 9.3 Agent Kommunikációs Protokollok
+
+#### 9.3.1 Üzenet Formátumok
+```python
+class AgentMessage:
+    def __init__(self, sender, recipient, message_type, payload, timestamp):
+        self.sender = sender
+        self.recipient = recipient
+        self.message_type = message_type  # REQUEST, RESPONSE, NOTIFICATION
+        self.payload = payload
+        self.timestamp = timestamp
+```
+
+#### 9.3.2 Event Bus Integráció
+```python
+class AgentEventBus:
+    """
+    Központi üzenet koordináció
+    - Agent-to-agent kommunikáció
+    - Event subscription/publishing
+    - Message queuing (Redis)
+    - Error handling
+    """
+    
+    async def publish_event(self, event_type, data):
+        pass
+        
+    async def subscribe_to_events(self, event_types, callback):
+        pass
+```
+
+### 9.4 Agent Lifecycle Management
+
+#### 9.4.1 Agent States
+```python
+class AgentState(Enum):
+    INITIALIZING = "initializing"
+    IDLE = "idle"
+    WORKING = "working"
+    ERROR = "error"
+    STOPPING = "stopping"
+    STOPPED = "stopped"
+```
+
+#### 9.4.2 Health Monitoring
+```python
+class AgentHealthMonitor:
+    """
+    Agent egészség monitorozása
+    - Heartbeat ellenőrzés
+    - Performance metrikák
+    - Resource használat tracking
+    - Automatikus újraindítás
+    """
+    
+    async def check_agent_health(self, agent_id):
+        pass
+```
+
+### 9.5 Performance Metrikák
+
+#### 9.5.1 Agent Specific Metrics
+```python
+class AgentMetrics:
+    """
+    Agent teljesítmény metrikák
+    - Task completion rate
+    - Average response time
+    - Error rate
+    - Resource consumption
+    - Throughput (tasks/second)
+    """
+    
+    def record_task_completion(self, agent_id, duration, success):
+        pass
+```
+
+#### 9.5.2 System-wide Metrics
+- Total active agents
+- Message throughput
+- System resource usage
+- Cross-agent collaboration efficiency
+
+### 9.6 Fejlesztési Irányelvek
+
+#### 9.6.1 Agent Implementációs Szabályok
+1. **Moduláris felépítés**: Minden agent saját modulban
+2. **Dependency injection**: Konfigurálható függőségek
+3. **Error handling**: Graceful degradation
+4. **Logging**: Strukturált logok minden művelethez
+5. **Testing**: Unit és integration tesztek kötelezők
+
+#### 9.6.2 Agent Deployment Stratégiák
+1. **Container-based**: Docker containerekben futó agente
+2. **Scalable**: Horizontal scaling támogatása
+3. **Configuration**: Environment alapú konfiguráció
+4. **Service discovery**: Dinamikus agent felderítés
+
+#### 9.6.3 Biztonsági Megfontolások
+1. **API key management**: Biztonságos kulcs tárolás
+2. **Rate limiting**: API hívások korlátozása
+3. **Input validation**: Minden input validálása
+4. **Access control**: Agent jogosultságok kezelése
+
+### 9.7 Demo-specifikus Agent Implementáció
+
+#### 9.7.1 Jelenleg Implementált Agente
+- **RockwoolApiScraper**: PDF-alapú adatgyűjtés
+- **BrightDataMCPAgent**: AI-vezérelt web scraping
+- **ScrapingCoordinator**: Multi-strategy koordináció
+- **Celery Workers**: Aszinkron task végrehajtás
+
+#### 9.7.2 Tervezett Bővítések
+- Termék kompatibilitási elemzés
+- Árfigyelési funkciók
+- RAG-alapú termék ajánlás
+- Real-time monitoring dashboard
+
+### 9.8 Agent Template Használata
+
+#### 9.8.1 Új Agent Létrehozása
+```bash
+# Agent skeleton generálása
+python scripts/create_agent.py --name MyNewAgent --type data_processing
+
+# Konfiguráció
+export AGENT_CONFIG_PATH=/path/to/config.yaml
+
+# Agent indítása
+python -m app.agents.my_new_agent
+```
+
+#### 9.8.2 Integration Checklist
+- [ ] Agent osztály implementálása
+- [ ] Health check endpoint
+- [ ] Metrics collection
+- [ ] Error handling
+- [ ] Unit tesztek
+- [ ] Integration tesztek
+- [ ] Documentation
+- [ ] Deployment konfiguráció
+
+Ez az AI Agent specifikációs sablon biztosítja, hogy minden új agent konzisztens legyen a Lambda demo architektúrájával és támogassa a jövőbeli skálázhatóságot.
+
+## Client-Specific Architecture Methodology (2025-01-27)
+
+### Modular Scraper Design Principles
+**🏗️ Architecture Pattern (from ROCKWOOL_CLIENT_ARCHITECTURE.md):**
+```
+clients/
+├── rockwool/
+│   ├── scrapers/termekadatlapok.py    # Client-specific implementation
+│   ├── config/endpoints.py           # URL and selector configuration
+│   └── utils/file_manager.py         # Client-specific utilities
+├── shared/
+│   ├── base/scraper.py               # Abstract base classes
+│   └── mcp/brightdata_client.py      # Shared MCP functionality
+└── factory/client_factory.py         # Factory pattern for scalability
+```
+
+**🔧 Implementation Strategy:**
+1. **Separation of Concerns**: Each client has isolated codebase
+2. **Reusable Components**: Shared utilities for common functionality
+3. **Factory Pattern**: `ClientFactory.create_scraper("rockwool", "termekadatlapok")`
+4. **Clean API Interface**: `/api/clients/rockwool/scrape/termekadatlapok`
+5. **Comprehensive Testing**: Client-specific test suites with fixtures
+
+**📋 Migration Protocol:**
+- Phase 1: Extract working code to client-specific modules
+- Phase 2: Implement factory pattern and shared components
+- Phase 3: Create clean API interfaces
+- Phase 4: Add comprehensive testing and documentation
+
+### Success Metrics for Client Modules
+- **100% Data Preservation**: No files lost during processing
+- **Smart Duplicate Handling**: Subdirectory organization with unique naming
+- **Fresh Data Capability**: Auto-refresh before scraping
+- **Production Validation**: End-to-end testing with real data
+- **Clear Documentation**: API reference and troubleshooting guides
+
+## Memory Management és Tanulás
+- **Tapasztalatok rögzítése**: Minden jelentős problémamegoldás után memory létrehozása a jövőbeli referenciára.
+- **Ismétlődő hibák elkerülése**: Memory ellenőrzés minden hasonló feladat előtt.
+- **Folyamatos fejlődés**: Rendszeres visszatekintés és módszertan finomítás.
+- **🎯 SUCCESS PATTERN REPLICATION**: Use proven Rockwool Termékadatlap methodology for all future scrapers.
