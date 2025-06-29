@@ -47,6 +47,36 @@ FEJLESZTÉSI_ELVEK.md (Project Rules for Cursor)
   4. Újabb megközelítés keresése
 - **Build estratégia**: Egyszerű single-stage Dockerfile fejlesztéshez, multi-stage csak production-ra.
 
+### Windows PowerShell Kompatibilitás (2025-06-29 - MEGOLDVA ✅)
+**🔧 NPX Kompatibilitási Fix:**
+- **Probléma**: `[WinError 2] A rendszer nem találja a megadott fájlt` NPX parancsok esetén
+- **Megoldás**: Platform detection és `npx.cmd` használata Windows rendszeren
+- **Implementáció**: 
+  ```python
+  import platform
+  npx_cmd = "npx.cmd" if platform.system() == "Windows" else "npx"
+  ```
+- **Eredmény**: BrightData MCP 48 tool sikeresen betöltve, Claude AI integráció működik
+
+**🐍 Python 3.12 Upgrade (Jaclang Kompatibilitás):**
+- **Probléma**: `ImportError: cannot import name 'override' from 'typing'` Python 3.11-el
+- **Megoldás**: Python 3.12.10 upgrade és új virtual environment (`.venv312`)
+- **Parancsok**:
+  ```bash
+  py -3.12 -m venv .venv312
+  .venv312\Scripts\activate
+  pip install jaclang
+  ```
+- **Eredmény**: `jac --version` működik, `override` decorator elérhető
+
+**✅ Tesztelési Eredmények:**
+- NPX parancsok: ✅ Működik
+- Node.js v20.13.1: ✅ Elérhető  
+- MCP Server startup: ✅ Sikeres
+- BrightData tools: ✅ 48/48 betöltve
+- Claude AI API calls: ✅ Működik
+- PowerShell subprocess: ✅ Hibák nélkül
+
 ## Kódolási Stílus
 - **Python (Backend):**
     - Formázó: `black`
