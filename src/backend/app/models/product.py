@@ -1,5 +1,4 @@
-from sqlalchemy import Column, Integer, String, Text, ForeignKey, DateTime, func, Numeric, Boolean
-from sqlalchemy.dialects.postgresql import JSONB
+from sqlalchemy import Column, Integer, String, Text, ForeignKey, DateTime, func, Numeric, Boolean, JSON
 from sqlalchemy.orm import relationship
 from app.database import Base
 
@@ -23,10 +22,10 @@ class Product(Base):
     unit = Column(String(50), nullable=True)  # m2, db, m3, stb.
     
     # Műszaki paraméterek és metaadatok
-    technical_specs = Column(JSONB, nullable=True)  # Normalizált műszaki adatok
-    raw_specs = Column(JSONB, nullable=True)       # Eredeti scraped adatok
-    images = Column(JSONB, nullable=True)          # Képek URL-jei
-    documents = Column(JSONB, nullable=True)       # Műszaki dokumentumok
+    technical_specs = Column(JSON, nullable=True)  # Normalizált műszaki adatok
+    raw_specs = Column(JSON, nullable=True)       # Eredeti scraped adatok
+    images = Column(JSON, nullable=True)          # Képek URL-jei
+    documents = Column(JSON, nullable=True)       # Műszaki dokumentumok
     
     # Scraping és státusz információk
     source_url = Column(String(1024), nullable=True)

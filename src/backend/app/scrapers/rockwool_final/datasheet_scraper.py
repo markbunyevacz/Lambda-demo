@@ -28,7 +28,13 @@ from urllib.parse import urljoin
 
 # --- Configuration ---
 logger = logging.getLogger(__name__)
-PDF_STORAGE_DIR = Path("downloads/final_test")
+
+# Determine the project root based on the script's location
+# The script is in /src/backend/app/scrapers/rockwool_final, so we go up 4 levels
+PROJECT_ROOT = Path(__file__).resolve().parents[4]
+PDF_STORAGE_DIR = PROJECT_ROOT / "downloads" / "final_test"
+DEBUG_FILE_PATH = PROJECT_ROOT / "debug_termekadatlapok.html"
+
 BASE_URL = "https://www.rockwool.com"
 TARGET_URL = "https://www.rockwool.com/hu/muszaki-informaciok/termekadatlapok/"
 

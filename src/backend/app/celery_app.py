@@ -15,8 +15,11 @@ import os
 from celery import Celery
 from kombu import Exchange, Queue
 
-# Redis URL konfigurálása
-REDIS_URL = os.getenv('REDIS_URL', 'redis://localhost:6379/0')
+# Set the default Django settings module for the 'celery' program.
+# os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'proj.settings')
+
+# Get Redis URL from environment variable, default to a standard local setup if not found
+REDIS_URL = os.environ.get('REDIS_URL', 'redis://localhost:6379/0')
 
 # Celery alkalmazás létrehozása
 celery_app = Celery(

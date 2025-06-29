@@ -1,7 +1,6 @@
 services:
   db:
-    image: postgres:15
-    container_name: lambda_db
+    image: postgres:15-alpine
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
@@ -11,20 +10,28 @@ services:
     restart: unless-stopped
     networks:
       - lambda_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
 
   cache:
-    image: redis:latest
-    container_name: lambda_cache
+    image: redis:6.2-alpine
+    restart: always
     ports:
       - "6379:6379"
-    restart: unless-stopped
     networks:
       - lambda_network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
 
   backend:
     build:
       context: ./src/backend
-    container_name: lambda_backend
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload --reload-exclude "celerybeat-schedule"
     volumes:
       - ./src/backend:/app
@@ -34,7 +41,7 @@ services:
       - .env
     depends_on:
       db:
-        condition: service_started
+        condition: service_healthy
       cache:
         condition: service_started
     restart: unless-stopped
@@ -44,14 +51,13 @@ services:
   celery_worker:
     build:
       context: ./src/backend
-    container_name: lambda_celery_worker
     command: celery -A app.celery_app worker --loglevel=info
     volumes:
       - ./src/backend:/app
     env_file:
       - .env
     depends_on:
-      db:
+      backend:
         condition: service_started
       cache:
         condition: service_started
@@ -62,14 +68,15 @@ services:
   celery_beat:
     build:
       context: ./src/backend
-    container_name: lambda_celery_beat
     command: celery -A app.celery_app beat --loglevel=info
     volumes:
       - ./src/backend:/app
     env_file:
       - .env
     depends_on:
-      celery_worker:
+      backend:
+        condition: service_started
+      cache:
         condition: service_started
     restart: unless-stopped
     networks:
@@ -78,14 +85,15 @@ services:
   celery_flower:
     build:
       context: ./src/backend
-    container_name: lambda_celery_flower
     command: celery -A app.celery_app flower --port=5555
     ports:
       - "5555:5555"
     env_file:
       - .env
     depends_on:
-      celery_worker:
+      backend:
+        condition: service_started
+      cache:
         condition: service_started
     restart: unless-stopped
     networks:
@@ -94,13 +102,16 @@ services:
   frontend:
     build:
       context: ./src/frontend
-    container_name: lambda_frontend
+    command: npm run dev
     volumes:
       - ./src/frontend:/app
       - /app/node_modules
       - /app/.next
     ports:
       - "3000:3000"
+    depends_on:
+      backend:
+        condition: service_started
     restart: unless-stopped
     networks:
       - lambda_network
