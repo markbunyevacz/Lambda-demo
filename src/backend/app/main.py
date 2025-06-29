@@ -24,15 +24,16 @@ from typing import List, Optional
 
 # Helyi importok
 from . import models, schemas
-from .database import get_db, engine
-from .scraper.api_endpoints import scraper_router
+from .database import get_db, engine, Base
+# Hibás, elavult router importjának eltávolítása
+# from .scraper.api_endpoints import scraper_router
 from .celery_tasks.scraping_tasks import (
     run_datasheet_scraping_task,
     run_brochure_scraping_task,
 )
 
-# Adatbázis táblák létrehozása az alkalmazás indításakor
-models.Base.metadata.create_all(bind=engine)
+# A táblák létrehozása a Base és az engine segítségével
+Base.metadata.create_all(bind=engine)
 
 # FastAPI alkalmazás példány létrehozása
 app = FastAPI(
@@ -51,7 +52,7 @@ app.add_middleware(
 )
 
 # Scraper API routes hozzáadása
-app.include_router(scraper_router)
+# app.include_router(scraper_router)
 
 # API v1 Router
 api_v1_router = APIRouter(prefix="/api/v1")

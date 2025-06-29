@@ -32,11 +32,15 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
-PDF_STORAGE_DIR = Path("downloads/rockwool_brochures")
+
+# Determine the project root based on the script's location
+PROJECT_ROOT = Path(__file__).resolve().parents[4]
+PDF_STORAGE_DIR = PROJECT_ROOT / "downloads" / "rockwool_brochures"
 DUPLICATES_DIR = PDF_STORAGE_DIR / "duplicates"
+DEBUG_FILE_PATH = PROJECT_ROOT / "debug_pricelists_content.html"
+
 BASE_URL = "https://www.rockwool.com"
 TARGET_URL = "https://www.rockwool.com/hu/muszaki-informaciok/arlistak-es-prospektusok/"
-DEBUG_FILE = "debug_pricelists_content.html"
 
 class RockwoolBrochureScraper:
     """
@@ -51,18 +55,15 @@ class RockwoolBrochureScraper:
         self.downloaded_files = set()  # Track downloaded filenames
         self.duplicate_count = 0
 
-    def _refresh_debug_file(self) -> bool:
+    def _refresh_debug_file(self, debug_file_path: Path) -> bool:
         """
         Attempts to refresh the debug file with fresh content.
         Falls back to existing file if refresh fails.
         Returns True if using fresh content, False if using existing.
         """
-        debug_path = Path(DEBUG_FILE)
-        
-        # Check existing file age
-        if debug_path.exists():
+        if debug_file_path.exists():
             file_age_hours = (
-                datetime.now().timestamp() - debug_path.stat().st_mtime
+                datetime.now().timestamp() - debug_file_path.stat().st_mtime
             ) / 3600
             logger.info(f"📅 Existing debug file age: {file_age_hours:.1f} hours")
         else:
@@ -87,7 +88,7 @@ class RockwoolBrochureScraper:
                 f.write(response.text)
             
             # Update main debug file
-            with open(DEBUG_FILE, 'w', encoding='utf-8') as f:
+            with open(debug_file_path, 'w', encoding='utf-8') as f:
                 f.write(response.text)
             
             logger.info("✅ Fresh debug file saved (age: 0.0 hours)")
@@ -96,7 +97,7 @@ class RockwoolBrochureScraper:
             
         except Exception as e:
             logger.warning(f"⚠️  Failed to refresh debug file: {e}")
-            if debug_path.exists():
+            if debug_file_path.exists():
                 logger.info(
                     f"📄 Using existing debug file "
                     f"(age: {file_age_hours:.1f} hours)"
@@ -105,7 +106,7 @@ class RockwoolBrochureScraper:
             else:
                 logger.error("❌ No debug file available for scraping")
                 raise FileNotFoundError(
-                    f"No debug file available: {DEBUG_FILE}"
+                    f"No debug file available: {debug_file_path}"
                 )
 
     def _generate_unique_filename(self, base_filename: str, pdf_url: str) -> str:
@@ -168,38 +169,33 @@ class RockwoolBrochureScraper:
             return {'status': 'failed', 'error': str(e)}
 
     async def run(self):
-        """Executes the entire enhanced scraping and downloading process."""
-        logger.info("--- Starting Enhanced Rockwool Brochure Scraper ---")
+        """Executes the entire scraping and downloading process."""
+        logger.info("--- Starting Rockwool Brochure & Pricelist Scraper ---")
+
+        # Step 1: Try to get fresh HTML content first
+        await self._refresh_debug_file(DEBUG_FILE_PATH)
         
-        # Step 1: Refresh debug file with fresh content
-        try:
-            is_fresh = self._refresh_debug_file()
-            fresh_status = "fresh" if is_fresh else "existing"
-            logger.info(f"📄 Using {fresh_status} debug file for scraping")
-        except Exception as e:
-            logger.error(f"❌ Failed to prepare debug file: {e}")
-            return
-        
-        # Step 2: Parse documents from debug file
-        try:
-            with open(DEBUG_FILE, 'r', encoding='utf-8') as f:
+        # Step 2: Use the debug file (fresh or existing)
+        if DEBUG_FILE_PATH.exists():
+            file_age = datetime.now().timestamp() - DEBUG_FILE_PATH.stat().st_mtime
+            logger.info(f"🔍 Using debug file: {DEBUG_FILE_PATH} (age: {file_age/3600:.1f} hours)")
+            
+            with open(DEBUG_FILE_PATH, 'r', encoding='utf-8') as f:
                 html_content = f.read()
             
-            self._parse_brochures_from_html(html_content)
-            
-            if not self.documents:
-                logger.error("❌ No documents found in debug file")
-                return
-                
-        except Exception as e:
-            logger.error(f"❌ Failed to parse debug file: {e}")
+            # Parse and store documents from the HTML
+            self._parse_documents_from_html(html_content)
+        else:
+            logger.error(f"❌ No debug file available and live scraping failed.")
             return
 
-        # Step 3: Download all PDFs
+        # Download all found PDFs
         await self._download_all_pdfs()
+
+        logger.info("--- Brochure & Pricelist Scraper Finished ---")
         self._log_summary()
 
-    def _parse_brochures_from_html(self, html_content: str):
+    def _parse_documents_from_html(self, html_content: str):
         """Parses the brochure list from the raw HTML content."""
         props_pattern = r'data-component-name="O74DocumentationList"[^>]*data-component-props="({.*?})"'
         props_match = re.search(props_pattern, html_content, re.DOTALL)
