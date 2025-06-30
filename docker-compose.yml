@@ -116,9 +116,21 @@ services:
     networks:
       - lambda_network
 
+  chroma:
+    image: chromadb/chroma
+    ports:
+      - "8001:8000"
+    volumes:
+      - chroma_data:/chroma/.chroma/index
+    restart: unless-stopped
+    networks:
+      - lambda_network
+
 volumes:
   postgres_data:
     name: lambda_postgres_data
+  chroma_data:
+    name: lambda_chroma_data
 
 networks:
   lambda_network:

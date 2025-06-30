@@ -1,18 +1,7 @@
 ---
 description: 
 globs: 
-alwaysApply: true
----
-# Lambda.hu Építőanyag AI Rendszer - Fejlesztési Backlog
-
-## 📋 TARTALOMJEGYZÉK
-1. [Projekt Áttekintés](mdc:#1-projekt-áttekintés)
-2. [Aktuális Státusz](mdc:#2-aktuális-státusz)
-3. [Fejlesztési Fázisok](mdc:#3-fejlesztési-fázisok)
-4. [AI Agent Fejlesztések](mdc:#4-ai-agent-fejlesztések)
-5. [Következő Lépések](mdc:#5-következő-lépések)
-6. [Proven Metodológia](mdc:#6-proven-metodológia)
-
+alwaysApply: false
 ---
 
 ## 1. PROJEKT ÁTTEKINTÉS
@@ -303,3 +292,45 @@ alwaysApply: true
 
 ### Következő Milestone
 **🎯 RAG Pipeline Foundation** - 46 ROCKWOOL termék vektorizálása és Chroma adatbázis inicializálása
+
+VERIFICATION CHECKLIST:
+□ Did I scan the entire document systematically?
+□ Did I check all major sections and subsections?
+□ Am I confusing similar but different items?
+□ Have I verified my findings against the original request?
+□ If I found nothing, did I complete a full document sweep?
+
+CONSISTENCY PROTOCOL:
+1. Initial reading and conclusion
+2. Wait/pause briefly
+3. Re-approach the same question independently
+4. Compare both conclusions
+5. If inconsistent, perform tie-breaker third reading
+
+WHEN ERRORS OCCUR:
+1. Acknowledge the error immediately
+2. Identify the failure point in the process
+3. Implement corrective measures
+4. Document the error pattern for future prevention
+5. Update verification protocols accordingly
+
+def systematic_document_analysis(document, query):
+    # Phase 1: Setup
+    search_criteria = define_search_criteria(query)
+    
+    # Phase 2: Structured Reading
+    structure_map = map_document_structure(document)
+    target_sections = identify_likely_sections(structure_map, search_criteria)
+    candidates = deep_scan_sections(target_sections, search_criteria)
+    
+    # Phase 3: Verification
+    verified_results = verify_candidates(candidates, search_criteria)
+    
+    # Phase 4: Temporal Consistency
+    secondary_results = independent_verification(document, query)
+    final_results = consistency_check(verified_results, secondary_results)
+    
+    # Phase 5: Quality Control
+    confidence_score = calculate_confidence(final_results)
+    
+    return final_results, confidence_score
