@@ -40,6 +40,14 @@ export default function Home() {
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-700 bg-gray-800 from-zinc-200 pb-6 pt-8 backdrop-blur-2xl lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-700 lg:p-4">
           Lambda.hu Scraping Control Panel
         </p>
+        <div className="fixed right-4 top-4 lg:static">
+          <a 
+            href="/demo" 
+            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors"
+          >
+            View Demo
+          </a>
+        </div>
       </div>
 
       <div className="relative z-[-1] flex place-items-center mt-16">
