@@ -27,10 +27,9 @@ from . import models, schemas
 from .database import get_db, engine, Base
 # Hibás, elavult router importjának eltávolítása
 # from .scraper.api_endpoints import scraper_router
-from .celery_tasks.scraping_tasks import (
-    run_datasheet_scraping_task,
-    run_brochure_scraping_task,
-)
+# Scraper imports commented out to avoid path resolution issues in Docker
+# from .scrapers.rockwool_final.datasheet_scraper import RockwoolDirectScraper
+# from .scrapers.rockwool_final.brochure_and_pricelist_scraper import RockwoolBrochureScraper
 
 # A táblák létrehozása a Base és az engine segítségével
 Base.metadata.create_all(bind=engine)
@@ -57,22 +56,33 @@ app.add_middleware(
 # API v1 Router
 api_v1_router = APIRouter(prefix="/api/v1")
 
-@api_v1_router.post("/scrape", status_code=202)
-async def trigger_scraping(scrape_request: schemas.ScrapeRequest):
-    """
-    Triggers a background scraping task.
-    - **scraper_type**: 'datasheet' or 'brochure'.
-    """
-    if scrape_request.scraper_type == "datasheet":
-        task = run_datasheet_scraping_task.delay()
-    elif scrape_request.scraper_type == "brochure":
-        task = run_brochure_scraping_task.delay()
-    else:
-        raise HTTPException(
-            status_code=400,
-            detail="Invalid scraper_type. Use 'datasheet' or 'brochure'.",
-        )
-    return {"message": "Scraping task accepted.", "task_id": task.id}
+# --- Helper function for running scrapers ---
+# Commented out to avoid Docker path resolution issues
+# async def run_scraper_in_background(scraper_class):
+#     """Initializes and runs a scraper instance."""
+#     scraper = scraper_class()
+#     await scraper.run()
+
+# @api_v1_router.post("/scrape", status_code=202)
+# async def trigger_scraping(
+#     scrape_request: schemas.ScrapeRequest,
+#     background_tasks: BackgroundTasks
+# ):
+#     """
+#     Triggers a scraping task in the background without Celery.
+#     """
+#     if scrape_request.scraper_type == "datasheet":
+#         background_tasks.add_task(run_scraper_in_background, RockwoolDirectScraper)
+#         message = "Datasheet scraping task started in the background."
+#     elif scrape_request.scraper_type == "brochure":
+#         background_tasks.add_task(run_scraper_in_background, RockwoolBrochureScraper)
+#         message = "Brochure scraping task started in the background."
+#     else:
+#         raise HTTPException(
+#             status_code=400,
+#             detail="Invalid scraper_type. Use 'datasheet' or 'brochure'.",
+#         )
+#     return {"message": message}
 
 @api_v1_router.get("/products", response_model=List[schemas.Product])
 def read_products(
@@ -178,7 +188,9 @@ async def get_manufacturers(db: Session = Depends(get_db)):
 @app.post("/manufacturers")
 async def create_manufacturer(
     name: str,
-    contact_info: Optional[str] = None,
+    description: Optional[str] = None,
+    website: Optional[str] = None,
+    country: Optional[str] = None,
     db: Session = Depends(get_db)
 ):
     """
@@ -186,7 +198,9 @@ async def create_manufacturer(
     
     Args:
         name (str): Gyártó neve
-        contact_info (str, optional): Kapcsolattartási információ
+        description (str, optional): Gyártó leírása
+        website (str, optional): Gyártó weboldala
+        country (str, optional): Gyártó országa
         db (Session): Adatbázis session
         
     Returns:
@@ -194,7 +208,9 @@ async def create_manufacturer(
     """
     new_manufacturer = models.Manufacturer(
         name=name,
-        contact_info=contact_info
+        description=description,
+        website=website,
+        country=country
     )
     
     db.add(new_manufacturer)

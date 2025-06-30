@@ -34,8 +34,11 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Determine the project root based on the script's location
-PROJECT_ROOT = Path(__file__).resolve().parents[4]
-PDF_STORAGE_DIR = PROJECT_ROOT / "downloads" / "rockwool_brochures"
+# Docker: script in /app/app/scrapers/rockwool_final, go up 3 levels to /app
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
+PDF_STORAGE_DIR = (
+    PROJECT_ROOT / "src" / "downloads" 
+)
 DUPLICATES_DIR = PDF_STORAGE_DIR / "duplicates"
 DEBUG_FILE_PATH = PROJECT_ROOT / "debug_pricelists_content.html"
 
@@ -162,7 +165,7 @@ class RockwoolBrochureScraper:
                 'filename': filepath.name,
                 'local_path': str(filepath),
                 'file_size_bytes': len(response.content),
-                'is_duplicate': filepath.parent.name == 'duplicates'
+                'is_duplicate': base_filename in self.downloaded_files or 'duplicates' in str(filepath)
             }
         except Exception as e:
             logger.error(f"❌ Download failed for '{doc_name}': {e}")
@@ -173,7 +176,7 @@ class RockwoolBrochureScraper:
         logger.info("--- Starting Rockwool Brochure & Pricelist Scraper ---")
 
         # Step 1: Try to get fresh HTML content first
-        await self._refresh_debug_file(DEBUG_FILE_PATH)
+        self._refresh_debug_file(DEBUG_FILE_PATH)
         
         # Step 2: Use the debug file (fresh or existing)
         if DEBUG_FILE_PATH.exists():

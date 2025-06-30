@@ -1,0 +1,23 @@
+# PDF Content Extraction Dependencies
+# Based on PDF_CONTENT_EXTRACTION_PLAN.md
+
+# Core PDF processing libraries
+PyMuPDF>=1.23.0        # fitz - Fast PDF text extraction
+pdfplumber>=0.10.0     # Table extraction and structured data
+
+# Text processing and pattern matching
+regex>=2023.0.0        # Advanced regex patterns for technical specs
+fuzzywuzzy>=0.18.0     # Fuzzy string matching for price-to-product mapping
+python-Levenshtein>=0.21.0  # Fast string comparison
+
+# Data processing
+pandas>=2.0.0          # Data manipulation for price lists
+openpyxl>=3.1.0        # Excel file support
+
+# OCR capabilities (optional, for image-based PDFs)
+pytesseract>=0.3.10    # OCR text extraction
+opencv-python>=4.8.0   # Image preprocessing
+
+# Database connectivity (already in main requirements.txt)
+# requests>=2.31.0
+# sqlalchemy>=2.0.0 
