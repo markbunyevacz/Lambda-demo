@@ -9,13 +9,14 @@ import chromadb
 from pathlib import Path
 import sys
 from sqlalchemy.orm import sessionmaker
+import os
+from sqlalchemy import create_engine
 
 # Add the current directory to Python path for imports
 current_dir = Path(__file__).resolve().parent
 sys.path.append(str(current_dir))
 
 # Import database models and connection
-from app.database import engine
 from app.models.product import Product
 
 # Configure logging
@@ -71,7 +72,11 @@ def initialize_rag_pipeline():
         
         # Connect to PostgreSQL database
         logger.info("Connecting to PostgreSQL database...")
-        SessionLocal = sessionmaker(bind=engine)
+        DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./test.db")
+        if "postgresql" in DATABASE_URL:
+            DATABASE_URL += "?client_encoding=utf8"
+        engine = create_engine(DATABASE_URL)
+        SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
         db = SessionLocal()
         
         try:
@@ -170,7 +175,6 @@ def initialize_rag_pipeline():
             existing_count = collection.count()
             if existing_count > 0:
                 logger.info(f"Clearing {existing_count} existing documents...")
-                # Delete all documents by getting all IDs first
                 all_data = collection.get()
                 if all_data['ids']:
                     collection.delete(ids=all_data['ids'])

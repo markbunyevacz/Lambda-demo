@@ -13,12 +13,16 @@ from datetime import datetime
 from enum import Enum
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+import chromadb
+from chromadb.utils import embedding_functions
 
 from ..models.product import Product
 from ..database import get_db
 
 logger = logging.getLogger(__name__)
 
+# Embedding Model for ChromaDB
+EMBEDDING_MODEL_NAME = "paraphrase-multilingual-mpnet-base-v2"
 
 class RecommendationType(Enum):
     """Ajánlás típusok"""
@@ -60,17 +64,17 @@ class RecommendationAgent:
         self.agent_id = f"recommendation_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
         self.status = RecommendationStatus.PENDING
         
-        # Vectorizer a hasonlóság számításhoz
-        self.vectorizer = TfidfVectorizer(
-            max_features=1000,
-            stop_words=['a', 'az', 'és', 'vagy', 'de', 'hogy', 'nem', 'is', 'el'],
-            ngram_range=(1, 2)
+        # ChromaDB Client
+        self.chroma_client = self._get_chroma_client()
+        self.collection = self.chroma_client.get_or_create_collection(
+            name="rockwool_products",
+            embedding_function=embedding_functions.SentenceTransformerEmbeddingFunction(
+                model_name=EMBEDDING_MODEL_NAME
+            )
         )
         
-        # Termék cache
+        # Termék cache (opcionális, a gyorsabb hozzáférésért)
         self.product_cache = {}
-        self.similarity_matrix = None
-        self.feature_matrix = None
         
         # Ajánlási statisztikák
         self.recommendation_stats = {
@@ -95,167 +99,117 @@ class RecommendationAgent:
             'Akusztikai megoldás': ['hangszigetelés', 'zajvédelem', 'studio']
         }
     
-    async def generate_recommendations(self, 
-                                     user_context: Dict,
-                                     recommendation_type: RecommendationType = RecommendationType.SIMILAR_PRODUCTS,
-                                     reference_product_id: Optional[int] = None) -> Dict:
+    def _get_chroma_client(self):
+        """Get ChromaDB client with fallback connection logic"""
+        try:
+            client = chromadb.HttpClient(host="chroma", port=8000)
+            client.heartbeat()
+            return client
+        except Exception:
+            return chromadb.HttpClient(host="localhost", port=8001)
+    
+    async def generate_recommendations(
+        self,
+        user_query: str,
+        user_context: Optional[Dict] = None,
+        n_results: int = 5
+    ) -> Dict:
         """
-        Főbb ajánlásigenerálási funkció
-        
+        Generates product recommendations based on a user's natural language query
+        using a RAG (Retrieval-Augmented Generation) approach with ChromaDB.
+
         Args:
-            user_context: Felhasználói kontextus (projekt, igények, preferenciák)
-            recommendation_type: Ajánlás típusa
-            reference_product_id: Referencia termék ID (hasonlóság alapú ajánláshoz)
-            
+            user_query (str): The user's query (e.g., "fire resistant insulation for attics").
+            user_context (Optional[Dict]): Additional context for filtering or ranking.
+            n_results (int): The number of recommendations to return.
+
         Returns:
-            Ajánlási eredmény és metrikák
+            Dict: A dictionary containing the recommendation results.
         """
+        if user_context is None:
+            user_context = {}
+
         start_time = datetime.now()
         self.status = RecommendationStatus.IN_PROGRESS
-        
-        logger.info(f"Ajánlás generálás indítása - Agent ID: {self.agent_id}")
-        logger.info(f"Ajánlás típus: {recommendation_type.value}")
-        logger.info(f"Felhasználói kontextus: {user_context}")
-        
+        logger.info(f"Generating RAG recommendations for query: '{user_query}'")
+
         try:
-            # Termékek betöltése és cache frissítése
-            await self._update_product_cache()
+            await self._update_product_cache_if_needed()
+
+            # 1. Search Vector Database
+            rag_results = await self.search_vector_database(user_query, n_results=n_results)
+
+            # 2. Process and Enrich Results
+            recommendations = self._process_rag_results(rag_results)
+            enriched_recommendations = self._enrich_recommendations(
+                recommendations, user_context
+            )
+
+            # 3. Update Statistics and Finalize
+            self._update_stats(enriched_recommendations, start_time)
             
-            # Ajánlások generálása típus alapján
-            if recommendation_type == RecommendationType.SIMILAR_PRODUCTS:
-                recommendations = await self._generate_similar_products(user_context, reference_product_id)
-            elif recommendation_type == RecommendationType.COMPLEMENTARY_PRODUCTS:
-                recommendations = await self._generate_complementary_products(user_context, reference_product_id)
-            elif recommendation_type == RecommendationType.APPLICATION_BASED:
-                recommendations = await self._generate_application_based(user_context)
-            elif recommendation_type == RecommendationType.TECHNICAL_MATCH:
-                recommendations = await self._generate_technical_match(user_context)
-            elif recommendation_type == RecommendationType.CATEGORY_RECOMMENDATIONS:
-                recommendations = await self._generate_category_recommendations(user_context)
-            else:
-                logger.warning(f"Ismeretlen ajánlás típus: {recommendation_type}")
-                recommendations = []
-            
-            # Ajánlások rendezése és limitálása
-            ranked_recommendations = self._rank_recommendations(recommendations, user_context)
-            final_recommendations = ranked_recommendations[:self.max_recommendations]
-            
-            # Részletes információk hozzáadása
-            enriched_recommendations = await self._enrich_recommendations(final_recommendations, user_context)
-            
-            # Statisztikák frissítése
-            self.recommendation_stats['total_recommendations_generated'] += 1
-            if enriched_recommendations:
-                self.recommendation_stats['successful_recommendations'] += 1
-                self.recommendation_stats['avg_similarity_score'] = np.mean([
-                    rec.get('similarity_score', 0) for rec in enriched_recommendations
-                ])
-            else:
-                self.recommendation_stats['failed_recommendations'] += 1
-                self.status = RecommendationStatus.NO_MATCHES
-            
-            self.recommendation_stats['recommendation_duration'] = (datetime.now() - start_time).total_seconds()
-            self.recommendation_stats['last_recommendation'] = datetime.now().isoformat()
-            
-            if enriched_recommendations:
-                self.status = RecommendationStatus.COMPLETED
-            
-            result = {
-                'agent_id': self.agent_id,
-                'status': self.status.value,
-                'recommendation_type': recommendation_type.value,
-                'recommendations_count': len(enriched_recommendations),
-                'recommendations': enriched_recommendations,
-                'user_context': user_context,
-                'statistics': self.recommendation_stats.copy(),
-                'timestamp': datetime.now().isoformat()
-            }
-            
-            logger.info(f"Ajánlás generálás befejezve: {len(enriched_recommendations)} ajánlás")
-            return result
-            
-        except Exception as e:
-            self.status = RecommendationStatus.FAILED
-            self.recommendation_stats['failed_recommendations'] += 1
-            logger.error(f"Ajánlás generálás kritikus hiba: {e}")
             return {
                 'agent_id': self.agent_id,
                 'status': self.status.value,
-                'error': str(e),
-                'recommendations_count': 0,
+                'recommendations_count': len(enriched_recommendations),
+                'recommendations': enriched_recommendations,
                 'timestamp': datetime.now().isoformat()
             }
-    
-    async def _update_product_cache(self) -> None:
-        """Termék cache frissítése"""
-        try:
-            db = get_db()
-            products = db.query(Product).all()
-            
-            self.product_cache = {}
-            product_texts = []
-            
-            for product in products:
-                # Termék szöveges reprezentációja
-                text_representation = f"{product.name} {product.description} {' '.join(product.applications or [])} {product.category}"
-                
-                self.product_cache[product.id] = {
-                    'id': product.id,
-                    'name': product.name,
-                    'description': product.description,
-                    'category': product.category,
-                    'applications': product.applications or [],
-                    'technical_specs': product.technical_specs or {},
-                    'source_url': product.source_url,
-                    'text_representation': text_representation
-                }
-                
-                product_texts.append(text_representation)
-            
-            # TF-IDF feature matrix számítása
-            if product_texts:
-                self.feature_matrix = self.vectorizer.fit_transform(product_texts)
-                self.similarity_matrix = cosine_similarity(self.feature_matrix)
-            
-            logger.info(f"Termék cache frissítve: {len(self.product_cache)} termék")
-            db.close()
-            
         except Exception as e:
-            logger.error(f"Cache frissítési hiba: {e}")
+            self.status = RecommendationStatus.FAILED
+            logger.error(f"Recommendation generation failed: {e}", exc_info=True)
+            return {
+                'agent_id': self.agent_id,
+                'status': self.status.value,
+                'error': str(e)
+            }
     
-    async def _generate_similar_products(self, user_context: Dict, reference_product_id: Optional[int]) -> List[Dict]:
-        """Hasonló termékek ajánlása"""
-        if not reference_product_id or reference_product_id not in self.product_cache:
-            logger.warning("Nincs referencia termék megadva vagy nem található")
-            return []
+    async def _update_product_cache_if_needed(self) -> None:
+        """Termék cache frissítése, ha szükséges"""
+        if not self.product_cache:
+            try:
+                db = get_db()
+                products = db.query(Product).all()
+                for product in products:
+                    self.product_cache[product.id] = product.to_dict(include_relations=True)
+                db.close()
+                logger.info(f"Termék cache frissítve: {len(self.product_cache)} termék")
+            except Exception as e:
+                logger.error(f"Cache frissítési hiba: {e}")
+    
+    async def search_vector_database(self, query_text: str, n_results: int = 10) -> List[Dict]:
+        """Vektor adatbázis keresés"""
+        logger.info(f"Vektor adatbázis keresés: '{query_text}'")
+        results = self.collection.query(
+            query_texts=[query_text],
+            n_results=n_results
+        )
         
-        reference_product = self.product_cache[reference_product_id]
-        similar_products = []
+        # Eredmények feldolgozása
+        processed_results = []
+        if results and results['ids'][0]:
+            for i, distance in enumerate(results['distances'][0]):
+                product_id = int(results['ids'][0][i].split('_')[-1])
+                processed_results.append({
+                    'product_id': product_id,
+                    'distance': distance,
+                    'metadata': results['metadatas'][0][i]
+                })
         
-        # Hasonlóság számítás a similarity matrix alapján
-        if self.similarity_matrix is not None:
-            product_ids = list(self.product_cache.keys())
-            ref_index = product_ids.index(reference_product_id)
-            
-            similarities = self.similarity_matrix[ref_index]
-            
-            # Hasonló termékek kiválasztása
-            for i, similarity_score in enumerate(similarities):
-                if i != ref_index and similarity_score >= self.similarity_threshold:
-                    product_id = product_ids[i]
-                    product = self.product_cache[product_id]
-                    
-                    similar_products.append({
-                        'product': product,
-                        'similarity_score': float(similarity_score),
-                        'match_reason': 'Hasonló műszaki paraméterek és alkalmazási terület'
-                    })
-        
-        # Rendezés hasonlóság szerint
-        similar_products.sort(key=lambda x: x['similarity_score'], reverse=True)
-        
-        logger.info(f"Hasonló termékek: {len(similar_products)} találat")
-        return similar_products
+        return processed_results
+
+    def _process_rag_results(self, rag_results: List[Dict]) -> List[Dict]:
+        """RAG eredmények feldolgozása ajánlásokká"""
+        recommendations = []
+        for result in rag_results:
+            product_id = result['product_id']
+            if product_id in self.product_cache:
+                recommendations.append({
+                    'product': self.product_cache[product_id],
+                    'similarity_score': 1 - result['distance'],  # Cosine distance to similarity
+                    'match_reason': 'Semantic match in vector database'
+                })
+        return recommendations
     
     async def _generate_complementary_products(self, user_context: Dict, reference_product_id: Optional[int]) -> List[Dict]:
         """Kiegészítő termékek ajánlása"""
@@ -489,34 +443,30 @@ class RecommendationAgent:
         
         return recommendations
     
-    async def _enrich_recommendations(self, recommendations: List[Dict], user_context: Dict) -> List[Dict]:
-        """Ajánlások részletes információkkal való bővítése"""
-        enriched = []
-        
+    def _enrich_recommendations(self, recommendations: List[Dict], user_context: Dict) -> List[Dict]:
+        """Enriches recommendations with detailed product information."""
+        # This method can be expanded to add more context, e.g., pricing, stock
         for rec in recommendations:
-            product = rec['product']
+            product_id = rec['product_id']
+            if product_id in self.product_cache:
+                rec['product_details'] = self.product_cache[product_id]
+        return recommendations
+    
+    def _update_stats(self, recommendations: List[Dict], start_time: datetime):
+        """Updates agent statistics after a recommendation task."""
+        self.recommendation_stats['total_recommendations_generated'] += 1
+        if recommendations:
+            self.recommendation_stats['successful_recommendations'] += 1
+            self.recommendation_stats['avg_similarity_score'] = np.mean([
+                rec.get('similarity_score', 0) for rec in recommendations
+            ])
+            self.status = RecommendationStatus.COMPLETED
+        else:
+            self.recommendation_stats['failed_recommendations'] += 1
+            self.status = RecommendationStatus.NO_MATCHES
             
-            enriched_rec = {
-                'product_id': product['id'],
-                'name': product['name'],
-                'description': product['description'],
-                'category': product['category'],
-                'applications': product['applications'],
-                'technical_specs': product['technical_specs'],
-                'source_url': product['source_url'],
-                'recommendation_score': rec.get('final_score', rec.get('similarity_score', rec.get('match_score', 0))),
-                'match_reason': rec.get('match_reason', 'Általános egyezés'),
-                'confidence': min(rec.get('final_score', 0) * 100, 100),
-                'recommendation_context': {
-                    'user_context': user_context,
-                    'recommendation_timestamp': datetime.now().isoformat(),
-                    'agent_id': self.agent_id
-                }
-            }
-            
-            enriched.append(enriched_rec)
-        
-        return enriched
+        self.recommendation_stats['recommendation_duration'] = (datetime.now() - start_time).total_seconds()
+        self.recommendation_stats['last_recommendation'] = datetime.now().isoformat()
     
     async def compare_products(self, product_ids: List[int], comparison_criteria: List[str] = None) -> Dict:
         """Termékek összehasonlítása"""

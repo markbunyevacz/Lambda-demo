@@ -94,20 +94,27 @@ alwaysApply: false
 - [x] Alapvető FastAPI alkalmazás létrehozása, CORS és DB kapcsolattal
 - [x] Alapvető Next.js/React frontend váz létrehozása
 
-### 3.2 Fázis 2: Adat-pipeline és Web Scraping ✅ PRODUCTION READY
+### 3.2 Fázis 2: Adat-pipeline és Web Scraping ✅ PRODUCTION READY & VERIFIED
 - [x] **Rockwool Termékadatlap Scraper** ✅ PRODUCTION COMPLETE
 - [x] **Rockwool Árlisták Scraper** ✅ PRODUCTION COMPLETE
-- [x] **BrightData MCP AI Scraping Rendszer** ✅ INFRASTRUCTURE READY
-- [x] **Adatbázis Integrációs Logika** ✅ INFRASTRUCTURE READY
+- [x] **BrightData MCP AI Scraping Rendszer** ✅ PRODUCTION READY (48 tools)
+- [x] **Adatbázis Integrációs Logika** ✅ PRODUCTION COMPLETE (PostgreSQL + ChromaDB)
 - [x] **Celery és Celery Beat Időzítés** ✅ INFRASTRUCTURE READY
-- [x] **Integrációs Tesztelés** ✅ INFRASTRUCTURE READY
+- [x] **Integrációs Tesztelés** ✅ VERIFIED (RAG search working)
 - [ ] **Leier scraper implementációja** 🔄 PLANNED
 - [ ] **Baumit scraper implementációja** 🔄 PLANNED
 
-### 3.3 Fázis 3: AI Modul - RAG Pipeline 🔄 PLANNED
+### 3.3 Fázis 3: AI Modul - RAG Pipeline 🔄 IN DEVELOPMENT
+#### **Adat-ökoszisztéma és Unifikáció (Data Ecosystem & Unification)**
+- [ ] **Adat-aggregációs szolgáltatás létrehozása** a különböző PDF-ekből (adatlap, árlista, segédlet) származó extrakciós eredmények egyesítésére. `🔄 PLANNED`
+- [ ] **"Golden Record" séma és összerendelési logika** implementálása, amely egyedi termékazonosító (pl. termékkód) alapján köti össze a dokumentumokat. `🔄 PLANNED`
+- [ ] **PDF-ek közötti ár-integráció megvalósítása**, ahol a termékadatlapokhoz automatikusan hozzárendelődnek az árlistákból származó árak. `🔄 PLANNED`
+- [ ] **Intelligens ChromaDB betöltő (Ingestion) fejlesztése**, amely a "Golden Record"-ot használja fel gazdag, szűrhető metaadatok (ár, műszaki adatok) létrehozására a vektorokhoz. `🔄 PLANNED`
+- [ ] **Egységesített adat-pipeline monitoring felület** alapjainak kialakítása a feldolgozás sikerességének és az adatintegritásnak a nyomon követésére. `🔄 PLANNED`
+
 #### **Hibrid Vektor Adatbázis**
-- [ ] **Hibrid Chroma vektor adatbázis** inicializálása és perzisztálása
-- [ ] Hagyományos scraped adatok vektorizálása
+- [x] **Hibrid Chroma vektor adatbázis** inicializálása és perzisztálása ✅ COMPLETE
+- [x] Hagyományos scraped adatok vektorizálása ✅ COMPLETE (92 products)
 - [ ] **🚀 AI-enhanced termékleírások** indexelése BrightData MCP eredményekből
 - [ ] Magyar nyelvi embeddings optimalizálás
 

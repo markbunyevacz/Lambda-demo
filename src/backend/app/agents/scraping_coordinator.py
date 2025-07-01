@@ -13,9 +13,9 @@ from datetime import datetime
 from enum import Enum
 
 from app.database import SessionLocal
-from app.models import Product, ScrapedData
+from app.models import Product
 from app.scraper.data_validator import DataValidator
-from app.scrapers.rockwool import RockwoolScraper
+from app.scrapers.rockwool_final.brochure_and_pricelist_scraper import RockwoolBrochureScraper
 from .brightdata_agent import BrightDataMCPAgent
 
 logger = logging.getLogger(__name__)
@@ -49,7 +49,7 @@ class ScrapingCoordinator:
         self.db_session = SessionLocal()
         
         # Scraper inicializálás
-        self.api_scraper = RockwoolScraper()
+        self.api_scraper = RockwoolBrochureScraper()
         self.mcp_agent = BrightDataMCPAgent()
         
         # Koordináció statisztikák
