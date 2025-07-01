@@ -258,7 +258,7 @@ def main():
     db_manager = DatabaseManager()
     
     # Check PDF directory
-    pdf_dir = Path("src/downloads")
+    pdf_dir = Path("src/downloads/rockwool_datasheets")
     if not pdf_dir.exists():
         print(f"❌ PDF directory not found: {pdf_dir}")
         return

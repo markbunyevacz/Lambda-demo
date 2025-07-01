@@ -33,14 +33,15 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Determine the project root based on the script's location
-# Docker: script in /app/app/scrapers/rockwool_final, go up 3 levels to /app
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
-PDF_STORAGE_DIR = (
-    PROJECT_ROOT / "src" / "downloads" 
-)
+# PERMANENT FIX: Use absolute path from project root
+PROJECT_ROOT = Path(__file__).resolve().parents[5]  # Go up to Lambda/ root
+PDF_STORAGE_DIR = PROJECT_ROOT / "src" / "downloads" / "rockwool_datasheets"
 DUPLICATES_DIR = PDF_STORAGE_DIR / "duplicates"
 DEBUG_FILE_PATH = PROJECT_ROOT / "debug_pricelists_content.html"
+
+# Ensure directories exist
+PDF_STORAGE_DIR.mkdir(parents=True, exist_ok=True)
+DUPLICATES_DIR.mkdir(parents=True, exist_ok=True)
 
 BASE_URL = "https://www.rockwool.com"
 TARGET_URL = "https://www.rockwool.com/hu/muszaki-informaciok/arlistak-es-prospektusok/"
@@ -51,8 +52,6 @@ class RockwoolBrochureScraper:
     success methodology.
     """
     def __init__(self):
-        PDF_STORAGE_DIR.mkdir(parents=True, exist_ok=True)
-        DUPLICATES_DIR.mkdir(parents=True, exist_ok=True)
         self.documents = []
         self.visited_urls = set()
         self.downloaded_files = set()  # Track downloaded filenames

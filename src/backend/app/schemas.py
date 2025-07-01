@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 from typing import List, Optional
+from datetime import datetime
 
 
 class ProductBase(BaseModel):
@@ -14,11 +15,13 @@ class ProductCreate(ProductBase):
 
 class Product(ProductBase):
     id: int
-    category_id: int
-    manufacturer_id: int
+    manufacturer: Optional[Manufacturer] = None
+    category: Optional[Category] = None
+    created_at: datetime
+    updated_at: Optional[datetime] = None
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 class Category(BaseModel):
@@ -31,4 +34,18 @@ class Category(BaseModel):
 
 
 class ScrapeRequest(BaseModel):
-    scraper_type: str 
+    scraper_type: str
+
+
+class ProductUpdate(BaseModel):
+    name: Optional[str] = None
+    description: Optional[str] = None
+    price: Optional[float] = None
+    technical_specs: Optional[dict] = None
+    raw_specs: Optional[dict] = None
+    full_text_content: Optional[str] = None
+    category_id: Optional[int] = None
+
+
+class CategoryBase(BaseModel):
+    name: str 

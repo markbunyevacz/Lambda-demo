@@ -16,7 +16,7 @@ from pathlib import Path
 
 # Configuration
 API_BASE_URL = "http://localhost:8000"
-PDF_DIR = Path("src/downloads")
+PDF_DIR = Path("src/downloads/rockwool_datasheets")
 
 class DatabaseIntegrationTest:
     def __init__(self):
@@ -101,12 +101,20 @@ class DatabaseIntegrationTest:
             return False
     
     def create_sample_product(self, pdf_name):
-        """Create a sample product from PDF filename"""
+        """Create a product from PDF filename with proper UTF-8 handling"""
         try:
-            # Extract product name from PDF filename
-            product_name = pdf_name.replace('termxE9kadatlap.pdf', '')
+            # FIXED: Proper UTF-8 decoding for Hungarian characters
+            product_name = pdf_name.replace('termxE9kadatlap.pdf', ' termékadatlap')
             product_name = product_name.replace('.pdf', '')
-            product_name = product_name.replace('xE9', 'é').replace('x151', 'ő')
+            # Fix common encoding issues
+            product_name = (product_name.replace('xE9', 'é')
+                           .replace('x151', 'ő') 
+                           .replace('xF3', 'ó')
+                           .replace('xE1', 'á')
+                           .replace('xF6', 'ö')
+                           .replace('xFC', 'ü')
+                           .replace('xED', 'í')
+                           .replace('xFA', 'ú'))
             
             data = {
                 "name": f"ROCKWOOL {product_name}",
@@ -182,9 +190,9 @@ class DatabaseIntegrationTest:
             print("❌ Test failed: Could not create category")
             return False
         
-        # Step 4: Create sample products from PDFs
-        pdf_files = list(PDF_DIR.glob("*.pdf"))[:3]  # Test with first 3 PDFs
-        print(f"📁 Processing {len(pdf_files)} sample PDFs...")
+        # Step 4: Create ALL products from PDFs (PRODUCTION MODE)
+        pdf_files = list(PDF_DIR.glob("*.pdf"))
+        print(f"📁 Processing ALL {len(pdf_files)} PDFs in PRODUCTION mode...")
         
         created_products = 0
         for pdf_file in pdf_files:

@@ -325,6 +325,29 @@ async def create_product(
     
     return new_product.to_dict()
 
+@app.put("/products/{product_id}", response_model=schemas.Product)
+def update_product(
+    product_id: int,
+    product_update: schemas.ProductUpdate,
+    db: Session = Depends(get_db)
+):
+    """
+    Update an existing product's details.
+    """
+    db_product = db.query(models.Product).filter(models.Product.id == product_id).first()
+    if db_product is None:
+        raise HTTPException(status_code=404, detail="Product not found")
+
+    update_data = product_update.dict(exclude_unset=True)
+    
+    for key, value in update_data.items():
+        setattr(db_product, key, value)
+    
+    db.add(db_product)
+    db.commit()
+    db.refresh(db_product)
+    return db_product
+
 # ==================== ALKALMAZÁS STÁTUSZ ====================
 
 @app.get("/health")

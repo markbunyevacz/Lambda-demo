@@ -260,16 +260,16 @@ def demo_extraction():
     print("=" * 50)
     
     extractor = RockwoolPDFExtractor()
-    pdf_dir = Path("src/downloads")
+    pdf_dir = Path("src/downloads/rockwool_datasheets")
     
     if not pdf_dir.exists():
-        print("❌ PDF directory not found. Please ensure PDFs are in src/downloads/")
+        print("❌ PDF directory not found. Please ensure PDFs are in src/downloads/rockwool_datasheets/")
         return
     
     # Process a few sample files
     sample_files = [
-        "Roofrock 40 termxE9kadatlap.pdf",
-        "Frontrock S termxE9kadatlap.pdf"
+        "Roofrock 40 termékadatlap.pdf",
+        "Frontrock S termékadatlap.pdf"
     ]
     
     for filename in sample_files:

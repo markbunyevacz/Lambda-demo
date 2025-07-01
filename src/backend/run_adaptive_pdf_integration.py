@@ -502,7 +502,7 @@ def main():
     db = next(get_db())
     
     # Define PDF directory
-    pdf_directory = Path(__file__).resolve().parents[2] / "src" / "downloads"
+    pdf_directory = Path(__file__).resolve().parents[2] / "src" / "downloads" / "rockwool_datasheets"
     
     if not pdf_directory.exists():
         logger.error(f"PDF directory not found: {pdf_directory}")
