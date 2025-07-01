@@ -1,0 +1,130 @@
+number,chromadb_id,name,product_id,category,manufacturer,material,product_type,thermal_conductivity,fire_classification,density,is_active,extraction_date
+1,rockwool_product_47,ROCKWOOL A bazaltkő term,47,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+2,rockwool_product_48,ROCKWOOL Airrock HD FB1,48,Válaszfal szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+3,rockwool_product_49,ROCKWOOL Airrock HD,49,Válaszfal szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+4,rockwool_product_50,ROCKWOOL Airrock LD,50,Válaszfal szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+5,rockwool_product_51,ROCKWOOL Airrock ND FB1,51,Válaszfal szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+6,rockwool_product_52,ROCKWOOL Airrock ND,52,Válaszfal szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+7,rockwool_product_53,ROCKWOOL Airrock XD,53,Válaszfal szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+8,rockwool_product_54,ROCKWOOL Ceilingrock,54,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+9,rockwool_product_55,ROCKWOOL Conlit Ductrock - Conlit Plus,55,Tűzvédelem,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+10,rockwool_product_56,ROCKWOOL Conlit Steel Protect Board ALU,56,Tűzvédelem,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+11,rockwool_product_59,ROCKWOOL Családi házak hőszigetel,59,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+12,rockwool_product_117,ROCKWOOL Gépészeti szigetelések,117,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+13,rockwool_product_57,ROCKWOOL Conlit Steel Protect Board,57,Tűzvédelem,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+14,rockwool_product_78,ROCKWOOL Rockfall,78,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+15,rockwool_product_83,ROCKWOOL ROCKWOOL xC1rlista 2025 TxF6ltse le aktuális á,83,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+16,rockwool_product_62,ROCKWOOL Durock,62,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+17,rockwool_product_67,ROCKWOOL FRONTROCK SUPER,67,Homlokzati hőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+18,rockwool_product_70,ROCKWOOL Klimafix,70,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+19,rockwool_product_73,ROCKWOOL Monrock Max E,73,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+20,rockwool_product_76,ROCKWOOL ProRox xC1rlista,76,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+21,rockwool_product_79,ROCKWOOL ROCKWOOL 800,79,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+22,rockwool_product_82,ROCKWOOL ROCKWOOL tx171zvédelem,82,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+23,rockwool_product_86,ROCKWOOL Roofrock 60,86,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+24,rockwool_product_90,ROCKWOOL Steprock ND,90,Padlószigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+25,rockwool_product_94,ROCKWOOL Airrock HD FB1 ,94,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+26,rockwool_product_98,ROCKWOOL Airrock HD,98,Válaszfal szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+27,rockwool_product_102,ROCKWOOL Airrock XD,102,Válaszfal szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+28,rockwool_product_106,ROCKWOOL Conlit Steel Protect Board,106,Tűzvédelem,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+29,rockwool_product_109,ROCKWOOL Dachrock,109,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+30,rockwool_product_111,ROCKWOOL Durock,111,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+31,rockwool_product_119,ROCKWOOL Klimafix,119,Gépészeti szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+32,rockwool_product_122,ROCKWOOL Monrock Max E,122,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+33,rockwool_product_124,ROCKWOOL Mx170,124,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+34,rockwool_product_127,ROCKWOOL Rockfall és tervezési segédl,127,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+35,rockwool_product_130,ROCKWOOL ROCKWOOL tervezési segédlet,130,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+36,rockwool_product_133,ROCKWOOL Roofrock 40,133,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+37,rockwool_product_137,ROCKWOOL Steelrock 040 Plus,137,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+38,rockwool_product_141,ROCKWOOL Techrock ALS,141,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+39,rockwool_product_145,ROCKWOOL Airrock ND FB1,145,Válaszfal szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+40,rockwool_product_148,ROCKWOOL Ceilingrock,148,Magastető és tetőtér,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+41,rockwool_product_152,ROCKWOOL Dachrock,152,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+42,rockwool_product_154,ROCKWOOL Durock,154,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+43,rockwool_product_157,ROCKWOOL Fixrock,157,Homlokzati hőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+44,rockwool_product_160,ROCKWOOL Klimafix,160,Gépészeti szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+45,rockwool_product_164,ROCKWOOL Mx170,164,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+46,rockwool_product_166,ROCKWOOL ROCKWOOL 800,166,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+47,rockwool_product_58,ROCKWOOL CONLIT tx171zvédelmi rendszerek - r,58,Tűzvédelem,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+48,rockwool_product_60,ROCKWOOL Dachrock,60,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+49,rockwool_product_61,ROCKWOOL Deltarock,61,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+50,rockwool_product_63,ROCKWOOL Firerock,63,Tűzvédelem,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+51,rockwool_product_64,ROCKWOOL Fixrock FB1,64,Homlokzati hőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+52,rockwool_product_65,ROCKWOOL Fixrock,65,Homlokzati hőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+53,rockwool_product_175,ROCKWOOL Techrock ALS,175,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+54,rockwool_product_66,ROCKWOOL Frontrock S,66,Homlokzati hőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+55,rockwool_product_68,ROCKWOOL Gép,68,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+56,rockwool_product_69,ROCKWOOL Kivitelez,69,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+57,rockwool_product_71,ROCKWOOL Klimarock,71,Gépészeti szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+58,rockwool_product_72,ROCKWOOL Lapostetős hőszigetelő rendszerek - Terve,72,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+59,rockwool_product_74,ROCKWOOL Multirock Super,74,Homlokzati hőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+60,rockwool_product_75,ROCKWOOL Mx170SZAKI ADATLAP,75,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+61,rockwool_product_77,ROCKWOOL Rockfall lejt,77,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+62,rockwool_product_172,ROCKWOOL Steprock HD,172,Padló és födém szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+63,rockwool_product_80,ROCKWOOL ROCKWOOL bemutató fxFCzet,80,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+64,rockwool_product_81,ROCKWOOL ROCKWOOL tervez,81,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+65,rockwool_product_84,ROCKWOOL Roofrock 40,84,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+66,rockwool_product_85,ROCKWOOL Roofrock 50,85,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+67,rockwool_product_87,ROCKWOOL Steelrock 035 Plus,87,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+68,rockwool_product_88,ROCKWOOL Steelrock 040 Plus,88,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+69,rockwool_product_89,ROCKWOOL Steprock HD,89,Padlószigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+70,rockwool_product_91,ROCKWOOL Stroprock G,91,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+71,rockwool_product_92,ROCKWOOL Techrock ALS,92,Gépészeti szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+72,rockwool_product_93,ROCKWOOL A bazaltkő természetes erejével,93,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+73,rockwool_product_95,ROCKWOOL Airrock HD ,95,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+74,rockwool_product_96,ROCKWOOL A bazaltkő természetes erejével,96,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+75,rockwool_product_97,ROCKWOOL Airrock HD FB1,97,Válaszfal szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+76,rockwool_product_99,ROCKWOOL Airrock LD,99,Válaszfal szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+77,rockwool_product_101,ROCKWOOL Airrock ND,101,Válaszfal szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+78,rockwool_product_103,ROCKWOOL Ceilingrock,103,Magastető és tetőtér,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+79,rockwool_product_104,ROCKWOOL Conlit Ductrock - Conlit Plus,104,Tűzvédelem,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+80,rockwool_product_105,ROCKWOOL Conlit Steel Protect Board ALU,105,Tűzvédelem,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+81,rockwool_product_108,ROCKWOOL Családi házak hőszigetelése kőzetgyapo,108,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+82,rockwool_product_110,ROCKWOOL Deltarock,110,Válaszfal szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+83,rockwool_product_112,ROCKWOOL Firerock,112,Tűzvédelem,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+84,rockwool_product_113,ROCKWOOL Fixrock FB1,113,Homlokzati hőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+85,rockwool_product_114,ROCKWOOL Fixrock,114,Homlokzati hőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+86,rockwool_product_115,ROCKWOOL Frontrock S,115,Homlokzati hőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+87,rockwool_product_116,ROCKWOOL FRONTROCK SUPER,116,Homlokzati hőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+88,rockwool_product_118,ROCKWOOL Kivitelezési útmutató - Homlokzati hőszig,118,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+89,rockwool_product_120,ROCKWOOL Klimarock,120,Gépészeti szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+90,rockwool_product_121,ROCKWOOL Lapostetős hőszigetelő rendszerek - Terve,121,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+91,rockwool_product_125,ROCKWOOL ProRox xC1rlista és termékkatalógus,125,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+92,rockwool_product_126,ROCKWOOL Rockfall lejtésképző és lejtéskorrekcix,126,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+93,rockwool_product_128,ROCKWOOL ROCKWOOL 800,128,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+94,rockwool_product_129,ROCKWOOL ROCKWOOL bemutató füzet,129,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+95,rockwool_product_131,ROCKWOOL ROCKWOOL tűzvédelem,131,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+96,rockwool_product_132,ROCKWOOL ROCKWOOL xC1rlista 2025 Töltse le aktuális á,132,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+97,rockwool_product_134,ROCKWOOL Roofrock 50,134,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+98,rockwool_product_135,ROCKWOOL Roofrock 60,135,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+99,rockwool_product_136,ROCKWOOL Steelrock 035 Plus,136,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+100,rockwool_product_138,ROCKWOOL Steprock HD,138,Padló és födém szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+101,rockwool_product_139,ROCKWOOL Steprock ND,139,Padló és födém szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+102,rockwool_product_140,ROCKWOOL Stroprock G,140,Padló és födém szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+103,rockwool_product_142,ROCKWOOL Airrock HD FB1,142,Válaszfal szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+104,rockwool_product_143,ROCKWOOL Airrock HD,143,Válaszfal szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+105,rockwool_product_146,ROCKWOOL Airrock ND,146,Válaszfal szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+106,rockwool_product_147,ROCKWOOL Airrock XD,147,Válaszfal szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+107,rockwool_product_149,ROCKWOOL Conlit Ductrock - Conlit Plus,149,Tűzvédelem,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+108,rockwool_product_150,ROCKWOOL Conlit Steel Protect Board ALU,150,Tűzvédelem,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+109,rockwool_product_151,ROCKWOOL Conlit Steel Protect Board,151,Tűzvédelem,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+110,rockwool_product_153,ROCKWOOL Deltarock,153,Válaszfal szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+111,rockwool_product_155,ROCKWOOL Firerock,155,Tűzvédelem,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+112,rockwool_product_156,ROCKWOOL Fixrock FB1,156,Homlokzati hőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+113,rockwool_product_158,ROCKWOOL Frontrock S,158,Homlokzati hőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+114,rockwool_product_159,ROCKWOOL FRONTROCK SUPER,159,Homlokzati hőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+115,rockwool_product_161,ROCKWOOL Klimarock,161,Gépészeti szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+116,rockwool_product_162,ROCKWOOL Monrock Max E,162,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+117,rockwool_product_163,ROCKWOOL Multirock Super,163,Magastető és tetőtér,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+118,rockwool_product_165,ROCKWOOL Rockfall és tervezési segédl,165,Építőipari szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+119,rockwool_product_100,ROCKWOOL Airrock ND FB1,100,Válaszfal szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+120,rockwool_product_107,ROCKWOOL CONLIT tűzvédelmi rendszerek - részletes Te,107,Tűzvédelem,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+121,rockwool_product_123,ROCKWOOL Multirock Super,123,Magastető és tetőtér,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+122,rockwool_product_144,ROCKWOOL Airrock LD,144,Válaszfal szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+123,rockwool_product_167,ROCKWOOL Roofrock 40,167,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+124,rockwool_product_168,ROCKWOOL Roofrock 50,168,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+125,rockwool_product_169,ROCKWOOL Roofrock 60,169,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+126,rockwool_product_170,ROCKWOOL Steelrock 035 Plus,170,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+127,rockwool_product_171,ROCKWOOL Steelrock 040 Plus,171,Tetőszigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+128,rockwool_product_173,ROCKWOOL Steprock ND,173,Padló és födém szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01
+129,rockwool_product_174,ROCKWOOL Stroprock G,174,Padló és födém szigetelés,ROCKWOOL,kőzetgyapot,Hőszigetelő lemez,N/A,A1,N/A,True,2025-07-01

@@ -42,7 +42,7 @@ elif "postgresql" in SQLALCHEMY_DATABASE_URL:
     }
 
 engine = create_engine(
-    SQLALCHEMY_DATABASE_URL,
+    SQLALCHEMY_DATABASE_URL, 
     connect_args=connect_args,
     # Additional engine options for UTF-8 support
     pool_pre_ping=True,

@@ -1,0 +1,1811 @@
+COMPLETE ROCKWOOL PRODUCTS LIST FROM CHROMADB
+============================================================
+Total Products: 129
+============================================================
+
+PRODUCT #1: ROCKWOOL A bazaltkő term
+ChromaDB ID: rockwool_product_47
+Product ID: 47
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #2: ROCKWOOL Airrock HD FB1
+ChromaDB ID: rockwool_product_48
+Product ID: 48
+Category: Válaszfal szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #3: ROCKWOOL Airrock HD
+ChromaDB ID: rockwool_product_49
+Product ID: 49
+Category: Válaszfal szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #4: ROCKWOOL Airrock LD
+ChromaDB ID: rockwool_product_50
+Product ID: 50
+Category: Válaszfal szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #5: ROCKWOOL Airrock ND FB1
+ChromaDB ID: rockwool_product_51
+Product ID: 51
+Category: Válaszfal szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #6: ROCKWOOL Airrock ND
+ChromaDB ID: rockwool_product_52
+Product ID: 52
+Category: Válaszfal szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #7: ROCKWOOL Airrock XD
+ChromaDB ID: rockwool_product_53
+Product ID: 53
+Category: Válaszfal szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #8: ROCKWOOL Ceilingrock
+ChromaDB ID: rockwool_product_54
+Product ID: 54
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #9: ROCKWOOL Conlit Ductrock - Conlit Plus
+ChromaDB ID: rockwool_product_55
+Product ID: 55
+Category: Tűzvédelem
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #10: ROCKWOOL Conlit Steel Protect Board ALU
+ChromaDB ID: rockwool_product_56
+Product ID: 56
+Category: Tűzvédelem
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #11: ROCKWOOL Családi házak hőszigetel
+ChromaDB ID: rockwool_product_59
+Product ID: 59
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #12: ROCKWOOL Gépészeti szigetelések
+ChromaDB ID: rockwool_product_117
+Product ID: 117
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #13: ROCKWOOL Conlit Steel Protect Board
+ChromaDB ID: rockwool_product_57
+Product ID: 57
+Category: Tűzvédelem
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #14: ROCKWOOL Rockfall
+ChromaDB ID: rockwool_product_78
+Product ID: 78
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #15: ROCKWOOL ROCKWOOL xC1rlista 2025 TxF6ltse le aktuális á
+ChromaDB ID: rockwool_product_83
+Product ID: 83
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #16: ROCKWOOL Durock
+ChromaDB ID: rockwool_product_62
+Product ID: 62
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #17: ROCKWOOL FRONTROCK SUPER
+ChromaDB ID: rockwool_product_67
+Product ID: 67
+Category: Homlokzati hőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #18: ROCKWOOL Klimafix
+ChromaDB ID: rockwool_product_70
+Product ID: 70
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #19: ROCKWOOL Monrock Max E
+ChromaDB ID: rockwool_product_73
+Product ID: 73
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #20: ROCKWOOL ProRox xC1rlista
+ChromaDB ID: rockwool_product_76
+Product ID: 76
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #21: ROCKWOOL ROCKWOOL 800
+ChromaDB ID: rockwool_product_79
+Product ID: 79
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #22: ROCKWOOL ROCKWOOL tx171zvédelem
+ChromaDB ID: rockwool_product_82
+Product ID: 82
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #23: ROCKWOOL Roofrock 60
+ChromaDB ID: rockwool_product_86
+Product ID: 86
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #24: ROCKWOOL Steprock ND
+ChromaDB ID: rockwool_product_90
+Product ID: 90
+Category: Padlószigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #25: ROCKWOOL Airrock HD FB1 
+ChromaDB ID: rockwool_product_94
+Product ID: 94
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #26: ROCKWOOL Airrock HD
+ChromaDB ID: rockwool_product_98
+Product ID: 98
+Category: Válaszfal szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #27: ROCKWOOL Airrock XD
+ChromaDB ID: rockwool_product_102
+Product ID: 102
+Category: Válaszfal szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #28: ROCKWOOL Conlit Steel Protect Board
+ChromaDB ID: rockwool_product_106
+Product ID: 106
+Category: Tűzvédelem
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #29: ROCKWOOL Dachrock
+ChromaDB ID: rockwool_product_109
+Product ID: 109
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #30: ROCKWOOL Durock
+ChromaDB ID: rockwool_product_111
+Product ID: 111
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #31: ROCKWOOL Klimafix
+ChromaDB ID: rockwool_product_119
+Product ID: 119
+Category: Gépészeti szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #32: ROCKWOOL Monrock Max E
+ChromaDB ID: rockwool_product_122
+Product ID: 122
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #33: ROCKWOOL Mx170
+ChromaDB ID: rockwool_product_124
+Product ID: 124
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #34: ROCKWOOL Rockfall és tervezési segédl
+ChromaDB ID: rockwool_product_127
+Product ID: 127
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #35: ROCKWOOL ROCKWOOL tervezési segédlet
+ChromaDB ID: rockwool_product_130
+Product ID: 130
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #36: ROCKWOOL Roofrock 40
+ChromaDB ID: rockwool_product_133
+Product ID: 133
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #37: ROCKWOOL Steelrock 040 Plus
+ChromaDB ID: rockwool_product_137
+Product ID: 137
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #38: ROCKWOOL Techrock ALS
+ChromaDB ID: rockwool_product_141
+Product ID: 141
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #39: ROCKWOOL Airrock ND FB1
+ChromaDB ID: rockwool_product_145
+Product ID: 145
+Category: Válaszfal szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #40: ROCKWOOL Ceilingrock
+ChromaDB ID: rockwool_product_148
+Product ID: 148
+Category: Magastető és tetőtér
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #41: ROCKWOOL Dachrock
+ChromaDB ID: rockwool_product_152
+Product ID: 152
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #42: ROCKWOOL Durock
+ChromaDB ID: rockwool_product_154
+Product ID: 154
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #43: ROCKWOOL Fixrock
+ChromaDB ID: rockwool_product_157
+Product ID: 157
+Category: Homlokzati hőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #44: ROCKWOOL Klimafix
+ChromaDB ID: rockwool_product_160
+Product ID: 160
+Category: Gépészeti szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #45: ROCKWOOL Mx170
+ChromaDB ID: rockwool_product_164
+Product ID: 164
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #46: ROCKWOOL ROCKWOOL 800
+ChromaDB ID: rockwool_product_166
+Product ID: 166
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #47: ROCKWOOL CONLIT tx171zvédelmi rendszerek - r
+ChromaDB ID: rockwool_product_58
+Product ID: 58
+Category: Tűzvédelem
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #48: ROCKWOOL Dachrock
+ChromaDB ID: rockwool_product_60
+Product ID: 60
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #49: ROCKWOOL Deltarock
+ChromaDB ID: rockwool_product_61
+Product ID: 61
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #50: ROCKWOOL Firerock
+ChromaDB ID: rockwool_product_63
+Product ID: 63
+Category: Tűzvédelem
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #51: ROCKWOOL Fixrock FB1
+ChromaDB ID: rockwool_product_64
+Product ID: 64
+Category: Homlokzati hőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #52: ROCKWOOL Fixrock
+ChromaDB ID: rockwool_product_65
+Product ID: 65
+Category: Homlokzati hőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #53: ROCKWOOL Techrock ALS
+ChromaDB ID: rockwool_product_175
+Product ID: 175
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #54: ROCKWOOL Frontrock S
+ChromaDB ID: rockwool_product_66
+Product ID: 66
+Category: Homlokzati hőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #55: ROCKWOOL Gép
+ChromaDB ID: rockwool_product_68
+Product ID: 68
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #56: ROCKWOOL Kivitelez
+ChromaDB ID: rockwool_product_69
+Product ID: 69
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #57: ROCKWOOL Klimarock
+ChromaDB ID: rockwool_product_71
+Product ID: 71
+Category: Gépészeti szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #58: ROCKWOOL Lapostetős hőszigetelő rendszerek - Terve
+ChromaDB ID: rockwool_product_72
+Product ID: 72
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #59: ROCKWOOL Multirock Super
+ChromaDB ID: rockwool_product_74
+Product ID: 74
+Category: Homlokzati hőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #60: ROCKWOOL Mx170SZAKI ADATLAP
+ChromaDB ID: rockwool_product_75
+Product ID: 75
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #61: ROCKWOOL Rockfall lejt
+ChromaDB ID: rockwool_product_77
+Product ID: 77
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #62: ROCKWOOL Steprock HD
+ChromaDB ID: rockwool_product_172
+Product ID: 172
+Category: Padló és födém szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #63: ROCKWOOL ROCKWOOL bemutató fxFCzet
+ChromaDB ID: rockwool_product_80
+Product ID: 80
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #64: ROCKWOOL ROCKWOOL tervez
+ChromaDB ID: rockwool_product_81
+Product ID: 81
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #65: ROCKWOOL Roofrock 40
+ChromaDB ID: rockwool_product_84
+Product ID: 84
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #66: ROCKWOOL Roofrock 50
+ChromaDB ID: rockwool_product_85
+Product ID: 85
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #67: ROCKWOOL Steelrock 035 Plus
+ChromaDB ID: rockwool_product_87
+Product ID: 87
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #68: ROCKWOOL Steelrock 040 Plus
+ChromaDB ID: rockwool_product_88
+Product ID: 88
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #69: ROCKWOOL Steprock HD
+ChromaDB ID: rockwool_product_89
+Product ID: 89
+Category: Padlószigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #70: ROCKWOOL Stroprock G
+ChromaDB ID: rockwool_product_91
+Product ID: 91
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #71: ROCKWOOL Techrock ALS
+ChromaDB ID: rockwool_product_92
+Product ID: 92
+Category: Gépészeti szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #72: ROCKWOOL A bazaltkő természetes erejével
+ChromaDB ID: rockwool_product_93
+Product ID: 93
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #73: ROCKWOOL Airrock HD 
+ChromaDB ID: rockwool_product_95
+Product ID: 95
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #74: ROCKWOOL A bazaltkő természetes erejével
+ChromaDB ID: rockwool_product_96
+Product ID: 96
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #75: ROCKWOOL Airrock HD FB1
+ChromaDB ID: rockwool_product_97
+Product ID: 97
+Category: Válaszfal szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #76: ROCKWOOL Airrock LD
+ChromaDB ID: rockwool_product_99
+Product ID: 99
+Category: Válaszfal szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #77: ROCKWOOL Airrock ND
+ChromaDB ID: rockwool_product_101
+Product ID: 101
+Category: Válaszfal szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #78: ROCKWOOL Ceilingrock
+ChromaDB ID: rockwool_product_103
+Product ID: 103
+Category: Magastető és tetőtér
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #79: ROCKWOOL Conlit Ductrock - Conlit Plus
+ChromaDB ID: rockwool_product_104
+Product ID: 104
+Category: Tűzvédelem
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #80: ROCKWOOL Conlit Steel Protect Board ALU
+ChromaDB ID: rockwool_product_105
+Product ID: 105
+Category: Tűzvédelem
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #81: ROCKWOOL Családi házak hőszigetelése kőzetgyapo
+ChromaDB ID: rockwool_product_108
+Product ID: 108
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #82: ROCKWOOL Deltarock
+ChromaDB ID: rockwool_product_110
+Product ID: 110
+Category: Válaszfal szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #83: ROCKWOOL Firerock
+ChromaDB ID: rockwool_product_112
+Product ID: 112
+Category: Tűzvédelem
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #84: ROCKWOOL Fixrock FB1
+ChromaDB ID: rockwool_product_113
+Product ID: 113
+Category: Homlokzati hőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #85: ROCKWOOL Fixrock
+ChromaDB ID: rockwool_product_114
+Product ID: 114
+Category: Homlokzati hőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #86: ROCKWOOL Frontrock S
+ChromaDB ID: rockwool_product_115
+Product ID: 115
+Category: Homlokzati hőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #87: ROCKWOOL FRONTROCK SUPER
+ChromaDB ID: rockwool_product_116
+Product ID: 116
+Category: Homlokzati hőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #88: ROCKWOOL Kivitelezési útmutató - Homlokzati hőszig
+ChromaDB ID: rockwool_product_118
+Product ID: 118
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #89: ROCKWOOL Klimarock
+ChromaDB ID: rockwool_product_120
+Product ID: 120
+Category: Gépészeti szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #90: ROCKWOOL Lapostetős hőszigetelő rendszerek - Terve
+ChromaDB ID: rockwool_product_121
+Product ID: 121
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #91: ROCKWOOL ProRox xC1rlista és termékkatalógus
+ChromaDB ID: rockwool_product_125
+Product ID: 125
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #92: ROCKWOOL Rockfall lejtésképző és lejtéskorrekcix
+ChromaDB ID: rockwool_product_126
+Product ID: 126
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #93: ROCKWOOL ROCKWOOL 800
+ChromaDB ID: rockwool_product_128
+Product ID: 128
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #94: ROCKWOOL ROCKWOOL bemutató füzet
+ChromaDB ID: rockwool_product_129
+Product ID: 129
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #95: ROCKWOOL ROCKWOOL tűzvédelem
+ChromaDB ID: rockwool_product_131
+Product ID: 131
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #96: ROCKWOOL ROCKWOOL xC1rlista 2025 Töltse le aktuális á
+ChromaDB ID: rockwool_product_132
+Product ID: 132
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #97: ROCKWOOL Roofrock 50
+ChromaDB ID: rockwool_product_134
+Product ID: 134
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #98: ROCKWOOL Roofrock 60
+ChromaDB ID: rockwool_product_135
+Product ID: 135
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #99: ROCKWOOL Steelrock 035 Plus
+ChromaDB ID: rockwool_product_136
+Product ID: 136
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #100: ROCKWOOL Steprock HD
+ChromaDB ID: rockwool_product_138
+Product ID: 138
+Category: Padló és födém szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #101: ROCKWOOL Steprock ND
+ChromaDB ID: rockwool_product_139
+Product ID: 139
+Category: Padló és födém szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #102: ROCKWOOL Stroprock G
+ChromaDB ID: rockwool_product_140
+Product ID: 140
+Category: Padló és födém szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #103: ROCKWOOL Airrock HD FB1
+ChromaDB ID: rockwool_product_142
+Product ID: 142
+Category: Válaszfal szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #104: ROCKWOOL Airrock HD
+ChromaDB ID: rockwool_product_143
+Product ID: 143
+Category: Válaszfal szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #105: ROCKWOOL Airrock ND
+ChromaDB ID: rockwool_product_146
+Product ID: 146
+Category: Válaszfal szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #106: ROCKWOOL Airrock XD
+ChromaDB ID: rockwool_product_147
+Product ID: 147
+Category: Válaszfal szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #107: ROCKWOOL Conlit Ductrock - Conlit Plus
+ChromaDB ID: rockwool_product_149
+Product ID: 149
+Category: Tűzvédelem
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #108: ROCKWOOL Conlit Steel Protect Board ALU
+ChromaDB ID: rockwool_product_150
+Product ID: 150
+Category: Tűzvédelem
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #109: ROCKWOOL Conlit Steel Protect Board
+ChromaDB ID: rockwool_product_151
+Product ID: 151
+Category: Tűzvédelem
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #110: ROCKWOOL Deltarock
+ChromaDB ID: rockwool_product_153
+Product ID: 153
+Category: Válaszfal szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #111: ROCKWOOL Firerock
+ChromaDB ID: rockwool_product_155
+Product ID: 155
+Category: Tűzvédelem
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #112: ROCKWOOL Fixrock FB1
+ChromaDB ID: rockwool_product_156
+Product ID: 156
+Category: Homlokzati hőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #113: ROCKWOOL Frontrock S
+ChromaDB ID: rockwool_product_158
+Product ID: 158
+Category: Homlokzati hőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #114: ROCKWOOL FRONTROCK SUPER
+ChromaDB ID: rockwool_product_159
+Product ID: 159
+Category: Homlokzati hőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #115: ROCKWOOL Klimarock
+ChromaDB ID: rockwool_product_161
+Product ID: 161
+Category: Gépészeti szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #116: ROCKWOOL Monrock Max E
+ChromaDB ID: rockwool_product_162
+Product ID: 162
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #117: ROCKWOOL Multirock Super
+ChromaDB ID: rockwool_product_163
+Product ID: 163
+Category: Magastető és tetőtér
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #118: ROCKWOOL Rockfall és tervezési segédl
+ChromaDB ID: rockwool_product_165
+Product ID: 165
+Category: Építőipari szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #119: ROCKWOOL Airrock ND FB1
+ChromaDB ID: rockwool_product_100
+Product ID: 100
+Category: Válaszfal szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #120: ROCKWOOL CONLIT tűzvédelmi rendszerek - részletes Te
+ChromaDB ID: rockwool_product_107
+Product ID: 107
+Category: Tűzvédelem
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #121: ROCKWOOL Multirock Super
+ChromaDB ID: rockwool_product_123
+Product ID: 123
+Category: Magastető és tetőtér
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #122: ROCKWOOL Airrock LD
+ChromaDB ID: rockwool_product_144
+Product ID: 144
+Category: Válaszfal szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #123: ROCKWOOL Roofrock 40
+ChromaDB ID: rockwool_product_167
+Product ID: 167
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #124: ROCKWOOL Roofrock 50
+ChromaDB ID: rockwool_product_168
+Product ID: 168
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #125: ROCKWOOL Roofrock 60
+ChromaDB ID: rockwool_product_169
+Product ID: 169
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #126: ROCKWOOL Steelrock 035 Plus
+ChromaDB ID: rockwool_product_170
+Product ID: 170
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #127: ROCKWOOL Steelrock 040 Plus
+ChromaDB ID: rockwool_product_171
+Product ID: 171
+Category: Tetőszigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #128: ROCKWOOL Steprock ND
+ChromaDB ID: rockwool_product_173
+Product ID: 173
+Category: Padló és födém szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+
+PRODUCT #129: ROCKWOOL Stroprock G
+ChromaDB ID: rockwool_product_174
+Product ID: 174
+Category: Padló és födém szigetelés
+Manufacturer: ROCKWOOL
+Material: kőzetgyapot
+Product Type: Hőszigetelő lemez
+Thermal Conductivity: N/A
+Fire Classification: A1
+Density: N/A
+Active: True
+Extraction Date: 2025-07-01
+--------------------------------------------------
+

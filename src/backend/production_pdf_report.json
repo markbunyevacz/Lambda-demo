@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-07-01T10:15:43.476989",
+  "processing_type": "real_ai_pdf_extraction",
+  "stats": {
+    "pdfs_processed": 46,
+    "products_updated": 0,
+    "new_specs_added": 0,
+    "errors": 38
+  },
+  "simulation": false
+}

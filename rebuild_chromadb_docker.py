@@ -10,6 +10,7 @@ import logging
 import chromadb
 import requests
 import json
+import sys
 from datetime import datetime
 
 logging.basicConfig(level=logging.INFO)

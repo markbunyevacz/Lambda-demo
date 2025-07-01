@@ -158,18 +158,25 @@ class DockerMetadataFixer:
             
             # Update via API
             update_data = {
-                "technical_specs": json.dumps(tech_specs, ensure_ascii=False)
+                "technical_specs": tech_specs,
+                "full_text_content": "",
+                "raw_specs": specs
             }
             
             response = requests.put(
                 f"{self.api_base}/products/{product_id}",
-                params=update_data
+                json=update_data
             )
             
-            return response.status_code == 200
-            
+            if response.status_code == 200:
+                return True
+            else:
+                logger.error(f"❌ Product update failed for ID {product_id}: {response.status_code}")
+                logger.error(f"   Response: {response.text}")
+                return False
+                
         except Exception as e:
-            logger.error(f"❌ Update failed for product {product_id}: {e}")
+            logger.error(f"❌ Product update error for ID {product_id}: {e}")
             return False
     
     def fix_all_product_metadata(self):

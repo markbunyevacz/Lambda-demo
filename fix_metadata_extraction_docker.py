@@ -174,7 +174,7 @@ class DockerMetadataFixer:
                 logger.error(f"❌ Product update failed for ID {product_id}: {response.status_code}")
                 logger.error(f"   Response: {response.text}")
                 return False
-                
+            
         except Exception as e:
             logger.error(f"❌ Product update error for ID {product_id}: {e}")
             return False
