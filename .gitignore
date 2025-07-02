@@ -62,5 +62,24 @@ celerybeat-schedule
 # Ignore downloaded assets
 **/downloads/**/*.pdf
 
+# Prevent large files from being committed (GitHub 100MB limit)
+*.pdf
+*.zip
+*.tar.gz
+*.7z
+*.rar
+*.dmg
+*.iso
+*.exe
+*.msi
+*.deb
+*.rpm
+
 # Ignore large binary files
-/src/backend/src/downloads/leier_materials_api/documents/hu/Leier-Graphisoft Archicad programbővítmény/Leier Építőelem Gyűjtemény.pdf 
+/src/backend/src/downloads/leier_materials_api/documents/hu/Leier-Graphisoft Archicad programbővítmény/Leier Építőelem Gyűjtemény.pdf
+
+# Ignore all documents directories to prevent large file commits
+**/documents/**
+**/downloads/**
+src/backend/src/downloads/
+src/downloads/ 
