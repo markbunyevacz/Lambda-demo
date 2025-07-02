@@ -1,0 +1,19 @@
+{
+    "run_timestamp": "2025-07-01T21:32:14.511893",
+    "duration_seconds": 1.026617,
+    "test_mode": false,
+    "target_url": "https://www.leier.hu/hu/documents/api/documents",
+    "summary": {
+        "documents_discovered": 1,
+        "downloads_successful": 1,
+        "downloads_failed": 0,
+        "duplicates_found": 0
+    },
+    "discovered_docs_sample": [
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1875",
+            "Gép- és formagyártás Ács"
+        ]
+    ],
+    "failed_downloads": []
+}

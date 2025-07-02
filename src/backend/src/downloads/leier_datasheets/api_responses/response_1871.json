@@ -1,0 +1,166 @@
+{
+  "documents": [
+    {
+      "id": 2808,
+      "name": "Leier-eloregyartott-elemek-tervezesi-segedlet.pdf",
+      "is_folder": 0,
+      "parent_id": 1871,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 1871,
+        "name": "Előregyártott elemek tervezési segédlet",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2808",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2809,
+      "name": "Leier panelkiosztási terv minta",
+      "is_folder": 0,
+      "parent_id": 1871,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 1871,
+        "name": "Előregyártott elemek tervezési segédlet",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2809",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2810,
+      "name": "Tűzvédelmi segédlet",
+      "is_folder": 0,
+      "parent_id": 1871,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 1871,
+        "name": "Előregyártott elemek tervezési segédlet",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2810",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2811,
+      "name": "Vasalasi-adatszolgaltatas-LMP_MINTA.pdf",
+      "is_folder": 0,
+      "parent_id": 1871,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 1871,
+        "name": "Előregyártott elemek tervezési segédlet",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2811",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2812,
+      "name": "Vasalasi-adatszolgaltatas_LKF_MINTA.pdf",
+      "is_folder": 0,
+      "parent_id": 1871,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 1871,
+        "name": "Előregyártott elemek tervezési segédlet",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2812",
+        "extension": "pdf"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 1871,
+    "name": "Előregyártott elemek tervezési segédlet",
+    "is_folder": 1,
+    "parent_id": 1859,
+    "created_at": "2023. február 15.",
+    "parent": {
+      "id": 1859,
+      "name": "hu",
+      "is_folder": 1,
+      "parent_id": null,
+      "created_at": "2023. február 15.",
+      "parent": null,
+      "file": null
+    },
+    "file": null
+  }
+}

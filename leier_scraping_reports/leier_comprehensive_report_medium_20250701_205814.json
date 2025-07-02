@@ -1,0 +1,24 @@
+{
+  "coordinator_info": {
+    "priority_level": "medium",
+    "test_mode": false,
+    "start_time": "2025-07-01T20:58:04.007573"
+  },
+  "scrapers_executed": [
+    {
+      "success": true,
+      "scraper_type": "calculators",
+      "priority": "MEDIUM",
+      "stats": {
+        "calculators_found": 0,
+        "interactive_tools": 0,
+        "pricing_data_extracted": 0,
+        "parameters_captured": 0
+      }
+    }
+  ],
+  "overall_success": true,
+  "error_count": 0,
+  "end_time": "2025-07-01T20:58:14.918203",
+  "total_duration_seconds": 10.91063
+}

@@ -1,0 +1,474 @@
+{
+    "run_timestamp": "2025-07-01T23:26:21.918965",
+    "duration_seconds": 749.461694,
+    "test_mode": false,
+    "target_url": "https://www.leier.hu/hu/documents/api/documents",
+    "api_calls_made": 190,
+    "summary": {
+        "folders_explored": 0,
+        "documents_discovered": 1615,
+        "downloads_successful": 1525,
+        "downloads_failed": 89,
+        "duplicates_found": 0
+    },
+    "discovered_docs_sample": [
+        {
+            "url": "https://www.leier.hu/hu/dokumentumtar/2244",
+            "title": "Durisol falazóelem DSi 30/20 - Termékadatlap",
+            "folder_path": "hu/Termékadatlapok/Magasépítési termékek/Durisol falazóelemek/Durisol falazóelem DSi 30/20 - Termékadatlap"
+        },
+        {
+            "url": "https://www.leier.hu/hu/dokumentumtar/4095",
+            "title": "LeierPlan 12 NF adatlap.pdf",
+            "folder_path": "hu/Termékadatlapok/Magasépítési termékek/Tégla termékek/LeierPlan 12 NF adatlap.pdf"
+        },
+        {
+            "url": "https://www.leier.hu/hu/dokumentumtar/2640",
+            "title": "leier-e04-keregfal-sarok",
+            "folder_path": "hu/Részletrajzok/Csomópontok/Kéregfal részletrajzok/asc/leier-e04-keregfal-sarok"
+        },
+        {
+            "url": "https://www.leier.hu/hu/dokumentumtar/3924",
+            "title": "Aufbauanleitung Durisol Frühbeetaufsatz R-Form",
+            "folder_path": "at/Aufbauanleitungen/Aufbauanleitung Durisol Frühbeetaufsatz R-Form"
+        },
+        {
+            "url": "https://www.leier.hu/hu/dokumentumtar/2781",
+            "title": "p09-egy-lepcso1",
+            "folder_path": "hu/Részletrajzok/Csomópontok/Előregyártott lépcső részletrajzok/dwg/p09-egy-lepcso1"
+        },
+        {
+            "url": "https://www.leier.hu/hu/dokumentumtar/3955",
+            "title": "Allg. Hinweise zu Farbabweichungen",
+            "folder_path": "at/Allgemeine Hinweise/Allg. Hinweise zu Farbabweichungen"
+        },
+        {
+            "url": "https://www.leier.hu/hu/dokumentumtar/3800",
+            "title": "Verlegemuster Kartäuser Pflasterplatte",
+            "folder_path": "at/Verlegemuster/Verlegemuster Kartäuser Pflasterplatte"
+        },
+        {
+            "url": "https://www.leier.hu/hu/dokumentumtar/3109",
+            "title": "KCS vályú teljes hosszmetszet",
+            "folder_path": "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Mélyépítés/Kábelcsatorna/KCS vályú teljes hosszmetszet"
+        },
+        {
+            "url": "https://www.leier.hu/hu/dokumentumtar/2917",
+            "title": "ÁBE 40_50 - 200 L - árokburkoló elem - felülnézet",
+            "folder_path": "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Mélyépítés/Árokburkoló- és árokelemek/ÁBE 40_50 - 200 L - árokburkoló elem - felülnézet"
+        },
+        {
+            "url": "https://www.leier.hu/hu/dokumentumtar/2290",
+            "title": "GAIA lapok termékadatlap",
+            "folder_path": "hu/Termékadatlapok/Kertépítés, díszburkolat/Kerti lapok/GAIA lapok termékadatlap"
+        },
+        {
+            "url": "https://www.leier.hu/hu/dokumentumtar/3304",
+            "title": "V AGY 50 50",
+            "folder_path": "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Mélyépítés/Vízelnyelőakna elemek/V AGY 50 50"
+        },
+        {
+            "url": "https://www.leier.hu/hu/dokumentumtar/2382",
+            "title": "f04a-kulso-nyilaszaro1",
+            "folder_path": "hu/Részletrajzok/Csomópontok/Fal részletrajzok/pdf/f04a-kulso-nyilaszaro1"
+        },
+        {
+            "url": "https://www.leier.hu/hu/dokumentumtar/3892",
+            "title": "Folyóka szegélykő termékadatlap",
+            "folder_path": "hu/Termékadatlapok/Kertépítés, díszburkolat/Szegélykövek/Folyóka szegélykő termékadatlap"
+        },
+        {
+            "url": "https://www.leier.hu/hu/dokumentumtar/3039",
+            "title": "LBT 4 akna melléklet",
+            "folder_path": "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Mélyépítés/Betontartályok/LBT 4 akna melléklet"
+        },
+        {
+            "url": "https://www.leier.hu/hu/dokumentumtar/3099",
+            "title": "LEF 100 1 1.5 előfej",
+            "folder_path": "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Mélyépítés/Előfej támfalelemek/LEF 100 1 1.5 előfej"
+        },
+        {
+            "url": "https://www.leier.hu/hu/dokumentumtar/2708",
+            "title": "c01-100-csaphornyos",
+            "folder_path": "hu/Részletrajzok/Csomópontok/Mélyépítési részletrajzok/pln/c01-100-csaphornyos"
+        },
+        {
+            "url": "https://www.leier.hu/hu/dokumentumtar/3319",
+            "title": "LIF 160 200L Iszapfogó - vízszintes metszet",
+            "folder_path": "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Környezettechnika/Iszapfogók DWG/LIF 160 200L Iszapfogó - vízszintes metszet"
+        },
+        {
+            "url": "https://www.leier.hu/hu/dokumentumtar/2512",
+            "title": "t09b-falcsat-fem",
+            "folder_path": "hu/Részletrajzok/Csomópontok/Tető részletrajzok/pln/t09b-falcsat-fem"
+        },
+        {
+            "url": "https://www.leier.hu/hu/dokumentumtar/3236",
+            "title": "AGY 100 - 100 LG - Aknagyűrű gumigyűrűs - függőleges metszet",
+            "folder_path": "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Mélyépítés/Tisztítóakna elemek/Aknagyűrűk/AGY 100 - 100 LG - Aknagyűrű gumigyűrűs - függőleges metszet"
+        },
+        {
+            "url": "https://www.leier.hu/hu/dokumentumtar/3372",
+            "title": "LOL SUPER 100 max NF melléklet",
+            "folder_path": "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Környezettechnika/Olajelválasztók DWG/LOL SUPER 100 max NF melléklet"
+        }
+    ],
+    "failed_downloads": [
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2117",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/2117'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2039",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Mátraderecske - Teljesítménynyilatkozatok\\\\Teljesítménynyilatkozat - Leiertherm 250\\\\120\\\\Teljesítménynyilatkozat - Leiertherm 250_120_65 kevéslyukú - MD LE MD771-1-09-02.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2009",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\Leiertherm\\\\Teljesítménynyilatkozat - Leiertherm Pro 30 - DE LE DE771-1-24-01.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1994",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat - LeierPLAN 25 N_F - DE LE DE771-1-14-03.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2122",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/2122'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2106",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/2106'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2040",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Mátraderecske - Teljesítménynyilatkozatok\\\\Teljesítménynyilatkozat - Leiertherm 250\\\\120\\\\Teljesítménynyilatkozat - Leiertherm 250_120_65 kisméretű - MD LE MD771-1-08-02.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2006",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\Leiertherm\\\\Teljesítménynyilatkozat - Leiertherm 45 N_F LE DE771-1-01-04.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2027",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Mátraderecske - Teljesítménynyilatkozatok\\\\Teljesítménynyilatkozat - Leiertherm 25 Objekt LE MD771-1-12-03.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2045",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Mátraderecske - Teljesítménynyilatkozatok\\\\Teljesítménynyilatkozat - Leiertherm 17_5 N_F - MD LE MD771-1-06-01.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2105",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/2105'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1976",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat - LeierFIX univerzális építési ragasztóhab LE HUA148-01.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2004",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\Leiertherm\\\\Teljesítménynyilatkozat - Leiertherm 38 Pro LE DE771-1-23-02.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2035",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Mátraderecske - Teljesítménynyilatkozatok\\\\Teljesítménynyilatkozat - Leiertherm 250\\\\120\\\\Teljesítménynyilatkozat - Leiertherm 250_120_65 kevéslyukú LE MD771-1-09-03.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1996",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat - LeierPLAN 10\\\\Teljesítménynyilatkozat - LeierPLAN 10_50 N_F - DE LE DE771-1-16-03.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2130",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/2130'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2005",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\Leiertherm\\\\Teljesítménynyilatkozat - Leiertherm 44 Pro LE DE771-1-22-02.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1998",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\Leiertherm\\\\Teljesítménynyilatkozat - Leiertherm 12 N_F LE DE771-1-05-04.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/3822",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Mély- és vasútépítés_ környezettechnika\\\\Felszíni vízelvezetés\\\\Előregyártott beton árokelemek - Pécs - Teljesítménynyilatkozat LE PE1340-01-ÁE.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1993",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat - LeierPLAN 44 iSO_ - DE LE DE771-1-18-02.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1986",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat - LeierPLAN 44 Pro LE DE771-1-21-02.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2038",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Mátraderecske - Teljesítménynyilatkozatok\\\\Teljesítménynyilatkozat - LeierPLAN vékonyágyas falazóhabarcs LE HU998-2-02.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2021",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Mátraderecske - CE-tanúsítványok\\\\CE - Leiertherm 250\\\\120\\\\CE - Leiertherm 250_120_65 Kisméretű kevéslyukú - MD.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2010",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\Leiertherm\\\\Teljesítménynyilatkozat - Leiertherm 45 N_F - DE LE DE771-1-01-03.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1980",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat - LeierPLAN 30 N_F LE DE771-1-13-04.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2047",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Petrovany - Teljesítménynyilatkozat\\\\Teljesítménynyilatkozat - Égetett agyag falazóelem - Petrovany LE PE 771-1-01.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/4038",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Mély- és vasútépítés_ környezettechnika\\\\Durisol zajárnyékoló falrendszer\\\\Leier Durisol zajárnyékoló fal teljesítménynyilatkozat LE HU14388-01.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2000",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\Leiertherm\\\\Teljesítménynyilatkozat - Leiertherm 25 N_F LE DE771-1-04-04.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2042",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Mátraderecske - Teljesítménynyilatkozatok\\\\Teljesítménynyilatkozat - Leiertherm 38 N_F - MD LE MD771-1-02-03.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2107",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/2107'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1989",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat - LeierPLAN Pro 44 - DE LE DE771-1-21-01.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2001",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\Leiertherm\\\\Teljesítménynyilatkozat - Leiertherm 30 N_F LE DE771-1-03-04.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2109",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/2109'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2116",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/2116'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2012",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\Leiertherm\\\\Teljesítménynyilatkozat - Leiertherm 12\\\\Teljesítménynyilatkozat - Leiertherm 12_50 N_F - DE LE DE771-1-05-03.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2121",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/2121'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/3821",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/3821'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/3847",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/3847'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2036",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Mátraderecske - Teljesítménynyilatkozatok\\\\Teljesítménynyilatkozat - Leiertherm 250\\\\120\\\\Teljesítménynyilatkozat - Leiertherm 250_120_65 kisméretű LE MD771-1-08-03.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2037",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Mátraderecske - Teljesítménynyilatkozatok\\\\Teljesítménynyilatkozat - Leiertherm 25\\\\Teljesítménynyilatkozat - Leiertherm 25_30 AKU - MD LE MD771-1-11-03.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2093",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/2093'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2007",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\Leiertherm\\\\Teljesítménynyilatkozat - Leiertherm Pro 44 - DE LE DE771-1-22-01.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1990",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat - LeierPLAN Pro 38 - DE LE DE771-1-20-01.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1985",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat - LeierPLAN 44 iSO_ LE DE771-1-18-03.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1983",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat - LeierPLAN 38 Pro LE DE771-1-20-02.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1977",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat - LeierPLAN 10 N_F LE DE771-1-16-04.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/3848",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/3848'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2131",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/2131'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2011",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\Leiertherm\\\\Teljesítménynyilatkozat - Leiertherm 38 N_F - DE  LE DE771-1-02-03.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2041",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Mátraderecske - Teljesítménynyilatkozatok\\\\Teljesítménynyilatkozat - Leiertherm 45 N_F - MD LE MD771-1-01-04.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2044",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Mátraderecske - Teljesítménynyilatkozatok\\\\Teljesítménynyilatkozat - Leiertherm 30 N_F - MD LE MD771-1-03-04.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2049",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Turcin - Teljesítménynyilatkozatok\\\\Teljesítménynyilatkozat - Leiertherm 30U_Z _Plus_- 2018\\\\Teljesítménynyilatkozat - Leiertherm 30U_Z _Plus_- 2018_15 1374-CPR-56-Z.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1992",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat - LeierPLAN vékonyágyas falazóhabarcs LE HU998-2-02.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1991",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat - LeierPLAN Pro 30 - DE LE DE771-1-19-01.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2108",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/2108'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2013",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\Leiertherm\\\\Teljesítménynyilatkozat - Leiertherm 10\\\\Teljesítménynyilatkozat - Leiertherm 10_50 N_F - DE LE DE771-1-06-03.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1978",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat - LeierPLAN 12 N_F LE DE771-1-15-04.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2129",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/2129'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2113",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/2113'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1995",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat - LeierPLAN 12\\\\Teljesítménynyilatkozat - LeierPLAN 12_50 N_F - DE LE DE771-1-15-03.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2043",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Mátraderecske - Teljesítménynyilatkozatok\\\\Teljesítménynyilatkozat - Leiertherm 30 MT - MD LE MD771-1-10-01.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2002",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\Leiertherm\\\\Teljesítménynyilatkozat - Leiertherm 30 Pro LE DE771-1-24-02.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1997",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\Leiertherm\\\\Teljesítménynyilatkozat - Leiertherm 10 N_F LE DE771-1-06-04.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2003",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\Leiertherm\\\\Teljesítménynyilatkozat - Leiertherm 38 N_F LE DE771-1-02-04.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/3657",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/3657'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/3882",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/3882'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1987",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat - LeierPLAN 45 N_F LE DE771-1-11-04.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/4178",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Betoncserepes dokumentumtár_ Termékadatlap - Teljesítménynyilatkozat - Beépítési útmutató\\\\Termékadatlapok\\\\Leier Toscana tetocserep termekadatlap\\\\Leier-Toscana-tetocserep-termekadatlap.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2119",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/2119'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1979",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat - LeierPLAN 25 N_F LE DE771-1-14-04.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/4180",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Betoncserepes dokumentumtár_ Termékadatlap - Teljesítménynyilatkozat - Beépítési útmutató\\\\Teljesítménynyilatkozatok\\\\Beton tetőcserép Teljesítménynyilatkozat NR_ LE HA490-04 HSZ.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2120",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/2120'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/3819",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/3819'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/3820",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/3820'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2046",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Mátraderecske - Teljesítménynyilatkozatok\\\\Teljesítménynyilatkozat - Leiertherm 10\\\\Teljesítménynyilatkozat - Leiertherm 10_50 N_F - MD LE MD771-1-07-02.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2123",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/2123'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1988",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat - Bekötőszalag GB-DoP-2013-CS-1.10.HU'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2026",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Mátraderecske - Teljesítménynyilatkozatok\\\\Teljesítménynyilatkozat - Leiertherm AKU 30 HT - LE MD771-1-13-01.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2115",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/2115'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2048",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Turcin - Teljesítménynyilatkozatok\\\\Teljesítménynyilatkozat - Leiertherm 10\\\\50 U_Z 2018\\\\Teljesítménynyilatkozat - Leiertherm 10_50 U_Z 2018_01 1374-CPR-56-Z.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1984",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat - LeierPLAN 44 iSO LE DE771-1-17-03.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1982",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat - LeierPLAN 38 N_F LE DE771-1-12-04.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2008",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\Leiertherm\\\\Teljesítménynyilatkozat - Leiertherm Pro 38 - DE LE DE771-1-23-01.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2034",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Mátraderecske - Teljesítménynyilatkozatok\\\\Teljesítménynyilatkozat - Leiertherm 25\\\\Teljesítménynyilatkozat - Leiertherm 25_30 AKU LE MD771-1-11-04.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/3880",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/3880'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1999",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\Leiertherm\\\\Teljesítménynyilatkozat - Leiertherm 20 N_F LE DE771-1-25-02.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2022",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Mátraderecske - CE-tanúsítványok\\\\CE - Leiertherm 250\\\\120\\\\CE - Leiertherm 250_120_65 Kisméretű tömör - MD.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1981",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_materials_api\\\\documents\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési termékek\\\\Tégla termékek\\\\Devecser - Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat - LeierPLAN 30 Pro LE DE771-1-19-02.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/4016",
+            "Client error '404 Not Found' for url 'https://www.leier.hu/hu/dokumentumtar/4016'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+        ]
+    ]
+}

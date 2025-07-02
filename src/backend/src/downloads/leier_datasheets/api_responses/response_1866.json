@@ -1,0 +1,911 @@
+{
+  "documents": [
+    {
+      "id": 2162,
+      "name": "Magasépítési termékek",
+      "is_folder": 1,
+      "parent_id": 1866,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1866,
+        "name": "Termékadatlapok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 2168,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 2162,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 2162,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1866,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1866,
+              "name": "Termékadatlapok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        {
+          "id": 2169,
+          "name": "Nyílásáthidalók",
+          "is_folder": 1,
+          "parent_id": 2162,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 2162,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1866,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1866,
+              "name": "Termékadatlapok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        {
+          "id": 2170,
+          "name": "Beton falazóelemek",
+          "is_folder": 1,
+          "parent_id": 2162,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 2162,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1866,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1866,
+              "name": "Termékadatlapok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        {
+          "id": 2171,
+          "name": "Durisol falazóelemek",
+          "is_folder": 1,
+          "parent_id": 2162,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 2162,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1866,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1866,
+              "name": "Termékadatlapok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        }
+      ],
+      "file": null
+    },
+    {
+      "id": 2163,
+      "name": "Kéményrendszerek",
+      "is_folder": 1,
+      "parent_id": 1866,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1866,
+        "name": "Termékadatlapok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 2249,
+          "name": "Turbo kéményrendszer - Termékadatlap",
+          "is_folder": 0,
+          "parent_id": 2163,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 2163,
+            "name": "Kéményrendszerek",
+            "is_folder": 1,
+            "parent_id": 1866,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1866,
+              "name": "Termékadatlapok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2249",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 2250,
+          "name": "Multikeram LAS P1 kéményrendszer - Termékadatlap",
+          "is_folder": 0,
+          "parent_id": 2163,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 2163,
+            "name": "Kéményrendszerek",
+            "is_folder": 1,
+            "parent_id": 1866,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1866,
+              "name": "Termékadatlapok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2250",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 2251,
+          "name": "Multikeram kéményrendszer - Termékadatlap",
+          "is_folder": 0,
+          "parent_id": 2163,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 2163,
+            "name": "Kéményrendszerek",
+            "is_folder": 1,
+            "parent_id": 1866,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1866,
+              "name": "Termékadatlapok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2251",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 2252,
+          "name": "Multikeram LAS kéményrendszer - Termékadatlap",
+          "is_folder": 0,
+          "parent_id": 2163,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 2163,
+            "name": "Kéményrendszerek",
+            "is_folder": 1,
+            "parent_id": 1866,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1866,
+              "name": "Termékadatlapok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2252",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 2253,
+          "name": "LK kéményrendszer - Termékadatlap",
+          "is_folder": 0,
+          "parent_id": 2163,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 2163,
+            "name": "Kéményrendszerek",
+            "is_folder": 1,
+            "parent_id": 1866,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1866,
+              "name": "Termékadatlapok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2253",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 2254,
+          "name": "SMART kéményrendszer - Termékadatlap",
+          "is_folder": 0,
+          "parent_id": 2163,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 2163,
+            "name": "Kéményrendszerek",
+            "is_folder": 1,
+            "parent_id": 1866,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1866,
+              "name": "Termékadatlapok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2254",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 2255,
+          "name": "LSK kéményrendszer - Termékadatlap",
+          "is_folder": 0,
+          "parent_id": 2163,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 2163,
+            "name": "Kéményrendszerek",
+            "is_folder": 1,
+            "parent_id": 1866,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1866,
+              "name": "Termékadatlapok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2255",
+            "extension": "pdf"
+          }
+        }
+      ],
+      "file": null
+    },
+    {
+      "id": 2164,
+      "name": "Kertépítés, díszburkolat",
+      "is_folder": 1,
+      "parent_id": 1866,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1866,
+        "name": "Termékadatlapok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 2256,
+          "name": "Térkövek",
+          "is_folder": 1,
+          "parent_id": 2164,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 2164,
+            "name": "Kertépítés, díszburkolat",
+            "is_folder": 1,
+            "parent_id": 1866,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1866,
+              "name": "Termékadatlapok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        {
+          "id": 2257,
+          "name": "Kerti lapok",
+          "is_folder": 1,
+          "parent_id": 2164,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 2164,
+            "name": "Kertépítés, díszburkolat",
+            "is_folder": 1,
+            "parent_id": 1866,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1866,
+              "name": "Termékadatlapok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        {
+          "id": 2258,
+          "name": "Rézsűkövek, kiegészítők, virágtartók",
+          "is_folder": 1,
+          "parent_id": 2164,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 2164,
+            "name": "Kertépítés, díszburkolat",
+            "is_folder": 1,
+            "parent_id": 1866,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1866,
+              "name": "Termékadatlapok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        {
+          "id": 2259,
+          "name": "Falazóelemek, kerítéskövek, fedlapok",
+          "is_folder": 1,
+          "parent_id": 2164,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 2164,
+            "name": "Kertépítés, díszburkolat",
+            "is_folder": 1,
+            "parent_id": 1866,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1866,
+              "name": "Termékadatlapok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        {
+          "id": 2260,
+          "name": "Szegélykövek",
+          "is_folder": 1,
+          "parent_id": 2164,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 2164,
+            "name": "Kertépítés, díszburkolat",
+            "is_folder": 1,
+            "parent_id": 1866,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1866,
+              "name": "Termékadatlapok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        }
+      ],
+      "file": null
+    },
+    {
+      "id": 2165,
+      "name": "Tetőfedő rendszerek",
+      "is_folder": 1,
+      "parent_id": 1866,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1866,
+        "name": "Termékadatlapok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 4044,
+          "name": "Leier Granite tető és idomcserepek - Termékadatlap",
+          "is_folder": 0,
+          "parent_id": 2165,
+          "created_at": "2024. november 18.",
+          "parent": {
+            "id": 2165,
+            "name": "Tetőfedő rendszerek",
+            "is_folder": 1,
+            "parent_id": 1866,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1866,
+              "name": "Termékadatlapok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/4044",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 4045,
+          "name": "Leier Toscana tető és idomcserepek - Termékadatlap",
+          "is_folder": 0,
+          "parent_id": 2165,
+          "created_at": "2024. november 18.",
+          "parent": {
+            "id": 2165,
+            "name": "Tetőfedő rendszerek",
+            "is_folder": 1,
+            "parent_id": 1866,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1866,
+              "name": "Termékadatlapok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/4045",
+            "extension": "pdf"
+          }
+        }
+      ],
+      "file": null
+    },
+    {
+      "id": 2166,
+      "name": "Előregyártott termékek",
+      "is_folder": 1,
+      "parent_id": 1866,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1866,
+        "name": "Termékadatlapok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 2326,
+          "name": "LÜF",
+          "is_folder": 1,
+          "parent_id": 2166,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 2166,
+            "name": "Előregyártott termékek",
+            "is_folder": 1,
+            "parent_id": 1866,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1866,
+              "name": "Termékadatlapok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        {
+          "id": 2327,
+          "name": "Tűzvédelmi segédlet",
+          "is_folder": 0,
+          "parent_id": 2166,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 2166,
+            "name": "Előregyártott termékek",
+            "is_folder": 1,
+            "parent_id": 1866,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1866,
+              "name": "Termékadatlapok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2327",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 3786,
+          "name": "Leier támfal blokk termékadatlap",
+          "is_folder": 0,
+          "parent_id": 2166,
+          "created_at": "2023. október 17.",
+          "parent": {
+            "id": 2166,
+            "name": "Előregyártott termékek",
+            "is_folder": 1,
+            "parent_id": 1866,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1866,
+              "name": "Termékadatlapok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/3786",
+            "extension": "pdf"
+          }
+        }
+      ],
+      "file": null
+    },
+    {
+      "id": 2261,
+      "name": "Liftakna elem - Terméktájékoztató",
+      "is_folder": 0,
+      "parent_id": 1866,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1866,
+        "name": "Termékadatlapok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2261",
+        "extension": "pdf"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 1866,
+    "name": "Termékadatlapok",
+    "is_folder": 1,
+    "parent_id": 1859,
+    "created_at": "2023. február 15.",
+    "parent": {
+      "id": 1859,
+      "name": "hu",
+      "is_folder": 1,
+      "parent_id": null,
+      "created_at": "2023. február 15.",
+      "parent": null,
+      "file": null
+    },
+    "file": null
+  }
+}

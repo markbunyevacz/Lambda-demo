@@ -1,0 +1,2152 @@
+{
+  "documents": [
+    {
+      "id": 3562,
+      "name": "LSA 50 12 25 - Durisol blokkelem - Felülnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3562",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3563,
+      "name": "HEA Acéloszlop - Felülnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3563",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3564,
+      "name": "Durisol panel 496 450 hálós - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3564",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3565,
+      "name": "Durisol panel 496 450 félkötés - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3565",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3566,
+      "name": "Durisol panel 496 450 egyedi - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3566",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3567,
+      "name": "Durisol panel 496 125 hálós - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3567",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3568,
+      "name": "Durisol panel 496 125 félkötés - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3568",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3569,
+      "name": "Durisol panel 496 125 egyedi - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3569",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3570,
+      "name": "Durisol panel 496 100 hálós - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3570",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3571,
+      "name": "Durisol panel 496 100 félkötés - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3571",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3572,
+      "name": "Durisol panel 496 100 egyedi - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3572",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3573,
+      "name": "Durisol panel 496 100 DSI 30 13 W - Metszet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3573",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3574,
+      "name": "Durisol panel 496 100 DSI 30 13 N - Metszet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3574",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3575,
+      "name": "Durisol panel 496 100 DSI 25 13 W - Metszet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3575",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3576,
+      "name": "Durisol panel 496 100 DSI 25 13 N - Metszet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3576",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3577,
+      "name": "Durisol panel 396 450 hálós - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3577",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3578,
+      "name": "Durisol panel 396 450 félkötés - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3578",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3579,
+      "name": "Durisol panel 396 450 egyedi - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3579",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3580,
+      "name": "Durisol panel 396 125 hálós - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3580",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3581,
+      "name": "Durisol panel 396 125 félkötés - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3581",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3582,
+      "name": "Durisol panel 396 125 egyedi - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3582",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3583,
+      "name": "Durisol panel 396 100 hálós - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3583",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3584,
+      "name": "Durisol panel 396 100 félkötés - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3584",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3585,
+      "name": "Durisol panel 396 100 egyedi - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3585",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3586,
+      "name": "Durisol panel 396 100 DSI 30 13 W - Metszet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3586",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3587,
+      "name": "Durisol panel 396 100 DSI 30 13 N - Metszet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3587",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3588,
+      "name": "Durisol panel 396 100 DSI 25 13 W - Metszet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3588",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3589,
+      "name": "Durisol panel 396 100 DSI 25 13 N - Metszet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3589",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3590,
+      "name": "Durisol panel 296 450 hálós - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3590",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3591,
+      "name": "Durisol panel 296 450 félkötés - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3591",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3592,
+      "name": "Durisol panel 296 450 egyedi - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3592",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3593,
+      "name": "Durisol panel 296 125 hálós - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3593",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3594,
+      "name": "Durisol panel 296 125 félkötés - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3594",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3595,
+      "name": "Durisol panel 296 125 egyedi - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3595",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3596,
+      "name": "Durisol panel 296 100 hálós - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3596",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3597,
+      "name": "Durisol panel 296 100 félkötés - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3597",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3598,
+      "name": "Durisol panel 296 100 egyedi - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3598",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3599,
+      "name": "Durisol panel 296 100 DSI 30_13 W - Metszet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3599",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3600,
+      "name": "Durisol panel 296 100 DSI 30_13 N - Metszet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3600",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3601,
+      "name": "Durisol panel 296 100 DSI 25 13 W - Metszet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3601",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3602,
+      "name": "Durisol panel 296 100 DSI 25 13 N - Metszet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3602",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3603,
+      "name": "Durisol blokkelemek - Elölnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3603",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3604,
+      "name": "DSI 30 13 W - Durisol blokkelem - Felülnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3604",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3605,
+      "name": "DSI 30 13 N - Durisol blokkelem - Felülnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3605",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3606,
+      "name": "DSI 25 13 W - Durisol blokkelem - Felülnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3606",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3607,
+      "name": "DSI 25 13 N - Durisol blokkelem - Felülnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3607",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3608,
+      "name": "DSI 20 13 N - Durisol blokkelem - Felülnézet",
+      "is_folder": 0,
+      "parent_id": 2874,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2874,
+        "name": "Durisol zajárnyékolás",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3608",
+        "extension": "dwg"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 2874,
+    "name": "Durisol zajárnyékolás",
+    "is_folder": 1,
+    "parent_id": 2337,
+    "created_at": "2023. február 16.",
+    "parent": {
+      "id": 2337,
+      "name": "Elemrajzok (DWG, PDF)",
+      "is_folder": 1,
+      "parent_id": 1867,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 1867,
+        "name": "Részletrajzok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

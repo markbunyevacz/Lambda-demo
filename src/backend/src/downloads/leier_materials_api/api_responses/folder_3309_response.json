@@ -1,0 +1,5557 @@
+{
+  "documents": [
+    {
+      "id": 3351,
+      "name": "LOL SUPER 200 P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3351",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3352,
+      "name": "LOL SUPER 200 max P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3352",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3354,
+      "name": "LOL SUPER 200 max KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3354",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3353,
+      "name": "LOL SUPER 200 KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3353",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3355,
+      "name": "LOL SUPER 150 300 P zápor túlfolyóval melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3355",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3356,
+      "name": "LOL SUPER 150 P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3356",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3357,
+      "name": "LOL SUPER 150 NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3357",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3358,
+      "name": "LOL SUPER 150 max P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3358",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3359,
+      "name": "LOL SUPER 150 max NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3359",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3360,
+      "name": "LOL SUPER 150 max KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3360",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3361,
+      "name": "LOL SUPER 150 KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3361",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3362,
+      "name": "LOL SUPER 125 P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3362",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3363,
+      "name": "LOL SUPER 125 NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3363",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3364,
+      "name": "LOL SUPER 125 max P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3364",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3365,
+      "name": "LOL SUPER 125 max NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3365",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3366,
+      "name": "LOL SUPER 125 max KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3366",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3367,
+      "name": "LOL SUPER 125 KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3367",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3368,
+      "name": "LOL SUPER 100 500 P zápor túlfolyóval melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3368",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3369,
+      "name": "LOL SUPER 100 P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3369",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3370,
+      "name": "LOL SUPER 100 NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3370",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3371,
+      "name": "LOL SUPER 100 max P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3371",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3372,
+      "name": "LOL SUPER 100 max NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3372",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3373,
+      "name": "LOL SUPER 100 max KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3373",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3374,
+      "name": "LOL SUPER 100 KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3374",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3375,
+      "name": "LOL SUPER 80 P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3375",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3376,
+      "name": "LOL SUPER 80 NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3376",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3377,
+      "name": "LOL SUPER 80 max P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3377",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3378,
+      "name": "LOL SUPER 80 max NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3378",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3379,
+      "name": "LOL SUPER 80 max KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3379",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3380,
+      "name": "LOL SUPER 80 KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3380",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3381,
+      "name": "LOL SUPER 60 300 P zápor túlfolyóval melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3381",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3382,
+      "name": "LOL SUPER 60 300 KF zápor túlfolyóval melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3382",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3383,
+      "name": "LOL SUPER 60 P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3383",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3384,
+      "name": "LOL SUPER 60 NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3384",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3385,
+      "name": "LOL SUPER 60 max P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3385",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3386,
+      "name": "LOL SUPER 60 max NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3386",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3387,
+      "name": "LOL SUPER 60 max KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3387",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3388,
+      "name": "LOL SUPER 60 KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3388",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3389,
+      "name": "LOL SUPER 50 250 P zápor túlfolyóval melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3389",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3390,
+      "name": "LOL SUPER 50 250 KF zápor túlfolyóval melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3390",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3391,
+      "name": "LOL SUPER 50 P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3391",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3392,
+      "name": "LOL SUPER 50 NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3392",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3393,
+      "name": "LOL SUPER 50 max P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3393",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3394,
+      "name": "LOL SUPER 50 max NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3394",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3395,
+      "name": "LOL SUPER 50 max KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3395",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3396,
+      "name": "LOL SUPER 50 KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3396",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3397,
+      "name": "LOL SUPER 40 P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3397",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3398,
+      "name": "LOL SUPER 40 NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3398",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3399,
+      "name": "LOL SUPER 40 max P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3399",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3400,
+      "name": "LOL SUPER 40 max NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3400",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3401,
+      "name": "LOL SUPER 40 max KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3401",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3402,
+      "name": "LOL SUPER 40 KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3402",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3403,
+      "name": "LOL SUPER 30 P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3403",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3404,
+      "name": "LOL SUPER 30 NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3404",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3405,
+      "name": "LOL SUPER 30 max P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3405",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3406,
+      "name": "LOL SUPER 30 max NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3406",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3407,
+      "name": "LOL SUPER 30 max KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3407",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3408,
+      "name": "LOL SUPER 30 KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3408",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3409,
+      "name": "LOL SUPER 25 125 max KF zápor túlfolyóval melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3409",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3410,
+      "name": "LOL SUPER 25 P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3410",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3411,
+      "name": "LOL SUPER 25 NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3411",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3412,
+      "name": "LOL SUPER 25 max P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3412",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3413,
+      "name": "LOL SUPER 25 max NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3413",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3414,
+      "name": "LOL SUPER 25 max KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3414",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3415,
+      "name": "LOL SUPER 25 KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3415",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3416,
+      "name": "LOL SUPER 20 P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3416",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3417,
+      "name": "LOL SUPER 20 NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3417",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3418,
+      "name": "LOL SUPER 20 max P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3418",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3419,
+      "name": "LOL SUPER 20 max NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3419",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3420,
+      "name": "LOL SUPER 20 max KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3420",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3421,
+      "name": "LOL SUPER 20 KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3421",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3422,
+      "name": "LOL SUPER 15 150 KF zápor túlfolyóval melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3422",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3423,
+      "name": "LOL SUPER 15 75 max KF zápor túlfolyóval melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3423",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3424,
+      "name": "LOL SUPER 15 P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3424",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3425,
+      "name": "LOL SUPER 15 NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3425",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3426,
+      "name": "LOL SUPER 15 max P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3426",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3427,
+      "name": "LOL SUPER 15 max NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3427",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3428,
+      "name": "LOL SUPER 15 max KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3428",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3429,
+      "name": "LOL SUPER 15 KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3429",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3430,
+      "name": "LOL SUPER 10 P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3430",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3431,
+      "name": "LOL SUPER 10 NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3431",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3432,
+      "name": "LOL SUPER 10 max P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3432",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3433,
+      "name": "LOL SUPER 10 max NF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3433",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3434,
+      "name": "LOL SUPER 10 max KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3434",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3435,
+      "name": "LOL SUPER 10 KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3435",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3436,
+      "name": "LOL SUPER 8 80 KF zápor túlfolyóval melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3436",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3437,
+      "name": "LOL SUPER 8 P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3437",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3438,
+      "name": "LOL SUPER 8 max P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3438",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3439,
+      "name": "LOL SUPER 8 max KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3439",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3440,
+      "name": "LOL SUPER 8 KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3440",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3441,
+      "name": "LOL SUPER 6 60 P zápor túlfolyóval melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3441",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3442,
+      "name": "LOL SUPER 6 60 KF zápor túlfolyóval melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3442",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3443,
+      "name": "LOL SUPER 6 30 P zápor túlfolyóval melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3443",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3444,
+      "name": "LOL SUPER 6 P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3444",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3445,
+      "name": "LOL SUPER 6 max P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3445",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3446,
+      "name": "LOL SUPER 6 max KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3446",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3447,
+      "name": "LOL SUPER 6 KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3447",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3448,
+      "name": "LOL SUPER 3 P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3448",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3449,
+      "name": "LOL SUPER 3 max P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3449",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3450,
+      "name": "LOL SUPER 3 max KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3450",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3451,
+      "name": "LOL SUPER 3 KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3451",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3452,
+      "name": "LOL SUPER 1,5 P melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3452",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3453,
+      "name": "LOL SUPER 1,5 max KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3453",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3454,
+      "name": "LOL SUPER 1,5 KF melléklet",
+      "is_folder": 0,
+      "parent_id": 3309,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3309,
+        "name": "Olajelválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3454",
+        "extension": "dwg"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 3309,
+    "name": "Olajelválasztók DWG",
+    "is_folder": 1,
+    "parent_id": 2873,
+    "created_at": "2023. február 16.",
+    "parent": {
+      "id": 2873,
+      "name": "Környezettechnika",
+      "is_folder": 1,
+      "parent_id": 2337,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2337,
+        "name": "Elemrajzok (DWG, PDF)",
+        "is_folder": 1,
+        "parent_id": 1867,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 1867,
+          "name": "Részletrajzok",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

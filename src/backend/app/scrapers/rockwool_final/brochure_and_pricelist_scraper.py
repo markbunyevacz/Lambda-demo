@@ -34,7 +34,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # PERMANENT FIX: Use absolute path from project root
-PROJECT_ROOT = Path(__file__).resolve().parents[5]  # Go up to Lambda/ root
+PROJECT_ROOT = Path(__file__).resolve().parents[3]  # Go up to Lambda/ root
 PDF_STORAGE_DIR = PROJECT_ROOT / "src" / "downloads" / "rockwool_datasheets"
 DUPLICATES_DIR = PDF_STORAGE_DIR / "duplicates"
 DEBUG_FILE_PATH = PROJECT_ROOT / "debug_pricelists_content.html"

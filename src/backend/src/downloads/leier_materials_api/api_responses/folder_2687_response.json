@@ -1,0 +1,416 @@
+{
+  "documents": [
+    {
+      "id": 2691,
+      "name": "c06-nagyatmero-gumigy",
+      "is_folder": 0,
+      "parent_id": 2687,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2687,
+        "name": "dwg",
+        "is_folder": 1,
+        "parent_id": 2346,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2346,
+          "name": "Mélyépítési részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2691",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2692,
+      "name": "akna-osszeallitasi-rajzok",
+      "is_folder": 0,
+      "parent_id": 2687,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2687,
+        "name": "dwg",
+        "is_folder": 1,
+        "parent_id": 2346,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2346,
+          "name": "Mélyépítési részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2692",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2693,
+      "name": "c05-nagyatmero-csaphor",
+      "is_folder": 0,
+      "parent_id": 2687,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2687,
+        "name": "dwg",
+        "is_folder": 1,
+        "parent_id": 2346,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2346,
+          "name": "Mélyépítési részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2693",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2694,
+      "name": "c04-vegyes-csaphornyos",
+      "is_folder": 0,
+      "parent_id": 2687,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2687,
+        "name": "dwg",
+        "is_folder": 1,
+        "parent_id": 2346,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2346,
+          "name": "Mélyépítési részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2694",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2695,
+      "name": "c03-80-csaphornyos",
+      "is_folder": 0,
+      "parent_id": 2687,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2687,
+        "name": "dwg",
+        "is_folder": 1,
+        "parent_id": 2346,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2346,
+          "name": "Mélyépítési részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2695",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2696,
+      "name": "c02-100-gumigyurus",
+      "is_folder": 0,
+      "parent_id": 2687,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2687,
+        "name": "dwg",
+        "is_folder": 1,
+        "parent_id": 2346,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2346,
+          "name": "Mélyépítési részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2696",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2697,
+      "name": "c01-100-csaphornyos",
+      "is_folder": 0,
+      "parent_id": 2687,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2687,
+        "name": "dwg",
+        "is_folder": 1,
+        "parent_id": 2346,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2346,
+          "name": "Mélyépítési részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2697",
+        "extension": "dwg"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 2687,
+    "name": "dwg",
+    "is_folder": 1,
+    "parent_id": 2346,
+    "created_at": "2023. február 16.",
+    "parent": {
+      "id": 2346,
+      "name": "Mélyépítési részletrajzok",
+      "is_folder": 1,
+      "parent_id": 2336,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2336,
+        "name": "Csomópontok",
+        "is_folder": 1,
+        "parent_id": 1867,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 1867,
+          "name": "Részletrajzok",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

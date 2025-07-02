@@ -1,0 +1,681 @@
+{
+  "documents": [
+    {
+      "id": 3313,
+      "name": "LIF 240 215L Iszapfogó - vízszintes metszet",
+      "is_folder": 0,
+      "parent_id": 3307,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3307,
+        "name": "Iszapfogók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3313",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3314,
+      "name": "LIF 240 215L Iszapfogó - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3307,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3307,
+        "name": "Iszapfogók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3314",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3315,
+      "name": "LIF 200 230L Iszapfogó - vízszintes metszet",
+      "is_folder": 0,
+      "parent_id": 3307,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3307,
+        "name": "Iszapfogók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3315",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3316,
+      "name": "LIF 200 230L Iszapfogó - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3307,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3307,
+        "name": "Iszapfogók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3316",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3317,
+      "name": "LIF 200 175L Iszapfogó - vízszintes metszet",
+      "is_folder": 0,
+      "parent_id": 3307,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3307,
+        "name": "Iszapfogók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3317",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3318,
+      "name": "LIF 200 175L Iszapfogó - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3307,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3307,
+        "name": "Iszapfogók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3318",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3319,
+      "name": "LIF 160 200L Iszapfogó - vízszintes metszet",
+      "is_folder": 0,
+      "parent_id": 3307,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3307,
+        "name": "Iszapfogók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3319",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3320,
+      "name": "LIF 160 200L Iszapfogó - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3307,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3307,
+        "name": "Iszapfogók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3320",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3321,
+      "name": "LIF 240 215 melléklet",
+      "is_folder": 0,
+      "parent_id": 3307,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3307,
+        "name": "Iszapfogók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3321",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3322,
+      "name": "LIF 200 230 melléklet",
+      "is_folder": 0,
+      "parent_id": 3307,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3307,
+        "name": "Iszapfogók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3322",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3323,
+      "name": "LIF 200 175 melléklet",
+      "is_folder": 0,
+      "parent_id": 3307,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3307,
+        "name": "Iszapfogók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3323",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3324,
+      "name": "LIF 160 200 melléklet",
+      "is_folder": 0,
+      "parent_id": 3307,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3307,
+        "name": "Iszapfogók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3324",
+        "extension": "dwg"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 3307,
+    "name": "Iszapfogók DWG",
+    "is_folder": 1,
+    "parent_id": 2873,
+    "created_at": "2023. február 16.",
+    "parent": {
+      "id": 2873,
+      "name": "Környezettechnika",
+      "is_folder": 1,
+      "parent_id": 2337,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2337,
+        "name": "Elemrajzok (DWG, PDF)",
+        "is_folder": 1,
+        "parent_id": 1867,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 1867,
+          "name": "Részletrajzok",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

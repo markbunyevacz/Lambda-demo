@@ -1,0 +1,575 @@
+{
+  "documents": [
+    {
+      "id": 2667,
+      "name": "b07a-tereplepcso1",
+      "is_folder": 0,
+      "parent_id": 2645,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2645,
+        "name": "pln",
+        "is_folder": 1,
+        "parent_id": 2345,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2345,
+          "name": "Térburkolat részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2667",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2668,
+      "name": "b08-tamfal",
+      "is_folder": 0,
+      "parent_id": 2645,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2645,
+        "name": "pln",
+        "is_folder": 1,
+        "parent_id": 2345,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2345,
+          "name": "Térburkolat részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2668",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2669,
+      "name": "b07b-tereplepcso2",
+      "is_folder": 0,
+      "parent_id": 2645,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2645,
+        "name": "pln",
+        "is_folder": 1,
+        "parent_id": 2345,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2345,
+          "name": "Térburkolat részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2669",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2670,
+      "name": "b06a-folyoka1",
+      "is_folder": 0,
+      "parent_id": 2645,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2645,
+        "name": "pln",
+        "is_folder": 1,
+        "parent_id": 2345,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2345,
+          "name": "Térburkolat részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2670",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2671,
+      "name": "b06b-folyoka2",
+      "is_folder": 0,
+      "parent_id": 2645,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2645,
+        "name": "pln",
+        "is_folder": 1,
+        "parent_id": 2345,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2345,
+          "name": "Térburkolat részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2671",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2672,
+      "name": "b05-szegely5",
+      "is_folder": 0,
+      "parent_id": 2645,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2645,
+        "name": "pln",
+        "is_folder": 1,
+        "parent_id": 2345,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2345,
+          "name": "Térburkolat részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2672",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2673,
+      "name": "b04-szegely4",
+      "is_folder": 0,
+      "parent_id": 2645,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2645,
+        "name": "pln",
+        "is_folder": 1,
+        "parent_id": 2345,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2345,
+          "name": "Térburkolat részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2673",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2674,
+      "name": "b03-szegely3",
+      "is_folder": 0,
+      "parent_id": 2645,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2645,
+        "name": "pln",
+        "is_folder": 1,
+        "parent_id": 2345,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2345,
+          "name": "Térburkolat részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2674",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2675,
+      "name": "b02-szegely2",
+      "is_folder": 0,
+      "parent_id": 2645,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2645,
+        "name": "pln",
+        "is_folder": 1,
+        "parent_id": 2345,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2345,
+          "name": "Térburkolat részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2675",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2676,
+      "name": "b01-szegely1",
+      "is_folder": 0,
+      "parent_id": 2645,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2645,
+        "name": "pln",
+        "is_folder": 1,
+        "parent_id": 2345,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2345,
+          "name": "Térburkolat részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2676",
+        "extension": "zip"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 2645,
+    "name": "pln",
+    "is_folder": 1,
+    "parent_id": 2345,
+    "created_at": "2023. február 16.",
+    "parent": {
+      "id": 2345,
+      "name": "Térburkolat részletrajzok",
+      "is_folder": 1,
+      "parent_id": 2336,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2336,
+        "name": "Csomópontok",
+        "is_folder": 1,
+        "parent_id": 1867,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 1867,
+          "name": "Részletrajzok",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

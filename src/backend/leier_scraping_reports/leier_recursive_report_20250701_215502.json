@@ -1,0 +1,71 @@
+{
+    "run_timestamp": "2025-07-01T21:55:02.872034",
+    "duration_seconds": 635.95639,
+    "test_mode": false,
+    "summary": {
+        "documents_discovered": 1588,
+        "downloads_successful": 1579,
+        "downloads_failed": 9,
+        "duplicates_found": 0
+    },
+    "discovered_docs_sample": [
+        "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Mélyépítés/Előfej támfalelemek/LEF 60 1 1.5 előfej",
+        "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Mélyépítés/Tisztítóakna elemek/Aknagyűrűk/AGY 100 L - Aknagyűrű - vízszintes metszet",
+        "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Mélyépítés/Átemelőakna elemek/AFE_200_215 LG - Átemelő fenékelem gumigyűrűs",
+        "hu/Részletrajzok/Csomópontok/Kéregfal részletrajzok/asc/leier-e03a-falcsatl-szig",
+        "hu/Részletrajzok/Csomópontok/Kéregelemes födém részletrajzok/pdf/p031-kpanel-belsokoszo.pdf",
+        "at/Prospekte/Leier Dachsteine",
+        "hu/Prospektusok/Leier Durisol - A környezettudatos építésért",
+        "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Környezettechnika/Olajelválasztók DWG/LOL SUPER 40 max P melléklet",
+        "hu/Részletrajzok/Csomópontok/Födém részletrajzok/dwg/m05a-mesterf-terasz1",
+        "hu/Teljesítménynyilatkozatok/Kéményrendszerek/Teljesítménynyilatkozat MULTIKERAM LAS P1 kéményrendszer LE KL13063-MULTIKERAM LAS P1-02",
+        "hu/Részletrajzok/Csomópontok/Leier Durisol zajárnyékoló falak/DWG/DSi 25 13 - W típusrajz",
+        "hu/Részletrajzok/Csomópontok/Előregyártott lépcső részletrajzok/dwg/p10-egy-lepcso2",
+        "hu/Részletrajzok/Csomópontok/Fal részletrajzok/dxf/Leier f07-belsofofal-alapoz1",
+        "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Mélyépítés/Tisztítóakna elemek/Aknagyűrűk/AGY 80 - 25 L - Aknagyűrű - függőleges metszet",
+        "hu/Részletrajzok/Csomópontok/Tető részletrajzok/dwg/t02-gerinc",
+        "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Környezettechnika/Olajelválasztók DWG/LOL SUPER 8 max KF melléklet",
+        "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Környezettechnika/Olajelválasztók PDF/LOL SUPER 25 max NF melleklet PDF",
+        "hu/Termékadatlapok/Kertépítés, díszburkolat/Falazóelemek, kerítéskövek, fedlapok/ANTIK kerítéskő termékadatlap",
+        "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Mélyépítés/Vízelnyelőakna elemek/V AGY 50 10",
+        "hu/Részletrajzok/Csomópontok/Tető részletrajzok/asc/leier-t072-tetoablak-vizsz"
+    ],
+    "failed_downloads": [
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2035",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_datasheets\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési_termékek\\\\Tégla_termékek\\\\Mátraderecske_-_Teljesítménynyilatkozatok\\\\Teljesítménynyilatkozat_-_Leiertherm_250\\\\120\\\\65_kevéslyukú_LE_MD771-1-09-03.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1992",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_datasheets\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési_termékek\\\\Tégla_termékek\\\\Devecser_-_Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat_-_LeierPLAN_vékonyágyas_falazóhabarcs_LE_HU998-2-02.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2039",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_datasheets\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési_termékek\\\\Tégla_termékek\\\\Mátraderecske_-_Teljesítménynyilatkozatok\\\\Teljesítménynyilatkozat_-_Leiertherm_250\\\\120\\\\65_kevéslyukú_-_MD_LE_MD771-1-09-02.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/4180",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_datasheets\\\\hu\\\\Betoncserepes_dokumentumtár__Termékadatlap_-_Teljesítménynyilatkozat_-_Beépítési_útmutató\\\\Teljesítménynyilatkozatok\\\\Beton_tetőcserép_Teljesítménynyilatkozat_NR__LE_HA490-04_HSZ_pdf.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2040",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_datasheets\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési_termékek\\\\Tégla_termékek\\\\Mátraderecske_-_Teljesítménynyilatkozatok\\\\Teljesítménynyilatkozat_-_Leiertherm_250\\\\120\\\\65_kisméretű_-_MD_LE_MD771-1-08-02.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/1976",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_datasheets\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési_termékek\\\\Tégla_termékek\\\\Devecser_-_Teljesítménynyilatkozatok\\\\LeierPLAN\\\\Teljesítménynyilatkozat_-_LeierFIX_univerzális_építési_ragasztóhab_LE_HUA148-01.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2700",
+            "All connection attempts failed"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/4178",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_datasheets\\\\hu\\\\Betoncserepes_dokumentumtár__Termékadatlap_-_Teljesítménynyilatkozat_-_Beépítési_útmutató\\\\Termékadatlapok\\\\Leier_Toscana_tetocserep_termekadatlap\\\\Leier-Toscana-tetocserep-termekadatlap_pdf.pdf'"
+        ],
+        [
+            "https://www.leier.hu/hu/dokumentumtar/2038",
+            "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\.cursor\\\\Lambda\\\\src\\\\backend\\\\src\\\\downloads\\\\leier_datasheets\\\\hu\\\\Teljesítménynyilatkozatok\\\\Magasépítési_termékek\\\\Tégla_termékek\\\\Mátraderecske_-_Teljesítménynyilatkozatok\\\\Teljesítménynyilatkozat_-_LeierPLAN_vékonyágyas_falazóhabarcs_LE_HU998-2-02.pdf'"
+        ]
+    ]
+}

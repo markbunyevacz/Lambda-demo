@@ -3,7 +3,6 @@ description:
 globs: 
 alwaysApply: false
 ---
-
 ## 1. PROJEKT ÁTTEKINTÉS
 
 ### 1.1 Minimum Credible Product (MCP) Célja
@@ -341,3 +340,231 @@ def systematic_document_analysis(document, query):
     confidence_score = calculate_confidence(final_results)
     
     return final_results, confidence_score
+
+# MANUFACTURER-SPECIFIC CONFIGS (NEVER CROSS)
+SCRAPER_CONFIGS = {
+    'ROCKWOOL': {
+        'base_url': 'https://www.rockwool.com',
+        'storage_path': 'rockwool_datasheets',
+        'endpoints': [
+            '/hu/muszaki-informaciok/termekadatlapok/',
+            '/hu/muszaki-informaciok/arlistak-es-prospektusok/'
+        ]
+    },
+    'LEIER': {
+        'base_url': 'https://www.leier.hu', 
+        'storage_path': 'leier_products',
+        'endpoints': [
+            '/hu/termekek/',
+            '/hu/letoltheto-dokumentumok/',
+            '/hu/tipushazak/'
+        ]
+    },
+    'BAUMIT': {
+        'base_url': 'https://baumit.hu',
+        'storage_path': 'baumit_products', 
+        'endpoints': [
+            '/termekek-a-z',          # ✅ IMPLEMENTED: A-Z product catalog
+            '/baumit-life',           # 🔒 IMPLEMENTED: Color system scraper
+            '/baumit-katalogus/',     # 🔜 TODO: Product catalogs
+            '/life-szinrendszer/'     # 🔜 TODO: Color system details
+        ]
+    }
+}
+
+class IsolatedScraperFactory:
+    @staticmethod
+    def create_scraper(manufacturer: str):
+        config = SCRAPER_CONFIGS[manufacturer.upper()]
+        
+        if manufacturer == 'ROCKWOOL':
+            return RockwoolScraper(config)  # ✅ Existing
+        elif manufacturer == 'LEIER':
+            return LeierScraper(config)     # 🔒 New isolated  
+        elif manufacturer == 'BAUMIT':
+            return BaumitScraper(config)    # ✅ IMPLEMENTED: Isolated BAUMIT scrapers
+        else:
+            raise ValueError(f"Unknown manufacturer: {manufacturer}")
+
+class RockwoolCategoryMapper(CategoryMapper):
+    """ROCKWOOL categories only"""
+    def __init__(self):
+        self.manufacturer = "ROCKWOOL"
+        self.category_mappings = {
+            'Tetőszigetelés': {...},
+            'Homlokzati hőszigetelés': {...},
+            # ... ROCKWOOL specific
+        }
+
+class LeierCategoryMapper(CategoryMapper):
+    """LEIER categories only"""  
+    def __init__(self):
+        self.manufacturer = "LEIER"
+        self.category_mappings = {
+            'Falazóelemek': {...},
+            'Előregyártott elemek': {...},
+            # ... LEIER specific  
+        }
+
+class BaumitCategoryMapper(CategoryMapper):
+    """BAUMIT categories only - ✅ IMPLEMENTED"""
+    def __init__(self):
+        self.manufacturer = "BAUMIT"
+        self.category_mappings = {
+            'Hőszigetelő rendszerek': 'Thermal Insulation Systems',
+            'Homlokzatfestékek': 'Façade Paints',
+            'Színes vékonyvakolatok': 'Colored Thin-layer Renders',
+            'Aljzatképző ragasztó rendszerek': 'Substrate Adhesive Systems',
+            'Homlokzati felújító rendszerek': 'Façade Renovation Systems',
+            'Beltéri vakolatok': 'Interior Renders',
+            'Glettek és festékek': 'Fillers and Paints',
+            'Baumit Life színrendszer': 'Baumit Life Color System'
+            # ✅ FULL IMPLEMENTATION with 8 main categories
+        }
+
+# FACTORY ENSURES NO CROSS-CONTAMINATION
+def get_category_mapper(manufacturer: str):
+    mappers = {
+        'ROCKWOOL': RockwoolCategoryMapper(),
+        'LEIER': LeierCategoryMapper(), 
+        'BAUMIT': BaumitCategoryMapper()
+    }
+    return mappers[manufacturer.upper()]
+
+class IsolatedScrapingOrchestrator:
+    def run_manufacturer_scraping(self, manufacturer: str):
+        """Each manufacturer runs in complete isolation"""
+        
+        # 1. Isolated configuration
+        config = SCRAPER_CONFIGS[manufacturer]
+        
+        # 2. Isolated storage
+        storage_path = get_storage_path(manufacturer)
+        
+        # 3. Isolated database integration  
+        db_integration = ManufacturerIsolatedDatabaseIntegration(manufacturer)
+        
+        # 4. Isolated category mapping
+        category_mapper = get_category_mapper(manufacturer)
+        
+        # 5. Run scraper with isolated context
+        scraper = IsolatedScraperFactory.create_scraper(manufacturer)
+        scraper.run()
+        
+        # IMPOSSIBLE to affect other manufacturers
+
+# docker-compose.yml - Service isolation
+services:
+  rockwool-scraper:     # ✅ Existing
+    volumes:
+      - ./src/downloads/rockwool_datasheets:/app/downloads/rockwool_datasheets
+    environment:
+      - MANUFACTURER=ROCKWOOL
+      
+  leier-scraper:        # 🔒 New isolated
+    volumes:  
+      - ./src/downloads/leier_products:/app/downloads/leier_products
+    environment:
+      - MANUFACTURER=LEIER
+      
+  baumit-scraper:       # ✅ IMPLEMENTED: Isolated BAUMIT service
+    volumes:
+      - ./src/downloads/baumit_products:/app/downloads/baumit_products  
+    environment:
+      - MANUFACTURER=BAUMIT
+      - BAUMIT_BASE_URL=https://baumit.hu
+      - BAUMIT_CATALOG_PATH=/termekek-a-z
+
+class IsolatedErrorHandler:
+    def handle_scraper_error(self, manufacturer: str, error: Exception):
+        """Errors in one manufacturer NEVER affect others"""
+        
+        error_log_path = get_storage_path(manufacturer) / "errors.log"
+        
+        with open(error_log_path, 'a') as f:
+            f.write(f"{datetime.now()}: {manufacturer} error: {error}\n")
+        
+        # Report to manufacturer-specific monitoring
+        self._notify_manufacturer_team(manufacturer, error)
+        
+        # ISOLATION: Other manufacturers continue unaffected
+        logger.warning(f"{manufacturer} scraper failed, others continue")
+
+class TestRockwoolIsolation(unittest.TestCase):
+    """Verify ROCKWOOL data remains untouched"""
+    
+    def test_rockwool_data_unchanged(self):
+        # Verify 129 ROCKWOOL products still exist
+        rockwool_count = db.query(Product).filter(
+            Product.manufacturer.has(name='ROCKWOOL')
+        ).count()
+        self.assertEqual(rockwool_count, 129)
+        
+    def test_rockwool_files_unchanged(self):
+        # Verify all 41 PDF files still exist
+        rockwool_files = list(Path("src/downloads/rockwool_datasheets").glob("*.pdf"))
+        self.assertEqual(len(rockwool_files), 41)
+
+class TestLeierIsolation(unittest.TestCase):
+    """Verify LEIER has its own isolated space"""
+    
+    def test_leier_directory_isolation(self):
+        leier_path = Path("src/downloads/leier_products")
+        self.assertTrue(leier_path.exists())
+        self.assertNotEqual(leier_path, Path("src/downloads/rockwool_datasheets"))
+
+class IsolationMonitor:
+    def validate_isolation(self):
+        """Continuous validation that no cross-contamination occurs"""
+        
+        # 1. Database isolation check
+        manufacturers = db.query(Manufacturer).all()
+        for mfr in manufacturers:
+            products = db.query(Product).filter(
+                Product.manufacturer_id == mfr.id
+            ).all()
+            
+            # Verify all products belong to correct manufacturer
+            for product in products:
+                assert product.manufacturer_id == mfr.id
+                
+        # 2. File isolation check  
+        for manufacturer, path in MANUFACTURER_STORAGE.items():
+            if path.exists():
+                files = list(path.glob("**/*"))
+                # Verify no cross-manufacturer files
+                for file in files:
+                    assert manufacturer.lower() in str(file).lower()
+                    
+        # 3. SKU isolation check
+        all_skus = db.query(Product.sku).all()
+        sku_prefixes = {'ROCK': 'ROCKWOOL', 'LEIR': 'LEIER', 'BAUM': 'BAUMIT'}
+        
+        for (sku,) in all_skus:
+            if sku:
+                prefix = sku.split('-')[0]
+                expected_manufacturer = sku_prefixes[prefix]
+                actual_manufacturer = db.query(Product).filter(
+                    Product.sku == sku
+                ).first().manufacturer.name
+                assert actual_manufacturer == expected_manufacturer
+
+# High Priority: A-Z Product Catalog
+python src/backend/app/scrapers/baumit_final/run_baumit_scraper.py catalog
+
+# Medium Priority: Color Systems  
+python src/backend/app/scrapers/baumit_final/run_baumit_scraper.py colors
+
+# All BAUMIT scrapers
+python src/backend/app/scrapers/baumit_final/run_baumit_scraper.py all
+
+downloads/baumit_products/
+├── technical_datasheets/
+│   ├── thermal_insulation/
+│   ├── facade_systems/
+│   ├── adhesive_systems/
+│   └── interior_solutions/
+├── color_systems/
+│   ├── baumit_life_colors/
+│   └── color_charts/
+└── duplicates/

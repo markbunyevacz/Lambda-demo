@@ -15,7 +15,7 @@ import json
 import logging
 from pathlib import Path
 from datetime import datetime
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Tuple, Optional
 
 # Add paths for imports
 sys.path.append(str(Path(__file__).parent))
@@ -41,6 +41,27 @@ except ImportError as e:
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
+
+# 🎯 MANUFACTURER-SPECIFIC ATTRIBUTE MAPPINGS
+MANUFACTURER_ATTRIBUTE_MAPS = {
+    'ROCKWOOL': {
+        'hővezetési tényező': 'thermal_conductivity',
+        'sűrűség': 'density',
+        'tűzállóság': 'fire_resistance'
+    },
+    'LEIER': {
+        'nyomószilárdság': 'compressive_strength',    # 👈 NEW
+        'vízfelvétel': 'water_absorption',            # 👈 NEW  
+        'fagyállóság': 'frost_resistance',            # 👈 NEW
+        'műanyag-tartalom': 'plastic_content'         # 👈 NEW
+    },
+    'BAUMIT': {
+        'tapadószilárdság': 'adhesive_strength',      # 👈 NEW
+        'diffúziós ellenállás': 'vapor_resistance',   # 👈 NEW
+        'kötésidő': 'setting_time',                   # 👈 NEW
+        'szemcseméret': 'grain_size'                  # 👈 NEW
+    }
+}
 
 class ProductionPDFManager:
     """Production PDF processing and database integration"""
@@ -207,6 +228,23 @@ class ProductionPDFManager:
         print("   📍 Products API: http://localhost:8000/products")
         print("   🔍 Search API: http://localhost:8000/search")
         print("   📊 RAG Pipeline ready for semantic search")
+
+    def _extract_unit_from_specs(self, normalized_specs: Dict, manufacturer: str) -> Optional[str]:
+        # MANUFACTURER-SPECIFIC UNITS
+        manufacturer_units = {
+            'ROCKWOOL': {'thickness': 'm2', 'thermal_conductivity': 'm2'},
+            'LEIER': {'compressive_strength': 'db', 'water_absorption': 'm2'},
+            'BAUMIT': {'adhesive_strength': 'kg', 'setting_time': 'liter'}
+        }
+
+    def _get_category_specific_attributes(self, category: str, manufacturer: str) -> Dict:
+        """Category-specific attribute validation"""
+        category_attributes = {
+            ('LEIER', 'Tetőcserép'): ['compressive_strength', 'frost_resistance'],
+            ('BAUMIT', 'Vakolat'): ['adhesive_strength', 'setting_time'],
+            ('ROCKWOOL', 'Szigetelés'): ['thermal_conductivity', 'fire_resistance']
+        }
+        return category_attributes.get((manufacturer, category), [])
 
 def main():
     """Main execution function"""

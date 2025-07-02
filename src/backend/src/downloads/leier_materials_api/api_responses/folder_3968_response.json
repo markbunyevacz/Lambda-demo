@@ -1,0 +1,177 @@
+{
+  "documents": [
+    {
+      "id": 3972,
+      "name": "Logo_Leier-blue NEW 2024.png",
+      "is_folder": 0,
+      "parent_id": 3968,
+      "created_at": "2024. április 26.",
+      "parent": {
+        "id": 3968,
+        "name": "Új Leier logó",
+        "is_folder": 1,
+        "parent_id": 1870,
+        "created_at": "2024. április 26.",
+        "parent": {
+          "id": 1870,
+          "name": "Arculati elemek",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3972",
+        "extension": "png"
+      }
+    },
+    {
+      "id": 3975,
+      "name": "Logo_Leier-white NEW 2024.png",
+      "is_folder": 0,
+      "parent_id": 3968,
+      "created_at": "2024. április 26.",
+      "parent": {
+        "id": 3968,
+        "name": "Új Leier logó",
+        "is_folder": 1,
+        "parent_id": 1870,
+        "created_at": "2024. április 26.",
+        "parent": {
+          "id": 1870,
+          "name": "Arculati elemek",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3975",
+        "extension": "png"
+      }
+    },
+    {
+      "id": 3976,
+      "name": "Logo_Leier-white+blue-bg MAIN NEW 2024.jpg",
+      "is_folder": 0,
+      "parent_id": 3968,
+      "created_at": "2024. április 26.",
+      "parent": {
+        "id": 3968,
+        "name": "Új Leier logó",
+        "is_folder": 1,
+        "parent_id": 1870,
+        "created_at": "2024. április 26.",
+        "parent": {
+          "id": 1870,
+          "name": "Arculati elemek",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3976",
+        "extension": "jpg"
+      }
+    },
+    {
+      "id": 3978,
+      "name": "Logo_Leier-white+blue-bg MAIN NEW 2024.png",
+      "is_folder": 0,
+      "parent_id": 3968,
+      "created_at": "2024. április 26.",
+      "parent": {
+        "id": 3968,
+        "name": "Új Leier logó",
+        "is_folder": 1,
+        "parent_id": 1870,
+        "created_at": "2024. április 26.",
+        "parent": {
+          "id": 1870,
+          "name": "Arculati elemek",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3978",
+        "extension": "png"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 3968,
+    "name": "Új Leier logó",
+    "is_folder": 1,
+    "parent_id": 1870,
+    "created_at": "2024. április 26.",
+    "parent": {
+      "id": 1870,
+      "name": "Arculati elemek",
+      "is_folder": 1,
+      "parent_id": 1859,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1859,
+        "name": "hu",
+        "is_folder": 1,
+        "parent_id": null,
+        "created_at": "2023. február 15.",
+        "parent": null,
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

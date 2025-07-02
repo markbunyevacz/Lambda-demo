@@ -1,0 +1,25 @@
+{
+  "coordinator_info": {
+    "priority_level": "high",
+    "test_mode": true,
+    "start_time": "2025-07-01T20:43:08.668803"
+  },
+  "scrapers_executed": [
+    {
+      "success": true,
+      "scraper_type": "documents",
+      "priority": "HIGH",
+      "stats": {
+        "categories_found": 0,
+        "docs_discovered": 0,
+        "downloads_success": 0,
+        "downloads_failed": 0,
+        "duplicates": 0
+      }
+    }
+  ],
+  "overall_success": true,
+  "error_count": 0,
+  "end_time": "2025-07-01T20:43:13.691017",
+  "total_duration_seconds": 5.022214
+}

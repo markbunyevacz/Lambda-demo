@@ -1,0 +1,363 @@
+{
+  "documents": [
+    {
+      "id": 2710,
+      "name": "leier-c06-nagyatmero-gumigy",
+      "is_folder": 0,
+      "parent_id": 2690,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2690,
+        "name": "asc",
+        "is_folder": 1,
+        "parent_id": 2346,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2346,
+          "name": "Mélyépítési részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2710",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2711,
+      "name": "leier-c05-nagyatmero-csaphor",
+      "is_folder": 0,
+      "parent_id": 2690,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2690,
+        "name": "asc",
+        "is_folder": 1,
+        "parent_id": 2346,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2346,
+          "name": "Mélyépítési részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2711",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2712,
+      "name": "leier-c04-vegyes-csaphornyos",
+      "is_folder": 0,
+      "parent_id": 2690,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2690,
+        "name": "asc",
+        "is_folder": 1,
+        "parent_id": 2346,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2346,
+          "name": "Mélyépítési részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2712",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2713,
+      "name": "leier-c03-80-csaphornyos",
+      "is_folder": 0,
+      "parent_id": 2690,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2690,
+        "name": "asc",
+        "is_folder": 1,
+        "parent_id": 2346,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2346,
+          "name": "Mélyépítési részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2713",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2714,
+      "name": "leier-c02-100-gumigyurus",
+      "is_folder": 0,
+      "parent_id": 2690,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2690,
+        "name": "asc",
+        "is_folder": 1,
+        "parent_id": 2346,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2346,
+          "name": "Mélyépítési részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2714",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2715,
+      "name": "leier-c01-100-csaphornyos",
+      "is_folder": 0,
+      "parent_id": 2690,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2690,
+        "name": "asc",
+        "is_folder": 1,
+        "parent_id": 2346,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2346,
+          "name": "Mélyépítési részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2715",
+        "extension": "zip"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 2690,
+    "name": "asc",
+    "is_folder": 1,
+    "parent_id": 2346,
+    "created_at": "2023. február 16.",
+    "parent": {
+      "id": 2346,
+      "name": "Mélyépítési részletrajzok",
+      "is_folder": 1,
+      "parent_id": 2336,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2336,
+        "name": "Csomópontok",
+        "is_folder": 1,
+        "parent_id": 1867,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 1867,
+          "name": "Részletrajzok",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

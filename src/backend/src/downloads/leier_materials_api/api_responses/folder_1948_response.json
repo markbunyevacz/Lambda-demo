@@ -1,0 +1,1317 @@
+{
+  "documents": [
+    {
+      "id": 4041,
+      "name": "Teljesítménynyilatkozat - Leiertherm AKU 30 N+F tégla",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2024. november 6.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/4041",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2026,
+      "name": "Teljesítménynyilatkozat - Leiertherm AKU 30 HT - LE MD771-1-13-01",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2026",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2027,
+      "name": "Teljesítménynyilatkozat - Leiertherm 25 Objekt LE MD771-1-12-03",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2027",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2029,
+      "name": "Teljesítménynyilatkozat - Leiertherm 20 N+F LE MD771-1-05-03",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2029",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2030,
+      "name": "Teljesítménynyilatkozat - Leiertherm 25 N+F LE MD771-1-04-04",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2030",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2031,
+      "name": "Teljesítménynyilatkozat - Leiertherm 30 N+F LE MD771-1-03-05",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2031",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2032,
+      "name": "Teljesítménynyilatkozat - Leiertherm 38 N+F LE MD771-1-02-04",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2032",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2033,
+      "name": "Teljesítménynyilatkozat - Leiertherm 45 N+F LE MD771-1-01-05",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2033",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2034,
+      "name": "Teljesítménynyilatkozat - Leiertherm 25/30 AKU LE MD771-1-11-04",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2034",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2035,
+      "name": "Teljesítménynyilatkozat - Leiertherm 250/120/65 kevéslyukú LE MD771-1-09-03",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2035",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2036,
+      "name": "Teljesítménynyilatkozat - Leiertherm 250/120/65 kisméretű LE MD771-1-08-03",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2036",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2037,
+      "name": "Teljesítménynyilatkozat - Leiertherm 25/30 AKU - MD LE MD771-1-11-03",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2037",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2038,
+      "name": "Teljesítménynyilatkozat - LeierPLAN vékonyágyas falazóhabarcs LE HU998-2-02",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2038",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2039,
+      "name": "Teljesítménynyilatkozat - Leiertherm 250/120/65 kevéslyukú - MD LE MD771-1-09-02",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2039",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2040,
+      "name": "Teljesítménynyilatkozat - Leiertherm 250/120/65 kisméretű - MD LE MD771-1-08-02",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2040",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2041,
+      "name": "Teljesítménynyilatkozat - Leiertherm 45 N+F - MD LE MD771-1-01-04",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2041",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2042,
+      "name": "Teljesítménynyilatkozat - Leiertherm 38 N+F - MD LE MD771-1-02-03",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2042",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2043,
+      "name": "Teljesítménynyilatkozat - Leiertherm 30 MT - MD LE MD771-1-10-01",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2043",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2044,
+      "name": "Teljesítménynyilatkozat - Leiertherm 30 N+F - MD LE MD771-1-03-04",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2044",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2045,
+      "name": "Teljesítménynyilatkozat - Leiertherm 17,5 N+F - MD LE MD771-1-06-01",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2045",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2046,
+      "name": "Teljesítménynyilatkozat - Leiertherm 10/50 N+F - MD LE MD771-1-07-02",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2046",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3844,
+      "name": "Teljesítménynyilatkozat - Leiertherm 10 N+F LE MD771-1-07-03.pdf",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2024. január 17.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3844",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 4002,
+      "name": "Teljesítménynyilatkozat Leiertherm 30 U koszorúelem",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2024. július 5.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/4002",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 4071,
+      "name": "Teljesítménynyilatkozat Leiertherm 12 N+F - LE MD771-1-16-01",
+      "is_folder": 0,
+      "parent_id": 1948,
+      "created_at": "2025. január 13.",
+      "parent": {
+        "id": 1948,
+        "name": "Mátraderecske - Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1938,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1938,
+          "name": "Tégla termékek",
+          "is_folder": 1,
+          "parent_id": 1928,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1928,
+            "name": "Magasépítési termékek",
+            "is_folder": 1,
+            "parent_id": 1865,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1865,
+              "name": "Teljesítménynyilatkozatok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/4071",
+        "extension": "pdf"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 1948,
+    "name": "Mátraderecske - Teljesítménynyilatkozatok",
+    "is_folder": 1,
+    "parent_id": 1938,
+    "created_at": "2023. február 15.",
+    "parent": {
+      "id": 1938,
+      "name": "Tégla termékek",
+      "is_folder": 1,
+      "parent_id": 1928,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1928,
+        "name": "Magasépítési termékek",
+        "is_folder": 1,
+        "parent_id": 1865,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1865,
+          "name": "Teljesítménynyilatkozatok",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

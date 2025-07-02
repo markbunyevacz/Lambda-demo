@@ -1,0 +1,218 @@
+[
+  {
+    "name": "Homlokzatok",
+    "url": "https://baumit.hu/termekek",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.666244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Homlokzati vékonyvakolatok és festékek",
+    "url": "https://baumit.hu/termekek/homlokzati-vekonyvakolatok-es-festekek",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.666244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Színes vékonyvakolatok",
+    "url": "https://baumit.hu/termekek/homlokzati-vekonyvakolatok-es-festekek/szines-vekonyvakolatok",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Modellező vékonyvakolat",
+    "url": "https://baumit.hu/termekek/homlokzati-vekonyvakolatok-es-festekek/modellezo-vekonyvakolat",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Dekor festékek",
+    "url": "https://baumit.hu/termekek/homlokzati-vekonyvakolatok-es-festekek/dekor-festekek",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Homlokzatfestékek",
+    "url": "https://baumit.hu/termekek/homlokzati-vekonyvakolatok-es-festekek/homlokzatfestekek",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Lábazati vékonyvakolat",
+    "url": "https://baumit.hu/termekek/homlokzati-vekonyvakolatok-es-festekek/labazati-vekonyvakolat",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Nemesvakolat",
+    "url": "https://baumit.hu/termekek/homlokzati-vekonyvakolatok-es-festekek/nemesvakolat",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Vakolat alapozók",
+    "url": "https://baumit.hu/termekek/homlokzati-vekonyvakolatok-es-festekek/vakolat-alapozok",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Homlokzati hőszigetelő rendszerek",
+    "url": "https://baumit.hu/termekek/homlokzati-hoszigetelo-rendszerek",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Ragasztók és tapaszok",
+    "url": "https://baumit.hu/termekek/homlokzati-hoszigetelo-rendszerek/ragasztok-es-tapaszok",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Hőszigetelő lemezek",
+    "url": "https://baumit.hu/termekek/homlokzati-hoszigetelo-rendszerek/hoszigetelo-lemezek",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Ragasztótárcsák",
+    "url": "https://baumit.hu/termekek/homlokzati-hoszigetelo-rendszerek/ragasztotarcsak",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Vakolatok",
+    "url": "https://baumit.hu/termekek/vakolatok",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Gépi vakolatok",
+    "url": "https://baumit.hu/termekek/vakolatok/gepi-vakolatok",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Alapvakolatok",
+    "url": "https://baumit.hu/termekek/vakolatok/alapvakolatok",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Univerzális kézi vakolatok",
+    "url": "https://baumit.hu/termekek/vakolatok/univerzalis-kezi-vakolatok",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Finom vakolatok",
+    "url": "https://baumit.hu/termekek/vakolatok/finom-vakolatok",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Felújító vakolatrendszerek",
+    "url": "https://baumit.hu/termekek/felujito-vakolatrendszerek",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Sanova vakolatok",
+    "url": "https://baumit.hu/termekek/felujito-vakolatrendszerek/sanova-vakolatok",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Sanova festék",
+    "url": "https://baumit.hu/termekek/felujito-vakolatrendszerek/sanova-festek",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Glettek beltéri felhasználásra",
+    "url": "https://baumit.hu/termekek/termeszetes-lakoklima/glettek-belteri-felhasznalasra",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Glettvakolatok",
+    "url": "https://baumit.hu/termekek/termeszetes-lakoklima/glettvakolatok",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Beltéri festékek",
+    "url": "https://baumit.hu/termekek/termeszetes-lakoklima/belteri-festekek",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Szórható glettek beltéri felhasználásra",
+    "url": "https://baumit.hu/termekek/termeszetes-lakoklima/szorhato-glettek-belteri-felhasznalasra",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Burkolatragasztók",
+    "url": "https://baumit.hu/termekek/baumacol-hidegburkolati-ragasztasi-rendszer/burkolatragasztok",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  },
+  {
+    "name": "Hőszigetelő habarcsok",
+    "url": "https://baumit.hu/termekek/falazatok/szigetelo-habarcsok",
+    "family": null,
+    "source_url": "https://baumit.hu/termekek",
+    "scraped_at": "2025-07-01T20:44:04.667244",
+    "extraction_method": "enhanced_filtering"
+  }
+]

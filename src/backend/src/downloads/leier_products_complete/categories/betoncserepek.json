@@ -1,0 +1,2028 @@
+{
+    "category_id": "betoncserepek",
+    "name": "Betoncserepek",
+    "description": "",
+    "url": "https://www.leier.hu/hu/termekeink/betoncserepek",
+    "products": {
+        "toscana-basic-tetocserep": {
+            "product_id": "toscana-basic-tetocserep",
+            "name": "Toscana Basic tetőcserépA Toscana betoncserepekkel hagyományos hullámos profilú fedések készíthetők. Az új tetőkön kívül ideális megoldás régi tetőfedések cseréjéhez is, mive...Megnézem",
+            "description": "",
+            "url": "https://www.leier.hu/hu/termekek/toscana-basic-tetocserep",
+            "category_url": "https://www.leier.hu/hu/termekeink/betoncserepek",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Toscana Basic tetőcserép termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Toscana-tetocserep-termekadatlap-673afd517e977.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Toscana Basic tetőcserép termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Toscana-tetocserep-termekadatlap-673afd517e977.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "Toscana_Terra",
+                    "url": "https://www.leier.hu/uploads/files/Toscana_Terra.png",
+                    "type": "document"
+                },
+                "doc_18": {
+                    "title": "Toscana Basic tetőcserép",
+                    "url": "https://photos.leier.eu/Ptf51Gk7FUQQPYCs9WKT-ZvmjS4=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Toscana-Terra__26_.jpg",
+                    "type": "document"
+                },
+                "doc_19": {
+                    "title": "Toscana Basic Terra",
+                    "url": "https://photos.leier.eu/mOsn3Uno-IH9HuF7_DMNTVoSIM4=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Toscana-Terra__25_.jpg",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "Toscana Basic Terra",
+                    "url": "https://photos.leier.eu/PeO83-CRz2CQDvZ7NW3eFXuBSKs=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Toscana-Terra__28_.jpg",
+                    "type": "document"
+                },
+                "doc_21": {
+                    "title": "Toscana Basic Terra",
+                    "url": "https://photos.leier.eu/umcsqhVQWZ0YobaGXm1hAHUnQew=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Toscana-Terra__6_.jpg",
+                    "type": "document"
+                },
+                "doc_22": {
+                    "title": "Toscana Basic Terra",
+                    "url": "https://photos.leier.eu/dq3bE-9xVFZqBZrXPsd-1yf_C-U=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Toscana-Terra__18_.jpg",
+                    "type": "document"
+                },
+                "doc_23": {
+                    "title": "Toscana Basic Terra",
+                    "url": "https://photos.leier.eu/wqr448B7flhpsB_gHsIo9Aedm7M=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Toscana-Terra__11_.jpg",
+                    "type": "document"
+                },
+                "doc_24": {
+                    "title": "Toscana Basic tetőcserép termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Toscana-tetocserep-termekadatlap-673afd517e977.pdf",
+                    "type": "pdf"
+                },
+                "doc_25": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_26": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_27": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_28": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_29": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_30": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_31": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_32": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_33": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_34": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_35": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 36,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Kvp9N5fP-73QOB-xBruhzrU1wY4=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-betoncserep-logo-fekvo-szlogennel-1.jpg",
+                    "alt": "Betoncserép"
+                },
+                {
+                    "url": "https://photos.leier.eu/sIMqmiBNei8OLVGXkjzBVhrHD4M=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana_Terra.png",
+                    "alt": "Toscana Basic alapcserép Terra"
+                },
+                {
+                    "url": "https://photos.leier.eu/lvdqwU4wUxO9LIi7Ni7MzCjGAuQ=/894x536/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Toscana-Terra__26_.jpg",
+                    "alt": "Toscana Basic tetőcserép"
+                },
+                {
+                    "url": "https://photos.leier.eu/K7-62u5WEfSpF-B5ZUQPaTGA8uI=/282x167/smart/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Toscana-Terra__25_.jpg",
+                    "alt": "Toscana Basic Terra"
+                }
+            ],
+            "technical_data": {
+                "Tetőhajlásszög": "22°-tól*",
+                "Tetőlécméret": "minimum 30x50 mm*",
+                "Méret": "330 x 420 mm",
+                "Tetőléctávolság": "maximum 34 cm*",
+                "Tömeg": "4,5 kg/db",
+                "Átfedés": "minimum 8 cm, tetőhajlásszögtől függően*",
+                "Profilmagasság": "36 mm",
+                "Szükséglet": "átlag 10 db/tető m2*",
+                "Névleges fedési szélesség": "300 +- 5 mm",
+                "Típus": "Beton alapcserép*",
+                "Színcsoport": "basic, brillant, classic, extra,lux",
+                "Méret (cm)": "33 x 42",
+                "Elemszükséglet (kb.)": "10 db/m2",
+                "kg/db": "4,5",
+                "Raklap": "Leier tégla raklap",
+                "db/raklap": "240"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "toscana-classic-tetocserep": {
+            "product_id": "toscana-classic-tetocserep",
+            "name": "Toscana Classic tetőcserépHosszú élettartam és hagyományos elegancia jellemzi a Leier betoncserepeit. Ezek közül a Toscana Classic cserepeink a mediterrán típusú épületekhez ha...Megnézem",
+            "description": "",
+            "url": "https://www.leier.hu/hu/termekek/toscana-classic-tetocserep",
+            "category_url": "https://www.leier.hu/hu/termekeink/betoncserepek",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Toscana Classic tetőcserép termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Toscana-tetocserep-termekadatlap-673afd98a689c.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Toscana Classic tetőcserép termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Toscana-tetocserep-termekadatlap-673afd98a689c.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "Teglavoros-65044d274bc75",
+                    "url": "https://www.leier.hu/uploads/files/Teglavoros-65044d274bc75.png",
+                    "type": "document"
+                },
+                "doc_18": {
+                    "title": "Z9Z_7896",
+                    "url": "https://www.leier.hu/uploads/files/Z9Z_7896.png",
+                    "type": "document"
+                },
+                "doc_19": {
+                    "title": "Fekete-6504511e50ea3",
+                    "url": "https://www.leier.hu/uploads/files/Fekete-6504511e50ea3.png",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "Toscana-carbon-65e87677eae41",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-carbon-65e87677eae41.png",
+                    "type": "document"
+                },
+                "doc_21": {
+                    "title": "Toscana Classic",
+                    "url": "https://photos.leier.eu/x_71a7l3rG_FJVl74LifVy7SsqY=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana-Classic-cserep.jpg",
+                    "type": "document"
+                },
+                "doc_22": {
+                    "title": "Toscana Classic carbon",
+                    "url": "https://photos.leier.eu/rKpPdfHofQvKTXbYYaezvlysGz4=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana-Classic-Carbon__8_.jpg",
+                    "type": "document"
+                },
+                "doc_23": {
+                    "title": "Toscana Classic carbon",
+                    "url": "https://photos.leier.eu/TFOySJ2aBXRTFEF135KAno8ysKA=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana-Classic-Carbon__5_.jpg",
+                    "type": "document"
+                },
+                "doc_24": {
+                    "title": "Toscana Classic mogyoró",
+                    "url": "https://photos.leier.eu/DmOUYUwCXQyqeHpRkrL3n1BBOno=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FSz%25C3%25A9kesfeh%25C3%25A9rv%25C3%25A1r_Dobsinai_utca_21_3.jpg",
+                    "type": "document"
+                },
+                "doc_25": {
+                    "title": "Toscana Classic mogyoró",
+                    "url": "https://photos.leier.eu/u27EMByIZemIwQbHNV9FyUKMDro=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FSz%25C3%25A9kesfeh%25C3%25A9rv%25C3%25A1r_Dobsinai_utca_21_1.jpg",
+                    "type": "document"
+                },
+                "doc_26": {
+                    "title": "Toscana Classic fekete betoncserép",
+                    "url": "https://photos.leier.eu/V5m-xQMqUsV3AsJGksa2urysd6g=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana_Classic_fekete-Sarvar__22_.jpg",
+                    "type": "document"
+                },
+                "doc_27": {
+                    "title": "Toscana Classic fekete betoncserép",
+                    "url": "https://photos.leier.eu/D1RvsgGzGlZuncSxkG2NEfG2gEE=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana_Classic_fekete-Sarvar__1_.jpg",
+                    "type": "document"
+                },
+                "doc_28": {
+                    "title": "Toscana Classic fekete betoncserép",
+                    "url": "https://photos.leier.eu/caC_CokCnLShCgBTSCdJM40ecqA=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana_Classic_fekete-Sarvar__11_.jpg",
+                    "type": "document"
+                },
+                "doc_29": {
+                    "title": "Toscana Classic mogyoró",
+                    "url": "https://photos.leier.eu/W6NPKcuxZWrELN9pEchBO5KHYjk=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana-Classic-cserep-6328557813221.jpg",
+                    "type": "document"
+                },
+                "doc_30": {
+                    "title": "Toscana Classic mogyoró",
+                    "url": "https://photos.leier.eu/xP89hWsMGl69Ge3xrOwV6xA9qKg=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana-classic-tetocserep%2520%25286%2529.jpg",
+                    "type": "document"
+                },
+                "doc_31": {
+                    "title": "Toscana Classic mogyoró",
+                    "url": "https://photos.leier.eu/tzd-9QCUIVtWMoEnbSa1EMhNvDA=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana-classic-tetocserep%2520%25281%2529.jpg",
+                    "type": "document"
+                },
+                "doc_32": {
+                    "title": "Toscana Classic fekete",
+                    "url": "https://photos.leier.eu/QR5F6CEnOXi8PSSLw86H2XHxHas=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana-classic-tetocserep%2520%25283%2529.jpg",
+                    "type": "document"
+                },
+                "doc_33": {
+                    "title": "Toscana Classic fekete",
+                    "url": "https://photos.leier.eu/BeX4FG9dy0VNisI_rJaVEOycgDI=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana-classic-tetocserep%2520%25284%2529.jpg",
+                    "type": "document"
+                },
+                "doc_34": {
+                    "title": "Toscana Classic fekete",
+                    "url": "https://photos.leier.eu/OUiBUEkHRV4Eu3-8EeeBEDE6cCU=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana-classic-tetocserep%2520%25285%2529.jpg",
+                    "type": "document"
+                },
+                "doc_35": {
+                    "title": "Toscana Classic fekete tetőcserép",
+                    "url": "https://photos.leier.eu/23CCat9vl-TCfDcX3fIO0IzSTRw=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2F374904387_638260761793158_7529729615290788696_n-64f823741105b.jpg",
+                    "type": "document"
+                },
+                "doc_36": {
+                    "title": "Toscana Classic fekete tetőcserép",
+                    "url": "https://photos.leier.eu/N_yBkjlrkMVxOzgiV_CyQgGQmLg=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-marcal-haz__3_-64f8237411ff2.jpg",
+                    "type": "document"
+                },
+                "doc_37": {
+                    "title": "Toscana Classic tetőcserép",
+                    "url": "https://photos.leier.eu/4pVAJ9HCKOd-OS5WYwoVTCK2CKc=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-marcal-haz__2_.JPG",
+                    "type": "document"
+                },
+                "doc_38": {
+                    "title": "Toscana Classic fekete",
+                    "url": "https://photos.leier.eu/kGkUkyT6EjGx1caeDoWbYoCOb28=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana_Classic_Fekete.jpg",
+                    "type": "document"
+                },
+                "doc_39": {
+                    "title": "Toscana Classic téglavörös",
+                    "url": "https://photos.leier.eu/Btysbe-YFiQQhYRXbofnf_DJIMk=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana_Classic_teglav.jpg",
+                    "type": "document"
+                },
+                "doc_40": {
+                    "title": "Toscana Classic tetőcserép",
+                    "url": "https://photos.leier.eu/x6GqKTlJtMy0Pgeiws_NmA1116o=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FIMG_3669.jpg",
+                    "type": "document"
+                },
+                "doc_41": {
+                    "title": "Toscana Classic tetőcserép",
+                    "url": "https://photos.leier.eu/siAEfL1SM5rDbqPZk099VhFdUkM=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier_construma3.jpg",
+                    "type": "document"
+                },
+                "doc_42": {
+                    "title": "Toscana Classic tetőcserép",
+                    "url": "https://photos.leier.eu/_-C2EidEzh8z7XDYruhwbvNbDng=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier_construma4.jpg",
+                    "type": "document"
+                },
+                "doc_43": {
+                    "title": "Toscana Classic tetőcserép",
+                    "url": "https://photos.leier.eu/5r2TTVeQIwDFKMj1zgiG0UPCjfA=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier_construma114.jpg",
+                    "type": "document"
+                },
+                "doc_44": {
+                    "title": "Toscana Classic tetőcserép",
+                    "url": "https://photos.leier.eu/z8p71b3zV0JHUTIAjr8ltt1HnLA=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier_construma115.jpg",
+                    "type": "document"
+                },
+                "doc_45": {
+                    "title": "Toscana Classic tetőcserép",
+                    "url": "https://photos.leier.eu/T1yRn9uUTppVS_aSXDuphfc5dLY=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier_construma116.jpg",
+                    "type": "document"
+                },
+                "doc_46": {
+                    "title": "Toscana Classic tetőcserép termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Toscana-tetocserep-termekadatlap-673afd98a689c.pdf",
+                    "type": "pdf"
+                },
+                "doc_47": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_48": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_49": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_50": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_51": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_52": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_53": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_54": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_55": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_56": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_57": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 58,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Kvp9N5fP-73QOB-xBruhzrU1wY4=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-betoncserep-logo-fekvo-szlogennel-1.jpg",
+                    "alt": "Betoncserép"
+                },
+                {
+                    "url": "https://photos.leier.eu/FxwjpHPI8lMdAN_bcSqDSfYYSIw=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FTeglavoros-65044d274bc75.png",
+                    "alt": "Toscana alapcserép Téglavörös"
+                },
+                {
+                    "url": "https://photos.leier.eu/nQhUuqJq1Vu_6TExtD5BATcRVJg=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FZ9Z_7896.png",
+                    "alt": "Toscana alapcserép Mogyoró"
+                },
+                {
+                    "url": "https://photos.leier.eu/Ncnw18k1QfsXF5bVCy1EV6S8aGs=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FFekete-6504511e50ea3.png",
+                    "alt": "Toscana alapcserép Fekete"
+                }
+            ],
+            "technical_data": {
+                "Tetőhajlásszög": "22°-tól*",
+                "Tetőlécméret": "minimum 30x50 mm*",
+                "Méret": "330 x 420 mm",
+                "Tetőléctávolság": "maximum 34 cm*",
+                "Tömeg": "4,5 kg/db",
+                "Átfedés": "minimum 8 cm, tetőhajlásszögtől függően*",
+                "Profilmagasság": "36 mm",
+                "Szükséglet": "átlag 10 db/tető m2*",
+                "Névleges fedési szélesség": "300 +- 5 mm",
+                "Típus": "Beton alapcserép*",
+                "Színcsoport": "basic, classic, brillant, extra,lux",
+                "Méret (cm)": "33 x 42",
+                "Elemszükséglet (kb.)": "10 db/m2",
+                "kg/db": "4,5",
+                "Raklap": "Leier tégla raklap",
+                "db/raklap": "240"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "toscana-brillant": {
+            "product_id": "toscana-brillant",
+            "name": "Toscana Brillant tetőcserépAz új Leier Toscana Brillant  betoncserép felületkezelése révén kimagasló védelmet nyújt a környezeti hatásokkal szemben. Hosszan tartó színvédelemmel...Megnézem",
+            "description": "",
+            "url": "https://www.leier.hu/hu/termekek/toscana-brillant",
+            "category_url": "https://www.leier.hu/hu/termekeink/betoncserepek",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Toscana Brillant tetőcserép termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Toscana-tetocserep-termekadatlap-673afdf2c5fd4.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Toscana Brillant tetőcserép termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Toscana-tetocserep-termekadatlap-673afdf2c5fd4.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "Toscana_Brillant_ezustszurke",
+                    "url": "https://www.leier.hu/uploads/files/Toscana_Brillant_ezustszurke.jpg",
+                    "type": "document"
+                },
+                "doc_18": {
+                    "title": "Toscana Brillant tetőcserép",
+                    "url": "https://photos.leier.eu/exMbpWpsAfKHpFfC7pxLWU6Vshw=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana-Classic-fekete-Sarvar-_4_.jpg",
+                    "type": "document"
+                },
+                "doc_19": {
+                    "title": "Toscana Brillant tetőcserép",
+                    "url": "https://photos.leier.eu/CAph7v3s9xRQkHMBIZHF0LmpydE=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana-Classic-fekete-Sarvar-_1_.jpg",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "Toscana Brillant tetőcserép termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Toscana-tetocserep-termekadatlap-673afdf2c5fd4.pdf",
+                    "type": "pdf"
+                },
+                "doc_21": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_22": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_23": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_24": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_25": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_26": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_27": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_28": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_29": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_30": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_31": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 32,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Kvp9N5fP-73QOB-xBruhzrU1wY4=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-betoncserep-logo-fekvo-szlogennel-1.jpg",
+                    "alt": "Betoncserép"
+                },
+                {
+                    "url": "https://photos.leier.eu/5J53WyIz0ugOoVTQU5Dl7mX5ApU=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana_Brillant_ezustszurke.jpg",
+                    "alt": "Toscana Brillant alapcserép ezüstszürke"
+                },
+                {
+                    "url": "https://photos.leier.eu/v6rYmCPqY2fL-695PNNe2SBIokg=/894x536/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana-Classic-fekete-Sarvar-_4_.jpg",
+                    "alt": "Toscana Brillant tetőcserép"
+                },
+                {
+                    "url": "https://photos.leier.eu/qYjr6trR0n_ePScHQzT1RaJgcew=/282x167/smart/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana-Classic-fekete-Sarvar-_1_.jpg",
+                    "alt": "Toscana Brillant tetőcserép"
+                }
+            ],
+            "technical_data": {
+                "Tetőhajlásszög": "22°-tól*",
+                "Tetőlécméret": "minimum 30x50 mm*",
+                "Méret": "330 x 420 mm",
+                "Tetőléctávolság": "maximum 34 cm*",
+                "Tömeg": "4,5 kg/db",
+                "Átfedés": "minimum 8 cm, tetőhajlásszögtől függően*",
+                "Profilmagasság": "36 mm",
+                "Szükséglet": "átlag 10 db/tető m2*",
+                "Névleges fedési szélesség": "300 +- 5 mm",
+                "Típus": "Beton alapcserép*",
+                "Színcsoport": "basic, classic, brillant, extra,lux",
+                "Méret (cm)": "33 x 42",
+                "Elemszükséglet(kb.)": "10 db/m2",
+                "kg/db": "4,5",
+                "Raklap": "Leier tégla raklap",
+                "db/raklap": "240"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "lux-tetocserep": {
+            "product_id": "lux-tetocserep",
+            "name": "Toscana Lux tetőcserépA prémium kategóriás, magasfényű TOSCANA LUX tetőcserepek kiemelkedő tartósságáról a többszöri felületi kezelés gondoskodik. Ragyogó fény, luxus megje...Megnézem",
+            "description": "",
+            "url": "https://www.leier.hu/hu/termekek/lux-tetocserep",
+            "category_url": "https://www.leier.hu/hu/termekeink/betoncserepek",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Toscana Lux tetőcserép termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Toscana-tetocserep-termekadatlap-673afe65557f6.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Toscana Lux tetőcserép termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Toscana-tetocserep-termekadatlap-673afe65557f6.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "lux-barna",
+                    "url": "https://www.leier.hu/uploads/files/lux-barna.png",
+                    "type": "document"
+                },
+                "doc_18": {
+                    "title": "Toscana Lux tetőcserép",
+                    "url": "https://photos.leier.eu/nz7QCAmq0Lwje--4qsKOwZ2J9N8=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier_toscana_lux_betoncsere%25CC%2581p_gyo%25CC%258Br-15-67051038a5d2f.jpg",
+                    "type": "document"
+                },
+                "doc_19": {
+                    "title": "Toscana Lux tetőcserép sötétbarna",
+                    "url": "https://photos.leier.eu/-rJTR1LfspGVq-QGRWsuRj-ygW4=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier_toscana_lux_betoncsere%25CC%2581p_gyo%25CC%258Br-1.jpg",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "Toscana Lux tetőcserép sötétbarna",
+                    "url": "https://photos.leier.eu/qM-vTRxuyrZ1vZbMhDhgCukFoF8=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier_toscana_lux_betoncsere%25CC%2581p_gyo%25CC%258Br-15.jpg",
+                    "type": "document"
+                },
+                "doc_21": {
+                    "title": "Toscana Lux tetőcserép sötétbarna",
+                    "url": "https://photos.leier.eu/S5JK2_x_VjIidZ0-eGslVp7et10=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier_toscana_lux_betoncsere%25CC%2581p_gyo%25CC%258Br-18.jpg",
+                    "type": "document"
+                },
+                "doc_22": {
+                    "title": "Toscana Lux tetőcserép termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Toscana-tetocserep-termekadatlap-673afe65557f6.pdf",
+                    "type": "pdf"
+                },
+                "doc_23": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_24": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_25": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_26": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_27": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_28": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_29": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_30": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_31": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_32": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_33": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 34,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Kvp9N5fP-73QOB-xBruhzrU1wY4=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-betoncserep-logo-fekvo-szlogennel-1.jpg",
+                    "alt": "Betoncserép"
+                },
+                {
+                    "url": "https://photos.leier.eu/uxdKln3g1U4PndFMJMbgJ8SVf-o=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Flux-barna.png",
+                    "alt": "Lux barna"
+                },
+                {
+                    "url": "https://photos.leier.eu/xe7VenhB_pSJ9acdHkMhdUnpHmM=/894x536/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier_toscana_lux_betoncsere%25CC%2581p_gyo%25CC%258Br-15-67051038a5d2f.jpg",
+                    "alt": "Toscana Lux tetőcserép"
+                },
+                {
+                    "url": "https://photos.leier.eu/sbSI1v9EIpfBM5psMVHpwqVLuXU=/282x167/smart/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier_toscana_lux_betoncsere%25CC%2581p_gyo%25CC%258Br-1.jpg",
+                    "alt": "Toscana Lux tetőcserép sötétbarna"
+                }
+            ],
+            "technical_data": {
+                "Tetőhajlásszög": "22°-tól*",
+                "Tetőlécméret": "minimum 30x50 mm*",
+                "Méret": "330 x 420 mm",
+                "Tetőléctávolság": "maximum 34 cm*",
+                "Tömeg": "4,5 kg/db",
+                "Átfedés": "minimum 8 cm, tetőhajlásszögtől függően*",
+                "Profilmagasság": "36 mm",
+                "Szükséglet": "átlag 10 db/tető m2*",
+                "Névleges fedési szélesség": "300 +- 5 mm",
+                "Típus": "Beton alapcserép*",
+                "Színcsoport": "basic, classic, brillant, extra,lux",
+                "Méret (cm)": "33 x 42",
+                "Elemszükséglet (kb.)": "10 db/m2",
+                "kg/db": "4,5",
+                "Raklap": "Leier tégla raklap",
+                "db/raklap": "240"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "toscana-extra-tetocserep": {
+            "product_id": "toscana-extra-tetocserep",
+            "name": "Toscana Extra tetőcserépA klasszikussal ellentétben Toscana Extra cserepeink különleges extra színezéssel készülnek. Ennek köszönhetően a mediterrán típusú épületek és tetők...Megnézem",
+            "description": "",
+            "url": "https://www.leier.hu/hu/termekek/toscana-extra-tetocserep",
+            "category_url": "https://www.leier.hu/hu/termekeink/betoncserepek",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Toscana Extra tetőcserép termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Toscana-tetocserep-termekadatlap-673afe7c5ec4c.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Toscana Extra tetőcserép termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Toscana-tetocserep-termekadatlap-673afe7c5ec4c.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "palazzo-646f623ad6824",
+                    "url": "https://www.leier.hu/uploads/files/palazzo-646f623ad6824.png",
+                    "type": "document"
+                },
+                "doc_18": {
+                    "title": "Toscana Extra",
+                    "url": "https://photos.leier.eu/m8-LgV7R_4c3gw06bJWClj8jKxM=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana-extra-cserep.jpg",
+                    "type": "document"
+                },
+                "doc_19": {
+                    "title": "Toscana Extra Palazzo",
+                    "url": "https://photos.leier.eu/LWo602yzIANfalTnfhjHUCtGUv4=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana-extra-cserep-632855bfc510a.jpg",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "Toscana Extra Palazzo",
+                    "url": "https://photos.leier.eu/PEGnsoGhA5eGH7f6aZQMZZCYJZk=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana-Exzta-tetocserep%2520%25284%2529.jpg",
+                    "type": "document"
+                },
+                "doc_21": {
+                    "title": "Toscana Extra Palazzo",
+                    "url": "https://photos.leier.eu/5gJ6BBhUeM7lFaYhiiULkaXkLDA=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana-Exzta-tetocserep%2520%25283%2529.jpg",
+                    "type": "document"
+                },
+                "doc_22": {
+                    "title": "Toscana Extra Palazzo",
+                    "url": "https://photos.leier.eu/kltc4xSDA1DdS1Gj6zHMJnHuBS4=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana-Exzta-tetocserep%2520%25285%2529.jpg",
+                    "type": "document"
+                },
+                "doc_23": {
+                    "title": "Toscana Extra tetőcserép termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Toscana-tetocserep-termekadatlap-673afe7c5ec4c.pdf",
+                    "type": "pdf"
+                },
+                "doc_24": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_25": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_26": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_27": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_28": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_29": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_30": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_31": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_32": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_33": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_34": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 35,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Kvp9N5fP-73QOB-xBruhzrU1wY4=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-betoncserep-logo-fekvo-szlogennel-1.jpg",
+                    "alt": "Betoncserép"
+                },
+                {
+                    "url": "https://photos.leier.eu/UaRVGAgGNZ3JA09-Lha2myH1pcw=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fpalazzo-646f623ad6824.png",
+                    "alt": "Toscana alapcserép Palazzo"
+                },
+                {
+                    "url": "https://photos.leier.eu/oqMrpYRO9TROWZ0r32r05pgKuHM=/894x536/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana-extra-cserep.jpg",
+                    "alt": "Toscana Extra"
+                },
+                {
+                    "url": "https://photos.leier.eu/Muss_N_ci-RzvZBzH0UTdoSFn2Y=/282x167/smart/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FToscana-extra-cserep-632855bfc510a.jpg",
+                    "alt": "Toscana Extra Palazzo"
+                }
+            ],
+            "technical_data": {
+                "Tetőhajlásszög": "22°-tól*",
+                "Tetőlécméret": "minimum 30x50 mm*",
+                "Méret": "330 x 420 mm",
+                "Tetőléctávolság": "maximum 34 cm*",
+                "Tömeg": "4,5 kg/db",
+                "Átfedés": "minimum 8 cm, tetőhajlásszögtől függően*",
+                "Profilmagasság": "36 mm",
+                "Szükséglet": "átlag 10 db/tető m2*",
+                "Névleges fedési szélesség": "300 +- 5 mm",
+                "Típus": "Beton alapcserép*",
+                "Színcsoport": "basic, classic, brillant, extra,lux",
+                "Méret (cm)": "33 x 42",
+                "Elemszükséglet (kb.)": "10 db/m2",
+                "kg/db": "4,5",
+                "Raklap": "Leier tégla raklap",
+                "db/raklap": "240"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "granite-tetocserep": {
+            "product_id": "granite-tetocserep",
+            "name": "Granite Classic tetőcserépA GRANITE betoncserepek sík felületükkel a manapság népszerű, letisztult formavilág építőelemi közé tartoznak.  Ez a tetőcserép modell azonban nem csu...Megnézem",
+            "description": "",
+            "url": "https://www.leier.hu/hu/termekek/granite-tetocserep",
+            "category_url": "https://www.leier.hu/hu/termekeink/betoncserepek",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Granite tetőcserép termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Granite-tetocserep-termekadatlap-673afea9020e7.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Granite tetőcserép termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Granite-tetocserep-termekadatlap-673afea9020e7.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "Granite-carbon1-65e87c336ea61",
+                    "url": "https://www.leier.hu/uploads/files/Granite-carbon1-65e87c336ea61.png",
+                    "type": "document"
+                },
+                "doc_18": {
+                    "title": "Granite_teglavoros-661f869991ec1",
+                    "url": "https://www.leier.hu/uploads/files/Granite_teglavoros-661f869991ec1.PNG",
+                    "type": "document"
+                },
+                "doc_19": {
+                    "title": "granite-fekete-646f642d1dc42",
+                    "url": "https://www.leier.hu/uploads/files/granite-fekete-646f642d1dc42.png",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "sotetbarna",
+                    "url": "https://www.leier.hu/uploads/files/sotetbarna.png",
+                    "type": "document"
+                },
+                "doc_21": {
+                    "title": "Granite Classic betoncserép",
+                    "url": "https://photos.leier.eu/pV59_Ha-yhwX5C73vbF4nULmHuk=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FGranite_Classic_carbon-Balatonszlos__7_.jpg",
+                    "type": "document"
+                },
+                "doc_22": {
+                    "title": "Granite Classic carbon betoncserép",
+                    "url": "https://photos.leier.eu/Y6RVdyu7uOUStIIm0o6-YHmpF1g=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FGranite_Classic_fekete-Balatonszlos__7_.jpg",
+                    "type": "document"
+                },
+                "doc_23": {
+                    "title": "Granite Classic carbon betoncserép",
+                    "url": "https://photos.leier.eu/Wy8dIiuHE_nW3_KaltOVVTEJoNc=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FGranite_Classic_fekete-Balatonszlos__3_.jpg",
+                    "type": "document"
+                },
+                "doc_24": {
+                    "title": "Granite Classic carbon betoncserép",
+                    "url": "https://photos.leier.eu/K1Sot99QGECD5l1JKmUHN6Kpj0I=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FGranite_Classic_fekete-Balatonszlos__14_.jpg",
+                    "type": "document"
+                },
+                "doc_25": {
+                    "title": "Granite Classic carbon betoncserép",
+                    "url": "https://photos.leier.eu/Z1q-mmgPWX6NsIn02Vj1xzS985s=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FGranite_Classic_carbon-Balatonszlos__1_.jpg",
+                    "type": "document"
+                },
+                "doc_26": {
+                    "title": "Granite Classic fekete betoncserép",
+                    "url": "https://photos.leier.eu/pUpiujiKd9dciHPSxIrW68n4SQQ=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FGranite-fekete-csere%25CC%2581p_nagyszentja%25CC%2581nos-1__18_.jpg",
+                    "type": "document"
+                },
+                "doc_27": {
+                    "title": "Granite Classic fekete betoncserép",
+                    "url": "https://photos.leier.eu/KiqlKS3OQ8k0q8atHWQuMYUteCU=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FGranite-fekete-csere%25CC%2581p_nagyszentja%25CC%2581nos-1__11_.jpg",
+                    "type": "document"
+                },
+                "doc_28": {
+                    "title": "Granite Classic fekete betoncserép",
+                    "url": "https://photos.leier.eu/l5fAgN_yLpfxm72hwR3pTSZZw70=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Granite-tetocserep__1_.jpg",
+                    "type": "document"
+                },
+                "doc_29": {
+                    "title": "Granite Classic fekete betoncserép",
+                    "url": "https://photos.leier.eu/e3DOnYAwdzNXM70cdFqMmFMTj_I=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Granite-tetocserep__2_.jpg",
+                    "type": "document"
+                },
+                "doc_30": {
+                    "title": "Granite tetőcserép termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Granite-tetocserep-termekadatlap-673afea9020e7.pdf",
+                    "type": "pdf"
+                },
+                "doc_31": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_32": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_33": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_34": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_35": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_36": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_37": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_38": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_39": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_40": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_41": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 42,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Kvp9N5fP-73QOB-xBruhzrU1wY4=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-betoncserep-logo-fekvo-szlogennel-1.jpg",
+                    "alt": "Betoncserép"
+                },
+                {
+                    "url": "https://photos.leier.eu/O5T1K9BZhRpIT6RXADn8Fmt0wuM=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FGranite-carbon1-65e87c336ea61.png",
+                    "alt": "Granite tetőcserép carbon"
+                },
+                {
+                    "url": "https://photos.leier.eu/mY06qfDjZqKTCLRw8v9PZ44nngs=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FGranite_teglavoros-661f869991ec1.PNG",
+                    "alt": "Granite alapcserép téglavörös"
+                },
+                {
+                    "url": "https://photos.leier.eu/Riqqk8uEv-JgM4JbOrGqFKe00rA=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fgranite-fekete-646f642d1dc42.png",
+                    "alt": "Granite tetőcserép fekete"
+                }
+            ],
+            "technical_data": {
+                "Tetőhajlásszög": "30°-tól*",
+                "Tetőlécméret": "minimum 30x50 mm*",
+                "Méret": "33 x 42",
+                "Tetőléctávolság": "maximum 34 cm*",
+                "Tömeg": "5,3 kg/db",
+                "Átfedés": "minimum 8,5 cm",
+                "Névleges fedési szélesség": "304 +- 5 mm",
+                "Szükséglet": "9,8 - 10,4 db/m2",
+                "Típus": "Beton alapcserép*",
+                "Elemszükséglet (kb.)": "10 db/m2",
+                "kg/db": "5,3",
+                "db/raklap": "210"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "granite-brillant": {
+            "product_id": "granite-brillant",
+            "name": "Granite Brillant tetőcserépAz új Leier Granite Brillant betoncserép nemcsak kimagasló védelmet nyújt felületkezelésének köszönhetően, hanem modern megjelenésével is kiemelkedik...Megnézem",
+            "description": "",
+            "url": "https://www.leier.hu/hu/termekek/granite-brillant",
+            "category_url": "https://www.leier.hu/hu/termekeink/betoncserepek",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Granite Brillant tetőcserép termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Granite-tetocserep-termekadatlap-673afef75d784.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Granite Brillant tetőcserép termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Granite-tetocserep-termekadatlap-673afef75d784.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "Granite_Brillant",
+                    "url": "https://www.leier.hu/uploads/files/Granite_Brillant.jpg",
+                    "type": "document"
+                },
+                "doc_18": {
+                    "title": "Granite Brillant tetőcserép",
+                    "url": "https://photos.leier.eu/r_PEQlKgxIA-Mcfm8KNQOaG1FHo=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier_Brillant_teto.jpg",
+                    "type": "document"
+                },
+                "doc_19": {
+                    "title": "Granite Brillant tetőcserép",
+                    "url": "https://photos.leier.eu/cB6CYSzmuGK3AHy_l8E__ZMvp5c=/filters:watermark(https://www.leier.hu/uploads/files/Leier-betoncserep-logo-fekvo-szlogennel-1.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier_Brillant_teto-670501a33be61.jpg",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "Granite Brillant tetőcserép termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Granite-tetocserep-termekadatlap-673afef75d784.pdf",
+                    "type": "pdf"
+                },
+                "doc_21": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_22": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_23": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_24": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_25": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_26": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_27": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_28": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_29": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_30": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_31": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 32,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Kvp9N5fP-73QOB-xBruhzrU1wY4=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-betoncserep-logo-fekvo-szlogennel-1.jpg",
+                    "alt": "Betoncserép"
+                },
+                {
+                    "url": "https://photos.leier.eu/64qqEbfF9W9JaC1513V05krNmTU=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FGranite_Brillant.jpg",
+                    "alt": "Granite brillant ezüstszürke"
+                },
+                {
+                    "url": "https://photos.leier.eu/RTHref3Cly9Y_qzsTwMKdA3n3iM=/894x536/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier_Brillant_teto.jpg",
+                    "alt": "Granite Brillant tetőcserép"
+                },
+                {
+                    "url": "https://photos.leier.eu/AURa_Gw9rzPke540cdWFfFjZVtU=/282x167/smart/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier_Brillant_teto-670501a33be61.jpg",
+                    "alt": "Granite Brillant tetőcserép"
+                }
+            ],
+            "technical_data": {
+                "Tetőhajlásszög": "30°-tól*",
+                "Tetőlécméret": "minimum 30x50 mm*",
+                "Méret": "33 x 42",
+                "Tetőléctávolság": "maximum 34 cm*",
+                "Tömeg": "5,3 kg/db",
+                "Átfedés": "minimum 8,5 cm",
+                "Névleges fedési szélesség": "304 +- 5 mm",
+                "Szükséglet": "9,8 - 10,4 db/m2",
+                "Típus": "Beton alapcserép*",
+                "Elemszükséglet (kb.)": "10 db/m2",
+                "kg/db": "5,3",
+                "db/raklap": "210"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "tetofedo-kiegeszitok": {
+            "product_id": "tetofedo-kiegeszitok",
+            "name": "Tetőfedő kiegészítőkA tetőfedő kiegészítők meghatározó szerepet játszanak a tető egységes és tartós kialakításában. Az optimális eredmény érdekében érdemes rendszerben go...Megnézem",
+            "description": "",
+            "url": "https://www.leier.hu/hu/termekek/tetofedo-kiegeszitok",
+            "category_url": "https://www.leier.hu/hu/termekeink/betoncserepek",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cbc0af.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "barna",
+                    "url": "https://www.leier.hu/uploads/files/barna.PNG",
+                    "type": "document"
+                },
+                "doc_16": {
+                    "title": "Tetőfedő kiegészítők",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2024_kiegeszito.png",
+                    "type": "document"
+                },
+                "doc_17": {
+                    "title": "Tetőfedő kiegészítők",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tetofedo_kiegyeszito_kv-mod_hofogoracs.jpg",
+                    "type": "document"
+                },
+                "doc_18": {
+                    "title": "Tetőfedő kiegészítők",
+                    "url": "https://www.leier.hu/uploads/files/leier_construma4-662763b553cb4.jpg",
+                    "type": "document"
+                },
+                "doc_19": {
+                    "title": "Tetőfedő kiegészítők",
+                    "url": "https://www.leier.hu/uploads/files/leier_construma113.jpg",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "Tetőfedő kiegészítők",
+                    "url": "https://www.leier.hu/uploads/files/leier_construma112.jpg",
+                    "type": "document"
+                },
+                "doc_21": {
+                    "title": "Tetőfedő kiegészítők",
+                    "url": "https://www.leier.hu/uploads/files/leier_construma119.jpg",
+                    "type": "document"
+                },
+                "doc_22": {
+                    "title": "Tetőfedő kiegészítők",
+                    "url": "https://www.leier.hu/uploads/files/leier_construma121.jpg",
+                    "type": "document"
+                },
+                "doc_23": {
+                    "title": "Új Toscana szellőzőcserép termékbemutató kiadvány (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Toscana-szellözöcserep-szorolap.pdf",
+                    "type": "pdf"
+                },
+                "doc_24": {
+                    "title": "Betoncserepek - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Beton-tetocserep-Hajduszoboszlo-65f14857ae292.pdf",
+                    "type": "pdf"
+                },
+                "doc_25": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c49cb7579.pdf",
+                    "type": "pdf"
+                },
+                "doc_26": {
+                    "title": "Leier betoncserép prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_betoncserep_prospektus_2025_OK-web-67d946549aaa6.pdf",
+                    "type": "pdf"
+                },
+                "doc_27": {
+                    "title": "Tetőfedő rendszerek alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/2025_A4_-_Tetőfedés_-_WEB-67e699f36cfcc.pdf",
+                    "type": "pdf"
+                },
+                "doc_28": {
+                    "title": "Tetőfedés árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-tetofedes-2025-685aa5ac29ecd.pdf",
+                    "type": "pdf"
+                },
+                "doc_29": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_30": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_31": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_32": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_33": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 34,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/P7QYt-uVpG1qHmUeI2ccmNx5Dqk=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fbarna.PNG",
+                    "alt": "Tetőfedő kiegészítő rendszer"
+                },
+                {
+                    "url": "https://photos.leier.eu/0oYJwRB6JCz9DWTvHBLoz9hn3mo=/894x536/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier_betoncserep_prospektus_2024_kiegeszito.png",
+                    "alt": "Tetőfedő kiegészítők"
+                },
+                {
+                    "url": "https://photos.leier.eu/Tl3Aweb_7S-SI4Qa0URTAnQGYNc=/282x167/smart/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier_tetofedo_kiegyeszito_kv-mod_hofogoracs.jpg",
+                    "alt": "Tetőfedő kiegészítők"
+                },
+                {
+                    "url": "https://photos.leier.eu/1UxO3HyaPSg6O1x-QEUKDzYkvcw=/282x167/smart/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier_construma4-662763b553cb4.jpg",
+                    "alt": "Tetőfedő kiegészítők"
+                }
+            ],
+            "technical_data": {},
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        }
+    },
+    "product_count": 8,
+    "document_count": 303
+}

@@ -1,0 +1,1700 @@
+{
+  "documents": [
+    {
+      "id": 3218,
+      "name": "AGY 80 - 75 L - Aknagyűrű - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3218",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3219,
+      "name": "AGY 80 - 50 L - Aknagyűrű - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3219",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3220,
+      "name": "AGY 80 - 25 L - Aknagyűrű - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3220",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3221,
+      "name": "AGY 80 - 100 L - Aknagyűrű - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3221",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3222,
+      "name": "AGY 80 L - Aknagyűrű - vízszintes metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3222",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3223,
+      "name": "AGY 100 - 75 LG+H - Aknagyűrű gumigyűrűs hágcsóval - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3223",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3224,
+      "name": "AGY 100 - 75 LG - Aknagyűrű gumigyűrűs - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3224",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3225,
+      "name": "AGY 100 - 75 L+H - Aknagyűrű hágcsóval - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3225",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3226,
+      "name": "AGY 100 - 75 L - Aknagyűrű - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3226",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3227,
+      "name": "AGY 100 - 50 LG+H - Aknagyűrű gumigyűrűs hágcsóval - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3227",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3228,
+      "name": "AGY 100 - 50 LG - Aknagyűrű gumigyűrűs - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3228",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3229,
+      "name": "AGY 100 - 50 L+H - Aknagyűrű hágcsóval - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3229",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3230,
+      "name": "AGY 100 - 50 L - Aknagyűrű - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3230",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3231,
+      "name": "AGY 100 - 25 LG+H - Aknagyűrű gumigyűrűs hágcsóval - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3231",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3232,
+      "name": "AGY 100 - 25 LG - Aknagyűrű gumigyűrűs - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3232",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3233,
+      "name": "AGY 100 - 25 L+H - Aknagyűrű hágcsóval - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3233",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3234,
+      "name": "AGY 100 - 25 L - Aknagyűrű - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3234",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3235,
+      "name": "AGY 100 - 100 LG+H - Aknagyűrű gumigyűrűs hágcsóval - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3235",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3236,
+      "name": "AGY 100 - 100 LG - Aknagyűrű gumigyűrűs - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3236",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3237,
+      "name": "AGY 100 - 100 L+H - Aknagyűrű hágcsóval - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3237",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3238,
+      "name": "AGY 100 - 100 L - Aknagyűrű - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3238",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3239,
+      "name": "AGY 100 LG+H - Aknagyűrű gumigyűrűs hágcsóval - vízszintes metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3239",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3240,
+      "name": "AGY 100 LG - Aknagyűrű gumigyűrűs - vízszintes metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3240",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3241,
+      "name": "AGY 100 L+H - Aknagyűrű hágcsóval - vízszintes metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3241",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3242,
+      "name": "AGY 100 L - Aknagyűrű - vízszintes metszet",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3242",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3243,
+      "name": "AGY 100 LG",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3243",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3244,
+      "name": "AGY 80 100 L",
+      "is_folder": 0,
+      "parent_id": 3192,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3192,
+        "name": "Aknagyűrűk",
+        "is_folder": 1,
+        "parent_id": 2882,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2882,
+          "name": "Tisztítóakna elemek",
+          "is_folder": 1,
+          "parent_id": 2872,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2872,
+            "name": "Mélyépítés",
+            "is_folder": 1,
+            "parent_id": 2337,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2337,
+              "name": "Elemrajzok (DWG, PDF)",
+              "is_folder": 1,
+              "parent_id": 1867,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1867,
+                "name": "Részletrajzok",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3244",
+        "extension": "dwg"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 3192,
+    "name": "Aknagyűrűk",
+    "is_folder": 1,
+    "parent_id": 2882,
+    "created_at": "2023. február 16.",
+    "parent": {
+      "id": 2882,
+      "name": "Tisztítóakna elemek",
+      "is_folder": 1,
+      "parent_id": 2872,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2872,
+        "name": "Mélyépítés",
+        "is_folder": 1,
+        "parent_id": 2337,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2337,
+          "name": "Elemrajzok (DWG, PDF)",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

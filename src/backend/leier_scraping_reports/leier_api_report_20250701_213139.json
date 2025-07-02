@@ -1,0 +1,14 @@
+{
+    "run_timestamp": "2025-07-01T21:31:39.751229",
+    "duration_seconds": 0.574297,
+    "test_mode": true,
+    "target_url": "https://www.leier.hu/hu/documents/api/documents",
+    "summary": {
+        "documents_discovered": 0,
+        "downloads_successful": 0,
+        "downloads_failed": 0,
+        "duplicates_found": 0
+    },
+    "discovered_docs_sample": [],
+    "failed_downloads": []
+}

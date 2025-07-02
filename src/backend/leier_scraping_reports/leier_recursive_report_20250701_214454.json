@@ -1,0 +1,34 @@
+{
+    "run_timestamp": "2025-07-01T21:44:54.153709",
+    "duration_seconds": 88.284486,
+    "test_mode": true,
+    "summary": {
+        "documents_discovered": 1588,
+        "downloads_successful": 0,
+        "downloads_failed": 0,
+        "duplicates_found": 0
+    },
+    "discovered_docs_sample": [
+        "hu/Részletrajzok/Csomópontok/Fal részletrajzok/pdf/f06a-uni-labazat",
+        "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Mélyépítés/Tisztítóakna elemek/Aknagyűrűk/AGY 100 - 50 LG+H - Aknagyűrű gumigyűrűs hágcsóval - függőleges metszet",
+        "hu/Részletrajzok/Csomópontok/Kéregfal részletrajzok/pdf/e02-alapozas-szig-j",
+        "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Mélyépítés/Árokburkoló- és árokelemek/ÁE 40_35 - 50L - árokburkoló elem - keresztmetszet",
+        "hu/Részletrajzok/Csomópontok/Fal részletrajzok/pdf/f01-vfal-bekotes",
+        "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Környezettechnika/Zsírleválasztók PDF/LZS 2 melleklet PDF",
+        "hu/Részletrajzok/Csomópontok/Kémény részletrajzok/dxf/leier-k01-kemeny-alapozas1",
+        "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Környezettechnika/Zsírleválasztók DWG/LZS 10 Zsírleválasztó - vízszintes metszet",
+        "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Mélyépítés/Tisztítóakna elemek/Aknagyűrűk/AGY 100 - 25 LG - Aknagyűrű gumigyűrűs - függőleges metszet",
+        "hu/Részletrajzok/Csomópontok/Leier Durisol Magasépítő falazórendszer/Ablak-csatlakozás kialakítása DSs 37,5-12",
+        "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Mélyépítés/Kábelcsatorna/KCS vályú irt. jobb",
+        "hu/Teljesítménynyilatkozatok/Tetőfedő rendszerek/Betoncserép - Hajdúszoboszló - Teljesítménynyilatkozat LE HA490-04",
+        "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Környezettechnika/Olajelválasztók PDF/LOL SUPER 60 max P melleklet PDF",
+        "hu/Teljesítménynyilatkozatok/Magasépítési termékek/Tégla termékek/Devecser - Teljesítménynyilatkozatok/Leiertherm/Teljesítménynyilatkozat - Leiertherm 30 N+F LE DE771-1-03-04",
+        "hu/Részletrajzok/Csomópontok/Födém részletrajzok/dwg/m01-mesterf-koszoru1",
+        "hu/Biztonságtechnikai adatlapok/Leier kémény torkolati kúp tömítő - Biztonságtechnikai adatlap",
+        "hu/Teljesítménynyilatkozatok/Magasépítési termékek/Előregyártott falak/Falelem - Győr - Teljesítménynyilatkozat LE GY14992-05",
+        "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Környezettechnika/Olajelválasztók DWG/LOL SUPER 50 P melléklet",
+        "hu/Részletrajzok/Csomópontok/Kémény részletrajzok/asc/leier-k02a-kemeny-fodemattor1",
+        "hu/Részletrajzok/Elemrajzok (DWG, PDF)/Durisol zajárnyékolás/Durisol panel 396 100 félkötés - Elölnézet"
+    ],
+    "failed_downloads": []
+}

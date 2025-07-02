@@ -1,0 +1,862 @@
+{
+  "documents": [
+    {
+      "id": 4169,
+      "name": "Leier Kaiserstein termékkatalógus",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2025. június 24.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/4169",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 4142,
+      "name": "Leier tavaszi ajánlat 2025",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2025. március 17.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/4142",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 4143,
+      "name": "Leier betoncserép prospektus",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2025. március 18.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/4143",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 4141,
+      "name": "Leier égetett kerámia falazórendszerek",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2025. február 25.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/4141",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 4012,
+      "name": "Leier őszi termékkínálat 2024",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2024. augusztus 14.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/4012",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3902,
+      "name": "Leier kémények - Prospektus",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2024. március 22.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3902",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3611,
+      "name": "Toscana szellőzőcserép szórólap",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3611",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 1893,
+      "name": "Leier FIX Univerzális építési ragasztó - Prospektus",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/1893",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3734,
+      "name": "Típusházak prospektus",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2023. augusztus 10.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3734",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3735,
+      "name": "Leier előregyártott betonelemek prospektus",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2023. augusztus 14.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3735",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3733,
+      "name": "Leier támfal blokkelemek prospektus",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2023. augusztus 9.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3733",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 1899,
+      "name": "Leier előregyártott fedett gépkocsibeállók - Prospektus",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/1899",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 1903,
+      "name": "Leier előregyártott sorompó kapcsolóház - Prospektus",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/1903",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3710,
+      "name": "Leier előregyártott padlóelem állattartáshoz - Prospektus",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2023. június 15.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3710",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 1897,
+      "name": "Leier Árokburkoló elem - Prospektus",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/1897",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 1882,
+      "name": "Liftakna elem - Tájékoztató",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/1882",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 1883,
+      "name": "Leier Magasles",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/1883",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3903,
+      "name": "Leier Durisol falazóelem rendszer",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2024. március 22.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3903",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3900,
+      "name": "Leier Durisol zajárnyékoló falrendszerek - Prospektus",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2024. március 22.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3900",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 1892,
+      "name": "Leier Durisol magaságyás - Prospektus",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/1892",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 1886,
+      "name": "Leier Durisol - Egy építőanyag számos felhasználási lehetőséggel",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/1886",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 1887,
+      "name": "Leier Durisol - A környezettudatos építésért",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/1887",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 1902,
+      "name": "Leier Durisol peronelem - Prospektus",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/1902",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3697,
+      "name": "45°-ban hajlított Durisol zajárnyékoló falelem - Prospektus",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2023. május 22.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3697",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3901,
+      "name": "Leier környezettechnika - Prospektus",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2024. március 22.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3901",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 1901,
+      "name": "Leier kábelcsatorna rendszerek - Prospektus",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/1901",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 1904,
+      "name": "Leier optikai vezetőoszlop tartó - Prospektus",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/1904",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 1898,
+      "name": "Leier Modul-Skate pályaelemek - Prospektus",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/1898",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 4138,
+      "name": "Leier EasyBlock prospektus",
+      "is_folder": 0,
+      "parent_id": 1860,
+      "created_at": "2025. január 30.",
+      "parent": {
+        "id": 1860,
+        "name": "Prospektusok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/4138",
+        "extension": "pdf"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 1860,
+    "name": "Prospektusok",
+    "is_folder": 1,
+    "parent_id": 1859,
+    "created_at": "2023. február 15.",
+    "parent": {
+      "id": 1859,
+      "name": "hu",
+      "is_folder": 1,
+      "parent_id": null,
+      "created_at": "2023. február 15.",
+      "parent": null,
+      "file": null
+    },
+    "file": null
+  }
+}

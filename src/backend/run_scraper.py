@@ -28,7 +28,7 @@ logger = logging.getLogger('ScraperRunner')
 
 # --- Scraper Imports ---
 # Import your scraper functions here as they are created
-from app.scrapers.rockwool import run_rockwool_scrape
+from app.agents.brightdata_agent import BrightDataMCPAgent
 # Direct import to avoid database dependencies
 from app.agents.brightdata_agent import BrightDataMCPAgent
 # from app.scrapers.another_site import run_another_site_scrape
@@ -56,13 +56,8 @@ async def main():
             logger.info(f"AI Agent targeting URL: {target_url}")
             products = await agent.scrape_rockwool_with_ai(target_urls=[target_url])
             
-            # Now, download the PDFs found by the AI
-            async with RockwoolScraper() as downloader:
-                for product in products:
-                    if product.get('pdf_url'):
-                        pdf_result = await downloader._download_pdf(product['pdf_url'], product['name'])
-                        if pdf_result:
-                            product.setdefault('pdfs', []).append(pdf_result)
+            # The products already contain PDF downloads from the AI agent
+            logger.info(f"Products scraped with AI agent: {len(products)}")
 
             result = {
                 'success': True,

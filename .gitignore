@@ -57,4 +57,10 @@ celerybeat-schedule
 .pytest_cache/
 
 # Ignore IDE/Editor settings
-.vscode/ 
+.vscode/
+
+# Ignore downloaded assets
+**/downloads/**/*.pdf
+
+# Ignore large binary files
+/src/backend/src/downloads/leier_materials_api/documents/hu/Leier-Graphisoft Archicad programbővítmény/Leier Építőelem Gyűjtemény.pdf 

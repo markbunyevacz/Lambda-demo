@@ -1,0 +1,352 @@
+{
+  "documents": [
+    {
+      "id": 3889,
+      "name": "Leier kiemelet szegélykő termékadatlap",
+      "is_folder": 0,
+      "parent_id": 2260,
+      "created_at": "2024. március 20.",
+      "parent": {
+        "id": 2260,
+        "name": "Szegélykövek",
+        "is_folder": 1,
+        "parent_id": 2164,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 2164,
+          "name": "Kertépítés, díszburkolat",
+          "is_folder": 1,
+          "parent_id": 1866,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1866,
+            "name": "Termékadatlapok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3889",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3890,
+      "name": "Süllyesztett szegélykő - Termékadatlap",
+      "is_folder": 0,
+      "parent_id": 2260,
+      "created_at": "2024. március 20.",
+      "parent": {
+        "id": 2260,
+        "name": "Szegélykövek",
+        "is_folder": 1,
+        "parent_id": 2164,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 2164,
+          "name": "Kertépítés, díszburkolat",
+          "is_folder": 1,
+          "parent_id": 1866,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1866,
+            "name": "Termékadatlapok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3890",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3891,
+      "name": "Leier kerti szegélykő termékadatlap",
+      "is_folder": 0,
+      "parent_id": 2260,
+      "created_at": "2024. március 20.",
+      "parent": {
+        "id": 2260,
+        "name": "Szegélykövek",
+        "is_folder": 1,
+        "parent_id": 2164,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 2164,
+          "name": "Kertépítés, díszburkolat",
+          "is_folder": 1,
+          "parent_id": 1866,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1866,
+            "name": "Termékadatlapok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3891",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3892,
+      "name": "Folyóka szegélykő termékadatlap",
+      "is_folder": 0,
+      "parent_id": 2260,
+      "created_at": "2024. március 20.",
+      "parent": {
+        "id": 2260,
+        "name": "Szegélykövek",
+        "is_folder": 1,
+        "parent_id": 2164,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 2164,
+          "name": "Kertépítés, díszburkolat",
+          "is_folder": 1,
+          "parent_id": 1866,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1866,
+            "name": "Termékadatlapok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3892",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3893,
+      "name": "K szegélykő - Termékadatlap",
+      "is_folder": 0,
+      "parent_id": 2260,
+      "created_at": "2024. március 20.",
+      "parent": {
+        "id": 2260,
+        "name": "Szegélykövek",
+        "is_folder": 1,
+        "parent_id": 2164,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 2164,
+          "name": "Kertépítés, díszburkolat",
+          "is_folder": 1,
+          "parent_id": 1866,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1866,
+            "name": "Termékadatlapok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3893",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3894,
+      "name": "Döntött szegélykő - Termékadatlap",
+      "is_folder": 0,
+      "parent_id": 2260,
+      "created_at": "2024. március 20.",
+      "parent": {
+        "id": 2260,
+        "name": "Szegélykövek",
+        "is_folder": 1,
+        "parent_id": 2164,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 2164,
+          "name": "Kertépítés, díszburkolat",
+          "is_folder": 1,
+          "parent_id": 1866,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1866,
+            "name": "Termékadatlapok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3894",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3895,
+      "name": "Lunetta szegélykő - Termékadatlap",
+      "is_folder": 0,
+      "parent_id": 2260,
+      "created_at": "2024. március 20.",
+      "parent": {
+        "id": 2260,
+        "name": "Szegélykövek",
+        "is_folder": 1,
+        "parent_id": 2164,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 2164,
+          "name": "Kertépítés, díszburkolat",
+          "is_folder": 1,
+          "parent_id": 1866,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1866,
+            "name": "Termékadatlapok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3895",
+        "extension": "pdf"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 2260,
+    "name": "Szegélykövek",
+    "is_folder": 1,
+    "parent_id": 2164,
+    "created_at": "2023. február 15.",
+    "parent": {
+      "id": 2164,
+      "name": "Kertépítés, díszburkolat",
+      "is_folder": 1,
+      "parent_id": 1866,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1866,
+        "name": "Termékadatlapok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

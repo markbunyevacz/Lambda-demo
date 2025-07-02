@@ -1,0 +1,243 @@
+{
+  "documents": [
+    {
+      "id": 4176,
+      "name": "Termékadatlapok",
+      "is_folder": 1,
+      "parent_id": 4175,
+      "created_at": "2025. június 27.",
+      "parent": {
+        "id": 4175,
+        "name": "Betoncserepes dokumentumtár: Termékadatlap - Teljesítménynyilatkozat - Beépítési útmutató",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2025. június 27.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 4177,
+          "name": "Leier Toscana tetocserep termekadatlap",
+          "is_folder": 1,
+          "parent_id": 4176,
+          "created_at": "2025. június 27.",
+          "parent": {
+            "id": 4176,
+            "name": "Termékadatlapok",
+            "is_folder": 1,
+            "parent_id": 4175,
+            "created_at": "2025. június 27.",
+            "parent": {
+              "id": 4175,
+              "name": "Betoncserepes dokumentumtár: Termékadatlap - Teljesítménynyilatkozat - Beépítési útmutató",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2025. június 27.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        {
+          "id": 4181,
+          "name": "Leier Granite tetőcserép termékadatlap",
+          "is_folder": 0,
+          "parent_id": 4176,
+          "created_at": "2025. június 27.",
+          "parent": {
+            "id": 4176,
+            "name": "Termékadatlapok",
+            "is_folder": 1,
+            "parent_id": 4175,
+            "created_at": "2025. június 27.",
+            "parent": {
+              "id": 4175,
+              "name": "Betoncserepes dokumentumtár: Termékadatlap - Teljesítménynyilatkozat - Beépítési útmutató",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2025. június 27.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/4181",
+            "extension": "pdf"
+          }
+        }
+      ],
+      "file": null
+    },
+    {
+      "id": 4179,
+      "name": "Teljesítménynyilatkozatok",
+      "is_folder": 1,
+      "parent_id": 4175,
+      "created_at": "2025. június 27.",
+      "parent": {
+        "id": 4175,
+        "name": "Betoncserepes dokumentumtár: Termékadatlap - Teljesítménynyilatkozat - Beépítési útmutató",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2025. június 27.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 4180,
+          "name": "Beton tetőcserép Teljesítménynyilatkozat NR: LE HA490-04 HSZ.pdf",
+          "is_folder": 0,
+          "parent_id": 4179,
+          "created_at": "2025. június 27.",
+          "parent": {
+            "id": 4179,
+            "name": "Teljesítménynyilatkozatok",
+            "is_folder": 1,
+            "parent_id": 4175,
+            "created_at": "2025. június 27.",
+            "parent": {
+              "id": 4175,
+              "name": "Betoncserepes dokumentumtár: Termékadatlap - Teljesítménynyilatkozat - Beépítési útmutató",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2025. június 27.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/4180",
+            "extension": "pdf"
+          }
+        }
+      ],
+      "file": null
+    },
+    {
+      "id": 4182,
+      "name": "Beépítési útmutató - Alkalmazástechnika",
+      "is_folder": 1,
+      "parent_id": 4175,
+      "created_at": "2025. június 27.",
+      "parent": {
+        "id": 4175,
+        "name": "Betoncserepes dokumentumtár: Termékadatlap - Teljesítménynyilatkozat - Beépítési útmutató",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2025. június 27.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 4183,
+          "name": "Tetőfedés alkalmazástechnika",
+          "is_folder": 0,
+          "parent_id": 4182,
+          "created_at": "2025. június 27.",
+          "parent": {
+            "id": 4182,
+            "name": "Beépítési útmutató - Alkalmazástechnika",
+            "is_folder": 1,
+            "parent_id": 4175,
+            "created_at": "2025. június 27.",
+            "parent": {
+              "id": 4175,
+              "name": "Betoncserepes dokumentumtár: Termékadatlap - Teljesítménynyilatkozat - Beépítési útmutató",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2025. június 27.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/4183",
+            "extension": "pdf"
+          }
+        }
+      ],
+      "file": null
+    }
+  ],
+  "currentDocument": {
+    "id": 4175,
+    "name": "Betoncserepes dokumentumtár: Termékadatlap - Teljesítménynyilatkozat - Beépítési útmutató",
+    "is_folder": 1,
+    "parent_id": 1859,
+    "created_at": "2025. június 27.",
+    "parent": {
+      "id": 1859,
+      "name": "hu",
+      "is_folder": 1,
+      "parent_id": null,
+      "created_at": "2023. február 15.",
+      "parent": null,
+      "file": null
+    },
+    "file": null
+  }
+}

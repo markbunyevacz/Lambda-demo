@@ -22,7 +22,8 @@ class ProjectAnalyzer:
             '__pycache__', '.git', '.idea', '.vscode', 'node_modules', '.venv',
             'celerybeat-schedule', '.cursor-cache', 'uv.lock', 'yarn.lock',
             'package.json', 'project_cleanup_report.txt',
-            'project_cleanup_analyzer.py'
+            'project_cleanup_analyzer.py', '.mypy_cache', '.pytest_cache',
+            '.next', 'build', 'dist'
         ]
         self.debug_patterns = [
             'debug_', 'test_', 'rockwool_', '_results.json', '.html'

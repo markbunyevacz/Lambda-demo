@@ -1,0 +1,257 @@
+{
+  "documents": [
+    {
+      "id": 3341,
+      "name": "LZS 10 melleklet PDF",
+      "is_folder": 0,
+      "parent_id": 3312,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3312,
+        "name": "Zsírleválasztók PDF",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3341",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3342,
+      "name": "LZS 7 melleklet PDF",
+      "is_folder": 0,
+      "parent_id": 3312,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3312,
+        "name": "Zsírleválasztók PDF",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3342",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3343,
+      "name": "LZS 4 melleklet PDF",
+      "is_folder": 0,
+      "parent_id": 3312,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3312,
+        "name": "Zsírleválasztók PDF",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3343",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3344,
+      "name": "LZS 2 melleklet PDF",
+      "is_folder": 0,
+      "parent_id": 3312,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3312,
+        "name": "Zsírleválasztók PDF",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3344",
+        "extension": "pdf"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 3312,
+    "name": "Zsírleválasztók PDF",
+    "is_folder": 1,
+    "parent_id": 2873,
+    "created_at": "2023. február 16.",
+    "parent": {
+      "id": 2873,
+      "name": "Környezettechnika",
+      "is_folder": 1,
+      "parent_id": 2337,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2337,
+        "name": "Elemrajzok (DWG, PDF)",
+        "is_folder": 1,
+        "parent_id": 1867,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 1867,
+          "name": "Részletrajzok",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

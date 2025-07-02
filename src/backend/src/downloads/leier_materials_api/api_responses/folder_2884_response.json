@@ -1,0 +1,1211 @@
+{
+  "documents": [
+    {
+      "id": 3285,
+      "name": "V FE 50 5 L - Víznyelő felsőelem függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 2884,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2884,
+        "name": "Vízelnyelőakna elemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3285",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3286,
+      "name": "V FE 50 5 L - Víznyelő felsőelem felülnézet",
+      "is_folder": 0,
+      "parent_id": 2884,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2884,
+        "name": "Vízelnyelőakna elemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3286",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3287,
+      "name": "V FE 50 10 L - Víznyelő felsőelem függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 2884,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2884,
+        "name": "Vízelnyelőakna elemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3287",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3288,
+      "name": "V FE 50 10 L - Víznyelő felsőelem felülnézet",
+      "is_folder": 0,
+      "parent_id": 2884,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2884,
+        "name": "Vízelnyelőakna elemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3288",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3289,
+      "name": "V AGY 50 50 L - Víznyelő aknagyűrű függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 2884,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2884,
+        "name": "Vízelnyelőakna elemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3289",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3290,
+      "name": "V AGY 50 25 L - Víznyelő aknagyűrű függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 2884,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2884,
+        "name": "Vízelnyelőakna elemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3290",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3291,
+      "name": "V AGY 50 10-25-50 L - Víznyelő aknagyűrű vízszintes metszet",
+      "is_folder": 0,
+      "parent_id": 2884,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2884,
+        "name": "Vízelnyelőakna elemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3291",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3292,
+      "name": "V AGY 50 10 L - Víznyelő aknagyűrű függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 2884,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2884,
+        "name": "Vízelnyelőakna elemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3292",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3293,
+      "name": "V AFE 50 80 L - Víznyelő akna fenékelem vég vízszintes metszet",
+      "is_folder": 0,
+      "parent_id": 2884,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2884,
+        "name": "Vízelnyelőakna elemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3293",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3294,
+      "name": "V AFE 50 80 L - Víznyelő akna fenékelem vég függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 2884,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2884,
+        "name": "Vízelnyelőakna elemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3294",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3295,
+      "name": "V AFE 50 80 L - Víznyelő akna fenékelem átfolyós vízszintes metszet",
+      "is_folder": 0,
+      "parent_id": 2884,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2884,
+        "name": "Vízelnyelőakna elemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3295",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3296,
+      "name": "V AFE 50 80 L - Víznyelő akna fenékelem átfolyós függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 2884,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2884,
+        "name": "Vízelnyelőakna elemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3296",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3297,
+      "name": "V AFE 50 50 L - Víznyelő akna fenékelem vég vízszintes metszet",
+      "is_folder": 0,
+      "parent_id": 2884,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2884,
+        "name": "Vízelnyelőakna elemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3297",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3298,
+      "name": "V AFE 50 50 L - Víznyelő akna fenékelem vég függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 2884,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2884,
+        "name": "Vízelnyelőakna elemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3298",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3299,
+      "name": "V AFE 50 50 L - Víznyelő akna fenékelem átfolyós vízszintes metszet",
+      "is_folder": 0,
+      "parent_id": 2884,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2884,
+        "name": "Vízelnyelőakna elemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3299",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3300,
+      "name": "V AFE 50 50 L - Víznyelő akna fenékelem átfolyós függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 2884,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2884,
+        "name": "Vízelnyelőakna elemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3300",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3301,
+      "name": "Víznyelő összeáll.",
+      "is_folder": 0,
+      "parent_id": 2884,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2884,
+        "name": "Vízelnyelőakna elemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3301",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3302,
+      "name": "VFE",
+      "is_folder": 0,
+      "parent_id": 2884,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2884,
+        "name": "Vízelnyelőakna elemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3302",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3303,
+      "name": "VAFE",
+      "is_folder": 0,
+      "parent_id": 2884,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2884,
+        "name": "Vízelnyelőakna elemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3303",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3304,
+      "name": "V AGY 50 50",
+      "is_folder": 0,
+      "parent_id": 2884,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2884,
+        "name": "Vízelnyelőakna elemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3304",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3305,
+      "name": "V AGY 50 25",
+      "is_folder": 0,
+      "parent_id": 2884,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2884,
+        "name": "Vízelnyelőakna elemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3305",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3306,
+      "name": "V AGY 50 10",
+      "is_folder": 0,
+      "parent_id": 2884,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2884,
+        "name": "Vízelnyelőakna elemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3306",
+        "extension": "dwg"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 2884,
+    "name": "Vízelnyelőakna elemek",
+    "is_folder": 1,
+    "parent_id": 2872,
+    "created_at": "2023. február 16.",
+    "parent": {
+      "id": 2872,
+      "name": "Mélyépítés",
+      "is_folder": 1,
+      "parent_id": 2337,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2337,
+        "name": "Elemrajzok (DWG, PDF)",
+        "is_folder": 1,
+        "parent_id": 1867,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 1867,
+          "name": "Részletrajzok",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

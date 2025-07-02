@@ -1,0 +1,1009 @@
+{
+    "category_id": "viragtarto-edenyek-kerekpartarto",
+    "name": "Virágtartó edények",
+    "description": "",
+    "url": "https://www.leier.hu/hu/termekeink/viragtarto-edenyek-kerekpartarto",
+    "products": {
+        "viragtarto-dezsa": {
+            "product_id": "viragtarto-dezsa",
+            "name": "Virágtartó dézsa",
+            "description": "A különböző standard formákból, színekből és méretekből történő választás lehetőséget ad elképzelései megvalósítására. Minden virágtartó edény rendelkezik egy vízlefolyó nyílással, ezáltal biztosított a fagyállósága.",
+            "url": "https://www.leier.hu/hu/termekek/viragtarto-dezsa",
+            "category_url": "https://www.leier.hu/hu/termekeink/viragtarto-edenyek-kerekpartarto",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40f8e9.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Kerti termékek - Jánossomorja - Teljesítménynyilatkozat_LE JS13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-janossomorja-teljesitmenynyilatkozat-6332c426b09a0.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Kerti termékek - Pécs - Teljesítménynyilatkozat_ LE PE13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-pecs-teljesitmenynyilatkozat-6332c426bb01d.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Kerti termékek - Gönyű - Teljesítménynyilatkozat_ LE GO13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termeket-gonyu-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Virágtartók termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/viragtartok-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/leier_diszburkolatok_alkalmazastechnika.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40b696.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6aca112c8.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa6a0c6c31.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40f8e9.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Kerti termékek - Jánossomorja - Teljesítménynyilatkozat_LE JS13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-janossomorja-teljesitmenynyilatkozat-6332c426b09a0.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Kerti termékek - Pécs - Teljesítménynyilatkozat_ LE PE13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-pecs-teljesitmenynyilatkozat-6332c426bb01d.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Kerti termékek - Gönyű - Teljesítménynyilatkozat_ LE GO13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termeket-gonyu-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Virágtartók termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/viragtartok-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/leier_diszburkolatok_alkalmazastechnika.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40b696.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6aca112c8.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa6a0c6c31.pdf",
+                    "type": "pdf"
+                },
+                "doc_18": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40f8e9.pdf",
+                    "type": "pdf"
+                },
+                "doc_19": {
+                    "title": "berlin-632c617f29970",
+                    "url": "https://www.leier.hu/uploads/files/berlin-632c617f29970.jpg",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "rome-632c61707d4a4",
+                    "url": "https://www.leier.hu/uploads/files/rome-632c61707d4a4.jpg",
+                    "type": "document"
+                },
+                "doc_21": {
+                    "title": "paris-632c615a35962",
+                    "url": "https://www.leier.hu/uploads/files/paris-632c615a35962.jpg",
+                    "type": "document"
+                },
+                "doc_22": {
+                    "title": "london-632c61249719a",
+                    "url": "https://www.leier.hu/uploads/files/london-632c61249719a.jpg",
+                    "type": "document"
+                },
+                "doc_23": {
+                    "title": "Virágtartó dézsa",
+                    "url": "https://www.leier.hu/uploads/files/Viragtarto-edenyek.jpg",
+                    "type": "document"
+                },
+                "doc_24": {
+                    "title": "Virágtartó dézsa",
+                    "url": "https://www.leier.hu/uploads/files/Viragtarto-edenyek-6332bffa16e5d.jpg",
+                    "type": "document"
+                },
+                "doc_25": {
+                    "title": "Virágtartó dézsa",
+                    "url": "https://www.leier.hu/uploads/files/Viragtarto-dezsa.png",
+                    "type": "document"
+                },
+                "doc_26": {
+                    "title": "Kerti termékek - Jánossomorja - Teljesítménynyilatkozat_LE JS13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-janossomorja-teljesitmenynyilatkozat-6332c426b09a0.pdf",
+                    "type": "pdf"
+                },
+                "doc_27": {
+                    "title": "Kerti termékek - Pécs - Teljesítménynyilatkozat_ LE PE13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-pecs-teljesitmenynyilatkozat-6332c426bb01d.pdf",
+                    "type": "pdf"
+                },
+                "doc_28": {
+                    "title": "Kerti termékek - Gönyű - Teljesítménynyilatkozat_ LE GO13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termeket-gonyu-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_29": {
+                    "title": "Virágtartók termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/viragtartok-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_30": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/leier_diszburkolatok_alkalmazastechnika.pdf",
+                    "type": "pdf"
+                },
+                "doc_31": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40b696.pdf",
+                    "type": "pdf"
+                },
+                "doc_32": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6aca112c8.pdf",
+                    "type": "pdf"
+                },
+                "doc_33": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa6a0c6c31.pdf",
+                    "type": "pdf"
+                },
+                "doc_34": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_35": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_36": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_37": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_38": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 39,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/stOZauJn92FlrGKwi31gjP5jazE=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fberlin-632c617f29970.jpg",
+                    "alt": "Virágtartó dézsa Berlin"
+                },
+                {
+                    "url": "https://photos.leier.eu/lYaIEM5tzstmsj-DilpRsIA4aXE=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Frome-632c61707d4a4.jpg",
+                    "alt": "Virágtartó dézsa Rome"
+                },
+                {
+                    "url": "https://photos.leier.eu/hYE20ze36jYnoTNjq0bVRR5FFn8=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fparis-632c615a35962.jpg",
+                    "alt": "Virágtartó dézsa Paris"
+                },
+                {
+                    "url": "https://photos.leier.eu/sj0khEG294PgT-mTyZcDcFR93yY=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Flondon-632c61249719a.jpg",
+                    "alt": "Virágtartó dézsa London"
+                }
+            ],
+            "technical_data": {
+                "Típus": "Méret (cm)",
+                "Virágtartó dézsa 40-es": "40 × 40",
+                "Virágtartó dézsa 50-es": "50 × 50",
+                "Virágtartó dézsa 60-as": "60 × 60"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "viragtarto-hatszog": {
+            "product_id": "viragtarto-hatszog",
+            "name": "Virágtartó hatszög",
+            "description": "A különböző standard formákból, színekből és méretekből történő választás lehetőséget ad elképzelései megvalósítására.Minden virágtartó edény rendelkezik egy vízlefolyó nyílással, ezáltal biztosított a fagyállósága.",
+            "url": "https://www.leier.hu/hu/termekek/viragtarto-hatszog",
+            "category_url": "https://www.leier.hu/hu/termekeink/viragtarto-edenyek-kerekpartarto",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40f8e9.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Kerti termékek - Jánossomorja - Teljesítménynyilatkozat_LE JS13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-janossomorja-teljesitmenynyilatkozat-6332c426b09a0.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Kerti termékek - Pécs - Teljesítménynyilatkozat_ LE PE13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-pecs-teljesitmenynyilatkozat-6332c426bb01d.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Kerti termékek - Gönyű - Teljesítménynyilatkozat_ LE GO13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termeket-gonyu-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Virágtartók termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/viragtartok-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/leier_diszburkolatok_alkalmazastechnika.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40b696.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6aca112c8.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa6a0c6c31.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40f8e9.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Kerti termékek - Jánossomorja - Teljesítménynyilatkozat_LE JS13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-janossomorja-teljesitmenynyilatkozat-6332c426b09a0.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Kerti termékek - Pécs - Teljesítménynyilatkozat_ LE PE13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-pecs-teljesitmenynyilatkozat-6332c426bb01d.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Kerti termékek - Gönyű - Teljesítménynyilatkozat_ LE GO13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termeket-gonyu-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Virágtartók termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/viragtartok-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/leier_diszburkolatok_alkalmazastechnika.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40b696.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6aca112c8.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa6a0c6c31.pdf",
+                    "type": "pdf"
+                },
+                "doc_18": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40f8e9.pdf",
+                    "type": "pdf"
+                },
+                "doc_19": {
+                    "title": "paris-632c5fbf3eb6b",
+                    "url": "https://www.leier.hu/uploads/files/paris-632c5fbf3eb6b.jpg",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "rome-632c5faa1b142",
+                    "url": "https://www.leier.hu/uploads/files/rome-632c5faa1b142.jpg",
+                    "type": "document"
+                },
+                "doc_21": {
+                    "title": "london-632c5f76c6fff",
+                    "url": "https://www.leier.hu/uploads/files/london-632c5f76c6fff.jpg",
+                    "type": "document"
+                },
+                "doc_22": {
+                    "title": "berlin-632c5f6432dc5",
+                    "url": "https://www.leier.hu/uploads/files/berlin-632c5f6432dc5.jpg",
+                    "type": "document"
+                },
+                "doc_23": {
+                    "title": "Virágtartó hatszög",
+                    "url": "https://www.leier.hu/uploads/files/Leier-viragtarto-hatszog.jpg",
+                    "type": "document"
+                },
+                "doc_24": {
+                    "title": "Virágtartó hatszög",
+                    "url": "https://www.leier.hu/uploads/files/Leier-viragtarto-hatszog-6332cc6b939cd.jpg",
+                    "type": "document"
+                },
+                "doc_25": {
+                    "title": "Virágtartó hatszög",
+                    "url": "https://www.leier.hu/uploads/files/Viragtarto.png",
+                    "type": "document"
+                },
+                "doc_26": {
+                    "title": "Kerti termékek - Jánossomorja - Teljesítménynyilatkozat_LE JS13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-janossomorja-teljesitmenynyilatkozat-6332c426b09a0.pdf",
+                    "type": "pdf"
+                },
+                "doc_27": {
+                    "title": "Kerti termékek - Pécs - Teljesítménynyilatkozat_ LE PE13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-pecs-teljesitmenynyilatkozat-6332c426bb01d.pdf",
+                    "type": "pdf"
+                },
+                "doc_28": {
+                    "title": "Kerti termékek - Gönyű - Teljesítménynyilatkozat_ LE GO13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termeket-gonyu-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_29": {
+                    "title": "Virágtartók termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/viragtartok-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_30": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/leier_diszburkolatok_alkalmazastechnika.pdf",
+                    "type": "pdf"
+                },
+                "doc_31": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40b696.pdf",
+                    "type": "pdf"
+                },
+                "doc_32": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6aca112c8.pdf",
+                    "type": "pdf"
+                },
+                "doc_33": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa6a0c6c31.pdf",
+                    "type": "pdf"
+                },
+                "doc_34": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_35": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_36": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_37": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_38": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 39,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/pl7fsuOo2vlR4OjcALftoQbAeng=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fparis-632c5fbf3eb6b.jpg",
+                    "alt": "Virágtartó hatszög Paris"
+                },
+                {
+                    "url": "https://photos.leier.eu/mGbHM2ubrRmrFsmDCDdM_H4DSfI=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Frome-632c5faa1b142.jpg",
+                    "alt": "Virágtartó hatszög Rome"
+                },
+                {
+                    "url": "https://photos.leier.eu/eTVGtoMvRyLz9QlqDKrYzR_T89o=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Flondon-632c5f76c6fff.jpg",
+                    "alt": "Virágtartó hatszög London"
+                },
+                {
+                    "url": "https://photos.leier.eu/CcTtjBeYDmOUHDuB_wxShvu6B7k=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fberlin-632c5f6432dc5.jpg",
+                    "alt": "Virágtartó hatszög Berlin"
+                }
+            ],
+            "technical_data": {
+                "Típus": "Méret (cm)",
+                "Virágtartó hatszög 40-es": "40 × 40 × 40",
+                "Virágtartó hatszög 50-es": "50 × 50 × 50",
+                "Virágtartó hatszög 60-as": "60 × 60 × 60"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "viragtarto-lada": {
+            "product_id": "viragtarto-lada",
+            "name": "Virágtartó láda",
+            "description": "A ház környezetének kialakításában a virágtartó edények nem csak dekorációs elemeként, de optikai térelhatároló elemként is felhasználhatóak. A különböző standard formákból, színekből és méretekből történő választás lehetőséget ad elképzelései megvalósítására.Minden virágtartó edény rendelkezik egy vízlefolyó nyílással, ezáltal biztosított a fagyállósága.",
+            "url": "https://www.leier.hu/hu/termekek/viragtarto-lada",
+            "category_url": "https://www.leier.hu/hu/termekeink/viragtarto-edenyek-kerekpartarto",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40f8e9.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Kerti termékek - Jánossomorja - Teljesítménynyilatkozat_LE JS13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-janossomorja-teljesitmenynyilatkozat-6332c426b09a0.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Kerti termékek - Pécs - Teljesítménynyilatkozat_ LE PE13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-pecs-teljesitmenynyilatkozat-6332c426bb01d.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Kerti termékek - Gönyű - Teljesítménynyilatkozat_ LE GO13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termeket-gonyu-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Virágtartók termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/viragtartok-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/leier_diszburkolatok_alkalmazastechnika.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40b696.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6aca112c8.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa6a0c6c31.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40f8e9.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Kerti termékek - Jánossomorja - Teljesítménynyilatkozat_LE JS13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-janossomorja-teljesitmenynyilatkozat-6332c426b09a0.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Kerti termékek - Pécs - Teljesítménynyilatkozat_ LE PE13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-pecs-teljesitmenynyilatkozat-6332c426bb01d.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Kerti termékek - Gönyű - Teljesítménynyilatkozat_ LE GO13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termeket-gonyu-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Virágtartók termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/viragtartok-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/leier_diszburkolatok_alkalmazastechnika.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40b696.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6aca112c8.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa6a0c6c31.pdf",
+                    "type": "pdf"
+                },
+                "doc_18": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40f8e9.pdf",
+                    "type": "pdf"
+                },
+                "doc_19": {
+                    "title": "rome-632c5e107c9cc",
+                    "url": "https://www.leier.hu/uploads/files/rome-632c5e107c9cc.jpg",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "berlin-632c5dfe018ca",
+                    "url": "https://www.leier.hu/uploads/files/berlin-632c5dfe018ca.jpg",
+                    "type": "document"
+                },
+                "doc_21": {
+                    "title": "london-632c5de7ac28d",
+                    "url": "https://www.leier.hu/uploads/files/london-632c5de7ac28d.jpg",
+                    "type": "document"
+                },
+                "doc_22": {
+                    "title": "paris-632c5dc621474",
+                    "url": "https://www.leier.hu/uploads/files/paris-632c5dc621474.jpg",
+                    "type": "document"
+                },
+                "doc_23": {
+                    "title": "Virágtartó láda",
+                    "url": "https://www.leier.hu/uploads/files/viragtarto_lada1.jpg",
+                    "type": "document"
+                },
+                "doc_24": {
+                    "title": "Virágtartó láda",
+                    "url": "https://www.leier.hu/uploads/files/Viragtarto-lada__3_.jpg",
+                    "type": "document"
+                },
+                "doc_25": {
+                    "title": "Virágtartó láda",
+                    "url": "https://www.leier.hu/uploads/files/leier-kaiserstein-viragtarto-lada.jpg",
+                    "type": "document"
+                },
+                "doc_26": {
+                    "title": "Virágtartó láda",
+                    "url": "https://www.leier.hu/uploads/files/Viragtarto-lada__1_.jpg",
+                    "type": "document"
+                },
+                "doc_27": {
+                    "title": "Virágtartó láda",
+                    "url": "https://www.leier.hu/uploads/files/Viragtarto-lada__2_.jpg",
+                    "type": "document"
+                },
+                "doc_28": {
+                    "title": "Virágtartó láda",
+                    "url": "https://www.leier.hu/uploads/files/Leier-viragtarto-lada__1_.jpg",
+                    "type": "document"
+                },
+                "doc_29": {
+                    "title": "Virágtartó láda",
+                    "url": "https://www.leier.hu/uploads/files/Leier-viragtarto-lada__2_.jpg",
+                    "type": "document"
+                },
+                "doc_30": {
+                    "title": "Virágtartó láda",
+                    "url": "https://www.leier.hu/uploads/files/viragtarto_lada2-635b76b8e715b.png",
+                    "type": "document"
+                },
+                "doc_31": {
+                    "title": "Kerti termékek - Jánossomorja - Teljesítménynyilatkozat_LE JS13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-janossomorja-teljesitmenynyilatkozat-6332c426b09a0.pdf",
+                    "type": "pdf"
+                },
+                "doc_32": {
+                    "title": "Kerti termékek - Pécs - Teljesítménynyilatkozat_ LE PE13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-pecs-teljesitmenynyilatkozat-6332c426bb01d.pdf",
+                    "type": "pdf"
+                },
+                "doc_33": {
+                    "title": "Kerti termékek - Gönyű - Teljesítménynyilatkozat_ LE GO13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termeket-gonyu-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_34": {
+                    "title": "Virágtartók termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/viragtartok-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_35": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/leier_diszburkolatok_alkalmazastechnika.pdf",
+                    "type": "pdf"
+                },
+                "doc_36": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40b696.pdf",
+                    "type": "pdf"
+                },
+                "doc_37": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6aca112c8.pdf",
+                    "type": "pdf"
+                },
+                "doc_38": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa6a0c6c31.pdf",
+                    "type": "pdf"
+                },
+                "doc_39": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_40": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_41": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_42": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_43": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 44,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/0cAGAMDX2zPlIoRc8e3ouZzqXkY=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Frome-632c5e107c9cc.jpg",
+                    "alt": "Virágtartó láda Rome"
+                },
+                {
+                    "url": "https://photos.leier.eu/oXUCn9Vx6QOzD0SsI8MeNchINfk=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fberlin-632c5dfe018ca.jpg",
+                    "alt": "Virágtartó láda Berlin"
+                },
+                {
+                    "url": "https://photos.leier.eu/EHPyzDGpy4GNSO3Q40MwLSwcd_c=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Flondon-632c5de7ac28d.jpg",
+                    "alt": "Virágtartó láda London"
+                },
+                {
+                    "url": "https://photos.leier.eu/BMbA7e6X3rKMc9YUWep8AQmirqA=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fparis-632c5dc621474.jpg",
+                    "alt": "Virágtartó láda Paris"
+                }
+            ],
+            "technical_data": {
+                "Típus": "Méret (cm)",
+                "Virágtartó láda 30 × 30-as": "30 × 30 × 30",
+                "Virágtartó láda 60 × 30-as": "60 × 30 × 30",
+                "Virágtartó láda 40 × 40-es": "40 × 40 × 40",
+                "Virágtartó láda 80 × 40-es": "80 × 40 × 40",
+                "Virágtartó láda 50 × 50-es": "50 × 50 × 50",
+                "Virágtartó láda 100 × 50-es": "100 × 50 × 50",
+                "Virágtartó láda 60 × 60-as": "60 × 60 × 60",
+                "Virágtartó láda 120 × 60-as": "120 × 60 × 60"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "kerekpartarto": {
+            "product_id": "kerekpartarto",
+            "name": "Kerékpártartó",
+            "description": "",
+            "url": "https://www.leier.hu/hu/termekek/kerekpartarto",
+            "category_url": "https://www.leier.hu/hu/termekeink/viragtarto-edenyek-kerekpartarto",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40f8e9.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Kerti termékek - Jánossomorja - Teljesítménynyilatkozat_LE JS13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-janossomorja-teljesitmenynyilatkozat-6332c426b09a0.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Kerti termékek - Pécs - Teljesítménynyilatkozat_ LE PE13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-pecs-teljesitmenynyilatkozat-6332c426bb01d.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Kerti termékek - Gönyű - Teljesítménynyilatkozat_ LE GO13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termeket-gonyu-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Virágtartók termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/viragtartok-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/leier_diszburkolatok_alkalmazastechnika.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40b696.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6aca112c8.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa6a0c6c31.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40f8e9.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Kerti termékek - Jánossomorja - Teljesítménynyilatkozat_LE JS13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-janossomorja-teljesitmenynyilatkozat-6332c426b09a0.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Kerti termékek - Pécs - Teljesítménynyilatkozat_ LE PE13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-pecs-teljesitmenynyilatkozat-6332c426bb01d.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Kerti termékek - Gönyű - Teljesítménynyilatkozat_ LE GO13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termeket-gonyu-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Virágtartók termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/viragtartok-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/leier_diszburkolatok_alkalmazastechnika.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40b696.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6aca112c8.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa6a0c6c31.pdf",
+                    "type": "pdf"
+                },
+                "doc_18": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40f8e9.pdf",
+                    "type": "pdf"
+                },
+                "doc_19": {
+                    "title": "Kerékpártartó",
+                    "url": "https://www.leier.hu/uploads/files/Kerekpartarto.png",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "Kerékpártartó",
+                    "url": "https://www.leier.hu/uploads/files/Kerekpartarto-634ffb867978f.png",
+                    "type": "document"
+                },
+                "doc_21": {
+                    "title": "Kerti termékek - Jánossomorja - Teljesítménynyilatkozat_LE JS13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-janossomorja-teljesitmenynyilatkozat-6332c426b09a0.pdf",
+                    "type": "pdf"
+                },
+                "doc_22": {
+                    "title": "Kerti termékek - Pécs - Teljesítménynyilatkozat_ LE PE13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termekek-pecs-teljesitmenynyilatkozat-6332c426bb01d.pdf",
+                    "type": "pdf"
+                },
+                "doc_23": {
+                    "title": "Kerti termékek - Gönyű - Teljesítménynyilatkozat_ LE GO13198-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/kerti-termeket-gonyu-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_24": {
+                    "title": "Virágtartók termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/viragtartok-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_25": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/leier_diszburkolatok_alkalmazastechnika.pdf",
+                    "type": "pdf"
+                },
+                "doc_26": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5a40b696.pdf",
+                    "type": "pdf"
+                },
+                "doc_27": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6aca112c8.pdf",
+                    "type": "pdf"
+                },
+                "doc_28": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa6a0c6c31.pdf",
+                    "type": "pdf"
+                },
+                "doc_29": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_30": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_31": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_32": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_33": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 34,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/SZ15ZgkIQqBt1AegjPkEE6vjiug=/894x536/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FKerekpartarto.png",
+                    "alt": "Kerékpártartó"
+                },
+                {
+                    "url": "https://photos.leier.eu/Twe209o8IyB91Iuns1WI3awOrek=/282x167/smart/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FKerekpartarto-634ffb867978f.png",
+                    "alt": "Kerékpártartó"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/V8GO-Nx3x440tHVnoWrEmfv6LWg=/435x259/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FViragtarto-edenyek-6332bffa16e5d.jpg",
+                    "alt": "Virágtartó dézsa"
+                }
+            ],
+            "technical_data": {
+                "Típus": "Méret (cm)",
+                "Kerékpártartó": "36 × 74 × 20"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        }
+    },
+    "product_count": 4,
+    "document_count": 156
+}

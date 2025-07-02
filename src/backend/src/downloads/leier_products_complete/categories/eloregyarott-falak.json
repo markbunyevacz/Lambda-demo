@@ -1,0 +1,2027 @@
+{
+    "category_id": "eloregyarott-falak",
+    "name": "Előregyártott falak",
+    "description": "",
+    "url": "https://www.leier.hu/hu/termekeink/eloregyarott-falak",
+    "products": {
+        "leier-keregfal-lkf": {
+            "product_id": "leier-keregfal-lkf",
+            "name": "Leier kéregfal (LKF)",
+            "description": "",
+            "url": "https://www.leier.hu/hu/termekek/leier-keregfal-lkf",
+            "category_url": "https://www.leier.hu/hu/termekeink/eloregyarott-falak",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Tűzvédelmi segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/tuzvedelmi-segedlet-633190d6c313c.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Kéregfalelemek - beépítési útmutató (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/keregfal-beepitesi-utmutato.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Előregyártott vasbeton lineáris szerkezeti elemek - Teljesítménynyilatkozat - LE JS13255-02 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/falelem-janossomorja-6602977ba6d58-679cba5200f01.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Falelem - Győr - Teljesítménynyilatkozat - LE GY14992-05 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Falelem-Gyor-Teljesitmenynyilatkozat-LE_GY14992-05-66977943f22ae-679cba5203638.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Tűzvédelmi segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/tuzvedelmi-segedlet-633190d6c313c.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Kéregfalelemek - beépítési útmutató (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/keregfal-beepitesi-utmutato.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Előregyártott vasbeton lineáris szerkezeti elemek - Teljesítménynyilatkozat - LE JS13255-02 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/falelem-janossomorja-6602977ba6d58-679cba5200f01.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Falelem - Győr - Teljesítménynyilatkozat - LE GY14992-05 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Falelem-Gyor-Teljesitmenynyilatkozat-LE_GY14992-05-66977943f22ae-679cba5203638.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_18": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_19": {
+                    "title": "Leier kéregfal (LKF)",
+                    "url": "https://photos.leier.eu/uBJH2y_4SFSVVjpLllgcd-U_1k8=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-keregfal.jpg",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "Leier kéregfal (LKF)",
+                    "url": "https://photos.leier.eu/3ieFvYomhOLrN7Ux6hNEsX9hVtI=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FReferenzfotos_Wandelemente_2.jpg",
+                    "type": "document"
+                },
+                "doc_21": {
+                    "title": "Leier kéregfal (LKF)",
+                    "url": "https://photos.leier.eu/bx-EE1s2eSQ5thZRr5JwS-tZI84=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FHD_210608_BB_DSC6450.jpg",
+                    "type": "document"
+                },
+                "doc_22": {
+                    "title": "Leier kéregfal (LKF)",
+                    "url": "https://photos.leier.eu/lr4vhc2N3xXbrDbToQX1EB4F2JY=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fhd_210310_NM_9950.jpg",
+                    "type": "document"
+                },
+                "doc_23": {
+                    "title": "Leier kéregfal (LKF)",
+                    "url": "https://photos.leier.eu/qth0pMGbETi3KaKihaf7Tq2CJNE=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fhd_210310_NM_9982.jpg",
+                    "type": "document"
+                },
+                "doc_24": {
+                    "title": "Leier kéregfal (LKF)",
+                    "url": "https://photos.leier.eu/xfSEf6m4cggEtu6_LdLlS5ynuUE=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fhd_210310_NM_9924.jpg",
+                    "type": "document"
+                },
+                "doc_25": {
+                    "title": "Leier kéregfal (LKF)",
+                    "url": "https://photos.leier.eu/Lu9ke6QHlkKxXqTuR--4fy4650w=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fhd_210310_NM_0018.jpg",
+                    "type": "document"
+                },
+                "doc_26": {
+                    "title": "Leier kéregfal (LKF)",
+                    "url": "https://photos.leier.eu/JfXNbSzCJELT9suzGFQS6NvtqHA=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fhd_210310_NM_9939.jpg",
+                    "type": "document"
+                },
+                "doc_27": {
+                    "title": "Leier kéregfal",
+                    "url": "https://photos.leier.eu/mZKntqhdfZ7CQPagMIKVFrCSNAo=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier_keregfal.png",
+                    "type": "document"
+                },
+                "doc_28": {
+                    "title": "Tűzvédelmi segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/tuzvedelmi-segedlet-633190d6c313c.pdf",
+                    "type": "pdf"
+                },
+                "doc_29": {
+                    "title": "Kéregfalelemek - beépítési útmutató (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/keregfal-beepitesi-utmutato.pdf",
+                    "type": "pdf"
+                },
+                "doc_30": {
+                    "title": "Előregyártott vasbeton lineáris szerkezeti elemek - Teljesítménynyilatkozat - LE JS13255-02 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/falelem-janossomorja-6602977ba6d58-679cba5200f01.pdf",
+                    "type": "pdf"
+                },
+                "doc_31": {
+                    "title": "Falelem - Győr - Teljesítménynyilatkozat - LE GY14992-05 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Falelem-Gyor-Teljesitmenynyilatkozat-LE_GY14992-05-66977943f22ae-679cba5203638.pdf",
+                    "type": "pdf"
+                },
+                "doc_32": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_33": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_34": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_35": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_36": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_37": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_38": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_39": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_40": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 41,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/aThDVttXSvd6bwGu_96i1f8grWI=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-logo-64140c24ef68a.jpg",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Y38XusdW7iS04GGPP8AQ16wO4lE=/894x536/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-keregfal.jpg",
+                    "alt": "Leier kéregfal (LKF)"
+                },
+                {
+                    "url": "https://photos.leier.eu/BRBxkk8HzVvN5BbMTlspCku_xLA=/282x167/smart/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FReferenzfotos_Wandelemente_2.jpg",
+                    "alt": "Leier kéregfal (LKF)"
+                },
+                {
+                    "url": "https://photos.leier.eu/VwIGB1QiUeXuToxGOXbOWCgyDys=/282x167/smart/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FHD_210608_BB_DSC6450.jpg",
+                    "alt": "Leier kéregfal (LKF)"
+                }
+            ],
+            "technical_data": {
+                "Favastagság": "Elemmagasság",
+                "18, 20-40 cm, 5 cm-es lépcsőkben, ebből elemvastagság: 5-7 cm": "maximum 3,0 m",
+                "Rw=18 cm vastag": "Rw=54 dB",
+                "Rw=20 cm vastag": "Rw=56 dB",
+                "Rw=25 cm vastag": "Rw=60 dB",
+                "Rw=30 cm vastag": "Rw=63 dB",
+                "Rw=35 cm vastag": "Rw=66 dB",
+                "Rw=40 cm vastag": "Rw=68 dB"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "leier-keszpince": {
+            "product_id": "leier-keszpince",
+            "name": "Leier készpince",
+            "description": "",
+            "url": "https://www.leier.hu/hu/termekek/leier-keszpince",
+            "category_url": "https://www.leier.hu/hu/termekeink/eloregyarott-falak",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Tűzvédelmi segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/tuzvedelmi-segedlet-636a1264c78e2.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Kéregfalelemek - beépítési útmutató (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/keregfal-beepitesi-utmutato-636a1264c8adb.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Tűzvédelmi segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/tuzvedelmi-segedlet-636a1264c78e2.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Kéregfalelemek - beépítési útmutató (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/keregfal-beepitesi-utmutato-636a1264c8adb.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Leier készpince",
+                    "url": "https://photos.leier.eu/K9UPS20ahdqinGP4Qd1bK8fUCb8=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-keszpince%2520%25285%2529.jpg",
+                    "type": "document"
+                },
+                "doc_16": {
+                    "title": "Leier készpince",
+                    "url": "https://photos.leier.eu/doq1uTSGZZHSJBgvNDhCaAKfIrc=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-keszpince%2520%25285%2529-6368a99b95bfc.jpg",
+                    "type": "document"
+                },
+                "doc_17": {
+                    "title": "Leier készpince",
+                    "url": "https://photos.leier.eu/dKDZH7LRUQI7Y8-hy5Suz8EU4ac=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-keszpince%2520%25288%2529.jpg",
+                    "type": "document"
+                },
+                "doc_18": {
+                    "title": "Leier készpince",
+                    "url": "https://photos.leier.eu/Tjaio7j4Th1GMNh9wi9vxFk-LxA=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-keszpince%2520%25281%2529.jpg",
+                    "type": "document"
+                },
+                "doc_19": {
+                    "title": "Leier készpince",
+                    "url": "https://photos.leier.eu/rCXh3ALNziqAfP40OC4uR8npxe4=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-keszpince%2520%25286%2529.jpg",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "Leier készpince",
+                    "url": "https://photos.leier.eu/vL0gU92rwjM5ummqyqZhvUxMJoE=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-keszpince%2520%25287%2529.jpg",
+                    "type": "document"
+                },
+                "doc_21": {
+                    "title": "Tűzvédelmi segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/tuzvedelmi-segedlet-636a1264c78e2.pdf",
+                    "type": "pdf"
+                },
+                "doc_22": {
+                    "title": "Kéregfalelemek - beépítési útmutató (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/keregfal-beepitesi-utmutato-636a1264c8adb.pdf",
+                    "type": "pdf"
+                },
+                "doc_23": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_24": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_25": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_26": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_27": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_28": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_29": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_30": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_31": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 32,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/aThDVttXSvd6bwGu_96i1f8grWI=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-logo-64140c24ef68a.jpg",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/eVqp35jkCbttyrEUY7yUUmVNDp0=/894x536/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-keszpince%2520%25285%2529.jpg",
+                    "alt": "Leier készpince"
+                },
+                {
+                    "url": "https://photos.leier.eu/yqM89YxJjdIgkuinbQKYHeEA9DY=/282x167/smart/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-keszpince%2520%25285%2529-6368a99b95bfc.jpg",
+                    "alt": "Leier készpince"
+                },
+                {
+                    "url": "https://photos.leier.eu/SxfAvAflSjnAAa_YHrPMaGPZfSI=/282x167/smart/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-keszpince%2520%25288%2529.jpg",
+                    "alt": "Leier készpince"
+                }
+            ],
+            "technical_data": {},
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "leier-belsohoszigetelessel-ellatott-fal": {
+            "product_id": "leier-belsohoszigetelessel-ellatott-fal",
+            "name": "Leier kéregfal belső oldali hőszigeteléssel",
+            "description": "",
+            "url": "https://www.leier.hu/hu/termekek/leier-belsohoszigetelessel-ellatott-fal",
+            "category_url": "https://www.leier.hu/hu/termekeink/eloregyarott-falak",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Falelem - Jánossomorja - Teljesítménynyilatkozat - LE JS14992-03 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/falelem-janossomorja-6602977ba6d58.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Előregyártott vasbeton lineáris szerkezeti elemek - Teljesítménynyilatkozat - LE JS13255-02 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/linearis-szerkezeti-elemek-janossomorja-633191a7ee4cd-6602977ba84be.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Kéregfalelemek - beépítési útmutató (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/keregfal-beepitesi-utmutato-6602977ba908a.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Falelem - Győr - Teljesítménynyilatkozat - LE GY14992-05 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Falelem-Gyor-Teljesitmenynyilatkozat-LE_GY14992-05-66977943f22ae.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Falelem - Kiskunlacháza - Teljesítménynyilatkozat - LE KL14992-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Falelem-Kiskunlachaza-_Teljesitmenynyilatkozat-LE_KL14992-04-66977943f3486.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Falelem - Jánossomorja - Teljesítménynyilatkozat - LE JS14992-03 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/falelem-janossomorja-6602977ba6d58.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Előregyártott vasbeton lineáris szerkezeti elemek - Teljesítménynyilatkozat - LE JS13255-02 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/linearis-szerkezeti-elemek-janossomorja-633191a7ee4cd-6602977ba84be.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Kéregfalelemek - beépítési útmutató (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/keregfal-beepitesi-utmutato-6602977ba908a.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Falelem - Győr - Teljesítménynyilatkozat - LE GY14992-05 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Falelem-Gyor-Teljesitmenynyilatkozat-LE_GY14992-05-66977943f22ae.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Falelem - Kiskunlacháza - Teljesítménynyilatkozat - LE KL14992-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Falelem-Kiskunlachaza-_Teljesitmenynyilatkozat-LE_KL14992-04-66977943f3486.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_18": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_19": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_20": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_21": {
+                    "title": "Leier kéregfal belső oldali hőszigeteléssel",
+                    "url": "https://photos.leier.eu/cQXEhh9BORnyB1CqI9u8Owlbln8=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-fodem__4_.jpg",
+                    "type": "document"
+                },
+                "doc_22": {
+                    "title": "Leier kéregfal belső oldali hőszigeteléssel",
+                    "url": "https://photos.leier.eu/YJzCegvZ_GKysy3g2bWu8BdZWxE=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-szakszend-projekt__3_.jpg",
+                    "type": "document"
+                },
+                "doc_23": {
+                    "title": "Leier kéregfal belső oldali hőszigeteléssel",
+                    "url": "https://photos.leier.eu/n6TKIMCj98TKvI9R7073oiMyg_Q=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-szakszend-projekt__4_.jpg",
+                    "type": "document"
+                },
+                "doc_24": {
+                    "title": "Leier kéregfal belső oldali hőszigeteléssel",
+                    "url": "https://photos.leier.eu/k6vKCoPVNeP-Z-WmcoWH7WqaF9o=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-szakszend-projekt__6_.jpg",
+                    "type": "document"
+                },
+                "doc_25": {
+                    "title": "Leier kéregfal belső oldali hőszigeteléssel",
+                    "url": "https://photos.leier.eu/v0gMc0gzG7fg09raTyqiM3lNgT4=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-szakszend-projekt__5_.jpg",
+                    "type": "document"
+                },
+                "doc_26": {
+                    "title": "Leier kéregfal belső oldali hőszigeteléssel",
+                    "url": "https://photos.leier.eu/DgfhkSt8CYWS_P8aFl88pXMyzVk=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-szakszend-projekt__1_.jpg",
+                    "type": "document"
+                },
+                "doc_27": {
+                    "title": "Leier kéregfal belső oldali hőszigeteléssel",
+                    "url": "https://photos.leier.eu/3zt7Q-gfw-eK4ei-ZYsXLdDCfCQ=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-fodem__1_.jpg",
+                    "type": "document"
+                },
+                "doc_28": {
+                    "title": "Leier kéregfal belső oldali hőszigeteléssel",
+                    "url": "https://photos.leier.eu/G-guOhzBPMIO06J21eyP4E0DU9g=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-fodem__2_.jpg",
+                    "type": "document"
+                },
+                "doc_29": {
+                    "title": "Leier kéregfal belső oldali hőszigeteléssel",
+                    "url": "https://photos.leier.eu/PnOHgX1loW5_iuuAt1ieIYUJUxc=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-fodem__3_.jpg",
+                    "type": "document"
+                },
+                "doc_30": {
+                    "title": "Leier kéregfal belső oldali hőszigeteléssel",
+                    "url": "https://photos.leier.eu/wZSUg7p1WkfPWMlJOX7XWAZUMCI=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-fodem__4_-66029bba9cf98.jpg",
+                    "type": "document"
+                },
+                "doc_31": {
+                    "title": "Leier kéregfal belső oldali hőszigeteléssel",
+                    "url": "https://photos.leier.eu/lUE8Eb_t1y4RCDaH-6EC_QnyDLU=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-fodem__5_.jpg",
+                    "type": "document"
+                },
+                "doc_32": {
+                    "title": "Leier kéregfal belső oldali hőszigeteléssel",
+                    "url": "https://photos.leier.eu/Dsro9y1PFdj0Lw1byBI5uPDzbLc=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-fodem__6_.jpg",
+                    "type": "document"
+                },
+                "doc_33": {
+                    "title": "Leier kéregfal belső oldali hőszigeteléssel",
+                    "url": "https://photos.leier.eu/wX5LCh6J2cIFtrjkXEznTrT9zKo=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FFotoJet-66029c0409923.jpg",
+                    "type": "document"
+                },
+                "doc_34": {
+                    "title": "Falelem - Jánossomorja - Teljesítménynyilatkozat - LE JS14992-03 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/falelem-janossomorja-6602977ba6d58.pdf",
+                    "type": "pdf"
+                },
+                "doc_35": {
+                    "title": "Előregyártott vasbeton lineáris szerkezeti elemek - Teljesítménynyilatkozat - LE JS13255-02 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/linearis-szerkezeti-elemek-janossomorja-633191a7ee4cd-6602977ba84be.pdf",
+                    "type": "pdf"
+                },
+                "doc_36": {
+                    "title": "Kéregfalelemek - beépítési útmutató (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/keregfal-beepitesi-utmutato-6602977ba908a.pdf",
+                    "type": "pdf"
+                },
+                "doc_37": {
+                    "title": "Falelem - Győr - Teljesítménynyilatkozat - LE GY14992-05 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Falelem-Gyor-Teljesitmenynyilatkozat-LE_GY14992-05-66977943f22ae.pdf",
+                    "type": "pdf"
+                },
+                "doc_38": {
+                    "title": "Falelem - Kiskunlacháza - Teljesítménynyilatkozat - LE KL14992-04 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Falelem-Kiskunlachaza-_Teljesitmenynyilatkozat-LE_KL14992-04-66977943f3486.pdf",
+                    "type": "pdf"
+                },
+                "doc_39": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_40": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_41": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_42": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_43": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_44": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_45": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_46": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_47": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 48,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/aThDVttXSvd6bwGu_96i1f8grWI=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-logo-64140c24ef68a.jpg",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/lGBIEK07Lonp9iKQlXcxXLIDltg=/894x536/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-fodem__4_.jpg",
+                    "alt": "Leier kéregfal belső oldali hőszigeteléssel"
+                },
+                {
+                    "url": "https://photos.leier.eu/U5esGvOkP4IzOSpeUWbo5CgQV6Y=/282x167/smart/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-szakszend-projekt__3_.jpg",
+                    "alt": "Leier kéregfal belső oldali hőszigeteléssel"
+                },
+                {
+                    "url": "https://photos.leier.eu/yvLYVU_Px8JnPpz8KzdkTkptM5Q=/282x167/smart/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-szakszend-projekt__4_.jpg",
+                    "alt": "Leier kéregfal belső oldali hőszigeteléssel"
+                }
+            ],
+            "technical_data": {
+                "Favastagság": "Elemmagasság",
+                "18, 20-40 cm, 5 cm-es lépcsőkben, ebből elemvastagság: 5-7 cm": "maximum 3,0 m"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "leier-klimafal": {
+            "product_id": "leier-klimafal",
+            "name": "Leier klímafal",
+            "description": "Gyorsaság, gazdaságosság, biztos működés és egyre gyakrabban a környezettudatosság – ezek az előnyök egyre több építkező számára fontos tényezők. Az előregyártás új innovációja a korszerű, a gépészet beszerelését könnyítő klímafal is ezekre az igényekre ad választ.",
+            "url": "https://www.leier.hu/hu/termekek/leier-klimafal",
+            "category_url": "https://www.leier.hu/hu/termekeink/eloregyarott-falak",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Tűzvédelmi segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/tuzvedelmi-segedlet-63315886ecbbf.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Falelem teljesítménynyilatkozat LE GY14992-03 Győr (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Falelem-teljesitmenynyilatkozat-nr-le-gy14992-03-gyor.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Tűzvédelmi segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/tuzvedelmi-segedlet-63315886ecbbf.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Falelem teljesítménynyilatkozat LE GY14992-03 Győr (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Falelem-teljesitmenynyilatkozat-nr-le-gy14992-03-gyor.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Leier klímafal",
+                    "url": "https://photos.leier.eu/NZTvhEuFNJ5yiTtKuyKNvidccBY=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-klimafal.jpg",
+                    "type": "document"
+                },
+                "doc_16": {
+                    "title": "Leier klímafal",
+                    "url": "https://photos.leier.eu/Nrkd-Cir70ooz25JlZ91gHyvr6E=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FKlimafal1.png",
+                    "type": "document"
+                },
+                "doc_17": {
+                    "title": "Leier klímafal",
+                    "url": "https://photos.leier.eu/rYR0xKRe_sNgpxbIZlAGtM3_REg=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FKlimafal1-6347ca805cb10.png",
+                    "type": "document"
+                },
+                "doc_18": {
+                    "title": "Leier klímafal",
+                    "url": "https://photos.leier.eu/EWGONfT02ifMXR_8CU5430xb7Os=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-klimafal1.jpg",
+                    "type": "document"
+                },
+                "doc_19": {
+                    "title": "Tűzvédelmi segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/tuzvedelmi-segedlet-63315886ecbbf.pdf",
+                    "type": "pdf"
+                },
+                "doc_20": {
+                    "title": "Falelem teljesítménynyilatkozat LE GY14992-03 Győr (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Falelem-teljesitmenynyilatkozat-nr-le-gy14992-03-gyor.pdf",
+                    "type": "pdf"
+                },
+                "doc_21": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_22": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_23": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_24": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_25": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_26": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_27": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_28": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_29": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 30,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/aThDVttXSvd6bwGu_96i1f8grWI=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-logo-64140c24ef68a.jpg",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/o2Q09VJVwM8-GY7q_XEbv0fAojk=/894x536/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-klimafal.jpg",
+                    "alt": "Leier klímafal"
+                },
+                {
+                    "url": "https://photos.leier.eu/Prh5_1kqrGANr_lJw_RRrYZhR_Q=/894x536/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FKlimafal1.png",
+                    "alt": "Leier klímafal"
+                },
+                {
+                    "url": "https://photos.leier.eu/UgDANAi8xGN42ifBG0eFFYRHdZk=/282x167/smart/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-klimafal.jpg",
+                    "alt": "Leier klímafal"
+                }
+            ],
+            "technical_data": {},
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "leier-tomor-fal-ltf": {
+            "product_id": "leier-tomor-fal-ltf",
+            "name": "Leier tömör fal (LTF)",
+            "description": "",
+            "url": "https://www.leier.hu/hu/termekek/leier-tomor-fal-ltf",
+            "category_url": "https://www.leier.hu/hu/termekeink/eloregyarott-falak",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Tűzvédelmi segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/tuzvedelmi-segedlet-633195c7bc153.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Falelem teljesítménynyilatkozat LE GY14992-03 Győr (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Falelem-teljesitmenynyilatkozat-nr-le-gy14992-03-gyor-63cfcd16b3263.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Falelem teljesítménynyilatkozat LE JS14992-03 Jánossomorja (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Falelem-teljesitmenynyilatkozat-nr-le-js14992-03-janossomorja.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Falelem teljesítménynyilatkozat LE KL14992-03 Kiskunlacháza (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Falelem-teljesitmenynyilatkozat-nr-le-kl-14992-03-kiskunlachaza.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Tűzvédelmi segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/tuzvedelmi-segedlet-633195c7bc153.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Falelem teljesítménynyilatkozat LE GY14992-03 Győr (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Falelem-teljesitmenynyilatkozat-nr-le-gy14992-03-gyor-63cfcd16b3263.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Falelem teljesítménynyilatkozat LE JS14992-03 Jánossomorja (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Falelem-teljesitmenynyilatkozat-nr-le-js14992-03-janossomorja.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Falelem teljesítménynyilatkozat LE KL14992-03 Kiskunlacháza (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Falelem-teljesitmenynyilatkozat-nr-le-kl-14992-03-kiskunlachaza.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_18": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_19": {
+                    "title": "Leier tömör fal",
+                    "url": "https://photos.leier.eu/DB5pNi1jLtE7-cNaKus362U6TN0=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-tomor-fal%2520%25282%2529.jpg",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "Leier tömör fal",
+                    "url": "https://photos.leier.eu/_1zGW_idaLzrUTBk2P_oAX38xt8=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-tomor-fal.jpg",
+                    "type": "document"
+                },
+                "doc_21": {
+                    "title": "Leier tömör fal",
+                    "url": "https://photos.leier.eu/Hpu5a1ofvBiVWTfgGJpu0mZxWBE=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-tomor-fal1.jpg",
+                    "type": "document"
+                },
+                "doc_22": {
+                    "title": "Leier tömör fal",
+                    "url": "https://photos.leier.eu/I4v6uMeTHxsDjNcW07RdANzs9gM=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-tomor-fal2.jpg",
+                    "type": "document"
+                },
+                "doc_23": {
+                    "title": "Leier tömör fal",
+                    "url": "https://photos.leier.eu/gtV2udyZO4IbDy8-fdF5uRuTBNY=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-tomor-fal-63401234f28db.jpg",
+                    "type": "document"
+                },
+                "doc_24": {
+                    "title": "Leier tömör fal",
+                    "url": "https://photos.leier.eu/bahULxWaEsazjStHTBb3jDucH8c=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-tomor-fal.jpg",
+                    "type": "document"
+                },
+                "doc_25": {
+                    "title": "Tűzvédelmi segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/tuzvedelmi-segedlet-633195c7bc153.pdf",
+                    "type": "pdf"
+                },
+                "doc_26": {
+                    "title": "Falelem teljesítménynyilatkozat LE GY14992-03 Győr (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Falelem-teljesitmenynyilatkozat-nr-le-gy14992-03-gyor-63cfcd16b3263.pdf",
+                    "type": "pdf"
+                },
+                "doc_27": {
+                    "title": "Falelem teljesítménynyilatkozat LE JS14992-03 Jánossomorja (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Falelem-teljesitmenynyilatkozat-nr-le-js14992-03-janossomorja.pdf",
+                    "type": "pdf"
+                },
+                "doc_28": {
+                    "title": "Falelem teljesítménynyilatkozat LE KL14992-03 Kiskunlacháza (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Falelem-teljesitmenynyilatkozat-nr-le-kl-14992-03-kiskunlachaza.pdf",
+                    "type": "pdf"
+                },
+                "doc_29": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_30": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_31": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_32": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_33": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_34": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_35": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_36": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_37": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 38,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/aThDVttXSvd6bwGu_96i1f8grWI=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-logo-64140c24ef68a.jpg",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/NQDF0s_Wu40XstH_HJHbb1cRrsY=/894x536/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-tomor-fal%2520%25282%2529.jpg",
+                    "alt": "Leier tömör fal"
+                },
+                {
+                    "url": "https://photos.leier.eu/xu8vrxrHWLYaMHn_nxPOgIXXiZE=/894x536/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-tomor-fal.jpg",
+                    "alt": "Leier tömör fal"
+                },
+                {
+                    "url": "https://photos.leier.eu/6eSVVdk2iA8lCDTbX0IKIG_drMc=/282x167/smart/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-tomor-fal%2520%25282%2529.jpg",
+                    "alt": "Leier tömör fal"
+                }
+            ],
+            "technical_data": {},
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "leier-tuzfal": {
+            "product_id": "leier-tuzfal",
+            "name": "Leier tűzfal",
+            "description": "Mi is az a Leier tűzfal?Az előregyártott technológia elterjedt és praktikus is, főleg tűzfalak esetében. Szerkezetileg a termék két külső beton kéregből áll, amelyek tartalmazzák már a statikus által előírt vasmennyiséget is. Az elemek elhelyezése után már csak a két kéreg közötti részt kell a helyszínen kibetonozni, ezáltal gyors és biztonságos kivitelezést lehet vele biztosítani. Mindemellett felhelyezhető rá a külső szigetelés is, így a falakat már a szigeteléssel együtt is ki lehet szállítani az építkezésre. Mindamellett, hogy a kivitelezés biztonságos és gyors, még az elektromos dobozokat is bele tudjuk építeni ezekbe a falakba, így a villanyszerelés is megspórolható. A kéregfalak minőségének köszönhetően ez a termék vakolást sem igényel, csak glettelni kell őket.",
+            "url": "https://www.leier.hu/hu/termekek/leier-tuzfal",
+            "category_url": "https://www.leier.hu/hu/termekeink/eloregyarott-falak",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Falelem - Győr - Teljesítménynyilatkozat_ LE GY14992-03 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/falelem-Gyor.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Falelem - Jánossomorja - Teljesítménynyilatkozat_ LE JS14992-03 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/falelem-janossomorja-6348139378caf.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Falelem - Kiskunlacháza - Teljesítménynyilatkozat_ LE KL14992-03 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/falelem-Kiskunlachaza.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Kéregfalelemek - beépítési útmutató (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Keregfal-beepitesi-utmutato.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Előregyártott vasbeton lineáris szerkezeti elemek - Teljesítménynyilatkozat_ LE JS13225-02 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/linearis-szerkezeti-elemek-Janossomorja.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Tűzvédelmi segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Tuzvedelmi-Segedlet-reszletes.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Falelem - Győr - Teljesítménynyilatkozat_ LE GY14992-03 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/falelem-Gyor.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Falelem - Jánossomorja - Teljesítménynyilatkozat_ LE JS14992-03 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/falelem-janossomorja-6348139378caf.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Falelem - Kiskunlacháza - Teljesítménynyilatkozat_ LE KL14992-03 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/falelem-Kiskunlachaza.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Kéregfalelemek - beépítési útmutató (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Keregfal-beepitesi-utmutato.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Előregyártott vasbeton lineáris szerkezeti elemek - Teljesítménynyilatkozat_ LE JS13225-02 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/linearis-szerkezeti-elemek-Janossomorja.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "Tűzvédelmi segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Tuzvedelmi-Segedlet-reszletes.pdf",
+                    "type": "pdf"
+                },
+                "doc_18": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_19": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_20": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_21": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_22": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_23": {
+                    "title": "Leier tűzfal",
+                    "url": "https://photos.leier.eu/HbJ28A-0eL60s4vqs58BJQUrqKI=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-tuzfal%2520%25285%2529.jpg",
+                    "type": "document"
+                },
+                "doc_24": {
+                    "title": "Leier tűzfal",
+                    "url": "https://photos.leier.eu/D3nBpNgCZRCajOfCaLU2fvqzJI0=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-tuzfal%2520%25281%2529.jpg",
+                    "type": "document"
+                },
+                "doc_25": {
+                    "title": "Leier tűzfal",
+                    "url": "https://photos.leier.eu/B0RSaa87GgSdjH4TciRI27KJmwE=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-tuzfal%2520%25282%2529.jpg",
+                    "type": "document"
+                },
+                "doc_26": {
+                    "title": "Leier tűzfal",
+                    "url": "https://photos.leier.eu/VkpGoK9OTR20vAVxdnj27ajpAMU=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-tuzfal%2520%25285%2529-634814651a581.jpg",
+                    "type": "document"
+                },
+                "doc_27": {
+                    "title": "Leier tűzfal",
+                    "url": "https://photos.leier.eu/8FngJOdyve4_M7hNDRWfXCyEKxU=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-tuzfal%2520%25284%2529.jpg",
+                    "type": "document"
+                },
+                "doc_28": {
+                    "title": "Leier tűzfal",
+                    "url": "https://photos.leier.eu/W6R9sH_-N_hJoBlACGI4Kw9-8SE=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-tuzfal%2520%25288%2529.jpg",
+                    "type": "document"
+                },
+                "doc_29": {
+                    "title": "Leier tűzfal",
+                    "url": "https://photos.leier.eu/b8c8CuEI8gpN6HEIrGdQWUIrIvo=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-tuzfal%2520%25281%2529.jpg",
+                    "type": "document"
+                },
+                "doc_30": {
+                    "title": "Leier tűzfal",
+                    "url": "https://photos.leier.eu/-6xS_NCM4pbzrPwPNVGn4JwaYeE=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-tuzfal%2520%25282%2529.jpg",
+                    "type": "document"
+                },
+                "doc_31": {
+                    "title": "Leier tűzfal",
+                    "url": "https://photos.leier.eu/JI7AwWT4WWR3g3WgDIunUFFSswM=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-tuzfal%2520%25283%2529.jpg",
+                    "type": "document"
+                },
+                "doc_32": {
+                    "title": "Leier tűzfal",
+                    "url": "https://photos.leier.eu/HfbptdCjSoAf8nk6dBrGFJNFWTE=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-tuzfal%2520%25284%2529.jpg",
+                    "type": "document"
+                },
+                "doc_33": {
+                    "title": "Falelem - Győr - Teljesítménynyilatkozat_ LE GY14992-03 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/falelem-Gyor.pdf",
+                    "type": "pdf"
+                },
+                "doc_34": {
+                    "title": "Falelem - Jánossomorja - Teljesítménynyilatkozat_ LE JS14992-03 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/falelem-janossomorja-6348139378caf.pdf",
+                    "type": "pdf"
+                },
+                "doc_35": {
+                    "title": "Falelem - Kiskunlacháza - Teljesítménynyilatkozat_ LE KL14992-03 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/falelem-Kiskunlachaza.pdf",
+                    "type": "pdf"
+                },
+                "doc_36": {
+                    "title": "Kéregfalelemek - beépítési útmutató (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Keregfal-beepitesi-utmutato.pdf",
+                    "type": "pdf"
+                },
+                "doc_37": {
+                    "title": "Előregyártott vasbeton lineáris szerkezeti elemek - Teljesítménynyilatkozat_ LE JS13225-02 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/linearis-szerkezeti-elemek-Janossomorja.pdf",
+                    "type": "pdf"
+                },
+                "doc_38": {
+                    "title": "Tűzvédelmi segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Tuzvedelmi-Segedlet-reszletes.pdf",
+                    "type": "pdf"
+                },
+                "doc_39": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_40": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_41": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_42": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_43": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_44": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_45": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_46": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_47": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 48,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/aThDVttXSvd6bwGu_96i1f8grWI=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-logo-64140c24ef68a.jpg",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Ys2g2ULHbJXFmA96TYhEsBm491k=/894x536/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-tuzfal%2520%25285%2529.jpg",
+                    "alt": "Leier tűzfal"
+                },
+                {
+                    "url": "https://photos.leier.eu/2cVPdNVSM2mjQFgrHo0-1TtE7jE=/282x167/smart/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-tuzfal%2520%25281%2529.jpg",
+                    "alt": "Leier tűzfal"
+                },
+                {
+                    "url": "https://photos.leier.eu/GYJaFUGCycEPtyp6JdhxdK76Luw=/282x167/smart/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-tuzfal%2520%25282%2529.jpg",
+                    "alt": "Leier tűzfal"
+                }
+            ],
+            "technical_data": {},
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "leier-tamfalelem-lte-2": {
+            "product_id": "leier-tamfalelem-lte-2",
+            "name": "Leier támfalelem (LTE)",
+            "description": "",
+            "url": "https://www.leier.hu/hu/termekek/leier-tamfalelem-lte-2",
+            "category_url": "https://www.leier.hu/hu/termekeink/eloregyarott-falak",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "LTE támfalelem - Jánossomorja - Teljesítménynyilatkozat  LE JS15258-02 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/lte-tamfalelem-janossomorja-teljesitmenynyilatkozat-le-js15258-02.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Tűzvédelmi segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/tuzvedelmi-segedlet-632878e51b590.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "LTE támfalelemek - Győr - Teljesítménynyilatkozat LE GY15258-02 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/lte-tamfalelemek-gyor-teljesitmenynyilatkozat-legy15258-02.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Falelem - Jánossomorja - Teljesítménynyilatkozat  LE JS14992-03 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/falelem-janossomorja-teljesitmenynyilatkozat-lejs14992-03.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Előregyártott vasbeton lineáris szerkezeti elemek - Teljesítménynyilatkozat  LE JS13225-02 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/eloregyartott-vasbeton-linearis-szerkezeti-elemek-teljesitmenynyilatkozat-lejs13225-02-632878e5299c9.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "LTE támfalelem - Jánossomorja - Teljesítménynyilatkozat  LE JS15258-02 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/lte-tamfalelem-janossomorja-teljesitmenynyilatkozat-le-js15258-02.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Tűzvédelmi segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/tuzvedelmi-segedlet-632878e51b590.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "LTE támfalelemek - Győr - Teljesítménynyilatkozat LE GY15258-02 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/lte-tamfalelemek-gyor-teljesitmenynyilatkozat-legy15258-02.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Falelem - Jánossomorja - Teljesítménynyilatkozat  LE JS14992-03 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/falelem-janossomorja-teljesitmenynyilatkozat-lejs14992-03.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Előregyártott vasbeton lineáris szerkezeti elemek - Teljesítménynyilatkozat  LE JS13225-02 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/eloregyartott-vasbeton-linearis-szerkezeti-elemek-teljesitmenynyilatkozat-lejs13225-02-632878e5299c9.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_18": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_19": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_20": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_21": {
+                    "title": "Leier támfalelem (LTE)",
+                    "url": "https://photos.leier.eu/qx7EhEHN2Zmp2Bi49jP1NEpmtO0=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-tamfalelemek%2520%25281%2529.jpg",
+                    "type": "document"
+                },
+                "doc_22": {
+                    "title": "Leier támfalelem (LTE)",
+                    "url": "https://photos.leier.eu/5KEJWL6hON0oZ1UIA1T3marUhnk=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-tamfalelemek%2520%25281%2529-6340188ac11ed.jpg",
+                    "type": "document"
+                },
+                "doc_23": {
+                    "title": "Leier támfalelem (LTE)",
+                    "url": "https://photos.leier.eu/IOA1Ro5vtqxErG3gl3vTMFsLIPU=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-tamfalelemek%2520%25283%2529.jpg",
+                    "type": "document"
+                },
+                "doc_24": {
+                    "title": "Leier támfalelem (LTE)",
+                    "url": "https://photos.leier.eu/hkUuGANjPZqxEZW4Ox1UWunT1Qc=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-tamfalelemek%2520%25282%2529.jpg",
+                    "type": "document"
+                },
+                "doc_25": {
+                    "title": "Leier támfalelem (LTE)",
+                    "url": "https://photos.leier.eu/gf19zAd81RGTR10WLwMCIZ9Zh44=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-tamfalelemek%2520%25284%2529.jpg",
+                    "type": "document"
+                },
+                "doc_26": {
+                    "title": "Leier támfalelem (LTE)",
+                    "url": "https://photos.leier.eu/q_y97d7hMCAp79WhuWVSWXRroi0=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-tamfalelem1.jpg",
+                    "type": "document"
+                },
+                "doc_27": {
+                    "title": "Leier támfalelem (LTE)",
+                    "url": "https://photos.leier.eu/ASdFqLBshbdntbXkY2gfRYeiMjI=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-tamfalelem__2_.jpg",
+                    "type": "document"
+                },
+                "doc_28": {
+                    "title": "Leier támfalelem (LTE)",
+                    "url": "https://photos.leier.eu/TxjSw_qlwoclz15r4IamOTrtA48=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-tamfalelem.png",
+                    "type": "document"
+                },
+                "doc_29": {
+                    "title": "LTE támfalelem - Jánossomorja - Teljesítménynyilatkozat  LE JS15258-02 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/lte-tamfalelem-janossomorja-teljesitmenynyilatkozat-le-js15258-02.pdf",
+                    "type": "pdf"
+                },
+                "doc_30": {
+                    "title": "Tűzvédelmi segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/tuzvedelmi-segedlet-632878e51b590.pdf",
+                    "type": "pdf"
+                },
+                "doc_31": {
+                    "title": "LTE támfalelemek - Győr - Teljesítménynyilatkozat LE GY15258-02 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/lte-tamfalelemek-gyor-teljesitmenynyilatkozat-legy15258-02.pdf",
+                    "type": "pdf"
+                },
+                "doc_32": {
+                    "title": "Falelem - Jánossomorja - Teljesítménynyilatkozat  LE JS14992-03 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/falelem-janossomorja-teljesitmenynyilatkozat-lejs14992-03.pdf",
+                    "type": "pdf"
+                },
+                "doc_33": {
+                    "title": "Előregyártott vasbeton lineáris szerkezeti elemek - Teljesítménynyilatkozat  LE JS13225-02 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/eloregyartott-vasbeton-linearis-szerkezeti-elemek-teljesitmenynyilatkozat-lejs13225-02-632878e5299c9.pdf",
+                    "type": "pdf"
+                },
+                "doc_34": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_35": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_36": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_37": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_38": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_39": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_40": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_41": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_42": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 43,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/aThDVttXSvd6bwGu_96i1f8grWI=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-logo-64140c24ef68a.jpg",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/5NjQqpsCE1tIJ1r7mqc8JfhseV4=/894x536/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-tamfalelemek%2520%25281%2529.jpg",
+                    "alt": "Leier támfalelem (LTE)"
+                },
+                {
+                    "url": "https://photos.leier.eu/bxK-N12Kxb3WVRCgJAXNrnIr_mw=/282x167/smart/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-tamfalelemek%2520%25281%2529-6340188ac11ed.jpg",
+                    "alt": "Leier támfalelem (LTE)"
+                },
+                {
+                    "url": "https://photos.leier.eu/DyZYwFTYLKchmkDKywdUupQm2Jw=/282x167/smart/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-tamfalelemek%2520%25283%2529.jpg",
+                    "alt": "Leier támfalelem (LTE)"
+                }
+            ],
+            "technical_data": {
+                "Típus": "Magasság(cm)",
+                "LTE 300-100": "300",
+                "LTE 280-100": "280",
+                "LTE 250-100": "250",
+                "LTE 230-100": "230",
+                "LTE 200-100": "200",
+                "LTE 180-100": "180",
+                "LTE 150-100": "150",
+                "LTE 120-100": "120",
+                "LTE 100-100": "100",
+                "LTE 80-100": "80",
+                "LTE 60-100": "60",
+                "LTE T 400-100": "400",
+                "LTE T 300-100": "300"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "leier-liftakna": {
+            "product_id": "leier-liftakna",
+            "name": "Leier liftakna",
+            "description": "ALeier liftaknaegyik legnagyobb előnye, hogyméretpontos, így elkerülhető a hagyományos, monolitból készült liftek nehéz beépítése, a fal végigcsiszolása és zsaluzása. Az előregyártással készült falak gyorsan építhetők, a feladat itt nem más, mint az elemek egymásra helyezése.A kivitelezéshez maximum 4-5 főre van szükség, egy elem beemelése pedig 20-25 percet vesz igénybe – így lehetséges az, hogy egy nap, sőtórák alatt is helyére kerülhet a liftakna.Toronydaruval még arra is van lehetőség, hogy a liftakna elemek az építkezés végén kerüljenek a helyükre.A minőségi, méretpontos elemektársasházakba és ipari létesítményekbe is megfelelők, továbbá a munkafolyamatok egyszerűsödése, a kivitelezési idő rövidülése miattaz előregyártás költséghatékony megoldás.A liftakna falvastagsága 12 vagy 15 cm lehet, és zárt (minden oldalról falazott), illetve nyitott kivitelben (U alakban) is gyártható. A Leier liftaknák 4-6 személyesek, méretük igényre szabható: szélességük 140-240 cm, hosszúságuk 180-310 cm, magasságuk pedig 150-300 cm-ig terjedhet.",
+            "url": "https://www.leier.hu/hu/termekek/leier-liftakna",
+            "category_url": "https://www.leier.hu/hu/termekeink/eloregyarott-falak",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Liftakna elem - Terméktájékoztató (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/leier-liftakna-termektajekoztato.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Tűzvédelmi segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/tuzvedelmi-segedlet-6331968f91861.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Liftakna - Teljesítménynyilatkozat (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/falelem-janossomorja-teljesitmenynyilatkozat-le-js14992-03-6526a5acb33ae.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Liftakna elem - Terméktájékoztató (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/leier-liftakna-termektajekoztato.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Tűzvédelmi segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/tuzvedelmi-segedlet-6331968f91861.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Liftakna - Teljesítménynyilatkozat (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/falelem-janossomorja-teljesitmenynyilatkozat-le-js14992-03-6526a5acb33ae.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46e7fc.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "Leier liftakna",
+                    "url": "https://photos.leier.eu/Pky9ROs6QjjTcPy5vAp6MkV8xA4=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-liftakna__1_-63a16fc222885.jpg",
+                    "type": "document"
+                },
+                "doc_18": {
+                    "title": "Leier liftakna",
+                    "url": "https://photos.leier.eu/3TuDx0nBX-cX0mIb5hNeJrIIpTo=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-liftakna-63467b3c44cd9.png",
+                    "type": "document"
+                },
+                "doc_19": {
+                    "title": "Leier liftakna",
+                    "url": "https://photos.leier.eu/AaSStxWzqIXV3gZskZI9OwNOD6E=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-liftakna-6331964444c71.JPG",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "Leier liftakna",
+                    "url": "https://photos.leier.eu/Sz3t--2YWpp0-wNq9GQ3EVCigtk=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-liftakna2.jpg",
+                    "type": "document"
+                },
+                "doc_21": {
+                    "title": "Leier liftakna",
+                    "url": "https://photos.leier.eu/5o1euxFB-rO1gN35EXWpav8THnc=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-liftakna__2_.jpg",
+                    "type": "document"
+                },
+                "doc_22": {
+                    "title": "Leier liftakna",
+                    "url": "https://photos.leier.eu/OnYyVpfhPI4jglAGziarPqJ8gT4=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-liftakna__1_.jpg",
+                    "type": "document"
+                },
+                "doc_23": {
+                    "title": "Leier liftakna",
+                    "url": "https://photos.leier.eu/eoh7hbCIyZyJ9MDqPVLnUN51VtQ=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-liftakna__3_.jpg",
+                    "type": "document"
+                },
+                "doc_24": {
+                    "title": "Leier liftakna",
+                    "url": "https://photos.leier.eu/XbKjMSG4GKsDK9fyyEEynbJBU7U=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-liftakna__4_.jpg",
+                    "type": "document"
+                },
+                "doc_25": {
+                    "title": "Leier liftakna",
+                    "url": "https://photos.leier.eu/ulrkw_yO-jx34nSPMnOIf7n0fo0=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-liftakna__5_.jpg",
+                    "type": "document"
+                },
+                "doc_26": {
+                    "title": "Leier liftakna",
+                    "url": "https://photos.leier.eu/jFVbqGEO5x0nAYHxVvd9p--LQDQ=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-liftakna__6_.jpg",
+                    "type": "document"
+                },
+                "doc_27": {
+                    "title": "Liftakna elem - Terméktájékoztató (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/leier-liftakna-termektajekoztato.pdf",
+                    "type": "pdf"
+                },
+                "doc_28": {
+                    "title": "Tűzvédelmi segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/tuzvedelmi-segedlet-6331968f91861.pdf",
+                    "type": "pdf"
+                },
+                "doc_29": {
+                    "title": "Liftakna - Teljesítménynyilatkozat (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/falelem-janossomorja-teljesitmenynyilatkozat-le-js14992-03-6526a5acb33ae.pdf",
+                    "type": "pdf"
+                },
+                "doc_30": {
+                    "title": "Előregyártott betonelemek - Alkalmazástechnika (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-eloregyartott-betonelemek-alkalmazattechnika-64991c9d377e3.pdf",
+                    "type": "pdf"
+                },
+                "doc_31": {
+                    "title": "Leier előregyártott betonelemek prospektus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Eloregyartott_betonelemek_16-oldal-2023-64d9bb0689eaa.pdf",
+                    "type": "pdf"
+                },
+                "doc_32": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c4b46a246.pdf",
+                    "type": "pdf"
+                },
+                "doc_33": {
+                    "title": "Magasépítő árlista viszonteladók részére 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-magasepites-2025-685aa5c126574.pdf",
+                    "type": "pdf"
+                },
+                "doc_34": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_35": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_36": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_37": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_38": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 39,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/aThDVttXSvd6bwGu_96i1f8grWI=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-logo-64140c24ef68a.jpg",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/q71FpAvbkkD6T78RTYkXx2DJPZ4=/894x536/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-liftakna__1_-63a16fc222885.jpg",
+                    "alt": "Leier liftakna"
+                },
+                {
+                    "url": "https://photos.leier.eu/McBLOWrohHNMMOmPILUhfEY0ykw=/282x167/smart/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-liftakna-63467b3c44cd9.png",
+                    "alt": "Leier liftakna"
+                },
+                {
+                    "url": "https://photos.leier.eu/C2NIK-Q6sBsc6JAK0XVcGN3MlCs=/282x167/smart/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-liftakna-6331964444c71.JPG",
+                    "alt": "Leier liftakna"
+                }
+            ],
+            "technical_data": {
+                "Falvastagság": "Elemszélesség",
+                "12 vagy 15 cm": "140 - 240 cm"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        }
+    },
+    "product_count": 8,
+    "document_count": 319
+}

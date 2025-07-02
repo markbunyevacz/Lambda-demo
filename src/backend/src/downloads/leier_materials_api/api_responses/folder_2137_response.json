@@ -1,0 +1,172 @@
+{
+  "documents": [
+    {
+      "id": 2153,
+      "name": "Árokburkoló elem - Jánosháza - Teljesítménynyilatkozat LE JH1433-02",
+      "is_folder": 0,
+      "parent_id": 2137,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 2137,
+        "name": "Felszíni vízelvezetés",
+        "is_folder": 1,
+        "parent_id": 1932,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1932,
+          "name": "Mély- és vasútépítés, környezettechnika",
+          "is_folder": 1,
+          "parent_id": 1865,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1865,
+            "name": "Teljesítménynyilatkozatok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2153",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2154,
+      "name": "Rézsűsurrantó elem - Jánosháza - Teljesítménynyilatkozat LE JHA-1-01",
+      "is_folder": 0,
+      "parent_id": 2137,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 2137,
+        "name": "Felszíni vízelvezetés",
+        "is_folder": 1,
+        "parent_id": 1932,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1932,
+          "name": "Mély- és vasútépítés, környezettechnika",
+          "is_folder": 1,
+          "parent_id": 1865,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1865,
+            "name": "Teljesítménynyilatkozatok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2154",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3822,
+      "name": "Előregyártott beton árokelemek - Pécs - Teljesítménynyilatkozat LE PE1340-01-ÁE",
+      "is_folder": 0,
+      "parent_id": 2137,
+      "created_at": "2023. november 22.",
+      "parent": {
+        "id": 2137,
+        "name": "Felszíni vízelvezetés",
+        "is_folder": 1,
+        "parent_id": 1932,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1932,
+          "name": "Mély- és vasútépítés, környezettechnika",
+          "is_folder": 1,
+          "parent_id": 1865,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1865,
+            "name": "Teljesítménynyilatkozatok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3822",
+        "extension": "pdf"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 2137,
+    "name": "Felszíni vízelvezetés",
+    "is_folder": 1,
+    "parent_id": 1932,
+    "created_at": "2023. február 15.",
+    "parent": {
+      "id": 1932,
+      "name": "Mély- és vasútépítés, környezettechnika",
+      "is_folder": 1,
+      "parent_id": 1865,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1865,
+        "name": "Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "documents": [
+    {
+      "id": 4170,
+      "name": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül)",
+      "is_folder": 0,
+      "parent_id": 1861,
+      "created_at": "2025. június 24.",
+      "parent": {
+        "id": 1861,
+        "name": "Árlisták viszonteladók részére",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/4170",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 4171,
+      "name": "Magasépítő árlista viszonteladók részére",
+      "is_folder": 0,
+      "parent_id": 1861,
+      "created_at": "2025. június 24.",
+      "parent": {
+        "id": 1861,
+        "name": "Árlisták viszonteladók részére",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/4171",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 4172,
+      "name": "Kéményrendszerek árlista viszonteladók részére - Érvényes: 2025.04.01-től",
+      "is_folder": 0,
+      "parent_id": 1861,
+      "created_at": "2025. június 24.",
+      "parent": {
+        "id": 1861,
+        "name": "Árlisták viszonteladók részére",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/4172",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 4173,
+      "name": "Mélyépítés-környezettechnika árlista viszonteladók részére - Frissítve árváltozás nélkül: 2025.06.23.",
+      "is_folder": 0,
+      "parent_id": 1861,
+      "created_at": "2025. június 24.",
+      "parent": {
+        "id": 1861,
+        "name": "Árlisták viszonteladók részére",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/4173",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 4174,
+      "name": "Tetőfedés árlista viszonteladók részére - Érvényes: 2025.04.01-től",
+      "is_folder": 0,
+      "parent_id": 1861,
+      "created_at": "2025. június 24.",
+      "parent": {
+        "id": 1861,
+        "name": "Árlisták viszonteladók részére",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/4174",
+        "extension": "pdf"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 1861,
+    "name": "Árlisták viszonteladók részére",
+    "is_folder": 1,
+    "parent_id": 1859,
+    "created_at": "2023. február 15.",
+    "parent": {
+      "id": 1859,
+      "name": "hu",
+      "is_folder": 1,
+      "parent_id": null,
+      "created_at": "2023. február 15.",
+      "parent": null,
+      "file": null
+    },
+    "file": null
+  }
+}

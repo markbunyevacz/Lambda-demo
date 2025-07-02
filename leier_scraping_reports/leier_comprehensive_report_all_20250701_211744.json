@@ -1,0 +1,36 @@
+{
+  "coordinator_info": {
+    "priority_level": "all",
+    "test_mode": false,
+    "start_time": "2025-07-01T21:16:58.654367"
+  },
+  "scrapers_executed": [
+    {
+      "success": true,
+      "scraper_type": "documents",
+      "priority": "HIGH",
+      "stats": {
+        "categories_found": 0,
+        "docs_discovered": 0,
+        "downloads_success": 0,
+        "downloads_failed": 0,
+        "duplicates": 0
+      }
+    },
+    {
+      "success": true,
+      "scraper_type": "calculators",
+      "priority": "MEDIUM",
+      "stats": {
+        "calculators_found": 0,
+        "interactive_tools": 0,
+        "pricing_data_extracted": 0,
+        "parameters_captured": 0
+      }
+    }
+  ],
+  "overall_success": true,
+  "error_count": 0,
+  "end_time": "2025-07-01T21:17:44.693966",
+  "total_duration_seconds": 46.039599
+}

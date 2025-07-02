@@ -1,0 +1,2592 @@
+{
+  "documents": [
+    {
+      "id": 2562,
+      "name": "dwg",
+      "is_folder": 1,
+      "parent_id": 2343,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2343,
+        "name": "Födém részletrajzok",
+        "is_folder": 1,
+        "parent_id": 2336,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2336,
+          "name": "Csomópontok",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 2567,
+          "name": "m06-mesterf-lepcso",
+          "is_folder": 0,
+          "parent_id": 2562,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2562,
+            "name": "dwg",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2567",
+            "extension": "dwg"
+          }
+        },
+        {
+          "id": 2568,
+          "name": "m05b-mesterf-terasz2",
+          "is_folder": 0,
+          "parent_id": 2562,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2562,
+            "name": "dwg",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2568",
+            "extension": "dwg"
+          }
+        },
+        {
+          "id": 2569,
+          "name": "m04-mesterf-valaszfal",
+          "is_folder": 0,
+          "parent_id": 2562,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2562,
+            "name": "dwg",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2569",
+            "extension": "dwg"
+          }
+        },
+        {
+          "id": 2570,
+          "name": "m05a-mesterf-terasz1",
+          "is_folder": 0,
+          "parent_id": 2562,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2562,
+            "name": "dwg",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2570",
+            "extension": "dwg"
+          }
+        },
+        {
+          "id": 2571,
+          "name": "m032-mesterf-belsokosz",
+          "is_folder": 0,
+          "parent_id": 2562,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2562,
+            "name": "dwg",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2571",
+            "extension": "dwg"
+          }
+        },
+        {
+          "id": 2572,
+          "name": "m031-mesterf-belsokosz",
+          "is_folder": 0,
+          "parent_id": 2562,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2562,
+            "name": "dwg",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2572",
+            "extension": "dwg"
+          }
+        },
+        {
+          "id": 2573,
+          "name": "m02b-mesterf-koszoru3",
+          "is_folder": 0,
+          "parent_id": 2562,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2562,
+            "name": "dwg",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2573",
+            "extension": "dwg"
+          }
+        },
+        {
+          "id": 2574,
+          "name": "m02a-mesterf-koszoru2",
+          "is_folder": 0,
+          "parent_id": 2562,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2562,
+            "name": "dwg",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2574",
+            "extension": "dwg"
+          }
+        },
+        {
+          "id": 2575,
+          "name": "m01-mesterf-koszoru1",
+          "is_folder": 0,
+          "parent_id": 2562,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2562,
+            "name": "dwg",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2575",
+            "extension": "dwg"
+          }
+        }
+      ],
+      "file": null
+    },
+    {
+      "id": 2563,
+      "name": "pdf",
+      "is_folder": 1,
+      "parent_id": 2343,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2343,
+        "name": "Födém részletrajzok",
+        "is_folder": 1,
+        "parent_id": 2336,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2336,
+          "name": "Csomópontok",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 2576,
+          "name": "m06-mesterf-lepcso",
+          "is_folder": 0,
+          "parent_id": 2563,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2563,
+            "name": "pdf",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2576",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 2577,
+          "name": "m05b-mesterf-terasz2",
+          "is_folder": 0,
+          "parent_id": 2563,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2563,
+            "name": "pdf",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2577",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 2578,
+          "name": "m04-mesterf-valaszfal",
+          "is_folder": 0,
+          "parent_id": 2563,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2563,
+            "name": "pdf",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2578",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 2579,
+          "name": "m05a-mesterf-terasz1",
+          "is_folder": 0,
+          "parent_id": 2563,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2563,
+            "name": "pdf",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2579",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 2580,
+          "name": "m032-mesterf-belsokosz",
+          "is_folder": 0,
+          "parent_id": 2563,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2563,
+            "name": "pdf",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2580",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 2581,
+          "name": "m031-mesterf-belsokosz.pdf",
+          "is_folder": 0,
+          "parent_id": 2563,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2563,
+            "name": "pdf",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2581",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 2582,
+          "name": "m02b-mesterf-koszoru3",
+          "is_folder": 0,
+          "parent_id": 2563,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2563,
+            "name": "pdf",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2582",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 2583,
+          "name": "m02a-mesterf-koszoru2",
+          "is_folder": 0,
+          "parent_id": 2563,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2563,
+            "name": "pdf",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2583",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 2584,
+          "name": "m01-mesterf-koszoru1",
+          "is_folder": 0,
+          "parent_id": 2563,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2563,
+            "name": "pdf",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2584",
+            "extension": "pdf"
+          }
+        }
+      ],
+      "file": null
+    },
+    {
+      "id": 2564,
+      "name": "pln",
+      "is_folder": 1,
+      "parent_id": 2343,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2343,
+        "name": "Födém részletrajzok",
+        "is_folder": 1,
+        "parent_id": 2336,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2336,
+          "name": "Csomópontok",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 2585,
+          "name": "m06-mesterf-lepcso",
+          "is_folder": 0,
+          "parent_id": 2564,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2564,
+            "name": "pln",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2585",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2586,
+          "name": "m05a-mesterf-terasz1",
+          "is_folder": 0,
+          "parent_id": 2564,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2564,
+            "name": "pln",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2586",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2587,
+          "name": "m05b-mesterf-terasz2",
+          "is_folder": 0,
+          "parent_id": 2564,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2564,
+            "name": "pln",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2587",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2588,
+          "name": "m04-mesterf-valaszfal",
+          "is_folder": 0,
+          "parent_id": 2564,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2564,
+            "name": "pln",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2588",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2589,
+          "name": "m032-mesterf-belsokosz",
+          "is_folder": 0,
+          "parent_id": 2564,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2564,
+            "name": "pln",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2589",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2590,
+          "name": "m031-mesterf-belsokosz",
+          "is_folder": 0,
+          "parent_id": 2564,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2564,
+            "name": "pln",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2590",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2591,
+          "name": "m02a-mesterf-koszoru2",
+          "is_folder": 0,
+          "parent_id": 2564,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2564,
+            "name": "pln",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2591",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2592,
+          "name": "m02b-mesterf-koszoru3",
+          "is_folder": 0,
+          "parent_id": 2564,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2564,
+            "name": "pln",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2592",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2593,
+          "name": "m01-mesterf-koszoru1",
+          "is_folder": 0,
+          "parent_id": 2564,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2564,
+            "name": "pln",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2593",
+            "extension": "zip"
+          }
+        }
+      ],
+      "file": null
+    },
+    {
+      "id": 2565,
+      "name": "asc",
+      "is_folder": 1,
+      "parent_id": 2343,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2343,
+        "name": "Födém részletrajzok",
+        "is_folder": 1,
+        "parent_id": 2336,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2336,
+          "name": "Csomópontok",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 2594,
+          "name": "leier-m06-mesterf-lepcso",
+          "is_folder": 0,
+          "parent_id": 2565,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2565,
+            "name": "asc",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2594",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2595,
+          "name": "leier-m05b-mesterf-terasz2",
+          "is_folder": 0,
+          "parent_id": 2565,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2565,
+            "name": "asc",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2595",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2596,
+          "name": "leier-m04-mesterf-valaszfal",
+          "is_folder": 0,
+          "parent_id": 2565,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2565,
+            "name": "asc",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2596",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2597,
+          "name": "leier-m05a-mesterf-terasz1",
+          "is_folder": 0,
+          "parent_id": 2565,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2565,
+            "name": "asc",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2597",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2598,
+          "name": "leier-m032-mesterf-belsokosz",
+          "is_folder": 0,
+          "parent_id": 2565,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2565,
+            "name": "asc",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2598",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2599,
+          "name": "leier-m031-mesterf-belsokosz",
+          "is_folder": 0,
+          "parent_id": 2565,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2565,
+            "name": "asc",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2599",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2600,
+          "name": "leier-m02b-mesterf-koszoru3",
+          "is_folder": 0,
+          "parent_id": 2565,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2565,
+            "name": "asc",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2600",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2601,
+          "name": "leier-m02a-mesterf-koszoru2",
+          "is_folder": 0,
+          "parent_id": 2565,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2565,
+            "name": "asc",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2601",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2602,
+          "name": "leier-m01-mesterf-koszoru1",
+          "is_folder": 0,
+          "parent_id": 2565,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2565,
+            "name": "asc",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2602",
+            "extension": "zip"
+          }
+        }
+      ],
+      "file": null
+    },
+    {
+      "id": 2566,
+      "name": "dxf",
+      "is_folder": 1,
+      "parent_id": 2343,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2343,
+        "name": "Födém részletrajzok",
+        "is_folder": 1,
+        "parent_id": 2336,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2336,
+          "name": "Csomópontok",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 2603,
+          "name": "leier-m06-mesterf-lepcso",
+          "is_folder": 0,
+          "parent_id": 2566,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2566,
+            "name": "dxf",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2603",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2604,
+          "name": "leier-m05b-mesterf-terasz2",
+          "is_folder": 0,
+          "parent_id": 2566,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2566,
+            "name": "dxf",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2604",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2605,
+          "name": "leier-m05a-mesterf-terasz1",
+          "is_folder": 0,
+          "parent_id": 2566,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2566,
+            "name": "dxf",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2605",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2606,
+          "name": "leier-m04-mesterf-valaszfal",
+          "is_folder": 0,
+          "parent_id": 2566,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2566,
+            "name": "dxf",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2606",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2607,
+          "name": "leier-m032-mesterf-belsok",
+          "is_folder": 0,
+          "parent_id": 2566,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2566,
+            "name": "dxf",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2607",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2608,
+          "name": "leier-m031-mesterf-belsok",
+          "is_folder": 0,
+          "parent_id": 2566,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2566,
+            "name": "dxf",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2608",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2609,
+          "name": "leier-m02b-mesterf-koszoru3",
+          "is_folder": 0,
+          "parent_id": 2566,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2566,
+            "name": "dxf",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2609",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2610,
+          "name": "leier-m02a-mesterf-koszoru2",
+          "is_folder": 0,
+          "parent_id": 2566,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2566,
+            "name": "dxf",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2610",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2611,
+          "name": "leier-m01-mesterf-koszoru1",
+          "is_folder": 0,
+          "parent_id": 2566,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2566,
+            "name": "dxf",
+            "is_folder": 1,
+            "parent_id": 2343,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2343,
+              "name": "Födém részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2611",
+            "extension": "zip"
+          }
+        }
+      ],
+      "file": null
+    }
+  ],
+  "currentDocument": {
+    "id": 2343,
+    "name": "Födém részletrajzok",
+    "is_folder": 1,
+    "parent_id": 2336,
+    "created_at": "2023. február 16.",
+    "parent": {
+      "id": 2336,
+      "name": "Csomópontok",
+      "is_folder": 1,
+      "parent_id": 1867,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 1867,
+        "name": "Részletrajzok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

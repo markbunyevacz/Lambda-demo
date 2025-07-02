@@ -1,0 +1,10 @@
+{
+    "run_timestamp": "2025-07-01T22:24:41.236191",
+    "duration_seconds": 0.588903,
+    "test_mode": true,
+    "summary": {
+        "products_scraped": 0,
+        "files_to_download": 0
+    },
+    "products": []
+}

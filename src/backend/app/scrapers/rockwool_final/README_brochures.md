@@ -40,3 +40,33 @@ Downloaded files will be saved to the `downloads/rockwool_brochures/` directory,
 Just like the main scraper, this module's purpose is **data acquisition only**. The AI agent is **not used** for the scraping process itself.
 
 The brochures and pricelists downloaded by this script are now ready to be used as context for the AI Agent in the next phase of the project, alongside the technical datasheets. 
+
+✅ Égetett kerámia falazóelemek (Fired ceramic masonry elements)
+✅ Nyílásáthidalók (Lintels)
+✅ Beton zsaluzóelemek (Concrete formwork elements)
+✅ Durisol falazóelemek (Durisol masonry elements)
+✅ Betoncserepek (Concrete tiles)
+✅ Kémények (Chimneys)
+✅ Előregyártott falak/födémek/lépcsők (Precast walls/slabs/stairs)
+✅ Speciális előregyártott vasbeton elemek (Special precast concrete)
+✅ Térburkoló kövek (Paving stones)
+✅ Burkolólapok (Tiles)
+✅ 12+ additional categories available
+✅ Hőszigetelő rendszerek (Thermal insulation systems)
+✅ Színes vékonyvakolatok (Colored thin-layer renders)
+✅ Homlokzatfestékek (Façade paints)
+✅ Aljzatképző ragasztó rendszerek (Substrate adhesive systems)
+✅ Homlokzati felújító rendszerek (Façade renovation systems)
+✅ Beltéri vakolatok (Interior renders)
+✅ Glettek és festékek (Fillers and paints)
+✅ StarColor, PuraColor, SilikonColor product lines
+✅ Technical Datasheets: Product specifications, installation guides
+✅ Price Lists: Comprehensive pricing by category
+✅ CAD Files: Technical drawings and dimensions
+✅ Installation Manuals: Step-by-step construction guides
+✅ Warranty Information: Product guarantees and conditions
+✅ Product Catalogs: Complete technical specifications
+✅ Application Guides: Professional installation instructions
+✅ Color Charts: Baumit Life color collection
+✅ System Specifications: Complete system solutions
+✅ Training Materials: Professional education content 
