@@ -13,8 +13,8 @@ from datetime import datetime
 from celery import shared_task
 
 # Import the scraper classes using relative paths
-from ..scrapers.rockwool_final.datasheet_scraper import RockwoolDirectScraper
-from ..scrapers.rockwool_final.brochure_and_pricelist_scraper import (
+from ..scrapers.rockwool.datasheet_scraper import RockwoolDirectScraper
+from ..scrapers.rockwool.brochure_and_pricelist_scraper import (
     RockwoolBrochureScraper,
 )
 

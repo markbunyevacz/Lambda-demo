@@ -21,7 +21,7 @@ mkdir -p factory
 mv rockwool_scraper_final.py clients/rockwool/scrapers/termekadatlapok.py
 
 # Move brochure scraper  
-mv backend/app/scrapers/rockwool_final/brochure_scraper.py clients/rockwool/scrapers/brochures.py
+mv backend/app/scrapers/rockwool/brochure_scraper.py clients/rockwool/scrapers/brochures.py
 
 # Copy debug files to fixtures
 cp debug_termekadatlapok.html clients/rockwool/tests/fixtures/

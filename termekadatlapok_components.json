@@ -1,0 +1,50 @@
+[
+  {
+    "name": "ModalDisplaySequence",
+    "props": "{\"componentName\":\"ModalDisplaySequence\",\"showCountryRedirectPopup\":false,\"showPrivacyStatementPopup\":false,\"countryRedirectProps\":{\"componentName\":\"CountryRedirect\",\"pageId\":599155,\"providerName\":null,\"countryCode\":\"hu-HU\",\"brand\":\"ROCKWOOL\",\"type\":0,\"disableOnPageLoad\":false},\"privacyStatementProps\":{\"componentName\":\"PrivacyStatement\",\"text\":null,\"brandLogo\":\"<svg version=\\\"1.0\\\" id=\\\"Layer_1\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\" xmlns:xlink=\\\"http://www.w3.org/1999/xlink\\\" x=\\\"0px\\\" y=\\\"0px\\\"",
+    "tag": "div",
+    "classes": [
+      "react-container"
+    ]
+  },
+  {
+    "name": "ModalDisplaySequence",
+    "props": "{\"componentName\":\"ModalDisplaySequence\",\"showCountryRedirectPopup\":false,\"showPrivacyStatementPopup\":false,\"countryRedirectProps\":{\"componentName\":\"CountryRedirect\",\"pageId\":599155,\"providerName\":null,\"countryCode\":\"hu-HU\",\"brand\":\"ROCKWOOL\",\"type\":1,\"disableOnPageLoad\":false},\"privacyStatementProps\":null}",
+    "tag": "div",
+    "classes": [
+      "react-container"
+    ]
+  },
+  {
+    "name": "Header",
+    "props": "{\"componentName\":\"Header\",\"headerExtensions\":\"\",\"layoutStartPage\":\"https://www.rockwool.com/hu/\",\"brand\":\"ROCKWOOL\",\"brandLogo\":\"rockwool\",\"minWidth\":\"\",\"showSearchText\":\"\",\"searchIcon\":null,\"searchHeaderIconText\":\"Search\",\"isShowSearchText\":false,\"showBasket\":false,\"bucketIcon\":null,\"orderItemsText\":\"Order items\",\"checkoutText\":\"Checkout\",\"checkMark\":null,\"addedText\":\"Added\",\"hasPortalLinks\":true,\"userIcon\":null,\"searchPageUrl\":\"/hu/Kereses/\",\"inputPlaceholder\":null,\"brandLogoSvg\":\"<svg version",
+    "tag": "div",
+    "classes": [
+      "react-container"
+    ]
+  },
+  {
+    "name": "O74DocumentationList",
+    "props": "{\"componentName\":\"O74DocumentationList\",\"collapsibleCategoriesClass\":\"\",\"catTranslation\":null,\"guid\":\"64523f8f-24ca-411d-b610-291858a709eb\",\"disableUrlCat\":false,\"itemType\":\"download\",\"formName\":\"\",\"formId\":\"\",\"formUrl\":\"/custom-routes/personalization/submitform\",\"downloadItemsHeading\":\"Töltse le termékadatlapjainkat!\",\"categories\":{\"singleFilter\":true,\"filters\":[{\"key\":\"Termékadatlapok\",\"value\":\"termékadatlapok\",\"count\":null,\"subItems\":null,\"selected\":null,\"class\":\"\"}],\"filtersGroup\":[{\"key\":\"C",
+    "tag": "div",
+    "classes": [
+      "react-container"
+    ]
+  },
+  {
+    "name": "GoToTopButton",
+    "props": "{\"componentName\":\"GoToTopButton\"}",
+    "tag": "div",
+    "classes": [
+      "react-container"
+    ]
+  },
+  {
+    "name": "GenericModal",
+    "props": "{\"componentName\":\"GenericModal\"}",
+    "tag": "div",
+    "classes": [
+      "react-container"
+    ]
+  }
+]
