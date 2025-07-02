@@ -25,7 +25,11 @@ This report analyzes all scraping implementations found in the codebase, identif
 
 ### Additional Files:
 - `rockwool_product_scraper.py` (root-level orchestrator)
-- Various test and integration scripts
+- `src/backend/app/scraper/product_parser.py` (HTML parsing utilities)
+- `src/backend/run_demo_scrape.py` (Playwright-based demo scraper)
+- `scripts/archive/test_pdf_download.py` (Test implementation)
+- `scripts/archive/test_brightdata_download.py` (BrightData testing)
+- Various integration and testing scripts
 
 ---
 
@@ -163,6 +167,55 @@ This report analyzes all scraping implementations found in the codebase, identif
 | **LEIER** | 10+ versions | Product docs, calculators, tools, categories | `src/downloads/leier_*` |
 | **BAUMIT** | 6+ versions | Product catalogs, color systems, categories | `src/downloads/baumit_products/` |
 
-**Total Scraping Implementations**: 18+ distinct scraper files  
-**Companies Covered**: 3 major building materials companies  
-**Architecture**: Modern async Python with AI-enhanced content extraction
+**Total Scraping Implementations**: 24 distinct scraper files  
+**Companies Covered**: 3 major Hungarian building materials companies  
+**Architecture**: Modern async Python with AI-enhanced content extraction, BrightData MCP integration, and Playwright browser automation
+
+### Additional Discovery:
+- **Parser Utilities**: Dedicated HTML parsing and product extraction utilities
+- **Demo/Test Scripts**: Playwright-based browser automation demos and testing frameworks  
+- **Archive Implementations**: Older test and development versions in `scripts/archive/`
+
+---
+
+## Complete File Inventory
+
+### Root Directory Files:
+1. `rockwool_product_scraper.py` - ROCKWOOL orchestrator
+2. `leier_documents_scraper.py` - LEIER enhanced documents extractor
+
+### Main Scraper Directory (`src/backend/app/scrapers/`):
+
+#### ROCKWOOL (`rockwool_final/`):
+3. `datasheet_scraper.py` - AI-driven product datasheets scraper
+4. `brochure_and_pricelist_scraper.py` - Marketing materials scraper
+
+#### LEIER (`leier_final/`):
+5. `leier_product_scraper.py` - Product-specific documents scraper
+6. `leier_documents_scraper.py` - General document archives scraper  
+7. `leier_dynamic_scraper.py` - Dynamic content API scraper
+8. `leier_calculator_scraper.py` - Construction calculators scraper
+9. `leier_specific_urls_scraper.py` - Targeted URL processing
+10. `leier_recursive_scraper.py` - Recursive website exploration
+11. `leier_product_tree_mapper.py` - Product hierarchy mapper
+12. `run_leier_scrapers.py` - Multi-scraper orchestrator
+
+#### LEIER Legacy (`leier/`):
+13. `document_scraper.py` - Basic document extraction (legacy)
+14. `calculator_scraper.py` - Calculator tools (legacy)
+15. `house_type_scraper.py` - House type categorization (legacy)
+
+#### BAUMIT (`baumit_final/`):
+16. `baumit_enhanced_scraper.py` - Enhanced product discovery scraper
+17. `baumit_product_catalog_scraper.py` - Main product catalog scraper
+18. `baumit_color_system_scraper.py` - Color system scraper
+19. `baumit_category_mapper.py` - Category mapping utility
+20. `run_baumit_scraper.py` - BAUMIT orchestrator
+
+### Utility and Support Files:
+21. `src/backend/app/scraper/product_parser.py` - HTML parsing utilities
+22. `src/backend/run_demo_scrape.py` - Playwright demo scraper
+23. `scripts/archive/test_pdf_download.py` - PDF download test script
+24. `scripts/archive/test_brightdata_download.py` - BrightData test script
+
+**Grand Total: 24 distinct scraping-related implementations**
