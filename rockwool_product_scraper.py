@@ -6,12 +6,9 @@ This script runs the RockWool product datasheets scraper using the BrightData MC
 It targets the termekadatlapok (product datasheets) page to extract individual product PDFs.
 """
 
-# --- Environment Loading ---
-# This MUST be the very first thing that runs to ensure all other modules
-# have access to the environment variables.
+# Load environment variables first, before any other imports
 from dotenv import load_dotenv
 load_dotenv()
-# --- End Environment Loading ---
 
 import asyncio
 import logging

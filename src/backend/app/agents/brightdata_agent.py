@@ -77,11 +77,45 @@ class BrightDataMCPAgent:
             
         try:
             # Conditional imports - csak ha környezeti változók OK
-            from mcp import stdio
-            from mcp.client.session import ClientSession
-            from langchain_anthropic import ChatAnthropic
-            from langchain_mcp_adapters import load_mcp_tools
-            from langgraph.prebuilts import chat_agent_executor
+            logger.info("Importing MCP dependencies...")
+            
+            try:
+                from mcp import stdio
+                logger.info("✅ mcp.stdio imported successfully")
+            except ImportError as e:
+                logger.error(f"❌ Failed to import mcp.stdio: {e}")
+                raise
+                
+            try:
+                from mcp.client.session import ClientSession
+                logger.info("✅ mcp.client.session.ClientSession imported successfully")
+            except ImportError as e:
+                logger.error(f"❌ Failed to import ClientSession: {e}")
+                raise
+                
+            try:
+                from langchain_anthropic import ChatAnthropic
+                logger.info("✅ langchain_anthropic.ChatAnthropic imported successfully")
+            except ImportError as e:
+                logger.error(f"❌ Failed to import ChatAnthropic: {e}")
+                raise
+                
+            try:
+                from langchain_mcp_adapters import load_mcp_tools
+                logger.info("✅ langchain_mcp_adapters.load_mcp_tools imported successfully")
+            except ImportError as e:
+                logger.error(f"❌ Failed to import load_mcp_tools: {e}")
+                logger.error("Available in langchain_mcp_adapters:")
+                import langchain_mcp_adapters
+                logger.error(f"Dir: {dir(langchain_mcp_adapters)}")
+                raise
+                
+            try:
+                from langgraph.prebuilts import chat_agent_executor
+                logger.info("✅ langgraph.prebuilts.chat_agent_executor imported successfully")
+            except ImportError as e:
+                logger.error(f"❌ Failed to import chat_agent_executor: {e}")
+                raise
             
             # Store imports for later use
             self.stdio = stdio
