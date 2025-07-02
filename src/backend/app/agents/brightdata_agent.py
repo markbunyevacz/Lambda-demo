@@ -8,7 +8,7 @@ lehetővé téve fejlett web scraping funkciókat AI irányítással.
 import os
 import asyncio
 import logging
-from typing import Dict, List, Optional, Any
+from typing import Dict, List, Optional
 from datetime import datetime
 
 logger = logging.getLogger(__name__)
@@ -84,7 +84,7 @@ class BrightDataMCPAgent:
     
     def _init_dependencies(self):
         """Dependency inicializálás csak ha szükséges"""
-        print(f"=== INIT DEPENDENCIES DEBUG ===")
+        print("=== INIT DEPENDENCIES DEBUG ===")
         print(f"self.mcp_available = {self.mcp_available}")
         
         if not self.mcp_available:
@@ -299,43 +299,118 @@ class BrightDataMCPAgent:
         return scraped_products
     
     def _parse_ai_response(self, ai_response: str, source_url: str) -> Optional[Dict]:
-        """AI válasz parsing és normalizálás"""
+        """AI válasz parsing és normalizálás - Enhanced version"""
         try:
             import json
             import re
             
-            # JSON kinyerése az AI válaszból
-            json_match = re.search(r'```json\s*(\{.*?\})\s*```', ai_response, re.DOTALL)
+            logger.info(f"Parsing AI response for URL: {source_url}")
+            logger.info(f"Response preview: {ai_response[:200]}...")
+            
+            # Multiple strategies for JSON extraction
+            json_str = None
+            
+            # Strategy 1: Look for JSON code blocks
+            json_match = re.search(r'```(?:json)?\s*(\{.*?\})\s*```', ai_response, re.DOTALL | re.IGNORECASE)
             if json_match:
                 json_str = json_match.group(1)
-            else:
-                # Alternatív: JSON objektum keresése
-                json_match = re.search(r'\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}', ai_response, re.DOTALL)
-                if json_match:
-                    json_str = json_match.group(0)
-                else:
-                    logger.warning("Nem találtam JSON-t az AI válaszban")
-                    return None
+                logger.info("Found JSON in code block")
             
-            # JSON parsing
-            product_data = json.loads(json_str)
+            # Strategy 2: Look for any JSON object in the response
+            if not json_str:
+                json_matches = re.findall(r'\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}', ai_response, re.DOTALL)
+                for match in json_matches:
+                    try:
+                        # Test if it's valid JSON
+                        json.loads(match)
+                        json_str = match
+                        logger.info("Found valid JSON object")
+                        break
+                    except:
+                        continue
             
-            # Kötelező mezők
-            product_data['source_url'] = source_url
-            product_data['scraped_at'] = datetime.now().isoformat()
-            product_data['scraper_type'] = 'brightdata_ai'
-            
-            # Alapértelmezések
-            if 'name' not in product_data:
-                product_data['name'] = 'Rockwool termék'
-            if 'category' not in product_data:
-                product_data['category'] = 'Szigetelőanyag'
+            # Strategy 3: Look for structured data patterns
+            if not json_str:
+                # Try to extract key-value pairs and construct JSON
+                name_match = re.search(r'(?:name|név)[\s:]*([^\n\r]+)', ai_response, re.IGNORECASE)
+                category_match = re.search(r'(?:category|kategória)[\s:]*([^\n\r]+)', ai_response, re.IGNORECASE)
                 
-            return product_data
+                if name_match or category_match:
+                    logger.info("Extracting data from patterns")
+                    fallback_data = {
+                        "name": name_match.group(1).strip() if name_match else "Rockwool termék",
+                        "category": category_match.group(1).strip() if category_match else "Szigetelőanyag",
+                        "description": "Extracted from unstructured response",
+                        "technical_specs": {},
+                        "applications": []
+                    }
+                    return self._finalize_product_data(fallback_data, source_url)
+            
+            # Strategy 4: If we found JSON, parse it
+            if json_str:
+                try:
+                    product_data = json.loads(json_str)
+                    logger.info("Successfully parsed JSON")
+                    return self._finalize_product_data(product_data, source_url)
+                except json.JSONDecodeError as e:
+                    logger.warning(f"JSON decode error: {e}")
+            
+            # Strategy 5: Last resort - create minimal product data from URL
+            logger.warning("No JSON found - creating minimal product data")
+            return self._create_minimal_product_data(source_url)
             
         except Exception as e:
             logger.error(f"AI válasz feldolgozási hiba: {e}")
-            return None
+            return self._create_minimal_product_data(source_url)
+    
+    def _finalize_product_data(self, product_data: Dict, source_url: str) -> Dict:
+        """Finalize and validate product data"""
+        # Kötelező mezők
+        product_data['source_url'] = source_url
+        product_data['scraped_at'] = datetime.now().isoformat()
+        product_data['scraper_type'] = 'brightdata_ai'
+        
+        # Alapértelmezések és validálás
+        if 'name' not in product_data or not product_data['name']:
+            product_data['name'] = self._extract_name_from_url(source_url)
+        if 'category' not in product_data or not product_data['category']:
+            product_data['category'] = 'Szigetelőanyag'
+        if 'description' not in product_data:
+            product_data['description'] = 'Rockwool szigetelőanyag termék'
+        if 'technical_specs' not in product_data:
+            product_data['technical_specs'] = {}
+        if 'applications' not in product_data:
+            product_data['applications'] = []
+            
+        return product_data
+    
+    def _create_minimal_product_data(self, source_url: str) -> Dict:
+        """Create minimal product data when parsing fails"""
+        return {
+            'name': self._extract_name_from_url(source_url),
+            'description': 'Rockwool szigetelőanyag termék - részletek nem állnak rendelkezésre',
+            'category': 'Szigetelőanyag',
+            'technical_specs': {},
+            'applications': [],
+            'source_url': source_url,
+            'scraped_at': datetime.now().isoformat(),
+            'scraper_type': 'brightdata_ai_fallback',
+            'parsing_status': 'minimal_data_created'
+        }
+    
+    def _extract_name_from_url(self, url: str) -> str:
+        """Extract product name from URL"""
+        import re
+        
+        # Extract the last meaningful part of the URL
+        parts = url.rstrip('/').split('/')
+        if len(parts) > 1:
+            last_part = parts[-1]
+            # Convert URL-friendly format to readable name
+            name = re.sub(r'[-_]', ' ', last_part)
+            name = re.sub(r'\.(html?|php)$', '', name, re.IGNORECASE)
+            return name.title() if name else 'Rockwool Termék'
+        return 'Rockwool Termék'
     
     async def search_rockwool_products(self, search_query: str) -> List[Dict]:
         """Rockwool termékek keresése AI-val"""

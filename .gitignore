@@ -82,4 +82,4 @@ celerybeat-schedule
 **/documents/**
 **/downloads/**
 src/backend/src/downloads/
-src/downloads/ 
+src/downloads/
