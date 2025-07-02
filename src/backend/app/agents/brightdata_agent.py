@@ -29,12 +29,12 @@ class BrightDataMCPAgent:
         self.timeout = timeout
         self.max_retries = max_retries
         
-        # Environment változók ellenőrzése
-        self._validate_environment()
-        
-        # MCP kapcsolat állapot
+        # Initialize MCP state before validation
         self.mcp_available = False
         self.model = None
+        
+        # Environment változók ellenőrzése
+        self._validate_environment()
         
         # Scraping statisztikák
         self.scraping_stats = {
@@ -50,6 +50,8 @@ class BrightDataMCPAgent:
         
     def _validate_environment(self):
         """Ellenőrzi a szükséges környezeti változókat"""
+        print("=== REAL AGENT VALIDATION DEBUG ===")
+        
         required_vars = [
             'BRIGHTDATA_API_TOKEN',
             'BRIGHTDATA_WEB_UNLOCKER_ZONE', 
@@ -59,38 +61,48 @@ class BrightDataMCPAgent:
         missing_vars = []
         for var in required_vars:
             value = os.getenv(var)
+            print(f"{var} = {repr(value)}")
             if not value or value == f'your-{var.lower().replace("_", "-")}-here':
                 missing_vars.append(var)
+                print(f"  ❌ FAILED")
+            else:
+                print(f"  ✅ PASSED")
+        
+        print(f"Missing vars: {missing_vars}")
         
         if missing_vars:
             logger.warning(f"Hiányzó környezeti változók: {missing_vars}")
             logger.warning("A BrightData MCP agent nem lesz elérhető")
             self.mcp_available = False
+            print("Setting mcp_available = False")
         else:
             self.mcp_available = True
+            print("Setting mcp_available = True")
+            
+        print(f"Final mcp_available: {self.mcp_available}")
+        print("=== END VALIDATION DEBUG ===")
     
     def _init_dependencies(self):
         """Dependency inicializálás csak ha szükséges"""
+        print(f"=== INIT DEPENDENCIES DEBUG ===")
+        print(f"self.mcp_available = {self.mcp_available}")
+        
         if not self.mcp_available:
             logger.info("BrightData MCP agent disable - hiányzó konfiguráció")
+            print("Returning early due to mcp_available = False")
             return
             
+        print("Proceeding with dependency initialization...")
+        
         try:
             # Conditional imports - csak ha környezeti változók OK
             logger.info("Importing MCP dependencies...")
             
             try:
-                from mcp import stdio
-                logger.info("✅ mcp.stdio imported successfully")
+                from mcp import stdio_client, StdioServerParameters, ClientSession
+                logger.info("✅ MCP imports successful")
             except ImportError as e:
-                logger.error(f"❌ Failed to import mcp.stdio: {e}")
-                raise
-                
-            try:
-                from mcp.client.session import ClientSession
-                logger.info("✅ mcp.client.session.ClientSession imported successfully")
-            except ImportError as e:
-                logger.error(f"❌ Failed to import ClientSession: {e}")
+                logger.error(f"❌ Failed to import MCP components: {e}")
                 raise
                 
             try:
@@ -101,8 +113,8 @@ class BrightDataMCPAgent:
                 raise
                 
             try:
-                from langchain_mcp_adapters import load_mcp_tools
-                logger.info("✅ langchain_mcp_adapters.load_mcp_tools imported successfully")
+                from langchain_mcp_adapters.tools import load_mcp_tools
+                logger.info("✅ langchain_mcp_adapters.tools.load_mcp_tools imported successfully")
             except ImportError as e:
                 logger.error(f"❌ Failed to import load_mcp_tools: {e}")
                 logger.error("Available in langchain_mcp_adapters:")
@@ -111,14 +123,15 @@ class BrightDataMCPAgent:
                 raise
                 
             try:
-                from langgraph.prebuilts import chat_agent_executor
-                logger.info("✅ langgraph.prebuilts.chat_agent_executor imported successfully")
+                from langgraph.prebuilt import chat_agent_executor
+                logger.info("✅ langgraph.prebuilt.chat_agent_executor imported successfully")
             except ImportError as e:
                 logger.error(f"❌ Failed to import chat_agent_executor: {e}")
                 raise
             
             # Store imports for later use
-            self.stdio = stdio
+            self.stdio_client = stdio_client
+            self.StdioServerParameters = StdioServerParameters
             self.ClientSession = ClientSession
             self.load_mcp_tools = load_mcp_tools
             self.chat_agent_executor = chat_agent_executor
@@ -133,7 +146,7 @@ class BrightDataMCPAgent:
             import platform
             npx_cmd = "npx.cmd" if platform.system() == "Windows" else "npx"
             
-            self.server_params = stdio.StdioServerParameters(
+            self.server_params = StdioServerParameters(
                 command=npx_cmd,
                 env={
                     "API_TOKEN": os.getenv("BRIGHTDATA_API_TOKEN"),
@@ -158,13 +171,16 @@ class BrightDataMCPAgent:
             raise Exception("BrightData MCP agent nem elérhető")
             
         try:
-            async with self.stdio.stdio_client(self.server_params) as (read, write):
+            async with self.stdio_client(self.server_params) as (read, write):
                 async with self.ClientSession(read, write) as session:
                     await session.initialize()
                     
                     # MCP tools betöltése
                     tools = await self.load_mcp_tools(session)
-                    logger.info(f"BrightData MCP tools betöltve: {len(tools)} tool elérhető")
+                    logger.info(
+                        "BrightData MCP tools betöltve: %d tool elérhető",
+                        len(tools)
+                    )
                     
                     # Agent executor létrehozása
                     agent = self.chat_agent_executor.create_tool_calling_executor(
@@ -175,7 +191,9 @@ class BrightDataMCPAgent:
                     return agent, session
                     
         except Exception as e:
-            logger.error(f"MCP Agent executor létrehozása sikertelen: {e}")
+            logger.error(
+                "MCP Agent executor létrehozása sikertelen: %s", e
+            )
             raise
     
     async def scrape_rockwool_with_ai(self, target_urls: List[str], 

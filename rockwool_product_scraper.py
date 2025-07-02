@@ -6,7 +6,8 @@ This script runs the RockWool product datasheets scraper using the BrightData MC
 It targets the termekadatlapok (product datasheets) page to extract individual product PDFs.
 """
 
-# Load environment variables first, before any other imports
+# CRITICAL: Load environment variables FIRST, before ANY other imports
+# that might create agent instances
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -15,22 +16,24 @@ import logging
 import sys
 from pathlib import Path
 
-# Add the backend to the Python path
-backend_path = Path(__file__).parent / "src" / "backend"
-sys.path.insert(0, str(backend_path))
-
-try:
-    from app.agents.brightdata_agent import BrightDataMCPAgent
-except ImportError:
-    logger.error("Failed to import BrightDataMCPAgent. Check backend path.")
-    sys.exit(1)
-
-# Configure logging
+# Configure logging early
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
+
+# Add the backend to the Python path
+backend_path = Path(__file__).parent / "src" / "backend"
+sys.path.insert(0, str(backend_path))
+
+# Now import the agent - environment should already be loaded
+try:
+    from app.agents.brightdata_agent import BrightDataMCPAgent
+except ImportError as e:
+    logger.error("Failed to import BrightDataMCPAgent. Check backend path.")
+    logger.error(f"Import error: {e}")
+    sys.exit(1)
 
 async def main():
     """Main function to run the RockWool product scraper."""
