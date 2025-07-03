@@ -73,34 +73,40 @@ class RockwoolProductScraper:
 
     async def fetch_page_content(self) -> str:
         """
-        Fetches page content, preferably using BrightData,
-        falling back to httpx.
+        Fetches live page content from the Rockwool website.
+        NO FALLBACK - always uses fresh, live data.
         """
-        logger.info("Attempting to fetch page content...")
-        # Note: In a real implementation, you'd integrate BrightData here.
-        # For this example, we'll use a simple httpx request as a placeholder.
+        logger.info("🌐 Fetching LIVE page content from Rockwool website...")
+        
         try:
             async with httpx.AsyncClient(
                 timeout=30.0, follow_redirects=True
             ) as client:
                 response = await client.get(DATASHEET_URL)
                 response.raise_for_status()
-                logger.info("Successfully fetched live page content.")
-                # Save for debugging
-                with open(DEBUG_FILE_PATH, 'w', encoding='utf-8') as f:
-                    f.write(response.text)
+                logger.info("✅ Successfully fetched LIVE page content!")
+                
+                # Optional: Save current content for debugging purposes only
+                # (but never use it as fallback)
+                try:
+                    with open(DEBUG_FILE_PATH, 'w', encoding='utf-8') as f:
+                        f.write(response.text)
+                    logger.info(f"📄 Debug copy saved to: {DEBUG_FILE_PATH}")
+                except Exception as save_error:
+                    logger.warning(
+                        f"⚠️  Could not save debug copy: {save_error}"
+                    )
+                
                 return response.text
+                
         except Exception as e:
-            logger.warning(
-                f"Live fetch failed: {e}. "
-                f"Falling back to local debug file."
+            logger.error(f"❌ LIVE fetch failed: {e}")
+            logger.error(
+                "🚫 NO FALLBACK AVAILABLE - Cannot proceed without live data"
             )
-            if DEBUG_FILE_PATH.exists():
-                with open(DEBUG_FILE_PATH, 'r', encoding='utf-8') as f:
-                    return f.read()
-            else:
-                logger.error("No local debug file found. Cannot proceed.")
-                return ""
+            raise Exception(
+                f"Failed to fetch live data from {DATASHEET_URL}: {e}"
+            )
 
     def parse_products_from_html(self, html_content: str):
         """

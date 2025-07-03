@@ -24,8 +24,7 @@ import html
 from pathlib import Path
 from datetime import datetime
 from urllib.parse import urljoin
-from bs4 import BeautifulSoup
-import os
+
 
 # --- Configuration ---
 logging.basicConfig(
@@ -71,59 +70,7 @@ class RockwoolBrochureScraper:
         self.downloaded_files = set()  # Track downloaded filenames
         self.duplicate_count = 0
 
-    def _refresh_debug_file(self, debug_file_path: Path) -> bool:
-        """
-        Attempts to refresh the debug file with fresh content.
-        Falls back to existing file if refresh fails.
-        Returns True if using fresh content, False if using existing.
-        """
-        if debug_file_path.exists():
-            file_age_hours = (
-                datetime.now().timestamp() - debug_file_path.stat().st_mtime
-            ) / 3600
-            logger.info(f"📅 Existing debug file age: {file_age_hours:.1f} hours")
-        else:
-            logger.info("📅 No existing debug file found")
-            file_age_hours = float('inf')
-        
-        try:
-            # Attempt to fetch fresh content
-            logger.info(
-                "🔄 Attempting to refresh debug file with fresh content..."
-            )
-            import requests
-            
-            response = requests.get(TARGET_URL, timeout=30)
-            response.raise_for_status()
-            
-            # Save fresh content with timestamp
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            backup_file = f"debug_pricelists_{timestamp}.html"
-            
-            with open(backup_file, 'w', encoding='utf-8') as f:
-                f.write(response.text)
-            
-            # Update main debug file
-            with open(debug_file_path, 'w', encoding='utf-8') as f:
-                f.write(response.text)
-            
-            logger.info("✅ Fresh debug file saved (age: 0.0 hours)")
-            logger.info(f"📄 Backup saved as: {backup_file}")
-            return True
-            
-        except Exception as e:
-            logger.warning(f"⚠️  Failed to refresh debug file: {e}")
-            if debug_file_path.exists():
-                logger.info(
-                    f"📄 Using existing debug file "
-                    f"(age: {file_age_hours:.1f} hours)"
-                )
-                return False
-            else:
-                logger.error("❌ No debug file available for scraping")
-                raise FileNotFoundError(
-                    f"No debug file available: {debug_file_path}"
-                )
+
 
     def _generate_unique_filename(self, base_filename: str, pdf_url: str) -> str:
         """
@@ -184,26 +131,52 @@ class RockwoolBrochureScraper:
             logger.error(f"❌ Download failed for '{doc_name}': {e}")
             return {'status': 'failed', 'error': str(e)}
 
-    async def run(self):
-        """Executes the entire scraping and downloading process."""
-        logger.info("--- Starting Rockwool Brochure & Pricelist Scraper ---")
-
-        # Step 1: Try to get fresh HTML content first
-        self._refresh_debug_file(DEBUG_FILE_PATH)
+    async def fetch_live_content(self) -> str:
+        """
+        Fetches LIVE content from Rockwool brochures page.
+        NO FALLBACK - always uses fresh, live data.
+        """
+        logger.info("🌐 Fetching LIVE brochure content from Rockwool website...")
         
-        # Step 2: Use the debug file (fresh or existing)
-        if DEBUG_FILE_PATH.exists():
-            file_age = datetime.now().timestamp() - DEBUG_FILE_PATH.stat().st_mtime
-            logger.info(f"🔍 Using debug file: {DEBUG_FILE_PATH} (age: {file_age/3600:.1f} hours)")
-            
-            with open(DEBUG_FILE_PATH, 'r', encoding='utf-8') as f:
-                html_content = f.read()
-            
-            # Parse and store documents from the HTML
-            self._parse_documents_from_html(html_content)
-        else:
-            logger.error(f"❌ No debug file available and live scraping failed.")
-            return
+        try:
+            async with httpx.AsyncClient(timeout=30.0, follow_redirects=True) as client:
+                response = await client.get(TARGET_URL)
+                response.raise_for_status()
+                logger.info("✅ Successfully fetched LIVE brochure content!")
+                
+                # Save current content for debugging purposes only
+                # (but never use it as fallback)
+                try:
+                    with open(DEBUG_FILE_PATH, 'w', encoding='utf-8') as f:
+                        f.write(response.text)
+                    logger.info(f"📄 Debug copy saved to: {DEBUG_FILE_PATH}")
+                    
+                    # Create timestamped backup for reference
+                    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                    backup_file = f"debug_pricelists_{timestamp}.html"
+                    with open(backup_file, 'w', encoding='utf-8') as f:
+                        f.write(response.text)
+                    logger.info(f"📄 Timestamped backup: {backup_file}")
+                    
+                except Exception as save_error:
+                    logger.warning(f"⚠️  Could not save debug copy: {save_error}")
+                
+                return response.text
+                
+        except Exception as e:
+            logger.error(f"❌ LIVE fetch failed: {e}")
+            logger.error("🚫 NO FALLBACK AVAILABLE - Cannot proceed without live data")
+            raise Exception(f"Failed to fetch live data from {TARGET_URL}: {e}")
+
+    async def run(self):
+        """Executes the entire scraping and downloading process with LIVE data."""
+        logger.info("--- Starting Rockwool Brochure & Pricelist Scraper (LIVE MODE) ---")
+
+        # Fetch LIVE HTML content
+        html_content = await self.fetch_live_content()
+        
+        # Parse and store documents from the HTML
+        self._parse_documents_from_html(html_content)
 
         # Download all found PDFs
         await self._download_all_pdfs()
