@@ -259,7 +259,68 @@ class RockwoolProductScraper:
         self.parse_products_from_html(html_content)
         await self.download_all_pdfs()
         self._log_summary()
+        
+        # Save state after successful scraping
+        await self.save_scraping_state()
+        
         logger.info("--- Rockwool Product Scraper Finished ---")
+
+    async def save_scraping_state(self):
+        """Save current scraping state using RockwoolStateManager"""
+        try:
+            from .rockwool_state_manager import save_current_rockwool_state
+            
+            # Prepare products data for state manager
+            products_data = []
+            for doc in self.documents:
+                # Find corresponding file info from downloads
+                file_info = None
+                for downloaded_file in self.downloaded_files:
+                    if doc['name'] in downloaded_file:
+                        file_info = downloaded_file
+                        break
+                
+                product_data = {
+                    'name': doc['name'],
+                    'category': doc.get('category', 'Termékadatlapok'),
+                    'pdf_url': doc['pdf_url'],
+                    'file_path': file_info,
+                    'file_size_bytes': None,  # Could be enhanced to get actual size
+                    'is_duplicate': False  # Will be determined by state manager
+                }
+                products_data.append(product_data)
+            
+            # Add statistics
+            statistics = {
+                'total_products': len(self.documents),
+                'successful_downloads': self.successful_downloads,
+                'failed_downloads': self.failed_downloads,
+                'duplicates_found': self.duplicate_count,
+                'scraper_type': 'product_datasheets'
+            }
+            
+            # Add config
+            config = {
+                'scraper_type': 'live_data',
+                'data_source': 'rockwool.com/termekadatlapok',
+                'language': 'hu',
+                'fallback_used': False,
+                'datasheet_url': DATASHEET_URL
+            }
+            
+            # Save state in all formats
+            saved_files = await save_current_rockwool_state(
+                products_data, 
+                statistics=statistics, 
+                config=config
+            )
+            
+            logger.info("💾 Scraping állapot elmentve:")
+            for format_type, filepath in saved_files.items():
+                logger.info(f"   {format_type.upper()}: {filepath}")
+                
+        except Exception as e:
+            logger.warning(f"⚠️  Állapot mentés sikertelen: {e}")
 
 
 async def main():

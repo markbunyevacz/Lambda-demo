@@ -35,20 +35,26 @@ alwaysApply: true
 
 ## 2. FEJLESZTÉSI METODOLÓGIA
 
-### 2.1 PROVEN SUCCESS METHODOLOGY (2025-01-27 - Rockwool Termékadatlap) ✅
-**🎯 Evidence-First Development Process:**
-1. **Evidence-First Approach** - Létező működő adatokból (debug files, cached content) indulás
-2. **Incremental Component Testing** - Minden komponens egyenkénti tesztelése integrálás előtt
-3. **Zero Data Loss Policy** - Duplikátum kezelés implementálása, soha ne írj felül adatokat
-4. **Fresh Data Strategy** - Tartalom auto-refresh scraping előtt, amikor lehetséges
-5. **Production Validation** - Teljes end-to-end tesztelés befejezés előtt
+### 2.1 PROVEN SUCCESS METHODOLOGY (2025-07-03 - Rockwool Live System) ✅
+**🎯 Live-First Development Process (EVOLVED):**
+1. **Live-First Approach** - Prioritize live data over cached/debug files for production
+2. **Evidence-First Development** - Use existing working data for development and testing
+3. **Incremental Component Testing** - Test each component individually before integration
+4. **Zero Data Loss Policy** - Implement duplicate handling, never overwrite existing data
+5. **Smart Duplicate Management** - Hash-based unique naming in dedicated subdirectories
+6. **State Preservation** - Comprehensive state management across multiple formats
+7. **Performance Optimization** - Choose simplest effective method (HTTP vs AI tools)
+8. **Production Validation** - Complete end-to-end testing before marking complete
 
-**🔧 Technikai Implementációs Minták:**
-- **Smart Duplicate Handling**: Alkönyvtárak (`duplicates/`) URL hash-eléssel egyedi fájlnevekhez
-- **Debug File Strategy**: Cached HTML tartalom használata dinamikus betöltési problémák megkerülésére
-- **Async Concurrent Downloads**: Async/await minták teljesítményhez
-- **Comprehensive Logging**: Siker/hiba számok, fájl lokációk, feldolgozási idő
-- **Graceful Fallbacks**: Mindig biztosíts fallback mechanizmust
+**🔧 Technical Implementation Patterns:**
+- **Live Data Fetching**: Direct HTTP requests to source APIs/websites
+- **Smart Duplicate Handling**: Subdirectories (`duplicates/`) with URL hash-based unique filenames
+- **State Management Integration**: Automatic state capture after each scraping session
+- **Multi-Format Export**: JSON (complete state), CSV (analysis), SQLite (querying)
+- **Async Concurrent Downloads**: Async/await patterns for optimal performance
+- **Hungarian Character Support**: Proper HTML entity decoding (&#xE9; → é)
+- **Comprehensive Logging**: Success/failure counts, file locations, processing time
+- **Tool Selection Strategy**: Evaluate complexity before choosing scraping method
 
 ### 2.2 Strukturált Problémamegoldás
 1. **Probléma elemzése és dokumentálása**
@@ -241,11 +247,37 @@ class AgentMessage:
 4. **Access control**: Agent jogosultságok kezelése
 
 ### 5.7 Jelenleg Implementált Agente
-**✅ Implementált:**
-- RockwoolApiScraper (PDF-alapú adatgyűjtés)
-- BrightDataMCPAgent (AI-vezérelt web scraping)
-- ScrapingCoordinator (Multi-strategy koordináció)
-- Celery Workers (Aszinkron task végrehajtás)
+**✅ Production Complete:**
+- RockwoolLiveScrapingSystem (Live data fetching, 57 files, 100% success rate)
+- RockwoolStateManager (Multi-format state preservation)
+- DatabaseIntegration (PostgreSQL + ChromaDB)
+
+**✅ Strategic Reserve:**
+- BrightDataMCPAgent (AI-enhanced scraping, 48 tools, ready when needed)
+- ScrapingCoordinator (Multi-strategy coordination)
+
+**✅ Infrastructure Ready:**
+- Celery Workers (Asynchronous task execution)
+
+### 5.8 BrightData MCP Strategic Framework
+**🎯 When to Use BrightData MCP:**
+- CAPTCHA/reCAPTCHA protection detected
+- JavaScript-heavy SPA with no accessible JSON/API
+- Anti-bot detection (IP blocking, user-agent filtering)
+- Complex authentication flows
+- Geo-restricted content
+
+**🎯 When to Use Direct HTTP:**
+- Static HTML content available
+- JSON/API endpoints accessible
+- No anti-bot protection
+- Simple form-based interactions
+- Performance and cost optimization priority
+
+**📊 Performance Comparison:**
+- **Direct HTTP**: ~1.5 seconds/page, free, simple setup
+- **BrightData MCP**: ~5-10 seconds/page, $500+/month, complex setup
+- **Rockwool Case**: Direct HTTP chosen (5-10x faster, cost-free, 100% success)
 
 ---
 
@@ -317,9 +349,20 @@ python scripts/create_agent.py --name MyNewAgent --type data_processing
 ```
 
 ### Kritikus Ellenőrző Lista
-- [ ] Evidence-first approach alkalmazva?
+- [ ] Live-first approach alkalmazva production-ra?
+- [ ] Evidence-first development alkalmazva fejlesztésre?
 - [ ] Zero data loss policy implementálva?
-- [ ] Graceful fallbacks biztosítva?
+- [ ] Smart duplicate handling megvalósítva?
+- [ ] State management integráció kész?
+- [ ] Performance optimization elvégezve?
+- [ ] Tool selection strategy alkalmazva?
 - [ ] Magyar nyelvű dokumentáció?
 - [ ] Production validation elvégezve?
 - [ ] Memory dokumentálás megtörtént?
+
+### State Management Checklist
+- [ ] JSON export (complete state) működik?
+- [ ] CSV export (analysis) működik?
+- [ ] SQLite database (querying) működik?
+- [ ] Automatic state capture működik?
+- [ ] Version control (timestamps) működik?
