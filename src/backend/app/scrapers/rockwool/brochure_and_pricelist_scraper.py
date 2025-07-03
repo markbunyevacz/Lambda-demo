@@ -20,6 +20,7 @@ import json
 import httpx
 import re
 import hashlib
+import html
 from pathlib import Path
 from datetime import datetime
 from urllib.parse import urljoin
@@ -34,8 +35,8 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # PERMANENT FIX: Use absolute path from project root
-PROJECT_ROOT = Path(__file__).resolve().parents[3]  # Go up to Lambda/ root
-PDF_STORAGE_DIR = PROJECT_ROOT / "src" / "downloads" / "rockwool_datasheets"
+PROJECT_ROOT = Path(__file__).resolve().parents[5]  # Go up to Lambda/ root
+PDF_STORAGE_DIR = PROJECT_ROOT / "src" / "backend" / "src" / "downloads" / "rockwool_datasheets"
 DUPLICATES_DIR = PDF_STORAGE_DIR / "duplicates"
 DEBUG_FILE_PATH = PROJECT_ROOT / "debug_pricelists_content.html"
 
@@ -45,6 +46,19 @@ DUPLICATES_DIR.mkdir(parents=True, exist_ok=True)
 
 BASE_URL = "https://www.rockwool.com"
 TARGET_URL = "https://www.rockwool.com/hu/muszaki-informaciok/arlistak-es-prospektusok/"
+
+def clean_filename(text: str) -> str:
+    """
+    Cleans a filename by decoding HTML entities and removing invalid characters.
+    """
+    # Decode HTML entities (&#xE9; -> é, etc.)
+    decoded = html.unescape(text)
+    # Remove or replace invalid filename characters
+    # Keep Hungarian characters and basic punctuation
+    cleaned = re.sub(r'[<>:"/\\|?*]', '', decoded)
+    # Replace multiple spaces with single space and trim
+    cleaned = re.sub(r'\s+', ' ', cleaned).strip()
+    return cleaned[:60]  # Limit length
 
 class RockwoolBrochureScraper:
     """
@@ -138,7 +152,7 @@ class RockwoolBrochureScraper:
             if 'pdf' not in content_type.lower():
                 raise ValueError(f"Not a PDF file. Content-Type: {content_type}")
 
-            safe_name = re.sub(r'[^\w\s-]', '', doc_name)[:50].strip()
+            safe_name = clean_filename(doc_name)
             base_filename = f"{safe_name}.pdf"
             
             # Smart duplicate handling

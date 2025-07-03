@@ -2,7 +2,7 @@ import fileinput
 from pathlib import Path
 
 # The problematic file
-file_path = Path("src/backend/app/scrapers/rockwool_final/datasheet_scraper.py")
+file_path = Path("src/backend/app/scrapers/rockwool/datasheet_scraper.py")
 
 # The text to find and replace
 old_text = "Path(__file__).resolve().parents[5]"

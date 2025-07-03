@@ -1,0 +1,29 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description: Code quality enforcement rules
+globs: ["**/*.ts", "**/*.js"]
+alwaysApply: true
+---
+
+# Mandatory Code Standards
+- Always include TypeScript types for function parameters and return values
+- Use meaningful variable names (no single letters except for loops)
+- Include JSDoc comments for all public functions
+- Maximum function length: 50 lines
+- Use async/await instead of .then() chains
+
+# Error Handling Requirements
+- All async functions must include try-catch blocks
+- Log errors with appropriate context
+- Never use empty catch blocks
+
+# Testing Requirements
+- All new functions require unit tests
+- Test coverage must be > 80%
+- Integration tests for API endpoints
+
+@code-standards-template.ts

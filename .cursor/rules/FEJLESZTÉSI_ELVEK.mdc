@@ -1,0 +1,325 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Lambda.hu Építőanyag AI Projekt - Fejlesztési Szabályok
+
+## 📋 TARTALOMJEGYZÉK
+1. [Alapelvek és Filozófia](mdc:#1-alapelvek-és-filozófia)
+2. [Fejlesztési Metodológia](mdc:#2-fejlesztési-metodológia)
+3. [Technikai Infrastruktúra](mdc:#3-technikai-infrastruktúra)
+4. [Kódolási Standardok](mdc:#4-kódolási-standardok)
+5. [AI Agent Architektúra](mdc:#5-ai-agent-architektúra)
+6. [Hibakezelés és Tesztelés](mdc:#6-hibakezelés-és-tesztelés)
+7. [Projekt-specifikus Követelmények](mdc:#7-projekt-specifikus-követelmények)
+8. [Tanulás és Fejlődés](mdc:#8-tanulás-és-fejlődés)
+
+---
+
+## 1. ALAPELVEK ÉS FILOZÓFIA
+
+### 1.1 Általános Fejlesztési Elvek
+- **Teljes kontextus figyelembevétele**: Minden kódgenerálásnál és módosításnál használd a `@workspace` kontextust
+- **Production-ready kód**: Tiszta, karbantartható kód, NINCSENEK placeholder-ek vagy dummy adatok
+- **Technológiai stack betartása**: FastAPI, SQLAlchemy, Scrapy, React/Next.js, LangChain, Celery, PostgreSQL
+- **Magyar nyelvű dokumentáció**: Minden felhasználó felé irányuló szöveg, kommentár, log üzenet magyar nyelvű
+
+### 1.2 Fejlesztési Filozófia
+- **Evidence-First Approach**: Mindig létező, működő adatokból indulj ki
+- **Zero Data Loss Policy**: Soha ne írj felül meglévő adatokat
+- **Graceful Fallbacks**: Minden elsődleges módszerhez biztosíts fallback megoldást
+- **Minimális külső függőségek**: Kerüld a felesleges npm/pip csomagokat
+
+---
+
+## 2. FEJLESZTÉSI METODOLÓGIA
+
+### 2.1 PROVEN SUCCESS METHODOLOGY (2025-01-27 - Rockwool Termékadatlap) ✅
+**🎯 Evidence-First Development Process:**
+1. **Evidence-First Approach** - Létező működő adatokból (debug files, cached content) indulás
+2. **Incremental Component Testing** - Minden komponens egyenkénti tesztelése integrálás előtt
+3. **Zero Data Loss Policy** - Duplikátum kezelés implementálása, soha ne írj felül adatokat
+4. **Fresh Data Strategy** - Tartalom auto-refresh scraping előtt, amikor lehetséges
+5. **Production Validation** - Teljes end-to-end tesztelés befejezés előtt
+
+**🔧 Technikai Implementációs Minták:**
+- **Smart Duplicate Handling**: Alkönyvtárak (`duplicates/`) URL hash-eléssel egyedi fájlnevekhez
+- **Debug File Strategy**: Cached HTML tartalom használata dinamikus betöltési problémák megkerülésére
+- **Async Concurrent Downloads**: Async/await minták teljesítményhez
+- **Comprehensive Logging**: Siker/hiba számok, fájl lokációk, feldolgozási idő
+- **Graceful Fallbacks**: Mindig biztosíts fallback mechanizmust
+
+### 2.2 Strukturált Problémamegoldás
+1. **Probléma elemzése és dokumentálása**
+2. **Lehetséges megoldások brainstormelése**
+3. **Legegyszerűbb megoldás implementálása**
+4. **Tesztelés és validálás**
+5. **Tapasztalatok dokumentálása**
+6. **TILTOTT**: Random próbálgatás és többszöri ugyanolyan megközelítés
+
+### 2.3 Client-Specific Architecture Methodology
+**🏗️ Modular Scraper Design Pattern:**
+```
+clients/
+├── rockwool/
+│   ├── scrapers/termekadatlapok.py    # Client-specific implementation
+│   ├── config/endpoints.py           # URL and selector configuration
+│   └── utils/file_manager.py         # Client-specific utilities
+├── shared/
+│   ├── base/scraper.py               # Abstract base classes
+│   └── mcp/brightdata_client.py      # Shared MCP functionality
+└── factory/client_factory.py         # Factory pattern for scalability
+```
+
+**🔧 Implementációs Stratégia:**
+1. **Separation of Concerns**: Minden kliens izolált kódbázissal
+2. **Reusable Components**: Közös funkciókhoz shared utilities
+3. **Factory Pattern**: `ClientFactory.create_scraper("rockwool", "termekadatlapok")`
+4. **Clean API Interface**: `/api/clients/rockwool/scrape/termekadatlapok`
+5. **Comprehensive Testing**: Kliens-specifikus teszt suite-ok fixture-ökkel
+
+---
+
+## 3. TECHNIKAI INFRASTRUKTÚRA
+
+### 3.1 Docker és DevOps Elvek
+**🐳 Container Management:**
+- **Next.js Docker**: MINDIG `npx next dev` használat a CMD-ben "next: not found" hibák elkerülésére
+- **Container építés**: `--no-cache` flag használata problémák esetén
+- **Build stratégia**: Single-stage Dockerfile fejlesztéshez, multi-stage csak production-ra
+
+**🔧 Függőség Management:**
+- **TypeScript és React verziók**: Next.js 14.2.18 + React 18 kombinációt használj
+- **Verzió kompatibilitás**: Docker környezetben MINDIG ellenőrizd a függőség verziókat
+
+**🔍 Hibakeresési Prioritás:**
+1. Container logok (`docker-compose logs [service]`)
+2. Függőség verzió ellenőrzés
+3. Dockerfile optimalizálás
+4. Újabb megközelítés keresése
+
+### 3.2 Windows PowerShell Kompatibilitás (2025-06-29 - MEGOLDVA ✅)
+**🔧 NPX Kompatibilitási Fix:**
+- **Probléma**: `[WinError 2] A rendszer nem találja a megadott fájlt` NPX parancsok esetén
+- **Megoldás**: Platform detection és `npx.cmd` használata Windows rendszeren
+- **Implementáció**: 
+  ```python
+  import platform
+  npx_cmd = "npx.cmd" if platform.system() == "Windows" else "npx"
+  ```
+
+**🐍 Python 3.12 Upgrade (Jaclang Kompatibilitás):**
+- **Probléma**: `ImportError: cannot import name 'override' from 'typing'` Python 3.11-el
+- **Megoldás**: Python 3.12.10 upgrade és új virtual environment (`.venv312`)
+- **Parancsok**:
+  ```bash
+  py -3.12 -m venv .venv312
+  .venv312\Scripts\activate
+  pip install jaclang
+  ```
+
+**✅ Tesztelési Eredmények:**
+- NPX parancsok: ✅ Működik | Node.js v20.13.1: ✅ Elérhető
+- MCP Server startup: ✅ Sikeres | BrightData tools: ✅ 48/48 betöltve
+- Claude AI API calls: ✅ Működik | PowerShell subprocess: ✅ Hibák nélkül
+
+---
+
+## 4. KÓDOLÁSI STANDARDOK
+
+### 4.1 Python (Backend)
+- **Formázó**: `black`
+- **Típusellenőrzés**: Type Hinting kötelező minden függvénydefiníciónál és változónál
+- **API-k**: Minden API végponthoz Pydantic séma szükséges validációhoz
+- **Dokumentáció**: Minden funkciónál részletes docstring Python konvenciókkal
+- **Web Scraping**: Minden scraper `async/await` patternt kövesse, hibakezelés és `asyncio.sleep` kötelező
+
+### 4.2 TypeScript (Frontend)
+- **Mód**: Strict mode
+- **Típusok**: Explicit return type-ok kötelezőek
+- **Komponensek**: Minden komponensnek saját props interface-szel
+- **Stílus**: Tailwind CSS a megadott design tokenekkel
+- **Dokumentáció**: Minden React komponens tetején komment a funkcióról
+
+### 4.3 Fájl- és Elnevezési Konvenciók
+```
+Backend:
+- API route-ok: /backend/app/api/[resource].py
+- Adatbázis modellek: /backend/app/models/[model].py
+- Service-ek: /backend/app/services/[service_name]_service.py
+
+Frontend:
+- React komponensek: /frontend/src/components/[Feature]/[Component].tsx (PascalCase)
+- React hook-ok: /frontend/src/hooks/use[HookName].ts (camelCase)
+```
+
+---
+
+## 5. AI AGENT ARCHITEKTÚRA
+
+### 5.1 Általános Agent Tulajdonságok
+- **Autonómia**: Önálló döntéshozatal a feladatkörükben
+- **Reaktivitás**: Környezet változásaira való reagálás
+- **Proaktivitás**: Kezdeményező magatartás a célok elérése érdekében
+- **Társadalmi képesség**: Más agentekkel és rendszerekkel való együttműködés
+- **Perzisztencia**: Állapot megőrzése és folyamatos működés
+
+### 5.2 Agent Típusok és Implementációk
+
+#### 5.2.1 Adatgyűjtő Agent (Data Collection Agent)
+```python
+class DataCollectionAgent:
+    """
+    Funkcionalitás: Web scraping koordinálása, API adatgyűjtés,
+    adatvalidálás és tisztítás, hibakezelés és retry logika
+    """
+    def __init__(self, sources, validators, storage):
+        self.sources = sources
+        self.validators = validators
+        self.storage = storage
+```
+
+#### 5.2.2 BrightData MCP Agent (AI-Enhanced Scraper)
+```python
+class BrightDataMCPAgent:
+    """
+    Speciális AI-vezérelt scraping agent
+    Képességek: 48 BrightData tool, Claude AI integration,
+    Captcha megoldás, fejlett anti-detection, fallback logika
+    """
+    async def scrape_with_ai(self, urls, task_description):
+        # AI-vezérelt scraping implementáció
+        pass
+```
+
+#### 5.2.3 Scraping Koordinátor (Multi-Strategy)
+```python
+class ScrapingCoordinator:
+    """
+    Stratégiák:
+    - API_ONLY: Csak hagyományos API scraping
+    - MCP_ONLY: Csak BrightData MCP
+    - API_FALLBACK_MCP: API elsődleges, MCP fallback
+    - MCP_FALLBACK_API: MCP elsődleges, API fallback  
+    - PARALLEL: Párhuzamos végrehajtás
+    """
+    async def coordinate_scraping(self, strategy, targets):
+        # Koordinációs logika
+        pass
+```
+
+### 5.3 Agent Kommunikáció és Lifecycle
+**🔄 Agent States:**
+- INITIALIZING → IDLE → WORKING → ERROR/STOPPING → STOPPED
+
+**📡 Kommunikációs Protokoll:**
+```python
+class AgentMessage:
+    def __init__(self, sender, recipient, message_type, payload, timestamp):
+        # REQUEST, RESPONSE, NOTIFICATION típusok
+        pass
+```
+
+### 5.4 Agent Fejlesztési Szabályok
+1. **Moduláris felépítés**: Minden agent saját modulban
+2. **Dependency injection**: Konfigurálható függőségek
+3. **Error handling**: Graceful degradation
+4. **Logging**: Strukturált logok minden művelethez
+5. **Testing**: Unit és integration tesztek kötelezők
+
+### 5.5 Agent Deployment Elvek
+1. **Container-based**: Docker containerekben futó agente
+2. **Scalable**: Horizontal scaling támogatása
+3. **Configuration**: Environment alapú konfiguráció
+4. **Service discovery**: Dinamikus agent felderítés
+
+### 5.6 Agent Biztonsági Elvek
+1. **API key management**: Biztonságos kulcs tárolás
+2. **Rate limiting**: API hívások korlátozása
+3. **Input validation**: Minden input validálása
+4. **Access control**: Agent jogosultságok kezelése
+
+### 5.7 Jelenleg Implementált Agente
+**✅ Implementált:**
+- RockwoolApiScraper (PDF-alapú adatgyűjtés)
+- BrightDataMCPAgent (AI-vezérelt web scraping)
+- ScrapingCoordinator (Multi-strategy koordináció)
+- Celery Workers (Aszinkron task végrehajtás)
+
+---
+
+## 6. HIBAKEZELÉS ÉS TESZTELÉS
+
+### 6.1 Hibakezelési Protokoll
+1. **Probléma pontos elemzése és dokumentálása**
+2. **Lehetséges megoldások brainstormelése**
+3. **Legegyszerűbb megoldás implementálása**
+4. **Tesztelés és validálás**
+5. **Tapasztalatok dokumentálása a jövőre nézve**
+6. **TILTOTT**: Random próbálgatás és többszöri ugyanolyan megközelítés
+
+### 6.2 Tesztelési Stratégia
+- **Tesztelés minden lépésnél**: Ne várj a teljes implementáció végére
+- **Incremental Component Testing**: Minden komponens egyenkénti tesztelése
+- **Production Validation**: Teljes end-to-end tesztelés befejezés előtt
+- **Unit és Integration tesztek**: Kötelezőek minden agent implementációnál
+
+---
+
+## 7. PROJEKT-SPECIFIKUS KÖVETELMÉNYEK
+
+### 7.1 Nyelvi és Formátumkövetelmények
+- **Nyelv**: Minden felhasználó felé irányuló szöveg magyar nyelvű
+- **AI Válaszok**: "Építészeti szakértői" stílus a Rendszertervnek megfelelően
+- **Adatformátumok**:
+  - Árak: `HUF` pénznemben, `m2`, `db` stb. egységekkel
+  - Műszaki paraméterek: Normalizált JSONB struktúrában
+
+### 7.2 Success Metrics for Client Modules
+- **100% Data Preservation**: Nincs fájlvesztés feldolgozás során
+- **Smart Duplicate Handling**: Alkönyvtár szervezés egyedi névadással
+- **Fresh Data Capability**: Auto-refresh scraping előtt
+- **Production Validation**: End-to-end tesztelés valós adatokkal
+- **Clear Documentation**: API referencia és hibaelhárítási útmutatók
+
+---
+
+## 8. TANULÁS ÉS FEJLŐDÉS
+
+### 8.1 Memory Management
+- **Tapasztalatok rögzítése**: Minden jelentős problémamegoldás után memory létrehozása
+- **Ismétlődő hibák elkerülése**: Memory ellenőrzés minden hasonló feladat előtt
+- **Folyamatos fejlődés**: Rendszeres visszatekintés és módszertan finomítás
+- **🎯 SUCCESS PATTERN REPLICATION**: Proven Rockwool Termékadatlap metodológia használata
+
+### 8.2 Dokumentálás és Tudásmegosztás
+- **Dokumentálás közben**: Minden jelentős változtatásnál azonnal dokumentáció és kommentek
+- **Verzió kompatibilitás nyomon követése**: Docker környezetben függőség verziók ellenőrzése
+- **Tapasztalatok megosztása**: Sikeres minták dokumentálása és újrafelhasználása
+
+---
+
+## 📚 GYORS REFERENCIA
+
+### Legfontosabb Parancsok
+```bash
+# Python 3.12 környezet
+py -3.12 -m venv .venv312
+.venv312\Scripts\activate
+
+# Docker hibakeresés
+docker-compose logs [service]
+docker-compose build --no-cache
+
+# Agent létrehozás
+python scripts/create_agent.py --name MyNewAgent --type data_processing
+```
+
+### Kritikus Ellenőrző Lista
+- [ ] Evidence-first approach alkalmazva?
+- [ ] Zero data loss policy implementálva?
+- [ ] Graceful fallbacks biztosítva?
+- [ ] Magyar nyelvű dokumentáció?
+- [ ] Production validation elvégezve?
+- [ ] Memory dokumentálás megtörtént?

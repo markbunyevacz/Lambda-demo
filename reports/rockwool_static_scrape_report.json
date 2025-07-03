@@ -1,0 +1,775 @@
+{
+    "total_products": 45,
+    "products_found": 45,
+    "downloads_attempted": 45,
+    "downloads_successful": 45,
+    "downloads_failed": 0,
+    "errors": [],
+    "data": [
+        {
+            "category": "termékadatlapok*padlók és födémek",
+            "formats": "pdf",
+            "fileId": 584284,
+            "title": "Steprock ND termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fpadlok-es-foedemek%2Fsteprock-nd-termekadatlap.pdf%2FThumbnail%2F20201025025504?auto=format&w=48&s=698b26f48d3b77f2e86f0604f93f27d8",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584284,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/padlok-es-foedemek/steprock-nd-termekadatlap.pdf?f=20201025025504\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fpadlok-es-foedemek%2Fsteprock-nd-termekadatlap.pdf%2FThumbnail%2F20201025025504?auto=format&w=48&s=698b26f48d3b77f2e86f0604f93f27d8\",\"text\":null,\"title\":\"Steprock ND termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/padlok-es-foedemek/steprock-nd-termekadatlap.pdf?f=20201025025504",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/padlok-es-foedemek/steprock-nd-termekadatlap.pdf?f=20201025025504\" target=\"_blank\" class=\"js-track-file\">Steprock ND termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\steprock-nd-termekadatlap_20250703_6439643f.pdf"
+        },
+        {
+            "category": "termékadatlapok*lapostető és ipari csarnok",
+            "formats": "pdf",
+            "fileId": 584271,
+            "title": "Monrock Max E termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Fmonrock-max-e-termekadatlap.pdf%2FThumbnail%2F20250324103225?auto=format&w=48&s=40894b583e720dc5a05ee2e808783043",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584271,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/monrock-max-e-termekadatlap.pdf?f=20250324103225\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Fmonrock-max-e-termekadatlap.pdf%2FThumbnail%2F20250324103225?auto=format&w=48&s=40894b583e720dc5a05ee2e808783043\",\"text\":null,\"title\":\"Monrock Max E termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/monrock-max-e-termekadatlap.pdf?f=20250324103225",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/monrock-max-e-termekadatlap.pdf?f=20250324103225\" target=\"_blank\" class=\"js-track-file\">Monrock Max E termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\monrock-max-e-termekadatlap_20250703_55bbe5b3.pdf"
+        },
+        {
+            "category": "termékadatlapok*gépészet és tűzvédelem",
+            "formats": "pdf",
+            "fileId": 1333347,
+            "title": "MŰSZAKI ADATLAP",
+            "description": "KLIMAMAT 40",
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fgepeszet-es-tzvedelem%2Frw_klimamat_40_termekadatlap_2024.pdf%2FThumbnail%2F20240313091535?auto=format&w=48&s=2a3d4317e9f100fb4760dfaf3c338444",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":1333347,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/rw_klimamat_40_termekadatlap_2024.pdf?f=20240313091535\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fgepeszet-es-tzvedelem%2Frw_klimamat_40_termekadatlap_2024.pdf%2FThumbnail%2F20240313091535?auto=format&w=48&s=2a3d4317e9f100fb4760dfaf3c338444\",\"text\":\"KLIMAMAT 40\",\"title\":\"MŰSZAKI ADATLAP\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/rw_klimamat_40_termekadatlap_2024.pdf?f=20240313091535",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/rw_klimamat_40_termekadatlap_2024.pdf?f=20240313091535\" target=\"_blank\" class=\"js-track-file\">MŰSZAKI ADATLAP</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\rw_klimamat_40_termekadatlap_2024_20250703_16d7b8b6.pdf"
+        },
+        {
+            "category": "termékadatlapok*padlók és födémek",
+            "formats": "pdf",
+            "fileId": 584285,
+            "title": "Stroprock G termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fpadlok-es-foedemek%2Fstoprock-g-termekadatlap.pdf%2FThumbnail%2F20201025025505?auto=format&w=48&s=daa82e0a3f31e272da36a5f7e07e2e5a",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584285,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/padlok-es-foedemek/stoprock-g-termekadatlap.pdf?f=20201025025505\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fpadlok-es-foedemek%2Fstoprock-g-termekadatlap.pdf%2FThumbnail%2F20201025025505?auto=format&w=48&s=daa82e0a3f31e272da36a5f7e07e2e5a\",\"text\":null,\"title\":\"Stroprock G termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/padlok-es-foedemek/stoprock-g-termekadatlap.pdf?f=20201025025505",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/padlok-es-foedemek/stoprock-g-termekadatlap.pdf?f=20201025025505\" target=\"_blank\" class=\"js-track-file\">Stroprock G termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\stoprock-g-termekadatlap_20250703_9a95eb67.pdf"
+        },
+        {
+            "category": "termékadatlapok*lapostető és ipari csarnok",
+            "formats": "pdf",
+            "fileId": 584268,
+            "title": "Dachrock termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Fdachrock-termekadatlap.pdf%2FThumbnail%2F20250324103224?auto=format&w=48&s=4a25c02f345827d26e2a44725991a09d",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584268,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/dachrock-termekadatlap.pdf?f=20250324103224\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Fdachrock-termekadatlap.pdf%2FThumbnail%2F20250324103224?auto=format&w=48&s=4a25c02f345827d26e2a44725991a09d\",\"text\":null,\"title\":\"Dachrock termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/dachrock-termekadatlap.pdf?f=20250324103224",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/dachrock-termekadatlap.pdf?f=20250324103224\" target=\"_blank\" class=\"js-track-file\">Dachrock termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\dachrock-termekadatlap_20250703_83f89062.pdf"
+        },
+        {
+            "category": "termékadatlapok*gépészet és tűzvédelem",
+            "formats": "pdf",
+            "fileId": 1333348,
+            "title": "MŰSZAKI ADATLAP",
+            "description": "KLIMAMAT",
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fgepeszet-es-tzvedelem%2Frw_klimamat_termekadatlap_2024.pdf%2FThumbnail%2F20240313091518?auto=format&w=48&s=cb1d322bbd77e8ac1558daad9c55d9fd",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":1333348,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/rw_klimamat_termekadatlap_2024.pdf?f=20240313091518\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fgepeszet-es-tzvedelem%2Frw_klimamat_termekadatlap_2024.pdf%2FThumbnail%2F20240313091518?auto=format&w=48&s=cb1d322bbd77e8ac1558daad9c55d9fd\",\"text\":\"KLIMAMAT\",\"title\":\"MŰSZAKI ADATLAP\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/rw_klimamat_termekadatlap_2024.pdf?f=20240313091518",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/rw_klimamat_termekadatlap_2024.pdf?f=20240313091518\" target=\"_blank\" class=\"js-track-file\">MŰSZAKI ADATLAP</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\rw_klimamat_termekadatlap_2024_20250703_983bfa8b.pdf"
+        },
+        {
+            "category": "termékadatlapok*gépészet és tűzvédelem",
+            "formats": "pdf",
+            "fileId": 584252,
+            "title": "Conlit Steel Protect Board ALU termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fgepeszet-es-tzvedelem%2Fconlit-steel-protect-board-alu-termekadatlap.pdf%2FThumbnail%2F20201025025438?auto=format&w=48&s=77cf313e1a907bdad9d89416e0b0f638",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584252,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/conlit-steel-protect-board-alu-termekadatlap.pdf?f=20201025025438\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fgepeszet-es-tzvedelem%2Fconlit-steel-protect-board-alu-termekadatlap.pdf%2FThumbnail%2F20201025025438?auto=format&w=48&s=77cf313e1a907bdad9d89416e0b0f638\",\"text\":null,\"title\":\"Conlit Steel Protect Board ALU termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/conlit-steel-protect-board-alu-termekadatlap.pdf?f=20201025025438",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/conlit-steel-protect-board-alu-termekadatlap.pdf?f=20201025025438\" target=\"_blank\" class=\"js-track-file\">Conlit Steel Protect Board ALU termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\conlit-steel-protect-board-alu-termekadatlap_20250703_59c72740.pdf"
+        },
+        {
+            "category": "termékadatlapok*lapostető és ipari csarnok",
+            "formats": "pdf",
+            "fileId": 584273,
+            "title": "Roofrock 40 termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Froofrock-40-termekadatlap.pdf%2FThumbnail%2F20250324103225?auto=format&w=48&s=a87c60d1bb792207a7a8ed2debe8e9fa",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584273,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/roofrock-40-termekadatlap.pdf?f=20250324103225\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Froofrock-40-termekadatlap.pdf%2FThumbnail%2F20250324103225?auto=format&w=48&s=a87c60d1bb792207a7a8ed2debe8e9fa\",\"text\":null,\"title\":\"Roofrock 40 termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/roofrock-40-termekadatlap.pdf?f=20250324103225",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/roofrock-40-termekadatlap.pdf?f=20250324103225\" target=\"_blank\" class=\"js-track-file\">Roofrock 40 termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\roofrock-40-termekadatlap_20250703_4d1cf777.pdf"
+        },
+        {
+            "category": "termékadatlapok*lapostető és ipari csarnok",
+            "formats": "pdf",
+            "fileId": 584273,
+            "title": "Roofrock 40 termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Froofrock-40-termekadatlap.pdf%2FThumbnail%2F20250324103225?auto=format&w=48&s=a87c60d1bb792207a7a8ed2debe8e9fa",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584273,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/roofrock-40-termekadatlap.pdf?f=20250324103225\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Froofrock-40-termekadatlap.pdf%2FThumbnail%2F20250324103225?auto=format&w=48&s=a87c60d1bb792207a7a8ed2debe8e9fa\",\"text\":null,\"title\":\"Roofrock 40 termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/roofrock-40-termekadatlap.pdf?f=20250324103225",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/roofrock-40-termekadatlap.pdf?f=20250324103225\" target=\"_blank\" class=\"js-track-file\">Roofrock 40 termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\roofrock-40-termekadatlap_20250703_4d1cf777.pdf"
+        },
+        {
+            "category": "termékadatlapok*lapostető és ipari csarnok",
+            "formats": "pdf",
+            "fileId": 584269,
+            "title": "Durock termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Fdurock-termekadatlap.pdf%2FThumbnail%2F20250324103225?auto=format&w=48&s=40c8d5b0031178a2126f07e798b29a11",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584269,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/durock-termekadatlap.pdf?f=20250324103225\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Fdurock-termekadatlap.pdf%2FThumbnail%2F20250324103225?auto=format&w=48&s=40c8d5b0031178a2126f07e798b29a11\",\"text\":null,\"title\":\"Durock termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/durock-termekadatlap.pdf?f=20250324103225",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/durock-termekadatlap.pdf?f=20250324103225\" target=\"_blank\" class=\"js-track-file\">Durock termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\durock-termekadatlap_20250703_83fbe882.pdf"
+        },
+        {
+            "category": "termékadatlapok*lapostető és ipari csarnok",
+            "formats": "pdf",
+            "fileId": 584275,
+            "title": "Roofrock 60 termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Froofrock-60-termekadatlap.pdf%2FThumbnail%2F20250324103226?auto=format&w=48&s=fb3bb10bf5f7572e23dc5397a8eb4dd7",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584275,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/roofrock-60-termekadatlap.pdf?f=20250324103226\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Froofrock-60-termekadatlap.pdf%2FThumbnail%2F20250324103226?auto=format&w=48&s=fb3bb10bf5f7572e23dc5397a8eb4dd7\",\"text\":null,\"title\":\"Roofrock 60 termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/roofrock-60-termekadatlap.pdf?f=20250324103226",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/roofrock-60-termekadatlap.pdf?f=20250324103226\" target=\"_blank\" class=\"js-track-file\">Roofrock 60 termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\roofrock-60-termekadatlap_20250703_4a3b5d97.pdf"
+        },
+        {
+            "category": "termékadatlapok*lapostető és ipari csarnok",
+            "formats": "pdf",
+            "fileId": 584276,
+            "title": "Steelrock 035 Plus termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Fsteelrock-035-plus-termekadatlap.pdf%2FThumbnail%2F20201025025458?auto=format&w=48&s=6fc8523641e73596a9ecf7fcb9c70b4f",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584276,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/steelrock-035-plus-termekadatlap.pdf?f=20201025025458\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Fsteelrock-035-plus-termekadatlap.pdf%2FThumbnail%2F20201025025458?auto=format&w=48&s=6fc8523641e73596a9ecf7fcb9c70b4f\",\"text\":null,\"title\":\"Steelrock 035 Plus termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/steelrock-035-plus-termekadatlap.pdf?f=20201025025458",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/steelrock-035-plus-termekadatlap.pdf?f=20201025025458\" target=\"_blank\" class=\"js-track-file\">Steelrock 035 Plus termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\steelrock-035-plus-termekadatlap_20250703_671b5a91.pdf"
+        },
+        {
+            "category": "termékadatlapok*gépészet és tűzvédelem",
+            "formats": "pdf",
+            "fileId": 584251,
+            "title": "Conlit Ductrock - Conlit Plus termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fgepeszet-es-tzvedelem%2Fconlit-ductrock---conlit-plus-termekadatlap.pdf%2FThumbnail%2F20201025025437?auto=format&w=48&s=c0d16b1882ee91fe47c5531b98a13a2d",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584251,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/conlit-ductrock---conlit-plus-termekadatlap.pdf?f=20201025025437\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fgepeszet-es-tzvedelem%2Fconlit-ductrock---conlit-plus-termekadatlap.pdf%2FThumbnail%2F20201025025437?auto=format&w=48&s=c0d16b1882ee91fe47c5531b98a13a2d\",\"text\":null,\"title\":\"Conlit Ductrock - Conlit Plus termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/conlit-ductrock---conlit-plus-termekadatlap.pdf?f=20201025025437",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/conlit-ductrock---conlit-plus-termekadatlap.pdf?f=20201025025437\" target=\"_blank\" class=\"js-track-file\">Conlit Ductrock - Conlit Plus termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\conlit-ductrock---conlit-plus-termekadatlap_20250703_6359c6b5.pdf"
+        },
+        {
+            "category": "termékadatlapok*lapostető és ipari csarnok",
+            "formats": "pdf",
+            "fileId": 584271,
+            "title": "Monrock Max E termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Fmonrock-max-e-termekadatlap.pdf%2FThumbnail%2F20250324103225?auto=format&w=48&s=40894b583e720dc5a05ee2e808783043",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584271,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/monrock-max-e-termekadatlap.pdf?f=20250324103225\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Fmonrock-max-e-termekadatlap.pdf%2FThumbnail%2F20250324103225?auto=format&w=48&s=40894b583e720dc5a05ee2e808783043\",\"text\":null,\"title\":\"Monrock Max E termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/monrock-max-e-termekadatlap.pdf?f=20250324103225",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/monrock-max-e-termekadatlap.pdf?f=20250324103225\" target=\"_blank\" class=\"js-track-file\">Monrock Max E termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\monrock-max-e-termekadatlap_20250703_55bbe5b3.pdf"
+        },
+        {
+            "category": "termékadatlapok*lapostető és ipari csarnok",
+            "formats": "pdf",
+            "fileId": 584269,
+            "title": "Durock termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Fdurock-termekadatlap.pdf%2FThumbnail%2F20250324103225?auto=format&w=48&s=40c8d5b0031178a2126f07e798b29a11",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584269,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/durock-termekadatlap.pdf?f=20250324103225\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Fdurock-termekadatlap.pdf%2FThumbnail%2F20250324103225?auto=format&w=48&s=40c8d5b0031178a2126f07e798b29a11\",\"text\":null,\"title\":\"Durock termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/durock-termekadatlap.pdf?f=20250324103225",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/durock-termekadatlap.pdf?f=20250324103225\" target=\"_blank\" class=\"js-track-file\">Durock termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\durock-termekadatlap_20250703_83fbe882.pdf"
+        },
+        {
+            "category": "termékadatlapok*lapostető és ipari csarnok",
+            "formats": "pdf",
+            "fileId": 584274,
+            "title": "Roofrock 50 termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Froofrock-50-termekadatlap.pdf%2FThumbnail%2F20201025025456?auto=format&w=48&s=aead2fde1e113780d138d4640b9548f8",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584274,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/roofrock-50-termekadatlap.pdf?f=20201025025456\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Froofrock-50-termekadatlap.pdf%2FThumbnail%2F20201025025456?auto=format&w=48&s=aead2fde1e113780d138d4640b9548f8\",\"text\":null,\"title\":\"Roofrock 50 termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/roofrock-50-termekadatlap.pdf?f=20201025025456",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/roofrock-50-termekadatlap.pdf?f=20201025025456\" target=\"_blank\" class=\"js-track-file\">Roofrock 50 termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\roofrock-50-termekadatlap_20250703_13153e81.pdf"
+        },
+        {
+            "category": "termékadatlapok*gépészet és tűzvédelem",
+            "formats": "pdf",
+            "fileId": 584255,
+            "title": "Klimafix termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fgepeszet-es-tzvedelem%2Fklimafix-termekadatlap.pdf%2FThumbnail%2F20201025025440?auto=format&w=48&s=990f277771d0eb1d43b99bf424e6035a",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584255,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/klimafix-termekadatlap.pdf?f=20201025025440\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fgepeszet-es-tzvedelem%2Fklimafix-termekadatlap.pdf%2FThumbnail%2F20201025025440?auto=format&w=48&s=990f277771d0eb1d43b99bf424e6035a\",\"text\":null,\"title\":\"Klimafix termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/klimafix-termekadatlap.pdf?f=20201025025440",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/klimafix-termekadatlap.pdf?f=20201025025440\" target=\"_blank\" class=\"js-track-file\">Klimafix termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\klimafix-termekadatlap_20250703_5beb662e.pdf"
+        },
+        {
+            "category": "termékadatlapok*homlokzati hőszigetelés",
+            "formats": "pdf",
+            "fileId": 584265,
+            "title": "Frontrock S termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fhomlokzati-hszigeteles%2Ffrontrock-s-termekadatlap.pdf%2FThumbnail%2F20201025025448?auto=format&w=48&s=28cb46fc26d64a4944f3abebc5f12a30",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584265,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/homlokzati-hszigeteles/frontrock-s-termekadatlap.pdf?f=20201025025448\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fhomlokzati-hszigeteles%2Ffrontrock-s-termekadatlap.pdf%2FThumbnail%2F20201025025448?auto=format&w=48&s=28cb46fc26d64a4944f3abebc5f12a30\",\"text\":null,\"title\":\"Frontrock S termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/homlokzati-hszigeteles/frontrock-s-termekadatlap.pdf?f=20201025025448",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/homlokzati-hszigeteles/frontrock-s-termekadatlap.pdf?f=20201025025448\" target=\"_blank\" class=\"js-track-file\">Frontrock S termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\frontrock-s-termekadatlap_20250703_f808c52a.pdf"
+        },
+        {
+            "category": "termékadatlapok*padlók és födémek",
+            "formats": "pdf",
+            "fileId": 584283,
+            "title": "Steprock HD termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fpadlok-es-foedemek%2Fsteprock-hd-termekadatlap.pdf%2FThumbnail%2F20201025025503?auto=format&w=48&s=8736d40779ff1950c75933f1351bb4f4",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584283,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/padlok-es-foedemek/steprock-hd-termekadatlap.pdf?f=20201025025503\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fpadlok-es-foedemek%2Fsteprock-hd-termekadatlap.pdf%2FThumbnail%2F20201025025503?auto=format&w=48&s=8736d40779ff1950c75933f1351bb4f4\",\"text\":null,\"title\":\"Steprock HD termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/padlok-es-foedemek/steprock-hd-termekadatlap.pdf?f=20201025025503",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/padlok-es-foedemek/steprock-hd-termekadatlap.pdf?f=20201025025503\" target=\"_blank\" class=\"js-track-file\">Steprock HD termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\steprock-hd-termekadatlap_20250703_dfe75397.pdf"
+        },
+        {
+            "category": "termékadatlapok*lapostető és ipari csarnok",
+            "formats": "pdf",
+            "fileId": 584274,
+            "title": "Roofrock 50 termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Froofrock-50-termekadatlap.pdf%2FThumbnail%2F20201025025456?auto=format&w=48&s=aead2fde1e113780d138d4640b9548f8",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584274,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/roofrock-50-termekadatlap.pdf?f=20201025025456\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Froofrock-50-termekadatlap.pdf%2FThumbnail%2F20201025025456?auto=format&w=48&s=aead2fde1e113780d138d4640b9548f8\",\"text\":null,\"title\":\"Roofrock 50 termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/roofrock-50-termekadatlap.pdf?f=20201025025456",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/roofrock-50-termekadatlap.pdf?f=20201025025456\" target=\"_blank\" class=\"js-track-file\">Roofrock 50 termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\roofrock-50-termekadatlap_20250703_13153e81.pdf"
+        },
+        {
+            "category": "termékadatlapok*gépészet és tűzvédelem",
+            "formats": "pdf",
+            "fileId": 584256,
+            "title": "Klimarock termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fgepeszet-es-tzvedelem%2Fklimarock-termekadatlap.pdf%2FThumbnail%2F20201025025441?auto=format&w=48&s=09c09f196a234681b9eca35e56269e3f",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584256,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/klimarock-termekadatlap.pdf?f=20201025025441\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fgepeszet-es-tzvedelem%2Fklimarock-termekadatlap.pdf%2FThumbnail%2F20201025025441?auto=format&w=48&s=09c09f196a234681b9eca35e56269e3f\",\"text\":null,\"title\":\"Klimarock termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/klimarock-termekadatlap.pdf?f=20201025025441",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/klimarock-termekadatlap.pdf?f=20201025025441\" target=\"_blank\" class=\"js-track-file\">Klimarock termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\klimarock-termekadatlap_20250703_562af775.pdf"
+        },
+        {
+            "category": "termékadatlapok*lapostető és ipari csarnok",
+            "formats": "pdf",
+            "fileId": 584277,
+            "title": "Steelrock 040 Plus termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Fsteelrock-040-plus-termekadatlap.pdf%2FThumbnail%2F20201025025459?auto=format&w=48&s=2d0c3f1dfe2952c28496dacc5f70a1a9",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584277,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/steelrock-040-plus-termekadatlap.pdf?f=20201025025459\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Fsteelrock-040-plus-termekadatlap.pdf%2FThumbnail%2F20201025025459?auto=format&w=48&s=2d0c3f1dfe2952c28496dacc5f70a1a9\",\"text\":null,\"title\":\"Steelrock 040 Plus termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/steelrock-040-plus-termekadatlap.pdf?f=20201025025459",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/steelrock-040-plus-termekadatlap.pdf?f=20201025025459\" target=\"_blank\" class=\"js-track-file\">Steelrock 040 Plus termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\steelrock-040-plus-termekadatlap_20250703_284bf22f.pdf"
+        },
+        {
+            "category": "termékadatlapok*gépészet és tűzvédelem",
+            "formats": "pdf",
+            "fileId": 584260,
+            "title": "ROCKWOOL 800 termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fgepeszet-es-tzvedelem%2Frockwool-800-termekadatlap.pdf%2FThumbnail%2F20201025025444?auto=format&w=48&s=b17177c4246f70266232d325d680ddae",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584260,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/rockwool-800-termekadatlap.pdf?f=20201025025444\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fgepeszet-es-tzvedelem%2Frockwool-800-termekadatlap.pdf%2FThumbnail%2F20201025025444?auto=format&w=48&s=b17177c4246f70266232d325d680ddae\",\"text\":null,\"title\":\"ROCKWOOL 800 termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/rockwool-800-termekadatlap.pdf?f=20201025025444",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/rockwool-800-termekadatlap.pdf?f=20201025025444\" target=\"_blank\" class=\"js-track-file\">ROCKWOOL 800 termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\rockwool-800-termekadatlap_20250703_f73a9074.pdf"
+        },
+        {
+            "category": "termékadatlapok*homlokzati hőszigetelés",
+            "formats": "pdf",
+            "fileId": 584266,
+            "title": "FRONTROCK SUPER termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fhomlokzati-hszigeteles%2Ffrontrock-super-termekadatlap.pdf%2FThumbnail%2F20201025025449?auto=format&w=48&s=6d17a7bcfa956aa26ef0554c20013da9",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584266,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/homlokzati-hszigeteles/frontrock-super-termekadatlap.pdf?f=20201025025449\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fhomlokzati-hszigeteles%2Ffrontrock-super-termekadatlap.pdf%2FThumbnail%2F20201025025449?auto=format&w=48&s=6d17a7bcfa956aa26ef0554c20013da9\",\"text\":null,\"title\":\"FRONTROCK SUPER termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/homlokzati-hszigeteles/frontrock-super-termekadatlap.pdf?f=20201025025449",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/homlokzati-hszigeteles/frontrock-super-termekadatlap.pdf?f=20201025025449\" target=\"_blank\" class=\"js-track-file\">FRONTROCK SUPER termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\frontrock-super-termekadatlap_20250703_edc02a41.pdf"
+        },
+        {
+            "category": "termékadatlapok*magastető és tetőtér",
+            "formats": "pdf",
+            "fileId": 584279,
+            "title": "Ceilingrock termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fmagastet-es-tetter%2Fceilingrock-termekadatlap.pdf%2FThumbnail%2F20201025025500?auto=format&w=48&s=fd73f97b56b596ad1a15b100eddd6bec",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584279,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/magastet-es-tetter/ceilingrock-termekadatlap.pdf?f=20201025025500\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fmagastet-es-tetter%2Fceilingrock-termekadatlap.pdf%2FThumbnail%2F20201025025500?auto=format&w=48&s=fd73f97b56b596ad1a15b100eddd6bec\",\"text\":null,\"title\":\"Ceilingrock termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/magastet-es-tetter/ceilingrock-termekadatlap.pdf?f=20201025025500",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/magastet-es-tetter/ceilingrock-termekadatlap.pdf?f=20201025025500\" target=\"_blank\" class=\"js-track-file\">Ceilingrock termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\ceilingrock-termekadatlap_20250703_11bf3b56.pdf"
+        },
+        {
+            "category": "termékadatlapok*válaszfalak",
+            "formats": "pdf",
+            "fileId": 584291,
+            "title": "Airrock ND FB1 termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fvalaszfalak%2Fairrock-nd-fb1-termekadatlap.pdf%2FThumbnail%2F20201025025508?auto=format&w=48&s=fd98225daa939d2608b58418f3487317",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584291,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/valaszfalak/airrock-nd-fb1-termekadatlap.pdf?f=20201025025508\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fvalaszfalak%2Fairrock-nd-fb1-termekadatlap.pdf%2FThumbnail%2F20201025025508?auto=format&w=48&s=fd98225daa939d2608b58418f3487317\",\"text\":null,\"title\":\"Airrock ND FB1 termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/valaszfalak/airrock-nd-fb1-termekadatlap.pdf?f=20201025025508",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/valaszfalak/airrock-nd-fb1-termekadatlap.pdf?f=20201025025508\" target=\"_blank\" class=\"js-track-file\">Airrock ND FB1 termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\airrock-nd-fb1-termekadatlap_20250703_085b0629.pdf"
+        },
+        {
+            "category": "termékadatlapok*lapostető és ipari csarnok",
+            "formats": "pdf",
+            "fileId": 584268,
+            "title": "Dachrock termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Fdachrock-termekadatlap.pdf%2FThumbnail%2F20250324103224?auto=format&w=48&s=4a25c02f345827d26e2a44725991a09d",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584268,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/dachrock-termekadatlap.pdf?f=20250324103224\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Fdachrock-termekadatlap.pdf%2FThumbnail%2F20250324103224?auto=format&w=48&s=4a25c02f345827d26e2a44725991a09d\",\"text\":null,\"title\":\"Dachrock termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/dachrock-termekadatlap.pdf?f=20250324103224",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/dachrock-termekadatlap.pdf?f=20250324103224\" target=\"_blank\" class=\"js-track-file\">Dachrock termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\dachrock-termekadatlap_20250703_83f89062.pdf"
+        },
+        {
+            "category": "termékadatlapok*homlokzati hőszigetelés",
+            "formats": "pdf",
+            "fileId": 584264,
+            "title": "Fixrock termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fhomlokzati-hszigeteles%2Ffixrock-termekadatlap.pdf%2FThumbnail%2F20201025025447?auto=format&w=48&s=509bce2d1592ca54e96fe7c3f63f13bc",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584264,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/homlokzati-hszigeteles/fixrock-termekadatlap.pdf?f=20201025025447\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fhomlokzati-hszigeteles%2Ffixrock-termekadatlap.pdf%2FThumbnail%2F20201025025447?auto=format&w=48&s=509bce2d1592ca54e96fe7c3f63f13bc\",\"text\":null,\"title\":\"Fixrock termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/homlokzati-hszigeteles/fixrock-termekadatlap.pdf?f=20201025025447",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/homlokzati-hszigeteles/fixrock-termekadatlap.pdf?f=20201025025447\" target=\"_blank\" class=\"js-track-file\">Fixrock termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\fixrock-termekadatlap_20250703_929879b0.pdf"
+        },
+        {
+            "category": "termékadatlapok*magastető és tetőtér",
+            "formats": "pdf",
+            "fileId": 584280,
+            "title": "Deltarock termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fmagastet-es-tetter%2Fdeltarock-termekadatlap.pdf%2FThumbnail%2F20201025025500?auto=format&w=48&s=a4dd1d8e58c49805a7e08471737fc5d0",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584280,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/magastet-es-tetter/deltarock-termekadatlap.pdf?f=20201025025500\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fmagastet-es-tetter%2Fdeltarock-termekadatlap.pdf%2FThumbnail%2F20201025025500?auto=format&w=48&s=a4dd1d8e58c49805a7e08471737fc5d0\",\"text\":null,\"title\":\"Deltarock termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/magastet-es-tetter/deltarock-termekadatlap.pdf?f=20201025025500",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/magastet-es-tetter/deltarock-termekadatlap.pdf?f=20201025025500\" target=\"_blank\" class=\"js-track-file\">Deltarock termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\deltarock-termekadatlap_20250703_1ce2cf1a.pdf"
+        },
+        {
+            "category": "termékadatlapok*lapostető és ipari csarnok",
+            "formats": "pdf",
+            "fileId": 584276,
+            "title": "Steelrock 035 Plus termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Fsteelrock-035-plus-termekadatlap.pdf%2FThumbnail%2F20201025025458?auto=format&w=48&s=6fc8523641e73596a9ecf7fcb9c70b4f",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584276,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/steelrock-035-plus-termekadatlap.pdf?f=20201025025458\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Fsteelrock-035-plus-termekadatlap.pdf%2FThumbnail%2F20201025025458?auto=format&w=48&s=6fc8523641e73596a9ecf7fcb9c70b4f\",\"text\":null,\"title\":\"Steelrock 035 Plus termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/steelrock-035-plus-termekadatlap.pdf?f=20201025025458",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/steelrock-035-plus-termekadatlap.pdf?f=20201025025458\" target=\"_blank\" class=\"js-track-file\">Steelrock 035 Plus termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\steelrock-035-plus-termekadatlap_20250703_671b5a91.pdf"
+        },
+        {
+            "category": "termékadatlapok*válaszfalak",
+            "formats": "pdf",
+            "fileId": 584289,
+            "title": "Airrock HD termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fvalaszfalak%2Fairrock-hd-termekadatlap.pdf%2FThumbnail%2F20201025025507?auto=format&w=48&s=f0344c76acb07d989b8b56f5c82e3922",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584289,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/valaszfalak/airrock-hd-termekadatlap.pdf?f=20201025025507\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fvalaszfalak%2Fairrock-hd-termekadatlap.pdf%2FThumbnail%2F20201025025507?auto=format&w=48&s=f0344c76acb07d989b8b56f5c82e3922\",\"text\":null,\"title\":\"Airrock HD termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/valaszfalak/airrock-hd-termekadatlap.pdf?f=20201025025507",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/valaszfalak/airrock-hd-termekadatlap.pdf?f=20201025025507\" target=\"_blank\" class=\"js-track-file\">Airrock HD termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\airrock-hd-termekadatlap_20250703_77297162.pdf"
+        },
+        {
+            "category": "termékadatlapok*gépészet és tűzvédelem",
+            "formats": "pdf",
+            "fileId": 584253,
+            "title": "Conlit Steel Protect Board termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fgepeszet-es-tzvedelem%2Fconlit-steel-protect-board-termekadatlap.pdf%2FThumbnail%2F20201025025439?auto=format&w=48&s=bda087609d012b36bcce8e738e102339",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584253,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/conlit-steel-protect-board-termekadatlap.pdf?f=20201025025439\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fgepeszet-es-tzvedelem%2Fconlit-steel-protect-board-termekadatlap.pdf%2FThumbnail%2F20201025025439?auto=format&w=48&s=bda087609d012b36bcce8e738e102339\",\"text\":null,\"title\":\"Conlit Steel Protect Board termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/conlit-steel-protect-board-termekadatlap.pdf?f=20201025025439",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/conlit-steel-protect-board-termekadatlap.pdf?f=20201025025439\" target=\"_blank\" class=\"js-track-file\">Conlit Steel Protect Board termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\conlit-steel-protect-board-termekadatlap_20250703_a2b1931e.pdf"
+        },
+        {
+            "category": "termékadatlapok*magastető és tetőtér",
+            "formats": "pdf",
+            "fileId": 1167950,
+            "title": "Multirock Super termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fmagastet-es-tetter%2Frw_multirock-super_2022-m%25C3%25A1jus.pdf%2FThumbnail%2F20220726124951?auto=format&w=48&s=0aa85aa334805ed35400e31ecf3976b8",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":1167950,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/magastet-es-tetter/rw_multirock-super_2022-m%C3%A1jus.pdf?f=20220726124951\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fmagastet-es-tetter%2Frw_multirock-super_2022-m%25C3%25A1jus.pdf%2FThumbnail%2F20220726124951?auto=format&w=48&s=0aa85aa334805ed35400e31ecf3976b8\",\"text\":null,\"title\":\"Multirock Super termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/magastet-es-tetter/rw_multirock-super_2022-m%C3%A1jus.pdf?f=20220726124951",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/magastet-es-tetter/rw_multirock-super_2022-m%C3%A1jus.pdf?f=20220726124951\" target=\"_blank\" class=\"js-track-file\">Multirock Super termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\rw_multirock-super_2022-m%C3%A1jus_20250703_9c089a34.pdf"
+        },
+        {
+            "category": "termékadatlapok*gépészet és tűzvédelem",
+            "formats": "pdf",
+            "fileId": 584254,
+            "title": "Firerock termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fgepeszet-es-tzvedelem%2Ffirerock-termekadatlap.pdf%2FThumbnail%2F20201025025439?auto=format&w=48&s=6afc9ba12b791c5bdb2b336e293c616a",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584254,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/firerock-termekadatlap.pdf?f=20201025025439\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fgepeszet-es-tzvedelem%2Ffirerock-termekadatlap.pdf%2FThumbnail%2F20201025025439?auto=format&w=48&s=6afc9ba12b791c5bdb2b336e293c616a\",\"text\":null,\"title\":\"Firerock termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/firerock-termekadatlap.pdf?f=20201025025439",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/firerock-termekadatlap.pdf?f=20201025025439\" target=\"_blank\" class=\"js-track-file\">Firerock termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\firerock-termekadatlap_20250703_fd1537a2.pdf"
+        },
+        {
+            "category": "termékadatlapok*válaszfalak",
+            "formats": "pdf",
+            "fileId": 584290,
+            "title": "Airrock LD termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fvalaszfalak%2Fairrock-ld-termekadatlap.pdf%2FThumbnail%2F20201025025508?auto=format&w=48&s=9c24e46f7e8e9d518204eef688e2849e",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584290,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/valaszfalak/airrock-ld-termekadatlap.pdf?f=20201025025508\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fvalaszfalak%2Fairrock-ld-termekadatlap.pdf%2FThumbnail%2F20201025025508?auto=format&w=48&s=9c24e46f7e8e9d518204eef688e2849e\",\"text\":null,\"title\":\"Airrock LD termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/valaszfalak/airrock-ld-termekadatlap.pdf?f=20201025025508",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/valaszfalak/airrock-ld-termekadatlap.pdf?f=20201025025508\" target=\"_blank\" class=\"js-track-file\">Airrock LD termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\airrock-ld-termekadatlap_20250703_edbe8280.pdf"
+        },
+        {
+            "category": "termékadatlapok*gépészet és tűzvédelem",
+            "formats": "pdf",
+            "fileId": 584261,
+            "title": "Techrock ALS termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fgepeszet-es-tzvedelem%2Ftechrock-als-termekadatlap.pdf%2FThumbnail%2F20201025025445?auto=format&w=48&s=fb90811798bc730f8a179631de034be3",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584261,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/techrock-als-termekadatlap.pdf?f=20201025025445\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fgepeszet-es-tzvedelem%2Ftechrock-als-termekadatlap.pdf%2FThumbnail%2F20201025025445?auto=format&w=48&s=fb90811798bc730f8a179631de034be3\",\"text\":null,\"title\":\"Techrock ALS termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/techrock-als-termekadatlap.pdf?f=20201025025445",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/techrock-als-termekadatlap.pdf?f=20201025025445\" target=\"_blank\" class=\"js-track-file\">Techrock ALS termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\techrock-als-termekadatlap_20250703_937b8926.pdf"
+        },
+        {
+            "category": "termékadatlapok*lapostető és ipari csarnok",
+            "formats": "pdf",
+            "fileId": 584275,
+            "title": "Roofrock 60 termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Froofrock-60-termekadatlap.pdf%2FThumbnail%2F20250324103226?auto=format&w=48&s=fb3bb10bf5f7572e23dc5397a8eb4dd7",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584275,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/roofrock-60-termekadatlap.pdf?f=20250324103226\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Froofrock-60-termekadatlap.pdf%2FThumbnail%2F20250324103226?auto=format&w=48&s=fb3bb10bf5f7572e23dc5397a8eb4dd7\",\"text\":null,\"title\":\"Roofrock 60 termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/roofrock-60-termekadatlap.pdf?f=20250324103226",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/roofrock-60-termekadatlap.pdf?f=20250324103226\" target=\"_blank\" class=\"js-track-file\">Roofrock 60 termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\roofrock-60-termekadatlap_20250703_4a3b5d97.pdf"
+        },
+        {
+            "category": "termékadatlapok*lapostető és ipari csarnok",
+            "formats": "pdf",
+            "fileId": 584277,
+            "title": "Steelrock 040 Plus termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Fsteelrock-040-plus-termekadatlap.pdf%2FThumbnail%2F20201025025459?auto=format&w=48&s=2d0c3f1dfe2952c28496dacc5f70a1a9",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584277,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/steelrock-040-plus-termekadatlap.pdf?f=20201025025459\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Fsteelrock-040-plus-termekadatlap.pdf%2FThumbnail%2F20201025025459?auto=format&w=48&s=2d0c3f1dfe2952c28496dacc5f70a1a9\",\"text\":null,\"title\":\"Steelrock 040 Plus termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/steelrock-040-plus-termekadatlap.pdf?f=20201025025459",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/steelrock-040-plus-termekadatlap.pdf?f=20201025025459\" target=\"_blank\" class=\"js-track-file\">Steelrock 040 Plus termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\steelrock-040-plus-termekadatlap_20250703_284bf22f.pdf"
+        },
+        {
+            "category": "termékadatlapok*válaszfalak",
+            "formats": "pdf",
+            "fileId": 584288,
+            "title": "Airrock HD FB1 termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fvalaszfalak%2Fairrock-hd-fb1-termekadatlap.pdf%2FThumbnail%2F20201025025506?auto=format&w=48&s=873941587b3691b145c830b57b65c8ad",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584288,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/valaszfalak/airrock-hd-fb1-termekadatlap.pdf?f=20201025025506\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fvalaszfalak%2Fairrock-hd-fb1-termekadatlap.pdf%2FThumbnail%2F20201025025506?auto=format&w=48&s=873941587b3691b145c830b57b65c8ad\",\"text\":null,\"title\":\"Airrock HD FB1 termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/valaszfalak/airrock-hd-fb1-termekadatlap.pdf?f=20201025025506",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/valaszfalak/airrock-hd-fb1-termekadatlap.pdf?f=20201025025506\" target=\"_blank\" class=\"js-track-file\">Airrock HD FB1 termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\airrock-hd-fb1-termekadatlap_20250703_d8d46201.pdf"
+        },
+        {
+            "category": "termékadatlapok*lapostető és ipari csarnok",
+            "formats": "pdf",
+            "fileId": 584272,
+            "title": "Rockfall termékadatlap és tervezési segédlet",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Frockfall-termekadatlap.pdf%2FThumbnail%2F20201025025454?auto=format&w=48&s=4109c31640e73374feac92a165135a1d",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584272,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/rockfall-termekadatlap.pdf?f=20201025025454\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Frockfall-termekadatlap.pdf%2FThumbnail%2F20201025025454?auto=format&w=48&s=4109c31640e73374feac92a165135a1d\",\"text\":null,\"title\":\"Rockfall termékadatlap és tervezési segédlet\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/rockfall-termekadatlap.pdf?f=20201025025454",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/rockfall-termekadatlap.pdf?f=20201025025454\" target=\"_blank\" class=\"js-track-file\">Rockfall termékadatlap és tervezési segédlet</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\rockfall-termekadatlap_20250703_4ef7e221.pdf"
+        },
+        {
+            "category": "termékadatlapok*lapostető és ipari csarnok",
+            "formats": "pdf",
+            "fileId": 584272,
+            "title": "Rockfall termékadatlap és tervezési segédlet",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Frockfall-termekadatlap.pdf%2FThumbnail%2F20201025025454?auto=format&w=48&s=4109c31640e73374feac92a165135a1d",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584272,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/rockfall-termekadatlap.pdf?f=20201025025454\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Flapostet-es-ipari-csarnok%2Frockfall-termekadatlap.pdf%2FThumbnail%2F20201025025454?auto=format&w=48&s=4109c31640e73374feac92a165135a1d\",\"text\":null,\"title\":\"Rockfall termékadatlap és tervezési segédlet\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/rockfall-termekadatlap.pdf?f=20201025025454",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/rockfall-termekadatlap.pdf?f=20201025025454\" target=\"_blank\" class=\"js-track-file\">Rockfall termékadatlap és tervezési segédlet</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\rockfall-termekadatlap_20250703_4ef7e221.pdf"
+        },
+        {
+            "category": "termékadatlapok*válaszfalak",
+            "formats": "pdf",
+            "fileId": 584292,
+            "title": "Airrock ND termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fvalaszfalak%2Fairrock-nd-termekadatlap.pdf%2FThumbnail%2F20201025025509?auto=format&w=48&s=c6e561b92a5077decf233293f68e8ec1",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584292,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/valaszfalak/airrock-nd-termekadatlap.pdf?f=20201025025509\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fvalaszfalak%2Fairrock-nd-termekadatlap.pdf%2FThumbnail%2F20201025025509?auto=format&w=48&s=c6e561b92a5077decf233293f68e8ec1\",\"text\":null,\"title\":\"Airrock ND termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/valaszfalak/airrock-nd-termekadatlap.pdf?f=20201025025509",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/valaszfalak/airrock-nd-termekadatlap.pdf?f=20201025025509\" target=\"_blank\" class=\"js-track-file\">Airrock ND termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\airrock-nd-termekadatlap_20250703_990cf241.pdf"
+        },
+        {
+            "category": "termékadatlapok*homlokzati hőszigetelés",
+            "formats": "pdf",
+            "fileId": 584263,
+            "title": "Fixrock FB1 termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fhomlokzati-hszigeteles%2Ffixrock-fb1-termekadatlap.pdf%2FThumbnail%2F20201025025446?auto=format&w=48&s=9362a30b16a028a8f3d7df4e0f81fb3a",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584263,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/homlokzati-hszigeteles/fixrock-fb1-termekadatlap.pdf?f=20201025025446\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fhomlokzati-hszigeteles%2Ffixrock-fb1-termekadatlap.pdf%2FThumbnail%2F20201025025446?auto=format&w=48&s=9362a30b16a028a8f3d7df4e0f81fb3a\",\"text\":null,\"title\":\"Fixrock FB1 termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/homlokzati-hszigeteles/fixrock-fb1-termekadatlap.pdf?f=20201025025446",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/homlokzati-hszigeteles/fixrock-fb1-termekadatlap.pdf?f=20201025025446\" target=\"_blank\" class=\"js-track-file\">Fixrock FB1 termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\fixrock-fb1-termekadatlap_20250703_bbfb26c7.pdf"
+        },
+        {
+            "category": "termékadatlapok*válaszfalak",
+            "formats": "pdf",
+            "fileId": 584293,
+            "title": "Airrock XD termékadatlap",
+            "description": null,
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fvalaszfalak%2Fairrock-xd-termekadatlap.pdf%2FThumbnail%2F20201025025510?auto=format&w=48&s=813700685c8016348bc169e52f72d5ff",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":584293,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/valaszfalak/airrock-xd-termekadatlap.pdf?f=20201025025510\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fvalaszfalak%2Fairrock-xd-termekadatlap.pdf%2FThumbnail%2F20201025025510?auto=format&w=48&s=813700685c8016348bc169e52f72d5ff\",\"text\":null,\"title\":\"Airrock XD termékadatlap\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/valaszfalak/airrock-xd-termekadatlap.pdf?f=20201025025510",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/valaszfalak/airrock-xd-termekadatlap.pdf?f=20201025025510\" target=\"_blank\" class=\"js-track-file\">Airrock XD termékadatlap</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\airrock-xd-termekadatlap_20250703_7f169307.pdf"
+        },
+        {
+            "category": "termékadatlapok*gépészet és tűzvédelem",
+            "formats": "pdf",
+            "fileId": 1333346,
+            "title": "MŰSZAKI ADATLAP",
+            "description": "KLIMAMAT 32",
+            "image": "https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fgepeszet-es-tzvedelem%2Frw_klimamat_32_termekadatlap_2024.pdf%2FThumbnail%2F20240313091601?auto=format&w=48&s=7d84558ef618704594aa0d3f5b5eed2f",
+            "type": "download",
+            "jsonDataObject": "{\"fileTypes\":[{\"label\":\"PDF\",\"value\":\"pdf\",\"fileId\":1333346,\"url\":\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/rw_klimamat_32_termekadatlap_2024.pdf?f=20240313091601\",\"isGated\":false,\"isPrintOnly\":false,\"printId\":null,\"marketoFormId\":null,\"marketoFormName\":null,\"marketoFilename\":null}],\"image\":\"https://img.rockwool.com/https%3A%2F%2Fwww.rockwool.com%2Fsiteassets%2Frw-hu%2Ftermekadatlapok%2Fgepeszet-es-tzvedelem%2Frw_klimamat_32_termekadatlap_2024.pdf%2FThumbnail%2F20240313091601?auto=format&w=48&s=7d84558ef618704594aa0d3f5b5eed2f\",\"text\":\"KLIMAMAT 32\",\"title\":\"MŰSZAKI ADATLAP\",\"selectLabel\":\"Filetype\",\"downloadBtnText\":null,\"hasDownload\":true,\"isGated\":false,\"isNotDownloadedAfterFormSent\":false,\"isSingleSignupDownload\":false,\"fileMarketoFormId\":null,\"fileMarketoFormName\":null,\"fileMarketoFilename\":null,\"hasPrint\":false}",
+            "fileUrl": "https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/rw_klimamat_32_termekadatlap_2024.pdf?f=20240313091601",
+            "titleAsLink": "<a href=\"https://p-cdn.rockwool.com/syssiteassets/rw-hu/termekadatlapok/gepeszet-es-tzvedelem/rw_klimamat_32_termekadatlap_2024.pdf?f=20240313091601\" target=\"_blank\" class=\"js-track-file\">MŰSZAKI ADATLAP</a>",
+            "titleAsGatedLink": null,
+            "formatItems": [
+                "pdf"
+            ],
+            "local_path": "C:\\Users\\Admin\\.cursor\\Lambda\\downloads\\rockwool_datasheets\\rw_klimamat_32_termekadatlap_2024_20250703_451faa0f.pdf"
+        }
+    ]
+}

@@ -15,7 +15,7 @@ from enum import Enum
 from app.database import SessionLocal
 from app.models import Product
 from app.scraper.data_validator import DataValidator
-from app.scrapers.rockwool_final.brochure_and_pricelist_scraper import RockwoolBrochureScraper
+from app.scrapers.rockwool.brochure_and_pricelist_scraper import RockwoolBrochureScraper
 from .brightdata_agent import BrightDataMCPAgent
 
 logger = logging.getLogger(__name__)
