@@ -1,0 +1,5 @@
+[MESSAGES CONTROL]
+disable=all
+ 
+[MASTER]
+ignore=migrations,venv,env,.git,.venv312 

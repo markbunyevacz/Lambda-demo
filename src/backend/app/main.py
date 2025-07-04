@@ -23,15 +23,21 @@ from sqlalchemy.orm import Session
 from typing import List, Optional
 
 # Helyi importok
-from . import models, schemas
-from .database import get_db, engine, Base
+from .database import Base, engine
+# Import all models to ensure they are registered with SQLAlchemy's Base
+from .models import manufacturer, category, product, processed_file_log
+
+# Import Celery app for task management
+from .celery_app import celery_app
 # Hibás, elavult router importjának eltávolítása
 # from .scraper.api_endpoints import scraper_router
 # Scraper imports commented out to avoid path resolution issues in Docker
 # from .scrapers.rockwool_final.datasheet_scraper import RockwoolDirectScraper
 # from .scrapers.rockwool_final.brochure_and_pricelist_scraper import RockwoolBrochureScraper
 
-# A táblák létrehozása a Base és az engine segítségével
+# Create the database tables
+# This should be done only once, ideally managed with Alembic migrations
+# in a real production environment.
 Base.metadata.create_all(bind=engine)
 
 # FastAPI alkalmazás példány létrehozása
