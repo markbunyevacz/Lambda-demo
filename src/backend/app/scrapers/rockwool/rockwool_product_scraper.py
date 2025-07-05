@@ -22,6 +22,8 @@ import html
 from pathlib import Path
 from urllib.parse import urljoin
 
+from app.utils import get_project_root
+
 # --- Configuration ---
 logging.basicConfig(
     level=logging.INFO,
@@ -29,12 +31,10 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-PROJECT_ROOT = Path(__file__).resolve().parents[5]
-PDF_STORAGE_DIR = (
-    PROJECT_ROOT / "src" / "backend" / "src" / "downloads" / "rockwool_datasheets"
-)
+PROJECT_ROOT = get_project_root()
+PDF_STORAGE_DIR = PROJECT_ROOT / "downloads" / "rockwool_datasheets"
 DUPLICATES_DIR = PDF_STORAGE_DIR / "duplicates"
-# Use the previously downloaded file for debugging
+# Use a path relative to the project root for consistency
 DEBUG_FILE_PATH = PROJECT_ROOT / "rockwool_datasheet_page.html"
 
 # Ensure directories exist
@@ -42,7 +42,9 @@ PDF_STORAGE_DIR.mkdir(parents=True, exist_ok=True)
 DUPLICATES_DIR.mkdir(parents=True, exist_ok=True)
 
 BASE_URL = "https://www.rockwool.com"
-DATASHEET_URL = "https://www.rockwool.com/hu/muszaki-informaciok/termekadatlapok/"
+DATASHEET_URL = (
+    "https://www.rockwool.com/hu/muszaki-informaciok/termekadatlapok/"
+)
 
 
 def clean_filename(text: str) -> str:
@@ -139,7 +141,7 @@ class RockwoolProductScraper:
 
             product_list = json_data.get('downloadList', [])
             logger.info(
-                f"Found {len(product_list)} product entries in the JSON data."
+                f"Found {len(product_list)} product entries in JSON data."
             )
 
             for item in product_list:
@@ -177,7 +179,8 @@ class RockwoolProductScraper:
             return
 
         logger.info(
-            f"Starting download of {len(self.documents)} product datasheets..."
+            f"Starting download of {len(self.documents)} "
+            "product datasheets..."
         )
 
         async with httpx.AsyncClient(
@@ -208,14 +211,14 @@ class RockwoolProductScraper:
 
         # Check if filename already exists in our tracking set
         if base_filename in self.downloaded_files:
-            # This is a duplicate - generate unique name and save to duplicates
+            # This is a duplicate - generate name and save to duplicates
             unique_filename = self._generate_unique_filename(
                 base_filename, pdf_url
             )
             filepath = DUPLICATES_DIR / unique_filename
             self.duplicate_count += 1
             logger.info(
-                f"Duplicate filename detected: {base_filename}. "
+                f"Duplicate filename: {base_filename}. "
                 f"Saving to duplicates as {unique_filename}"
             )
         else:
@@ -305,7 +308,7 @@ class RockwoolProductScraper:
                 'data_source': 'rockwool.com/termekadatlapok',
                 'language': 'hu',
                 'fallback_used': False,
-                'datasheet_url': DATASHEET_URL
+                'datasheet_url': DATASHEET_URL,
             }
             
             # Save state in all formats

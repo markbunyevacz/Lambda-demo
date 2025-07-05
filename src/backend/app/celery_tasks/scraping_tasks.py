@@ -12,24 +12,19 @@ from datetime import datetime
 
 from celery import shared_task
 
-# Import the scraper classes using relative paths
-from ..scrapers.rockwool.datasheet_scraper import RockwoolDirectScraper
-from ..scrapers.rockwool.brochure_and_pricelist_scraper import (
-    RockwoolBrochureScraper,
-)
+# Clean, maintainable imports via package __init__.py
+from app.scrapers import RockwoolProductScraper, RockwoolBrochureScraper
+
 
 logger = logging.getLogger(__name__)
 
 
 @shared_task(name="tasks.run_datasheet_scraping")
 def run_datasheet_scraping_task():
-    """
-    Celery task to run the Rockwool datasheet scraper.
-    This can be called from an API endpoint to refresh product datasheets.
-    """
+    """Execute datasheet scraping with clean import structure."""
     logger.info("▶️ Starting datasheet scraping task...")
     try:
-        scraper = RockwoolDirectScraper()
+        scraper = RockwoolProductScraper()
         asyncio.run(scraper.run())
         logger.info("✅ Datasheet scraping task finished successfully.")
         return {"status": "success", "scraper": "datasheet"}
@@ -40,10 +35,7 @@ def run_datasheet_scraping_task():
 
 @shared_task(name="tasks.run_brochure_scraping")
 def run_brochure_scraping_task():
-    """
-    Celery task to run the Rockwool brochure and pricelist scraper.
-    This can be called from an API endpoint to refresh documents.
-    """
+    """Execute brochure scraping task."""
     logger.info("▶️ Starting brochure and pricelist scraping task...")
     try:
         scraper = RockwoolBrochureScraper()

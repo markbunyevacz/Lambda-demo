@@ -72,3 +72,7 @@ Category.model_rebuild()
 
 class ScrapeRequest(BaseModel):
     scraper_type: str 
+
+class SearchRequest(BaseModel):
+    query: str
+    limit: int = 10 

@@ -31,18 +31,18 @@ from dotenv import load_dotenv
 
 # Database Integration
 from sqlalchemy.orm import Session
-from .app.database import SessionLocal
-from .app.models.processed_file_log import ProcessedFileLog
-from .app.models.product import Product
-from .app.models.manufacturer import Manufacturer
-from .app.models.category import Category
+from app.database import SessionLocal
+from models.processed_file_log import ProcessedFileLog
+from app.models.product import Product
+from app.models.manufacturer import Manufacturer
+from app.models.category import Category
 
 # ChromaDB Integration
 import chromadb
 from chromadb.config import Settings
 
 # Load environment variables
-load_dotenv()
+load_dotenv("../../.env")  # Load from root directory
 
 # Configure logging
 logging.basicConfig(
@@ -784,7 +784,7 @@ class RealPDFProcessor:
                 )
                 result = self.process_pdf(pdf_path)
                 if result:  # Only append if not a duplicate
-                results.append(result)
+                    results.append(result)
                 
             except Exception as e:
                 logger.error(f"Skipping {pdf_path.name} due to error: {e}")

@@ -42,3 +42,10 @@ pydantic-settings>=2.1.0
 # RAG Pipeline Dependencies
 chromadb>=0.4.24
 sentence-transformers>=2.6.1
+
+# PDF Processing for MCP Orchestrator
+pdfplumber>=0.10.0
+PyPDF2>=3.0.1
+PyMuPDF>=1.23.0
+pytesseract>=0.3.10
+Pillow>=10.0.0
