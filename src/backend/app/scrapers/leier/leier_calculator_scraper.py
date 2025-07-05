@@ -2,8 +2,9 @@
 LEIER Calculator & Pricing Scraper
 ---------------------------------
 
-This scraper focuses on extracting calculator tools and pricing data from LEIER Hungary.
-It complements the documents scraper by targeting interactive tools and pricing information.
+This scraper focuses on extracting calculator tools and pricing data
+from LEIER Hungary. It complements the documents scraper by targeting
+interactive tools and pricing information.
 
 Priority: MEDIUM - Important for cost estimation and pricing insights
 Target Areas:
@@ -16,6 +17,7 @@ Entry Points:
 - /hu/kalkulatorok (Calculators)
 - /hu/arkalkulatorok (Price calculators)
 - /hu/anyagmennyseg-szamolo (Material calculators)
+- /hu/koltsegbecsles (Cost estimation)
 """
 
 import asyncio
@@ -28,7 +30,7 @@ from datetime import datetime
 from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup
 import os
-from typing import List, Optional, Set, Any
+from typing import List, Optional, Set, Dict, Any
 from dataclasses import dataclass, asdict
 
 # Configure logging
@@ -41,8 +43,12 @@ logger = logging.getLogger(__name__)
 
 # Path configuration
 PROJECT_ROOT = Path(__file__).resolve().parents[5]
-CALC_STORAGE = PROJECT_ROOT / "src" / "downloads" / "leier_materials" / "calculators"
-PRICING_STORAGE = PROJECT_ROOT / "src" / "downloads" / "leier_materials" / "pricing_data"
+CALC_STORAGE = (
+    PROJECT_ROOT / "src" / "downloads" / "leier_materials" / "calculators"
+)
+PRICING_STORAGE = (
+    PROJECT_ROOT / "src" / "downloads" / "leier_materials" / "pricing_data"
+)
 
 # Ensure directories exist
 CALC_STORAGE.mkdir(parents=True, exist_ok=True)
@@ -53,7 +59,9 @@ BASE_URL = "https://www.leier.hu"
 CALCULATOR_URLS = {
     'main_calculators': "https://www.leier.hu/hu/kalkulatorok",
     'price_calculators': "https://www.leier.hu/hu/arkalkulatorok",
-    'material_calculators': "https://www.leier.hu/hu/anyagmennyseg-szamolo",
+    'material_calculators': (
+        "https://www.leier.hu/hu/anyagmennyseg-szamolo"
+    ),
     'cost_estimation': "https://www.leier.hu/hu/koltsegbecsles"
 }
 
@@ -87,7 +95,7 @@ class LeierCalculator:
     description: Optional[str] = None
     parameters: Optional[List[str]] = None
     formulas: Optional[List[str]] = None
-    price_data: Optional[dict] = None
+    price_data: Optional[Dict[str, Any]] = None
     interactive_elements: Optional[List[str]] = None
 
 
@@ -95,11 +103,11 @@ class LeierCalculator:
 class CalculatorData:
     """Extracted calculator data and parameters"""
     calculator_id: str
-    parameters: dict
+    parameters: Dict[str, Any]
     formulas: List[str]
-    default_values: dict
-    price_matrix: Optional[dict] = None
-    validation_rules: Optional[dict] = None
+    default_values: Dict[str, Any]
+    price_matrix: Optional[Dict[str, Any]] = None
+    validation_rules: Optional[Dict[str, Any]] = None
 
 
 class LeierCalculatorScraper:
@@ -124,48 +132,56 @@ class LeierCalculatorScraper:
             logger.warning(f"MCP failed for {url}: {e}")
             return await self._fetch_direct(url)
     
+    async def _initialize_mcp_session(self):
+        """Initializes the BrightData MCP session and returns a client session."""
+        from mcp import stdio_client, StdioServerParameters, ClientSession
+        import platform
+        
+        npx_cmd = "npx.cmd" if platform.system() == "Windows" else "npx"
+        api_token = os.getenv('BRIGHTDATA_API_TOKEN')
+        
+        if not api_token:
+            raise ValueError("No BRIGHTDATA_API_TOKEN found")
+        
+        server_params = StdioServerParameters(
+            command=npx_cmd,
+            env={"API_TOKEN": api_token},
+            args=["-y", "@brightdata/mcp"]
+        )
+        
+        read, write = await stdio_client(server_params)
+        session = ClientSession(read, write)
+        await session.initialize()
+        return session
+
+    async def _find_scrape_tool(self, session) -> Optional[Any]:
+        """Finds a scraping tool from the available MCP tools."""
+        tools = await session.list_tools()
+        for tool in tools.tools:
+            if 'scrape' in tool.name.lower():
+                return tool
+        return None
+
     async def _fetch_with_mcp(self, url: str) -> Optional[str]:
         """Fetch using BrightData MCP"""
+        session = None
         try:
-            from mcp import stdio_client, StdioServerParameters, ClientSession
-            import platform
+            session = await self._initialize_mcp_session()
+            scrape_tool = await self._find_scrape_tool(session)
             
-            npx_cmd = "npx.cmd" if platform.system() == "Windows" else "npx"
-            api_token = os.getenv('BRIGHTDATA_API_TOKEN')
-            
-            if not api_token:
-                raise ValueError("No BRIGHTDATA_API_TOKEN found")
-            
-            server_params = StdioServerParameters(
-                command=npx_cmd,
-                env={"API_TOKEN": api_token},
-                args=["-y", "@brightdata/mcp"]
-            )
-            
-            async with stdio_client(server_params) as (read, write):
-                async with ClientSession(read, write) as session:
-                    await session.initialize()
-                    
-                    tools = await session.list_tools()
-                    scrape_tool = None
-                    
-                    for tool in tools.tools:
-                        if 'scrape' in tool.name.lower():
-                            scrape_tool = tool
-                            break
-                    
-                    if scrape_tool:
-                        response = await session.call_tool(
-                            scrape_tool.name, {"url": url}
-                        )
-                        if response.content:
-                            return response.content[0].text
-            
+            if scrape_tool:
+                response = await session.call_tool(
+                    scrape_tool.name, {"url": url}
+                )
+                if response.content:
+                    return response.content[0].text
             return None
-            
         except Exception as e:
             logger.debug(f"MCP fetch error: {e}")
             raise
+        finally:
+            if session:
+                await session.close()
     
     async def _fetch_direct(self, url: str) -> Optional[str]:
         """Direct HTTP fetch as fallback"""
@@ -205,16 +221,14 @@ class LeierCalculatorScraper:
                 logger.info(f"✅ Found {len(calc_urls)} calculators on {page_name}")
         
         calculator_list = list(all_calc_urls)
-        logger.info(f"📊 Total unique calculators found: {len(calculator_list)}")
+        logger.info(
+            f"📊 Total unique calculators found: {len(calculator_list)}"
+        )
         return calculator_list
     
-    def _extract_calculator_urls(self, content: str, base_url: str) -> List[str]:
-        """Extract calculator URLs from page content"""
-        soup = BeautifulSoup(content, 'html.parser')
-        calculator_urls = []
-        
-        # Look for calculator-specific selectors
-        calc_selectors = [
+    def _get_calculator_link_selectors(self) -> List[str]:
+        """Returns CSS selectors for finding calculator links."""
+        return [
             'a[href*="kalkulat"]',
             'a[href*="calculator"]', 
             'a[href*="szamolo"]',
@@ -223,15 +237,30 @@ class LeierCalculatorScraper:
             '.tool-link',
             '.calc-button'
         ]
-        
-        for selector in calc_selectors:
-            links = soup.select(selector)
-            for link in links:
+
+    def _extract_links_from_soup(self, soup: BeautifulSoup) -> List[str]:
+        """Extracts all calculator-related hrefs from the soup."""
+        hrefs = []
+        selectors = self._get_calculator_link_selectors()
+        for selector in selectors:
+            for link in soup.select(selector):
                 href = link.get('href')
                 if href:
-                    full_url = urljoin(BASE_URL, href)
-                    if self._is_valid_calculator_url(full_url):
-                        calculator_urls.append(full_url)
+                    hrefs.append(href)
+        return hrefs
+
+    def _extract_calculator_urls(
+        self, content: str, base_url: str
+    ) -> List[str]:
+        """Extract calculator URLs from page content"""
+        soup = BeautifulSoup(content, 'html.parser')
+        hrefs = self._extract_links_from_soup(soup)
+        
+        calculator_urls = []
+        for href in hrefs:
+            full_url = urljoin(BASE_URL, href)
+            if self._is_valid_calculator_url(full_url):
+                calculator_urls.append(full_url)
         
         return list(set(calculator_urls))  # Remove duplicates
     
@@ -269,7 +298,7 @@ class LeierCalculatorScraper:
         interactive_elements = self._extract_interactive_elements(soup)
         parameters = self._extract_parameters(soup)
         formulas = self._extract_formulas(soup, content)
-        price_data = self._extract_price_data(soup, content)
+        price_data = self._extract_price_data(soup)
         
         calculator = LeierCalculator(
             name=name,
@@ -283,37 +312,37 @@ class LeierCalculatorScraper:
         )
         
         # Update statistics
-        self.stats['calculators_found'] += 1
-        if interactive_elements:
-            self.stats['interactive_tools'] += 1
-        if price_data:
-            self.stats['pricing_data_extracted'] += 1
-        if parameters:
-            self.stats['parameters_captured'] += len(parameters)
+        self._update_stats(calculator)
         
         return calculator
     
-    def _extract_calculator_name(self, soup: BeautifulSoup, url: str) -> str:
-        """Extract calculator name from page"""
+    def _get_name_from_selectors(self, soup: BeautifulSoup) -> Optional[str]:
+        """Extracts calculator name using a list of CSS selectors."""
         name_selectors = [
-            'h1', '.page-title', '.calculator-title', 
-            '.tool-title', 'title'
+            'h1', '.page-title', '.calculator-title', '.tool-title', 'title'
         ]
-        
         for selector in name_selectors:
             element = soup.select_one(selector)
             if element:
                 name = element.get_text(strip=True)
                 if name and len(name) < 100:
                     return name
-        
-        # Fallback to URL path
+        return None
+
+    def _get_name_from_url(self, url: str) -> str:
+        """Extracts a fallback name from the URL path."""
         path_parts = urlparse(url).path.split('/')
         for part in reversed(path_parts):
             if part and len(part) > 2:
                 return part.replace('-', ' ').title()
-        
         return "Unknown Calculator"
+
+    def _extract_calculator_name(self, soup: BeautifulSoup, url: str) -> str:
+        """Extract calculator name from page"""
+        name = self._get_name_from_selectors(soup)
+        if name:
+            return name
+        return self._get_name_from_url(url)
     
     def _extract_description(self, soup: BeautifulSoup) -> Optional[str]:
         """Extract calculator description"""
@@ -355,97 +384,143 @@ class LeierCalculatorScraper:
         
         return elements
     
-    def _extract_parameters(self, soup: BeautifulSoup) -> List[str]:
-        """Extract calculator parameters"""
-        parameters = []
-        
-        # Form field labels
+    def _extract_labels_for_parameters(
+        self, soup: BeautifulSoup
+    ) -> Set[str]:
+        """Extracts parameter names from <label> tags."""
+        parameters = set()
         labels = soup.find_all('label')
         for label in labels:
             label_text = label.get_text(strip=True)
             if label_text and len(label_text) < 50:
-                parameters.append(label_text)
-        
-        # Input field names and placeholders
+                parameters.add(label_text)
+        return parameters
+
+    def _extract_inputs_for_parameters(
+        self, soup: BeautifulSoup
+    ) -> Set[str]:
+        """Extracts parameter names from <input> tags."""
+        parameters = set()
         inputs = soup.find_all('input')
         for inp in inputs:
             name = inp.get('name', '')
             placeholder = inp.get('placeholder', '')
             if name:
-                parameters.append(f"field: {name}")
+                parameters.add(f"field: {name}")
             if placeholder:
-                parameters.append(f"placeholder: {placeholder}")
-        
-        return list(set(parameters))  # Remove duplicates
+                parameters.add(f"placeholder: {placeholder}")
+        return parameters
+
+    def _extract_parameters(self, soup: BeautifulSoup) -> List[str]:
+        """Extract calculator parameters"""
+        labels = self._extract_labels_for_parameters(soup)
+        inputs = self._extract_inputs_for_parameters(soup)
+        return list(labels.union(inputs))
     
-    def _extract_formulas(self, soup: BeautifulSoup, content: str) -> List[str]:
-        """Extract calculation formulas from JavaScript or text"""
+    def _extract_formulas_from_scripts(
+        self, soup: BeautifulSoup
+    ) -> List[str]:
+        """Extracts formulas from <script> tags."""
         formulas = []
-        
-        # Look for JavaScript calculation functions
         script_tags = soup.find_all('script')
         for script in script_tags:
             script_content = script.get_text()
-            if script_content:
-                # Look for mathematical expressions
-                math_patterns = [
-                    r'[a-zA-Z_]\w*\s*=\s*[^;]+[+\-*/][^;]+',
-                    r'Math\.[a-zA-Z]+\([^)]+\)',
-                    r'calculate\w*\([^)]*\)\s*{[^}]+}',
-                    r'price\s*[*+\-/]\s*\w+'
-                ]
-                
-                for pattern in math_patterns:
-                    matches = re.findall(pattern, script_content)
-                    formulas.extend(matches)
-        
-        # Look for formula descriptions in text
+            if not script_content:
+                continue
+            
+            math_patterns = [
+                r'[a-zA-Z_]\w*\s*=\s*[^;]+[+\-*/][^;]+',
+                r'Math\.[a-zA-Z]+\([^)]+\)',
+                r'calculate\w*\([^)]*\)\s*{[^}]+}',
+                r'price\s*[*+\-/]\s*\w+'
+            ]
+            
+            for pattern in math_patterns:
+                matches = re.findall(pattern, script_content)
+                formulas.extend(matches)
+        return formulas
+
+    def _extract_formulas_from_text(self, content: str) -> List[str]:
+        """Extracts formulas from visible text content."""
+        formulas = []
         formula_keywords = ['formula', 'képlet', 'számítás', 'calculation']
         for keyword in formula_keywords:
             pattern = rf'{keyword}[^.]*[=+\-*/][^.]*\.'
             matches = re.findall(pattern, content, re.IGNORECASE)
             formulas.extend(matches)
-        
-        return formulas[:10]  # Limit to reasonable number
+        return formulas
+
+    def _extract_formulas(self, soup: BeautifulSoup, content: str) -> List[str]:
+        """Extract calculation formulas from JavaScript or text"""
+        script_formulas = self._extract_formulas_from_scripts(soup)
+        text_formulas = self._extract_formulas_from_text(content)
+        all_formulas = script_formulas + text_formulas
+        return all_formulas[:10]  # Limit to reasonable number
     
-    def _extract_price_data(self, soup: BeautifulSoup, content: str) -> Optional[dict]:
-        """Extract pricing information"""
-        price_data = {}
-        
-        # Look for price tables
+    def _extract_price_table_data(
+        self, soup: BeautifulSoup
+    ) -> Optional[List[List[str]]]:
+        """Extracts pricing data from tables."""
         tables = soup.find_all('table')
         for table in tables:
             table_text = table.get_text().lower()
-            if any(word in table_text for word in ['ár', 'price', 'cost', 'költség']):
-                # Extract table data
+            if any(
+                word in table_text for word in ['ár', 'price', 'cost', 'költség']
+            ):
                 rows = table.find_all('tr')
                 table_data = []
                 for row in rows:
-                    cells = row.find_all(['td', 'th'])
-                    row_data = [cell.get_text(strip=True) for cell in cells]
-                    if any(cell for cell in row_data):
-                        table_data.append(row_data)
-                
+                    cells = [
+                        cell.get_text(strip=True) 
+                        for cell in row.find_all(['td', 'th'])
+                    ]
+                    if any(cells):
+                        table_data.append(cells)
                 if table_data:
-                    price_data['price_table'] = table_data
-        
-        # Look for price patterns in text
+                    return table_data
+        return None
+
+    def _extract_price_mentions_from_text(self, content: str) -> List[str]:
+        """Extracts price mentions from text content."""
         price_patterns = [
-            r'\d+[\d\s,]*\s*Ft',
-            r'\d+[\d\s,]*\s*EUR',
+            r'\d+[\d\s,]*\s*Ft', 
+            r'\d+[\d\s,]*\s*EUR', 
             r'\d+[\d\s,]*\s*HUF'
         ]
-        
         prices_found = []
         for pattern in price_patterns:
             matches = re.findall(pattern, content)
             prices_found.extend(matches)
+        return prices_found[:20]
+
+    def _extract_price_data(
+        self, soup: BeautifulSoup, content: str = ""
+    ) -> Optional[Dict[str, Any]]:
+        """Extract pricing information"""
+        price_data = {}
         
-        if prices_found:
-            price_data['price_mentions'] = prices_found[:20]  # Limit
+        table_data = self._extract_price_table_data(soup)
+        if table_data:
+            price_data['price_table'] = table_data
+        
+        price_mentions = self._extract_price_mentions_from_text(
+            soup.get_text()
+        )
+        if price_mentions:
+            price_data['price_mentions'] = price_mentions
         
         return price_data if price_data else None
     
+    def _update_stats(self, calculator: LeierCalculator):
+        """Updates the scraping statistics based on the extracted calculator data."""
+        self.stats['calculators_found'] += 1
+        if calculator.interactive_elements:
+            self.stats['interactive_tools'] += 1
+        if calculator.price_data:
+            self.stats['pricing_data_extracted'] += 1
+        if calculator.parameters:
+            self.stats['parameters_captured'] += len(calculator.parameters)
+
     async def save_calculator_data(self, calculator: LeierCalculator):
         """Save calculator data to files"""
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -462,7 +537,9 @@ class LeierCalculatorScraper:
         
         # Save pricing data separately if available
         if calculator.price_data:
-            price_filename = f"pricing_data_{timestamp}_{len(self.calculators)}.json"
+            price_filename = (
+                f"pricing_data_{timestamp}_{len(self.calculators)}.json"
+            )
             price_path = PRICING_STORAGE / price_filename
             
             with open(price_path, 'w', encoding='utf-8') as f:
@@ -486,101 +563,67 @@ class LeierCalculatorScraper:
             # Step 2: Analyze each calculator
             logger.info(f"🔧 Analyzing {len(calc_urls)} calculators...")
             
-            for i, url in enumerate(calc_urls, 1):
-                logger.info(f"🔧 Calculator {i}/{len(calc_urls)}: {url}")
-                
-                calculator = await self.analyze_calculator(url)
-                if calculator:
-                    self.calculators.append(calculator)
-                    await self.save_calculator_data(calculator)
-                
-                # Rate limiting
-                await asyncio.sleep(1.0)
-            
+            tasks = [self.analyze_calculator(url) for url in calc_urls]
+            results = await asyncio.gather(*tasks, return_exceptions=True)
+
+            for result in results:
+                if isinstance(result, LeierCalculator):
+                    self.calculators.append(result)
+                    await self.save_calculator_data(result)
+                elif isinstance(result, Exception):
+                    logger.error(f"Error analyzing calculator: {result}")
+
             # Step 3: Generate report
             self.generate_calculator_report(start_time)
             
         except Exception as e:
-            logger.error(f"❌ Calculator scraping failed: {e}")
-            raise
-    
-    def generate_calculator_report(self, start_time: datetime):
-        """Generate comprehensive calculator report"""
-        end_time = datetime.now()
-        duration = (end_time - start_time).total_seconds()
-        
-        # Calculator type breakdown
+            logger.critical(
+                f"💥 Critical error in scraper run: {e}", exc_info=True
+            )
+        finally:
+            end_time = datetime.now()
+            duration = (end_time - start_time).total_seconds()
+            logger.info(f"🏁 LEIER Calculator Scraper Finished in {duration:.2f}s")
+
+    def _get_type_counts(self) -> Dict[str, int]:
+        """Counts the number of calculators of each type."""
         type_counts = {}
         for calc in self.calculators:
             type_counts[calc.calc_type] = type_counts.get(calc.calc_type, 0) + 1
-        
-        logger.info("=" * 70)
-        logger.info("📊 LEIER CALCULATOR SCRAPER - FINAL REPORT")
-        logger.info("=" * 70)
-        
-        # Overall statistics
-        logger.info(f"⏱️  Duration: {duration:.1f} seconds")
-        logger.info(f"🔧 Calculators found: {self.stats['calculators_found']}")
-        logger.info(f"⚙️  Interactive tools: {self.stats['interactive_tools']}")
-        logger.info(f"💰 Pricing data extracted: {self.stats['pricing_data_extracted']}")
-        logger.info(f"📝 Parameters captured: {self.stats['parameters_captured']}")
-        
-        # Type breakdown
-        logger.info("\n📊 Calculators by Type:")
-        for calc_type, count in type_counts.items():
-            logger.info(f"   {calc_type}: {count}")
-        
-        # Sample calculators
-        logger.info("\n🔧 Sample Calculators:")
-        for calc in self.calculators[:5]:  # Show first 5
-            logger.info(f"   - {calc.name} ({calc.calc_type})")
-        
-        logger.info("=" * 70)
-        
-        # Save comprehensive report
+        return type_counts
+
+    def generate_calculator_report(self, start_time: datetime):
+        """Generate and save a comprehensive report"""
+        end_time = datetime.now()
+        type_counts = self._get_type_counts()
         self.save_comprehensive_report(start_time, end_time, type_counts)
-    
+
     def save_comprehensive_report(self, start_time: datetime, end_time: datetime, 
-                                type_counts: dict):
-        """Save detailed report to JSON file"""
+                                type_counts: Dict[str, int]):
+        """Saves a comprehensive JSON report."""
+        timestamp = end_time.strftime("%Y%m%d_%H%M%S")
+        report_filename = f"leier_comprehensive_report_{timestamp}.json"
+        report_path = (
+            PRICING_STORAGE.parent / "reports" / report_filename
+        )
+        report_path.parent.mkdir(exist_ok=True)
+        
         report = {
-            'scraper_info': {
-                'name': 'LEIER Calculator Scraper',
-                'version': '1.0',
-                'start_time': start_time.isoformat(),
-                'end_time': end_time.isoformat(),
-                'duration_seconds': (end_time - start_time).total_seconds()
-            },
-            'statistics': self.stats,
-            'type_breakdown': type_counts,
-            'storage_locations': {
-                'calculators': str(CALC_STORAGE),
-                'pricing_data': str(PRICING_STORAGE)
-            },
-            'calculators': [
-                {
-                    'name': calc.name,
-                    'url': calc.url,
-                    'type': calc.calc_type,
-                    'has_price_data': bool(calc.price_data),
-                    'parameter_count': len(calc.parameters or []),
-                    'formula_count': len(calc.formulas or [])
-                }
-                for calc in self.calculators
-            ]
+            'run_timestamp': end_time.isoformat(),
+            'duration_seconds': (end_time - start_time).total_seconds(),
+            'stats': self.stats,
+            'calculator_type_counts': type_counts,
+            'calculators': [asdict(c) for c in self.calculators]
         }
         
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        report_file = PROJECT_ROOT / f"leier_calculator_report_{timestamp}.json"
-        
-        with open(report_file, 'w', encoding='utf-8') as f:
+        with open(report_path, 'w', encoding='utf-8') as f:
             json.dump(report, f, indent=2, ensure_ascii=False)
-        
-        logger.info(f"📋 Calculator report saved: {report_file}")
+            
+        logger.info(f"📊 Comprehensive report saved to {report_path}")
 
 
 async def main():
-    """Main entry point for LEIER calculator scraper"""
+    """Main execution entry point"""
     scraper = LeierCalculatorScraper()
     await scraper.run_calculator_scrape()
 

@@ -22,7 +22,7 @@ import re
 import sys
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, Set, Optional, Tuple, List
+from typing import Dict, Optional, Tuple, List, Any
 from urllib.parse import urljoin, urlparse
 
 import aiofiles
@@ -58,7 +58,7 @@ class LeierProductTreeMapper:
             directory.mkdir(parents=True, exist_ok=True)
 
         # Data structures
-        self.product_tree = {
+        self.product_tree: Dict[str, Any] = {
             "website": "https://www.leier.hu",
             "main_page": MAIN_PRODUCTS_URL,
             "scrape_timestamp": datetime.now().isoformat(),
@@ -68,10 +68,10 @@ class LeierProductTreeMapper:
             "total_documents": 0
         }
         
-        self.discovered_categories: Dict[str, Dict] = {}
-        self.discovered_products: Dict[str, Dict] = {}
-        self.discovered_documents: Dict[str, Dict] = {}
-        self.failed_operations = []
+        self.discovered_categories: Dict[str, Dict[str, Any]] = {}
+        self.discovered_products: Dict[str, Dict[str, Any]] = {}
+        self.discovered_documents: Dict[str, Dict[str, Any]] = {}
+        self.failed_operations: List[Tuple[str, str, str]] = []
 
         self.setup_logging()
 
@@ -96,12 +96,20 @@ class LeierProductTreeMapper:
             async with self.session_semaphore:
                 timeout = httpx.Timeout(45.0)
                 headers = {
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+                    'User-Agent': (
+                        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
+                        'AppleWebKit/537.36'
+                    ),
+                    'Accept': (
+                        'text/html,application/xhtml+xml,application/xml;'
+                        'q=0.9,*/*;q=0.8'
+                    )
                 }
-                async with httpx.AsyncClient(timeout=timeout, 
-                                           headers=headers,
-                                           follow_redirects=True) as client:
+                async with httpx.AsyncClient(
+                    timeout=timeout,
+                    headers=headers,
+                    follow_redirects=True
+                ) as client:
                     response = await client.get(url)
                     response.raise_for_status()
                     return response.text
@@ -110,219 +118,239 @@ class LeierProductTreeMapper:
             self.failed_operations.append(("fetch_page", url, str(e)))
             return None
 
-    def extract_categories_from_main_page(self, html: str) -> List[Dict]:
+    def _get_category_link_selectors(self) -> List[str]:
+        """Returns CSS selectors for finding category links."""
+        return [
+            'a[href*="/termekeink/"]',
+            'a[href*="/hu/termekeink/"]',
+        ]
+
+    def _is_valid_category_link(self, href: str) -> bool:
+        """Checks if an href is a valid, non-root category link."""
+        return href and '/termekeink/' in href and href != MAIN_PRODUCTS_URL
+
+    def _extract_category_info_from_link(self, link) -> Dict[str, Any]:
+        """Extracts category information from a single BeautifulSoup link tag."""
+        href = link.get('href', '')
+        full_url = urljoin(BASE_URL, href)
+        name = link.get_text(strip=True)
+        
+        description = ""
+        parent = link.find_parent()
+        if parent:
+            desc_text = parent.get_text(strip=True)
+            if desc_text and desc_text != name:
+                description = desc_text
+        
+        category_id = href.split('/')[-1] if '/' in href else href
+        
+        return {
+            "category_id": category_id,
+            "name": name,
+            "description": description,
+            "url": full_url,
+            "products": {},
+            "product_count": 0,
+            "document_count": 0
+        }
+
+    def extract_categories_from_main_page(self, html: str) -> List[Dict[str, Any]]:
         """Extracts all product categories from the main products page."""
         soup = BeautifulSoup(html, 'html.parser')
         categories = []
-
-        # Look for category links with various selectors
-        selectors = [
-            'a[href*="/termekeink/"]',  # Category links
-            'a[href*="/hu/termekeink/"]',  # Full category links
-        ]
-
+        seen_urls = set()
+        
+        selectors = self._get_category_link_selectors()
         for selector in selectors:
-            links = soup.select(selector)
-            for link in links:
+            for link in soup.select(selector):
                 href = link.get('href', '')
-                if href and '/termekeink/' in href and href != MAIN_PRODUCTS_URL:
-                    # Make absolute URL
-                    full_url = urljoin(BASE_URL, href)
-                    
-                    # Extract category name and description
-                    name = link.get_text(strip=True)
-                    
-                    # Try to find additional info from parent containers
-                    parent = link.find_parent()
-                    description = ""
-                    if parent:
-                        desc_text = parent.get_text(strip=True)
-                        if desc_text and desc_text != name:
-                            description = desc_text
-
-                    # Extract category ID from URL
-                    category_id = href.split('/')[-1] if '/' in href else href
-                    
-                    category_info = {
-                        "category_id": category_id,
-                        "name": name,
-                        "description": description,
-                        "url": full_url,
-                        "products": {},
-                        "product_count": 0,
-                        "document_count": 0
-                    }
-                    
-                    # Avoid duplicates
-                    if not any(cat["url"] == full_url for cat in categories):
-                        categories.append(category_info)
+                if not self._is_valid_category_link(href):
+                    continue
+                
+                category_info = self._extract_category_info_from_link(link)
+                if category_info['url'] not in seen_urls:
+                    categories.append(category_info)
+                    seen_urls.add(category_info['url'])
 
         self.logger.info(f"Found {len(categories)} categories in main page")
         return categories
 
-    def extract_products_from_category(self, html: str, category_url: str) -> List[Dict]:
+    def _get_product_link_selectors(self) -> List[str]:
+        """Returns CSS selectors for finding product links."""
+        return [
+            'a[href*="/termekek/"]',
+            'a[href*="/hu/termekek/"]',
+        ]
+
+    def _is_valid_product_link(self, href: str) -> bool:
+        """Checks if an href is a valid product link."""
+        return href and '/termekek/' in href
+
+    def _extract_product_info_from_link(
+        self, link: Any, category_url: str
+    ) -> Dict[str, Any]:
+        """Extracts product information from a single BeautifulSoup link tag."""
+        href = link.get('href', '')
+        full_url = urljoin(BASE_URL, href)
+        name = link.get_text(strip=True)
+        
+        description = ""
+        parent = link.find_parent()
+        if parent:
+            desc_elements = parent.find_all(['p', 'div', 'span'])
+            for elem in desc_elements:
+                text = elem.get_text(strip=True)
+                if text and text != name and len(text) > 20:
+                    description = text[:200] + "..." if len(text) > 200 else text
+                    break
+
+        product_id = href.split('/')[-1] if '/' in href else href
+        
+        return {
+            "product_id": product_id,
+            "name": name,
+            "description": description,
+            "url": full_url,
+            "category_url": category_url,
+            "price_info": "",
+            "specifications": {},
+            "documents": {},
+            "document_count": 0,
+            "images": []
+        }
+
+    def extract_products_from_category(
+        self, html: str, category_url: str
+    ) -> List[Dict[str, Any]]:
         """Extracts all products from a category page."""
         soup = BeautifulSoup(html, 'html.parser')
         products = []
+        seen_urls = set()
 
-        # Look for product links
-        selectors = [
-            'a[href*="/termekek/"]',  # Direct product links
-            'a[href*="/hu/termekek/"]',  # Full product links
-        ]
-
+        selectors = self._get_product_link_selectors()
         for selector in selectors:
-            links = soup.select(selector)
-            for link in links:
+            for link in soup.select(selector):
                 href = link.get('href', '')
-                if href and '/termekek/' in href:
-                    # Make absolute URL
-                    full_url = urljoin(BASE_URL, href)
-                    
-                    # Extract product name
-                    name = link.get_text(strip=True)
-                    
-                    # Try to get additional info from surrounding elements
-                    parent = link.find_parent()
-                    description = ""
-                    price_info = ""
-                    
-                    if parent:
-                        # Look for description
-                        desc_elements = parent.find_all(['p', 'div', 'span'])
-                        for elem in desc_elements:
-                            text = elem.get_text(strip=True)
-                            if text and text != name and len(text) > 20:
-                                description = text[:200] + "..." if len(text) > 200 else text
-                                break
-                    
-                    # Extract product ID from URL
-                    product_id = href.split('/')[-1] if '/' in href else href
-                    
-                    product_info = {
-                        "product_id": product_id,
-                        "name": name,
-                        "description": description,
-                        "url": full_url,
-                        "category_url": category_url,
-                        "price_info": price_info,
-                        "specifications": {},
-                        "documents": {},
-                        "document_count": 0,
-                        "images": []
-                    }
-                    
-                    # Avoid duplicates
-                    if not any(prod["url"] == full_url for prod in products):
-                        products.append(product_info)
+                if not self._is_valid_product_link(href):
+                    continue
 
+                product_info = self._extract_product_info_from_link(link, category_url)
+                if product_info['url'] not in seen_urls:
+                    products.append(product_info)
+                    seen_urls.add(product_info['url'])
         return products
 
-    def extract_product_details(self, html: str, product_url: str) -> Dict:
-        """Extracts detailed information from a product page."""
-        soup = BeautifulSoup(html, 'html.parser')
-        
-        details = {
-            "specifications": {},
-            "documents": {},
-            "images": [],
-            "technical_data": {},
-            "description": "",
-            "features": []
-        }
-
-        # Extract product description
-        desc_selectors = [
-            '.product-description',
-            '.description',
-            '[class*="description"]',
-            'p'
+    def _extract_description_from_details(self, soup: BeautifulSoup) -> str:
+        """Extracts the main product description from the details page."""
+        selectors = [
+            '.product-description', '.description', 
+            '[class*="description"]', 'p'
         ]
-        
-        for selector in desc_selectors:
-            desc_elem = soup.select_one(selector)
-            if desc_elem:
-                desc_text = desc_elem.get_text(strip=True)
-                if len(desc_text) > 50:
-                    details["description"] = desc_text
-                    break
+        for selector in selectors:
+            element = soup.select_one(selector)
+            if element:
+                text = element.get_text(strip=True)
+                if len(text) > 50:
+                    return text
+        return ""
 
-        # Extract technical specifications
-        # Look for tables with technical data
+    def _extract_tech_data_from_details(
+        self, soup: BeautifulSoup
+    ) -> Dict[str, str]:
+        """Extracts technical data from tables on the details page."""
+        tech_data = {}
         tables = soup.find_all('table')
         for table in tables:
-            rows = table.find_all('tr')
-            for row in rows:
+            for row in table.find_all('tr'):
                 cells = row.find_all(['td', 'th'])
                 if len(cells) >= 2:
                     key = cells[0].get_text(strip=True)
                     value = cells[1].get_text(strip=True)
                     if key and value:
-                        details["technical_data"][key] = value
+                        tech_data[key] = value
+        return tech_data
 
-        # Extract features/characteristics
-        feature_selectors = [
-            '.features li',
-            '.characteristics li',
-            '[class*="feature"] li',
-            'ul li'
+    def _extract_features_from_details(
+        self, soup: BeautifulSoup
+    ) -> List[str]:
+        """Extracts product features from lists on the details page."""
+        features = []
+        selectors = [
+            '.features li', '.characteristics li', 
+            '[class*="feature"] li', 'ul li'
         ]
-        
-        for selector in feature_selectors:
-            feature_elements = soup.select(selector)
-            for elem in feature_elements[:10]:  # Limit to first 10
-                feature_text = elem.get_text(strip=True)
-                if feature_text and len(feature_text) > 10:
-                    details["features"].append(feature_text)
+        for selector in selectors:
+            elements = soup.select(selector)
+            for elem in elements[:10]:
+                text = elem.get_text(strip=True)
+                if text and len(text) > 10:
+                    features.append(text)
+        return features
 
-        # Extract document links
-        doc_selectors = [
-            'a[href$=".pdf"]',
-            'a[href*=".pdf"]',
-            'a[href*="/uploads/files/"]',
-            'a[href*="dokumentumtar"]'
+    def _extract_documents_from_details(
+        self, soup: BeautifulSoup
+    ) -> Dict[str, Dict[str, str]]:
+        """Extracts document links from the details page."""
+        documents = {}
+        selectors = [
+            'a[href$=".pdf"]', 'a[href*=".pdf"]', 
+            'a[href*="/uploads/files/"]', 'a[href*="dokumentumtar"]'
         ]
-
-        for selector in doc_selectors:
-            links = soup.select(selector)
-            for link in links:
+        for selector in selectors:
+            for link in soup.select(selector):
                 href = link.get('href', '')
-                if href:
-                    full_url = urljoin(BASE_URL, href)
-                    title = link.get_text(strip=True) or link.get('title', '')
-                    if not title:
-                        title = Path(urlparse(href).path).stem
-                    
-                    doc_id = f"doc_{len(details['documents'])}"
-                    details["documents"][doc_id] = {
-                        "title": title,
-                        "url": full_url,
-                        "type": "pdf" if ".pdf" in href.lower() else "document"
-                    }
+                if not href:
+                    continue
+                
+                full_url = urljoin(BASE_URL, href)
+                title = (
+                    link.get_text(strip=True) or 
+                    link.get('title', '') or 
+                    Path(urlparse(href).path).stem
+                )
+                doc_id = f"doc_{len(documents)}"
+                doc_type = "pdf" if ".pdf" in href.lower() else "document"
+                documents[doc_id] = {
+                    "title": title, "url": full_url, "type": doc_type
+                }
+        return documents
 
-        # Extract product images
-        img_selectors = [
-            '.product-image img',
-            '.gallery img',
-            'img[src*="product"]',
-            'img'
+    def _extract_images_from_details(
+        self, soup: BeautifulSoup
+    ) -> List[Dict[str, str]]:
+        """Extracts image URLs from the details page."""
+        images = []
+        selectors = [
+            '.product-image img', '.gallery img', 
+            'img[src*="product"]', 'img'
         ]
-        
-        for selector in img_selectors:
-            images = soup.select(selector)
-            for img in images[:5]:  # Limit to first 5 images
+        for selector in selectors:
+            for img in soup.select(selector)[:5]:
                 src = img.get('src', '')
                 if src:
                     full_url = urljoin(BASE_URL, src)
                     alt_text = img.get('alt', '')
-                    details["images"].append({
-                        "url": full_url,
-                        "alt": alt_text
-                    })
+                    images.append({"url": full_url, "alt": alt_text})
+        return images
 
-        return details
+    def extract_product_details(
+        self, html: str, product_url: str
+    ) -> Dict[str, Any]:
+        """Extracts detailed information from a product page."""
+        soup = BeautifulSoup(html, 'html.parser')
+        
+        return {
+            "description": self._extract_description_from_details(soup),
+            "technical_data": self._extract_tech_data_from_details(soup),
+            "features": self._extract_features_from_details(soup),
+            "documents": self._extract_documents_from_details(soup),
+            "images": self._extract_images_from_details(soup),
+            "specifications": {}, # backward compatibility
+        }
 
-    async def download_document(self, doc_info: Dict, product_id: str, category_id: str):
+    async def download_document(
+        self, doc_info: Dict[str, str], product_id: str, category_id: str
+    ):
         """Downloads a document to the organized directory structure."""
         doc_url = doc_info["url"]
         doc_title = doc_info["title"]
@@ -340,15 +368,18 @@ class LeierProductTreeMapper:
         file_path = product_dir / safe_title
 
         if file_path.exists():
-            self.logger.warning(f"Document already exists: {category_id}/{product_id}/{safe_title}")
+            self.logger.warning(
+                f"Document already exists: {category_id}/{product_id}/{safe_title}"
+            )
             return file_path
 
         try:
             async with self.session_semaphore:
                 headers = {'Referer': BASE_URL}
                 timeout = httpx.Timeout(120.0)
-                async with httpx.AsyncClient(timeout=timeout, 
-                                           headers=headers) as client:
+                async with httpx.AsyncClient(
+                    timeout=timeout, headers=headers
+                ) as client:
                     response = await client.get(doc_url)
                     response.raise_for_status()
 
@@ -356,7 +387,10 @@ class LeierProductTreeMapper:
                     await f.write(response.content)
                 
                 file_size = file_path.stat().st_size / 1024  # KB
-                self.logger.info(f"✅ Downloaded: {category_id}/{product_id}/{safe_title} ({file_size:.1f} KB)")
+                self.logger.info(
+                    f"✅ Downloaded: {category_id}/{product_id}/"
+                    f"{safe_title} ({file_size:.1f} KB)"
+                )
                 return file_path
                 
         except Exception as e:
@@ -364,7 +398,9 @@ class LeierProductTreeMapper:
             self.failed_operations.append(("download_document", doc_url, str(e)))
             return None
 
-    async def save_product_metadata(self, product_info: Dict, category_id: str):
+    async def save_product_metadata(
+        self, product_info: Dict[str, Any], category_id: str
+    ):
         """Saves product metadata as JSON."""
         product_id = product_info["product_id"]
         
@@ -377,9 +413,13 @@ class LeierProductTreeMapper:
         async with aiofiles.open(metadata_file, 'w', encoding='utf-8') as f:
             await f.write(json.dumps(product_info, indent=4, ensure_ascii=False))
         
-        self.logger.info(f"💾 Saved metadata: {category_id}/{product_id}.json")
+        self.logger.info(
+            f"💾 Saved metadata: {category_id}/{product_id}.json"
+        )
 
-    async def process_product(self, product_info: Dict, category_id: str):
+    async def process_product(
+        self, product_info: Dict[str, Any], category_id: str
+    ):
         """Processes a single product: extracts details and downloads documents."""
         product_url = product_info["url"]
         product_id = product_info["product_id"]
@@ -402,11 +442,12 @@ class LeierProductTreeMapper:
         await self.save_product_metadata(product_info, category_id)
         
         # Download all product documents
-        for doc_id, doc_info in details["documents"].items():
-            await self.download_document(doc_info, product_id, category_id)
-            await asyncio.sleep(0.5)  # Rate limiting
+        if "documents" in details and details["documents"]:
+            for doc_id, doc_info in details["documents"].items():
+                await self.download_document(doc_info, product_id, category_id)
+                await asyncio.sleep(0.5)  # Rate limiting
 
-    async def process_category(self, category_info: Dict):
+    async def process_category(self, category_info: Dict[str, Any]):
         """Processes a single category: finds products and processes them."""
         category_url = category_info["url"]
         category_id = category_info["category_id"]
@@ -432,7 +473,9 @@ class LeierProductTreeMapper:
             await asyncio.sleep(1)  # Rate limiting between products
         
         # Calculate total documents in category
-        total_docs = sum(prod["document_count"] for prod in products)
+        total_docs = sum(
+            prod.get("document_count", 0) for prod in products
+        )
         category_info["document_count"] = total_docs
         
         # Save category metadata
@@ -474,7 +517,8 @@ class LeierProductTreeMapper:
         self.product_tree["total_products"] = total_products
         self.product_tree["total_documents"] = total_documents
         self.product_tree["processing_completed"] = datetime.now().isoformat()
-        self.product_tree["duration_seconds"] = (datetime.now() - start_time).total_seconds()
+        duration = (datetime.now() - start_time).total_seconds()
+        self.product_tree["duration_seconds"] = duration
 
         # Save complete product tree
         tree_file = self.directories['tree_mapping'] / 'complete_product_tree.json'
@@ -498,13 +542,13 @@ class LeierProductTreeMapper:
             "categories_overview": [
                 {
                     "category_id": cat_id,
-                    "name": cat_info["name"],
-                    "product_count": cat_info["product_count"],
-                    "document_count": cat_info["document_count"]
+                    "name": cat_info.get("name"),
+                    "product_count": cat_info.get("product_count"),
+                    "document_count": cat_info.get("document_count"),
                 }
                 for cat_id, cat_info in self.product_tree["categories"].items()
             ],
-            "failed_operations": self.failed_operations,
+            "failed_operations_log": self.failed_operations,
             "storage_structure": {
                 "base_directory": str(self.base_dir),
                 "products_metadata": "products/{category_id}/{product_id}.json",
@@ -518,7 +562,7 @@ class LeierProductTreeMapper:
         filename = f'leier_product_tree_final_report_{timestamp}.json'
         report_path = self.reports_dir / filename
         with open(report_path, 'w', encoding='utf-8') as f:
-            json.dump(report, f, indent=4, ensure_ascii=False)
+            json.dump(report, f, indent=2, ensure_ascii=False)
             
         self.logger.info(f"📊 Final report saved to {report_path}")
         
@@ -535,8 +579,8 @@ class LeierProductTreeMapper:
 
 
 async def main():
-    """Main execution function."""
-    scraper = LeierProductTreeMapper()
+    """Main execution entry point."""
+    scraper = LeierProductTreeMapper(max_concurrent=5)
     await scraper.run()
 
 

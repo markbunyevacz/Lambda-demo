@@ -20,7 +20,7 @@ import re
 import sys
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, Set, Optional, Tuple
+from typing import Dict, Set, Optional, Tuple, List
 
 import aiofiles
 import httpx
@@ -60,9 +60,9 @@ class LeierAPIScraper:
         self.discovered_docs: Set[Tuple[str, str, str]] = set()
         # (folder_id, folder_name) 
         self.discovered_folders: Set[Tuple[int, str]] = set()
-        self.downloaded_files = set()
-        self.failed_downloads = []
-        self.duplicate_files = set()
+        self.downloaded_files: Set[str] = set()
+        self.failed_downloads: List[Tuple[str, str]] = []
+        self.duplicate_files: Set[str] = set()
         self.api_calls_made = 0
 
         self.setup_logging()
@@ -96,8 +96,9 @@ class LeierAPIScraper:
         
         try:
             timeout = httpx.Timeout(45.0)
-            async with httpx.AsyncClient(timeout=timeout, 
-                                       follow_redirects=True) as client:
+            async with httpx.AsyncClient(
+                timeout=timeout, follow_redirects=True
+            ) as client:
                 response = await client.get(url)
                 response.raise_for_status()
                 self.logger.info(f"Successfully fetched API data from {url}")
@@ -110,45 +111,74 @@ class LeierAPIScraper:
             self.logger.error(f"Unexpected error querying {url}: {e}")
         return None
 
-    def parse_api_response(self, api_data: Dict, folder_path: str = ""):
-        """Parses the JSON response from the API to find document links and 
-        folders."""
+    def _get_api_items(self, api_data: Dict) -> Optional[List[Dict]]:
+        """Extracts the list of items from the API response."""
         documents_key = 'documents' if 'documents' in api_data else 'children'
         
         if documents_key not in api_data:
-            self.logger.warning(f"API data does not contain '{documents_key}' key")
-            return
+            self.logger.warning(
+                f"API data does not contain '{documents_key}' key"
+            )
+            return None
 
         items = api_data[documents_key]
         if not isinstance(items, list):
             self.logger.warning(f"'{documents_key}' is not a list")
-            return
+            return None
         
-        def process_items(items, current_folder_path):
-            for item in items:
-                item_name = item.get('name', f"item_{item.get('id', 'unknown')}")
-                if current_folder_path:
-                    item_path = f"{current_folder_path}/{item_name}"
-                else:
-                    item_path = item_name
-                
-                # If it's a file, add it to discovered documents
-                if item.get('is_folder') == 0 and item.get('id'):
-                    doc_url = f"{BASE_URL}/hu/dokumentumtar/{item['id']}"
-                    self.discovered_docs.add((doc_url, item_name, item_path))
-                    self.logger.debug(f"Found document: {item_name} at {item_path}")
-                
-                # If it's a folder, add it to discovered folders for recursive processing
-                elif item.get('is_folder') == 1 and item.get('id'):
-                    self.discovered_folders.add((item['id'], item_path))
-                    folder_id = item['id']
-                    self.logger.debug(f"Found folder: {item_name} (ID: {folder_id}) at {item_path}")
-                    
-                    # Process any immediate children if they exist
-                    if 'children' in item and isinstance(item['children'], list):
-                        process_items(item['children'], item_path)
+        return items
 
-        process_items(items, folder_path)
+    def _get_item_path(self, item: Dict, current_folder_path: str) -> str:
+        """Constructs the full path for a given item."""
+        item_name = item.get('name', f"item_{item.get('id', 'unknown')}")
+        if current_folder_path:
+            return f"{current_folder_path}/{item_name}"
+        return item_name
+
+    def _process_file_item(self, item: Dict, item_path: str):
+        """Processes a file item from the API response."""
+        if item.get('is_folder') == 0 and item.get('id'):
+            doc_url = f"{BASE_URL}/hu/dokumentumtar/{item['id']}"
+            item_name = item.get('name', 'Unknown Document')
+            self.discovered_docs.add((doc_url, item_name, item_path))
+            self.logger.debug(f"Found document: {item_name} at {item_path}")
+
+    def _process_folder_item(self, item: Dict, item_path: str):
+        """Processes a folder item from the API response."""
+        if item.get('is_folder') == 1 and item.get('id'):
+            folder_id = item['id']
+            item_name = item.get('name', 'Unknown Folder')
+            self.discovered_folders.add((folder_id, item_path))
+            self.logger.debug(
+                f"Found folder: {item_name} (ID: {folder_id}) at {item_path}"
+            )
+            
+            # Process any immediate children if they exist
+            if 'children' in item and isinstance(item.get('children'), list):
+                self.parse_api_response(
+                    {'children': item['children']}, item_path
+                )
+    
+    def parse_api_response(self, api_data: Dict, folder_path: str = ""):
+        """Parses the JSON response from the API to find document links and 
+        folders."""
+        items = self._get_api_items(api_data)
+        if items is None:
+            return
+            
+        for item in items:
+            item_path = self._get_item_path(item, folder_path)
+            self._process_file_item(item, item_path)
+            self._process_folder_item(item, item_path)
+
+    async def _save_folder_response(self, folder_id: int, folder_data: Dict):
+        """Saves the API response for a folder to a file."""
+        filename = f'folder_{folder_id}_response.json'
+        folder_response_path = self.directories['api_responses'] / filename
+        async with aiofiles.open(
+            folder_response_path, 'w', encoding='utf-8'
+        ) as f:
+            await f.write(json.dumps(folder_data, indent=2, ensure_ascii=False))
 
     async def explore_folders_recursively(self):
         """Recursively explores all discovered folders to find documents."""
@@ -163,26 +193,20 @@ class LeierAPIScraper:
                     continue
                     
                 processed_folders.add(folder_id)
-                self.logger.info(f"Exploring folder: {folder_path} (ID: {folder_id})")
+                self.logger.info(
+                    f"Exploring folder: {folder_path} (ID: {folder_id})"
+                )
                 
                 folder_data = await self.fetch_api_data(folder_id)
                 if folder_data:
-                    # Save folder response for debugging
-                    filename = f'folder_{folder_id}_response.json'
-                    folder_response_path = self.directories['api_responses'] / filename
-                    async with aiofiles.open(folder_response_path, 'w', 
-                                           encoding='utf-8') as f:
-                        await f.write(json.dumps(folder_data, indent=2, 
-                                                ensure_ascii=False))
-                    
+                    await self._save_folder_response(folder_id, folder_data)
                     self.parse_api_response(folder_data, folder_path)
                 
                 # Rate limiting
                 await asyncio.sleep(0.5)
 
-    async def download_document(self, url: str, title: str, folder_path: str):
-        """Downloads a single document with folder organization."""
-        # Create folder structure in downloads
+    def _create_download_directory(self, folder_path: str) -> Path:
+        """Creates the directory structure for a downloaded file."""
         folder_parts = folder_path.split('/')
         current_dir = self.directories['documents']
         
@@ -192,12 +216,19 @@ class LeierAPIScraper:
                 safe_part = re.sub(r'[^\w\.\-\s]', '_', part)
                 current_dir = current_dir / safe_part
                 current_dir.mkdir(exist_ok=True)
-        
-        # Sanitize filename
+        return current_dir
+
+    def _sanitize_filename(self, title: str) -> str:
+        """Sanitizes a title to create a valid filename."""
         safe_filename = re.sub(r'[^\w\.\-\s]', '_', title)
         if not Path(safe_filename).suffix:
             safe_filename += ".pdf"
-        
+        return safe_filename
+
+    async def download_document(self, url: str, title: str, folder_path: str):
+        """Downloads a single document with folder organization."""
+        current_dir = self._create_download_directory(folder_path)
+        safe_filename = self._sanitize_filename(title)
         file_path = current_dir / safe_filename
 
         if file_path.exists():
@@ -209,19 +240,30 @@ class LeierAPIScraper:
             async with self.session_semaphore:
                 headers = {'Referer': BASE_URL}
                 timeout = httpx.Timeout(120.0)
-                async with httpx.AsyncClient(timeout=timeout, 
-                                           headers=headers) as client:
+                async with httpx.AsyncClient(
+                    timeout=timeout, headers=headers
+                ) as client:
                     response = await client.get(url)
                     response.raise_for_status()
 
                 async with aiofiles.open(file_path, 'wb') as f:
                     await f.write(response.content)
                 
-                self.logger.info(f"✅ Downloaded: {folder_path}/{safe_filename}")
+                download_path = f"{folder_path}/{safe_filename}"
+                self.logger.info(f"✅ Downloaded: {download_path}")
                 self.downloaded_files.add(url)
         except Exception as e:
             self.logger.error(f"❌ Failed to download {url}: {e}")
             self.failed_downloads.append((url, str(e)))
+
+    async def _save_root_response(self, root_data: Dict) -> Path:
+        """Saves the root API response to a file."""
+        timestamp = datetime.now().strftime("%Y%m%d")
+        filename = f'leier_api_response_{timestamp}.json'
+        root_response_path = self.directories['api_responses'] / filename
+        async with aiofiles.open(root_response_path, 'w', encoding='utf-8') as f:
+            await f.write(json.dumps(root_data, indent=2, ensure_ascii=False))
+        return root_response_path
 
     async def run(self):
         """Main execution logic for the scraper."""
@@ -235,11 +277,7 @@ class LeierAPIScraper:
             return
 
         # Save root response
-        timestamp = datetime.now().strftime("%Y%m%d")
-        filename = f'leier_api_response_{timestamp}.json'
-        root_response_path = self.directories['api_responses'] / filename
-        async with aiofiles.open(root_response_path, 'w', encoding='utf-8') as f:
-            await f.write(json.dumps(root_data, indent=2, ensure_ascii=False))
+        root_response_path = await self._save_root_response(root_data)
         self.logger.info(f"Saved root API response to {root_response_path}")
         
         # Step 2: Parse root data to find initial folders and documents
@@ -247,17 +285,21 @@ class LeierAPIScraper:
         initial_docs = len(self.discovered_docs)
         initial_folders = len(self.discovered_folders)
         
-        msg = f"Initial parsing found {initial_docs} documents and {initial_folders} folders"
+        msg = f"Initial parsing found {initial_docs} docs and {initial_folders} folders"
         self.logger.info(msg)
         
         # Step 3: Recursively explore all folders
         if self.discovered_folders:
             folder_count = len(self.discovered_folders)
-            self.logger.info(f"--- Exploring {folder_count} folders recursively ---")
+            self.logger.info(
+                f"--- Exploring {folder_count} folders recursively ---"
+            )
             await self.explore_folders_recursively()
         
         total_docs = len(self.discovered_docs)
-        self.logger.info(f"After recursive exploration: {total_docs} total documents discovered")
+        self.logger.info(
+            f"After recursive exploration: {total_docs} total docs discovered"
+        )
         
         # Step 4: Download documents
         if self.test_mode:
@@ -275,6 +317,9 @@ class LeierAPIScraper:
 
     def generate_report(self, start_time: datetime):
         """Generates and saves a JSON report of the scraping run."""
+        folders_explored_count = (
+            len(self.discovered_folders) if hasattr(self, 'discovered_folders') else 0
+        )
         report = {
             "run_timestamp": datetime.now().isoformat(),
             "duration_seconds": (datetime.now() - start_time).total_seconds(),
@@ -282,7 +327,7 @@ class LeierAPIScraper:
             "target_url": API_BASE_URL,
             "api_calls_made": self.api_calls_made,
             "summary": {
-                "folders_explored": len(self.discovered_folders) if hasattr(self, 'discovered_folders') else 0,
+                "folders_explored": folders_explored_count,
                 "documents_discovered": len(self.discovered_docs),
                 "downloads_successful": len(self.downloaded_files),
                 "downloads_failed": len(self.failed_downloads),

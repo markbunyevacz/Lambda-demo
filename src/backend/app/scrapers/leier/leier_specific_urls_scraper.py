@@ -17,7 +17,7 @@ import re
 import sys
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, Set, Optional, Tuple, List
+from typing import Set, Optional, Tuple, List
 from urllib.parse import urljoin, urlparse
 
 import aiofiles
@@ -35,6 +35,7 @@ TARGET_URLS = [
     "https://www.leier.hu/hu/termekeink/beton-zsaluzoelemek",
     "https://www.leier.hu/hu/termekeink"
 ]
+
 
 class LeierSpecificUrlsScraper:
     """Scrapes specific LEIER URLs for downloadable content."""
@@ -62,10 +63,10 @@ class LeierSpecificUrlsScraper:
 
         # Tracking
         self.discovered_docs: Set[Tuple[str, str, str]] = set()  # (url, title, source)
-        self.downloaded_files = set()
-        self.failed_downloads = []
-        self.duplicate_files = set()
-        self.processed_urls = set()
+        self.downloaded_files: Set[str] = set()
+        self.failed_downloads: List[Tuple[str, str]] = []
+        self.duplicate_files: Set[str] = set()
+        self.processed_urls: Set[str] = set()
 
         self.setup_logging()
 
@@ -90,12 +91,16 @@ class LeierSpecificUrlsScraper:
             async with self.session_semaphore:
                 timeout = httpx.Timeout(45.0)
                 headers = {
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
+                                  'AppleWebKit/537.36',
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;'
+                              'q=0.9,*/*;q=0.8'
                 }
-                async with httpx.AsyncClient(timeout=timeout, 
-                                           headers=headers,
-                                           follow_redirects=True) as client:
+                async with httpx.AsyncClient(
+                    timeout=timeout, 
+                    headers=headers,
+                    follow_redirects=True
+                ) as client:
                     response = await client.get(url)
                     response.raise_for_status()
                     return response.text
@@ -103,13 +108,9 @@ class LeierSpecificUrlsScraper:
             self.logger.error(f"Failed to fetch {url}: {e}")
             return None
 
-    def extract_documents_from_html(self, html: str, source_url: str) -> List[Tuple[str, str]]:
-        """Extracts document URLs from HTML content."""
-        soup = BeautifulSoup(html, 'html.parser')
-        documents = []
-
-        # Comprehensive selectors for different types of document links
-        selectors = [
+    def _get_document_selectors(self) -> List[str]:
+        """Returns CSS selectors for different types of document links."""
+        return [
             'a[href$=".pdf"]',  # Direct PDF links
             'a[href*=".pdf"]',  # PDF links with parameters
             'a[href*="/uploads/files/"]',  # File server links
@@ -123,83 +124,168 @@ class LeierSpecificUrlsScraper:
             '[data-file] a',  # File data attributes
         ]
 
+    def _is_valid_document_link(self, href_str: str) -> bool:
+        """Checks if a link is a valid document link."""
+        return (
+            '.pdf' in href_str.lower() or 
+            '/uploads/files/' in href_str or 
+            'dokumentumtar' in href_str or
+            'download' in href_str.lower()
+        )
+
+    def _extract_document_title(self, link, href_str: str, doc_count: int) -> str:
+        """Extracts document title from link element."""
+        title = link.get_text(strip=True) or link.get('title', '')
+        if not title:
+            # Try to extract from href
+            title = Path(urlparse(href_str).path).stem
+            if not title:
+                title = f"document_{doc_count}"
+        return title
+
+    def _extract_documents_from_css_selectors(
+        self, soup: BeautifulSoup
+    ) -> List[Tuple[str, str]]:
+        """Extracts documents using CSS selectors."""
+        documents = []
+        selectors = self._get_document_selectors()
+
         for selector in selectors:
             links = soup.select(selector)
             for link in links:
                 href = link.get('href', '')
-                if href:
-                    href_str = str(href)
-                    if ('.pdf' in href_str.lower() or 
-                       '/uploads/files/' in href_str or 
-                       'dokumentumtar' in href_str or
-                       'download' in href_str.lower()):
-                        
-                        # Make absolute URL
-                        full_url = urljoin(BASE_URL, href_str)
-                        
-                        # Extract document title
-                        title = link.get_text(strip=True) or link.get('title', '')
-                        if not title:
-                            # Try to extract from href
-                            title = Path(urlparse(href_str).path).stem
-                            if not title:
-                                title = f"document_{len(documents)}"
-                        
-                        if full_url not in [d[0] for d in documents]:
-                            documents.append((full_url, title))
-
-        # Also look for documents in script tags (JavaScript-loaded content)
-        scripts = soup.find_all('script')
-        for script in scripts:
-            if hasattr(script, 'string') and script.string:
-                # Look for PDF URLs and file URLs in JavaScript
-                patterns = [
-                    r'["\']([^"\']*\.pdf[^"\']*)["\']',
-                    r'["\']([^"\']*uploads/files/[^"\']*)["\']',
-                    r'["\']([^"\']*dokumentumtar[^"\']*)["\']'
-                ]
+                if not href:
+                    continue
+                    
+                href_str = str(href)
+                if not self._is_valid_document_link(href_str):
+                    continue
                 
-                for pattern in patterns:
-                    matches = re.findall(pattern, script.string)
-                    for match in matches:
-                        full_url = urljoin(BASE_URL, match)
-                        title = Path(urlparse(match).path).stem or f"script_doc_{len(documents)}"
-                        if full_url not in [d[0] for d in documents]:
-                            documents.append((full_url, title))
+                # Make absolute URL
+                full_url = urljoin(BASE_URL, href_str)
+                
+                # Extract document title
+                title = self._extract_document_title(
+                    link, href_str, len(documents)
+                )
+                
+                # Avoid duplicates
+                if full_url not in [d[0] for d in documents]:
+                    documents.append((full_url, title))
 
-        # Look for file listings in tables or lists (for uploads/files/ directory)
-        if '/uploads/files/' in source_url:
-            # Look for file listings
-            file_patterns = [
-                'a[href$=".pdf"]',
-                'a[href$=".doc"]',
-                'a[href$=".docx"]',
-                'a[href$=".zip"]',
-                'a[href$=".dwg"]',
-                'a[href$=".dxf"]'
-            ]
-            
-                         for pattern in file_patterns:
-                 file_links = soup.select(pattern)
-                 for link in file_links:
-                     href = link.get('href', '')
-                     if href:
-                         href_str = str(href)
-                         full_url = urljoin(source_url, href_str)
-                         title = link.get_text(strip=True) or Path(href_str).name
-                         if full_url not in [d[0] for d in documents]:
-                             documents.append((full_url, title))
-
-        self.logger.info(f"Found {len(documents)} documents at {source_url}")
         return documents
 
-    def extract_product_links(self, html: str, source_url: str) -> List[str]:
-        """Extracts product page links from category pages."""
-        soup = BeautifulSoup(html, 'html.parser')
-        product_links = []
+    def _get_script_patterns(self) -> List[str]:
+        """Returns regex patterns for finding documents in JavaScript."""
+        return [
+            r'["\']([^"\']*\.pdf[^"\']*)["\']',
+            r'["\']([^"\']*uploads/files/[^"\']*)["\']',
+            r'["\']([^"\']*dokumentumtar[^"\']*)["\']'
+        ]
 
-        # Look for product links
-        selectors = [
+    def _extract_documents_from_scripts(
+        self, soup: BeautifulSoup
+    ) -> List[Tuple[str, str]]:
+        """Extracts documents from JavaScript content."""
+        documents = []
+        scripts = soup.find_all('script')
+        patterns = self._get_script_patterns()
+        
+        for script in scripts:
+            if not (hasattr(script, 'string') and script.string):
+                continue
+                
+            for pattern in patterns:
+                matches = re.findall(pattern, script.string)
+                for match in matches:
+                    full_url = urljoin(BASE_URL, match)
+                    title = (
+                        Path(urlparse(match).path).stem or 
+                        f"script_doc_{len(documents)}"
+                    )
+                    
+                    # Avoid duplicates
+                    if full_url not in [d[0] for d in documents]:
+                        documents.append((full_url, title))
+
+        return documents
+
+    def _get_file_patterns(self) -> List[str]:
+        """Returns file extension patterns for file listings."""
+        return [
+            'a[href$=".pdf"]',
+            'a[href$=".doc"]',
+            'a[href$=".docx"]',
+            'a[href$=".zip"]',
+            'a[href$=".dwg"]',
+            'a[href$=".dxf"]'
+        ]
+
+    def _is_file_server_url(self, source_url: str) -> bool:
+        """Checks if URL is a file server URL."""
+        return '/uploads/files/' in source_url
+
+    def _extract_documents_from_file_listings(
+        self, soup: BeautifulSoup, source_url: str
+    ) -> List[Tuple[str, str]]:
+        """Extracts documents from file server listings."""
+        documents = []
+        
+        if not self._is_file_server_url(source_url):
+            return documents
+            
+        file_patterns = self._get_file_patterns()
+        
+        for pattern in file_patterns:
+            file_links = soup.select(pattern)
+            for link in file_links:
+                href = link.get('href', '')
+                if not href:
+                    continue
+                    
+                href_str = str(href)
+                full_url = urljoin(source_url, href_str)
+                title = (
+                    link.get_text(strip=True) or Path(href_str).name
+                )
+                
+                # Avoid duplicates
+                if full_url not in [d[0] for d in documents]:
+                    documents.append((full_url, title))
+
+        return documents
+
+    def extract_documents_from_html(
+        self, html: str, source_url: str
+    ) -> List[Tuple[str, str]]:
+        """Extracts document URLs from HTML content."""
+        soup = BeautifulSoup(html, 'html.parser')
+        
+        # Extract documents from different sources
+        css_documents = self._extract_documents_from_css_selectors(soup)
+        script_documents = self._extract_documents_from_scripts(soup)
+        file_documents = self._extract_documents_from_file_listings(
+            soup, source_url
+        )
+        
+        # Combine all documents and remove duplicates
+        all_documents = css_documents + script_documents + file_documents
+        unique_documents = []
+        seen_urls = set()
+        
+        for url, title in all_documents:
+            if url not in seen_urls:
+                unique_documents.append((url, title))
+                seen_urls.add(url)
+
+        self.logger.info(
+            f"Found {len(unique_documents)} documents at {source_url}"
+        )
+        return unique_documents
+
+    def _get_product_link_selectors(self) -> List[str]:
+        """Returns CSS selectors for product links."""
+        return [
             'a[href*="/termekek/"]',  # Direct product links
             'a[href*="/hu/termekek/"]',  # Full product links
             '.product-item a',  # Product item containers
@@ -207,41 +293,68 @@ class LeierSpecificUrlsScraper:
             'div[class*="product"] a'  # Product div containers
         ]
 
+    def _is_valid_product_link(self, href: str) -> bool:
+        """Checks if a link is a valid product link."""
+        return href and '/termekek/' in href
+
+    def extract_product_links(
+        self, html: str, source_url: str
+    ) -> List[str]:
+        """Extracts product page links from category pages."""
+        soup = BeautifulSoup(html, 'html.parser')
+        product_links = []
+        selectors = self._get_product_link_selectors()
+
         for selector in selectors:
             links = soup.select(selector)
             for link in links:
                 href = link.get('href', '')
-                if href and '/termekek/' in href:
-                    full_url = urljoin(BASE_URL, href)
-                    if full_url not in product_links:
-                        product_links.append(full_url)
+                if not self._is_valid_product_link(href):
+                    continue
+                    
+                full_url = urljoin(BASE_URL, href)
+                if full_url not in product_links:
+                    product_links.append(full_url)
 
-        self.logger.info(f"Found {len(product_links)} product links at {source_url}")
+        self.logger.info(
+            f"Found {len(product_links)} product links at {source_url}"
+        )
         return product_links
+
+    def _sanitize_source_name(self, source: str) -> str:
+        """Sanitizes source URL for use as folder name."""
+        source_name = urlparse(source).path.strip('/').replace('/', '_')
+        return source_name if source_name else "root"
+
+    def _determine_file_extension(self, url: str, title: str) -> str:
+        """Determines file extension from URL or defaults to PDF."""
+        extensions = ('.pdf', '.doc', '.docx', '.zip', '.dwg', '.dxf')
+        if title.lower().endswith(extensions):
+            return ""
+            
+        parsed_url = urlparse(url)
+        url_path = parsed_url.path
+        if '.' in url_path:
+            return Path(url_path).suffix
+        return '.pdf'  # Default to PDF
+
+    def _sanitize_filename(self, title: str, url: str) -> str:
+        """Sanitizes filename and adds extension if needed."""
+        safe_title = re.sub(r'[^\w\s\-\.]', '_', title)
+        extension = self._determine_file_extension(url, safe_title)
+        return safe_title + extension
 
     async def download_document(self, url: str, title: str, source: str):
         """Downloads a document with organized folder structure."""
         # Sanitize source for folder name
-        source_name = urlparse(source).path.strip('/').replace('/', '_')
-        if not source_name:
-            source_name = "root"
+        source_name = self._sanitize_source_name(source)
         
         # Create source-specific folder
         source_dir = self.directories['documents'] / source_name
         source_dir.mkdir(exist_ok=True)
         
         # Sanitize filename
-        safe_title = re.sub(r'[^\w\s\-\.]', '_', title)
-        if not safe_title.lower().endswith(('.pdf', '.doc', '.docx', '.zip', '.dwg', '.dxf')):
-            # Try to determine extension from URL
-            parsed_url = urlparse(url)
-            url_path = parsed_url.path
-            if '.' in url_path:
-                ext = Path(url_path).suffix
-                safe_title += ext
-            else:
-                safe_title += '.pdf'  # Default to PDF
-        
+        safe_title = self._sanitize_filename(title, url)
         file_path = source_dir / safe_title
 
         if file_path.exists():
@@ -253,8 +366,10 @@ class LeierSpecificUrlsScraper:
             async with self.session_semaphore:
                 headers = {'Referer': BASE_URL}
                 timeout = httpx.Timeout(120.0)
-                async with httpx.AsyncClient(timeout=timeout, 
-                                           headers=headers) as client:
+                async with httpx.AsyncClient(
+                    timeout=timeout, 
+                    headers=headers
+                ) as client:
                     response = await client.get(url)
                     response.raise_for_status()
 
@@ -267,6 +382,38 @@ class LeierSpecificUrlsScraper:
             self.logger.error(f"❌ Failed to download {url}: {e}")
             self.failed_downloads.append((url, str(e)))
 
+    def _sanitize_url_for_filename(self, url: str) -> str:
+        """Sanitizes URL for use as filename."""
+        url_name = urlparse(url).path.strip('/').replace('/', '_')
+        return url_name if url_name else "root"
+
+    def _is_category_page(self, url: str) -> bool:
+        """Checks if URL is a category page that should be scraped."""
+        return (
+            '/termekeink/' in url and 
+            url != "https://www.leier.hu/hu/termekeink"
+        )
+
+    async def _save_page_html(self, html: str, url: str):
+        """Saves page HTML for debugging purposes."""
+        url_name = self._sanitize_url_for_filename(url)
+        page_file = self.directories['page_samples'] / f"{url_name}.html"
+        async with aiofiles.open(
+            page_file, 'w', encoding='utf-8'
+        ) as f:
+            await f.write(html)
+
+    async def _scrape_product_pages(self, html: str, url: str):
+        """Scrapes product pages from category pages."""
+        if not self._is_category_page(url):
+            return
+            
+        product_links = self.extract_product_links(html, url)
+        # Limit to first 5 products for testing
+        for product_url in product_links[:5]:
+            await self.scrape_url(product_url)
+            await asyncio.sleep(0.5)  # Rate limiting
+
     async def scrape_url(self, url: str):
         """Scrapes a specific URL for downloadable content."""
         if url in self.processed_urls:
@@ -278,12 +425,7 @@ class LeierSpecificUrlsScraper:
             return
 
         # Save page HTML for debugging
-        url_name = urlparse(url).path.strip('/').replace('/', '_')
-        if not url_name:
-            url_name = "root"
-        page_file = self.directories['page_samples'] / f"{url_name}.html"
-        async with aiofiles.open(page_file, 'w', encoding='utf-8') as f:
-            await f.write(html)
+        await self._save_page_html(html, url)
 
         # Extract documents from this page
         documents = self.extract_documents_from_html(html, url)
@@ -291,11 +433,7 @@ class LeierSpecificUrlsScraper:
             self.discovered_docs.add((doc_url, doc_title, url))
 
         # If this is a category page, also scrape product pages
-        if '/termekeink/' in url and url != "https://www.leier.hu/hu/termekeink":
-            product_links = self.extract_product_links(html, url)
-            for product_url in product_links[:5]:  # Limit to first 5 products for testing
-                await self.scrape_url(product_url)
-                await asyncio.sleep(0.5)  # Rate limiting
+        await self._scrape_product_pages(html, url)
 
         self.processed_urls.add(url)
 
@@ -313,9 +451,12 @@ class LeierSpecificUrlsScraper:
         if self.test_mode:
             self.logger.info("Test mode enabled. Skipping downloads.")
         elif self.discovered_docs:
-            self.logger.info(f"--- Downloading {len(self.discovered_docs)} documents ---")
-            tasks = [self.download_document(url, title, source) 
-                    for url, title, source in self.discovered_docs]
+            doc_count = len(self.discovered_docs)
+            self.logger.info(f"--- Downloading {doc_count} documents ---")
+            tasks = [
+                self.download_document(url, title, source) 
+                for url, title, source in self.discovered_docs
+            ]
             await asyncio.gather(*tasks, return_exceptions=True)
         else:
             self.logger.warning("No documents discovered to download.")

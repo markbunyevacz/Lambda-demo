@@ -22,8 +22,8 @@ from datetime import datetime
 from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup
 import os
-from typing import List, Optional, Set
-from dataclasses import dataclass
+from typing import List, Optional, Set, Dict, Any
+from dataclasses import dataclass, asdict
 
 # Configure logging
 logging.basicConfig(
@@ -109,46 +109,56 @@ class LeierDocumentsScraper:
             logger.warning(f"MCP failed for {url}, using direct fetch: {e}")
             return await self._fetch_direct(url)
     
+    async def _initialize_mcp_session(self):
+        """Initializes and returns a BrightData MCP session."""
+        from mcp import stdio_client, StdioServerParameters, ClientSession
+        import platform
+        
+        npx_cmd = "npx.cmd" if platform.system() == "Windows" else "npx"
+        api_token = os.getenv('BRIGHTDATA_API_TOKEN')
+        
+        if not api_token:
+            raise ValueError("No BRIGHTDATA_API_TOKEN found")
+        
+        server_params = StdioServerParameters(
+            command=npx_cmd,
+            env={"API_TOKEN": api_token},
+            args=["-y", "@brightdata/mcp"]
+        )
+        
+        read, write = await stdio_client(server_params)
+        session = ClientSession(read, write)
+        await session.initialize()
+        return session
+
+    async def _find_scrape_tool(self, session) -> Optional[Any]:
+        """Finds a scraping tool from the available MCP tools."""
+        tools = await session.list_tools()
+        for tool in tools.tools:
+            if 'scrape' in tool.name.lower() and 'html' in tool.name.lower():
+                return tool
+        return None
+
     async def _fetch_with_mcp(self, url: str) -> Optional[str]:
         """Fetch using BrightData MCP"""
+        session = None
         try:
-            from mcp import stdio_client, StdioServerParameters, ClientSession
-            import platform
+            session = await self._initialize_mcp_session()
+            scrape_tool = await self._find_scrape_tool(session)
             
-            npx_cmd = "npx.cmd" if platform.system() == "Windows" else "npx"
-            api_token = os.getenv('BRIGHTDATA_API_TOKEN')
-            
-            if not api_token:
-                raise ValueError("No BRIGHTDATA_API_TOKEN found")
-            
-            server_params = StdioServerParameters(
-                command=npx_cmd,
-                env={"API_TOKEN": api_token},
-                args=["-y", "@brightdata/mcp"]
-            )
-            
-            async with stdio_client(server_params) as (read, write):
-                async with ClientSession(read, write) as session:
-                    await session.initialize()
-                    
-                    tools = await session.list_tools()
-                    scrape_tool = None
-                    
-                    for tool in tools.tools:
-                        if 'scrape' in tool.name.lower() and 'html' in tool.name.lower():
-                            scrape_tool = tool
-                            break
-                    
-                    if scrape_tool:
-                        response = await session.call_tool(scrape_tool.name, {"url": url})
-                        if response.content:
-                            return response.content[0].text
-            
+            if scrape_tool:
+                response = await session.call_tool(
+                    scrape_tool.name, {"url": url}
+                )
+                if response and response.content:
+                    return response.content[0].text
             return None
-            
         except Exception as e:
             logger.debug(f"MCP fetch error: {e}")
             raise
+        finally:
+            if session:
+                await session.close()
     
     async def _fetch_direct(self, url: str) -> Optional[str]:
         """Direct HTTP fetch as fallback"""
@@ -161,26 +171,61 @@ class LeierDocumentsScraper:
             logger.error(f"Direct fetch failed for {url}: {e}")
             return None
     
+    def _matches_patterns(self, text: str, patterns: List[str]) -> bool:
+        """Checks if text matches any of the provided regex patterns."""
+        return any(re.search(pattern, text) for pattern in patterns)
+
     def classify_document(self, name: str, url: str) -> str:
         """Classify document into appropriate category"""
         name_lower = name.lower()
         url_lower = url.lower()
         
         for doc_type, patterns in DOC_PATTERNS.items():
-            for pattern in patterns:
-                if re.search(pattern, name_lower) or re.search(pattern, url_lower):
-                    return doc_type
+            if self._matches_patterns(
+                name_lower, patterns
+            ) or self._matches_patterns(url_lower, patterns):
+                return doc_type
         
         # File extension based classification
         if url_lower.endswith(('.dwg', '.dxf')):
             return 'cad'
-        elif any(word in name_lower for word in ['műszaki', 'technical', 'adatlap']):
+        elif any(
+            word in name_lower for word in ['műszaki', 'technical', 'adatlap']
+        ):
             return 'datasheets'
-        elif any(word in name_lower for word in ['útmutató', 'guide', 'manual']):
+        elif any(
+            word in name_lower for word in ['útmutató', 'guide', 'manual']
+        ):
             return 'guides'
         
         return 'catalogs'  # Default category
     
+    def _get_category_selectors(self) -> List[str]:
+        """Returns a list of CSS selectors for finding category links."""
+        return [
+            'a[href*="/termekek/"]',
+            'a[href*="/kategoria/"]',
+            '.category-link',
+            '.nav-link[href*="/hu/"]',
+            '.menu-item a'
+        ]
+
+    def _extract_category_urls_from_soup(
+        self, soup: BeautifulSoup
+    ) -> Set[str]:
+        """Extracts category URLs from a BeautifulSoup object."""
+        category_urls = set()
+        selectors = self._get_category_selectors()
+        
+        for selector in selectors:
+            for link in soup.select(selector):
+                href = link.get('href')
+                if href:
+                    full_url = urljoin(BASE_URL, href)
+                    if self._is_valid_category_url(full_url):
+                        category_urls.add(full_url)
+        return category_urls
+
     async def discover_categories(self) -> List[str]:
         """Discover all LEIER product categories"""
         logger.info("🔍 Discovering LEIER categories...")
@@ -191,25 +236,7 @@ class LeierDocumentsScraper:
             return []
         
         soup = BeautifulSoup(content, 'html.parser')
-        category_urls = set()
-        
-        # Look for category navigation links
-        selectors = [
-            'a[href*="/termekek/"]',
-            'a[href*="/kategoria/"]',
-            '.category-link',
-            '.nav-link[href*="/hu/"]',
-            '.menu-item a'
-        ]
-        
-        for selector in selectors:
-            links = soup.select(selector)
-            for link in links:
-                href = link.get('href')
-                if href:
-                    full_url = urljoin(BASE_URL, href)
-                    if self._is_valid_category_url(full_url):
-                        category_urls.add(full_url)
+        category_urls = self._extract_category_urls_from_soup(soup)
         
         categories = list(category_urls)[:30]  # Limit to reasonable number
         logger.info(f"📂 Found {len(categories)} categories to process")
@@ -226,6 +253,44 @@ class LeierDocumentsScraper:
             url not in self.visited_urls
         )
     
+    def _get_document_selectors(self) -> List[str]:
+        """Returns a list of CSS selectors for finding document links."""
+        return [
+            'a[href$=".pdf"]', 'a[href$=".dwg"]', 'a[href$=".dxf"]',
+            'a[href$=".doc"]', 'a[href$=".docx"]', 'a[href$=".xls"]',
+            'a[href$=".xlsx"]', '.download-link', 'a[download]'
+        ]
+
+    def _create_leier_doc_from_link(
+        self, link: Any, category: str
+    ) -> Optional[LeierDoc]:
+        """Creates a LeierDoc object from a BeautifulSoup link tag."""
+        doc_url = link.get('href')
+        if not doc_url:
+            return None
+        
+        doc_url = urljoin(BASE_URL, doc_url)
+        doc_name = (
+            link.get('download') or 
+            link.get('title') or 
+            link.text.strip() or 
+            Path(doc_url).name
+        )
+        
+        if not doc_name or not doc_name.strip():
+            return None
+            
+        file_ext = Path(doc_url).suffix.lower().lstrip('.')
+        doc_type = self.classify_document(doc_name, doc_url)
+        
+        return LeierDoc(
+            name=doc_name[:80].strip(),
+            url=doc_url,
+            doc_type=doc_type,
+            file_ext=file_ext,
+            category=category
+        )
+
     async def extract_documents_from_page(self, url: str) -> List[LeierDoc]:
         """Extract document links from a category page"""
         if url in self.visited_urls:
@@ -240,57 +305,31 @@ class LeierDocumentsScraper:
         
         soup = BeautifulSoup(content, 'html.parser')
         documents = []
-        
-        # Extract category name from URL or page content
         category = self._extract_category_name(url, soup)
-        
-        # Document link selectors
-        doc_selectors = [
-            'a[href$=".pdf"]', 'a[href$=".dwg"]', 'a[href$=".dxf"]',
-            'a[href$=".doc"]', 'a[href$=".docx"]', 'a[href$=".xls"]',
-            'a[href$=".xlsx"]', '.download-link', 'a[download]'
-        ]
+        doc_selectors = self._get_document_selectors()
         
         for selector in doc_selectors:
-            links = soup.select(selector)
-            for link in links:
-                doc_url = link.get('href')
-                if not doc_url:
-                    continue
-                
-                doc_url = urljoin(BASE_URL, doc_url)
-                doc_name = (
-                    link.get('download') or 
-                    link.get('title') or 
-                    link.text.strip() or 
-                    Path(doc_url).name
-                )
-                
-                if doc_name and len(doc_name.strip()) > 0:
-                    file_ext = Path(doc_url).suffix.lower()[1:]  # Remove dot
-                    doc_type = self.classify_document(doc_name, doc_url)
-                    
-                    document = LeierDoc(
-                        name=doc_name[:80].strip(),  # Limit length
-                        url=doc_url,
-                        doc_type=doc_type,
-                        file_ext=file_ext,
-                        category=category
-                    )
-                    
+            for link in soup.select(selector):
+                document = self._create_leier_doc_from_link(link, category)
+                if document:
                     documents.append(document)
         
         logger.info(f"✅ Found {len(documents)} documents in {category}")
         return documents
     
-    def _extract_category_name(self, url: str, soup: BeautifulSoup) -> str:
-        """Extract category name from URL or page content"""
-        # Try URL path
-        path_parts = [p for p in urlparse(url).path.split('/') if p and len(p) > 2]
+    def _extract_category_name_from_url(self, url: str) -> Optional[str]:
+        """Extracts category name from the URL path."""
+        path_parts = [
+            p for p in urlparse(url).path.split('/') if p and len(p) > 2
+        ]
         if path_parts:
             return path_parts[-1].replace('-', ' ').title()
-        
-        # Try page title/heading
+        return None
+
+    def _extract_category_name_from_soup(
+        self, soup: BeautifulSoup
+    ) -> Optional[str]:
+        """Extracts category name from page title or headings."""
         title_selectors = ['h1', '.page-title', '.category-title', 'title']
         for selector in title_selectors:
             element = soup.select_one(selector)
@@ -298,7 +337,18 @@ class LeierDocumentsScraper:
                 title = element.get_text(strip=True)
                 if title and len(title) < 50:
                     return title
+        return None
+
+    def _extract_category_name(self, url: str, soup: BeautifulSoup) -> str:
+        """Extract category name from URL or page content"""
+        name = self._extract_category_name_from_url(url)
+        if name:
+            return name
         
+        name = self._extract_category_name_from_soup(soup)
+        if name:
+            return name
+            
         return "General"
     
     def generate_safe_filename(self, doc: LeierDoc) -> str:
@@ -323,7 +373,9 @@ class LeierDocumentsScraper:
         self.downloaded_files.add(filename)
         return filename
     
-    async def download_document(self, session: httpx.AsyncClient, doc: LeierDoc) -> dict:
+    async def download_document(
+        self, session: httpx.AsyncClient, doc: LeierDoc
+    ) -> Dict[str, Any]:
         """Download a single document"""
         try:
             filename = self.generate_safe_filename(doc)
@@ -360,7 +412,9 @@ class LeierDocumentsScraper:
             logger.warning("⚠️  No documents to download")
             return
         
-        logger.info(f"📥 Starting download of {len(self.documents)} documents...")
+        logger.info(
+            f"📥 Starting download of {len(self.documents)} documents..."
+        )
         
         async with httpx.AsyncClient(timeout=60.0) as session:
             semaphore = asyncio.Semaphore(3)  # Limit concurrent downloads
@@ -417,7 +471,7 @@ class LeierDocumentsScraper:
             self.generate_final_report(start_time)
             
         except Exception as e:
-            logger.error(f"❌ Scraping failed: {e}")
+            logger.error(f"❌ Scraping failed: {e}", exc_info=True)
             raise
     
     def generate_final_report(self, start_time: datetime):
@@ -453,7 +507,10 @@ class LeierDocumentsScraper:
         # Save JSON report
         self.save_json_report(start_time, end_time, type_counts)
     
-    def save_json_report(self, start_time: datetime, end_time: datetime, type_counts: dict):
+    def save_json_report(
+        self, start_time: datetime, end_time: datetime, 
+        type_counts: Dict[str, int]
+    ):
         """Save detailed JSON report"""
         report = {
             'scraper_info': {
@@ -461,25 +518,24 @@ class LeierDocumentsScraper:
                 'version': '1.0',
                 'start_time': start_time.isoformat(),
                 'end_time': end_time.isoformat(),
-                'duration_seconds': (end_time - start_time).total_seconds()
+                'duration_seconds': (
+                    end_time - start_time
+                ).total_seconds()
             },
             'statistics': self.stats,
             'type_breakdown': type_counts,
-            'storage_locations': {k: str(v) for k, v in STORAGE_DIRS.items()},
+            'storage_locations': {
+                k: str(v) for k, v in STORAGE_DIRS.items()
+            },
             'documents': [
-                {
-                    'name': doc.name,
-                    'url': doc.url,
-                    'type': doc.doc_type,
-                    'extension': doc.file_ext,
-                    'category': doc.category
-                }
-                for doc in self.documents
+                asdict(doc) for doc in self.documents
             ]
         }
         
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        report_file = PROJECT_ROOT / f"leier_scraping_report_{timestamp}.json"
+        report_file = (
+            PROJECT_ROOT / f"leier_scraping_report_{timestamp}.json"
+        )
         
         with open(report_file, 'w', encoding='utf-8') as f:
             json.dump(report, f, indent=2, ensure_ascii=False)
