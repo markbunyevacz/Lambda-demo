@@ -7,14 +7,13 @@ Ez a modul koordinálja a különböző scraping módszereket:
 - Hibakezelés és fallback logika
 """
 
+import asyncio
 import logging
-from typing import Dict, List, Optional, Union
+from typing import Dict, List, Union
 from datetime import datetime
 from enum import Enum
 
 from app.database import SessionLocal
-from app.models import Product
-from app.scraper.data_validator import DataValidator
 from app.scrapers.rockwool.brochure_and_pricelist_scraper import RockwoolBrochureScraper
 from .brightdata_agent import BrightDataMCPAgent
 
@@ -61,12 +60,25 @@ class ScrapingCoordinator:
             'validation_failures': 0,
             'strategy_usage': {}
         }
+
+        self.strategy_dispatch = {
+            ScrapingStrategy.API_ONLY: self._scrape_api_only,
+            ScrapingStrategy.MCP_ONLY: self._scrape_mcp_only,
+            ScrapingStrategy.API_FALLBACK_MCP: self._scrape_api_fallback_mcp,
+            ScrapingStrategy.MCP_FALLBACK_API: self._scrape_mcp_fallback_api,
+            ScrapingStrategy.PARALLEL: self._scrape_parallel,
+        }
     
-    async def scrape_products(self, target_input: Union[List[str], str, int] = None) -> List[Dict]:
+    async def scrape_products(
+        self, 
+        strategy: ScrapingStrategy,
+        target_input: Union[List[str], str, int] = None
+    ) -> List[Dict]:
         """
         Főbb scraping funkció - stratégia alapján
         
         Args:
+            strategy: A használandó scraping stratégia
             target_input: URL lista, keresési kifejezés, vagy termék limit
             
         Returns:
@@ -75,25 +87,22 @@ class ScrapingCoordinator:
         start_time = datetime.now()
         self.coordination_stats['total_requests'] += 1
         
-        logger.info(f"Scraping koordinálás indítása - Stratégia: {self.strategy.value}")
+        strategy_key = strategy.value
+        self.coordination_stats['strategy_usage'][strategy_key] = \
+            self.coordination_stats['strategy_usage'].get(strategy_key, 0) + 1
+        
+        logger.info(f"Scraping koordinálás indítása - Stratégia: {strategy.value}")
         
         try:
-            if self.strategy == ScrapingStrategy.API_ONLY:
-                return await self._scrape_api_only(target_input)
-            elif self.strategy == ScrapingStrategy.MCP_ONLY:
-                return await self._scrape_mcp_only(target_input)
-            elif self.strategy == ScrapingStrategy.API_FALLBACK_MCP:
-                return await self._scrape_api_fallback_mcp(target_input)
-            elif self.strategy == ScrapingStrategy.MCP_FALLBACK_API:
-                return await self._scrape_mcp_fallback_api(target_input)
-            elif self.strategy == ScrapingStrategy.PARALLEL:
-                return await self._scrape_parallel(target_input)
+            scraping_method = self.strategy_dispatch.get(strategy)
+            if scraping_method:
+                return await scraping_method(target_input)
             else:
-                logger.error(f"Ismeretlen scraping stratégia: {self.strategy}")
+                logger.error(f"Ismeretlen scraping stratégia: {strategy}")
                 return []
                 
         except Exception as e:
-            logger.error(f"Scraping koordinálás hiba: {e}")
+            logger.error(f"Scraping koordinálás hiba: {e}", exc_info=True)
             return []
         finally:
             duration = (datetime.now() - start_time).total_seconds()
@@ -154,54 +163,46 @@ class ScrapingCoordinator:
         except Exception as e:
             logger.error(f"MCP scraping hiba: {e}")
             return []
-    
-    async def _scrape_api_fallback_mcp(self, target_input) -> List[Dict]:
-        """API scraping elsődlegesen, MCP fallback"""
-        logger.info("API-first stratégia végrehajtása")
+
+    async def _scrape_with_fallback(self, 
+                                    primary_scraper, 
+                                    fallback_scraper, 
+                                    success_condition, 
+                                    target_input) -> List[Dict]:
+        """Általános fallback logika."""
+        logger.info(f"Stratégia végrehajtása: {primary_scraper.__name__} -> {fallback_scraper.__name__}")
         
-        # Először API próbálkozás
-        products = await self._scrape_api_only(target_input)
+        products = await primary_scraper(target_input)
         
-        # Ha sikeres és elegendő adat van
-        if products and len(products) >= 5:
-            logger.info(f"API scraping sikeres: {len(products)} termék")
+        if success_condition(products):
+            logger.info(f"Elsődleges scraper sikeres: {len(products)} termék")
             return products
-        
-        # Fallback MCP-re
-        logger.info("API scraping elégtelen - Fallback MCP-re")
+            
+        logger.warning(f"Elsődleges scraper ({primary_scraper.__name__}) nem hozott elég eredményt. Fallback indítása...")
         self.coordination_stats['fallback_used'] += 1
         
-        mcp_products = await self._scrape_mcp_only(target_input)
+        fallback_products = await fallback_scraper(target_input)
         
-        # Eredmények kombinálása
-        combined_products = products + mcp_products
-        unique_products = self._remove_duplicates(combined_products)
-        
-        return unique_products
+        combined_products = (products or []) + (fallback_products or [])
+        return self._remove_duplicates(combined_products)
+
+    async def _scrape_api_fallback_mcp(self, target_input) -> List[Dict]:
+        """API scraping elsődlegesen, MCP fallback"""
+        return await self._scrape_with_fallback(
+            primary_scraper=self._scrape_api_only,
+            fallback_scraper=self._scrape_mcp_only,
+            success_condition=lambda products: products and len(products) >= 5,
+            target_input=target_input
+        )
     
     async def _scrape_mcp_fallback_api(self, target_input) -> List[Dict]:
         """MCP scraping elsődlegesen, API fallback"""
-        logger.info("MCP-first stratégia végrehajtása")
-        
-        # Először MCP próbálkozás
-        products = await self._scrape_mcp_only(target_input)
-        
-        # Ha sikeres és elegendő adat van
-        if products and len(products) >= 3:
-            logger.info(f"MCP scraping sikeres: {len(products)} termék")
-            return products
-        
-        # Fallback API-ra
-        logger.info("MCP scraping elégtelen - Fallback API-ra")
-        self.coordination_stats['fallback_used'] += 1
-        
-        api_products = await self._scrape_api_only(target_input)
-        
-        # Eredmények kombinálása
-        combined_products = products + api_products
-        unique_products = self._remove_duplicates(combined_products)
-        
-        return unique_products
+        return await self._scrape_with_fallback(
+            primary_scraper=self._scrape_mcp_only,
+            fallback_scraper=self._scrape_api_only,
+            success_condition=lambda products: products and len(products) >= 3,
+            target_input=target_input
+        )
     
     async def _scrape_parallel(self, target_input) -> List[Dict]:
         """Párhuzamos scraping mindkét módszerrel"""
@@ -285,47 +286,59 @@ class ScrapingCoordinator:
             'success_rate': (
                 total_successful / max(self.coordination_stats['total_requests'], 1)
             ) * 100,
-            'current_strategy': self.strategy.value,
             'timestamp': datetime.now().isoformat()
         }
-    
-    async def test_all_scrapers(self) -> Dict:
-        """Összes scraper tesztelése"""
-        logger.info("Scraper tesztelés indítása")
-        
-        results = {
-            'api_scraper': {'available': False, 'error': None},
-            'mcp_agent': {'available': False, 'error': None},
-            'coordination': {'recommended_strategy': None}
-        }
-        
-        # API scraper teszt
+
+    async def _test_api_scraper(self) -> Dict:
+        """Az API scraper tesztelése."""
         try:
             test_products = await self.api_scraper.scrape_all_product_datasheets(limit=1)
-            results['api_scraper']['available'] = len(test_products) > 0
-            if not results['api_scraper']['available']:
-                results['api_scraper']['error'] = "Nincs termék eredmény"
+            if test_products:
+                return {'available': True, 'error': None}
+            else:
+                return {'available': False, 'error': "Nincs termék eredmény"}
         except Exception as e:
-            results['api_scraper']['error'] = str(e)
-        
-        # MCP agent teszt
+            logger.error(f"API scraper tesztelési hiba: {e}", exc_info=True)
+            return {'available': False, 'error': str(e)}
+
+    async def _test_mcp_agent(self) -> Dict:
+        """A BrightData MCP agent tesztelése."""
         try:
             mcp_test = await self.mcp_agent.test_mcp_connection()
-            results['mcp_agent']['available'] = mcp_test.get('success', False)
-            if not results['mcp_agent']['available']:
-                results['mcp_agent']['error'] = mcp_test.get('error', 'Ismeretlen hiba')
+            if mcp_test.get('success', False):
+                return {'available': True, 'error': None}
+            else:
+                error_msg = mcp_test.get('error', 'Ismeretlen MCP hiba')
+                return {'available': False, 'error': error_msg}
         except Exception as e:
-            results['mcp_agent']['error'] = str(e)
+            logger.error(f"MCP agent tesztelési hiba: {e}", exc_info=True)
+            return {'available': False, 'error': str(e)}
+
+    async def test_all_scrapers(self) -> Dict:
+        """Összes scraper tesztelése és stratégia ajánlása."""
+        logger.info("Scraper tesztelés indítása")
+        
+        api_result, mcp_result = await asyncio.gather(
+            self._test_api_scraper(),
+            self._test_mcp_agent()
+        )
+
+        results = {
+            'api_scraper': api_result,
+            'mcp_agent': mcp_result,
+            'coordination': {'recommended_strategy': "NONE_AVAILABLE"}
+        }
         
         # Stratégia ajánlás
-        if results['api_scraper']['available'] and results['mcp_agent']['available']:
+        api_available = api_result['available']
+        mcp_available = mcp_result['available']
+
+        if api_available and mcp_available:
             results['coordination']['recommended_strategy'] = ScrapingStrategy.PARALLEL.value
-        elif results['api_scraper']['available']:
+        elif api_available:
             results['coordination']['recommended_strategy'] = ScrapingStrategy.API_ONLY.value
-        elif results['mcp_agent']['available']:
+        elif mcp_available:
             results['coordination']['recommended_strategy'] = ScrapingStrategy.MCP_ONLY.value
-        else:
-            results['coordination']['recommended_strategy'] = "NONE_AVAILABLE"
         
         logger.info(f"Scraper teszt befejezve: {results['coordination']['recommended_strategy']}")
         return results 

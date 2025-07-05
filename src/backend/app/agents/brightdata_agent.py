@@ -37,6 +37,13 @@ class BrightDataMCPAgent:
         self._validate_environment()
         
         # Scraping statisztikák
+        self._initialize_scraping_stats()
+        
+        # Lazy init for dependencies
+        self._init_dependencies()
+
+    def _initialize_scraping_stats(self):
+        """Initializes the scraping statistics dictionary."""
         self.scraping_stats = {
             'requests_made': 0,
             'successful_scrapes': 0,
@@ -44,9 +51,6 @@ class BrightDataMCPAgent:
             'total_time': 0,
             'tools_used': []
         }
-        
-        # Lazy init for dependencies
-        self._init_dependencies()
         
     def _validate_environment(self):
         """Ellenőrzi a szükséges környezeti változókat"""
@@ -64,9 +68,9 @@ class BrightDataMCPAgent:
             print(f"{var} = {repr(value)}")
             if not value or value == f'your-{var.lower().replace("_", "-")}-here':
                 missing_vars.append(var)
-                print(f"  ❌ FAILED")
+                print("  ❌ FAILED")
             else:
-                print(f"  ✅ PASSED")
+                print("  ✅ PASSED")
         
         print(f"Missing vars: {missing_vars}")
         
@@ -95,67 +99,9 @@ class BrightDataMCPAgent:
         print("Proceeding with dependency initialization...")
         
         try:
-            # Conditional imports - csak ha környezeti változók OK
-            logger.info("Importing MCP dependencies...")
-            
-            try:
-                from mcp import stdio_client, StdioServerParameters, ClientSession
-                logger.info("✅ MCP imports successful")
-            except ImportError as e:
-                logger.error(f"❌ Failed to import MCP components: {e}")
-                raise
-                
-            try:
-                from langchain_anthropic import ChatAnthropic
-                logger.info("✅ langchain_anthropic.ChatAnthropic imported successfully")
-            except ImportError as e:
-                logger.error(f"❌ Failed to import ChatAnthropic: {e}")
-                raise
-                
-            try:
-                from langchain_mcp_adapters.tools import load_mcp_tools
-                logger.info("✅ langchain_mcp_adapters.tools.load_mcp_tools imported successfully")
-            except ImportError as e:
-                logger.error(f"❌ Failed to import load_mcp_tools: {e}")
-                logger.error("Available in langchain_mcp_adapters:")
-                import langchain_mcp_adapters
-                logger.error(f"Dir: {dir(langchain_mcp_adapters)}")
-                raise
-                
-            try:
-                from langgraph.prebuilt import chat_agent_executor
-                logger.info("✅ langgraph.prebuilt.chat_agent_executor imported successfully")
-            except ImportError as e:
-                logger.error(f"❌ Failed to import chat_agent_executor: {e}")
-                raise
-            
-            # Store imports for later use
-            self.stdio_client = stdio_client
-            self.StdioServerParameters = StdioServerParameters
-            self.ClientSession = ClientSession
-            self.load_mcp_tools = load_mcp_tools
-            self.chat_agent_executor = chat_agent_executor
-            
-            # Claude modell inicializálása
-            self.model = ChatAnthropic(
-                model="claude-3-5-sonnet-20241022",
-                api_key=os.getenv("ANTHROPIC_API_KEY")
-            )
-            
-            # MCP szerver paraméterek - Windows PowerShell compatibility fix
-            import platform
-            npx_cmd = "npx.cmd" if platform.system() == "Windows" else "npx"
-            
-            self.server_params = StdioServerParameters(
-                command=npx_cmd,
-                env={
-                    "API_TOKEN": os.getenv("BRIGHTDATA_API_TOKEN"),
-                    "BROWSER_AUTH": os.getenv("BRIGHTDATA_BROWSER_AUTH"),
-                    "WEB_UNLOCKER_ZONE": os.getenv("BRIGHTDATA_WEB_UNLOCKER_ZONE")
-                },
-                args=["-y", "@brightdata/mcp"]
-            )
-            
+            self._import_mcp_dependencies()
+            self._initialize_claude_model()
+            self._initialize_server_params()
             logger.info("BrightData MCP agent sikeresen inicializálva")
             
         except ImportError as e:
@@ -164,6 +110,48 @@ class BrightDataMCPAgent:
         except Exception as e:
             logger.error(f"MCP agent inicializálás hiba: {e}")
             self.mcp_available = False
+
+    def _import_mcp_dependencies(self):
+        """Handles the import of all MCP-related dependencies."""
+        logger.info("Importing MCP dependencies...")
+        try:
+            from mcp import stdio_client, StdioServerParameters, ClientSession
+            from langchain_anthropic import ChatAnthropic
+            from langchain_mcp_adapters.tools import load_mcp_tools
+            from langgraph.prebuilt import chat_agent_executor
+            
+            self.stdio_client = stdio_client
+            self.StdioServerParameters = StdioServerParameters
+            self.ClientSession = ClientSession
+            self.load_mcp_tools = load_mcp_tools
+            self.chat_agent_executor = chat_agent_executor
+            self.ChatAnthropic = ChatAnthropic
+            logger.info("✅ MCP imports successful")
+        except ImportError as e:
+            logger.error(f"❌ Failed to import MCP components: {e}")
+            raise
+
+    def _initialize_claude_model(self):
+        """Initializes the Claude model for the agent."""
+        self.model = self.ChatAnthropic(
+            model="claude-3-5-sonnet-20240620",
+            api_key=os.getenv("ANTHROPIC_API_KEY")
+        )
+
+    def _initialize_server_params(self):
+        """Initializes the server parameters for the MCP client."""
+        import platform
+        npx_cmd = "npx.cmd" if platform.system() == "Windows" else "npx"
+        
+        self.server_params = self.StdioServerParameters(
+            command=npx_cmd,
+            env={
+                "API_TOKEN": os.getenv("BRIGHTDATA_API_TOKEN"),
+                "BROWSER_AUTH": os.getenv("BRIGHTDATA_BROWSER_AUTH"),
+                "WEB_UNLOCKER_ZONE": os.getenv("BRIGHTDATA_WEB_UNLOCKER_ZONE")
+            },
+            args=["-y", "@brightdata/mcp"]
+        )
     
     async def create_agent_executor(self):
         """MCP Agent executor létrehozása"""
@@ -196,17 +184,12 @@ class BrightDataMCPAgent:
             )
             raise
     
-    async def scrape_rockwool_with_ai(self, target_urls: List[str], 
-                                     task_description: str = None) -> List[Dict]:
+    async def scrape_rockwool_with_ai(
+        self, target_urls: List[str], task_description: str = None
+    ) -> List[Dict]:
         """
-        AI-vezérelt Rockwool scraping BrightData eszközökkel
-        
-        Args:
-            target_urls: Scraping-elni kívánt URL-ek
-            task_description: AI számára szóló feladat leírás
-            
-        Returns:
-            Lista a scraped termék adatokkal
+        AI-vezérelt Rockwool scraping BrightData eszközökkel.
+        Orchestrates the scraping of multiple URLs.
         """
         if not self.mcp_available:
             logger.warning("BrightData MCP nem elérhető - üres lista visszaadása")
@@ -215,6 +198,63 @@ class BrightDataMCPAgent:
         start_time = datetime.now()
         logger.info(f"AI-vezérelt scraping indítása: {len(target_urls)} URL")
         
+        scraped_products = []
+        
+        try:
+            agent, _ = await self.create_agent_executor()
+            for i, url in enumerate(target_urls):
+                product_data = await self._process_single_url(
+                    agent, url, i, len(target_urls), task_description
+                )
+                if product_data:
+                    scraped_products.append(product_data)
+                await asyncio.sleep(2)  # Delay between requests
+                
+        except Exception as e:
+            logger.error(f"AI scraping általános hiba: {e}")
+            
+        total_time = (datetime.now() - start_time).total_seconds()
+        self.scraping_stats['total_time'] += total_time
+        
+        logger.info(f"AI scraping befejezve: {len(scraped_products)} termék összegyűjtve")
+        return scraped_products
+
+    async def _process_single_url(
+        self, agent, url: str, index: int, total: int, 
+        task_description: Optional[str]
+    ) -> Optional[Dict]:
+        """Processes a single URL for scraping."""
+        try:
+            self.scraping_stats['requests_made'] += 1
+            logger.info(f"URL feldolgozása ({index + 1}/{total}): {url}")
+
+            messages = self._build_ai_messages(url, task_description)
+            
+            response = await agent.ainvoke({"messages": messages})
+            
+            ai_response_content = response['messages'][-1].content
+            product_data = self._parse_ai_response(ai_response_content, url)
+            
+            if product_data:
+                self.scraping_stats['successful_scrapes'] += 1
+                logger.info(
+                    "Sikeres scraping: %s", product_data.get('name', 'Névtelen termék')
+                )
+                return product_data
+            else:
+                logger.warning(f"Parsing hiba: {url}")
+                self.scraping_stats['failed_scrapes'] += 1
+                return None
+
+        except Exception as e:
+            logger.error(f"URL scraping hiba {url}: {e}")
+            self.scraping_stats['failed_scrapes'] += 1
+            return None
+
+    def _build_ai_messages(
+        self, url: str, task_description: Optional[str]
+    ) -> List[Dict]:
+        """Builds the list of messages to be sent to the AI agent."""
         if not task_description:
             task_description = """
             Rockwool építőipari szigetelőanyag adatokat kell összegyűjteni.
@@ -225,143 +265,115 @@ class BrightDataMCPAgent:
             - Kategória
             - Esetleges ár információ
             """
-        
-        scraped_products = []
-        
-        try:
-            agent, session = await self.create_agent_executor()
+
+        system_prompt = f"""
+            Te egy szakértő web scraper vagy, aki Rockwool építőipari termékeket elemez.
             
-            for i, url in enumerate(target_urls):
-                try:
-                    self.scraping_stats['requests_made'] += 1
-                    
-                    logger.info(f"URL feldolgozása ({i+1}/{len(target_urls)}): {url}")
-                    
-                    # AI prompt összeállítása
-                    messages = [
-                        {
-                            "role": "system", 
-                            "content": f"""
-                            Te egy szakértő web scraper vagy, aki Rockwool építőipari termékeket elemez.
-                            
-                            Feladat: {task_description}
-                            
-                            Használd a rendelkezésre álló BrightData tools-okat az alábbi URL elemzéséhez.
-                            
-                            A válaszodat strukturáld JSON formátumban:
-                            {{
-                                "name": "termék név",
-                                "description": "termék leírás", 
-                                "category": "kategória",
-                                "technical_specs": {{"param": "érték"}},
-                                "applications": ["alkalmazás1"],
-                                "source_url": "{url}"
-                            }}
-                            """
-                        },
-                        {
-                            "role": "user",
-                            "content": f"Elemezd ezt a Rockwool terméket: {url}"
-                        }
-                    ]
-                    
-                    # AI scraping végrehajtása
-                    response = await agent.ainvoke({"messages": messages})
-                    
-                    # Válasz feldolgozása
-                    ai_response = response['messages'][-1].content
-                    product_data = self._parse_ai_response(ai_response, url)
-                    
-                    if product_data:
-                        scraped_products.append(product_data)
-                        self.scraping_stats['successful_scrapes'] += 1
-                        logger.info(f"Sikeres scraping: {product_data.get('name', 'Névtelen termék')}")
-                    else:
-                        logger.warning(f"Parsing hiba: {url}")
-                        self.scraping_stats['failed_scrapes'] += 1
-                        
-                except Exception as e:
-                    logger.error(f"URL scraping hiba {url}: {e}")
-                    self.scraping_stats['failed_scrapes'] += 1
-                    continue
-                    
-                # Delay a scraping-ek között
-                await asyncio.sleep(2)
-                
-        except Exception as e:
-            logger.error(f"AI scraping általános hiba: {e}")
+            Feladat: {task_description}
             
-        # Statisztikák frissítése
-        total_time = (datetime.now() - start_time).total_seconds()
-        self.scraping_stats['total_time'] += total_time
+            Használd a rendelkezésre álló BrightData tools-okat az alábbi URL elemzéséhez.
+            
+            A válaszodat strukturáld JSON formátumban:
+            {{
+                "name": "termék név",
+                "description": "termék leírás", 
+                "category": "kategória",
+                "technical_specs": {{"param": "érték"}},
+                "applications": ["alkalmazás1"],
+                "source_url": "{url}"
+            }}
+            """
         
-        logger.info(f"AI scraping befejezve: {len(scraped_products)} termék összegyűjtve")
-        return scraped_products
+        return [
+            {"role": "system", "content": system_prompt.strip()},
+            {
+                "role": "user", 
+                "content": f"Elemezd ezt a Rockwool terméket: {url}"
+            }
+        ]
     
     def _parse_ai_response(self, ai_response: str, source_url: str) -> Optional[Dict]:
-        """AI válasz parsing és normalizálás - Enhanced version"""
-        try:
-            import json
-            import re
-            
-            logger.info(f"Parsing AI response for URL: {source_url}")
-            logger.info(f"Response preview: {ai_response[:200]}...")
-            
-            # Multiple strategies for JSON extraction
-            json_str = None
-            
-            # Strategy 1: Look for JSON code blocks
-            json_match = re.search(r'```(?:json)?\s*(\{.*?\})\s*```', ai_response, re.DOTALL | re.IGNORECASE)
-            if json_match:
-                json_str = json_match.group(1)
-                logger.info("Found JSON in code block")
-            
-            # Strategy 2: Look for any JSON object in the response
-            if not json_str:
-                json_matches = re.findall(r'\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}', ai_response, re.DOTALL)
-                for match in json_matches:
-                    try:
-                        # Test if it's valid JSON
-                        json.loads(match)
-                        json_str = match
-                        logger.info("Found valid JSON object")
-                        break
-                    except:
-                        continue
-            
-            # Strategy 3: Look for structured data patterns
-            if not json_str:
-                # Try to extract key-value pairs and construct JSON
-                name_match = re.search(r'(?:name|név)[\s:]*([^\n\r]+)', ai_response, re.IGNORECASE)
-                category_match = re.search(r'(?:category|kategória)[\s:]*([^\n\r]+)', ai_response, re.IGNORECASE)
-                
-                if name_match or category_match:
-                    logger.info("Extracting data from patterns")
-                    fallback_data = {
-                        "name": name_match.group(1).strip() if name_match else "Rockwool termék",
-                        "category": category_match.group(1).strip() if category_match else "Szigetelőanyag",
-                        "description": "Extracted from unstructured response",
-                        "technical_specs": {},
-                        "applications": []
-                    }
-                    return self._finalize_product_data(fallback_data, source_url)
-            
-            # Strategy 4: If we found JSON, parse it
-            if json_str:
-                try:
-                    product_data = json.loads(json_str)
-                    logger.info("Successfully parsed JSON")
-                    return self._finalize_product_data(product_data, source_url)
-                except json.JSONDecodeError as e:
-                    logger.warning(f"JSON decode error: {e}")
-            
-            # Strategy 5: Last resort - create minimal product data from URL
-            logger.warning("No JSON found - creating minimal product data")
-            return self._create_minimal_product_data(source_url)
-            
-        except Exception as e:
-            logger.error(f"AI válasz feldolgozási hiba: {e}")
-            return self._create_minimal_product_data(source_url)
+        """
+        AI válasz parsing és normalizálás.
+        Tries multiple strategies to extract JSON data from the AI response.
+        """
+        logger.info(f"Parsing AI response for URL: {source_url}")
+        logger.debug(f"Full AI Response: {ai_response}")
+
+        parsing_strategies = [
+            self._parse_json_from_code_block,
+            self._find_and_parse_json_object,
+        ]
+
+        for strategy in parsing_strategies:
+            product_data = strategy(ai_response)
+            if product_data:
+                return self._finalize_product_data(product_data, source_url)
+
+        # Fallback strategies if no JSON is found
+        product_data = self._parse_from_structured_patterns(ai_response)
+        if product_data:
+            return self._finalize_product_data(product_data, source_url)
+
+        logger.warning("No structured data found - creating minimal product data")
+        return self._create_minimal_product_data(source_url)
+
+    def _parse_json_from_code_block(self, ai_response: str) -> Optional[Dict]:
+        """Strategy 1: Look for JSON in a markdown code block."""
+        import re
+        import json
+        json_match = re.search(r'```(?:json)?\s*(\{.*?\})\s*```', ai_response, re.DOTALL | re.IGNORECASE)
+        if json_match:
+            json_str = json_match.group(1)
+            try:
+                logger.info("Found and parsed JSON from code block.")
+                return json.loads(json_str)
+            except json.JSONDecodeError as e:
+                logger.warning(f"JSON in code block is invalid: {e}")
+        return None
+
+    def _find_and_parse_json_object(self, ai_response: str) -> Optional[Dict]:
+        """Strategy 2: Find any valid JSON object in the response."""
+        import re
+        import json
+        json_matches = re.findall(
+            r'\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}', ai_response, re.DOTALL
+        )
+        for match in reversed(json_matches):  # Often the last one is the full object
+            try:
+                data = json.loads(match)
+                logger.info(
+                    "Found and parsed a valid JSON object from response."
+                )
+                return data
+            except json.JSONDecodeError:
+                continue
+        return None
+
+    def _parse_from_structured_patterns(self, ai_response: str) -> Optional[Dict]:
+        """Strategy 3: Look for key-value patterns if no JSON is found."""
+        import re
+        name_match = re.search(
+            r'(?:name|név)[\s:]*([^\n\r]+)', ai_response, re.IGNORECASE
+        )
+        category_match = re.search(
+            r'(?:category|kategória)[\s:]*([^\n\r]+)', 
+            ai_response, 
+            re.IGNORECASE
+        )
+
+        if name_match or category_match:
+            logger.info(
+                "No JSON found, but extracting data from key-value patterns."
+            )
+            return {
+                "name": name_match.group(1).strip() if name_match else "Rockwool termék",
+                "category": category_match.group(1).strip() if category_match else "Szigetelőanyag",
+                "description": "Extracted from unstructured response",
+                "technical_specs": {},
+                "applications": []
+            }
+        return None
     
     def _finalize_product_data(self, product_data: Dict, source_url: str) -> Dict:
         """Finalize and validate product data"""
