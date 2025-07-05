@@ -12,11 +12,16 @@ from datetime import datetime
 
 from celery import shared_task
 
-# Clean, maintainable imports via package __init__.py
-from app.scrapers import RockwoolProductScraper, RockwoolBrochureScraper
-
-
 logger = logging.getLogger(__name__)
+
+# Safe imports with error handling for Docker compatibility
+try:
+    from app.scrapers import RockwoolProductScraper, RockwoolBrochureScraper
+except IndexError as e:
+    # Handle path issues in Docker container
+    logger.warning(f"Import warning: {e}. Scraper imports may be limited.")
+    RockwoolProductScraper = None
+    RockwoolBrochureScraper = None
 
 
 @shared_task(name="tasks.run_datasheet_scraping")
@@ -24,6 +29,8 @@ def run_datasheet_scraping_task():
     """Execute datasheet scraping with clean import structure."""
     logger.info("▶️ Starting datasheet scraping task...")
     try:
+        if RockwoolProductScraper is None:
+            raise ImportError("RockwoolProductScraper not available due to import issues")
         scraper = RockwoolProductScraper()
         asyncio.run(scraper.run())
         logger.info("✅ Datasheet scraping task finished successfully.")

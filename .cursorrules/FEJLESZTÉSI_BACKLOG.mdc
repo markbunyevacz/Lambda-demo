@@ -340,6 +340,18 @@ alwaysApply: false
 
 ---
 
+---
+
+## 📋 DOKUMENTÁCIÓ HIVATKOZÁSOK
+
+### Kapcsolódó Dokumentumok
+- **📊 Kockázatelemzés és Megoldások**: [`docs/PDF_PROCESSING_RISK_ANALYSIS_AND_MITIGATION.md`](../docs/PDF_PROCESSING_RISK_ANALYSIS_AND_MITIGATION.md)
+- **🏗️ Technikai Architektúra**: [`docs/ADAPTIVE_PDF_EXTRACTION_ARCHITECTURE.md`](../docs/ADAPTIVE_PDF_EXTRACTION_ARCHITECTURE.md)
+- **🔗 MCP Integráció**: [`src/backend/app/mcp_orchestrator/INTEGRATION_STATUS.md`](../src/backend/app/mcp_orchestrator/INTEGRATION_STATUS.md)
+- **⚠️ Implementation Constraints**: [`.cursorrules/IMPLEMENTATION_PROCESS_AND_CONSTRAINTS.mdc`](IMPLEMENTATION_PROCESS_AND_CONSTRAINTS.mdc)
+
+---
+
 ## 📚 GYORS REFERENCIA
 
 ### Legfontosabb Státuszok

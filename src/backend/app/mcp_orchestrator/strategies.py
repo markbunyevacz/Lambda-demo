@@ -6,27 +6,21 @@ This module implements various PDF extraction strategies that can be run
 in parallel and compared for optimal results.
 """
 
-import asyncio
 import time
-import traceback
 from abc import ABC, abstractmethod
-from typing import Dict, Any, Optional, List
+from typing import Dict, Any, Optional
 from pathlib import Path
 
 # PDF extraction libraries
 import pdfplumber
 import PyPDF2
 import fitz  # PyMuPDF
-import pytesseract
-from PIL import Image
-import io
 
 # Project imports
 from .models import (
     ExtractionResult,
     StrategyType,
-    ExtractionStrategy,
-    ConfidenceLevel
+    ExtractionStrategy
 )
 
 
@@ -305,105 +299,6 @@ class PyMuPDFStrategy(BaseExtractionStrategy):
                 confidence_score=0.0
             )
 
-
-class OCRStrategy(BaseExtractionStrategy):
-    """Strategy using OCR for image-based or low-quality PDFs"""
-    
-    def __init__(self, config: Optional[ExtractionStrategy] = None):
-        if config is None:
-            config = ExtractionStrategy(
-                strategy_type=StrategyType.OCR,
-                cost_tier=2,
-                timeout_seconds=120
-            )
-        super().__init__(config)
-    
-    async def extract(self, pdf_path: str) -> ExtractionResult:
-        """Extract data using OCR"""
-        start_time = time.time()
-        
-        try:
-            if not Path(pdf_path).exists():
-                raise FileNotFoundError(f"PDF file not found: {pdf_path}")
-            
-            extracted_data = {}
-            pages_processed = 0
-            total_text = ""
-            
-            # Convert PDF pages to images and OCR them
-            doc = fitz.open(pdf_path)
-            pages_processed = len(doc)
-            
-            for page_num in range(len(doc)):
-                page = doc.load_page(page_num)
-                
-                # Convert page to image
-                mat = fitz.Matrix(2.0, 2.0)  # 2x zoom for better OCR
-                pix = page.get_pixmap(matrix=mat)
-                img_data = pix.tobytes("png")
-                img = Image.open(io.BytesIO(img_data))
-                
-                # OCR the image
-                try:
-                    page_text = pytesseract.image_to_string(
-                        img, 
-                        lang='hun+eng',  # Hungarian and English
-                        config='--psm 6'  # Uniform block of text
-                    )
-                    if page_text:
-                        total_text += page_text + "\n"
-                except Exception as ocr_error:
-                    print(f"OCR failed for page {page_num}: {ocr_error}")
-            
-            doc.close()
-            
-            if not total_text.strip():
-                raise ValueError("No text extracted via OCR")
-            
-            # Extract basic product information
-            lines = total_text.split('\n')
-            if lines:
-                for line in lines:
-                    line = line.strip()
-                    if line and len(line) > 5:
-                        extracted_data['product_name'] = line
-                        break
-            
-            # Extract technical specifications
-            extracted_data['technical_specs'] = self._extract_technical_specs(
-                total_text
-            )
-            
-            # Store full text
-            extracted_data['full_text'] = total_text.strip()
-            extracted_data['page_count'] = pages_processed
-            
-            execution_time = time.time() - start_time
-            confidence = self._calculate_confidence(extracted_data) * 0.85  # OCR penalty
-            
-            return ExtractionResult(
-                strategy_type=StrategyType.OCR,
-                success=True,
-                execution_time_seconds=execution_time,
-                extracted_data=extracted_data,
-                confidence_score=confidence,
-                method_used="tesseract_ocr",
-                pages_processed=pages_processed,
-                tables_found=0,  # OCR doesn't extract structured tables
-                text_length=len(total_text),
-                data_completeness=min(len(extracted_data) / 6.0, 1.0),
-                structure_quality=0.4  # Lower quality due to OCR errors
-            )
-            
-        except Exception as e:
-            execution_time = time.time() - start_time
-            return ExtractionResult(
-                strategy_type=StrategyType.OCR,
-                success=False,
-                execution_time_seconds=execution_time,
-                error_message=f"OCR extraction failed: {str(e)}",
-                confidence_score=0.0
-            )
 
 
 class NativePDFStrategy(BaseExtractionStrategy):

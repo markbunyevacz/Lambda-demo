@@ -134,7 +134,7 @@ class BrightDataMCPAgent:
     def _initialize_claude_model(self):
         """Initializes the Claude model for the agent."""
         self.model = self.ChatAnthropic(
-            model="claude-3-5-sonnet-20240620",
+            model="claude-3-5-haiku-20241022",
             api_key=os.getenv("ANTHROPIC_API_KEY")
         )
 

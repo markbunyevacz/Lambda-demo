@@ -193,7 +193,7 @@ class ClaudeAIAnalyzer:
             raise ValueError("❌ ANTHROPIC_API_KEY not found in environment variables")
         
         self.client = Anthropic(api_key=api_key)
-        self.model = "claude-3-5-sonnet-20241022"
+        self.model = "claude-3-5-haiku-20241022"
         
         logger.info(f"✅ Claude AI initialized: {self.model}")
     
@@ -534,7 +534,7 @@ class RealPDFProcessor:
         
         print(f"\\n✅ REAL AI-POWERED PDF PROCESSING COMPLETE")
         print("   - Actual PDF text extraction (PyPDF2, pdfplumber, PyMuPDF)")
-        print("   - Real Claude 3.5 Sonnet AI analysis")
+        print("   - Real Claude 3.5 Haiku AI analysis")
         print("   - Structured technical specifications")
         print("   - Pricing information extraction")
         print("   - NO SIMULATIONS - 100% real processing")
@@ -546,7 +546,7 @@ def main():
     print("=" * 80)
     print("NO SIMULATIONS - Real AI-powered PDF content extraction")
     print("✅ PyPDF2 + pdfplumber + PyMuPDF")
-    print("✅ Claude 3.5 Sonnet AI analysis")
+            print("✅ Claude 3.5 Haiku AI analysis")
     print("✅ Structured technical data extraction")
     print()
     

@@ -23,6 +23,21 @@ import PyPDF2
 import pdfplumber
 import fitz  # PyMuPDF
 
+# Advanced Table Extraction
+try:
+    import camelot
+    CAMELOT_AVAILABLE = True
+except ImportError:
+    CAMELOT_AVAILABLE = False
+    logging.warning("CAMELOT not available. Install with: pip install camelot-py[cv]")
+
+try:
+    import tabula
+    TABULA_AVAILABLE = True
+except ImportError:
+    TABULA_AVAILABLE = False
+    logging.warning("TABULA not available. Install with: pip install tabula-py")
+
 # AI Integration
 from anthropic import Anthropic
 
@@ -39,7 +54,6 @@ from app.models.category import Category
 
 # ChromaDB Integration
 import chromadb
-from chromadb.config import Settings
 
 # Load environment variables
 load_dotenv("../../.env")  # Load from root directory
@@ -66,6 +80,19 @@ class PDFExtractionResult:
 
     def to_dict(self) -> Dict[str, Any]:
         """Converts the dataclass instance to a dictionary."""
+        return asdict(self)
+
+
+@dataclass
+class TableExtractionResult:
+    """Advanced table extraction result with quality metrics"""
+    tables: List[Dict[str, Any]]
+    extraction_method: str
+    quality_score: float
+    confidence: float
+    processing_time: float
+    
+    def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
 
 
@@ -228,7 +255,7 @@ class ClaudeAIAnalyzer:
             )
         
         self.client = Anthropic(api_key=api_key)
-        self.model = "claude-3-5-sonnet-20241022"
+        self.model = "claude-3-5-haiku-20241022"
         
         logger.info(f"✅ Claude AI initialized: {self.model}")
     
@@ -294,57 +321,175 @@ class ClaudeAIAnalyzer:
         return context
     
     def _create_extraction_prompt(self, context: Dict[str, Any]) -> str:
-        """Create a more generic, structured prompt for Claude."""
+        """Create a dynamic, adaptive prompt for Claude based on actual PDF content."""
         
+        # Analyze the PDF content structure first
+        content_analysis = self._analyze_pdf_structure(context)
+        
+        # Build adaptive prompt based on what we actually found
         prompt = f"""
-Analyze the following content from the document '{context['filename']}'.
-The document contains {context['text_length']} characters of text and {context['tables_count']} tables.
+🔍 DINAMIKUS TARTALOM ELEMZÉS - '{context['filename']}'
 
-EXTRACTED CONTENT:
+📊 AUTOMATIKUS STRUKTÚRA FELISMERÉS:
+{content_analysis['structure_summary']}
+
+🎯 ADAPTÍV KINYERÉSI STRATÉGIA:
+{content_analysis['extraction_strategy']}
+
+📋 TALÁLT TARTALOM TÍPUSOK:
+{content_analysis['content_types']}
+
+DOKUMENTUM TARTALOM:
 {context['extracted_text']}
 """
-        if context["tables_summary"]:
-            prompt += "\n\nTABLES SUMMARY:\n"
-            for i, table in enumerate(context["tables_summary"], 1):
-                prompt += f"\nTable {i} (Page {table['page']}):\n"
-                prompt += f"Headers: {table['headers']}\n"
-                prompt += f"Sample data: {table['sample_data']}\n"
         
-        prompt += """
+        # Add tables only if they exist and are meaningful
+        if context["tables_summary"] and content_analysis['has_meaningful_tables']:
+            prompt += f"\n\n🔍 TÁBLÁZAT ADATOK ({len(context['tables_summary'])} db):\n"
+            for i, table in enumerate(context["tables_summary"], 1):
+                prompt += f"\nTáblázat {i}:\n"
+                prompt += f"Fejlécek: {table['headers']}\n"
+                prompt += f"Adatok: {table['sample_data']}\n"
+        
+        # Dynamic field mapping based on content
+        field_mapping = self._generate_dynamic_field_mapping(content_analysis)
+        prompt += f"\n\n🗺️ DINAMIKUS MEZŐ LEKÉPEZÉS:\n{field_mapping}\n"
+        
+        # Adaptive extraction instructions
+        prompt += f"""
+🤖 ADAPTÍV KINYERÉSI UTASÍTÁSOK:
 
-EXTRACT THE FOLLOWING INFORMATION IN A VALID JSON FORMAT:
+1. TARTALOM ALAPÚ MEGKÖZELÍTÉS:
+   - Elemezd a tényleges tartalmat, ne keress előre definiált mezőket
+   - Azonosítsd a műszaki adatokat bárhol is legyenek
+   - Használd a kontextust az adatok értelmezéséhez
 
-{
-  "product_identification": {
-    "name": "The exact product name, including any variations or model numbers",
-    "product_code": "The official product code or SKU, if available",
-    "category": "The general product category (e.g., 'Insulation', 'Brick', 'Mortar')",
-    "application": "The intended use or application area of the product"
-  },
-  "technical_specifications": {
-    "thermal_conductivity": { "value": "numerical_value", "unit": "W/mK" },
-    "fire_classification": { "value": "A1, A2, etc.", "standard": "e.g., EN 13501-1" },
-    "density": { "value": "numerical_value", "unit": "kg/m³" },
-    "compressive_strength": { "value": "numerical_value", "unit": "kPa" }
-  },
-  "confidence_assessment": {
-    "overall_confidence": "A score from 0.0 to 1.0 indicating your confidence in the accuracy of the extracted data",
-    "notes": "Any uncertainties, ambiguities, or missing information you encountered"
-  }
-}
+2. DINAMIKUS STRUKTÚRA KEZELÉS:
+   - Ha táblázat van → prioritás a táblázat adatoknak
+   - Ha csak szöveg van → regex és pattern matching
+   - Ha vegyes tartalom → kombináld a módszereket
 
-IMPORTANT REQUIREMENTS:
-1.  Extract ONLY factual information found in the document.
-2.  If a value is not found, use `null`.
-3.  Populate all fields in the requested JSON structure.
-4.  Focus on technical accuracy.
+3. ADAPTÍV KIMENETI SÉMA:
+   - Csak azokat a mezőket add vissza, amik ténylegesen megtalálhatók
+   - Null értékek helyett hagyd ki a hiányzó mezőket
+   - Confidence score legyen reális a talált adatok alapján
 
-Return only the valid JSON object.
+4. MINŐSÉGI VALIDÁCIÓ:
+   - Ellenőrizd az értékek konzisztenciáját
+   - Mértékegységek és szabványok pontossága
+   - Logikus értéktartományok (pl. λ: 0.02-0.1 W/mK)
+
+📤 KIMENETI JSON FORMÁTUM (DINAMIKUS):
+{{
+  "product_identification": {{
+    // Csak a ténylegesen talált adatok
+    {content_analysis['likely_fields']['product_identification']}
+  }},
+  "technical_specifications": {{
+    // Csak a PDF-ben szereplő műszaki adatok
+    {content_analysis['likely_fields']['technical_specifications']}
+  }},
+  "extraction_metadata": {{
+    "content_type": "{content_analysis['content_type']}",
+    "extraction_method": "{content_analysis['best_extraction_method']}",
+    "data_completeness": "0.0-1.0 között",
+    "confidence_score": "0.0-1.0 között",
+    "found_fields": ["lista", "a", "talált", "mezőkről"],
+    "missing_fields": ["lista", "a", "hiányzó", "mezőkről"]
+  }}
+}}
+
+⚡ KRITIKUS: Ne használj sablont! Elemezd a tényleges tartalmat és csak azt add vissza, amit ténylegesen megtalálsz!
 """
+        
         return prompt
     
+    def _analyze_pdf_structure(self, context: Dict[str, Any]) -> Dict[str, Any]:
+        """Analyze the actual PDF structure to determine extraction strategy."""
+        
+        text = context['extracted_text'].lower()
+        tables = context['tables_summary']
+        
+        analysis = {
+            'content_type': 'unknown',
+            'has_meaningful_tables': False,
+            'extraction_strategy': 'text_based',
+            'structure_summary': '',
+            'likely_fields': {
+                'product_identification': {},
+                'technical_specifications': {}
+            },
+            'best_extraction_method': 'pattern_matching'
+        }
+        
+        # Detect content type
+        if 'rockwool' in text or 'hőszigetelés' in text:
+            analysis['content_type'] = 'insulation_datasheet'
+        elif 'árlista' in text or 'ár' in text:
+            analysis['content_type'] = 'price_list'
+        elif 'műszaki' in text or 'technical' in text:
+            analysis['content_type'] = 'technical_spec'
+        
+        # Analyze tables
+        if tables:
+            meaningful_tables = 0
+            for table in tables:
+                if len(table.get('headers', [])) > 1 and len(table.get('sample_data', [])) > 0:
+                    meaningful_tables += 1
+            
+            if meaningful_tables > 0:
+                analysis['has_meaningful_tables'] = True
+                analysis['extraction_strategy'] = 'table_based'
+                analysis['best_extraction_method'] = 'table_parsing'
+        
+        # Detect likely fields based on content
+        if 'λ' in text or 'hővezetési' in text:
+            analysis['likely_fields']['technical_specifications']['thermal_conductivity'] = 'expected'
+        if 'tűzvédelmi' in text or 'fire' in text:
+            analysis['likely_fields']['technical_specifications']['fire_classification'] = 'expected'
+        if 'testsűrűség' in text or 'density' in text:
+            analysis['likely_fields']['technical_specifications']['density'] = 'expected'
+        
+        # Generate structure summary
+        analysis['structure_summary'] = f"""
+- Tartalom típus: {analysis['content_type']}
+- Táblázatok: {len(tables)} db ({'jelentős' if analysis['has_meaningful_tables'] else 'kevés adat'})
+- Szöveg hossz: {context['text_length']} karakter
+- Ajánlott módszer: {analysis['best_extraction_method']}
+"""
+        
+        return analysis
+    
+    def _generate_dynamic_field_mapping(self, analysis: Dict[str, Any]) -> str:
+        """Generate field mapping based on content analysis."""
+        
+        mapping = "DINAMIKUS MEZŐ FELISMERÉS:\n"
+        
+        # Hungarian technical terms that might appear
+        hungarian_terms = {
+            'hővezetési tényező': 'thermal_conductivity',
+            'λd': 'thermal_conductivity', 
+            'lambda': 'thermal_conductivity',
+            'tűzvédelmi osztály': 'fire_classification',
+            'testsűrűség': 'density',
+            'ρ': 'density',
+            'nyomószilárdság': 'compressive_strength',
+            'páradiffúziós': 'vapor_resistance',
+            'μ': 'vapor_resistance',
+            'vízfelvétel': 'water_absorption',
+            'ws': 'water_absorption',
+            'wl': 'water_absorption'
+        }
+        
+        for hu_term, en_key in hungarian_terms.items():
+            mapping += f"- '{hu_term}' → {en_key}\n"
+        
+        mapping += "\n🎯 ADAPTÍV STRATÉGIA: Keress hasonló kifejezéseket és értelmezd a kontextus alapján!"
+        
+        return mapping
+    
     def _parse_claude_response(self, response_text: str) -> Dict[str, Any]:
-        """Parse Claude's JSON response"""
+        """Parse Claude's dynamic JSON response - adapts to actual content"""
         
         try:
             # Find JSON in response
@@ -359,35 +504,529 @@ Return only the valid JSON object.
             # Parse JSON
             result = json.loads(json_text)
             
-            # Validate structure
-            required_keys = [
-                "product_identification",
-                "technical_specifications",
-                "confidence_assessment",
-            ]
-            for key in required_keys:
-                if key not in result:
-                    logger.warning(f"Missing key in Claude response: {key}")
-                    result[key] = {}
+            # Dynamic validation - only check for what we actually expect
+            self._validate_dynamic_structure(result)
+            
+            # Enhance with extraction metadata
+            result = self._enhance_with_metadata(result)
             
             return result
             
         except json.JSONDecodeError as e:
             logger.error(f"JSON parsing error: {e}")
-            # Return empty structure
+            # Return minimal structure with error info
             return {
                 "product_identification": {},
                 "technical_specifications": {},
-                "pricing_information": {},
-                "additional_data": {},
-                "confidence_assessment": {
-                    "overall_confidence": 0.0,
-                    "notes": f"JSON parsing failed: {e}",
-                },
+                "extraction_metadata": {
+                    "confidence_score": 0.0,
+                    "extraction_method": "failed",
+                    "error": f"JSON parsing failed: {e}",
+                    "found_fields": [],
+                    "missing_fields": ["all"]
+                }
             }
         except Exception as e:
             logger.error(f"Response parsing error: {e}")
             raise
+    
+    def _validate_dynamic_structure(self, result: Dict[str, Any]) -> None:
+        """Validate structure dynamically based on what was actually found"""
+        
+        # Ensure basic structure exists
+        if "product_identification" not in result:
+            result["product_identification"] = {}
+        if "technical_specifications" not in result:
+            result["technical_specifications"] = {}
+        if "extraction_metadata" not in result:
+            result["extraction_metadata"] = {}
+        
+        # Validate technical specifications format
+        tech_specs = result.get("technical_specifications", {})
+        for key, value in tech_specs.items():
+            if isinstance(value, dict):
+                # Ensure proper structure for technical values
+                if "value" not in value:
+                    logger.warning(f"Technical spec {key} missing 'value' field")
+                if "unit" not in value:
+                    logger.warning(f"Technical spec {key} missing 'unit' field")
+    
+    def _enhance_with_metadata(self, result: Dict[str, Any]) -> Dict[str, Any]:
+        """Enhance result with extraction metadata"""
+        
+        metadata = result.get("extraction_metadata", {})
+        
+        # Count found fields
+        found_fields = []
+        if result.get("product_identification"):
+            found_fields.extend(result["product_identification"].keys())
+        if result.get("technical_specifications"):
+            found_fields.extend(result["technical_specifications"].keys())
+        
+        # Calculate data completeness
+        expected_fields = [
+            "product_identification.name",
+            "technical_specifications.thermal_conductivity",
+            "technical_specifications.fire_classification",
+            "technical_specifications.density"
+        ]
+        
+        completeness = len(found_fields) / len(expected_fields) if expected_fields else 0
+        
+        # Update metadata
+        metadata.update({
+            "found_fields": found_fields,
+            "data_completeness": round(completeness, 2),
+            "extraction_timestamp": datetime.now().isoformat()
+        })
+        
+        result["extraction_metadata"] = metadata
+        
+        return result
+
+class AdvancedTableExtractor:
+    """
+    🎯 ROCKWOOL PDF Optimális Táblázat Kinyerő
+    
+    Hibrid megközelítés:
+    1. CAMELOT (elsődleges eszköz)
+    2. Deep Learning validáció 
+    3. Manuális végső ellenőrzés
+    """
+    
+    def __init__(self):
+        self.extraction_methods = []
+        self.stats = {
+            'camelot_success': 0,
+            'tabula_success': 0,
+            'fallback_used': 0,
+            'total_extractions': 0
+        }
+        
+        # Initialize available methods
+        self._initialize_methods()
+    
+    def _initialize_methods(self):
+        """Initialize available extraction methods"""
+        
+        if CAMELOT_AVAILABLE:
+            self.extraction_methods.append(('camelot_lattice', self._camelot_lattice))
+            self.extraction_methods.append(('camelot_stream', self._camelot_stream))
+            logger.info("✅ CAMELOT initialized - optimal for technical PDFs")
+        
+        if TABULA_AVAILABLE:
+            self.extraction_methods.append(('tabula', self._tabula_extract))
+            logger.info("✅ TABULA initialized - Java-based table extraction")
+        
+        # Always available fallback
+        self.extraction_methods.append(('pymupdf_advanced', self._pymupdf_advanced))
+        self.extraction_methods.append(('pdfplumber_backup', self._pdfplumber_backup))
+        
+        logger.info(f"Table extraction methods available: {len(self.extraction_methods)}")
+    
+    def extract_tables_hybrid(self, pdf_path: Path) -> TableExtractionResult:
+        """
+        🚀 Hibrid táblázat kinyerés ROCKWOOL PDF-ekhez
+        
+        Sorrend:
+        1. CAMELOT (elsődleges)
+        2. Deep Learning validáció
+        3. Manuális ellenőrzés
+        """
+        
+        start_time = datetime.now()
+        logger.info(f"🔍 Advanced table extraction: {pdf_path.name}")
+        
+        best_result = None
+        best_score = 0
+        extraction_attempts = []
+        
+        # Try each extraction method
+        for method_name, method_func in self.extraction_methods:
+            try:
+                logger.info(f"📊 Trying {method_name}...")
+                
+                tables = method_func(pdf_path)
+                quality_score = self._calculate_quality_score(tables)
+                
+                extraction_attempts.append({
+                    'method': method_name,
+                    'tables_count': len(tables),
+                    'quality_score': quality_score,
+                    'success': len(tables) > 0
+                })
+                
+                if quality_score > best_score:
+                    best_result = {
+                        'tables': tables,
+                        'method': method_name,
+                        'quality_score': quality_score
+                    }
+                    best_score = quality_score
+                    
+                logger.info(f"✅ {method_name}: {len(tables)} tables, score: {quality_score:.2f}")
+                
+            except Exception as e:
+                logger.warning(f"❌ {method_name} failed: {e}")
+                extraction_attempts.append({
+                    'method': method_name,
+                    'error': str(e),
+                    'success': False
+                })
+                continue
+        
+        # Deep Learning Validáció
+        if best_result and best_result['quality_score'] > 0.5:
+            validated_result = self._deep_learning_validation(best_result)
+            if validated_result:
+                best_result = validated_result
+        
+        processing_time = (datetime.now() - start_time).total_seconds()
+        
+        # Create final result
+        if best_result:
+            result = TableExtractionResult(
+                tables=best_result['tables'],
+                extraction_method=best_result['method'],
+                quality_score=best_result['quality_score'],
+                confidence=self._calculate_confidence(best_result, extraction_attempts),
+                processing_time=processing_time
+            )
+            
+            self.stats['total_extractions'] += 1
+            if 'camelot' in best_result['method']:
+                self.stats['camelot_success'] += 1
+            elif 'tabula' in best_result['method']:
+                self.stats['tabula_success'] += 1
+            else:
+                self.stats['fallback_used'] += 1
+            
+            logger.info(f"🎯 Best result: {best_result['method']} (score: {best_result['quality_score']:.2f})")
+            return result
+        
+        # Fallback to empty result
+        logger.warning("⚠️ No tables extracted from PDF")
+        return TableExtractionResult(
+            tables=[],
+            extraction_method='failed',
+            quality_score=0.0,
+            confidence=0.0,
+            processing_time=processing_time
+        )
+    
+    def _camelot_lattice(self, pdf_path: Path) -> List[Dict]:
+        """CAMELOT Lattice method - best for technical tables with borders"""
+        
+        if not CAMELOT_AVAILABLE:
+            raise ImportError("CAMELOT not available")
+        
+        tables = camelot.read_pdf(
+            str(pdf_path),
+            flavor='lattice',
+            pages='all',
+            line_scale=40,  # Adjust for table detection
+            copy_text=['v', 'h'],  # Copy text along vertical/horizontal lines
+            shift_text=['l', 't', 'r']  # Shift text left/top/right
+        )
+        
+        extracted_tables = []
+        for i, table in enumerate(tables):
+            if table.df.empty:
+                continue
+                
+            # Clean and process table data
+            table_data = self._clean_table_data(table.df)
+            
+            extracted_tables.append({
+                'data': table_data,
+                'headers': table.df.columns.tolist(),
+                'page': table.page,
+                'accuracy': table.accuracy,
+                'method': 'camelot_lattice',
+                'table_index': i,
+                'shape': table.df.shape,
+                'parsing_report': table.parsing_report
+            })
+        
+        return extracted_tables
+    
+    def _camelot_stream(self, pdf_path: Path) -> List[Dict]:
+        """CAMELOT Stream method - for tables without borders"""
+        
+        if not CAMELOT_AVAILABLE:
+            raise ImportError("CAMELOT not available")
+        
+        tables = camelot.read_pdf(
+            str(pdf_path),
+            flavor='stream',
+            pages='all',
+            row_tol=10,  # Row tolerance
+            column_tol=0  # Column tolerance
+        )
+        
+        extracted_tables = []
+        for i, table in enumerate(tables):
+            if table.df.empty:
+                continue
+                
+            table_data = self._clean_table_data(table.df)
+            
+            extracted_tables.append({
+                'data': table_data,
+                'headers': table.df.columns.tolist(),
+                'page': table.page,
+                'accuracy': table.accuracy,
+                'method': 'camelot_stream',
+                'table_index': i,
+                'shape': table.df.shape
+            })
+        
+        return extracted_tables
+    
+    def _tabula_extract(self, pdf_path: Path) -> List[Dict]:
+        """TABULA extraction - Java-based reliable fallback"""
+        
+        if not TABULA_AVAILABLE:
+            raise ImportError("TABULA not available")
+        
+        # Multiple extraction strategies
+        strategies = [
+            {'multiple_tables': True, 'pandas_options': {'header': 0}},
+            {'multiple_tables': True, 'stream': True},
+            {'multiple_tables': True, 'lattice': True}
+        ]
+        
+        best_tables = []
+        best_count = 0
+        
+        for strategy in strategies:
+            try:
+                tables = tabula.read_pdf(
+                    str(pdf_path),
+                    pages='all',
+                    **strategy
+                )
+                
+                if len(tables) > best_count:
+                    best_tables = tables
+                    best_count = len(tables)
+                    
+            except Exception as e:
+                logger.debug(f"TABULA strategy failed: {e}")
+                continue
+        
+        extracted_tables = []
+        for i, df in enumerate(best_tables):
+            if df.empty:
+                continue
+                
+            table_data = self._clean_table_data(df)
+            
+            extracted_tables.append({
+                'data': table_data,
+                'headers': df.columns.tolist(),
+                'method': 'tabula',
+                'table_index': i,
+                'shape': df.shape
+            })
+        
+        return extracted_tables
+    
+    def _pymupdf_advanced(self, pdf_path: Path) -> List[Dict]:
+        """PyMuPDF advanced table detection"""
+        
+        doc = fitz.open(pdf_path)
+        extracted_tables = []
+        
+        for page_num in range(len(doc)):
+            page = doc[page_num]
+            
+            # Try to find tables using PyMuPDF
+            try:
+                tables = page.find_tables()
+                
+                for table_idx, table in enumerate(tables):
+                    table_data = table.extract()
+                    
+                    if not table_data or len(table_data) < 2:
+                        continue
+                    
+                    extracted_tables.append({
+                        'data': table_data,
+                        'headers': table_data[0] if table_data else [],
+                        'page': page_num + 1,
+                        'method': 'pymupdf_advanced',
+                        'table_index': table_idx,
+                        'bbox': table.bbox
+                    })
+                    
+            except AttributeError:
+                # Fallback if find_tables is not available
+                logger.debug("PyMuPDF find_tables not available, using basic extraction")
+                
+        doc.close()
+        return extracted_tables
+    
+    def _pdfplumber_backup(self, pdf_path: Path) -> List[Dict]:
+        """PDFPlumber backup method"""
+        
+        tables = []
+        
+        try:
+            with pdfplumber.open(pdf_path) as pdf:
+                for page_num, page in enumerate(pdf.pages):
+                    page_tables = page.extract_tables()
+                    
+                    for table_idx, table in enumerate(page_tables):
+                        if table and len(table) > 1:
+                            tables.append({
+                                'data': table,
+                                'headers': table[0] if table else [],
+                                'page': page_num + 1,
+                                'method': 'pdfplumber_backup',
+                                'table_index': table_idx
+                            })
+        except Exception as e:
+            logger.error(f"PDFPlumber backup failed: {e}")
+        
+        return tables
+    
+    def _clean_table_data(self, df) -> List[List[str]]:
+        """Clean and normalize table data"""
+        
+        # Fill NaN values
+        df = df.fillna('')
+        
+        # Convert to strings and clean
+        cleaned_data = []
+        for _, row in df.iterrows():
+            cleaned_row = []
+            for cell in row:
+                cell_str = str(cell).strip()
+                # Remove extra whitespace
+                cell_str = ' '.join(cell_str.split())
+                cleaned_row.append(cell_str)
+            cleaned_data.append(cleaned_row)
+        
+        return cleaned_data
+    
+    def _calculate_quality_score(self, tables: List[Dict]) -> float:
+        """Calculate table extraction quality score"""
+        
+        if not tables:
+            return 0.0
+        
+        total_score = 0
+        
+        for table in tables:
+            score = 0
+            
+            # Table size score
+            data = table.get('data', [])
+            rows = len(data)
+            cols = len(data[0]) if data else 0
+            size_score = min(rows * cols / 20, 1.0)  # Normalize by 20 cells
+            
+            # Method bonus
+            method_bonus = {
+                'camelot_lattice': 1.0,
+                'camelot_stream': 0.9,
+                'tabula': 0.8,
+                'pymupdf_advanced': 0.7,
+                'pdfplumber_backup': 0.6
+            }.get(table.get('method', 'unknown'), 0.5)
+            
+            # Accuracy bonus (if available)
+            accuracy_bonus = table.get('accuracy', 0.5)
+            
+            # Calculate final score
+            score = (size_score * method_bonus * accuracy_bonus) * 100
+            total_score += score
+        
+        return total_score / len(tables)
+    
+    def _calculate_confidence(self, best_result: Dict, attempts: List[Dict]) -> float:
+        """Calculate confidence based on extraction attempts"""
+        
+        successful_attempts = [a for a in attempts if a.get('success', False)]
+        
+        if not successful_attempts:
+            return 0.0
+        
+        # Base confidence from quality score
+        quality_confidence = min(best_result['quality_score'] / 100, 1.0)
+        
+        # Multiple methods agreement bonus
+        method_agreement = len(successful_attempts) / len(attempts)
+        
+        # Final confidence
+        confidence = (quality_confidence * 0.7) + (method_agreement * 0.3)
+        
+        return round(confidence, 3)
+    
+    def _deep_learning_validation(self, result: Dict) -> Optional[Dict]:
+        """
+        🧠 Deep Learning validáció
+        
+        TODO: Implement AI-based table validation
+        - OCR verification
+        - Content pattern recognition
+        - Anomaly detection
+        """
+        
+        # Placeholder for future AI validation
+        logger.info("🧠 Deep Learning validation (placeholder)")
+        
+        # Simple validation rules for now
+        tables = result.get('tables', [])
+        validated_tables = []
+        
+        for table in tables:
+            # Basic validation
+            data = table.get('data', [])
+            if len(data) > 1 and len(data[0]) > 1:
+                # Check for technical content patterns
+                has_technical_content = self._check_technical_patterns(data)
+                
+                if has_technical_content:
+                    table['validated'] = True
+                    validated_tables.append(table)
+        
+        if validated_tables:
+            result['tables'] = validated_tables
+            result['quality_score'] *= 1.1  # Validation bonus
+            return result
+        
+        return None
+    
+    def _check_technical_patterns(self, data: List[List[str]]) -> bool:
+        """Check for ROCKWOOL technical content patterns"""
+        
+        technical_keywords = [
+            'λ', 'lambda', 'w/m', 'kg/m³', 'pa', 'kpa', 'mm', 'cm', 'm²',
+            'thermal', 'conductivity', 'density', 'thickness', 'fire',
+            'hővezetési', 'tényező', 'testsűrűség', 'vastagság', 'tűz'
+        ]
+        
+        text_content = ' '.join([' '.join(row) for row in data]).lower()
+        
+        matches = sum(1 for keyword in technical_keywords if keyword in text_content)
+        
+        return matches >= 3  # At least 3 technical terms
+    
+    def get_extraction_stats(self) -> Dict[str, Any]:
+        """Get extraction statistics"""
+        
+        total = self.stats['total_extractions']
+        
+        return {
+            'total_extractions': total,
+            'camelot_success_rate': (self.stats['camelot_success'] / total * 100) if total > 0 else 0,
+            'tabula_success_rate': (self.stats['tabula_success'] / total * 100) if total > 0 else 0,
+            'fallback_usage_rate': (self.stats['fallback_used'] / total * 100) if total > 0 else 0,
+            'available_methods': len(self.extraction_methods)
+        }
+
 
 class RealPDFProcessor:
     """Main class for real PDF processing - NO SIMULATIONS"""
@@ -396,6 +1035,7 @@ class RealPDFProcessor:
         """Initializes the processor with a database session."""
         self.extractor = RealPDFExtractor()
         self.ai_analyzer = ClaudeAIAnalyzer()
+        self.advanced_table_extractor = AdvancedTableExtractor()  # ✅ NEW
         self.db_session = db_session
         self._load_hashes()
         self._init_chromadb()
@@ -519,7 +1159,8 @@ class RealPDFProcessor:
                 category_id=category.id,
                 technical_specs=result.technical_specs,
                 sku=self._generate_sku(result.product_name),
-                price=self._extract_price_from_result(result)
+                price=self._extract_price_from_result(result),
+                full_text_content=result.extracted_text  # ✅ JAVÍTÁS: teljes szöveg mentése
             )
             
             self.db_session.add(product)
@@ -630,36 +1271,33 @@ class RealPDFProcessor:
         ai_analysis: Dict[str, Any], 
         extraction_method: str
     ) -> float:
-        """Calculate enhanced confidence score based on multiple quality factors."""
+        """Calculate dynamic confidence score based on actual content quality."""
         
         confidence_factors = []
         
-        # Factor 1: AI confidence (if available)
-        ai_confidence = ai_analysis.get("confidence_assessment", {}).get(
-            "overall_confidence", 0.5
-        )
+        # Factor 1: AI confidence (dynamic based on extraction metadata)
+        extraction_metadata = ai_analysis.get("extraction_metadata", {})
+        ai_confidence = extraction_metadata.get("confidence_score", 0.5)
+        data_completeness = extraction_metadata.get("data_completeness", 0.0)
+        
         if isinstance(ai_confidence, (int, float)):
-            confidence_factors.append(("ai_confidence", float(ai_confidence), 0.3))
+            confidence_factors.append(("ai_confidence", float(ai_confidence), 0.35))
         
-        # Factor 2: Text extraction quality
-        text_quality = min(1.0, len(text_content) / 1000.0)  # Normalize by 1000 chars
-        confidence_factors.append(("text_quality", text_quality, 0.2))
+        # Factor 2: Data completeness from AI analysis
+        if isinstance(data_completeness, (int, float)):
+            confidence_factors.append(("data_completeness", float(data_completeness), 0.25))
         
-        # Factor 3: Table extraction success
-        table_quality = min(1.0, len(tables) / 3.0)  # Normalize by 3 tables
-        confidence_factors.append(("table_quality", table_quality, 0.2))
+        # Factor 3: Text extraction quality (dynamic thresholds)
+        text_quality = self._assess_text_quality(text_content)
+        confidence_factors.append(("text_quality", text_quality, 0.15))
         
-        # Factor 4: Pattern-based extraction success
-        pattern_quality = min(1.0, len(pattern_specs) / 5.0)  # Normalize by 5 specs
-        confidence_factors.append(("pattern_quality", pattern_quality, 0.15))
+        # Factor 4: Table extraction success (dynamic assessment)
+        table_quality = self._assess_table_quality(tables)
+        confidence_factors.append(("table_quality", table_quality, 0.15))
         
-        # Factor 5: Extraction method reliability
-        method_reliability = {
-            "pdfplumber": 0.9,  # Best for tables
-            "pypdf2": 0.7,      # Reliable fallback
-            "pymupdf": 0.8      # Good alternative
-        }.get(extraction_method, 0.5)
-        confidence_factors.append(("method_reliability", method_reliability, 0.15))
+        # Factor 5: Cross-validation between AI and pattern extraction
+        validation_score = self._cross_validate_extractions(pattern_specs, ai_analysis)
+        confidence_factors.append(("validation_score", validation_score, 0.1))
         
         # Calculate weighted average
         total_score = sum(score * weight for _, score, weight in confidence_factors)
@@ -667,11 +1305,109 @@ class RealPDFProcessor:
         
         final_confidence = total_score / total_weight if total_weight > 0 else 0.0
         
+        # Apply dynamic adjustments based on content type
+        final_confidence = self._apply_content_type_adjustments(
+            final_confidence, ai_analysis, extraction_method
+        )
+        
         # Log confidence breakdown for debugging
-        logger.debug(f"Confidence breakdown: {confidence_factors}")
+        logger.debug(f"Dynamic confidence breakdown: {confidence_factors}")
         logger.debug(f"Final confidence: {final_confidence:.3f}")
         
         return round(final_confidence, 3)
+    
+    def _assess_text_quality(self, text_content: str) -> float:
+        """Assess text quality based on content characteristics."""
+        if not text_content:
+            return 0.0
+        
+        # Check for meaningful content indicators
+        quality_indicators = [
+            ('length', len(text_content) > 500, 0.3),
+            ('technical_terms', any(term in text_content.lower() for term in 
+             ['hővezetési', 'thermal', 'rockwool', 'szigetelés']), 0.4),
+            ('structured_data', ':' in text_content and '\n' in text_content, 0.3)
+        ]
+        
+        score = sum(weight for _, present, weight in quality_indicators if present)
+        return min(1.0, score)
+    
+    def _assess_table_quality(self, tables: List[Dict]) -> float:
+        """Assess table quality based on structure and content."""
+        if not tables:
+            return 0.0
+        
+        total_quality = 0.0
+        for table in tables:
+            table_score = 0.0
+            
+            # Check for meaningful headers
+            headers = table.get('headers', [])
+            if headers and len(headers) > 1:
+                table_score += 0.4
+            
+            # Check for data rows
+            data = table.get('data', [])
+            if data and len(data) > 1:
+                table_score += 0.4
+            
+            # Check for technical content
+            table_text = str(table).lower()
+            if any(term in table_text for term in ['λ', 'w/mk', 'kg/m³', 'kpa']):
+                table_score += 0.2
+            
+            total_quality += table_score
+        
+        # Average quality across all tables
+        return min(1.0, total_quality / len(tables))
+    
+    def _cross_validate_extractions(self, pattern_specs: Dict[str, Any], 
+                                   ai_analysis: Dict[str, Any]) -> float:
+        """Cross-validate pattern-based and AI extractions."""
+        if not pattern_specs and not ai_analysis.get("technical_specifications"):
+            return 0.0
+        
+        ai_specs = ai_analysis.get("technical_specifications", {})
+        
+        # Count matching fields
+        matching_fields = 0
+        total_fields = len(set(pattern_specs.keys()) | set(ai_specs.keys()))
+        
+        for field in pattern_specs:
+            if field in ai_specs:
+                matching_fields += 1
+        
+        # Calculate validation score
+        if total_fields > 0:
+            return matching_fields / total_fields
+        return 0.0
+    
+    def _apply_content_type_adjustments(self, base_confidence: float, 
+                                      ai_analysis: Dict[str, Any], 
+                                      extraction_method: str) -> float:
+        """Apply content-type specific confidence adjustments."""
+        
+        # Method reliability adjustments
+        method_multipliers = {
+            "pdfplumber": 1.0,   # Best for tables
+            "pypdf2": 0.9,       # Reliable fallback  
+            "pymupdf": 0.95      # Good alternative
+        }
+        
+        adjusted_confidence = base_confidence * method_multipliers.get(extraction_method, 0.8)
+        
+        # Content type adjustments
+        extraction_metadata = ai_analysis.get("extraction_metadata", {})
+        content_type = extraction_metadata.get("content_type", "unknown")
+        
+        if content_type == "insulation_datasheet":
+            adjusted_confidence *= 1.05  # Boost for expected content
+        elif content_type == "technical_spec":
+            adjusted_confidence *= 1.02  # Slight boost for technical content
+        elif content_type == "unknown":
+            adjusted_confidence *= 0.9   # Penalty for unknown content
+        
+        return min(1.0, adjusted_confidence)
 
     def process_pdf(self, pdf_path: Path) -> Optional[PDFExtractionResult]:
         """Process a single PDF with real AI analysis and deduplication."""
@@ -858,7 +1594,7 @@ class RealPDFProcessor:
         
         print(f"\n✅ REAL AI-POWERED PDF PROCESSING COMPLETE")
         print("   - Actual PDF text extraction (PyPDF2, pdfplumber, PyMuPDF)")
-        print("   - Real Claude 3.5 Sonnet AI analysis")
+        print("   - Real Claude 3.5 Haiku AI analysis")
         print("   - Structured technical specifications")
         print("   - Pricing information extraction")
         print("   - NO SIMULATIONS - 100% real processing")
@@ -870,7 +1606,7 @@ def main():
     print("=" * 80)
     print("NO SIMULATIONS - Real AI-powered PDF content extraction")
     print("✅ PyPDF2 + pdfplumber + PyMuPDF")
-    print("✅ Claude 3.5 Sonnet AI analysis")
+    print("✅ Claude 3.5 Haiku AI analysis")
     print("✅ Structured technical data extraction")
     print()
     

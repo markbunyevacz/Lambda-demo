@@ -1,6 +1,7 @@
 import asyncio
 import sys
 from pathlib import Path
+import json
 
 # This assumes the script is run from /app, which is the WORKDIR
 # Adding /app to the path ensures modules are found
@@ -9,9 +10,9 @@ sys.path.append('/app')
 from app.mcp_orchestrator.strategies import (
     PDFPlumberStrategy,
     PyMuPDFStrategy,
-    OCRStrategy,
 )
 from app.mcp_orchestrator.models import ExtractionTask
+from real_pdf_processor import ClaudeAIAnalyzer
 
 
 async def diagnose_pdf(pdf_path: Path):
@@ -28,7 +29,6 @@ async def diagnose_pdf(pdf_path: Path):
     strategies_to_test = [
         ("PDFPlumber", PDFPlumberStrategy()),
         ("PyMuPDF", PyMuPDFStrategy()),
-        ("OCR", OCRStrategy()),
     ]
 
     for name, strategy in strategies_to_test:

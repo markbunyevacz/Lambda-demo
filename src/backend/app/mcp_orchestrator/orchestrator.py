@@ -7,7 +7,7 @@ from .models import (
     ExtractionTask, ExtractionResult, GoldenRecord, TaskStatus, StrategyType
 )
 from .strategies import (
-    PDFPlumberStrategy, PyMuPDFStrategy, OCRStrategy, NativePDFStrategy
+    PDFPlumberStrategy, PyMuPDFStrategy, NativePDFStrategy
 )
 from .validator import AIValidator
 from .chroma_client import ChromaClient
@@ -25,7 +25,6 @@ class MCPOrchestrator:
         self.strategies = {
             StrategyType.PDFPLUMBER: PDFPlumberStrategy(),
             StrategyType.PYMUPDF: PyMuPDFStrategy(),
-            StrategyType.OCR: OCRStrategy(),
             StrategyType.NATIVE_PDF: NativePDFStrategy(),
         }
 

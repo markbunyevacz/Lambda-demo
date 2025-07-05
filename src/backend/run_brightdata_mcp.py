@@ -58,7 +58,7 @@ async def run_ai_scraper(target_url: str, objective: str):
 
     logger.info(f"🚀 Starting AI-powered scrape for: {target_url}")
     
-    model = ChatAnthropic(model="claude-3-5-sonnet-20240620", api_key=anthropic_key)
+    model = ChatAnthropic(model="claude-3-5-haiku-20241022", api_key=anthropic_key)
     
     import platform
     npx_cmd = "npx.cmd" if platform.system() == "Windows" else "npx"

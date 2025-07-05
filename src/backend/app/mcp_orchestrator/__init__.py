@@ -24,7 +24,6 @@ from .models import (
 )
 from .strategies import (
     NativePDFStrategy,
-    OCRStrategy,
     PDFPlumberStrategy,
     PyMuPDFStrategy,
 )
@@ -42,10 +41,8 @@ __all__ = [
     "StrategyType",
     "TaskStatus",
     "NativePDFStrategy",
-    "OCRStrategy",
     "PDFPlumberStrategy",
     "PyMuPDFStrategy",
     "AIValidator",
-    "MCPOrchestrator",
     "ChromaClient",
-] 
+]

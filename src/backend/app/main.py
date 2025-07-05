@@ -350,7 +350,7 @@ async def rag_search(request: schemas.SearchRequest, db: Session = Depends(get_d
     """
     try:
         client = get_chroma_client()
-        collection = client.get_collection("rockwool_products")
+        collection = client.get_collection("pdf_products")
         
         results = collection.query(
             query_texts=[request.query],

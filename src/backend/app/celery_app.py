@@ -13,13 +13,12 @@ Főbb funkciók:
 
 import os
 from celery import Celery
-from kombu import Exchange, Queue
 
 # Set the default Django settings module for the 'celery' program.
 # os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'proj.settings')
 
-# Get Redis URL from environment variable, default to a standard local setup if not found
-REDIS_URL = os.environ.get('REDIS_URL', 'redis://localhost:6379/0')
+# Get Redis URL from environment variable, explicitly set for Docker
+REDIS_URL = os.environ.get('REDIS_URL', 'redis://cache:6379/0')
 
 # Celery alkalmazás létrehozása
 celery_app = Celery(
@@ -44,6 +43,9 @@ celery_app.conf.update(
 # A `beat_schedule` és a `setup_periodic_tasks` funkciók eltávolítva,
 # mivel az időzített feladatok logikája elavult. A Celery mostantól
 # csak az API-n keresztül manuálisan indított taskokat hajtja végre.
+
+# Alias létrehozása a Docker Compose kompatibilitáshoz
+app = celery_app
 
 if __name__ == '__main__':
     celery_app.start() 

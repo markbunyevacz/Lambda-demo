@@ -27,7 +27,6 @@ class StrategyType(Enum):
     """The type of extraction strategy used"""
     PDFPLUMBER = "pdfplumber"
     PYMUPDF = "pymupdf"
-    OCR = "ocr"
     NATIVE_PDF = "native_pdf"
     UNKNOWN = "unknown"
 

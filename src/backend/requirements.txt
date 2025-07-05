@@ -8,44 +8,46 @@ sqlalchemy>=2.0.23
 alembic>=1.13.1
 psycopg2-binary>=2.9.7
 
-# Async and HTTP
-httpx>=0.25.2
-aiofiles>=23.2.1
-asyncpg>=0.29.0
+# Caching and Task Queue
+redis==5.0.1
+celery==5.3.4
 
-# Data Processing and AI
-anthropic>=0.40.0
-langchain>=0.1.0
-langchain-anthropic>=0.1.0
+# PDF Processing - Basic
+PyPDF2==3.0.1
+pdfplumber==0.10.3
+PyMuPDF==1.23.8
 
-# Web Scraping
-playwright>=1.40.0
-beautifulsoup4>=4.12.2
-requests>=2.31.0
+# 🎯 Advanced Table Extraction (ROCKWOOL Optimized)
+camelot-py[cv]==0.11.0    # ✅ Primary tool for technical PDFs
+tabula-py==2.8.2          # ✅ Java-based reliable fallback
+opencv-python==4.8.1.78  # Required for camelot image processing
 
-# Task Queue
-celery>=5.3.4
-redis>=5.0.1
+# AI and Machine Learning
+anthropic==0.7.8
+langchain==0.1.0
+langchain-anthropic==0.1.1
+langchain-community==0.0.10
+chromadb==0.4.18
 
-# Monitoring and Logging
-flower>=2.0.1
+# MCP (Model Context Protocol)
+mcp==1.0.0
+langchain-mcp-adapters==0.1.0
+langgraph==0.0.20
 
-# Authentication and Security
-python-jose[cryptography]>=3.3.0
-passlib[bcrypt]>=1.7.4
-python-dotenv>=1.0.0
+# Data Processing
+pandas==2.1.4
+numpy==1.25.2
 
 # Utilities
-pydantic>=2.5.0
-pydantic-settings>=2.1.0
+python-dotenv==1.0.0
+requests==2.31.0
+beautifulsoup4==4.12.2
+aiohttp==3.9.1
 
-# RAG Pipeline Dependencies
-chromadb>=0.4.24
-sentence-transformers>=2.6.1
+# Development and Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
 
-# PDF Processing for MCP Orchestrator
-pdfplumber>=0.10.0
-PyPDF2>=3.0.1
-PyMuPDF>=1.23.0
-pytesseract>=0.3.10
-Pillow>=10.0.0
+# Java Runtime (for tabula-py)
+# Note: Install Java JRE separately: apt-get install default-jre (Linux) or brew install openjdk (macOS)
