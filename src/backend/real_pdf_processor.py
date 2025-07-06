@@ -337,7 +337,7 @@ class ClaudeAIAnalyzer:
 {content_analysis['extraction_strategy']}
 
 📋 TALÁLT TARTALOM TÍPUSOK:
-{content_analysis['content_types']}
+{content_analysis['content_type']}
 
 DOKUMENTUM TARTALOM:
 {context['extracted_text']}
@@ -1067,11 +1067,23 @@ class RealPDFProcessor:
     def _load_hashes(self):
         """Loads all file hashes from the database into memory."""
         logger.info("Loading existing file hashes from the database...")
-        all_logs = self.db_session.query(ProcessedFileLog.file_hash).all()
-        self.processed_file_hashes = {log.file_hash for log in all_logs}
-        logger.info(
-            f"Loaded {len(self.processed_file_hashes)} unique file hashes."
-        )
+        try:
+            # CRITICAL: Clear any existing corrupted data first
+            self.db_session.rollback()
+            
+            # Try to load hashes with UTF-8 safe handling
+            all_logs = self.db_session.query(ProcessedFileLog.file_hash).all()
+            self.processed_file_hashes = {log.file_hash for log in all_logs}
+            logger.info(
+                f"Loaded {len(self.processed_file_hashes)} unique file hashes."
+            )
+        except Exception as e:
+            logger.warning(f"Database hash loading failed: {e}")
+            logger.info("Starting with empty hash set...")
+            self.processed_file_hashes = set()
+            # CRITICAL: Ensure clean session state
+            if self.db_session.is_active:
+                self.db_session.rollback()
 
     def _init_chromadb(self):
         """Initialize ChromaDB for vector storage."""
@@ -1151,16 +1163,20 @@ class RealPDFProcessor:
                 self.db_session.add(category)
                 self.db_session.flush()  # Get ID
             
-            # Create product
+            # Create product with UTF-8 safe strings
+            safe_name = result.product_name.encode('utf-8', errors='ignore').decode('utf-8')
+            safe_description = f"Extracted from {result.source_filename}".encode('utf-8', errors='ignore').decode('utf-8')
+            safe_text_content = result.extracted_text.encode('utf-8', errors='ignore').decode('utf-8')
+            
             product = Product(
-                name=result.product_name,
-                description=f"Extracted from {result.source_filename}",
+                name=safe_name,
+                description=safe_description,
                 manufacturer_id=manufacturer.id,
                 category_id=category.id,
                 technical_specs=result.technical_specs,
                 sku=self._generate_sku(result.product_name),
                 price=self._extract_price_from_result(result),
-                full_text_content=result.extracted_text  # ✅ JAVÍTÁS: teljes szöveg mentése
+                full_text_content=safe_text_content  # ✅ UTF-8 safe text
             )
             
             self.db_session.add(product)
@@ -1467,22 +1483,29 @@ class RealPDFProcessor:
             )
 
             # === SAVE NEW HASH TO DATABASE ===
-            new_log = ProcessedFileLog(
-                file_hash=file_hash,
-                content_hash=file_hash,  # Placeholder, can be enhanced later
-                source_filename=pdf_path.name,
-            )
-            self.db_session.add(new_log)
-            self.db_session.commit()
-            self.processed_file_hashes.add(file_hash)  # Update in-memory set
-            logger.info(f"💾 Hash for {pdf_path.name} saved to DB.")
+            # UTF-8 safe hash saving
+            try:
+                safe_filename = pdf_path.name.encode('utf-8', errors='ignore').decode('utf-8')
+                new_log = ProcessedFileLog(
+                    file_hash=file_hash,
+                    content_hash=file_hash,
+                    source_filename=safe_filename,
+                )
+                self.db_session.add(new_log)
+                self.db_session.commit()
+                self.processed_file_hashes.add(file_hash)
+                logger.info(f"💾 Hash for {pdf_path.name} saved to DB.")
+            except Exception as e:
+                logger.warning(f"Hash save failed: {e}")
+                self.processed_file_hashes.add(file_hash)  # In-memory only
 
             # === TASK 4: FINAL DATA INGESTION ===
-            # Ingest to PostgreSQL
+            # Ingest to PostgreSQL with UTF-8 safe handling
             product_id = self._ingest_to_postgresql(result)
             
             # Ingest to ChromaDB for vector search
-            self._ingest_to_chromadb(result, product_id)
+            if product_id:
+                self._ingest_to_chromadb(result, product_id)
             
             # Update stats
             self.processing_stats["successful"] += 1
@@ -1494,23 +1517,37 @@ class RealPDFProcessor:
         except Exception as e:
             self.processing_stats['failed'] += 1
             logger.error(f"❌ Failed: {pdf_path.name} - {e}")
+            # CRITICAL: Rollback session to prevent transaction errors
+            if self.db_session.is_active:
+                self.db_session.rollback()
             raise
         
         finally:
             self.processing_stats["total_processed"] += 1
     
     def process_directory(
-        self, pdf_directory: Path, output_file: Optional[Path] = None
+        self, pdf_directory: Path, output_file: Optional[Path] = None, 
+        test_pdfs: Optional[List[str]] = None
     ) -> List[PDFExtractionResult]:
-        """Process all PDFs in a directory."""
+        """Process PDFs in a directory. If test_pdfs provided, only process those."""
         
         if not pdf_directory.exists():
             raise FileNotFoundError(f"PDF directory not found: {pdf_directory}")
         
-        pdf_files = list(pdf_directory.glob("*.pdf"))
-        logger.info(
-            f"📁 Found {len(pdf_files)} PDF files in {pdf_directory}."
-        )
+        if test_pdfs:
+            # Process only specific test PDFs
+            pdf_files = []
+            for test_pdf in test_pdfs:
+                pdf_path = pdf_directory / test_pdf
+                if pdf_path.exists():
+                    pdf_files.append(pdf_path)
+                else:
+                    logger.warning(f"Test PDF not found: {test_pdf}")
+            logger.info(f"🧪 Testing with {len(pdf_files)} selected PDFs.")
+        else:
+            # Process all PDFs
+            pdf_files = list(pdf_directory.glob("*.pdf"))
+            logger.info(f"📁 Found {len(pdf_files)} PDF files in {pdf_directory}.")
         
         results = []
         for i, pdf_path in enumerate(pdf_files, 1):
@@ -1524,6 +1561,9 @@ class RealPDFProcessor:
                 
             except Exception as e:
                 logger.error(f"Skipping {pdf_path.name} due to error: {e}")
+                # Ensure session is clean for next iteration
+                if self.db_session.is_active:
+                    self.db_session.rollback()
                 continue
         
         if output_file and results:
@@ -1618,12 +1658,19 @@ def main():
         # Initialize processor with the session
         processor = RealPDFProcessor(db_session)
         
-        # Set paths
+        # Set paths - TESTING: Only process 3 representative PDFs
         pdf_directory = Path("src/downloads/rockwool_datasheets")
         output_file = Path("real_pdf_extraction_results.json")
         
-        # Process PDFs
-        results = processor.process_directory(pdf_directory, output_file)
+        # TEST: Only process these 3 representative PDFs
+        test_pdfs = [
+            "Airrock HD FB1 termékadatlap.pdf",     # Simple datasheet
+            "Frontrock S termékadatlap.pdf",        # Complex datasheet  
+            "Klimarock termékadatlap.pdf"           # Different structure
+        ]
+        
+        # Process only selected test PDFs
+        results = processor.process_directory(pdf_directory, output_file, test_pdfs)
         
         print(f"\n🎉 SUCCESS: {len(results)} new PDFs processed.")
         

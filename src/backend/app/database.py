@@ -20,7 +20,7 @@ def get_database_url():
         if result == 0:
             # PostgreSQL is accessible via localhost:5432
                                       # Use the actual PostgreSQL password from Docker environment
-             return "postgresql://lambda_user:Cz31n1ng3r@localhost:5432/lambda_db?client_encoding=utf8&application_name=lambda_scraper"
+             return "postgresql://lambda_user:Cz31n1ng3r@localhost:5432/lambda_db?client_encoding=utf8&application_name=lambda_scraper&options=-c%20client_encoding%3DUTF8"
     except:
         pass
     
