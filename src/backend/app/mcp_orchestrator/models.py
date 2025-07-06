@@ -78,7 +78,7 @@ class GoldenRecord:
     
     # Link to the original task
     task: Optional[ExtractionTask] = None
-
+    
     # Core data
     extracted_data: Dict[str, Any] = field(default_factory=dict)
     
@@ -87,7 +87,7 @@ class GoldenRecord:
         default_factory=dict
     )
     overall_confidence: float = 0.0
-
+    
     # Metadata
     id: str = field(default_factory=lambda: str(uuid.uuid4()))
     created_at: datetime = field(default_factory=datetime.utcnow)

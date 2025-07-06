@@ -5,7 +5,7 @@ Real AI-powered PDF extraction and database integration
 
 NO SIMULATIONS - Uses:
 - PyPDF2/pdfplumber for real PDF text extraction
-- Claude 3.5 Sonnet for AI content analysis 
+- Claude 3.5 Haiku for AI content analysis 
 - Database integration with extracted technical specs
 """
 
@@ -218,7 +218,7 @@ class ProductionPDFManager:
         print(f"   📈 Success rate: {success_rate:.1f}%")
         
         print(f"\\n✅ REAL AI-POWERED PDF PROCESSING:")
-        print("   🧠 Claude 3.5 Sonnet AI analysis")
+        print("   🧠 Claude 3.5 Haiku AI analysis")
         print("   📋 Structured technical specifications")
         print("   💰 Price information extraction")
         print("   💾 Database integration complete")

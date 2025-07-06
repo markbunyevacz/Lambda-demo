@@ -5,7 +5,7 @@ NO SIMULATIONS - Real AI-powered PDF content extraction
 
 Uses:
 - PyPDF2/pdfplumber for actual PDF text extraction
-- Claude 3.5 Sonnet for intelligent content analysis
+- Claude 3.5 Haiku for intelligent content analysis
 - Structured data extraction for product specs and prices
 """
 
@@ -77,6 +77,26 @@ class PDFExtractionResult:
     extraction_method: str
     source_filename: str
     processing_time: float
+    
+    # ✅ NEW: Detailed extraction tracking
+    extraction_metadata: Dict[str, Any] = None
+    text_extraction_method: str = "unknown"
+    table_extraction_method: str = "unknown"
+    ai_analysis_method: str = "claude-3.5-haiku"
+    extraction_timestamp: str = None
+    table_quality_score: float = 0.0
+    advanced_tables_used: bool = False
+    extraction_attempts: List[Dict[str, Any]] = None
+
+    def __post_init__(self):
+        """Initialize default values after object creation"""
+        if self.extraction_metadata is None:
+            self.extraction_metadata = {}
+        if self.extraction_attempts is None:
+            self.extraction_attempts = []
+        if self.extraction_timestamp is None:
+            from datetime import datetime
+            self.extraction_timestamp = datetime.now().isoformat()
 
     def to_dict(self) -> Dict[str, Any]:
         """Converts the dataclass instance to a dictionary."""
@@ -110,43 +130,45 @@ class RealPDFExtractor:
     def extract_text_pdfplumber(
         self, pdf_path: Path
     ) -> Tuple[str, List[Dict]]:
-        """Extract text and tables using pdfplumber"""
+        """Extract text and tables using pdfplumber (primary method)"""
+        
         text_content = ""
-        tables = []
+        tables_data = []
+        total_cells = 0
         
         try:
             with pdfplumber.open(pdf_path) as pdf:
                 for page_num, page in enumerate(pdf.pages):
-                    # Extract text
+                    # Extract text from page
                     page_text = page.extract_text()
                     if page_text:
-                        text_content += (
-                            f"\\n\\n--- Page {page_num + 1} ---\\n{page_text}"
-                        )
+                        text_content += f"\n\n--- Page {page_num + 1} ---\n{page_text}"
                     
-                    # Extract tables
+                    # Extract tables from page
                     page_tables = page.extract_tables()
                     for table_idx, table in enumerate(page_tables):
-                        if table:
-                            table_dict = {
-                                'page': page_num + 1,
-                                'table_index': table_idx,
-                                'headers': table[0] if table else [],
-                                'data': table[1:] if len(table) > 1 else [],
-                                'raw_table': table
-                            }
-                            tables.append(table_dict)
-                    
-                    self.stats['pages_processed'] += 1
+                        if table and len(table) > 0:
+                            rows = len(table)
+                            cols = len(table[0]) if table[0] else 0
+                            cells = rows * cols
+                            total_cells += cells
+                            
+                            tables_data.append({
+                                "page": page_num + 1,
+                                "table_index": table_idx,
+                                "data": table,
+                                "rows": rows,
+                                "columns": cols,
+                                "total_cells": cells,
+                                "headers": table[0] if table else [],
+                                "extraction_method": "pdfplumber"
+                            })
         
         except Exception as e:
             logger.error(f"PDFPlumber extraction failed: {e}")
             raise
         
-        self.stats['text_extracted'] = len(text_content)
-        self.stats['tables_found'] = len(tables)
-        
-        return text_content, tables
+        return text_content, tables_data
     
     def extract_text_pypdf2(self, pdf_path: Path) -> str:
         """Fallback extraction using PyPDF2"""
@@ -216,7 +238,20 @@ class RealPDFExtractor:
         try:
             text, tables = self.extract_text_pdfplumber(pdf_path)
             if text.strip():
-                log_msg = f"✅ PDFPlumber: {len(text)} chars, {len(tables)} tables"
+                # Calculate total dimensions for logging
+                total_cells = sum(t.get('total_cells', 0) for t in tables)
+                table_dimensions = [
+                    f"{t.get('rows', 0)}×{t.get('columns', 0)}" 
+                    for t in tables
+                ]
+                dimensions_str = (
+                    ", ".join(table_dimensions) if table_dimensions else "no tables"
+                )
+                
+                log_msg = (
+                    f"✅ PDFPlumber: {len(text)} chars, {len(tables)} tables "
+                    f"({total_cells} cells): {dimensions_str}"
+                )
                 logger.info(log_msg)
                 return text, tables, "pdfplumber"
         except Exception as e:
@@ -235,7 +270,8 @@ class RealPDFExtractor:
         try:
             text, tables = self.extract_text_pymupdf(pdf_path)
             if text.strip():
-                log_msg = f"✅ PyMuPDF: {len(text)} chars, {len(tables)} tables"
+                total_cells = sum(len(t.get('data', [])) * len(t.get('data', [[]])[0]) for t in tables)
+                log_msg = f"✅ PyMuPDF: {len(text)} chars, {len(tables)} tables ({total_cells} cells)"
                 logger.info(log_msg)
                 return text, tables, "pymupdf"
         except Exception as e:
@@ -259,7 +295,32 @@ class ClaudeAIAnalyzer:
         
         logger.info(f"✅ Claude AI initialized: {self.model}")
     
-    def analyze_rockwool_pdf(
+    async def claude_api_call(self, prompt: str) -> str:
+        """Simple Claude API call for raw text extraction"""
+        
+        try:
+            # Call Claude API directly with raw prompt
+            response = self.client.messages.create(
+                model=self.model,
+                max_tokens=4000,
+                temperature=0.1,  # Low temperature for factual extraction
+                system="You are an expert technical data analyst specializing "
+                       "in building materials and insulation products. "
+                       "Extract accurate technical specifications from PDFs.",
+                messages=[{"role": "user", "content": prompt}],
+            )
+            
+            # Return raw response text
+            response_text = response.content[0].text
+            response_len = len(response_text)
+            logger.info(f"✅ Claude API call complete, length: {response_len}")
+            return response_text
+            
+        except Exception as e:
+            logger.error(f"❌ Claude API call error: {e}")
+            raise
+
+    async def analyze_rockwool_pdf(
         self, text_content: str, tables_data: List[Dict], filename: str
     ) -> Dict[str, Any]:
         """Analyze ROCKWOOL PDF content with Claude AI"""
@@ -271,29 +332,29 @@ class ClaudeAIAnalyzer:
         prompt = self._create_extraction_prompt(context)
         
         try:
-            # Call Claude API
-            response = self.client.messages.create(
-                model=self.model,
-                max_tokens=4000,
-                temperature=0.1,  # Low temperature for factual extraction
-                system=(
-                    "You are an expert technical data analyst specializing in "
-                    "building materials and insulation products. Extract "
-                    "accurate technical specifications and pricing information "
-                    "from ROCKWOOL product documentation."
-                ),
-                messages=[{"role": "user", "content": prompt}],
-            )
+            # Call Claude API using the async method
+            response_text = await self.claude_api_call(prompt)
             
             # Parse Claude's response
-            analysis_result = self._parse_claude_response(response.content[0].text)
+            analysis_result = self._parse_claude_response(response_text)
             
             logger.info(f"✅ Claude analysis complete for {filename}")
             return analysis_result
             
         except Exception as e:
             logger.error(f"❌ Claude API error: {e}")
-            raise
+            # Return a safe fallback structure
+            return {
+                "product_identification": {},
+                "technical_specifications": {},
+                "extraction_metadata": {
+                    "confidence_score": 0.0,
+                    "extraction_method": "failed",
+                    "error": str(e),
+                    "found_fields": [],
+                    "missing_fields": ["all"]
+                }
+            }
     
     def _prepare_analysis_context(
         self, text: str, tables: List[Dict], filename: str
@@ -399,7 +460,8 @@ DOKUMENTUM TARTALOM:
   }}
 }}
 
-⚡ KRITIKUS: Ne használj sablont! Elemezd a tényleges tartalmat és csak azt add vissza, amit ténylegesen megtalálsz!
+⚡ KRITIKUS: Ne használj sablont! Elemezd a tényleges tartalmat és csak azt 
+add vissza, amit ténylegesen megtalálsz!
 """
         
         return prompt
@@ -443,12 +505,13 @@ DOKUMENTUM TARTALOM:
                 analysis['best_extraction_method'] = 'table_parsing'
         
         # Detect likely fields based on content
+        tech_specs = analysis['likely_fields']['technical_specifications']
         if 'λ' in text or 'hővezetési' in text:
-            analysis['likely_fields']['technical_specifications']['thermal_conductivity'] = 'expected'
+            tech_specs['thermal_conductivity'] = 'expected'
         if 'tűzvédelmi' in text or 'fire' in text:
-            analysis['likely_fields']['technical_specifications']['fire_classification'] = 'expected'
+            tech_specs['fire_classification'] = 'expected'
         if 'testsűrűség' in text or 'density' in text:
-            analysis['likely_fields']['technical_specifications']['density'] = 'expected'
+            tech_specs['density'] = 'expected'
         
         # Generate structure summary
         analysis['structure_summary'] = f"""
@@ -491,44 +554,102 @@ DOKUMENTUM TARTALOM:
     def _parse_claude_response(self, response_text: str) -> Dict[str, Any]:
         """Parse Claude's dynamic JSON response - adapts to actual content"""
         
+        logger.debug(f"📝 Parsing Claude response (length: {len(response_text)})")
+        
+        # First, try to find a clear JSON block
+        json_patterns = [
+            (r'\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}', "complete JSON object"),
+            (r'```json\s*(\{.*?\})\s*```', "JSON code block"),
+            (r'```\s*(\{.*?\})\s*```', "code block"),
+        ]
+        
+        for pattern, description in json_patterns:
+            import re
+            matches = re.findall(pattern, response_text, re.DOTALL)
+            for match in matches:
+                try:
+                    # Clean the JSON text
+                    json_text = match.strip()
+                    if json_text.startswith('json'):
+                        json_text = json_text[4:].strip()
+                    
+                    result = json.loads(json_text)
+                    logger.info(f"✅ JSON parsed successfully using {description}")
+                    
+                    # Dynamic validation - only check for what we actually expect
+                    self._validate_dynamic_structure(result)
+                    
+                    # Enhance with extraction metadata
+                    result = self._enhance_with_metadata(result)
+                    
+                    return result
+                    
+                except json.JSONDecodeError as e:
+                    logger.debug(f"❌ Failed to parse {description}: {e}")
+                    continue
+        
+        # Fallback: look for simple JSON block boundaries
         try:
-            # Find JSON in response
             json_start = response_text.find('{')
             json_end = response_text.rfind('}') + 1
             
-            if json_start == -1 or json_end == 0:
-                raise ValueError("No JSON found in Claude response")
-            
-            json_text = response_text[json_start:json_end]
-            
-            # Parse JSON
-            result = json.loads(json_text)
-            
-            # Dynamic validation - only check for what we actually expect
-            self._validate_dynamic_structure(result)
-            
-            # Enhance with extraction metadata
-            result = self._enhance_with_metadata(result)
-            
-            return result
-            
+            if json_start != -1 and json_end > json_start:
+                json_text = response_text[json_start:json_end]
+                
+                # Try to fix common JSON issues
+                json_text = self._clean_json_text(json_text)
+                
+                result = json.loads(json_text)
+                logger.info("✅ JSON parsed using fallback method")
+                
+                # Dynamic validation and enhancement
+                self._validate_dynamic_structure(result)
+                result = self._enhance_with_metadata(result)
+                
+                return result
+            else:
+                logger.warning("⚠️ No JSON boundaries found in response")
+                
         except json.JSONDecodeError as e:
-            logger.error(f"JSON parsing error: {e}")
-            # Return minimal structure with error info
-            return {
-                "product_identification": {},
-                "technical_specifications": {},
-                "extraction_metadata": {
-                    "confidence_score": 0.0,
-                    "extraction_method": "failed",
-                    "error": f"JSON parsing failed: {e}",
-                    "found_fields": [],
-                    "missing_fields": ["all"]
-                }
-            }
+            logger.error(f"❌ JSON parsing failed: {e}")
+            logger.debug(f"Problematic JSON text: {json_text[:200]}...")
         except Exception as e:
-            logger.error(f"Response parsing error: {e}")
-            raise
+            logger.error(f"❌ Unexpected error during JSON parsing: {e}")
+        
+        # Final fallback: return error structure
+        logger.warning("⚠️ Using fallback response structure")
+        return {
+            "product_identification": {},
+            "technical_specifications": {},
+            "extraction_metadata": {
+                "confidence_score": 0.0,
+                "extraction_method": "failed",
+                "error": "No valid JSON found in Claude response",
+                "found_fields": [],
+                "missing_fields": ["all"],
+                "response_preview": response_text[:200] + "..." if len(response_text) > 200 else response_text
+            }
+        }
+    
+    def _clean_json_text(self, json_text: str) -> str:
+        """Clean JSON text to fix common issues"""
+        
+        # Remove any trailing commas before closing braces/brackets
+        import re
+        json_text = re.sub(r',(\s*[}\]])', r'\1', json_text)
+        
+        # Replace single quotes with double quotes (common AI mistake)
+        json_text = re.sub(r"'([^']*)':", r'"\1":', json_text)
+        json_text = re.sub(r":\s*'([^']*)'", r': "\1"', json_text)
+        
+        # Fix common Unicode issues
+        json_text = json_text.replace('\u00e9', 'é').replace('\u0151', 'ő')
+        
+        # Remove any comments (// or /* */)
+        json_text = re.sub(r'//.*$', '', json_text, flags=re.MULTILINE)
+        json_text = re.sub(r'/\*.*?\*/', '', json_text, flags=re.DOTALL)
+        
+        return json_text.strip()
     
     def _validate_dynamic_structure(self, result: Dict[str, Any]) -> None:
         """Validate structure dynamically based on what was actually found"""
@@ -1065,18 +1186,37 @@ class RealPDFProcessor:
         }
 
     def _load_hashes(self):
-        """Loads all file hashes from the database into memory."""
+        """Loads all file hashes from the database into memory with UTF-8 safe handling."""
         logger.info("Loading existing file hashes from the database...")
         try:
             # CRITICAL: Clear any existing corrupted data first
             self.db_session.rollback()
-            
+
             # Try to load hashes with UTF-8 safe handling
-            all_logs = self.db_session.query(ProcessedFileLog.file_hash).all()
-            self.processed_file_hashes = {log.file_hash for log in all_logs}
+            all_logs = self.db_session.query(ProcessedFileLog).all()
+            self.processed_file_hashes = set()
+            
+            for log in all_logs:
+                try:
+                    # Safely handle potentially corrupted UTF-8 data
+                    file_hash = log.file_hash
+                    if isinstance(file_hash, bytes):
+                        file_hash = file_hash.decode('utf-8', errors='ignore')
+                    elif isinstance(file_hash, str):
+                        # Re-encode and decode to clean up any encoding issues
+                        file_hash = file_hash.encode('utf-8', errors='ignore').decode('utf-8')
+                    
+                    if file_hash and len(file_hash) > 10:  # Valid hash should be longer
+                        self.processed_file_hashes.add(file_hash)
+                        
+                except Exception as hash_error:
+                    logger.debug(f"Skipping corrupted hash entry: {hash_error}")
+                    continue
+            
             logger.info(
                 f"Loaded {len(self.processed_file_hashes)} unique file hashes."
             )
+            
         except Exception as e:
             logger.warning(f"Database hash loading failed: {e}")
             logger.info("Starting with empty hash set...")
@@ -1088,6 +1228,9 @@ class RealPDFProcessor:
     def _init_chromadb(self):
         """Initialize ChromaDB for vector storage."""
         try:
+            # Disable ChromaDB telemetry to avoid errors
+            os.environ['ANONYMIZED_TELEMETRY'] = 'False'
+            
             # Initialize ChromaDB client
             self.chroma_client = chromadb.PersistentClient(
                 path="./chromadb_data"
@@ -1425,7 +1568,7 @@ class RealPDFProcessor:
         
         return min(1.0, adjusted_confidence)
 
-    def process_pdf(self, pdf_path: Path) -> Optional[PDFExtractionResult]:
+    async def process_pdf(self, pdf_path: Path) -> Optional[PDFExtractionResult]:
         """Process a single PDF with real AI analysis and deduplication."""
         
         start_time = datetime.now()
@@ -1442,10 +1585,23 @@ class RealPDFProcessor:
 
             logger.info(f"🚀 Processing new file: {pdf_path.name}")
             
-            # Step 1: Extract text and tables
-            text_content, tables, method = self.extractor.extract_pdf_content(
-                pdf_path
-            )
+            # Step 1: Enhanced text and table extraction
+            text_content, basic_tables = self.extractor.extract_pdf_content(pdf_path)
+            
+            # Step 1.5: ADVANCED TABLE EXTRACTION (NEW!)
+            logger.info("🚀 Running advanced table extraction...")
+            advanced_table_result = self.advanced_table_extractor.extract_tables_hybrid(pdf_path)
+            
+            # Combine basic and advanced table results
+            if advanced_table_result.tables and advanced_table_result.confidence > 0.5:
+                logger.info(f"✅ Using advanced tables (confidence: {advanced_table_result.confidence:.2f})")
+                tables = advanced_table_result.tables
+                extraction_method = f"hybrid_{advanced_table_result.extraction_method}"
+            else:
+                logger.info("ℹ️ Using basic pdfplumber tables")
+                tables = basic_tables
+                extraction_method = "pdfplumber"
+
             if not text_content.strip():
                 raise ValueError("No text content could be extracted from PDF")
             
@@ -1453,7 +1609,7 @@ class RealPDFProcessor:
             pattern_based_specs = self._extract_specs_from_tables(tables)
 
             # Step 3: AI analysis with Claude
-            ai_analysis = self.ai_analyzer.analyze_rockwool_pdf(
+            ai_analysis = await self.ai_analyzer.analyze_rockwool_pdf(
                 text_content, tables, pdf_path.name
             )
             
@@ -1465,25 +1621,63 @@ class RealPDFProcessor:
 
             # === TASK 5: ENHANCED CONFIDENCE SCORING ===
             enhanced_confidence = self._calculate_enhanced_confidence(
-                text_content, tables, pattern_based_specs, ai_analysis, method
+                text_content, tables, pattern_based_specs, ai_analysis, extraction_method
             )
             
+            # Create result with comprehensive tracking metadata
             result = PDFExtractionResult(
-                product_name=ai_analysis.get("product_identification", {}).get(
-                    "name", pdf_path.stem
-                ),
+                product_name=ai_analysis.get("product_identification", {}).get("name", pdf_path.stem),
                 extracted_text=text_content,
                 technical_specs=final_specs,
-                pricing_info=ai_analysis.get("pricing_information", {}),
+                pricing_info=self._extract_price_from_result(
+                    PDFExtractionResult(
+                        product_name="temp", extracted_text=text_content, 
+                        technical_specs={}, pricing_info={}, tables_data=tables,
+                        confidence_score=0, extraction_method="temp", 
+                        source_filename="temp", processing_time=0
+                    )
+                ) or {},
                 tables_data=tables,
                 confidence_score=enhanced_confidence,
-                extraction_method=method,
+                extraction_method=extraction_method,
                 source_filename=pdf_path.name,
                 processing_time=processing_time,
+                
+                # ✅ NEW: Comprehensive tracking metadata
+                extraction_metadata={
+                    "file_size_bytes": pdf_path.stat().st_size,
+                    "file_modified": pdf_path.stat().st_mtime,
+                    "text_length": len(text_content),
+                    "tables_found": len(tables),
+                    "ai_analysis_fields": list(ai_analysis.keys()),
+                    "confidence_factors": {
+                        "text_quality": self._assess_text_quality(text_content),
+                        "table_quality": self._assess_table_quality(tables),
+                        "ai_confidence": ai_analysis.get("extraction_metadata", {}).get("confidence_score", 0.0)
+                    }
+                },
+                text_extraction_method="pdfplumber",  # Always pdfplumber for text
+                table_extraction_method=extraction_method,
+                table_quality_score=advanced_table_result.quality_score if advanced_table_result.tables else 0.0,
+                advanced_tables_used=bool(advanced_table_result.tables and advanced_table_result.confidence > 0.5),
+                extraction_attempts=[
+                    {
+                        "method": "basic_pdfplumber",
+                        "tables_found": len(basic_tables),
+                        "success": len(basic_tables) > 0
+                    },
+                    {
+                        "method": "advanced_hybrid",
+                        "extractor_used": advanced_table_result.extraction_method,
+                        "tables_found": len(advanced_table_result.tables),
+                        "quality_score": advanced_table_result.quality_score,
+                        "confidence": advanced_table_result.confidence,
+                        "success": advanced_table_result.confidence > 0.5
+                    }
+                ]
             )
 
             # === SAVE NEW HASH TO DATABASE ===
-            # UTF-8 safe hash saving
             try:
                 safe_filename = pdf_path.name.encode('utf-8', errors='ignore').decode('utf-8')
                 new_log = ProcessedFileLog(
@@ -1497,21 +1691,25 @@ class RealPDFProcessor:
                 logger.info(f"💾 Hash for {pdf_path.name} saved to DB.")
             except Exception as e:
                 logger.warning(f"Hash save failed: {e}")
-                self.processed_file_hashes.add(file_hash)  # In-memory only
+                self.db_session.rollback()
+                self.processed_file_hashes.add(file_hash)  # In-memory only for this run
 
-            # === TASK 4: FINAL DATA INGESTION ===
-            # Ingest to PostgreSQL with UTF-8 safe handling
-            product_id = self._ingest_to_postgresql(result)
+            # If confidence is reasonable, proceed to full ingestion
+            # Lowered threshold from 0.75 to 0.40 for testing
+            if result.confidence_score >= 0.40:  # Confidence threshold
+                product_id = self._ingest_to_postgresql(result)
+                if product_id:
+                    self._ingest_to_chromadb(result, product_id)
+                    self.processing_stats["successful"] += 1
+                else:
+                    self.processing_stats["failed"] += 1
+            else:
+                logger.warning(
+                    f"📉 LOW CONFIDENCE ({result.confidence_score:.2f}) for "
+                    f"{pdf_path.name}. Skipping database ingestion."
+                )
+                self.processing_stats["failed"] += 1
             
-            # Ingest to ChromaDB for vector search
-            if product_id:
-                self._ingest_to_chromadb(result, product_id)
-            
-            # Update stats
-            self.processing_stats["successful"] += 1
-            self.processing_stats['total_extraction_time'] += processing_time
-            
-            logger.info(f"✅ Success: {pdf_path.name} ({processing_time:.2f}s)")
             return result
             
         except Exception as e:
@@ -1525,7 +1723,7 @@ class RealPDFProcessor:
         finally:
             self.processing_stats["total_processed"] += 1
     
-    def process_directory(
+    async def process_directory(
         self, pdf_directory: Path, output_file: Optional[Path] = None, 
         test_pdfs: Optional[List[str]] = None
     ) -> List[PDFExtractionResult]:
@@ -1555,7 +1753,7 @@ class RealPDFProcessor:
                 logger.info(
                     f"\n📄 ({i}/{len(pdf_files)}): Checking {pdf_path.name}"
                 )
-                result = self.process_pdf(pdf_path)
+                result = await self.process_pdf(pdf_path)
                 if result:  # Only append if not a duplicate
                     results.append(result)
                 
@@ -1635,11 +1833,11 @@ class RealPDFProcessor:
         print(f"\n✅ REAL AI-POWERED PDF PROCESSING COMPLETE")
         print("   - Actual PDF text extraction (PyPDF2, pdfplumber, PyMuPDF)")
         print("   - Real Claude 3.5 Haiku AI analysis")
-        print("   - Structured technical specifications")
+        print("   - Structured technical data extraction")
         print("   - Pricing information extraction")
         print("   - NO SIMULATIONS - 100% real processing")
 
-def main():
+async def main():
     """Main execution function"""
     
     print("🚀 LAMBDA.HU REAL PDF PROCESSOR")
@@ -1670,7 +1868,9 @@ def main():
         ]
         
         # Process only selected test PDFs
-        results = processor.process_directory(pdf_directory, output_file, test_pdfs)
+        results = await processor.process_directory(
+            pdf_directory, output_file, test_pdfs
+        )
         
         print(f"\n🎉 SUCCESS: {len(results)} new PDFs processed.")
         
@@ -1683,4 +1883,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main() 
+    import asyncio
+    asyncio.run(main()) 

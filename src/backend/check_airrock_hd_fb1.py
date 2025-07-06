@@ -15,7 +15,7 @@ def check_airrock_hd_fb1():
         product = session.query(Product).filter(Product.name.like('%Airrock HD FB1%')).first()
         
         if product:
-            print('📋 CLAUDE 4 SONNET EREDMÉNYE:')
+            print('📋 CLAUDE 3.5 HAIKU EREDMÉNYE:')
             print(f'   🏷️  Termék név: {product.name}')
             print(f'   📝 Leírás: {product.description}')
             print('   🔧 Műszaki adatok:')

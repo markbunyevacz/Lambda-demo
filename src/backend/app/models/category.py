@@ -3,7 +3,7 @@ from __future__ import annotations
 from sqlalchemy import Column, Integer, String, Text, ForeignKey, DateTime, func
 from sqlalchemy.orm import relationship
 
-from database import Base
+from app.database import Base
 
 
 class Category(Base):

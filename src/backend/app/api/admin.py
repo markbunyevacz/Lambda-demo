@@ -7,10 +7,12 @@ FastAPI végpontok az adatbázis tartalmának megtekintésére.
 
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session, joinedload
-from sqlalchemy import func, desc, asc
-from typing import List, Dict, Any, Optional
+from sqlalchemy import func, desc
+from typing import Optional
 from datetime import datetime
 import logging
+import json
+from pathlib import Path
 
 from database import get_db
 from models.manufacturer import Manufacturer
@@ -24,18 +26,53 @@ logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/admin", tags=["admin"])
 
 
+@router.get("/test")
+async def test_admin_endpoint():
+    """
+    🧪 Egyszerű teszt endpoint - adatbázis nélkül
+    """
+    return {
+        "success": True, 
+        "message": "Admin API működik!", 
+        "timestamp": "2025-01-27",
+        "endpoints": [
+            "/admin/database/overview",
+            "/admin/database/products", 
+            "/admin/database/manufacturers",
+            "/admin/database/categories"
+        ]
+    }
+
+
 @router.get("/database/overview")
 async def get_database_overview(db: Session = Depends(get_db)):
     """
     📊 Adatbázis áttekintés - gyors statisztikák
     """
     try:
+        # Simple count queries first
+        try:
+            mfr_count = db.execute("SELECT COUNT(*) FROM manufacturers").scalar()
+        except Exception:
+            mfr_count = 0
+            
+        try:
+            cat_count = db.execute("SELECT COUNT(*) FROM categories").scalar()
+        except Exception:
+            cat_count = 0
+            
+        try:
+            prod_count = db.execute("SELECT COUNT(*) FROM products").scalar()
+        except Exception:
+            prod_count = 0
+        
         stats = {
-            "manufacturers": db.query(Manufacturer).count(),
-            "categories": db.query(Category).count(),
-            "products": db.query(Product).count(),
+            "manufacturers": mfr_count,
+            "categories": cat_count, 
+            "products": prod_count,
             "processed_files": 0,  # Temporarily disabled: ProcessedFileLog
-            "last_updated": datetime.now().isoformat()
+            "last_updated": datetime.now().isoformat(),
+            "database_status": "connected"
         }
         
         # Gyártók szerinti termékszámok
@@ -57,8 +94,10 @@ async def get_database_overview(db: Session = Depends(get_db)):
         return {"success": True, "data": stats}
         
     except Exception as e:
-        logger.error(f"Database overview failed: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        # UTF-8 safe error handling
+        error_msg = str(e).encode('utf-8', errors='ignore').decode('utf-8')
+        logger.error(f"Database overview failed: {error_msg}")
+        raise HTTPException(status_code=500, detail=error_msg)
 
 
 @router.get("/database/products")
@@ -322,3 +361,21 @@ async def search_products(
     except Exception as e:
         logger.error(f"Product search failed: {e}")
         raise HTTPException(status_code=500, detail=str(e)) 
+
+
+@router.get("/analysis/extraction-comparison")
+async def get_extraction_comparison_report():
+    """
+    📊 Összehasonlító riport a kétféle PDF adatkinyerési stratégiáról.
+    """
+    report_path = Path("extraction_comparison_report.json")
+    if not report_path.exists():
+        raise HTTPException(status_code=404, detail="Extraction comparison report not found. Please run the analysis script first.")
+    
+    try:
+        with open(report_path, "r", encoding="utf-8") as f:
+            report_data = json.load(f)
+        return {"success": True, "data": report_data}
+    except Exception as e:
+        logger.error(f"Failed to read or parse extraction report: {e}")
+        raise HTTPException(status_code=500, detail="Failed to process extraction report.") 

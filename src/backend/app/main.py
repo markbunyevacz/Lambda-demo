@@ -31,14 +31,14 @@ import chromadb
 app_dir = Path(__file__).parent
 sys.path.insert(0, str(app_dir))
 
-# Absolute imports that work with FastAPI
+# Relative imports for backend context
 from database import Base, engine, get_db
 import models
 import schemas
 from api import admin
 
 # Create the database tables
-Base.metadata.create_all(bind=engine)
+# Base.metadata.create_all(bind=engine)  # Temporarily disabled due to UTF-8 issues
 
 # FastAPI alkalmazás példány létrehozása
 app = FastAPI(

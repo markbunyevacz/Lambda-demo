@@ -130,7 +130,7 @@ def show_pdf_results():
             print(f"📊 Total table rows exported: {len(csv_data)}")
         
         print(f"\n🎉 SAMPLE PROCESSING COMPLETE!")
-        print("✅ Real AI-powered PDF extraction with Claude 3.5 Sonnet")
+        print("✅ Real AI-powered PDF extraction with Claude 3.5 Haiku")
         print("✅ Actual table data and technical specifications")
         print("✅ No simulations - 100% real processing")
         

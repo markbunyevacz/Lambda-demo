@@ -42,7 +42,7 @@ def extract_all_pdfs():
     print("🔍 COMPLETE ROCKWOOL PDF EXTRACTION")
     print("=" * 80)
     print("📄 Processing ALL 46 PDFs with complete data extraction")
-    print("✅ Claude 3.5 Sonnet AI + PyPDF2/pdfplumber")
+    print("✅ Claude 3.5 Haiku AI + PyPDF2/pdfplumber")
     print("✅ Complete text, tables, and parameters")
     print()
     

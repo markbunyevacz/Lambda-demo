@@ -79,7 +79,7 @@ def generate_verification_report():
     print("   ✅ PostgreSQL: Structured product data")
     print("   ✅ ChromaDB: Vector embeddings for search")
     print("   ✅ Deduplication: File hash tracking")
-    print("   ✅ AI Analysis: Claude 3.5 Sonnet integration")
+    print("   ✅ AI Analysis: Claude 3.5 Haiku integration")
     print()
     
     # Production Readiness Assessment

@@ -69,19 +69,20 @@ services:
     networks:
       - lambda_network
       
-  celery_flower:
-    image: mher/flower
-    command: ["flower"]
-    ports:
-      - "5555:5555"
-    environment:
-      - CELERY_BROKER_URL=redis://cache:6379/0
-    depends_on:
-      - cache
-      - celery_worker
-    restart: unless-stopped
-    networks:
-      - lambda_network
+  # celery_flower:
+  #   image: mher/flower
+  #   container_name: lambda-celery_flower-1
+  #   ports:
+  #     - "5555:5555"
+  #   environment:
+  #     - CELERY_BROKER_URL=redis://cache:6379/0
+  #     - FLOWER_PORT=5555
+  #   depends_on:
+  #     - backend
+  #     - cache
+  #   restart: unless-stopped
+  #   networks:
+  #     - lambda_network
 
   frontend:
     build:
