@@ -38,7 +38,7 @@ elif "postgresql" in SQLALCHEMY_DATABASE_URL:
     # PostgreSQL specific UTF-8 settings for Hungarian content
     connect_args = {
         "client_encoding": "utf8",
-        "options": "-c timezone=Europe/Budapest"
+        "options": "-c timezone=Europe/Budapest -c client_encoding=UTF8"
     }
 
 engine = create_engine(
@@ -46,7 +46,9 @@ engine = create_engine(
     connect_args=connect_args,
     # Additional engine options for UTF-8 support
     pool_pre_ping=True,
-    echo=False  # Set to True for debugging SQL queries
+    echo=False,  # Set to True for debugging SQL queries
+    # Ensure UTF-8 encoding
+    encoding='utf-8'
 )
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
