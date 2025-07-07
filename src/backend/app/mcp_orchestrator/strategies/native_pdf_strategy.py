@@ -3,7 +3,7 @@ from pathlib import Path
 from .base_strategy import BaseExtractionStrategy
 from ..models import ExtractionResult, StrategyType, ExtractionTask
 # Correctly import from the absolute path within the /app directory
-from real_pdf_processor import ClaudeAIAnalyzer
+from backend.real_pdf_processor import ClaudeAIAnalyzer
 
 
 class NativePDFStrategy(BaseExtractionStrategy):

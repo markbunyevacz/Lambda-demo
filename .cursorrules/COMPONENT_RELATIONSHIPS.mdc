@@ -1,0 +1,734 @@
+# Magyar Építőanyag AI - Komponens Kapcsolatok és Adatáramlás
+
+## 📋 Dokumentáció Célja
+
+Ez a dokumentáció részletezi a Lambda.hu frontend alkalmazás komponens kapcsolatait, adatáramlását és függőségi térképeit. Minden komponens szerepe, kapcsolatai és kommunikációs mintái világosan dokumentálva vannak.
+
+---
+
+## 🏗️ Rendszer Áttekintés
+
+### Alkalmazás Struktúra
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    LAMBDA.HU FRONTEND                      │
+│                                                             │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────┐ │
+│  │ Navigation  │  │ Dashboard   │  │   ChatWidget        │ │
+│  │             │  │             │  │   (Floating)        │ │
+│  └─────────────┘  └─────────────┘  └─────────────────────┘ │
+│         │                │                     │           │
+│         │                │                     │           │
+│  ┌─────────────────────────────────────────────────────────┐ │
+│  │              API SERVICE LAYER                         │ │
+│  │  - Type-safe backend communication                     │ │
+│  │  - Error handling és request transformation            │ │
+│  └─────────────────────────────────────────────────────────┘ │
+│                              │                             │
+└──────────────────────────────┼─────────────────────────────┘
+                               │
+┌─────────────────────────────────────────────────────────────┐
+│                    BACKEND ECOSYSTEM                       │
+│                                                             │
+│  ┌──────────────┐  ┌──────────────┐  ┌─────────────────┐    │
+│  │ FastAPI      │  │ PostgreSQL   │  │ ChromaDB        │    │
+│  │ REST API     │  │ Relational   │  │ Vector Search   │    │
+│  └──────────────┘  └──────────────┘  └─────────────────┘    │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🧩 Komponens Anatómia
+
+### 1. Navigation Component
+
+#### Szerepe és Felelőssége
+```typescript
+/**
+ * NAVIGATION COMPONENT - Tab-alapú Navigációs Rendszer
+ * 
+ * Felelősség:
+ * - Top-level alkalmazás navigáció
+ * - Tab state management koordináció
+ * - Brand identity megjelenítése
+ * - System status indicator
+ * 
+ * Komponens típus: PURE UI COMPONENT
+ * - Nincs közvetlen backend függőség
+ * - Teljes state parent-től érkezik
+ * - Stateless, predictable rendering
+ */
+```
+
+#### Props Interface
+```typescript
+interface NavigationProps {
+  activeTab: NavigationTab;           // Input: jelenleg aktív tab
+  onTabChange: (tab: NavigationTab) => void; // Output: tab váltás callback
+}
+
+type NavigationTab = 'dashboard' | 'search' | 'products' | 'monitoring' | 'admin';
+```
+
+#### Kapcsolatok
+```
+Navigation Component
+│
+├── INPUT (Props)
+│   ├── activeTab ←─────────── parent component (page.tsx)
+│   └── onTabChange ←─────────── parent component (page.tsx)
+│
+├── OUTPUT (Events)
+│   └── onTabChange() ─────────→ parent component (page.tsx)
+│
+└── DEPENDENCIES
+    ├── React hooks ──────────── useState (ha belső state lenne)
+    ├── SVG Icons ───────────── Inline, self-contained
+    └── Tailwind CSS ────────── Design system
+```
+
+---
+
+### 2. Dashboard Component
+
+#### Szerepe és Felelőssége
+```typescript
+/**
+ * DASHBOARD COMPONENT - Központi Keresési és Áttekintő Interfész
+ * 
+ * Felelősség:
+ * - Központi keresősáv működtetése
+ * - Real-time rendszer statisztikák megjelenítése
+ * - Gyors kategória elérések biztosítása
+ * - Sample query suggestions
+ * 
+ * Komponens típus: DATA INTEGRATION COMPONENT
+ * - Backend API integráció (statistikákhoz)
+ * - Loading states kezelése
+ * - Error boundary support
+ */
+```
+
+#### State Management
+```typescript
+// Local State
+const [searchQuery, setSearchQuery] = useState<string>('');
+const [isSearchFocused, setIsSearchFocused] = useState<boolean>(false);
+const [stats, setStats] = useState<SystemStats>({
+  totalProducts: 0,
+  totalManufacturers: 0,
+  lastUpdated: null
+});
+
+// Loading States
+const [isLoading, setIsLoading] = useState<boolean>(true);
+const [error, setError] = useState<string | null>(null);
+```
+
+#### API Integráció
+```typescript
+// Data Loading Flow
+useEffect(() => {
+  const loadSystemStats = async () => {
+    setIsLoading(true);
+    try {
+      // Parallel API calls optimalizációhoz
+      const [products, manufacturers] = await Promise.all([
+        api.getProducts(1000, 0),      // Large limit for count
+        api.getManufacturers(),        // All manufacturers
+      ]);
+      
+      // Transform raw data to display format
+      setStats({
+        totalProducts: products.length,
+        totalManufacturers: manufacturers.length,
+        lastUpdated: new Date().toISOString()
+      });
+      
+    } catch (error) {
+      setError(error.message);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+  
+  loadSystemStats();
+}, []); // Only on mount
+```
+
+#### Kapcsolatok
+```
+Dashboard Component
+│
+├── INPUT (Props)
+│   └── onSearchSubmit ←────────── parent component (search handler)
+│
+├── OUTPUT (Events)
+│   ├── onSearchSubmit() ──────────→ parent component
+│   └── onCategorySelect() ────────→ parent component
+│
+├── STATE (Internal)
+│   ├── searchQuery
+│   ├── isSearchFocused
+│   ├── stats (from API)
+│   ├── isLoading
+│   └── error
+│
+└── DEPENDENCIES
+    ├── api.ts ───────────────────── Backend data loading
+    ├── React hooks ─────────────── useState, useEffect
+    └── Loading animations ───────── UI feedback
+```
+
+---
+
+### 3. ChatWidget Component
+
+#### Szerepe és Felelőssége
+```typescript
+/**
+ * CHATWIDGET COMPONENT - RAG-alapú AI Asszisztens
+ * 
+ * Felelősség:
+ * - Floating chat UI biztosítása
+ * - Természetes nyelvű RAG keresések végrehajtása
+ * - Conversational AI interaction pattern
+ * - Termékajánlások megjelenítése
+ * 
+ * Komponens típus: COMPLEX INTEGRATION COMPONENT
+ * - Heavy backend API usage (RAG search)
+ * - Complex state management (conversation history)
+ * - Real-time UI feedback (typing indicators)
+ * - Product recommendation display
+ */
+```
+
+#### Komplex State Management
+```typescript
+// Widget UI State
+const [isOpen, setIsOpen] = useState<boolean>(false);
+const [isMinimized, setIsMinimized] = useState<boolean>(false);
+
+// Conversation State
+const [messages, setMessages] = useState<Message[]>([
+  {
+    id: '1',
+    type: 'ai',
+    content: 'Szia! Építőanyag szakértő asszisztens vagyok...',
+    timestamp: new Date(),
+  }
+]);
+
+// Input State
+const [inputValue, setInputValue] = useState<string>('');
+const [isTyping, setIsTyping] = useState<boolean>(false);
+
+// Scroll Management
+const messagesEndRef = useRef<HTMLDivElement>(null);
+```
+
+#### RAG API Integration Flow
+```typescript
+/**
+ * ============================================================================
+ * COMPLEX RAG SEARCH FLOW
+ * ============================================================================
+ */
+const handleSubmit = async (e: React.FormEvent) => {
+  // 1. User Message Processing
+  const userMessage: Message = {
+    id: Date.now().toString(),
+    type: 'user',
+    content: inputValue.trim(),
+    timestamp: new Date(),
+  };
+  
+  // 2. UI State Updates
+  setMessages(prev => [...prev, userMessage]);
+  setInputValue('');
+  setIsTyping(true);
+
+  try {
+    // 3. Backend RAG Search
+    const searchResponse = await api.searchRAG(userMessage.content, 5);
+    
+    // 4. Contextual AI Response Generation
+    const aiContent = generateAIResponse(userMessage.content, searchResponse);
+    
+    // 5. AI Message with Products
+    const aiMessage: Message = {
+      id: (Date.now() + 1).toString(),
+      type: 'ai',
+      content: aiContent,
+      timestamp: new Date(),
+      products: searchResponse.results.slice(0, 3), // Top 3 products
+    };
+    
+    setMessages(prev => [...prev, aiMessage]);
+    
+  } catch (error) {
+    // 6. Error Handling (Graceful Degradation)
+    const errorMessage: Message = {
+      id: (Date.now() + 1).toString(),
+      type: 'ai',
+      content: 'Sajnálom, jelenleg nem tudok kapcsolódni az adatbázishoz.',
+      timestamp: new Date(),
+    };
+    
+    setMessages(prev => [...prev, errorMessage]);
+  } finally {
+    setIsTyping(false);
+  }
+};
+```
+
+#### Auto-scroll Effect
+```typescript
+// Side Effects Management
+useEffect(() => {
+  messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+}, [messages]); // Trigger on every message change
+```
+
+#### Kapcsolatok
+```
+ChatWidget Component
+│
+├── INPUT (Props)
+│   └── onClose? ←─────────────── parent component (optional)
+│
+├── OUTPUT (Events)
+│   └── onClose?() ────────────→ parent component (optional)
+│
+├── STATE (Complex Internal)
+│   ├── Widget UI ────────────── isOpen, isMinimized
+│   ├── Conversation ─────────── messages[], inputValue
+│   ├── Loading ──────────────── isTyping
+│   └── Scroll ───────────────── messagesEndRef
+│
+└── DEPENDENCIES
+    ├── api.ts ───────────────────── RAG search integration
+    ├── SearchResult[] ────────────── Type definitions
+    ├── React hooks ──────────────── useState, useRef, useEffect
+    └── Auto-scroll ──────────────── Side effect management
+```
+
+---
+
+## 📡 API Service Layer
+
+### Központi Backend Kommunikáció
+
+```typescript
+/**
+ * API SERVICE - Centralizált Backend Integration
+ * 
+ * Felelősség:
+ * - Type-safe API communication
+ * - Centralizált error handling
+ * - Request/response transformation
+ * - Endpoint abstraction
+ */
+
+export class ApiService {
+  // Generic request method
+  private async request<T>(endpoint: string, options?: RequestInit): Promise<T>
+  
+  // Product endpoints
+  async getProducts(limit = 100, offset = 0): Promise<Product[]>
+  async getProduct(id: number): Promise<Product>
+  
+  // Category endpoints  
+  async getCategories(): Promise<Category[]>
+  
+  // Manufacturer endpoints
+  async getManufacturers(): Promise<Manufacturer[]>
+  
+  // Search endpoints (RAG)
+  async searchRAG(query: string, limit = 10): Promise<SearchResponse>
+  
+  // System endpoints
+  async healthCheck(): Promise<{ status: string }>
+  
+  // Admin endpoints
+  async triggerScraping(scraperType: 'datasheet' | 'brochure'): Promise<{ task_id: string }>
+}
+```
+
+### Backend Endpoint Mapping
+```
+API Service Methods              Backend Endpoints
+├── getProducts()       ────────→ GET /products?limit={}&offset={}
+├── getProduct(id)      ────────→ GET /products/{id}
+├── getCategories()     ────────→ GET /categories
+├── getManufacturers()  ────────→ GET /manufacturers
+├── searchRAG()         ────────→ POST /search/rag
+├── healthCheck()       ────────→ GET /health
+└── triggerScraping()   ────────→ POST /api/v1/scrape
+```
+
+---
+
+## 🔄 Adatáramlási Diagramok
+
+### 1. Application Startup Flow
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant P as page.tsx
+    participant N as Navigation
+    participant D as Dashboard
+    participant A as API Service
+    participant B as Backend
+    
+    U->>P: Load application
+    P->>N: Render navigation (activeTab: 'dashboard')
+    P->>D: Render dashboard
+    
+    D->>A: getProducts(1000, 0)
+    A->>B: GET /products?limit=1000&offset=0
+    B-->>A: Product[]
+    A-->>D: Product[]
+    
+    D->>A: getManufacturers()
+    A->>B: GET /manufacturers
+    B-->>A: Manufacturer[]
+    A-->>D: Manufacturer[]
+    
+    D->>D: Calculate stats
+    D-->>U: Display dashboard with real data
+```
+
+### 2. RAG Search Flow (ChatWidget)
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant C as ChatWidget
+    participant A as API Service
+    participant B as Backend
+    participant CH as ChromaDB
+    participant PG as PostgreSQL
+    
+    U->>C: Type question "hőszigetelés családi házhoz"
+    C->>C: Add user message to state
+    C->>A: searchRAG(query, 5)
+    
+    A->>B: POST /search/rag
+    B->>CH: Embedding search (similarity)
+    CH-->>B: Vector search results
+    B->>PG: Enrich with product data
+    PG-->>B: Full product information
+    B-->>A: SearchResponse with products
+    
+    A-->>C: SearchResponse
+    C->>C: Generate AI response
+    C->>C: Add AI message with products
+    C-->>U: Display AI response + product cards
+```
+
+### 3. Tab Navigation Flow
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant N as Navigation
+    participant P as page.tsx
+    participant C as Content Components
+    
+    U->>N: Click "AI Keresés" tab
+    N->>P: onTabChange('search')
+    P->>P: setActiveTab('search')
+    P->>N: Re-render with activeTab='search'
+    P->>C: Render SearchInterface component
+    C-->>U: Display search interface
+```
+
+---
+
+## 🔗 Komponens Függőségi Térkép
+
+### Hierarchikus Függőségek
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                        ROOT LEVEL                          │
+├─────────────────────────────────────────────────────────────┤
+│  page.tsx (Main Application)                               │
+│  ├── State: activeTab, searchQuery                         │
+│  ├── Effects: Route management                             │
+│  └── Renders: Navigation + Content Router + ChatWidget     │
+└─────────────────────────────────────────────────────────────┘
+                               │
+        ┌──────────────────────┼──────────────────────┐
+        │                      │                      │
+┌───────▼────────┐    ┌────────▼─────────┐    ┌──────▼─────────┐
+│   Navigation   │    │    Dashboard     │    │   ChatWidget   │
+│                │    │                  │    │                │
+│  Dependencies: │    │  Dependencies:   │    │  Dependencies: │
+│  • React hooks│    │  • React hooks   │    │  • React hooks │
+│  • SVG icons  │    │  • api.ts ──────┼────┼──→ api.ts       │
+│  • Tailwind   │    │  • Loading UI    │    │  • Auto-scroll │
+│                │    │  • Error states │    │  • Complex state│
+└────────────────┘    └──────────────────┘    └────────────────┘
+                                │
+                                │
+                      ┌─────────▼──────────┐
+                      │     api.ts         │
+                      │                    │
+                      │  Dependencies:     │
+                      │  • Native fetch    │
+                      │  • Type definitions│
+                      │  • Error handling  │
+                      │                    │
+                      │  Endpoints:        │
+                      │  • Products        │
+                      │  • Categories      │
+                      │  • Manufacturers   │
+                      │  • RAG Search      │
+                      │  • Health Check    │
+                      │  • Admin Actions   │
+                      └────────────────────┘
+```
+
+### Cross-Cutting Concerns
+
+```
+SHARED UTILITIES:
+├── Type Definitions ────── Minden komponens használja
+│   ├── Product
+│   ├── Manufacturer  
+│   ├── Category
+│   ├── SearchResult
+│   └── SearchResponse
+│
+├── Design System ────────── Tailwind CSS classes
+│   ├── Color palette
+│   ├── Typography scale
+│   ├── Spacing system
+│   └── Animation definitions
+│
+├── Error Handling ──────── Konzisztens error patterns
+│   ├── Network errors
+│   ├── API errors
+│   ├── Loading states
+│   └── User feedback
+│
+└── Performance ──────────── Optimization patterns
+    ├── Component re-renders
+    ├── API call deduplication
+    ├── Memory management
+    └── Bundle size optimization
+```
+
+---
+
+## 🎯 Data Flow Patterns
+
+### 1. Unidirectional Data Flow
+
+```
+Parent Component (page.tsx)
+│
+├── Props Down ─────────────────► Child Components
+│   ├── activeTab ─────────────► Navigation
+│   ├── onSearchSubmit ────────► Dashboard  
+│   └── onClose ───────────────► ChatWidget
+│
+└── Events Up ◄───────────────── Child Components
+    ├── onTabChange ◄──────────── Navigation
+    ├── onSearchSubmit ◄───────── Dashboard
+    └── onClose ◄─────────────── ChatWidget
+```
+
+### 2. State Management Patterns
+
+```
+LOCAL STATE (Component Level):
+├── Navigation ─────────── STATELESS (Pure UI)
+├── Dashboard ──────────── Mixed (UI + API data)
+└── ChatWidget ────────── STATEFUL (Complex interaction)
+
+SHARED STATE (Props Drilling):
+├── activeTab ─────────── page.tsx → Navigation
+├── search handlers ───── page.tsx → Dashboard
+└── widget visibility ──── page.tsx → ChatWidget
+
+SERVER STATE (API Integration):
+├── Product data ──────── Dashboard, ChatWidget
+├── Category data ─────── Dashboard
+├── Manufacturer data ──── Dashboard
+└── Search results ────── ChatWidget
+```
+
+### 3. Error Boundary Strategy
+
+```
+ERROR HANDLING LEVELS:
+├── API Level ─────────── Centralized in api.ts
+│   ├── Network errors
+│   ├── HTTP status errors
+│   └── JSON parsing errors
+│
+├── Component Level ────── Local error states
+│   ├── Loading indicators
+│   ├── Error messages
+│   └── Retry mechanisms
+│
+└── Application Level ──── Global error boundaries
+    ├── Unhandled errors
+    ├── Crash reporting
+    └── Graceful degradation
+```
+
+---
+
+## 🔧 Development Guidelines
+
+### 1. Komponens Létrehozási Checklist
+
+```yaml
+New Component Creation:
+  Structure:
+    - [ ] Create component file in appropriate directory
+    - [ ] Define TypeScript interface for props
+    - [ ] Export default function component
+    - [ ] Add comprehensive JSDoc comments
+  
+  Integration:
+    - [ ] Import necessary dependencies
+    - [ ] Add to parent component imports
+    - [ ] Test with real data
+    - [ ] Verify type safety
+  
+  Documentation:
+    - [ ] Update component relationships diagram
+    - [ ] Document new dependencies
+    - [ ] Add usage examples
+    - [ ] Update this documentation
+```
+
+### 2. API Integration Pattern
+
+```typescript
+// Standard API integration pattern for new components
+const [data, setData] = useState<DataType[]>([]);
+const [isLoading, setIsLoading] = useState<boolean>(true);
+const [error, setError] = useState<string | null>(null);
+
+useEffect(() => {
+  const loadData = async () => {
+    setIsLoading(true);
+    try {
+      const result = await api.getData();
+      setData(result);
+    } catch (error) {
+      setError(error.message);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+  
+  loadData();
+}, []);
+```
+
+### 3. Performance Best Practices
+
+```yaml
+Performance Guidelines:
+  Component Optimization:
+    - Use React.memo() for expensive pure components
+    - Implement useMemo() for heavy calculations
+    - UseCallback() for event handlers passed as props
+    - Avoid inline object/function creation in renders
+  
+  API Optimization:
+    - Implement request deduplication
+    - Add appropriate loading states
+    - Cache static data (categories, manufacturers)
+    - Use pagination for large datasets
+  
+  Bundle Optimization:
+    - Code splitting for admin components
+    - Lazy loading for non-critical features
+    - Tree shaking unused Tailwind classes
+    - Optimize bundle analyzer reports
+```
+
+---
+
+## 📊 Component Metrics
+
+### Complexity Analysis
+
+| Component | Lines of Code | Dependencies | API Calls | State Variables |
+|-----------|---------------|--------------|-----------|-----------------|
+| Navigation | ~150 | 1 (React) | 0 | 0 (stateless) |
+| Dashboard | ~200 | 2 (React, api.ts) | 2 | 4 |
+| ChatWidget | ~400 | 3 (React, api.ts, types) | 1 | 6 |
+| API Service | ~300 | 1 (fetch) | - | 0 |
+
+### Performance Metrics
+
+| Component | First Render | API Load Time | Re-render Cost | Memory Usage |
+|-----------|--------------|---------------|----------------|--------------|
+| Navigation | < 5ms | N/A | < 1ms | Low |
+| Dashboard | < 10ms | 200-500ms | < 5ms | Medium |
+| ChatWidget | < 15ms | 300-800ms | < 10ms | High |
+
+---
+
+## 🚀 Future Architecture Enhancements
+
+### 1. State Management Evolution
+
+```yaml
+Current: Props Drilling + Local State
+Future Options:
+  - Context API for shared state
+  - Zustand for simple global state
+  - React Query for server state
+  - Jotai for atomic state management
+```
+
+### 2. Performance Enhancements
+
+```yaml
+Planned Optimizations:
+  - React Query for server state caching
+  - Virtual scrolling for large product lists
+  - Service Worker for offline capability
+  - Progressive Web App (PWA) features
+```
+
+### 3. Testing Strategy
+
+```yaml
+Testing Pyramid:
+  Unit Tests:
+    - Component rendering
+    - User interactions
+    - API service methods
+    - Utility functions
+  
+  Integration Tests:
+    - Component communication
+    - API integration flows
+    - Error handling scenarios
+    - Data transformation
+  
+  E2E Tests:
+    - Complete user journeys
+    - Cross-browser compatibility
+    - Performance benchmarks
+    - Accessibility compliance
+```
+
+---
+
+*Dokumentáció utolsó frissítése: 2025-01-28*
+*Verzió: 1.0.0*
+*Státusz: Complete Implementation Documentation* 

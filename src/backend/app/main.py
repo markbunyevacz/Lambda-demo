@@ -23,15 +23,13 @@ from fastapi.responses import HTMLResponse, RedirectResponse
 from sqlalchemy.orm import Session
 from typing import List, Optional
 import logging
-import sys
-from pathlib import Path
 import chromadb
 
-# Absolute imports for backend context
-from backend.app.database import Base, engine, get_db
-from backend.app import models
-from backend.app import schemas
-from backend.app.api import admin
+# Relative imports for app context
+from .database import get_db
+from . import models
+from . import schemas
+from .api import admin
 
 # Create the database tables
 # Base.metadata.create_all(bind=engine)  # Temporarily disabled due to UTF-8 issues

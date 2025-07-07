@@ -33,9 +33,8 @@ services:
     build:
       context: ./src/backend
       dockerfile: Dockerfile
-    # Temporarily override the command to keep the container running without the server
-    # This allows us to run scripts in a stable environment without hot-reloads
-    command: tail -f /dev/null
+    # Default production command - override in docker-compose.dev.yml for development
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
     volumes:
       - ./src/backend:/app
     ports:

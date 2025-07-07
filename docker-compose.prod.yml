@@ -1,0 +1,40 @@
+# Production Environment Override  
+version: '3.8'
+
+services:
+  backend:
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 4
+    restart: always
+    environment:
+      - DEBUG=False
+      - LOG_LEVEL=info
+    # No volume mounts in production - use built image
+    
+  frontend:
+    build:
+      context: ./src/frontend
+      dockerfile: Dockerfile.prod
+    command: npm start
+    restart: always
+    environment:
+      - NODE_ENV=production
+    # No volume mounts in production
+    
+  # Production nginx reverse proxy
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - backend
+      - frontend
+    restart: always
+    networks:
+      - lambda_network
+      
+  # Remove flower in production (security)
+  # celery_flower: {} # Disabled in production 

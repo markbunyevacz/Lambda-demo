@@ -43,11 +43,11 @@ except ImportError:
 from dotenv import load_dotenv
 
 # Database Integration
-from app.database import SessionLocal
-from models.processed_file_log import ProcessedFileLog
-from app.models.product import Product
-from app.models.manufacturer import Manufacturer
-from app.models.category import Category
+from backend.app.database import SessionLocal
+from backend.models.processed_file_log import ProcessedFileLog
+from backend.app.models.product import Product
+from backend.app.models.manufacturer import Manufacturer
+from backend.app.models.category import Category
 
 # Load environment variables
 load_dotenv("../../.env")  # Load from root directory
@@ -1455,7 +1455,7 @@ class RealPDFProcessor:
             # Create safe product data
             safe_name = make_utf8_safe(result.product_name, 255)
             safe_description = make_utf8_safe(f"Extracted from {result.source_filename}", 500)
-            safe_text_content = make_utf8_safe(result.extracted_text, 10000)  # Limit to 10K chars
+            safe_text_content = make_utf8_safe(result.extracted_text, 290000)  # Limit to 10K chars
             
             product = Product(
                 name=safe_name,
@@ -1564,7 +1564,7 @@ class RealPDFProcessor:
         # Add excerpt from extracted text
         if result.extracted_text:
             text_parts.append("Content excerpt:")
-            text_parts.append(result.extracted_text[:1000])  # First 1000 chars
+            text_parts.append(result.extracted_text[:29000])  # First 29000 chars
         
         return "\n".join(text_parts)
 

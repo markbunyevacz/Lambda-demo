@@ -1,9 +1,13 @@
 import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 import './globals.css'
+import { Providers } from '@/components/Providers'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Lambda.hu Építőanyag AI',
-  description: 'AI-alapú építőanyag keresési és ajánlási rendszer',
+  title: 'Lambda.hu - Magyar Építőanyag AI',
+  description: 'Intelligens építőanyag keresés és ajánlások mesterséges intelligenciával',
 }
 
 export default function RootLayout({
@@ -13,7 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="hu">
-      <body>{children}</body>
+      <body className={inter.className}>
+        <Providers>
+          {children}
+        </Providers>
+      </body>
     </html>
   )
 } 

@@ -1,0 +1,36 @@
+# Development Environment Override
+version: '3.8'
+
+services:
+  backend:
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - ./src/backend:/app  # Hot reload for development
+    environment:
+      - DEBUG=True
+      - LOG_LEVEL=debug
+
+  frontend:
+    command: npm run dev
+    volumes:
+      - ./src/frontend:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      - NODE_ENV=development
+
+  # Enable Flower for development monitoring
+  celery_flower:
+    image: mher/flower
+    container_name: lambda-celery_flower-1
+    ports:
+      - "5555:5555"
+    environment:
+      - CELERY_BROKER_URL=redis://cache:6379/0
+      - FLOWER_PORT=5555
+    depends_on:
+      - backend
+      - cache
+    restart: unless-stopped
+    networks:
+      - lambda_network 

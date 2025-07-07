@@ -14,10 +14,10 @@ import logging
 import json
 from pathlib import Path
 
-from backend.app.database import get_db
-from backend.app.models.manufacturer import Manufacturer
-from backend.app.models.category import Category
-from backend.app.models.product import Product
+from ..database import get_db
+from ..models.manufacturer import Manufacturer
+from ..models.category import Category
+from ..models.product import Product
 # ProcessedFileLog is in backend/models/, not app/models/
 # from models.processed_file_log import ProcessedFileLog
 
