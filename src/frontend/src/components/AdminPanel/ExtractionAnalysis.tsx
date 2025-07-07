@@ -13,10 +13,9 @@ interface ExtractionResult {
 interface ComparisonData {
   pdf_filename: string;
   structured_extraction: ExtractionResult | { error: string };
-  raw_haiku_extraction: ExtractionResult | { error: string };
 }
 
-const API_BASE = 'http://localhost:8000/admin';
+const API_BASE = 'http://localhost:8001/admin';
 
 const ExtractionAnalysis: React.FC = () => {
   const [report, setReport] = useState<ComparisonData[]>([]);
@@ -65,7 +64,7 @@ const ExtractionAnalysis: React.FC = () => {
   return (
     <div className="space-y-6">
       <div className="flex justify-between items-center">
-        <h2 className="text-2xl font-bold text-gray-800">🔬 Adatkinyerési Stratégiák Elemzése</h2>
+        <h2 className="text-2xl font-bold text-gray-800">🔬 PDF Adatkinyerési Elemzése</h2>
         <button
           onClick={fetchReport}
           className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
@@ -99,50 +98,41 @@ const ExtractionAnalysis: React.FC = () => {
           </ul>
         </div>
 
-        {/* Comparison View */}
+        {/* Extraction View */}
         <div className="md:col-span-2 space-y-4">
           {!selectedPdf ? (
             <div className="flex items-center justify-center h-full bg-white rounded-lg shadow">
-                <p className="text-gray-500">Válassz egy PDF-et a bal oldali listából az elemzés megtekintéséhez.</p>
+              <p className="text-gray-500">Válassz egy PDF-et a bal oldali listából az elemzés megtekintéséhez.</p>
             </div>
           ) : (
             <div className="bg-white p-4 rounded-lg shadow">
-                <h3 className="text-xl font-bold mb-4">{selectedPdf.pdf_filename}</h3>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 h-screen-60">
-                    {/* Structured Extraction */}
-                    <div className="flex flex-col">
-                        <h4 className="font-semibold text-lg mb-2">1. Strukturált Kinyerés (Jelenlegi)</h4>
-                        <div className="flex items-center gap-2 mb-2">
-                            <span className={`w-4 h-4 rounded-full ${getConfidenceColor(
-                                'structured_extraction' in selectedPdf && 
-                                selectedPdf.structured_extraction && 
-                                'confidence_score' in selectedPdf.structured_extraction 
-                                    ? selectedPdf.structured_extraction.confidence_score 
-                                    : undefined
-                            )}`}></span>
-                            <span>Konfidencia: {(
-                                'structured_extraction' in selectedPdf && 
-                                selectedPdf.structured_extraction && 
-                                'confidence_score' in selectedPdf.structured_extraction 
-                                    ? selectedPdf.structured_extraction.confidence_score?.toFixed(2) 
-                                    : 'N/A'
-                            )}</span>
-                        </div>
-                        <div className="flex-grow bg-gray-800 rounded-lg overflow-hidden">
-                            {renderJson(selectedPdf.structured_extraction)}
-                        </div>
-                    </div>
-                    {/* Raw Haiku Extraction */}
-                    <div className="flex flex-col">
-                        <h4 className="font-semibold text-lg mb-2">2. "Nyers" Haiku Kinyerés</h4>
-                         <div className="flex items-center gap-2 mb-2">
-                            <span>(Nincs konfidencia metrika)</span>
-                        </div>
-                        <div className="flex-grow bg-gray-800 rounded-lg overflow-hidden">
-                            {renderJson(selectedPdf.raw_haiku_extraction)}
-                        </div>
-                    </div>
+              <h3 className="text-xl font-bold mb-4">{selectedPdf.pdf_filename}</h3>
+              
+              {/* Structured Extraction - Full Width */}
+              <div className="space-y-4">
+                <div className="flex flex-col">
+                  <h4 className="font-semibold text-lg mb-2">📋 Strukturált Adatkinyerés</h4>
+                  <div className="flex items-center gap-2 mb-4">
+                    <span className={`w-4 h-4 rounded-full ${getConfidenceColor(
+                        'structured_extraction' in selectedPdf && 
+                        selectedPdf.structured_extraction && 
+                        'confidence_score' in selectedPdf.structured_extraction 
+                            ? selectedPdf.structured_extraction.confidence_score 
+                            : undefined
+                    )}`}></span>
+                    <span className="font-medium">Konfidencia: {(
+                        'structured_extraction' in selectedPdf && 
+                        selectedPdf.structured_extraction && 
+                        'confidence_score' in selectedPdf.structured_extraction 
+                            ? selectedPdf.structured_extraction.confidence_score?.toFixed(3) 
+                            : 'N/A'
+                    )}</span>
+                  </div>
+                  <div className="bg-gray-800 rounded-lg overflow-hidden h-96">
+                    {renderJson(selectedPdf.structured_extraction)}
+                  </div>
                 </div>
+              </div>
             </div>
           )}
         </div>

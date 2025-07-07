@@ -14,10 +14,10 @@ import logging
 import json
 from pathlib import Path
 
-from database import get_db
-from models.manufacturer import Manufacturer
-from models.category import Category
-from models.product import Product
+from backend.app.database import get_db
+from backend.app.models.manufacturer import Manufacturer
+from backend.app.models.category import Category
+from backend.app.models.product import Product
 # ProcessedFileLog is in backend/models/, not app/models/
 # from models.processed_file_log import ProcessedFileLog
 
@@ -366,16 +366,42 @@ async def search_products(
 @router.get("/analysis/extraction-comparison")
 async def get_extraction_comparison_report():
     """
-    📊 Összehasonlító riport a kétféle PDF adatkinyerési stratégiáról.
+    📊 PDF adatkinyerés elemzési riport.
     """
-    report_path = Path("extraction_comparison_report.json")
-    if not report_path.exists():
-        raise HTTPException(status_code=404, detail="Extraction comparison report not found. Please run the analysis script first.")
+    # Structured extraction results - try multiple possible locations
+    import os
+    
+    possible_paths = [
+        Path("real_pdf_extraction_results.json"),  # Same directory as API
+        Path("src/backend/real_pdf_extraction_results.json"),  # From project root
+        Path("../real_pdf_extraction_results.json"),  # One level up
+        Path("../../real_pdf_extraction_results.json"),  # Two levels up
+        Path(os.getcwd()) / "src" / "backend" / "real_pdf_extraction_results.json"  # Absolute
+    ]
+    
+    report_path = None
+    for path in possible_paths:
+        if path.exists():
+            report_path = path
+            break
+    
+    if not report_path:
+        raise HTTPException(status_code=404, detail="Extraction results not found. Please run the PDF processor first.")
     
     try:
         with open(report_path, "r", encoding="utf-8") as f:
-            report_data = json.load(f)
-        return {"success": True, "data": report_data}
+            extraction_data = json.load(f)
+        
+        # Convert to frontend format
+        comparison_data = []
+        for result in extraction_data.get("results", []):
+            comparison_entry = {
+                "pdf_filename": result.get("source_filename", ""),
+                "structured_extraction": result
+            }
+            comparison_data.append(comparison_entry)
+        
+        return {"success": True, "data": comparison_data}
     except Exception as e:
-        logger.error(f"Failed to read or parse extraction report: {e}")
-        raise HTTPException(status_code=500, detail="Failed to process extraction report.") 
+        logger.error(f"Failed to read or parse extraction results: {e}")
+        raise HTTPException(status_code=500, detail="Failed to process extraction results.") 

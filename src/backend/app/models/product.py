@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, Text, ForeignKey, DateTime, func, Numeric, Boolean, JSON
 from sqlalchemy.orm import relationship
-from app.database import Base
+from ..database import Base
 
 
 class Product(Base):

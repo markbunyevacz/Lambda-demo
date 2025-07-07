@@ -27,15 +27,11 @@ import sys
 from pathlib import Path
 import chromadb
 
-# Add the app directory to the Python path
-app_dir = Path(__file__).parent
-sys.path.insert(0, str(app_dir))
-
-# Relative imports for backend context
-from database import Base, engine, get_db
-import models
-import schemas
-from api import admin
+# Absolute imports for backend context
+from backend.app.database import Base, engine, get_db
+from backend.app import models
+from backend.app import schemas
+from backend.app.api import admin
 
 # Create the database tables
 # Base.metadata.create_all(bind=engine)  # Temporarily disabled due to UTF-8 issues
