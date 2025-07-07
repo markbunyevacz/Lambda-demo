@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { api, SearchResult } from '@/lib/api';
+import { api, SearchResult, Category, Manufacturer } from '@/lib/api';
 
 // Helper function for className joining
 function cn(...classes: (string | boolean | undefined)[]): string {
@@ -45,6 +45,11 @@ interface ChatWidgetProps {
   onClose?: () => void;
 }
 
+interface QuickAction {
+  text: string;
+  category: 'manufacturer' | 'category' | 'popular' | 'technical';
+}
+
 export default function ChatWidget({ onClose }: ChatWidgetProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
@@ -58,7 +63,126 @@ export default function ChatWidget({ onClose }: ChatWidgetProps) {
   ]);
   const [inputValue, setInputValue] = useState('');
   const [isTyping, setIsTyping] = useState(false);
+  const [quickActions, setQuickActions] = useState<QuickAction[]>([]);
+  const [isLoadingActions, setIsLoadingActions] = useState(true);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  // Load dynamic quick actions
+  useEffect(() => {
+    const loadQuickActions = async () => {
+      try {
+        setIsLoadingActions(true);
+        
+        // Load categories and manufacturers in parallel
+        const [categories, manufacturers] = await Promise.all([
+          api.getCategories(),
+          api.getManufacturers()
+        ]);
+
+        // Generate dynamic quick actions
+        const actions: QuickAction[] = [];
+
+        // Add top manufacturer-based questions
+        const topManufacturers = manufacturers.slice(0, 2); // Top 2 manufacturers
+        topManufacturers.forEach(mfr => {
+          actions.push({
+            text: `${mfr.name} termékek`,
+            category: 'manufacturer'
+          });
+        });
+
+        // Add category-based questions
+        const topCategories = categories
+          .filter(cat => !cat.parent_id) // Only root categories
+          .slice(0, 3); // Top 3 categories
+        
+        topCategories.forEach(cat => {
+          // Convert category names to natural questions
+          const categoryQuestions = getCategoryQuestions(cat.name);
+          actions.push({
+            text: categoryQuestions,
+            category: 'category'
+          });
+        });
+
+        // Add popular/common building questions
+        const popularQuestions = [
+          "Milyen szigetelés családi házhoz?",
+          "Homlokzati hőszigetelés árak",
+          "Tetőszigetelő anyagok",
+          "Falazóelemek összehasonlítás"
+        ];
+
+        popularQuestions.forEach(question => {
+          actions.push({
+            text: question,
+            category: 'popular'
+          });
+        });
+
+        // Add technical questions
+        const technicalQuestions = [
+          "Lambda érték magyarázat",
+          "Tűzvédelmi osztályok",
+          "Páraáteresztő képesség",
+          "Hővezetési tényező"
+        ];
+
+        technicalQuestions.forEach(question => {
+          actions.push({
+            text: question,
+            category: 'technical'
+          });
+        });
+
+        // Shuffle and take top 6 for better variety
+        const shuffledActions = shuffleArray(actions).slice(0, 6);
+        setQuickActions(shuffledActions);
+
+      } catch (error) {
+        console.error('Failed to load quick actions:', error);
+        // Fallback to default actions
+        const fallbackActions: QuickAction[] = [
+          { text: "Hőszigetelés családi házhoz", category: 'popular' },
+          { text: "ROCKWOOL termékek", category: 'manufacturer' },
+          { text: "Homlokzati rendszerek", category: 'category' },
+          { text: "Tetőszigetelés", category: 'popular' }
+        ];
+        setQuickActions(fallbackActions);
+      } finally {
+        setIsLoadingActions(false);
+      }
+    };
+
+    loadQuickActions();
+  }, []);
+
+  // Helper function to convert category names to natural questions
+  const getCategoryQuestions = (categoryName: string): string => {
+    const categoryMap: Record<string, string> = {
+      'Hőszigetelő anyagok': 'Hőszigetelő anyagok árak',
+      'Hőszigetelés': 'Hőszigetelés megoldások',
+      'Falazó elemek': 'Falazóelemek típusai',
+      'Falazóelemek': 'Falazó blokkok árak',
+      'Homlokzati rendszerek': 'HŐSZ rendszerek',
+      'Tetőfedő anyagok': 'Tetőfedés megoldások',
+      'Vakolatok': 'Vakolat típusok',
+      'Festékek': 'Homlokzatfestékek',
+      'Színes vakolatok': 'Színes vakolat minták'
+    };
+
+    return categoryMap[categoryName] || `${categoryName} termékek`;
+  };
+
+  // Helper function to shuffle array
+  const shuffleArray = <T,>(array: T[]): T[] => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  };
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -141,13 +265,6 @@ export default function ChatWidget({ onClose }: ChatWidgetProps) {
     // Generic response for other queries
     return `A keresésedre "${userQuery}" ${total_results} releváns terméket találtam az adatbázisban. A legjobb találat: **${topResult.name}** (${(topResult.similarity_score * 100).toFixed(0)}% egyezés). Alább láthatod a részletes termékadatokat és további ajánlásokat.`;
   };
-
-  const quickActions = [
-    "Hőszigetelés családi házhoz",
-    "Homlokzati rendszerek",
-    "Tetőszigetelés",
-    "ROCKWOOL termékek"
-  ];
 
   if (!isOpen) {
     return (
@@ -270,19 +387,35 @@ export default function ChatWidget({ onClose }: ChatWidgetProps) {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Quick actions */}
+          {/* Dynamic Quick actions */}
           <div className="px-4 py-2 border-t border-neutral-100">
-            <div className="flex flex-wrap gap-1">
-              {quickActions.map((action, index) => (
-                <button
-                  key={index}
-                  onClick={() => setInputValue(action)}
-                  className="text-xs bg-primary-50 text-primary-600 px-2 py-1 rounded-full hover:bg-primary-100 transition-colors"
-                >
-                  {action}
-                </button>
-              ))}
-            </div>
+            {isLoadingActions ? (
+              <div className="flex space-x-1">
+                {[...Array(4)].map((_, index) => (
+                  <div key={index} className="animate-pulse">
+                    <div className="h-6 bg-gray-200 rounded-full w-20"></div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="flex flex-wrap gap-1">
+                {quickActions.map((action, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setInputValue(action.text)}
+                    className={cn(
+                      "text-xs px-2 py-1 rounded-full transition-colors",
+                      action.category === 'manufacturer' && "bg-blue-50 text-blue-600 hover:bg-blue-100",
+                      action.category === 'category' && "bg-green-50 text-green-600 hover:bg-green-100",
+                      action.category === 'popular' && "bg-primary-50 text-primary-600 hover:bg-primary-100",
+                      action.category === 'technical' && "bg-purple-50 text-purple-600 hover:bg-purple-100"
+                    )}
+                  >
+                    {action.text}
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Input */}

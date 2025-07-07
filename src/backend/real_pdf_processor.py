@@ -18,7 +18,7 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple, Any
 from dataclasses import dataclass, asdict
 from datetime import datetime
-import time
+
 
 import fitz  # PyMuPDF
 import pdfplumber
@@ -43,14 +43,23 @@ except ImportError:
 from dotenv import load_dotenv
 
 # Database Integration
-from backend.app.database import SessionLocal
-from backend.models.processed_file_log import ProcessedFileLog
-from backend.app.models.product import Product
-from backend.app.models.manufacturer import Manufacturer
-from backend.app.models.category import Category
+try:
+    from app.database import SessionLocal
+    from models.processed_file_log import ProcessedFileLog
+    from app.models.product import Product
+    from app.models.manufacturer import Manufacturer
+    from app.models.category import Category
+except ImportError:
+    # Alternative imports for current structure
+    SessionLocal = None
+    ProcessedFileLog = None
+    Product = None
+    Manufacturer = None
+    Category = None
 
 # Load environment variables
-load_dotenv("../../.env")  # Load from root directory
+load_dotenv()  # Current directory first
+load_dotenv("../../.env")  # Fallback to root directory
 
 # ✅ ENHANCED: Configure logging to ERROR level to hide all WARNING messages
 logging.basicConfig(
@@ -609,11 +618,13 @@ add vissza, amit ténylegesen megtalálsz!
         
         logger.debug(f"📝 Parsing Claude response (length: {len(response_text)})")
         
-        # First, try to find a clear JSON block
+        # ✅ ENHANCED: More flexible JSON pattern matching for Claude responses
         json_patterns = [
-            (r'\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}', "complete JSON object"),
+            (r'\{(?:[^{}]*\{[^{}]*\}[^{}]*)*[^{}]*\}', "complete JSON object"),
             (r'```json\s*(\{.*?\})\s*```', "JSON code block"),
             (r'```\s*(\{.*?\})\s*```', "code block"),
+            (r'\{[\s\S]*?\}(?=\s*$|\s*\n\s*[A-Z])', "JSON at end of response"),
+            (r'(?:json|JSON)[\s:]*(\{[\s\S]*?\})', "labeled JSON block"),
         ]
         
         for pattern, description in json_patterns:
@@ -685,22 +696,36 @@ add vissza, amit ténylegesen megtalálsz!
         }
     
     def _clean_json_text(self, json_text: str) -> str:
-        """Clean JSON text to fix common issues"""
+        """✅ ENHANCED: Clean JSON text to fix common Claude AI response issues"""
+        
+        import re
         
         # Remove any trailing commas before closing braces/brackets
-        import re
         json_text = re.sub(r',(\s*[}\]])', r'\1', json_text)
         
         # Replace single quotes with double quotes (common AI mistake)
         json_text = re.sub(r"'([^']*)':", r'"\1":', json_text)
         json_text = re.sub(r":\s*'([^']*)'", r': "\1"', json_text)
         
-        # Fix common Unicode issues
-        json_text = json_text.replace('\u00e9', 'é').replace('\u0151', 'ő')
+        # Fix Hungarian characters and Unicode issues
+        hungarian_fixes = {
+            '\u00e9': 'é', '\u0151': 'ő', '\u00f3': 'ó', '\u00e1': 'á',
+            '\u00f6': 'ö', '\u00fc': 'ü', '\u00ed': 'í', '\u00fa': 'ú', 
+            '\u0171': 'ű', '\u0170': 'Ű', '\u0150': 'Ő'
+        }
+        for unicode_char, normal_char in hungarian_fixes.items():
+            json_text = json_text.replace(unicode_char, normal_char)
         
-        # Remove any comments (// or /* */)
+        # Remove comments and explanatory text
         json_text = re.sub(r'//.*$', '', json_text, flags=re.MULTILINE)
         json_text = re.sub(r'/\*.*?\*/', '', json_text, flags=re.DOTALL)
+        
+        # Remove common Claude explanation prefixes
+        json_text = re.sub(r'^[^{]*(?=\{)', '', json_text)
+        json_text = re.sub(r'\}[^}]*$', '}', json_text)
+        
+        # Fix newlines and spacing
+        json_text = re.sub(r'\n\s*\n', '\n', json_text)
         
         return json_text.strip()
     
@@ -921,23 +946,27 @@ class AdvancedTableExtractor:
                                 }
                             })
                 except Exception as table_error:
-                    logger.warning(f"Error processing CAMELOT lattice table {i}: {table_error}")
+                    logger.warning(
+                        "Error processing CAMELOT lattice table %s: %s",
+                        i,
+                        table_error
+                    )
                     continue
                 finally:
                     # ✅ CRITICAL: Cleanup table object
                     try:
                         del table
-                    except:
+                    except Exception:  # Broad exception for cleanup
                         pass
             
         except Exception as e:
-            logger.warning(f"CAMELOT lattice extraction failed: {e}")
+            logger.warning("CAMELOT lattice extraction failed: %s", e)
         finally:
             # ✅ CRITICAL: Force cleanup of any temporary files
             try:
                 import gc
                 gc.collect()
-            except:
+            except Exception:  # Broad exception for cleanup resilience
                 pass
         
         return tables
@@ -1294,7 +1323,7 @@ class RealPDFProcessor:
             
             for log in all_logs:
                 try:
-                    # ✅ ENHANCED: Ultra-safe UTF-8 handling  
+                    # ✅ ENHANCED: Ultra-safe UTF-8 handling
                     file_hash = log.file_hash
                     if isinstance(file_hash, bytes):
                         # Try multiple encodings for bytes
@@ -1326,6 +1355,39 @@ class RealPDFProcessor:
             logger.info(f"Database hash loading failed: {e}")
             logger.info("Starting with empty hash set...")
             self.processed_file_hashes = set()
+
+    def _save_hash(self, file_hash: str, db_id: Optional[int]):
+        """Save the hash of a processed file to database to avoid reprocessing"""
+        
+        # Add to in-memory set for current session
+        self.processed_file_hashes.add(file_hash)
+        
+        # Save to database if session is available
+        if self.db_session and db_id:
+            try:
+                # Create or update ProcessedFileLog entry
+                existing_log = self.db_session.query(ProcessedFileLog).filter_by(
+                    file_hash=file_hash
+                ).first()
+                
+                if not existing_log:
+                    log_entry = ProcessedFileLog(
+                        file_hash=file_hash,
+                        product_id=db_id,
+                        processed_at=datetime.now(),
+                        processing_status="completed"
+                    )
+                    self.db_session.add(log_entry)
+                    self.db_session.commit()
+                    logger.debug(f"✅ Hash saved to database: {file_hash[:8]}...")
+                else:
+                    logger.debug(f"Hash already exists in database: {file_hash[:8]}...")
+                    
+            except Exception as e:
+                # ✅ CRITICAL FIX: UTF-8 safe exception logging
+                error_msg = str(e).encode('utf-8', errors='replace').decode('utf-8')
+                logger.info(f"Hash save issue (continuing with in-memory): {error_msg}")
+                self.db_session.rollback()
 
     def _init_chromadb(self):
         """Initialize ChromaDB for vector storage."""
@@ -1430,32 +1492,75 @@ class RealPDFProcessor:
                 self.db_session.add(category)
                 self.db_session.flush()  # Get ID
             
-            # ✅ ENHANCED UTF-8 safe string processing
+            # ✅ ENHANCED UTF-8 safe string processing with Hungarian character support
             def make_utf8_safe(text: str, max_length: int = None) -> str:
-                """Convert text to UTF-8 safe format with length limit"""
+                """Convert text to UTF-8 safe format, preserving Hungarian characters - NO FORCED LIMITS"""
                 if not text:
                     return ""
                 
-                # Remove or replace problematic characters
-                import unicodedata
-                
-                # Normalize unicode and remove non-printable characters
-                safe_text = unicodedata.normalize('NFKD', str(text))
-                safe_text = ''.join(c for c in safe_text if ord(c) < 127 or c.isprintable())
-                
-                # Ensure it's valid UTF-8
-                safe_text = safe_text.encode('utf-8', errors='replace').decode('utf-8')
-                
-                # Limit length if specified
-                if max_length and len(safe_text) > max_length:
-                    safe_text = safe_text[:max_length-3] + "..."
+                try:
+                    # Handle different input types
+                    if isinstance(text, bytes):
+                        # Try multiple encodings for bytes
+                        for encoding in ['utf-8', 'latin1', 'cp1252', 'latin2']:
+                            try:
+                                text = text.decode(encoding)
+                                break
+                            except UnicodeDecodeError:
+                                continue
+                        else:
+                            # If all fail, use replacement
+                            text = text.decode('utf-8', errors='replace')
                     
-                return safe_text.strip()
+                    # Ensure we have a string
+                    text = str(text)
+                    
+                    # Fix common Hungarian encoding issues
+                    hungarian_fixes = {
+                        'xE9': 'é', 'x151': 'ő', 'xF3': 'ó', 'xE1': 'á',
+                        'xF6': 'ö', 'xFC': 'ü', 'xED': 'í', 'xFA': 'ú', 
+                        'x171': 'ű', 'x170': 'Ű', 'x150': 'Ő', 'xC9': 'É'
+                    }
+                    
+                    for encoded, decoded in hungarian_fixes.items():
+                        text = text.replace(encoded, decoded)
+                    
+                    # Normalize unicode but preserve accented characters
+                    import unicodedata
+                    safe_text = unicodedata.normalize('NFC', text)
+                    
+                    # Remove only truly problematic characters, keep Hungarian accents
+                    safe_text = ''.join(
+                        c for c in safe_text 
+                        if c.isprintable() or c in 'áéíóöőúüűÁÉÍÓÖŐÚÜŰ'
+                    )
+                    
+                    # Final UTF-8 validation
+                    safe_text = safe_text.encode('utf-8', errors='replace').decode('utf-8')
+                    
+                    # ✅ FIXED: Only apply length limit if explicitly requested
+                    if max_length and len(safe_text) > max_length:
+                        safe_text = safe_text[:max_length-3] + "..."
+                        
+                    return safe_text.strip()
+                    
+                except Exception as e:
+                    logger.warning(f"UTF-8 conversion error: {e}, using fallback")
+                    # Emergency fallback - just return ASCII-safe version
+                    fallback = ''.join(c for c in str(text) if ord(c) < 128)
+                    if max_length:
+                        fallback = fallback[:max_length]
+                    return fallback or "unknown"
             
             # Create safe product data
             safe_name = make_utf8_safe(result.product_name, 255)
             safe_description = make_utf8_safe(f"Extracted from {result.source_filename}", 500)
-            safe_text_content = make_utf8_safe(result.extracted_text, 290000)  # Limit to 10K chars
+            # ✅ CRITICAL FIX: Store FULL content without arbitrary limits!
+            safe_text_content = make_utf8_safe(result.extracted_text)  # NO LENGTH LIMIT!
+            
+            # Log content size for monitoring
+            content_size_kb = len(safe_text_content) / 1024
+            logger.info(f"💾 Storing {content_size_kb:.1f}KB of content for {safe_name}")
             
             product = Product(
                 name=safe_name,
@@ -1465,60 +1570,131 @@ class RealPDFProcessor:
                 technical_specs=result.technical_specs,
                 sku=self._generate_sku(safe_name),
                 price=self._extract_price_from_result(result),
-                full_text_content=safe_text_content
+                full_text_content=safe_text_content  # ✅ FULL CONTENT PRESERVED!
             )
             
             self.db_session.add(product)
             self.db_session.commit()
             
-            logger.info(f"💾 Product saved to PostgreSQL: {safe_name}")
+            logger.info(f"💾 Product saved to PostgreSQL: {safe_name} ({content_size_kb:.1f}KB)")
             return product.id
             
         except Exception as e:
-            logger.info(f"PostgreSQL ingestion failed, continuing with processing: {e}")
+            # ✅ CRITICAL FIX: UTF-8 safe exception logging
+            error_msg = str(e).encode('utf-8', errors='replace').decode('utf-8')
+            logger.info(f"PostgreSQL ingestion failed, continuing with processing: {error_msg}")
             self.db_session.rollback()
             return None
 
     def _ingest_to_chromadb(self, result: PDFExtractionResult, product_id: Optional[int]):
-        """Ingest extraction result to ChromaDB for vector search."""
+        """Ingest extraction result to ChromaDB with intelligent chunking for large documents."""
         if not self.chroma_collection:
             logger.warning("ChromaDB not available, skipping vector ingestion")
             return
             
         try:
-            # Create document text for embedding
-            doc_text = self._create_document_text(result)
+            content_size_kb = len(result.extracted_text) / 1024
             
-            # Create metadata
-            metadata = {
-                "product_name": result.product_name,
-                "source_filename": result.source_filename,
-                "extraction_method": result.extraction_method,
-                "confidence_score": result.confidence_score,
-                "processing_time": result.processing_time,
-                "product_id": product_id if product_id else -1,
-                "manufacturer": "ROCKWOOL"
-            }
-            
-            # Add technical specs to metadata
-            for key, value in result.technical_specs.items():
-                if isinstance(value, (str, int, float)):
-                    metadata[f"spec_{key}"] = str(value)
-            
-            # Generate unique ID for ChromaDB
-            doc_id = f"pdf_{result.source_filename}_{hashlib.md5(doc_text.encode()).hexdigest()[:8]}"
-            
-            # Add to ChromaDB
-            self.chroma_collection.add(
-                documents=[doc_text],
-                metadatas=[metadata],
-                ids=[doc_id]
-            )
-            
-            logger.info(f"🔍 Document added to ChromaDB: {doc_id}")
+            # ✅ INTELLIGENT CHUNKING: Large documents split into overlapping chunks
+            if len(result.extracted_text) > 25000:  # 25KB threshold
+                logger.info(f"🔍 Large document ({content_size_kb:.1f}KB) - using chunking strategy")
+                chunks = self._create_chunked_documents(result, product_id)
+                
+                # Add all chunks to ChromaDB
+                documents = [chunk["text"] for chunk in chunks]
+                metadatas = [chunk["metadata"] for chunk in chunks]
+                ids = [chunk["id"] for chunk in chunks]
+                
+                self.chroma_collection.add(
+                    documents=documents,
+                    metadatas=metadatas,
+                    ids=ids
+                )
+                
+                logger.info(f"🔍 Added {len(chunks)} chunks to ChromaDB for {result.source_filename}")
+                
+            else:
+                # Small documents - single entry (original logic)
+                doc_text = self._create_document_text(result)
+                
+                metadata = {
+                    "product_name": result.product_name,
+                    "source_filename": result.source_filename,
+                    "extraction_method": result.extraction_method,
+                    "confidence_score": result.confidence_score,
+                    "processing_time": result.processing_time,
+                    "product_id": product_id if product_id else -1,
+                    "manufacturer": "ROCKWOOL",
+                    "content_size_kb": content_size_kb,
+                    "is_chunked": False
+                }
+                
+                # Add technical specs to metadata
+                for key, value in result.technical_specs.items():
+                    if isinstance(value, (str, int, float)):
+                        metadata[f"spec_{key}"] = str(value)
+                
+                # Generate unique ID for ChromaDB
+                doc_id = f"pdf_{result.source_filename}_{hashlib.md5(doc_text.encode()).hexdigest()[:8]}"
+                
+                # Add to ChromaDB
+                self.chroma_collection.add(
+                    documents=[doc_text],
+                    metadatas=[metadata],
+                    ids=[doc_id]
+                )
+                
+                logger.info(f"🔍 Document added to ChromaDB: {doc_id} ({content_size_kb:.1f}KB)")
             
         except Exception as e:
             logger.error(f"❌ ChromaDB ingestion failed: {e}")
+
+    def _create_chunked_documents(self, result: PDFExtractionResult) -> List[Dict]:
+        """Split large documents into chunks with overlap for better retrieval"""
+        
+        full_text = result.extracted_text
+        chunk_size = 25000  # 25K per chunk
+        overlap = 2500      # 2.5K overlap between chunks
+        
+        chunks = []
+        start = 0
+        chunk_id = 0
+        
+        while start < len(full_text):
+            end = min(start + chunk_size, len(full_text))
+            chunk_text = full_text[start:end]
+            
+            # Create metadata for each chunk
+            chunk_metadata = {
+                "product_name": result.product_name,
+                "source_filename": result.source_filename,
+                "chunk_id": chunk_id,
+                "total_chunks": (len(full_text) // chunk_size) + 1,
+                "chunk_start": start,
+                "chunk_end": end,
+                "confidence_score": result.confidence_score,
+                "manufacturer": "ROCKWOOL"
+            }
+            
+            # Add technical specs to first chunk only
+            if chunk_id == 0:
+                for key, value in result.technical_specs.items():
+                    if isinstance(value, (str, int, float)):
+                        chunk_metadata[f"spec_{key}"] = str(value)
+            
+            chunks.append({
+                "text": chunk_text,
+                "metadata": chunk_metadata,
+                "id": f"pdf_{result.source_filename}_{chunk_id}"
+            })
+            
+            chunk_id += 1
+            start = end - overlap  # Overlap for continuity
+            
+            if start >= len(full_text):
+                break
+    
+        return chunks
 
     def _determine_category(self, specs: Dict[str, Any]) -> str:
         """Determine product category from technical specifications."""
@@ -1827,21 +2003,61 @@ class RealPDFProcessor:
             try:
                 # ✅ ENHANCED: Ultra-safe filename and hash handling
                 def ultra_safe_string(text: str, max_length: int = 255) -> str:
-                    """Convert any string to ultra-safe UTF-8 format"""
+                    """Convert any string to ultra-safe UTF-8 format while preserving Hungarian characters"""
                     if not text:
                         return ""
                     
-                    # Remove problematic characters and normalize
-                    import unicodedata
-                    safe_text = unicodedata.normalize('NFKD', str(text))
-                    safe_text = ''.join(c for c in safe_text if ord(c) < 127 or c.isprintable())
-                    safe_text = safe_text.encode('ascii', errors='replace').decode('ascii')
-                    
-                    # Limit length
-                    if len(safe_text) > max_length:
-                        safe_text = safe_text[:max_length-3] + "..."
+                    try:
+                        # Handle different input types
+                        if isinstance(text, bytes):
+                            # Try multiple encodings for bytes
+                            for encoding in ['utf-8', 'latin1', 'cp1252', 'latin2']:
+                                try:
+                                    text = text.decode(encoding)
+                                    break
+                                except UnicodeDecodeError:
+                                    continue
+                            else:
+                                # If all fail, use replacement
+                                text = text.decode('utf-8', errors='replace')
                         
-                    return safe_text.strip()
+                        # Ensure we have a string
+                        text = str(text)
+                        
+                        # Fix common Hungarian encoding issues
+                        hungarian_fixes = {
+                            'xE9': 'é', 'x151': 'ő', 'xF3': 'ó', 'xE1': 'á',
+                            'xF6': 'ö', 'xFC': 'ü', 'xED': 'í', 'xFA': 'ú', 
+                            'x171': 'ű', 'x170': 'Ű', 'x150': 'Ő', 'xC9': 'É'
+                        }
+                        
+                        for encoded, decoded in hungarian_fixes.items():
+                            text = text.replace(encoded, decoded)
+                        
+                        # Normalize unicode but preserve accented characters
+                        import unicodedata
+                        safe_text = unicodedata.normalize('NFC', text)
+                        
+                        # Remove only truly problematic characters, keep Hungarian accents and printable characters
+                        safe_text = ''.join(
+                            c for c in safe_text 
+                            if c.isprintable() or c in 'áéíóöőúüűÁÉÍÓÖŐÚÜŰ'
+                        )
+                        
+                        # Final UTF-8 validation
+                        safe_text = safe_text.encode('utf-8', errors='replace').decode('utf-8')
+                        
+                        # Limit length if specified
+                        if max_length and len(safe_text) > max_length:
+                            safe_text = safe_text[:max_length-3] + "..."
+                            
+                        return safe_text.strip()
+                        
+                    except Exception as e:
+                        logger.warning(f"UTF-8 conversion error: {e}, using fallback")
+                        # Emergency fallback - just return simple string
+                        fallback = ''.join(c for c in str(text) if c.isalnum() or c.isspace())[:max_length or 255]
+                        return fallback or "unknown"
                 
                 safe_filename = ultra_safe_string(pdf_path.name, 255)
                 safe_hash = str(file_hash)  # SHA256 hash is always ASCII safe
@@ -1856,15 +2072,17 @@ class RealPDFProcessor:
                 self.processed_file_hashes.add(safe_hash)
                 logger.info(f"💾 Hash for {safe_filename} saved to DB.")
             except Exception as e:
-                logger.info(f"Hash save issue (continuing with in-memory): {e}")
+                # ✅ CRITICAL FIX: UTF-8 safe exception logging
+                error_msg = str(e).encode('utf-8', errors='replace').decode('utf-8')
+                logger.info(f"Hash save issue (continuing with in-memory): {error_msg}")
                 self.db_session.rollback()
                 # Use safe hash for in-memory storage
                 safe_hash = str(file_hash)  # SHA256 is always safe
                 self.processed_file_hashes.add(safe_hash)  # In-memory only for this run
 
             # If confidence is reasonable, proceed to full ingestion
-            # Lowered threshold from 0.40 to 0.25 for testing - NO WARNINGS
-            if result.confidence_score >= 0.25:  # Confidence threshold
+            # ✅ FIXED: Lowered threshold from 0.25 to 0.15 for Hungarian PDFs
+            if result.confidence_score >= 0.15:  # Confidence threshold
                 product_id = self._ingest_to_postgresql(result)
                 if product_id:
                     self._ingest_to_chromadb(result, product_id)
@@ -1872,17 +2090,24 @@ class RealPDFProcessor:
                 else:
                     self.processing_stats["failed"] += 1
             else:
-                logger.info(
-                    f"📉 LOW CONFIDENCE ({result.confidence_score:.2f}) for "
-                    f"{pdf_path.name}. Skipping database ingestion."
+                # ✅ DEBUGGING: Stop at first low confidence instead of continuing
+                logger.error(
+                    f"🚨 STOPPING AT LOW CONFIDENCE ({result.confidence_score:.2f}) for "
+                    f"{pdf_path.name}. Debug threshold: 0.15"
                 )
-                self.processing_stats["failed"] += 1
+                raise ValueError(f"Low confidence debug stop: {result.confidence_score:.2f} < 0.15")
             
             return result
             
         except Exception as e:
             self.processing_stats['failed'] += 1
             logger.error(f"❌ Failed: {pdf_path.name} - {e}")
+            
+            # ✅ DEBUGGING: Stop at first error instead of continuing
+            if "utf-8" in str(e).lower() or "confidence" in str(e).lower():
+                logger.error(f"🚨 STOPPING FOR DEBUG: {e}")
+                raise  # Stop processing for debugging
+            
             # CRITICAL: Rollback session to prevent transaction errors
             if self.db_session.is_active:
                 self.db_session.rollback()
@@ -1956,7 +2181,7 @@ class RealPDFProcessor:
             json.dump(output_data, f, indent=2, ensure_ascii=False)
         
         logger.info(f"💾 Results saved to: {output_file}")
-    
+
     def _print_final_stats(self, results: List[PDFExtractionResult]):
         """Print processing statistics."""
         
@@ -2030,16 +2255,10 @@ async def main():
         pdf_directory = Path("src/downloads/rockwool_datasheets")
         output_file = Path("real_pdf_extraction_results.json")
         
-        # TEST: Only process these 3 representative PDFs
-        test_pdfs = [
-            "Airrock HD FB1 termékadatlap.pdf",     # Simple datasheet
-            "Frontrock S termékadatlap.pdf",        # Complex datasheet  
-            "Klimarock termékadatlap.pdf"           # Different structure
-        ]
-        
-        # Process only selected test PDFs
+        # PRODUCTION: Process ALL PDFs in the directory (34 ROCKWOOL PDFs)
+        # No test_pdfs parameter = process all PDFs
         results = await processor.process_directory(
-            pdf_directory, output_file, test_pdfs
+            pdf_directory, output_file, test_pdfs=None
         )
         
         print(f"\n🎉 SUCCESS: {len(results)} new PDFs processed.")

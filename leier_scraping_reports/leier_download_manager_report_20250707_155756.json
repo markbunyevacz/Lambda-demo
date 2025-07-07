@@ -1,0 +1,100 @@
+{
+    "run_timestamp": "2025-07-07T15:57:56.449762",
+    "duration_seconds": 20.07993,
+    "test_mode": false,
+    "start_urls": [
+        "https://u-ertek-kalkulator.leier.hu/letoltesek-1",
+        "https://u-ertek-kalkulator.leier.hu/alkalmazastechnikak",
+        "https://u-ertek-kalkulator.leier.hu/teljesitmenynyilatkozat"
+    ],
+    "summary": {
+        "urls_processed": 3,
+        "documents_discovered": 20,
+        "downloads_successful": 10,
+        "downloads_failed": 0,
+        "duplicates_found": 0
+    },
+    "discovered_docs_sample": [
+        [
+            "https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/3474/m/186",
+            "Információk"
+        ],
+        [
+            "https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/920/m/30",
+            "Információk"
+        ],
+        [
+            "https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1921/m/30",
+            "Falazóelemek - Alkalmazástechnika és Tervezési segédlet Durisol nélkül"
+        ],
+        [
+            "https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/3474/m/186",
+            "Durisol falazati rendszer - Pozsony - Teljesítménynyilatkozat LE BA15498-02"
+        ],
+        [
+            "https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/895/m/30",
+            "Tetőfedő elemek - Alkalmazástechnika"
+        ],
+        [
+            "https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1250/m/30",
+            "Mélyépítés, felszíni vízelvezetés, környezettechnika - Alkalmazástechnika"
+        ],
+        [
+            "https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1916/m/30",
+            "Falazóelemek - Alkalmazástechnika és Tervezési segédlet"
+        ],
+        [
+            "https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/3481/m/30",
+            "DÍSZBURKOLATOK ALKALMAZÁSTECHNIKA ÉS TERVEZÉSI SEGÉDLET"
+        ],
+        [
+            "https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1949/m/186",
+            "TELJESÍTMÉNYNYILATKOZAT Multikeram_NR: LE KLETA-12-0491-MULTIKERAM-02"
+        ],
+        [
+            "https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1921/m/30",
+            "Információk"
+        ],
+        [
+            "https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/3469/m/30",
+            "Durisol Falazóelemek - Alkalmazástechnika és tervezési segédlet"
+        ],
+        [
+            "https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/920/m/30",
+            "Durisol zajárnyékoló rendszer, vasútépítés - Alkalmazástechnika"
+        ],
+        [
+            "https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/895/m/30",
+            "Információk"
+        ],
+        [
+            "https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/956/m/30",
+            "Információk"
+        ],
+        [
+            "https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1250/m/30",
+            "Információk"
+        ],
+        [
+            "https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1916/m/30",
+            "Információk"
+        ],
+        [
+            "https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/3481/m/30",
+            "Információk"
+        ],
+        [
+            "https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/3469/m/30",
+            "Információk"
+        ],
+        [
+            "https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1949/m/186",
+            "Információk"
+        ],
+        [
+            "https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/956/m/30",
+            "Előregyártott betonelemek - Alkalmazástechnika"
+        ]
+    ],
+    "failed_downloads": []
+}

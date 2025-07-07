@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { api, Product, Manufacturer, Category } from '@/lib/api';
+import { api, SystemMetrics } from '@/lib/api';
 
 // Helper function for className joining
 function cn(...classes: (string | boolean | undefined)[]): string {
@@ -45,48 +45,58 @@ interface DashboardProps {
   onCategorySelect?: (category: string) => void;
 }
 
-interface SystemStats {
+interface DashboardStats {
   productCount: number;
   manufacturerCount: number;
   categoryCount: number;
   lastUpdated: string;
+  apiResponseTime: number;
+  searchAccuracy: number;
   isLoading: boolean;
+  error?: string;
+}
+
+interface QuickAccessModule {
+  id: string;
+  title: string;
+  description: string;
+  icon: React.ComponentType;
+  color: string;
+  count: string;
 }
 
 export default function Dashboard({ onSearchSubmit, onCategorySelect }: DashboardProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearchFocused, setIsSearchFocused] = useState(false);
-  const [stats, setStats] = useState<SystemStats>({
+  const [stats, setStats] = useState<DashboardStats>({
     productCount: 0,
     manufacturerCount: 0,
     categoryCount: 0,
     lastUpdated: 'Betöltés...',
+    apiResponseTime: 0,
+    searchAccuracy: 0,
     isLoading: true,
   });
 
-  // Load real data from backend
+  // Load real system metrics efficiently
   useEffect(() => {
     const loadSystemStats = async () => {
       try {
-        const [products, manufacturers, categories] = await Promise.all([
-          api.getProducts(1, 0), // Just get first product to check if API is working
-          api.getManufacturers(),
-          api.getCategories(),
-        ]);
-
-        // Get actual product count by querying with higher limit
-        const allProducts = await api.getProducts(1000, 0);
+        // Use the optimized system metrics API that combines all data
+        const metrics: SystemMetrics = await api.getSystemMetrics();
 
         setStats({
-          productCount: allProducts.length,
-          manufacturerCount: manufacturers.length,
-          categoryCount: categories.length,
-          lastUpdated: new Date().toLocaleDateString('hu-HU', {
+          productCount: metrics.database.data.products,
+          manufacturerCount: metrics.database.data.manufacturers,
+          categoryCount: metrics.database.data.categories,
+          lastUpdated: new Date(metrics.database.data.last_updated).toLocaleDateString('hu-HU', {
             month: 'long',
             day: 'numeric',
             hour: '2-digit',
             minute: '2-digit',
           }),
+          apiResponseTime: metrics.performance.api_response_time || 0,
+          searchAccuracy: (metrics.performance.search_accuracy || 0) * 100,
           isLoading: false,
         });
       } catch (error) {
@@ -95,6 +105,7 @@ export default function Dashboard({ onSearchSubmit, onCategorySelect }: Dashboar
           ...prev,
           lastUpdated: 'Hiba a betöltésben',
           isLoading: false,
+          error: error instanceof Error ? error.message : 'Ismeretlen hiba',
         }));
       }
     };
@@ -117,46 +128,50 @@ export default function Dashboard({ onSearchSubmit, onCategorySelect }: Dashboar
   ];
 
   // Dynamic quick access modules based on real data
-  const quickAccessModules = [
-    {
-      id: 'insulation',
-      title: 'Hőszigetelés',
-      description: 'Homlokzati és tetőszigetelési megoldások',
-      icon: IconShield,
-      color: 'bg-primary-500',
-      count: `${Math.floor(stats.productCount * 0.4)} termék`, // Estimate based on real data
-    },
-    {
-      id: 'masonry',
-      title: 'Falazóelemek',
-      description: 'Téglák, blokkok és falazórendszerek',
-      icon: IconHome,
-      color: 'bg-secondary-500',
-      count: `${Math.floor(stats.productCount * 0.25)} termék`,
-    },
-    {
-      id: 'facade',
-      title: 'Homlokzati rendszerek',
-      description: 'HŐSZ rendszerek és homlokzatfestékek',
-      icon: IconBuild,
-      color: 'bg-accent-500',
-      count: `${Math.floor(stats.productCount * 0.35)} termék`,
-    },
-    {
-      id: 'colors',
-      title: 'Színrendszerek',
-      description: 'Festékek és színes vakolatok',
-      icon: IconColorSwatch,
-      color: 'bg-purple-500',
-      count: '243 szín', // Static for now
-    },
-  ];
+  const getQuickAccessModules = (): QuickAccessModule[] => {
+    const totalProducts = stats.productCount;
+    
+    return [
+      {
+        id: 'insulation',
+        title: 'Hőszigetelés',
+        description: 'Homlokzati és tetőszigetelési megoldások',
+        icon: IconShield,
+        color: 'bg-primary-500',
+        count: `~${Math.floor(totalProducts * 0.4)} termék`,
+      },
+      {
+        id: 'masonry',
+        title: 'Falazóelemek',
+        description: 'Téglák, blokkok és falazórendszerek',
+        icon: IconHome,
+        color: 'bg-secondary-500',
+        count: `~${Math.floor(totalProducts * 0.25)} termék`,
+      },
+      {
+        id: 'facade',
+        title: 'Homlokzati rendszerek',
+        description: 'HŐSZ rendszerek és homlokzatfestékek',
+        icon: IconBuild,
+        color: 'bg-accent-500',
+        count: `~${Math.floor(totalProducts * 0.35)} termék`,
+      },
+      {
+        id: 'colors',
+        title: 'Színrendszerek',
+        description: 'Festékek és színes vakolatok',
+        icon: IconColorSwatch,
+        color: 'bg-purple-500',
+        count: `${stats.categoryCount} kategória`,
+      },
+    ];
+  };
 
-  const systemStatsDisplay = [
+  const getSystemStatsDisplay = () => [
     { 
       label: 'Termékek száma', 
       value: stats.isLoading ? '...' : stats.productCount.toString(), 
-      change: stats.isLoading ? 'Betöltés...' : '+12 ma' 
+      change: stats.isLoading ? 'Betöltés...' : `${stats.manufacturerCount} gyártótól`
     },
     { 
       label: 'Gyártók', 
@@ -166,12 +181,12 @@ export default function Dashboard({ onSearchSubmit, onCategorySelect }: Dashboar
     { 
       label: 'Adatbázis frissítve', 
       value: stats.lastUpdated, 
-      change: 'Automatikus' 
+      change: 'Automatikus szinkronizálás' 
     },
     { 
       label: 'AI válaszidő', 
-      value: '0.8s', 
-      change: '↓ 15% javulás' 
+      value: stats.isLoading ? '...' : `${stats.apiResponseTime}ms`, 
+      change: `${stats.searchAccuracy.toFixed(1)}% pontosság` 
     },
   ];
 
@@ -186,8 +201,15 @@ export default function Dashboard({ onSearchSubmit, onCategorySelect }: Dashboar
           </h1>
           <p className="text-xl text-neutral-600 mb-12 max-w-2xl mx-auto">
             Természetes nyelven kérdezhetsz építőanyagokról. Az AI szakértő válaszokat ad 
-            és konkrét termékeket ajánl a {stats.productCount} terméket tartalmazó adatbázisból.
+            és konkrét termékeket ajánl a {stats.isLoading ? '...' : stats.productCount} terméket tartalmazó adatbázisból.
           </p>
+
+          {/* Error State */}
+          {stats.error && (
+            <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mb-6 max-w-md mx-auto">
+              <span className="text-sm">Rendszerstatisztikák nem elérhetők</span>
+            </div>
+          )}
 
           {/* Központi keresősáv */}
           <form onSubmit={handleSearchSubmit} className="relative mb-8">
@@ -216,10 +238,12 @@ export default function Dashboard({ onSearchSubmit, onCategorySelect }: Dashboar
               />
               <button
                 type="submit"
+                disabled={!searchQuery.trim()}
                 className={cn(
                   "absolute inset-y-0 right-0 flex items-center px-6",
                   "bg-primary-500 text-white rounded-r-2xl transition-all duration-300",
                   "hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2",
+                  "disabled:opacity-50 disabled:cursor-not-allowed",
                   searchQuery.trim() ? "opacity-100" : "opacity-70"
                 )}
               >
@@ -250,34 +274,50 @@ export default function Dashboard({ onSearchSubmit, onCategorySelect }: Dashboar
           <h2 className="text-2xl font-bold text-neutral-800 mb-8 text-center">
             Gyors hozzáférés kategóriákhoz
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {quickAccessModules.map((module) => {
-              const Icon = module.icon;
-              return (
-                <button
-                  key={module.id}
-                  onClick={() => onCategorySelect?.(module.id)}
-                  className="group p-6 bg-white rounded-2xl shadow-soft hover:shadow-medium transition-all duration-300 hover:-translate-y-1 border border-neutral-100"
-                >
-                  <div className={cn(
-                    "w-12 h-12 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 text-white",
-                    module.color
-                  )}>
-                    <Icon />
+          
+          {stats.isLoading ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[...Array(4)].map((_, index) => (
+                <div key={index} className="animate-pulse">
+                  <div className="p-6 bg-white rounded-2xl shadow-soft border border-neutral-100">
+                    <div className="w-12 h-12 bg-gray-200 rounded-xl mb-4"></div>
+                    <div className="h-4 bg-gray-200 rounded w-3/4 mb-2"></div>
+                    <div className="h-3 bg-gray-200 rounded w-full mb-3"></div>
+                    <div className="h-3 bg-gray-200 rounded w-1/2"></div>
                   </div>
-                  <h3 className="text-lg font-semibold text-neutral-800 mb-2">
-                    {module.title}
-                  </h3>
-                  <p className="text-sm text-neutral-600 mb-3">
-                    {module.description}
-                  </p>
-                  <div className="text-xs text-primary-600 font-medium">
-                    {module.count}
-                  </div>
-                </button>
-              );
-            })}
-          </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {getQuickAccessModules().map((module) => {
+                const Icon = module.icon;
+                return (
+                  <button
+                    key={module.id}
+                    onClick={() => onCategorySelect?.(module.id)}
+                    className="group p-6 bg-white rounded-2xl shadow-soft hover:shadow-medium transition-all duration-300 hover:-translate-y-1 border border-neutral-100"
+                  >
+                    <div className={cn(
+                      "w-12 h-12 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 text-white",
+                      module.color
+                    )}>
+                      <Icon />
+                    </div>
+                    <h3 className="text-lg font-semibold text-neutral-800 mb-2">
+                      {module.title}
+                    </h3>
+                    <p className="text-sm text-neutral-600 mb-3">
+                      {module.description}
+                    </p>
+                    <div className="text-xs text-primary-600 font-medium">
+                      {module.count}
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          )}
         </div>
       </div>
 
@@ -285,7 +325,7 @@ export default function Dashboard({ onSearchSubmit, onCategorySelect }: Dashboar
       <div className="px-4 sm:px-6 lg:px-8 pb-16">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            {systemStatsDisplay.map((stat, index) => (
+            {getSystemStatsDisplay().map((stat, index) => (
               <div
                 key={index}
                 className="bg-white p-4 rounded-xl shadow-soft border border-neutral-100"

@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-07-07T14:10:58.322041",
+  "duration_seconds": 22.555965,
+  "stats": {
+    "prerequisites_checked": 6,
+    "prerequisites_fixed": 1,
+    "pdfs_found": 34,
+    "pdfs_processed": 3,
+    "errors": 0
+  }
+}

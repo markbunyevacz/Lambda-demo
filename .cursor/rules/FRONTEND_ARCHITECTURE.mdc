@@ -1,31 +1,6 @@
-# Magyar Építőanyag AI - Frontend Architektúra Dokumentáció
-
-## 📋 Tartalomjegyzék
-1. [Áttekintés](#áttekintés)
-2. [Technológiai Stack](#technológiai-stack)
-3. [Projekt Struktúra](#projekt-struktúra)
-4. [Komponens Architektúra](#komponens-architektúra)
-5. [State Management](#state-management)
-6. [API Integráció](#api-integráció)
-7. [Design System](#design-system)
-8. [Függőségi Térképek](#függőségi-térképek)
-9. [Development Guide](#development-guide)
-
 ---
-
-## 🏗️ Áttekintés
-
-A Lambda.hu Magyar Építőanyag AI frontend egy modern, professzionális React alkalmazás, amely természetes nyelvű AI asszisztenst és intelligens termékkeresést biztosít az építőipar számára.
-
-### Fő Célok
-- **Természetes nyelvű interakció**: RAG-alapú AI chat widget
-- **Professzionális UI/UX**: Építőipari identitás modern design nyelvvel
-- **Valós adatok**: PostgreSQL + ChromaDB backend integráció
-- **Reszponzív design**: Desktop és mobil támogatás
-- **Type Safety**: Teljes TypeScript coverage
-
+alwaysApply: true
 ---
-
 ## 🛠️ Technológiai Stack
 
 ### Core Framework

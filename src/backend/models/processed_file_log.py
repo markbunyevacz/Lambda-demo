@@ -25,7 +25,16 @@ class ProcessedFileLog(Base):
     )
 
     def __repr__(self):
-        return (
-            f"<ProcessedFileLog(filename='{self.source_filename}', "
-            f"file_hash='{self.file_hash[:10]}...')>"
-        ) 
+        # ✅ FIXED: Crash-proof __repr__ method - never fails on UTF-8 issues
+        try:
+            # Safe filename conversion
+            safe_filename = str(self.source_filename or "Unknown")
+            safe_filename = safe_filename.encode('utf-8', errors='replace').decode('utf-8')
+            
+            # Safe hash conversion
+            safe_hash = str(self.file_hash or "None")[:10]
+            
+            return f"<ProcessedFileLog(filename='{safe_filename}', file_hash='{safe_hash}...')>"
+        except Exception:
+            # Ultimate fallback - never fails
+            return f"<ProcessedFileLog(id={getattr(self, 'id', 'Unknown')})>" 

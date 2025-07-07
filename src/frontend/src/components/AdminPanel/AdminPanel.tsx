@@ -1,16 +1,14 @@
 'use client';
 
 import React, { useState } from 'react';
-import ExtractionAnalysis from './ExtractionAnalysis'; // Assuming this is now in its own file
-
-// You should create separate components for these for better organization
-const AdminOverview = () => <div>Áttekintés Tartalom (helyőrző)...</div>;
-const AdminProducts = () => <div>Termékek Tartalom (helyőrző)...</div>;
+import ExtractionAnalysis from './ExtractionAnalysis';
+import AdminOverview from './AdminOverview';
+import AdminProducts from './AdminProducts';
 
 type AdminTab = 'overview' | 'products' | 'analysis';
 
 const AdminPanel: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<AdminTab>('analysis');
+  const [activeTab, setActiveTab] = useState<AdminTab>('overview');
 
   const TabButton: React.FC<{
     tabName: AdminTab;
