@@ -570,10 +570,10 @@ class RealPDFProcessor:
         async def process_with_semaphore(pdf_path: Path, index: int, total: int) -> Optional[PDFExtractionResult]:
             """Helper to process a single PDF with semaphore control."""
             async with semaphore:
-                logger.info(f"📄 ({index}/{total}) -> Indul a feldolgozás: {pdf_path.name}")
+                logger.info(f"📄 ({index}/{total}) -> Indul a feldgozás: {pdf_path.name}")
                 try:
                     return await self.process_pdf(pdf_path)
-            except Exception as e:
+                except Exception as e:
                     logger.error(f"❌ Critical error in process_pdf for {pdf_path.name}: {e}", exc_info=True)
                     return None
         

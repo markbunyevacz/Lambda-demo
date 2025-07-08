@@ -148,6 +148,7 @@ yarn-error.log*
 pnpm-debug.log*
 /packages/client/dist
 /packages/client/.next
+/src/frontend/.next/
 
 # Custom
 src/backend/downloads/
@@ -171,3 +172,5 @@ downloads/
 .DS_Store
 *.local
 .env.local
+.venv312/
+/tools/AI-Cursor-Scraping-Assistant/
