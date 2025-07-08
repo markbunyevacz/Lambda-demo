@@ -91,11 +91,12 @@ services:
   frontend:
     build:
       context: ./src/frontend
+      dockerfile: Dockerfile
     command: npm run dev
     volumes:
       - ./src/frontend:/app
+      # Névtelen volume, hogy a node_modules ne íródjon felül a hostról
       - /app/node_modules
-      - /app/.next
     ports:
       - "3000:3000"
     depends_on:

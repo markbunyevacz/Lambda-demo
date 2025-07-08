@@ -209,7 +209,7 @@ class RealPDFProcessor:
             
         # ✅ NEW: Use the DataIngestionService for all DB operations
         if self.db_session:
-            self.ingestion_service = DataIngestionService(self.db_session)
+            self.ingestion_service = DataIngestionService(db_session=self.db_session)
             self.processed_file_hashes = (
                 self.ingestion_service.load_processed_hashes()
             )
