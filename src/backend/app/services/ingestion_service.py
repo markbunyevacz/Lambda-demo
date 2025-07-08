@@ -1,4 +1,3 @@
-
 import logging
 import os
 from datetime import datetime
@@ -7,20 +6,15 @@ from typing import Optional, Set, List, Dict, Any, Tuple
 from sqlalchemy.orm import Session
 # JAVÍTÁS: Hiányzó import a PDFExtractionResult típushoz
 from processing.real_pdf_processor import PDFExtractionResult
+from sqlalchemy.exc import IntegrityError
+from sqlalchemy import inspect
 
-
-try:
-    from app.database import SessionLocal
-    from app.models.product import Product
-    from app.models.manufacturer import Manufacturer
-    from app.models.category import Category
-    from models.processed_file_log import ProcessedFileLog
-except ImportError:
-    SessionLocal = None
-    Product = None
-    Manufacturer = None
-    Category = None
-    ProcessedFileLog = None
+from app.database import SessionLocal
+from app.models.product import Product, product_category_association
+from app.models.manufacturer import Manufacturer
+from app.models.category import Category
+from app.models.processed_file_log import ProcessedFileLog
+from app.utils import clean_utf8
 
 logger = logging.getLogger(__name__)
 

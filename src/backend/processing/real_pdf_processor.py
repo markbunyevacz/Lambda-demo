@@ -85,6 +85,8 @@ except ImportError:
     class DataIngestionService:
         pass
 
+# ✅ NEW: Import the UTF-8 cleaning utility
+from app.utils import clean_utf8
 
 # Load environment variables
 load_dotenv()  # Current directory first
@@ -467,11 +469,11 @@ class RealPDFProcessor:
         processing_time = (datetime.now() - start_time).total_seconds()
 
         return PDFExtractionResult(
-            product_name=(
+            product_name=clean_utf8(
                 ai_analysis.get("product_identification", {}).get("name")
                 or pdf_path.stem
             ),
-            extracted_text=text_content,
+            extracted_text=clean_utf8(text_content),
             technical_specs=ai_analysis.get(
                 "technical_specifications", pattern_specs
             ),

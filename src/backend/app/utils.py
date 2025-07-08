@@ -3,6 +3,9 @@ Project-wide utility functions.
 """
 import os
 from pathlib import Path
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 def get_project_root() -> Path:
@@ -33,4 +36,26 @@ def get_project_root() -> Path:
         return Path(__file__).resolve().parents[2]
     except IndexError:
         # Final fallback
-        return Path.cwd() 
+        return Path.cwd()
+
+
+def clean_utf8(text: str) -> str:
+    """
+    Cleans a string to ensure it's valid UTF-8.
+    It handles improperly encoded characters by attempting to decode using
+    common fallbacks and replacing errors if necessary.
+    """
+    if not isinstance(text, str):
+        return text
+    try:
+        # Check if the text is already valid UTF-8
+        text.encode('utf-8')
+        return text
+    except UnicodeEncodeError:
+        logger.warning(f"Fixing UTF-8 encoding issue in text: {text[:50]}...")
+        # Attempt to fix the string by decoding with a common fallback and re-encoding
+        try:
+            return text.encode('latin-1').decode('utf-8')
+        except UnicodeError:
+            # Final fallback: replace invalid characters
+            return text.encode('utf-8', 'replace').decode('utf-8') 
