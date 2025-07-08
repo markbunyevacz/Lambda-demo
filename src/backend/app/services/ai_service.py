@@ -31,7 +31,7 @@ class ClaudeAIAnalyzer:
             # Call Claude API directly with raw prompt
             response = self.client.messages.create(
                 model=self.model,
-                max_tokens=12000,
+                max_tokens=8192,
                 temperature=0.0,  # Low temperature for factual extraction
                 system="I need losless extration from this PDF, without summarization, agrregation and compress of text",
                 messages=[{"role": "user", "content": prompt}],
