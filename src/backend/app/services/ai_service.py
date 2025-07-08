@@ -25,27 +25,50 @@ class ClaudeAIAnalyzer:
         logger.info(f"✅ Claude AI initialized: {self.model}")
     
     async def claude_api_call(self, prompt: str) -> str:
-        """Simple Claude API call for raw text extraction"""
+        """Simple Claude API call for raw text extraction with adaptive max_tokens handling."""
         
-        try:
-            # Call Claude API directly with raw prompt
-            response = self.client.messages.create(
-                model=self.model,
-                max_tokens=8192,
-                temperature=0.0,  # Low temperature for factual extraction
-                system="I need losless extration from this PDF, without summarization, agrregation and compress of text",
-                messages=[{"role": "user", "content": prompt}],
-            )
-            
-            # Return raw response text
-            response_text = response.content[0].text
-            response_len = len(response_text)
-            logger.info(f"✅ Claude API call complete, length: {response_len}")
-            return response_text
-            
-        except Exception as e:
-            logger.error(f"❌ Claude API call error: {e}")
-            raise
+        max_tokens = 8192  # Start with the documented hard-limit for Claude 3.5 Haiku
+        min_tokens = 1024   # Do not go below this – avoids truncating every answer
+        decrement = 1024    # Step to reduce if the API complains
+
+        last_error: Exception | None = None
+
+        while max_tokens >= min_tokens:
+            try:
+                response = self.client.messages.create(
+                    model=self.model,
+                    max_tokens=max_tokens,
+                    temperature=0.0,
+                    system=(
+                        "I need losless extration from this PDF, without summarization, "
+                        "agrregation and compress of text"
+                    ),
+                    messages=[{"role": "user", "content": prompt}],
+                )
+                response_text = response.content[0].text
+                logger.info(
+                    f"✅ Claude API call complete (max_tokens={max_tokens}), length: {len(response_text)}"
+                )
+                return response_text
+            except Exception as e:
+                err_msg = str(e)
+                last_error = e
+                # Detect token limit error pattern
+                if "max_tokens" in err_msg and ">" in err_msg:
+                    logger.warning(
+                        f"⚠️ Claude API token limit error with max_tokens={max_tokens}. Retrying with a lower value."
+                    )
+                    max_tokens -= decrement
+                    continue
+                # Other errors – re-raise immediately
+                logger.error(f"❌ Claude API call error: {e}")
+                raise
+
+        # If we exit the loop without returning we re-raise the last captured error
+        logger.error("❌ Claude API call failed after adapting max_tokens")
+        if last_error:
+            raise last_error
+        raise RuntimeError("Claude API call failed for unknown reasons")
 
     async def analyze_rockwool_pdf(
         self, text_content: str, tables_data: List[Dict], filename: str
