@@ -1,0 +1,226 @@
+{
+  "demo_info": {
+    "timestamp": "2025-07-06T21:48:05.733279",
+    "total_files_processed": 3,
+    "capabilities_demonstrated": [
+      "Hibrid táblázat extraction",
+      "Oszlop×sor méret logging",
+      "Raw Haiku AS-IS extraction",
+      "Comprehensive tracking",
+      "Összehasonlító elemzés"
+    ]
+  },
+  "individual_results": [
+    {
+      "filename": "A bazaltkő természetes erejével.pdf",
+      "file_size_bytes": 979500,
+      "file_size_kb": 956.54296875,
+      "timestamp": "2025-07-06T21:47:02.329261",
+      "methods": {
+        "basic_extraction": {
+          "success": true,
+          "processing_time": 1.041864,
+          "text_length": 16769,
+          "tables_count": 2,
+          "total_cells": 6,
+          "table_dimensions": [
+            "2×2",
+            "1×2"
+          ],
+          "extraction_method": "pdfplumber"
+        },
+        "hybrid_extraction": {
+          "success": true,
+          "processing_time": 33.219003,
+          "confidence_score": 0.194,
+          "text_extraction_method": "pdfplumber",
+          "table_extraction_method": "hybrid_camelot_stream",
+          "advanced_tables_used": true,
+          "table_quality_score": 7545.2106445217,
+          "extraction_attempts": [
+            {
+              "method": "basic_pdfplumber",
+              "tables_found": 2,
+              "success": true
+            },
+            {
+              "method": "advanced_hybrid",
+              "extractor_used": "camelot_stream",
+              "tables_found": 1,
+              "quality_score": 7545.2106445217,
+              "confidence": 0.94,
+              "success": true
+            }
+          ],
+          "metadata": {
+            "file_size_bytes": 979500,
+            "file_modified": 1751554289.4658234,
+            "text_length": 16769,
+            "tables_found": 1,
+            "ai_analysis_fields": [
+              "product_identification",
+              "technical_specifications",
+              "extraction_metadata"
+            ],
+            "confidence_factors": {
+              "text_quality": 1.0,
+              "table_quality": 0.8,
+              "ai_confidence": 0.0
+            }
+          }
+        },
+        "raw_haiku": {
+          "success": true,
+          "processing_time": 0.207778,
+          "confidence": 0.0,
+          "raw_data": {
+            "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3.5-haiku-20241022 was not found. Did you mean claude-3-5-haiku-20241022?'}}",
+            "confidence": 0.0
+          }
+        }
+      }
+    },
+    {
+      "filename": "Airrock HD FB1 termékadatlap.pdf",
+      "file_size_bytes": 583153,
+      "file_size_kb": 569.4853515625,
+      "timestamp": "2025-07-06T21:47:36.800903",
+      "methods": {
+        "basic_extraction": {
+          "success": true,
+          "processing_time": 0.252129,
+          "text_length": 4311,
+          "tables_count": 1,
+          "total_cells": 60,
+          "table_dimensions": [
+            "12×5"
+          ],
+          "extraction_method": "pdfplumber"
+        },
+        "hybrid_extraction": {
+          "success": true,
+          "processing_time": 13.954305,
+          "confidence_score": 0.342,
+          "text_extraction_method": "pdfplumber",
+          "table_extraction_method": "hybrid_camelot_stream",
+          "advanced_tables_used": true,
+          "table_quality_score": 9481.73265583294,
+          "extraction_attempts": [
+            {
+              "method": "basic_pdfplumber",
+              "tables_found": 1,
+              "success": true
+            },
+            {
+              "method": "advanced_hybrid",
+              "extractor_used": "camelot_stream",
+              "tables_found": 1,
+              "quality_score": 9481.73265583294,
+              "confidence": 0.94,
+              "success": true
+            }
+          ],
+          "metadata": {
+            "file_size_bytes": 583153,
+            "file_modified": 1751554868.2849321,
+            "text_length": 4311,
+            "tables_found": 1,
+            "ai_analysis_fields": [
+              "product_name",
+              "product_type",
+              "application",
+              "product_identification",
+              "technical_specifications",
+              "extraction_metadata"
+            ],
+            "confidence_factors": {
+              "text_quality": 1.0,
+              "table_quality": 1.0,
+              "ai_confidence": 0.0
+            }
+          }
+        },
+        "raw_haiku": {
+          "success": true,
+          "processing_time": 0.209001,
+          "confidence": 0.0,
+          "raw_data": {
+            "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3.5-haiku-20241022 was not found. Did you mean claude-3-5-haiku-20241022?'}}",
+            "confidence": 0.0
+          }
+        }
+      }
+    },
+    {
+      "filename": "Airrock HD termékadatlap.pdf",
+      "file_size_bytes": 558123,
+      "file_size_kb": 545.0419921875,
+      "timestamp": "2025-07-06T21:47:51.220333",
+      "methods": {
+        "basic_extraction": {
+          "success": true,
+          "processing_time": 0.31052,
+          "text_length": 4075,
+          "tables_count": 1,
+          "total_cells": 60,
+          "table_dimensions": [
+            "12×5"
+          ],
+          "extraction_method": "pdfplumber"
+        },
+        "hybrid_extraction": {
+          "success": true,
+          "processing_time": 13.981532,
+          "confidence_score": 0.342,
+          "text_extraction_method": "pdfplumber",
+          "table_extraction_method": "hybrid_camelot_stream",
+          "advanced_tables_used": true,
+          "table_quality_score": 9080.345896015693,
+          "extraction_attempts": [
+            {
+              "method": "basic_pdfplumber",
+              "tables_found": 1,
+              "success": true
+            },
+            {
+              "method": "advanced_hybrid",
+              "extractor_used": "camelot_stream",
+              "tables_found": 1,
+              "quality_score": 9080.345896015693,
+              "confidence": 0.94,
+              "success": true
+            }
+          ],
+          "metadata": {
+            "file_size_bytes": 558123,
+            "file_modified": 1751554868.3069332,
+            "text_length": 4075,
+            "tables_found": 1,
+            "ai_analysis_fields": [
+              "product_name",
+              "product_type",
+              "intended_use",
+              "product_identification",
+              "technical_specifications",
+              "extraction_metadata"
+            ],
+            "confidence_factors": {
+              "text_quality": 1.0,
+              "table_quality": 1.0,
+              "ai_confidence": 0.0
+            }
+          }
+        },
+        "raw_haiku": {
+          "success": true,
+          "processing_time": 0.215731,
+          "confidence": 0.0,
+          "raw_data": {
+            "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3.5-haiku-20241022 was not found. Did you mean claude-3-5-haiku-20241022?'}}",
+            "confidence": 0.0
+          }
+        }
+      }
+    }
+  ]
+}

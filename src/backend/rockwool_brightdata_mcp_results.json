@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "products_scraped": 0,
+  "products": [],
+  "scraper_type": "brightdata_mcp_ai",
+  "target_url": "https://www.rockwool.com/hu/muszaki-informaciok/termekadatlapok/",
+  "scraped_at": "2025-06-30T01:25:11.922654",
+  "ai_model_used": "claude-3-5-sonnet-20241022",
+  "tools_available": 48,
+  "ai_response_raw": "Based on the scraped data, I'll create a structured JSON with the key product information:\n\n```json\n{\n  \"products\": [\n    {\n      \"name\": {\n        \"hu\": \"Durock\",\n        \"en\": \"Durock\"\n      },\n      \"category\": \"Lapostető szigetelő lemezek\",\n      \"description\": \"Kétrétegű (inhomogén) lapostető-hőszigetelő lemez egyenes rétegrendű, egyhéjú, nem járható lapostetők hőszigeteleséhez\",\n      \"application_areas\": [\n        \"Egyenes rétegrendű, nem járható, egyhéjú lapostetők hő- és hangszigetelése\",\n        \"Tűzterjedés megakadályozása\"\n      ],\n      \"technical_specs\": {\n        \"thermal_conductivity\": \"λD ≤ 0,040 W•m-1•K-1\",\n        \"fire_class\": \"A1 (EN 13501-1)\",\n        \"melting_point\": \"> 1000°C\",\n        \"compressive_strength\": {\n          \"top_layer\": \"≥ 80 kPa\",\n          \"bottom_layer\": \"≥ 60 kPa\"\n        },\n        \"point_load\": \"≥ 700 N\",\n        \"tensile_strength\": \"≥ 10 kPa\",\n        \"water_absorption\": \"≤ 1,0 kg•m–2\",\n        \"vapor_diffusion\": \"μ = 1\"\n      },\n      \"dimensions\": {\n        \"thicknesses\": [\"60mm\", \"80mm\", \"100mm\", \"120mm\", \"140mm\", \"150mm\"],\n        \"width\": \"1220mm\",\n        \"length\": \"2020mm\"\n      },\n      \"pdf_urls\": {\n        \"datasheet\": \"/siteassets/rw-hu/termekadatlapok/lapostet-es-ipari-csarnok/durock-termekadatlap.pdf\",\n        \"dop\": \"https://rw-doptool.webhotel.net/?download=591461c1a6c0a\"\n      }\n    },\n    {\n      \"name\": {\n        \"hu\": \"FRONTROCK SUPER\",\n        \"en\": \"FRONTROCK SUPER\" \n      },\n      \"category\": \"Vakolható homlokzat\",\n      \"description\": \"Kétrétegű (inhomogén) vakolható homlokzati hőszigetelő lemez\",\n      \"application_areas\": [\n        \"Épületek homlokzatának neméghető, páraáteresztő hő- és hangszigetelése\",\n        \"Homlokzati tűzterjedési gátak kialakítása\"\n      ],\n      \"technical_specs\": {\n        \"thermal_conductivity\": \"λD = 0,036 W•m-1•K-1\",\n        \"fire_class\": \"A1 (EN 13501-1)\", \n        \"melting_point\": \"> 1000°C\",\n        \"compressive_strength\": \"≥ 20 kPa\",\n        \"point_load\": \"≥ 250 N\",\n        \"tensile_strength\": \"≥ 10 kPa\",\n        \"water_absorption\": {\n          \"short_term\": \"≤ 1,0 kg•m–2\",\n          \"long_term\": \"≤ 3,0 kg•m–2\"\n        },\n        \"vapor_diffusion\": \"μ = 1\"\n      },\n      \"dimensions\": {\n        \"thicknesses\": [\"80mm\", \"100mm\", \"120mm\", \"140mm\", \"150mm\", \"160mm\", \"180mm\", \"200mm\"],\n        \"width\": \"600mm\", \n        \"length\": \"1000mm\"\n      },\n      \"pdf_urls\": {\n        \"datasheet\": \"/siteassets/rw-hu/termekadatlapok/homlokzati-hszigeteles/front",
+  "metadata": {
+    "processing_time_seconds": null,
+    "mcp_server_type": "brightdata",
+    "response_length_chars": 2490,
+    "json_extraction_method": "fallback"
+  }
+}

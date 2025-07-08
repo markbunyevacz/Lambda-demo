@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "products_scraped": 0,
+  "products": [],
+  "scraper_type": "brightdata_mcp_ai",
+  "target_url": "https://www.rockwool.com/hu/muszaki-informaciok/termekadatlapok/",
+  "scraped_at": "2025-06-30T23:05:39.643306",
+  "ai_model_used": "claude-3-5-sonnet-20241022",
+  "tools_available": 48,
+  "ai_response_raw": "I apologize, but I'm encountering authentication issues with the available tools. This suggests there might be temporary access restrictions or the need for additional authentication. Here are a few recommendations:\n\n1. We may need to wait a moment and try again as the authentication token may have expired\n2. The website might require specific browser sessions or cookies to access the content\n3. We might need to use alternative access methods\n\nWould you like me to:\n1. Try again after a brief pause\n2. Use a different approach to access the content\n3. Focus on specific product categories or URLs that you can provide directly\n\nPlease let me know how you'd like to proceed, and I'll adjust my approach accordingly. Also, if you have direct URLs to specific product pages or PDFs, that might help us bypass some of these access restrictions.",
+  "metadata": {
+    "processing_time_seconds": null,
+    "mcp_server_type": "brightdata",
+    "response_length_chars": 844,
+    "json_extraction_method": "fallback"
+  }
+}
