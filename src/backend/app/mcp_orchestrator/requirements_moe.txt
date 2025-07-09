@@ -1,0 +1,79 @@
+# Mixture of Experts (MoE) Architecture Dependencies
+# =====================================================
+
+# Core Python packages
+asyncio>=3.4.3
+dataclasses>=0.8
+typing>=3.7.4
+
+# Machine Learning and Scientific Computing
+scikit-learn>=1.3.0      # For TF-IDF vectorization and cosine similarity
+numpy>=1.24.0            # For numerical computations and statistics
+scipy>=1.10.0            # For scientific computing functions
+
+# PDF Processing Libraries
+pdfplumber>=0.9.0        # Primary PDF extraction strategy
+PyPDF2>=3.0.0            # Alternative PDF extraction
+PyMuPDF>=1.23.0          # Alternative PDF extraction (fitz)
+pytesseract>=0.3.10      # OCR for image-based PDFs
+Pillow>=10.0.0           # Image processing for OCR
+
+# AI and Language Processing
+anthropic>=0.25.0        # Claude AI integration
+openai>=1.12.0           # Alternative AI provider
+langchain>=0.1.0         # LLM integration framework
+
+# Web Framework and API
+fastapi>=0.104.0         # Web framework
+uvicorn>=0.24.0          # ASGI server
+pydantic>=2.5.0          # Data validation
+httpx>=0.25.0            # Async HTTP client
+
+# Database and Storage
+sqlalchemy>=2.0.0        # ORM for PostgreSQL
+psycopg2-binary>=2.9.0   # PostgreSQL adapter
+chromadb>=0.4.0          # Vector database
+redis>=5.0.0             # Caching and task queue
+
+# Task Queue and Background Processing
+celery>=5.3.0            # Distributed task queue
+celery[redis]>=5.3.0     # Redis broker for Celery
+
+# Data Processing and Analysis
+deepdiff>=6.0.0          # For comparing extraction results
+python-magic>=0.4.0     # File type detection
+chardet>=5.2.0           # Character encoding detection
+
+# Utilities and Helpers
+pathlib>=1.0.1           # Path manipulation
+uuid>=1.30               # Unique identifier generation
+datetime>=5.0            # Date and time handling
+logging>=0.4.9.6         # Logging framework
+
+# Testing and Development
+pytest>=7.4.0           # Testing framework
+pytest-asyncio>=0.21.0  # Async testing support
+pytest-mock>=3.12.0     # Mocking for tests
+black>=23.0.0            # Code formatting
+mypy>=1.7.0              # Type checking
+
+# Environment and Configuration
+python-dotenv>=1.0.0     # Environment variable management
+pyyaml>=6.0.1            # YAML configuration files
+tomli>=2.0.1             # TOML configuration support
+
+# Performance and Monitoring
+memory-profiler>=0.61.0  # Memory usage profiling
+psutil>=5.9.0            # System and process monitoring
+prometheus-client>=0.19.0 # Metrics collection
+
+# Optional: Advanced Features
+transformers>=4.36.0     # For advanced NLP features (optional)
+torch>=2.1.0             # PyTorch for ML models (optional)
+sentence-transformers>=2.2.0 # For semantic similarity (optional)
+
+# Development Dependencies (only for development)
+jupyter>=1.0.0           # For development notebooks
+matplotlib>=3.8.0        # For visualization during development
+seaborn>=0.13.0          # For statistical visualization
+pandas>=2.1.0            # For data analysis during development

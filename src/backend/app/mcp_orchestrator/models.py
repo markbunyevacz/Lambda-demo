@@ -28,6 +28,10 @@ class StrategyType(Enum):
     PDFPLUMBER = "pdfplumber"
     PYMUPDF = "pymupdf"
     NATIVE_PDF = "native_pdf"
+    OCR = "ocr"
+    MOE = "moe"
+    MANUFACTURER_SPECIFIC = "manufacturer_specific"
+    DOCUMENT_TYPE_SPECIFIC = "document_type_specific"
     UNKNOWN = "unknown"
 
 class ConfidenceLevel(Enum):
@@ -49,6 +53,11 @@ class ExtractionTask(BaseModel):
     status: TaskStatus = TaskStatus.PENDING
     input_data: Optional[Dict[str, Any]] = None
     created_at: datetime = Field(default_factory=datetime.utcnow)
+    
+    # MoE-specific fields
+    manufacturer: Optional[str] = None
+    document_type: Optional[str] = None
+    preferred_strategy: Optional[str] = None
 
 
 @dataclass
@@ -60,6 +69,14 @@ class ExtractionResult:
     confidence_score: float = 0.0
     execution_time_seconds: float = 0.0
     error_message: Optional[str] = None
+    
+    # Enhanced fields for better analysis
+    method_used: Optional[str] = None
+    pages_processed: Optional[int] = None
+    tables_found: Optional[int] = None
+    text_length: Optional[int] = None
+    data_completeness: Optional[float] = None
+    structure_quality: Optional[float] = None
 
 
 @dataclass
