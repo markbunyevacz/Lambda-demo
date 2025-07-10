@@ -59,7 +59,7 @@ class AnalysisService:
     ) -> Dict[str, Any]:
         """
         Analyze PDF content and return structured data.
-        
+
         This method is used by the admin interface for testing configurations.
         
         Args:
@@ -74,7 +74,7 @@ class AnalysisService:
             # Use the existing analyze_rockwool_pdf method
             result = await self.analyze_rockwool_pdf(text_content, tables_data, filename)
             return result
-            
+
         except Exception as e:
             logger.error(f"PDF content analysis failed: {e}")
             return {
@@ -82,7 +82,7 @@ class AnalysisService:
                 "extraction_metadata": {"confidence_score": 0.0},
                 "error": str(e)
             }
-    
+
     def _create_extraction_prompt(
         self, text_content: str, tables_data: List[Dict], filename: str
     ) -> str:

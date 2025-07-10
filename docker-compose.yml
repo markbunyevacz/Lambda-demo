@@ -1,28 +1,29 @@
 services:
   db:
     image: postgres:15-alpine
+    container_name: lambda-db-1
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: lambda_db
+      LC_ALL: C.UTF-8
+      LANG: C.UTF-8
     ports:
       - "5432:5432"
-    env_file:
-      - .env
-    environment:
-      # Explicit UTF-8 encoding for Hungarian characters
-      - POSTGRES_INITDB_ARGS=--encoding=UTF8 --locale=C.UTF-8
-      - LC_ALL=C.UTF-8
-      - LANG=C.UTF-8
     restart: unless-stopped
     networks:
       - lambda_network
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U admin -d lambda"]
+      test: ["CMD-SHELL", "pg_isready -U admin -d lambda_db"]
       interval: 10s
       timeout: 5s
       retries: 5
 
   cache:
     image: redis:6.2-alpine
+    container_name: lambda-cache-1
     restart: always
     ports:
       - "6379:6379"
@@ -38,7 +39,7 @@ services:
     build:
       context: ./src/backend
       dockerfile: Dockerfile
-    # Default production command - override in docker-compose.dev.yml for development
+    container_name: lambda-backend-1
     command: poetry run uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
     volumes:
       - ./src/backend:/app
@@ -49,9 +50,6 @@ services:
     depends_on:
       db:
         condition: service_healthy
-      cache:
-        condition: service_started
-    restart: unless-stopped
     networks:
       - lambda_network
 
@@ -59,55 +57,41 @@ services:
     build:
       context: ./src/backend
       dockerfile: Dockerfile
+    container_name: lambda-celery_worker-1
     command: poetry run celery -A app.celery_app.app worker --loglevel=info
     volumes:
       - ./src/backend:/app
     env_file:
       - .env
     depends_on:
-      backend:
-        condition: service_started
-      cache:
-        condition: service_started
+      - backend
+      - cache
     restart: unless-stopped
     networks:
       - lambda_network
-      
-  # celery_flower:
-  #   image: mher/flower
-  #   container_name: lambda-celery_flower-1
-  #   ports:
-  #     - "5555:5555"
-  #   environment:
-  #     - CELERY_BROKER_URL=redis://cache:6379/0
-  #     - FLOWER_PORT=5555
-  #   depends_on:
-  #     - backend
-  #     - cache
-  #   restart: unless-stopped
-  #   networks:
-  #     - lambda_network
 
   frontend:
     build:
       context: ./src/frontend
       dockerfile: Dockerfile
+    container_name: lambda-frontend-1
+    environment:
+      - NEXT_PUBLIC_API_URL=http://backend:8000
     command: npm run dev
     volumes:
       - ./src/frontend:/app
-      # Névtelen volume, hogy a node_modules ne íródjon felül a hostról
       - /app/node_modules
     ports:
       - "3000:3000"
     depends_on:
-      backend:
-        condition: service_started
+      - backend
     restart: unless-stopped
     networks:
       - lambda_network
 
   chroma:
     image: chromadb/chroma
+    container_name: lambda-chroma-1
     ports:
       - "8001:8000"
     volumes:
@@ -124,4 +108,5 @@ volumes:
 
 networks:
   lambda_network:
+    driver: bridge
     name: lambda_network 

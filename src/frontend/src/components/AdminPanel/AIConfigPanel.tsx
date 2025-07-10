@@ -15,20 +15,24 @@ import {
   Clock,
   Zap,
   Edit,
-  ExternalLink,
-  Calculator,
+  Key,
   Brain,
-  MessageSquare
+  MessageSquare,
+  Calculator
 } from 'lucide-react';
+
+// Interfaces
+interface AIModel {
+  model_name: string;
+  input_price: number;
+  output_price: number;
+  notes?: string;
+}
 
 interface AIProvider {
   name: string;
   display_name: string;
-  models: {
-    model_name: string;
-    input_price: number;
-    output_price: number;
-  }[];
+  models: AIModel[];
 }
 
 interface AIModelConfig {
@@ -54,14 +58,14 @@ interface PromptTemplates {
 }
 
 interface UsageStats {
-  total_requests: number;
-  total_cost: number;
-  total_input_tokens: number;
-  total_output_tokens: number;
-  average_processing_time: number;
-  daily_cost: number;
-  daily_requests: number;
-  last_updated: string;
+    total_requests: number;
+    total_cost: number;
+    total_input_tokens: number;
+    total_output_tokens: number;
+    average_processing_time: number;
+    daily_cost: number;
+    daily_requests: number;
+    last_updated: string;
 }
 
 interface CostEstimate {
@@ -73,107 +77,118 @@ interface CostEstimate {
 
 const AIConfigPanel: React.FC = () => {
   // State management
-  const [config, setConfig] = useState<AIModelConfig>({
-    model_name: 'claude-3-5-haiku-20241022',
-    provider: 'anthropic',
-    temperature: 0.0,
-    max_tokens: 8192,
-    min_tokens: 2048,
-    token_decrement: 1024,
-    max_retries: 3,
-    timeout_seconds: 30,
-    max_text_length: 8000,
-    max_tables_summary: 3
-  });
-  
-  const [prompts, setPrompts] = useState<PromptTemplates>({
-    extraction_prompt: '',
-    table_summary_template: '',
-    no_tables_message: '',
-    error_fallback_template: ''
-  });
-  
+  const [config, setConfig] = useState<AIModelConfig | null>(null);
+  const [prompts, setPrompts] = useState<PromptTemplates | null>(null);
   const [providers, setProviders] = useState<AIProvider[]>([]);
-  const [stats, setStats] = useState<UsageStats>({
-    total_requests: 0,
-    total_cost: 0,
-    total_input_tokens: 0,
-    total_output_tokens: 0,
-    average_processing_time: 0,
-    daily_cost: 0,
-    daily_requests: 0,
-    last_updated: new Date().toISOString()
-  });
-  
+  const [stats, setStats] = useState<UsageStats | null>(null);
   const [costEstimate, setCostEstimate] = useState<CostEstimate>({
     input_cost: 0,
     output_cost: 0,
     total_cost: 0,
     per_request_estimate: 0
   });
-  
+  const [keyStatuses, setKeyStatuses] = useState<Record<string, 'set' | 'not_set' | 'valid' | 'invalid'>>({});
+  const [validatingProvider, setValidatingProvider] = useState<string | null>(null);
+
   // UI state
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
-  const [activePromptEditor, setActivePromptEditor] = useState<string | null>(null);
+  const [activePromptEditor, setActivePromptEditor] = useState<keyof PromptTemplates | null>(null);
   const [testResults, setTestResults] = useState<any>(null);
   const [isCustomModel, setIsCustomModel] = useState(false);
 
   // Load data on component mount
   useEffect(() => {
-    loadProviders();
-    loadCurrentConfig();
-    loadUsageStats();
+    const fetchInitialData = async () => {
+      setLoading(true);
+      setError(null);
+      try {
+        await Promise.all([
+          loadProviders(),
+          loadCurrentConfig(),
+          loadUsageStats(),
+          loadKeyStatuses()
+        ]);
+      } catch (err: any) {
+        setError(err.message || 'Failed to load initial data.');
+        console.error('Initial data loading error:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchInitialData();
   }, []);
 
   // Real-time cost calculation
   useEffect(() => {
-    calculateCostEstimate();
+    if (providers.length > 0 && config) {
+      calculateCostEstimate();
+    }
   }, [config, providers]);
 
   const loadProviders = async () => {
-    try {
-      const response = await fetch('/api/ai-config/providers');
-      const data = await response.json();
+    const response = await fetch('/api/admin/ai-config/providers');
+    if (!response.ok) {
+      throw new Error(`Failed to load AI providers: ${response.status} ${response.statusText}`);
+    }
+    const data = await response.json();
+    if (data && data.providers) {
       setProviders(data.providers);
-    } catch (err) {
-      setError('Failed to load AI providers');
-      console.error('Provider loading error:', err);
     }
   };
 
   const loadCurrentConfig = async () => {
-    try {
-      const response = await fetch('/api/ai-config/current');
-      const data = await response.json();
+    const response = await fetch('/api/admin/ai-config/status');
+    if (!response.ok) {
+      throw new Error(`Failed to load current config: ${response.status} ${response.statusText}`);
+    }
+    const data = await response.json();
+    if (data && data.model) {
       setConfig(data.model);
-      setPrompts(data.prompts);
-      setIsCustomModel(!providers.some(p => 
-        p.models.some(m => m.model_name === data.model.model_name)
-      ));
-    } catch (err) {
-      setError('Failed to load current configuration');
-      console.error('Config loading error:', err);
+    }
+    if (data && data.prompt_templates) {
+      setPrompts(data.prompt_templates);
     }
   };
 
   const loadUsageStats = async () => {
+    const response = await fetch('/api/admin/ai-config/usage/stats');
+    if (!response.ok) {
+      throw new Error(`Failed to load usage stats: ${response.status} ${response.statusText}`);
+    }
+    const data = await response.json();
+    if (data) {
+      setStats({
+        total_requests: data.total_requests || 0,
+        total_cost: data.total_cost_usd || 0,
+        total_input_tokens: data.total_tokens || 0,
+        total_output_tokens: 0,
+        average_processing_time: data.average_tokens_per_request || 0,
+        daily_cost: data.cost_today_usd || 0,
+        daily_requests: data.requests_today || 0,
+        last_updated: new Date().toISOString()
+      });
+    }
+  };
+
+  const loadKeyStatuses = async () => {
     try {
-      const response = await fetch('/api/ai-config/stats');
-      const data = await response.json();
-      setStats(data);
+      const response = await fetch('/api/admin/ai-config/key-status');
+      if (response.ok) {
+        const statuses = await response.json();
+        setKeyStatuses(statuses);
+      }
     } catch (err) {
-      console.error('Stats loading error:', err);
+      console.error('Failed to load key statuses:', err);
     }
   };
 
   const calculateCostEstimate = () => {
-    if (!providers.length) return;
+    if (!providers.length || !config) return;
 
     let pricing = null;
-    
-    // Find pricing for current model
+
     for (const provider of providers) {
       const model = provider.models.find(m => m.model_name === config.model_name);
       if (model) {
@@ -185,7 +200,6 @@ const AIConfigPanel: React.FC = () => {
       }
     }
 
-    // Use custom pricing if available
     if (!pricing && isCustomModel && config.custom_input_price && config.custom_output_price) {
       pricing = {
         input_tokens_per_million: config.custom_input_price,
@@ -194,14 +208,13 @@ const AIConfigPanel: React.FC = () => {
     }
 
     if (pricing) {
-      // Estimate typical usage (8000 input tokens, 2000 output tokens per request)
       const typicalInput = 8000;
       const typicalOutput = 2000;
-      
+
       const inputCost = (typicalInput / 1_000_000) * pricing.input_tokens_per_million;
       const outputCost = (typicalOutput / 1_000_000) * pricing.output_tokens_per_million;
       const totalCost = inputCost + outputCost;
-      
+
       setCostEstimate({
         input_cost: inputCost,
         output_cost: outputCost,
@@ -211,13 +224,14 @@ const AIConfigPanel: React.FC = () => {
     }
   };
 
+
   const handleSaveConfig = async () => {
     setLoading(true);
     setError(null);
     setSuccess(null);
 
     try {
-      const response = await fetch('/api/ai-config/update', {
+      const response = await fetch('/api/admin/ai-config/model-config', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(config)
@@ -229,7 +243,7 @@ const AIConfigPanel: React.FC = () => {
       }
 
       setSuccess('Configuration updated successfully!');
-      await loadUsageStats(); // Reload stats
+      await loadUsageStats();
     } catch (err: any) {
       setError(err.message);
     } finally {
@@ -237,16 +251,21 @@ const AIConfigPanel: React.FC = () => {
     }
   };
 
-  const handleSavePrompts = async () => {
+  const handleSavePrompt = async (templateName: keyof PromptTemplates) => {
+    if (!prompts) return;
+
     setLoading(true);
     setError(null);
     setSuccess(null);
 
     try {
-      const response = await fetch('/api/ai-config/prompts', {
+      const response = await fetch('/api/admin/ai-config/prompt-template', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(prompts)
+        body: JSON.stringify({
+          template_name: templateName,
+          template_content: prompts[templateName]
+        })
       });
 
       if (!response.ok) {
@@ -254,7 +273,8 @@ const AIConfigPanel: React.FC = () => {
         throw new Error(errorData.detail || 'Failed to update prompts');
       }
 
-      setSuccess('Prompts updated successfully!');
+      setSuccess(`Prompt '${templateName}' updated successfully!`);
+      setActivePromptEditor(null);
     } catch (err: any) {
       setError(err.message);
     } finally {
@@ -268,13 +288,9 @@ const AIConfigPanel: React.FC = () => {
     setTestResults(null);
 
     try {
-      const response = await fetch('/api/ai-config/test', {
+      const response = await fetch('/api/admin/ai-config/test-configuration', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          test_text: "Sample PDF content for testing AI configuration...",
-          test_tables: [{"header": ["Parameter", "Value"], "rows": [["Test", "123"]]}]
-        })
+        headers: { 'Content-Type': 'application/json' }
       });
 
       if (!response.ok) {
@@ -292,57 +308,138 @@ const AIConfigPanel: React.FC = () => {
     }
   };
 
-  const PromptEditor: React.FC<{
-    title: string;
-    value: string;
-    onChange: (value: string) => void;
-    placeholder: string;
-  }> = ({ title, value, onChange, placeholder }) => (
-    <div className="bg-white rounded-lg border border-neutral-200 p-4">
-      <div className="flex items-center justify-between mb-3">
-        <h4 className="font-medium text-neutral-800 flex items-center">
-          <MessageSquare className="h-4 w-4 mr-2" />
-          {title}
-        </h4>
-        <button
-          onClick={() => setActivePromptEditor(activePromptEditor === title ? null : title)}
-          className="text-primary-600 hover:text-primary-700"
-        >
-          <Edit className="h-4 w-4" />
-        </button>
-      </div>
-      
-      {activePromptEditor === title ? (
-        <div className="space-y-3">
-          <textarea
-            value={value}
-            onChange={(e) => onChange(e.target.value)}
-            placeholder={placeholder}
-            className="w-full h-64 p-3 border border-neutral-300 rounded-lg font-mono text-sm resize-y focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-          />
-          <div className="flex justify-end space-x-2">
-            <button
-              onClick={() => setActivePromptEditor(null)}
-              className="px-3 py-1 text-sm text-neutral-600 hover:text-neutral-800"
-            >
+  const handleValidateKey = async (provider: string) => {
+    setValidatingProvider(provider);
+    setError(null);
+    setSuccess(null);
+    try {
+      const response = await fetch(`/api/admin/ai-config/validate-key/${provider}`, { method: 'POST' });
+      const result = await response.json();
+      if (response.ok && result.success) {
+        setKeyStatuses(prev => ({ ...prev, [provider]: 'valid' }));
+        setSuccess(result.message);
+      } else {
+        setKeyStatuses(prev => ({ ...prev, [provider]: 'invalid' }));
+        throw new Error(result.detail || 'Validation failed.');
+      }
+    } catch (err: any) {
+      setError(err.message);
+    } finally {
+      setValidatingProvider(null);
+    }
+  };
+
+  const PromptEditorModal: React.FC = () => {
+    if (!activePromptEditor || !prompts) return null;
+
+    const handleSave = () => {
+        handleSavePrompt(activePromptEditor);
+    };
+
+    return (
+      <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+        <div className="bg-white rounded-lg shadow-xl w-full max-w-3xl">
+          <div className="p-6 border-b">
+            <h3 className="text-lg font-medium text-gray-900">Edit: {activePromptEditor}</h3>
+          </div>
+          <div className="p-6">
+            <textarea
+              aria-label={`Edit ${activePromptEditor}`}
+              value={prompts[activePromptEditor]}
+              onChange={(e) => setPrompts({ ...prompts, [activePromptEditor]: e.target.value })}
+              className="w-full h-96 p-3 border border-neutral-300 rounded-lg font-mono text-sm resize-y focus:ring-2 focus:ring-primary-500"
+            />
+          </div>
+          <div className="p-4 bg-gray-50 flex justify-end space-x-3">
+            <button onClick={() => setActivePromptEditor(null)} className="px-4 py-2 text-sm text-gray-700 bg-white border rounded-md hover:bg-gray-100">
               Cancel
             </button>
-            <button
-              onClick={handleSavePrompts}
-              disabled={loading}
-              className="px-3 py-1 text-sm bg-primary-600 text-white rounded hover:bg-primary-700 disabled:opacity-50"
-            >
-              Save
+            <button onClick={handleSave} disabled={loading} className="px-4 py-2 text-sm text-white bg-primary-600 rounded-md hover:bg-primary-700 disabled:opacity-50">
+              {loading ? 'Saving...' : 'Save Template'}
             </button>
           </div>
         </div>
-      ) : (
-        <div className="text-sm text-neutral-600 bg-neutral-50 p-3 rounded border max-h-20 overflow-hidden">
-          {value || placeholder}
+      </div>
+    );
+  };
+
+  const renderAPIKeyGuidance = () => {
+    if (!config) return null;
+    const provider = config.provider.toLowerCase();
+    let envVar = '';
+
+    if (provider.includes('anthropic') || provider.includes('claude')) envVar = 'ANTHROPIC_API_KEY';
+    else if (provider.includes('openai') || provider.includes('gpt')) envVar = 'OPENAI_API_KEY';
+    else if (provider.includes('google') || provider.includes('gemini')) envVar = 'GOOGLE_API_KEY';
+
+    if (!envVar) return null;
+
+    const providerStatus = keyStatuses[provider];
+    const isProviderValidating = validatingProvider === provider;
+
+    return (
+      <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+        <div className="flex items-start">
+          <Key className="h-5 w-5 text-blue-600 mr-3 mt-1 flex-shrink-0" />
+          <div>
+            <h4 className="font-semibold text-blue-800">API Key Configuration</h4>
+            <p className="text-sm text-blue-700">
+              For security, API keys are managed on the server. To use this provider, ensure the
+              <code className="mx-1 px-1.5 py-0.5 bg-blue-200 text-blue-900 rounded font-mono text-xs">
+                {envVar}
+              </code>
+              environment variable is set in your backend's <code className="mx-1 px-1.5 py-0.5 bg-blue-200 text-blue-900 rounded font-mono text-xs">.env</code> file.
+            </p>
+          </div>
         </div>
-      )}
-    </div>
-  );
+        <div className="mt-3 flex items-center justify-between">
+          <div className="flex items-center">
+            <span className="text-sm font-medium text-blue-800 mr-2">API Key Status:</span>
+            {providerStatus === 'valid' && <span className="text-sm font-semibold text-green-600">✅ Validated</span>}
+            {providerStatus === 'invalid' && <span className="text-sm font-semibold text-red-600">❌ Invalid Key</span>}
+            {providerStatus === 'not_set' && <span className="text-sm font-semibold text-yellow-600">⚠️ Not Set in .env</span>}
+            {(!providerStatus || providerStatus === 'set') && <span className="text-sm text-gray-500">Not yet validated</span>}
+          </div>
+          <button
+            onClick={() => handleValidateKey(provider)}
+            disabled={isProviderValidating}
+            className="px-3 py-1 text-xs font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 disabled:opacity-50 flex items-center"
+          >
+            {isProviderValidating ? (
+              <>
+                <RefreshCw className="h-3 w-3 mr-1 animate-spin" />
+                Validating...
+              </>
+            ) : 'Validate Key'}
+          </button>
+        </div>
+      </div>
+    );
+  };
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <RefreshCw className="h-8 w-8 animate-spin text-primary-600" />
+        <span className="ml-4 text-lg text-neutral-700">Loading Configuration...</span>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div className="mb-6 bg-red-50 border border-red-200 rounded-lg p-4 flex items-center">
+              <AlertTriangle className="h-5 w-5 text-red-600 mr-3" />
+              <span className="text-red-800">{error}</span>
+            </div>
+        </div>
+    );
+  }
+
+  if (!config || !prompts) {
+    return <div>No configuration data found. Please check the backend server.</div>;
+  }
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -356,14 +453,6 @@ const AIConfigPanel: React.FC = () => {
         </p>
       </div>
 
-      {/* Status Messages */}
-      {error && (
-        <div className="mb-6 bg-red-50 border border-red-200 rounded-lg p-4 flex items-center">
-          <AlertTriangle className="h-5 w-5 text-red-600 mr-3" />
-          <span className="text-red-800">{error}</span>
-        </div>
-      )}
-
       {success && (
         <div className="mb-6 bg-green-50 border border-green-200 rounded-lg p-4 flex items-center">
           <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
@@ -372,9 +461,7 @@ const AIConfigPanel: React.FC = () => {
       )}
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {/* Model Configuration */}
         <div className="lg:col-span-2 space-y-6">
-          {/* AI Provider & Model Selection */}
           <div className="bg-white rounded-lg shadow-sm border border-neutral-200 p-6">
             <h2 className="text-xl font-semibold text-neutral-800 mb-4 flex items-center">
               <Zap className="h-5 w-5 mr-2 text-primary-600" />
@@ -384,50 +471,61 @@ const AIConfigPanel: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* Provider Selection */}
               <div>
-                <label className="block text-sm font-medium text-neutral-700 mb-2">
+                <label htmlFor="provider-select" className="block text-sm font-medium text-neutral-700 mb-2">
                   AI Provider
                 </label>
                 <select
+                  id="provider-select"
                   value={config.provider}
                   onChange={(e) => {
-                    setConfig({ ...config, provider: e.target.value });
-                    setIsCustomModel(e.target.value === 'custom');
+                    const newProvider = e.target.value;
+                    const isNowCustom = newProvider === 'custom';
+                    const firstModel = providers.find(p => p.name === newProvider)?.models[0]?.model_name || '';
+                    
+                    setConfig({ 
+                      ...config, 
+                      provider: newProvider,
+                      // Reset model name when provider changes
+                      model_name: isNowCustom ? 'custom-model' : firstModel
+                    });
+                    setIsCustomModel(isNowCustom);
                   }}
-                  className="w-full p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                  className="w-full p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500"
                 >
                   {providers.map(provider => (
                     <option key={provider.name} value={provider.name}>
                       {provider.display_name}
                     </option>
                   ))}
-                  <option value="custom">Custom Model</option>
                 </select>
               </div>
 
-              {/* Model Selection */}
+              {/* DYNAMIC Model Selection */}
               <div>
-                <label className="block text-sm font-medium text-neutral-700 mb-2">
+                <label htmlFor="model-name-select" className="block text-sm font-medium text-neutral-700 mb-2">
                   Model Name
                 </label>
-                {isCustomModel ? (
+                {config.provider === 'custom' ? (
                   <input
+                    id="model-name-input"
                     type="text"
                     value={config.model_name}
                     onChange={(e) => setConfig({ ...config, model_name: e.target.value })}
                     placeholder="Enter custom model name"
-                    className="w-full p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    className="w-full p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500"
                   />
                 ) : (
                   <select
+                    id="model-name-select"
                     value={config.model_name}
                     onChange={(e) => setConfig({ ...config, model_name: e.target.value })}
-                    className="w-full p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    className="w-full p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500"
                   >
                     {providers
                       .find(p => p.name === config.provider)
                       ?.models.map(model => (
                         <option key={model.model_name} value={model.model_name}>
-                          {model.model_name}
+                          {model.model_name} {model.notes ? `(${model.notes})` : ''}
                         </option>
                       ))}
                   </select>
@@ -435,13 +533,14 @@ const AIConfigPanel: React.FC = () => {
               </div>
 
               {/* Custom Pricing (only for custom models) */}
-              {isCustomModel && (
+              {config.provider === 'custom' && (
                 <>
                   <div>
-                    <label className="block text-sm font-medium text-neutral-700 mb-2">
+                    <label htmlFor="custom-input-price" className="block text-sm font-medium text-neutral-700 mb-2">
                       Input Price (per 1M tokens)
                     </label>
                     <input
+                      id="custom-input-price"
                       type="number"
                       step="0.01"
                       value={config.custom_input_price || ''}
@@ -449,14 +548,15 @@ const AIConfigPanel: React.FC = () => {
                         ...config, 
                         custom_input_price: parseFloat(e.target.value) || 0 
                       })}
-                      className="w-full p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                      className="w-full p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-neutral-700 mb-2">
+                    <label htmlFor="custom-output-price" className="block text-sm font-medium text-neutral-700 mb-2">
                       Output Price (per 1M tokens)
                     </label>
                     <input
+                      id="custom-output-price"
                       type="number"
                       step="0.01"
                       value={config.custom_output_price || ''}
@@ -464,18 +564,18 @@ const AIConfigPanel: React.FC = () => {
                         ...config, 
                         custom_output_price: parseFloat(e.target.value) || 0 
                       })}
-                      className="w-full p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                      className="w-full p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500"
                     />
                   </div>
                 </>
               )}
 
-              {/* Model Parameters */}
               <div>
-                <label className="block text-sm font-medium text-neutral-700 mb-2">
+                <label htmlFor="temperature-range" className="block text-sm font-medium text-neutral-700 mb-2">
                   Temperature ({config.temperature})
                 </label>
                 <input
+                  id="temperature-range"
                   type="range"
                   min="0"
                   max="2"
@@ -487,49 +587,53 @@ const AIConfigPanel: React.FC = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-neutral-700 mb-2">
+                <label htmlFor="max-tokens-input" className="block text-sm font-medium text-neutral-700 mb-2">
                   Max Tokens
                 </label>
                 <input
+                  id="max-tokens-input"
                   type="number"
                   value={config.max_tokens}
-                  onChange={(e) => setConfig({ ...config, max_tokens: parseInt(e.target.value) })}
+                  onChange={(e) => setConfig({ ...config, max_tokens: parseInt(e.target.value) || 0 })}
                   className="w-full p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-neutral-700 mb-2">
+                <label htmlFor="min-tokens-input" className="block text-sm font-medium text-neutral-700 mb-2">
                   Min Tokens
                 </label>
                 <input
+                  id="min-tokens-input"
                   type="number"
                   value={config.min_tokens}
-                  onChange={(e) => setConfig({ ...config, min_tokens: parseInt(e.target.value) })}
+                  onChange={(e) => setConfig({ ...config, min_tokens: parseInt(e.target.value) || 0 })}
                   className="w-full p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-neutral-700 mb-2">
+                <label htmlFor="max-retries-input" className="block text-sm font-medium text-neutral-700 mb-2">
                   Max Retries
                 </label>
                 <input
+                  id="max-retries-input"
                   type="number"
                   value={config.max_retries}
-                  onChange={(e) => setConfig({ ...config, max_retries: parseInt(e.target.value) })}
+                  onChange={(e) => setConfig({ ...config, max_retries: parseInt(e.target.value) || 0 })}
                   className="w-full p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-neutral-700 mb-2">
+                <label htmlFor="timeout-input" className="block text-sm font-medium text-neutral-700 mb-2">
                   Timeout (seconds)
                 </label>
                 <input
+                  id="timeout-input"
                   type="number"
                   value={config.timeout_seconds}
-                  onChange={(e) => setConfig({ ...config, timeout_seconds: parseInt(e.target.value) })}
+                  onChange={(e) => setConfig({ ...config, timeout_seconds: parseInt(e.target.value) || 0 })}
                   className="w-full p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 />
               </div>
@@ -555,49 +659,9 @@ const AIConfigPanel: React.FC = () => {
               </button>
             </div>
           </div>
-
-          {/* Prompt Templates */}
-          <div className="bg-white rounded-lg shadow-sm border border-neutral-200 p-6">
-            <h2 className="text-xl font-semibold text-neutral-800 mb-4 flex items-center">
-              <FileText className="h-5 w-5 mr-2 text-primary-600" />
-              Prompt Templates
-            </h2>
-            
-            <div className="space-y-4">
-              <PromptEditor
-                title="Main Extraction Prompt"
-                value={prompts.extraction_prompt}
-                onChange={(value) => setPrompts({ ...prompts, extraction_prompt: value })}
-                placeholder="Enter the main extraction prompt template..."
-              />
-              
-              <PromptEditor
-                title="Table Summary Template"
-                value={prompts.table_summary_template}
-                onChange={(value) => setPrompts({ ...prompts, table_summary_template: value })}
-                placeholder="Enter the table summary template..."
-              />
-              
-              <PromptEditor
-                title="No Tables Message"
-                value={prompts.no_tables_message}
-                onChange={(value) => setPrompts({ ...prompts, no_tables_message: value })}
-                placeholder="Message when no tables are found..."
-              />
-              
-              <PromptEditor
-                title="Error Fallback Template"
-                value={prompts.error_fallback_template}
-                onChange={(value) => setPrompts({ ...prompts, error_fallback_template: value })}
-                placeholder="Error fallback template..."
-              />
-            </div>
-          </div>
         </div>
 
-        {/* Sidebar */}
         <div className="space-y-6">
-          {/* Real-time Cost Calculator */}
           <div className="bg-white rounded-lg shadow-sm border border-neutral-200 p-6">
             <h3 className="text-lg font-semibold text-neutral-800 mb-4 flex items-center">
               <Calculator className="h-5 w-5 mr-2 text-green-600" />
@@ -609,69 +673,60 @@ const AIConfigPanel: React.FC = () => {
                 <span className="text-sm text-neutral-600">Input Cost:</span>
                 <span className="text-sm font-medium">${costEstimate.input_cost.toFixed(4)}</span>
               </div>
-              
               <div className="flex justify-between">
                 <span className="text-sm text-neutral-600">Output Cost:</span>
                 <span className="text-sm font-medium">${costEstimate.output_cost.toFixed(4)}</span>
               </div>
-              
               <div className="border-t pt-2">
                 <div className="flex justify-between">
                   <span className="text-sm font-medium text-neutral-700">Per Request:</span>
                   <span className="text-lg font-bold text-green-600">
-                    ${costEstimate.per_request_estimate.toFixed(4)}
+                    ${costEstimate.per_request_estimate > 0 ? costEstimate.per_request_estimate.toFixed(4) : 'N/A'}
                   </span>
                 </div>
               </div>
-              
               <div className="text-xs text-neutral-500 mt-2">
                 * Based on 8K input + 2K output tokens
               </div>
             </div>
           </div>
 
-          {/* Usage Statistics */}
-          <div className="bg-white rounded-lg shadow-sm border border-neutral-200 p-6">
-            <h3 className="text-lg font-semibold text-neutral-800 mb-4 flex items-center">
-              <BarChart3 className="h-5 w-5 mr-2 text-blue-600" />
-              Usage Statistics
-            </h3>
-            
-            <div className="space-y-3">
-              <div className="flex justify-between">
-                <span className="text-sm text-neutral-600">Total Requests:</span>
-                <span className="text-sm font-medium">{stats.total_requests.toLocaleString()}</span>
-              </div>
-              
-              <div className="flex justify-between">
-                <span className="text-sm text-neutral-600">Total Cost:</span>
-                <span className="text-sm font-medium">${stats.total_cost.toFixed(2)}</span>
-              </div>
-              
-              <div className="flex justify-between">
-                <span className="text-sm text-neutral-600">Daily Cost:</span>
-                <span className="text-sm font-medium">${stats.daily_cost.toFixed(2)}</span>
-              </div>
-              
-              <div className="flex justify-between">
-                <span className="text-sm text-neutral-600">Avg. Processing:</span>
-                <span className="text-sm font-medium">{stats.average_processing_time.toFixed(1)}s</span>
-              </div>
-              
-              <div className="text-xs text-neutral-500 mt-2">
-                Last updated: {new Date(stats.last_updated).toLocaleString()}
+          {stats && (
+            <div className="bg-white rounded-lg shadow-sm border border-neutral-200 p-6">
+              <h3 className="text-lg font-semibold text-neutral-800 mb-4 flex items-center">
+                <BarChart3 className="h-5 w-5 mr-2 text-blue-600" />
+                Usage Statistics
+              </h3>
+              <div className="space-y-3">
+                <div className="flex justify-between">
+                  <span className="text-sm text-neutral-600">Total Requests:</span>
+                  <span className="text-sm font-medium">{stats.total_requests.toLocaleString() || 'N/A'}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-sm text-neutral-600">Total Cost:</span>
+                  <span className="text-sm font-medium">${stats.total_cost.toFixed(2) || 'N/A'}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-sm text-neutral-600">Daily Cost:</span>
+                  <span className="text-sm font-medium">${stats.daily_cost.toFixed(2) || 'N/A'}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-sm text-neutral-600">Avg. Processing:</span>
+                  <span className="text-sm font-medium">{stats.average_processing_time > 0 ? stats.average_processing_time.toFixed(1) + 's' : 'N/A'}</span>
+                </div>
+                <div className="text-xs text-neutral-500 mt-2">
+                  Last updated: {new Date(stats.last_updated).toLocaleString()}
+                </div>
               </div>
             </div>
-          </div>
+          )}
 
-          {/* Test Results */}
           {testResults && (
             <div className="bg-white rounded-lg shadow-sm border border-neutral-200 p-6">
               <h3 className="text-lg font-semibold text-neutral-800 mb-4 flex items-center">
                 <Activity className="h-5 w-5 mr-2 text-purple-600" />
                 Test Results
               </h3>
-              
               <div className="space-y-3">
                 <div className="flex justify-between">
                   <span className="text-sm text-neutral-600">Success:</span>
@@ -679,26 +734,25 @@ const AIConfigPanel: React.FC = () => {
                     {testResults.success ? 'Yes' : 'No'}
                   </span>
                 </div>
-                
                 <div className="flex justify-between">
                   <span className="text-sm text-neutral-600">Processing Time:</span>
-                  <span className="text-sm font-medium">{testResults.processing_time?.toFixed(2)}s</span>
+                  <span className="text-sm font-medium">{testResults.test_result?.processing_time_ms?.toFixed(0)}ms</span>
                 </div>
-                
                 <div className="flex justify-between">
-                  <span className="text-sm text-neutral-600">Tokens Used:</span>
-                  <span className="text-sm font-medium">{testResults.tokens_used}</span>
+                  <span className="text-sm text-neutral-600">Extracted Product:</span>
+                  <span className="text-sm font-medium">{testResults.test_result?.extracted_product_name || 'N/A'}</span>
                 </div>
-                
                 <div className="flex justify-between">
-                  <span className="text-sm text-neutral-600">Cost:</span>
-                  <span className="text-sm font-medium">${testResults.cost?.toFixed(4)}</span>
+                  <span className="text-sm text-neutral-600">Confidence:</span>
+                  <span className="text-sm font-medium">{testResults.test_result?.confidence_score?.toFixed(2) || 'N/A'}</span>
                 </div>
               </div>
             </div>
           )}
         </div>
       </div>
+      {renderAPIKeyGuidance()}
+      <PromptEditorModal />
     </div>
   );
 };

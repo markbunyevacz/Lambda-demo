@@ -8,36 +8,45 @@ various specialized services. It follows the single responsibility principle
 where each service handles a specific aspect of the processing pipeline.
 """
 
-import asyncio
-import logging
 import sys
-from dataclasses import asdict, dataclass
-from datetime import datetime
 from pathlib import Path
-from typing import Any, Dict, List, Optional
 
-# Add project root to Python path for module resolution
+# This must be at the very top to ensure the app module is found
+# We resolve the path to be absolute to avoid any relative path issues.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-# Third-party imports
-from dotenv import load_dotenv
+import logging
+import warnings
+from typing import Dict, List, Optional, Any
+from dataclasses import dataclass, asdict
+from datetime import datetime
+import asyncio
+
 from sqlalchemy.orm import Session
+from dotenv import load_dotenv
 
-# Service imports - all required for operation
-from app.services.ai_service import AnalysisService
-from app.services.extraction_service import RealPDFExtractor
-from app.services.ingestion_service import DataIngestionService
-from processing.confidence_scorer import ConfidenceScorer
-from processing.file_handler import FileHandler
-
-# Database imports - required for data persistence
+# Database and Model Imports
 from app.database import SessionLocal
+from app.models.product import Product  # Assuming these are needed by the script/main
+from app.models.manufacturer import Manufacturer
+from app.models.category import Category
 
-# Environment configuration
+# Service Imports
+from app.services.extraction_service import RealPDFExtractor, AdvancedTableExtractor, TableExtractionResult
+from app.services.ingestion_service import DataIngestionService
+from app.processing.file_handler import FileHandler
+from app.processing.analysis_service import AnalysisService
+from app.processing.confidence_scorer import ConfidenceScorer
+
+# Utility Imports
+from app.utils import clean_utf8
+
+
+# Load environment variables
 load_dotenv()
-load_dotenv(Path(__file__).resolve().parent.parent / ".env")
+load_dotenv(str(Path(__file__).resolve().parent.parent.parent / ".env"))
 
-# Logging configuration
+# Configure logging
 logging.basicConfig(
     level=logging.INFO, 
     format="%(asctime)s - %(levelname)s - %(message)s"
@@ -64,195 +73,118 @@ class PDFExtractionResult:
 
 
 class RealPDFProcessor:
-    """
-    Orchestrates the PDF processing workflow using dependency injection.
-    
-    This class coordinates multiple specialized services to process PDF files:
-    - FileHandler: File operations and hashing
-    - RealPDFExtractor: PDF content extraction
-    - AnalysisService: AI-powered content analysis
-    - ConfidenceScorer: Quality assessment
-    - DataIngestionService: Database persistence
-    """
+    """Orchestrates the PDF processing pipeline using dedicated services."""
 
-    def __init__(self, db_session: Session):
-        """
-        Initialize the processor with all required services.
-        
-        Args:
-            db_session: Database session for data persistence
-            
-        Raises:
-            ImportError: If any required service dependencies are missing
-            RuntimeError: If service initialization fails
-        """
+    def __init__(self, db_session: Session, enable_ai_analysis: bool = True):
+        """Initialize with dedicated services."""
         self.db_session = db_session
+        self.enable_ai_analysis = enable_ai_analysis
         
-        # REFACTORING NOTE: Previously this was a monolithic class that handled
-        # all operations internally. Now we use dependency injection to compose
-        # specialized services, making the code more testable and maintainable.
+        # Initialize services
+        self.file_handler = FileHandler(db_session)
+        self.extraction_service = RealPDFExtractor()
+        self.table_extractor = AdvancedTableExtractor()
+        self.analysis_service = AnalysisService()
+        self.confidence_scorer = ConfidenceScorer()
+        self.ingestion_service = DataIngestionService(db_session)
         
-        # Initialize all required services - fail fast if any are unavailable
-        # This replaces the old try/except ImportError pattern with explicit
-        # dependency requirements
-        self.file_handler = FileHandler()  # Handles file ops & streaming hash
-        self.extractor = RealPDFExtractor()  # PDF content extraction
-        self.analyzer = AnalysisService()  # AI-powered analysis
-        self.scorer = ConfidenceScorer()  # Multi-factor confidence calculation
-        self.ingestor = DataIngestionService(db_session)  # Database persistence
-
-        # Processing statistics - track success/failure rates
+        # Processing stats
         self.processing_stats = {
             "total_processed": 0,
             "successful": 0,
             "failed": 0,
-            "skipped_duplicates": 0,  # Important for deduplication tracking
+            "skipped_duplicates": 0,
+            "total_extraction_time": 0.0,
         }
-        
-        # Load existing processed file hashes for deduplication
-        # This prevents reprocessing the same content multiple times
-        self.processed_hashes = self.ingestor.load_processed_hashes()
 
     async def process_pdf(self, pdf_path: Path) -> Optional[PDFExtractionResult]:
         """
-        Process a single PDF file through the complete pipeline.
-        
-        ARCHITECTURE NOTE: This method orchestrates the entire pipeline using
-        the composed services. Each step is clearly separated and can be
-        independently tested and modified.
-        
-        Args:
-            pdf_path: Path to the PDF file to process
-            
-        Returns:
-            PDFExtractionResult if successful, None if failed or skipped
-            
-        Raises:
-            ValueError: If extraction fails or produces empty content
-            Exception: For any other processing errors (logged but not re-raised)
+        Processes a single PDF file using a pipeline of dedicated services.
         """
-        logger.info(f"🚀 Starting processing for: {pdf_path.name}")
         start_time = datetime.now()
-        
-        # Step 1: File handling and deduplication check
-        # OPTIMIZATION: Use streaming hash to handle large files efficiently
+        logger.info(f"Starting processing for: {pdf_path.name}")
+
+        # 1. Handle File & Duplicates
         file_hash = self.file_handler.calculate_file_hash(pdf_path)
-        if file_hash in self.processed_hashes:
-            logger.info(f"⏭️ Skipping duplicate file: {pdf_path.name}")
+        if not file_hash:
+            return None # Error handled in calculator
+        
+        if self.file_handler.is_duplicate(file_hash):
+            logger.info(f"Skipping duplicate file: {pdf_path.name}")
             self.processing_stats["skipped_duplicates"] += 1
             return None
         
-        try:
-            # Step 2: Extract content from PDF
-            # PERFORMANCE: Run synchronous extraction in separate thread
-            # to avoid blocking the async event loop
-            text, tables, method = await asyncio.to_thread(
-                self.extractor.extract_pdf_content, pdf_path
-            )
-            
-            # VALIDATION: Ensure we got meaningful content
-            if not text:
-                raise ValueError("Text extraction failed, content is empty.")
-            
-            # Step 3: AI analysis of extracted content
-            # ENHANCEMENT: Use specialized AI service with Hungarian language
-            # support and construction industry terminology
-            ai_analysis = await self.analyzer.analyze_pdf_content(
+        # 2. Extract Content
+        text, simple_tables, text_method = self.extraction_service.extract_pdf_content(pdf_path)
+        
+        # 3. Extract Tables using Advanced Method
+        table_result = self.table_extractor.extract_tables_hybrid(pdf_path)
+        
+        # 4. Analyze with AI
+        ai_analysis = {}
+        if self.enable_ai_analysis:
+            ai_analysis = await self.analysis_service.analyze_content(
                 text_content=text,
-                tables_data=tables,
-                filename=pdf_path.name,
+                tables=table_result.tables if table_result else simple_tables,
+                pdf_name=pdf_path.name
             )
 
-            # Step 4: Calculate confidence score
-            # IMPROVEMENT: Multi-factor confidence scoring replaces simple
-            # AI-only confidence with weighted assessment
-            confidence = self.scorer.calculate_enhanced_confidence(
-                text_content=text,
-                tables=tables,
-                ai_analysis=ai_analysis,
-                extraction_method=method,
-            )
-            
-            # Step 5: Create final result object
-            # CONSOLIDATION: Combine all processing results into structured format
-            result = self._consolidate_results(
-                pdf_path, start_time, (text, tables, method), 
-                ai_analysis, confidence
-            )
-            
-            # Step 6: Persist to database
-            # PERSISTENCE: Save to both PostgreSQL (structured) and ChromaDB (vectors)
-            self.ingestor.ingest_data(result, file_hash)
-            self.processed_hashes.add(file_hash)  # Update deduplication cache
-            self.processing_stats["successful"] += 1
-            
-            logger.info(
-                f"✅ Successfully processed: {pdf_path.name} "
-                f"(confidence: {confidence:.2f})"
-            )
-            return result
-            
-        except Exception as e:
-            # ERROR HANDLING: Log detailed error info but don't crash the batch
-            logger.error(
-                f"❌ Processing failed for {pdf_path.name}: {e}", 
-                exc_info=True
-            )
-            self.processing_stats["failed"] += 1
-            return None
+        # 5. Consolidate and Score
+        consolidated_result = self._consolidate_results(
+            pdf_path, start_time, text, text_method, table_result, ai_analysis
+        )
         
-    def _consolidate_results(
-        self, 
-        pdf_path: Path, 
-        start_time: datetime, 
-        content_tuple: tuple, 
-        ai_analysis: Dict[str, Any], 
-        confidence: float
-    ) -> PDFExtractionResult:
-        """
-        Create the final PDFExtractionResult object from all processing steps.
+        # 6. Ingest Data
+        self.ingestion_service.ingest_data(consolidated_result, file_hash)
         
-        Args:
-            pdf_path: Original PDF file path
-            start_time: Processing start time
-            content_tuple: (text, tables, method) from extraction
-            ai_analysis: Structured data from AI analysis
-            confidence: Calculated confidence score
-            
-        Returns:
-            Complete PDFExtractionResult object
-        """
-        text, tables, method = content_tuple
+        # 7. Update logs and stats
+        self.file_handler.add_hash_to_log(file_hash)
+        self.processing_stats["successful"] += 1
+        self.processing_stats["total_processed"] += 1
         processing_time = (datetime.now() - start_time).total_seconds()
+        self.processing_stats["total_extraction_time"] += processing_time
         
+        logger.info(f"Successfully processed {pdf_path.name} in {processing_time:.2f} seconds.")
+        return consolidated_result
+
+    def _consolidate_results(
+        self, pdf_path, start_time, text, text_method, table_result, ai_analysis
+    ) -> PDFExtractionResult:
+        """Consolidates all extracted data into the final result object."""
+        
+        tables = table_result.tables if table_result else []
+        table_method = table_result.extraction_method if table_result else "none"
+
+        # Calculate confidence score using the dedicated service
+        confidence = self.confidence_scorer.calculate_enhanced_confidence(
+            text_content=text,
+            tables=tables,
+            ai_analysis=ai_analysis,
+            extraction_method=text_method
+        )
+
+        processing_time = (datetime.now() - start_time).total_seconds()
+
         return PDFExtractionResult(
-            product_name=ai_analysis.get("product_identification", {}).get(
-                "product_name", "Unknown"
-            ),
-            extracted_text=text,
+            product_name=ai_analysis.get("product_identification", {}).get("product_name", pdf_path.stem),
+            extracted_text=clean_utf8(text),
             technical_specs=ai_analysis.get("technical_specifications", {}),
             pricing_info=ai_analysis.get("pricing_information", {}),
             tables_data=tables,
             confidence_score=confidence,
             source_filename=pdf_path.name,
             processing_time=processing_time,
-            extraction_method=method
+            extraction_method=text_method,
+            table_extraction_method=table_method,
+            table_quality_score=table_result.quality_score if table_result else 0.0,
+            advanced_tables_used=bool(table_result),
         )
 
     async def process_directory(
-        self, 
-        pdf_directory: Path, 
-        output_file: Optional[Path] = None
+        self, pdf_directory: Path, output_file: Optional[Path] = None
     ) -> List[PDFExtractionResult]:
         """
-        Process all PDF files in a directory.
-        
-        Args:
-            pdf_directory: Directory containing PDF files
-            output_file: Optional output file for results
-            
-        Returns:
-            List of successful extraction results
+        Processes all PDF files in a given directory concurrently.
         """
         if not pdf_directory.exists():
             raise FileNotFoundError(f"Directory not found: {pdf_directory}")
@@ -328,9 +260,9 @@ async def main():
                     pdf_directory = alt_path
                     logger.info(f"Using alternative path: {pdf_directory}")
                     break
-            else:
-                logger.error("No valid PDF directory found")
-                return
+                else:
+                    logger.error("No valid PDF directory found")
+                    return
         
         # Process PDFs
         results = await processor.process_directory(pdf_directory, output_file)

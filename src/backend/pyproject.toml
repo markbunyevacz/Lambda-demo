@@ -43,11 +43,11 @@ python-dotenv = "==1.0.0"
 requests = "==2.31.0"
 beautifulsoup4 = "==4.12.2"
 aiohttp = "==3.9.1"
+httpx = ">=0.25.2"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "==7.4.3"
 pytest-asyncio = "==0.21.1"
-httpx = ">=0.25.2"
 
 [build-system]
 requires = ["poetry-core"]
