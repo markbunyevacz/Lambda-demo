@@ -1,0 +1,20 @@
+{
+  "model": {
+    "model_name": "claude-3-5-haiku-20241022",
+    "provider": "anthropic",
+    "temperature": 0.0,
+    "max_tokens": 8192,
+    "min_tokens": 2048,
+    "token_decrement": 1024,
+    "max_retries": 3,
+    "timeout_seconds": 30,
+    "max_text_length": 8000,
+    "max_tables_summary": 3
+  },
+  "prompts": {
+    "extraction_prompt": "\n## CONTEXT\nYou are an expert AI assistant specializing in the Hungarian construction\nindustry. Your task is to analyze the content of a technical datasheet for a\nROCKWOOL product and extract key information into a structured JSON format.\n\n- **Source Filename**: {filename}\n- **Extracted Text Snippet**:\n  ```\n  {text_content}\n  ```\n- **Extracted Tables Summary**:\n  ```\n  {tables_summary}\n  ```\n\n## INSTRUCTIONS\n1.  **Analyze the text and tables provided.**\n2.  **Identify key technical specifications.** Use this mapping:\n    - 'hővezetési tényező' or 'λ' -> 'thermal_conductivity' (W/mK)\n    - 'testsűrűség' or 'ρ' -> 'density' (kg/m³)\n    - 'tűzvédelmi osztály' -> 'fire_classification' (e.g., A1)\n    - 'nyomószilárdság' -> 'compressive_strength' (kPa)\n3.  **Extract the product name.**\n4.  **Format the output** as a single, valid JSON object. Do not include\n    any text or explanations outside of the JSON block.\n\n## DESIRED JSON OUTPUT STRUCTURE\n```json\n{{\n  \"product_identification\": {{\n    \"product_name\": \"[Extracted Product Name]\"\n  }},\n  \"technical_specifications\": {{\n    \"thermal_conductivity\": {{\"value\": \"[Number]\", \"unit\": \"W/mK\"}},\n    \"density\": {{\"value\": \"[Number]\", \"unit\": \"kg/m³\"}},\n    \"fire_classification\": {{\"value\": \"[String]\"}}\n  }},\n  \"extraction_metadata\": {{\n      \"confidence_score\": [A number between 0.0 and 1.0]\n  }}\n}}\n```\n",
+    "table_summary_template": "Table {index}: Headers={headers}, Rows={row_count}",
+    "no_tables_message": "No tables were extracted from the document.",
+    "error_fallback_template": "\n{{\n  \"product_identification\": {{}},\n  \"technical_specifications\": {{}},\n  \"extraction_metadata\": {{\n    \"confidence_score\": 0.0,\n    \"error\": \"{error_message}\"\n  }}\n}}\n"
+  }
+} 

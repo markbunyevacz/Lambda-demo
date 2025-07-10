@@ -17,6 +17,9 @@ tegyünk az adatvalidáció automatizálására.
 """
 
 import sys
+import json
+import logging
+import asyncio
 from pathlib import Path
 from typing import Dict, Any, Optional
 
@@ -30,18 +33,17 @@ from deepdiff import DeepDiff
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 # Valódi importok a működéshez
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy import create_engine
-from app.models.product import Product
-from app.core.config import DATABASE_URL
-from real_pdf_processor import RealPDFExtractor, ClaudeAIAnalyzer
+from sqlalchemy.orm import Session
+from app.database import SessionLocal, engine
+from app.models import Product, Manufacturer, Category, ProcessedFileLog
+from app.services.extraction_service import RealPDFExtractor, AdvancedTableExtractor
+from app.services.ai_service import AnalysisService
 import chromadb
-import json
 
 # Adatbázis beállítása
 # TODO: Ezt a részt érdemes lehet egy központi helyre szervezni
-engine = create_engine(str(DATABASE_URL))
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+# engine = create_engine(str(DATABASE_URL))
+# SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 
 class DataVerifier:
@@ -59,8 +61,8 @@ class DataVerifier:
         self.db_session = SessionLocal()
         # Itt feltételezzük, hogy a ChromaDB a default helyen fut perzisztensen
         self.chroma_client = chromadb.PersistentClient(path="./chroma_db")
-        self.pdf_extractor = RealPDFExtractor()
-        self.ai_analyzer = ClaudeAIAnalyzer()
+        self.extractor = RealPDFExtractor()
+        self.ai_analyzer = AnalysisService()
         print("✅ Verifier initialized.")
 
     def get_product_pdf_path(self, product_id: int) -> Optional[Path]:
@@ -124,13 +126,13 @@ class DataVerifier:
         print(f"Generating ground truth from: {pdf_path.name}")
         try:
             # 1. Szöveg kinyerése
-            raw_text, _, _ = self.pdf_extractor.extract_pdf_content(pdf_path)
-            if not raw_text or not raw_text.strip():
+            text, tables, _ = self.extractor.extract_pdf_content(pdf_path)
+            if not text or not text.strip():
                 print("⚠️ No text could be extracted from the PDF.")
                 return {}
 
             # 2. Prompt létrehozása
-            prompt = self._create_general_prompt(raw_text, pdf_path.name)
+            prompt = self._create_general_prompt(text, pdf_path.name)
 
             # 3. AI elemzés (a meglévő analyzer újrahasznosításával)
             print("🤖 Sending text to AI for ground truth analysis...")
@@ -138,27 +140,21 @@ class DataVerifier:
             # itt egy általánosabb hívást kellene megvalósítani.
             # Most egy trükkel oldjuk meg: a meglévő metódust hívjuk,
             # de a promptot felülírjuk. Ideálisabb lenne egy új metódus.
-            response = self.ai_analyzer.client.messages.create(
-                model=self.ai_analyzer.model,
-                max_tokens=4000,
-                temperature=0.0,
-                system="You are an expert data extraction engine. Your task is to convert unstructured document text into a structured JSON format.",
-                messages=[
-                    {
-                        "role": "user",
-                        "content": prompt
-                    }
-                ]
+            loop = asyncio.get_event_loop()
+            ai_result = loop.run_until_complete(
+                self.ai_analyzer.analyze_pdf_content(text, tables, pdf_path.name)
             )
 
             # 4. Válasz feldolgozása
-            response_text = response.content[0].text
-            json_start = response_text.find('{')
-            json_end = response_text.rfind('}') + 1
-            if json_start == -1 or json_end == 0:
-                raise ValueError("No JSON object found in AI response")
+            print("\n--- AI Analysis Result ---")
+            print(json.dumps(ai_result, indent=2, ensure_ascii=False))
 
-            json_text = response_text[json_start:json_end]
+            confidence = ai_result.get("extraction_metadata", {}).get("confidence_score", 0)
+            if confidence < 0.7: # Assuming a confidence threshold
+                print(f"⚠️ Low confidence score: {confidence}. Ground truth might be inaccurate.")
+                return {} # Return empty if confidence is low
+
+            json_text = json.dumps(ai_result, indent=2, ensure_ascii=False)
             print("✅ Ground truth JSON received from AI.")
             return json.loads(json_text)
 

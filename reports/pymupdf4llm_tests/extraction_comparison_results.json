@@ -1,0 +1,36 @@
+[
+  {
+    "pdf_name": "Airrock HD termékadatlap.pdf",
+    "current_text_length": 4075,
+    "current_tables_count": 2,
+    "current_processing_time": 2.799628496170044,
+    "current_method": "pdfplumber+basic+camelot_stream",
+    "current_table_quality": 9080.345896015693,
+    "pymupdf_text_length": 3853,
+    "pymupdf_tables_count": 1,
+    "pymupdf_processing_time": 0.8217144012451172,
+    "pymupdf_table_quality": 1.0,
+    "pymupdf_markdown_length": 4375,
+    "text_improvement": -5.447852760736197,
+    "table_improvement": -50.0,
+    "speed_comparison": 3.4070578438540906,
+    "overall_quality_score": 0.9836564417177914
+  },
+  {
+    "pdf_name": "Frontrock S termékadatlap.pdf",
+    "current_text_length": 4461,
+    "current_tables_count": 4,
+    "current_processing_time": 2.6206657886505127,
+    "current_method": "pdfplumber+basic+camelot_stream",
+    "current_table_quality": 8074.823194730427,
+    "pymupdf_text_length": 4257,
+    "pymupdf_tables_count": 1,
+    "pymupdf_processing_time": 0.8402523994445801,
+    "pymupdf_table_quality": 1.0,
+    "pymupdf_markdown_length": 4803,
+    "text_improvement": -4.572965702757229,
+    "table_improvement": -75.0,
+    "speed_comparison": 3.1189030705331082,
+    "overall_quality_score": 0.9362811028917284
+  }
+]

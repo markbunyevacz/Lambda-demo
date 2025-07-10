@@ -30,6 +30,7 @@ from .database import get_db
 from . import models
 from . import schemas
 from .api import admin
+from .api import ai_config_admin
 
 # Create the database tables
 # Base.metadata.create_all(bind=engine)  # Temporarily disabled due to UTF-8 issues
@@ -137,6 +138,7 @@ def read_categories(
 
 app.include_router(api_v1_router)
 app.include_router(admin.router)
+app.include_router(ai_config_admin.router)
 
 # Root endpoint for basic health check and redirect to search
 @app.get("/", response_class=RedirectResponse)

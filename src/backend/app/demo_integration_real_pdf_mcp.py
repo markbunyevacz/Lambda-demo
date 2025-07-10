@@ -14,87 +14,60 @@ Shows how to achieve:
 ✅ Backward compatibility
 """
 
-import sys
 import asyncio
 import logging
+import sys
+import time
 from pathlib import Path
-from datetime import datetime
-from typing import Dict, Any, Optional
+from typing import Any, Dict, List, Optional
 
-from dotenv import load_dotenv
 from sqlalchemy.orm import Session
 
-# Add paths for imports
-sys.path.append(str(Path(__file__).parent))
-sys.path.append(str(Path(__file__).parent.parent))
+# This needs to be at the top to ensure relative imports work correctly
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-# Environment setup and imports after path modification
-load_dotenv()
-
-try:
-    from database import SessionLocal
-    from real_pdf_processor import (
-        RealPDFExtractor,
-        ClaudeAIAnalyzer, 
-        RealPDFProcessor
-    )
-    from mcp_orchestrator.models import (
-        ExtractionTask,
-        ExtractionResult,
-        StrategyType
-    )
-    from mcp_orchestrator.orchestrator import OrchestrationEngine
-except ImportError as e:
-    logging.error(f"Import error: {e}")
-    sys.exit(1)
+from app.mcp_orchestrator.models import ExtractionResult, ExtractionTask
+from app.mcp_orchestrator.orchestrator import OrchestrationEngine
+from app.mcp_orchestrator.strategies import BaseExtractionStrategy
+from app.services.ai_service import AnalysisService
+from app.services.extraction_service import RealPDFExtractor
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-class RealPDFMCPStrategy:
-    """
-    MCP Strategy wrapper around proven real_pdf_processor.py
-    
-    This preserves all existing functionality while enabling orchestration.
-    """
-    
+class RealPDFMCPStrategy(BaseExtractionStrategy):
+    """A wrapper for the original PDF processor."""
     def __init__(self, db_session: Optional[Session] = None):
-        self.strategy_type = StrategyType.PDFPLUMBER
-        self.cost_tier = 2
-        
-        # Initialize existing proven components
         self.extractor = RealPDFExtractor()
-        self.ai_analyzer = ClaudeAIAnalyzer()
+        self.ai_analyzer = AnalysisService()
         self.db_session = db_session
-        
-        logger.info("RealPDFMCPStrategy initialized with existing components")
-    
-    async def extract(self, pdf_path: Path, task: ExtractionTask) -> ExtractionResult:
+
+    async def extract(
+        self, pdf_path: Path, task: ExtractionTask
+    ) -> ExtractionResult:
         """
         Extract PDF using existing real_pdf_processor logic
         """
-        import time
         start_time = time.time()
         
         try:
             logger.info(f"🔄 Starting extraction: {pdf_path.name}")
             
             # Step 1: Use existing proven PDF extraction
-            text_content, tables, method_used = self.extractor.extract_pdf_content(pdf_path)
-            logger.info(f"📄 Extracted {len(text_content)} chars, {len(tables)} tables")
+            text, tables, _ = self.extractor.extract_pdf_content(pdf_path)
+            logger.info(f"📄 Extracted {len(text)} chars, {len(tables)} tables")
             
             # Step 2: Use existing Claude AI analysis
-            ai_analysis = self.ai_analyzer.analyze_rockwool_pdf(
-                text_content, tables, pdf_path.name
+            ai_analysis = await self.ai_analyzer.analyze_pdf_content(
+                text, tables, pdf_path.name
             )
             logger.info(f"🤖 AI analysis completed")
             
             # Step 3: Map to MCP format for orchestration
             result = self._map_to_mcp_format(
-                text_content, tables, ai_analysis, method_used, 
-                pdf_path.name, time.time() - start_time
+                text, tables, ai_analysis, "RealPDF", pdf_path, task
             )
             
             logger.info(f"✅ Extraction successful: confidence={result.confidence_score:.3f}")
@@ -110,42 +83,52 @@ class RealPDFMCPStrategy:
             )
     
     def _map_to_mcp_format(
-        self, text_content: str, tables: list, ai_analysis: dict,
-        method_used: str, filename: str, execution_time: float
+        self,
+        text: str,
+        tables: List[Dict],
+        ai_analysis: Dict,
+        method: str,
+        pdf_path: Path,
+        task: ExtractionTask,
     ) -> ExtractionResult:
-        """
-        Map existing real_pdf_processor results to MCP orchestration format
-        """
+        """Maps the legacy output to the new MCP ExtractionResult format."""
+        start_time = time.time()  # Mock start time for this mapping
         
         # Preserve all original data in orchestration-compatible format
         extracted_data = {
             "product_identification": ai_analysis.get("product_identification", {}),
-            "technical_specifications": ai_analysis.get("technical_specifications", {}), 
+            "technical_specifications": ai_analysis.get(
+                "technical_specifications", {}
+            ),
+            "raw_text": text[:2000],  # Limit raw text for brevity
             "confidence_assessment": ai_analysis.get("confidence_assessment", {}),
             
             # Preserve original structures for backward compatibility
             "legacy_data": {
-                "extracted_text": text_content[:1000],  # Sample for debugging
+                "extracted_text": text[:1000],  # Sample for debugging
                 "tables_data": tables,
                 "ai_analysis": ai_analysis,
-                "method_used": method_used,
-                "filename": filename
+                "method_used": method,
+                "filename": pdf_path.name
             }
         }
         
         # Enhanced confidence calculation
-        confidence_score = self._calculate_enhanced_confidence(ai_analysis, text_content, tables)
+        confidence_score = self._calculate_enhanced_confidence(
+            ai_analysis, text, tables
+        )
         
         return ExtractionResult(
+            task_id=task.task_id, # This line might need adjustment if task is not available
             strategy_type=self.strategy_type,
             success=True,
-            execution_time_seconds=execution_time,
+            execution_time_seconds=time.time() - start_time,
             extracted_data=extracted_data,
             confidence_score=confidence_score,
-            method_used=method_used,
+            method_used=method,
             pages_processed=getattr(self.extractor, 'stats', {}).get('pages_processed', 0),
             tables_found=len(tables),
-            text_length=len(text_content),
+            text_length=len(text),
             data_completeness=self._calculate_completeness(ai_analysis),
             structure_quality=self._calculate_structure_quality(tables, ai_analysis)
         )

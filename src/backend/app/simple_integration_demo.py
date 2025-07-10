@@ -58,9 +58,10 @@ class SimpleIntegrationDemo:
         compatibility_matrix = [
             ("Data Structures", "PDFExtractionResult", "ExtractionResult", "✅ Direct mapping"),
             ("PDF Extraction", "RealPDFExtractor", "Strategy Pattern", "✅ Drop-in wrapper"),
-            ("AI Analysis", "ClaudeAIAnalyzer", "AI Validation", "✅ Same API"),
-            ("Confidence", "Single score", "Field-level", "✅ Enhanced version"),
-            ("Database", "PostgreSQL+ChromaDB", "Same targets", "✅ Compatible"),
+            ("Data Extraction", "RealPDFExtractor", "BaseExtractionStrategy", "✅ Strategy pattern"),
+            ("AI Analysis", "AnalysisService", "AI validation", "✅ Same API"),
+            ("Confidence Score", "Single score", "Field-level confidence", "✅ Enhanced version"),
+            ("Database", "PostgreSQL + ChromaDB", "Same targets", "✅ Compatible"),
             ("Error Handling", "Try-catch", "Graceful fallback", "✅ Enhanced")
         ]
         

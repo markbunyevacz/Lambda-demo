@@ -12,7 +12,7 @@ from app.mcp_orchestrator.strategies import (
     PyMuPDFStrategy,
 )
 from app.mcp_orchestrator.models import ExtractionTask
-from real_pdf_processor import ClaudeAIAnalyzer
+from app.services.ai_service import AnalysisService
 
 
 async def diagnose_pdf(pdf_path: Path):

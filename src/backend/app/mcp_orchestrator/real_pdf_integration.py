@@ -12,53 +12,33 @@ Key Integration Points:
 - Enables orchestrated, multi-strategy extraction
 """
 
-import os
 import logging
 from pathlib import Path
-from typing import Dict, Any, List, Optional, Tuple
-from datetime import datetime
-import time
+from typing import Any, Dict, List
 
-# Import existing real_pdf_processor components
-import sys
-sys.path.append(str(Path(__file__).parent.parent))
+from .models import ExtractionResult, ExtractionTask, StrategyType
+from .strategies.base_strategy import BaseExtractionStrategy
 
-from real_pdf_processor import (
-    RealPDFExtractor, 
-    ClaudeAIAnalyzer, 
-    RealPDFProcessor,
-    PDFExtractionResult
-)
-
-# Import MCP Orchestrator models
-from .models import (
-    ExtractionTask,
-    ExtractionResult,
-    GoldenRecord,
-    FieldConfidence,
-    StrategyType,
-    TaskStatus,
-    ConfidenceLevel
-)
-
-from .strategies import BaseExtractionStrategy
+from app.services.ai_service import AnalysisService
+from app.services.extraction_service import RealPDFExtractor
 
 logger = logging.getLogger(__name__)
 
 
 class RealPDFMCPStrategy(BaseExtractionStrategy):
     """
-    A wrapper to integrate the existing RealPDFProcessor as a strategy 
-    within the MCP Orchestrator framework.
+    This strategy wraps the project's original, proven PDF processing
+    logic (RealPDFExtractor and AnalysisService) so it can be used
+    within the MCP Orchestrator.
     """
     def __init__(self, db_session=None):
-        """Initializes the strategy by creating instances of the existing extractor and analyzer."""
-        print("Initializing RealPDFMCPStrategy with existing components...")
         self.extractor = RealPDFExtractor()
-        self.ai_analyzer = ClaudeAIAnalyzer()
-        print("✅ RealPDFMCPStrategy Initialized.")
+        self.ai_analyzer = AnalysisService()  # Use the new service
+        self.db_session = db_session
 
-    async def extract(self, pdf_path: Path, task: ExtractionTask) -> ExtractionResult:
+    async def extract(
+        self, pdf_path: Path, task: ExtractionTask
+    ) -> ExtractionResult:
         """
 
         Executes the extraction using the old `real_pdf_processor` logic and
@@ -75,7 +55,9 @@ class RealPDFMCPStrategy(BaseExtractionStrategy):
 
             # 2. Use existing Claude AI analysis
             print(f"Executing Claude AI analysis for: {pdf_path.name}")
-            ai_analysis = self.ai_analyzer.analyze_rockwool_pdf(text, tables, pdf_path.name)
+            ai_analysis = await self.ai_analyzer.analyze_pdf_content(
+                text_content=text, tables=tables, filename=pdf_path.name
+            )
             
             # 3. Map the old result format to the new MCP ExtractionResult format
             print(f"Mapping result to MCP format for: {pdf_path.name}")

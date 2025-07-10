@@ -1,16 +1,14 @@
 import logging
 import os
-from datetime import datetime
 from typing import Optional, Set, List, Dict, Any, Tuple
+from pathlib import Path
+import hashlib
 
 from sqlalchemy.orm import Session
-# JAVÍTÁS: Hiányzó import a PDFExtractionResult típushoz
-from processing.real_pdf_processor import PDFExtractionResult
 from sqlalchemy.exc import IntegrityError
-from sqlalchemy import inspect
 
-from app.database import SessionLocal
-from app.models.product import Product, product_category_association
+from processing.real_pdf_processor import PDFExtractionResult
+from app.models.product import Product
 from app.models.manufacturer import Manufacturer
 from app.models.category import Category
 from app.models.processed_file_log import ProcessedFileLog
@@ -66,40 +64,36 @@ class DataIngestionService:
             self.chroma_collection = None
 
     def load_processed_hashes(self) -> Set[str]:
-        """Loads all file hashes from the database into a set."""
-        logger.info("Loading existing file hashes from the database...")
-        processed_file_hashes = set()
+        """Loads all file hashes from the database to prevent re-processing."""
         if not self.db_session:
-            return processed_file_hashes
-
+            return set()
         try:
-            self.db_session.rollback()
-            all_logs = self.db_session.query(ProcessedFileLog).all()
-            for log in all_logs:
-                try:
-                    file_hash = log.file_hash
-                    if isinstance(file_hash, bytes):
-                        for encoding in ['utf-8', 'latin1', 'cp1252', 'ascii']:
-                            try:
-                                file_hash = file_hash.decode(encoding)
-                                break
-                            except UnicodeDecodeError:
-                                continue
-                        else:
-                            file_hash = file_hash.decode('utf-8', errors='replace')
-                    elif isinstance(file_hash, str):
-                        file_hash = file_hash.encode('utf-8', errors='replace').decode('utf-8')
-                    
-                    if file_hash and len(file_hash) == 64 and all(c in '0123456789abcdef' for c in file_hash.lower()):
-                        processed_file_hashes.add(file_hash)
-                except Exception as e:
-                    logger.debug(f"Skipping corrupted hash entry: {e}")
-                    continue
-            logger.info(f"✅ Loaded {len(processed_file_hashes)} file hashes from database")
+            hashes = self.db_session.query(ProcessedFileLog.file_hash).all()
+            return {h[0] for h in hashes}
         except Exception as e:
-            logger.error(f"Database hash loading failed: {e}")
-            logger.info("Starting with empty hash set...")
-        return processed_file_hashes
+            logger.error(f"Error loading processed file hashes: {e}")
+            return set()
+
+    def ingest_data(self, result: 'PDFExtractionResult', pdf_path_str: str):
+        """
+        Main ingestion method that handles deduplication and database writes.
+        """
+        file_path = Path(result.source_filename) # Assuming source_filename is a full path
+        file_hash = self._calculate_file_hash(Path(pdf_path_str))
+
+        # Deduplication check
+        if file_hash in self.load_processed_hashes():
+            logger.info(f"⏭️ Skipping duplicate file based on hash: {result.source_filename}")
+            return
+
+        # Ingest to databases
+        product_id = self.ingest_to_postgresql(result)
+        if product_id:
+            self.ingest_to_chromadb(result, product_id)
+            # Log the successful processing
+            content_hash = "dummy_content_hash" # Placeholder for actual content hash
+            self.save_processed_hash(file_hash, content_hash, result.source_filename)
+
 
     def save_processed_hash(self, file_hash: str, content_hash: str, source_filename: str):
         """Saves a processed file hash to the database."""
@@ -148,9 +142,17 @@ class DataIngestionService:
             specs = result.technical_specs or {}
             specs['source_pdf'] = make_utf8_safe(result.source_filename)
 
+            # JAVÍTÁS: A leírás és a teljes szöveges tartalom helyes mentése
+            description_text = (
+                f"A {result.product_name} egy {manufacturer_name} által gyártott "
+                f"{category_name.lower()} termék. "
+                f"A forrásdokumentum a '{result.source_filename}'."
+            )
+
             product = Product(
                 name=make_utf8_safe(result.product_name),
-                description=make_utf8_safe(result.extraction_metadata.get("description", "")),
+                description=description_text,
+                full_text_content=make_utf8_safe(result.extracted_text),
                 manufacturer_id=manufacturer.id,
                 category_id=category.id,
                 technical_specs=specs,

@@ -5,6 +5,7 @@ import Navigation, { NavigationTab } from '@/components/Navigation';
 import Dashboard from '@/components/Dashboard';
 import ChatWidget from '@/components/ChatWidget';
 import AdminPanel from '@/components/AdminPanel/AdminPanel';
+import AIConfigPanel from '@/components/AdminPanel/AIConfigPanel';
 import SearchInterface from '@/components/SearchInterface/SearchInterface';
 import ProductCatalog from '@/components/ProductCatalog/ProductCatalog';
 import MonitoringDashboard from '@/components/MonitoringDashboard/MonitoringDashboard';
@@ -41,6 +42,8 @@ export default function Home() {
         return <ProductCatalog />;
       case 'monitoring':
         return <MonitoringDashboard />;
+      case 'ai-config':
+        return <AIConfigPanel />;
       case 'admin':
         return <AdminPanel />;
       default:

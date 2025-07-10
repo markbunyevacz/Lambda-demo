@@ -4,8 +4,9 @@ import React, { useState } from 'react';
 import ExtractionAnalysis from './ExtractionAnalysis';
 import AdminOverview from './AdminOverview';
 import AdminProducts from './AdminProducts';
+import AIConfigPanel from './AIConfigPanel';
 
-type AdminTab = 'overview' | 'products' | 'analysis';
+type AdminTab = 'overview' | 'products' | 'analysis' | 'ai-config';
 
 const AdminPanel: React.FC = () => {
   const [activeTab, setActiveTab] = useState<AdminTab>('overview');
@@ -36,6 +37,8 @@ const AdminPanel: React.FC = () => {
         return <AdminProducts />;
       case 'analysis':
         return <ExtractionAnalysis />;
+      case 'ai-config':
+        return <AIConfigPanel />;
       default:
         return null;
     }
@@ -67,6 +70,9 @@ const AdminPanel: React.FC = () => {
             </TabButton>
             <TabButton tabName="analysis" currentTab={activeTab} onClick={setActiveTab}>
               🔬 Elemzés
+            </TabButton>
+            <TabButton tabName="ai-config" currentTab={activeTab} onClick={setActiveTab}>
+              🤖 AI Konfiguráció
             </TabButton>
           </nav>
         </div>

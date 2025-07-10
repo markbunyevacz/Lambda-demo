@@ -1,9 +1,9 @@
 import time
 from pathlib import Path
 from .base_strategy import BaseExtractionStrategy
+from app.services.extraction_service import RealPDFExtractor
+from app.services.ai_service import AnalysisService
 from ..models import ExtractionResult, StrategyType, ExtractionTask
-# Correctly import from the absolute path within the /app directory
-from processing.real_pdf_processor import ClaudeAIAnalyzer
 
 
 class NativePDFStrategy(BaseExtractionStrategy):
@@ -13,7 +13,8 @@ class NativePDFStrategy(BaseExtractionStrategy):
     """
     def __init__(self):
         super().__init__(strategy_type=StrategyType.NATIVE_PDF, cost_tier=4)
-        self.ai_analyzer = ClaudeAIAnalyzer()
+        self.extractor = RealPDFExtractor()
+        self.ai_analyzer = AnalysisService()
 
     async def extract(
         self, pdf_path: Path, task: ExtractionTask
@@ -33,10 +34,8 @@ class NativePDFStrategy(BaseExtractionStrategy):
         tables = task.input_data.get("tables_data", [])
 
         try:
-            ai_analysis = self.ai_analyzer.analyze_rockwool_pdf(
-                text_content=raw_text,
-                tables=tables,
-                filename=pdf_path.name
+            ai_analysis = await self.ai_analyzer.analyze_pdf_content(
+                text_content=raw_text, tables=tables, filename=pdf_path.name
             )
 
             # Flatten the AI analysis to match the expected structure

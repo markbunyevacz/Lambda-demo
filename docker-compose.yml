@@ -16,8 +16,8 @@ services:
     networks:
       - lambda_network
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
-      interval: 5s
+      test: ["CMD-SHELL", "pg_isready -U admin -d lambda"]
+      interval: 10s
       timeout: 5s
       retries: 5
 
@@ -39,7 +39,7 @@ services:
       context: ./src/backend
       dockerfile: Dockerfile
     # Default production command - override in docker-compose.dev.yml for development
-    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+    command: poetry run uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
     volumes:
       - ./src/backend:/app
     ports:
@@ -59,7 +59,7 @@ services:
     build:
       context: ./src/backend
       dockerfile: Dockerfile
-    command: celery -A app.celery_app.app worker --loglevel=info
+    command: poetry run celery -A app.celery_app.app worker --loglevel=info
     volumes:
       - ./src/backend:/app
     env_file:

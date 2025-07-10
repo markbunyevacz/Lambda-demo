@@ -1,0 +1,39 @@
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv
+.venv312
+*.egg-info/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Adatbázisok és letöltések
+downloads/
+chromadb_data/
+src/backend/chromadb_data/
+
+# IDE/Editor specifikus
+.vscode/
+.idea/
+.cursor/
+
+# Build és disztribúciós mappák
+build/
+dist/
+
+# Egyéb
+*.log
+*.sqlite3 

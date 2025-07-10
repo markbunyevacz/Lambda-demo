@@ -6,169 +6,84 @@ Complete Database Cleanup Script
 Clears PostgreSQL and ChromaDB for fresh PDF processing
 """
 
-import os
 import sys
-import shutil
 from pathlib import Path
+import chromadb
+from sqlalchemy.orm import Session
 
-# Add paths for imports
-sys.path.append('src/backend')
-sys.path.append('src/backend/app')
+# Add the project root to the Python path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-def cleanup_postgresql():
-    """Clean PostgreSQL data tables"""
-    print("🗑️ CLEANING POSTGRESQL...")
-    
+try:
+    from src.backend.app.database import SessionLocal
+    from src.backend.app.models.product import Product
+    from src.backend.app.models.manufacturer import Manufacturer
+    from src.backend.app.models.category import Category
+    from src.backend.models.processed_file_log import ProcessedFileLog
+    print("✅ Successfully imported database modules for cleanup.")
+except ImportError as e:
+    print(f"❌ Failed to import database modules: {e}")
+    sys.exit(1)
+
+
+def clear_postgresql_tables(db: Session):
+    """Deletes all data from the relevant tables."""
     try:
-        from app.database import SessionLocal
-        from app.models.product import Product
-        from models.processed_file_log import ProcessedFileLog
+        print("\n--- Clearing PostgreSQL Tables ---")
         
-        session = SessionLocal()
+        # Order of deletion is important due to foreign key constraints
+        num_products = db.query(Product).delete(synchronize_session=False)
+        print(f"  - Deleted {num_products} products.")
         
-        # Count before cleanup
-        products_before = session.query(Product).count()
-        logs_before = session.query(ProcessedFileLog).count()
+        num_logs = db.query(ProcessedFileLog).delete(synchronize_session=False)
+        print(f"  - Deleted {num_logs} processed file logs.")
         
-        print(f"   Products before: {products_before}")
-        print(f"   Processed logs before: {logs_before}")
+        num_categories = db.query(Category).delete(synchronize_session=False)
+        print(f"  - Deleted {num_categories} categories.")
         
-        # Delete all products
-        session.query(Product).delete()
-        print("   ✅ Products deleted")
+        num_manufacturers = db.query(Manufacturer).delete(synchronize_session=False)
+        print(f"  - Deleted {num_manufacturers} manufacturers.")
         
-        # Delete all processed file logs
-        session.query(ProcessedFileLog).delete() 
-        print("   ✅ Processed file logs deleted")
-        
-        # Commit changes
-        session.commit()
-        session.close()
-        
-        print("   ✅ PostgreSQL cleanup complete!")
-        
+        db.commit()
+        print("✅ PostgreSQL tables cleared successfully.")
     except Exception as e:
-        print(f"   ❌ PostgreSQL cleanup failed: {e}")
-        return False
-    
-    return True
+        print(f"❌ Error clearing PostgreSQL tables: {e}")
+        db.rollback()
 
-def cleanup_chromadb():
-    """Clean ChromaDB vector database"""
-    print("\n🗑️ CLEANING CHROMADB...")
-    
+
+def clear_chromadb_collection(collection_name: str = "pdf_products"):
+    """Deletes and recreates a ChromaDB collection."""
     try:
-        # Method 1: Delete ChromaDB data files
-        chroma_paths = [
-            Path("src/backend/chromadb_data"),
-            Path("src/backend/chroma_db"),
-            Path("chromadb_data"),
-            Path("chroma_db")
-        ]
+        print(f"\n--- Clearing ChromaDB Collection: {collection_name} ---")
+        chroma_client = chromadb.HttpClient(host='localhost', port=8001)
         
-        deleted_any = False
-        for chroma_path in chroma_paths:
-            if chroma_path.exists():
-                print(f"   Deleting: {chroma_path}")
-                shutil.rmtree(chroma_path)
-                deleted_any = True
-                
-        if deleted_any:
-            print("   ✅ ChromaDB files deleted")
-        else:
-            print("   💡 No ChromaDB files found to delete")
-            
-        # Method 2: Try programmatic ChromaDB cleanup
         try:
-            import chromadb
-            client = chromadb.PersistentClient(path="src/backend/chromadb_data")
+            chroma_client.delete_collection(name=collection_name)
+            print(f"  - Collection '{collection_name}' deleted.")
+        except ValueError:
+            print(f"  - Collection '{collection_name}' did not exist, nothing to delete.")
             
-            # List and delete all collections
-            collections = client.list_collections()
-            for collection in collections:
-                client.delete_collection(collection.name)
-                print(f"   ✅ Deleted collection: {collection.name}")
-                
-            if not collections:
-                print("   💡 No ChromaDB collections found")
-                
-        except Exception as e:
-            print(f"   💡 Programmatic ChromaDB cleanup: {e}")
+        # Recreate the collection to ensure it's ready for use
+        chroma_client.get_or_create_collection(name=collection_name)
+        print(f"  - Collection '{collection_name}' created (or already existed).")
         
-        print("   ✅ ChromaDB cleanup complete!")
-        
+        print("✅ ChromaDB collection cleared and ready.")
     except Exception as e:
-        print(f"   ❌ ChromaDB cleanup failed: {e}")
-        return False
-    
-    return True
+        print(f"❌ Error clearing ChromaDB: {e}")
 
-def show_cleanup_summary():
-    """Show final cleanup summary"""
-    print("\n📊 CLEANUP SUMMARY:")
-    
-    try:
-        # Check PostgreSQL
-        from app.database import SessionLocal
-        from app.models.product import Product
-        from models.processed_file_log import ProcessedFileLog
-        
-        session = SessionLocal()
-        
-        products_after = session.query(Product).count()
-        logs_after = session.query(ProcessedFileLog).count()
-        
-        print(f"   PostgreSQL Products: {products_after}")
-        print(f"   PostgreSQL Logs: {logs_after}")
-        
-        session.close()
-        
-        # Check ChromaDB
-        chroma_files = list(Path(".").glob("**/chroma*"))
-        print(f"   ChromaDB files remaining: {len(chroma_files)}")
-        
-        if products_after == 0 and logs_after == 0:
-            print("\n🎉 CLEANUP SUCCESSFUL! Ready for fresh PDF processing.")
-        else:
-            print("\n⚠️ Some data may remain. Check manually if needed.")
-            
-    except Exception as e:
-        print(f"\n❌ Summary check failed: {e}")
 
 def main():
-    """Main cleanup function"""
-    print("🧹 COMPLETE DATABASE CLEANUP")
-    print("=" * 50)
+    print("🚀 Starting database cleanup process...")
     
-    # Ask for confirmation
-    print("\n⚠️  WARNING: This will delete ALL products and processed file logs!")
-    print("   - All 4 products will be deleted")
-    print("   - All processed file logs will be deleted") 
-    print("   - ChromaDB vector data will be deleted")
-    print("   - Manufacturers will be KEPT (ROCKWOOL, etc.)")
-    print()
-    
-    confirm = input("Are you sure you want to continue? (yes/no): ").lower().strip()
-    
-    if confirm not in ['yes', 'y']:
-        print("❌ Cleanup cancelled.")
-        return
-    
-    print("\n🚀 Starting cleanup...")
-    
-    # Execute cleanup
-    postgres_success = cleanup_postgresql()
-    chromadb_success = cleanup_chromadb()
-    
-    # Show summary
-    show_cleanup_summary()
-    
-    if postgres_success and chromadb_success:
-        print("\n✅ COMPLETE CLEANUP FINISHED!")
-        print("💡 You can now run: python real_pdf_processor.py")
-        print("   All 46 PDFs will be processed fresh without duplicate errors.")
-    else:
-        print("\n⚠️ Cleanup completed with some issues. Check logs above.")
+    db_session = SessionLocal()
+    try:
+        clear_postgresql_tables(db_session)
+        clear_chromadb_collection()
+        print("\n🎉 Database cleanup complete. Ready for a fresh start.")
+    finally:
+        db_session.close()
+
 
 if __name__ == "__main__":
     main() 

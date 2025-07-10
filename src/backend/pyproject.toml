@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "lambda-backend"
+version = "0.1.0"
+description = "The backend service for the Lambda.hu project."
+authors = ["Lambda AI <dev@lambda.hu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = ">=0.104.1"
+uvicorn = ">=0.24.0"
+python-multipart = ">=0.0.9"
+sqlalchemy = ">=2.0.23"
+alembic = ">=1.13.1"
+psycopg2-binary = ">=2.9.7"
+redis = "==5.0.1"
+celery = "==5.3.4"
+PyPDF2 = "==3.0.1"
+pdfplumber = "==0.10.3"
+PyMuPDF = "==1.23.8"
+camelot-py = {extras = ["cv"], version = "==0.11.0"}
+tabula-py = "==2.8.2"
+opencv-python = "==4.8.1.78"
+
+# AI and Machine Learning - FINAL ATTEMPT: Let Poetry resolve all latest versions
+anthropic = "*"
+langchain = "*"
+langchain-anthropic = "*"
+langchain-community = "*"
+langchain-core = "*"
+langsmith = "*"
+chromadb = "*"
+
+# MCP (Model Context Protocol)
+mcp = "*"
+langchain-mcp-adapters = "*"
+langgraph = "*"
+
+# Data Processing
+pandas = "==2.1.4"
+numpy = "~1.26.0"
+python-dotenv = "==1.0.0"
+requests = "==2.31.0"
+beautifulsoup4 = "==4.12.2"
+aiohttp = "==3.9.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "==7.4.3"
+pytest-asyncio = "==0.21.1"
+httpx = ">=0.25.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api" 

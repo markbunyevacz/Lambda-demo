@@ -3,57 +3,47 @@ import json
 import sys
 from pathlib import Path
 
-sys.path.append('/app')
+# This must be at the very top to ensure the app module is found
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from app.mcp_orchestrator.strategies import PyMuPDFStrategy
-from app.mcp_orchestrator.models import ExtractionTask
-from real_pdf_processor import ClaudeAIAnalyzer
+from app.services.ai_service import AnalysisService
+from app.services.extraction_service import RealPDFExtractor
 
 
-async def debug_ai_analysis(pdf_path: Path):
+async def debug_ai(pdf_path: Path):
     """
-    Isolates and tests the ClaudeAIAnalyzer by feeding it text from a
-    known-working strategy (PyMuPDF) and printing the raw AI response.
+    Isolates and tests the AnalysisService by feeding it text from a
+    real PDF document.
     """
     if not pdf_path.exists():
-        print(f"❌ ERROR: File not found at {pdf_path}")
-        return
-
-    print(f"🔬 Starting AI analysis debug for: {pdf_path.name}")
-
-    # --- Step 1: Extract text using a reliable strategy ---
-    print("--- Running PyMuPDF to get clean text ---")
-    task = ExtractionTask(pdf_path=str(pdf_path), task_id="ai_debug_task")
-    pdf_strategy = PyMuPDFStrategy()
-    text_result = await pdf_strategy.extract(pdf_path, task)
-    
-    if not text_result.success or not text_result.extracted_data.get("raw_text"):
-        print(
-            "❌ FAILED: Could not extract text with PyMuPDF. Cannot proceed."
-        )
+        print(f"💥 ERROR: PDF file not found at {pdf_path}")
         return
     
-    raw_text = text_result.extracted_data.get("raw_text")
-    print(f"✅ Successfully extracted {len(raw_text)} characters of text.\n")
+    print(f"---  एनालाइजिंग: {pdf_path.name} ---")
+
+    try:
+        # --- Step 1: Extract text using RealPDFExtractor ---
+        print("--- Running RealPDFExtractor to get clean text ---")
+        extractor = RealPDFExtractor()
+        # Note: extract_pdf_content is synchronous in the original service
+        # We will call it directly. If it were async, we would await it.
+        text, tables, method = extractor.extract_pdf_content(pdf_path)
+
+        if not text:
+            print("Extraction failed. No text to analyze.")
+            return
 
     # --- Step 2: Feed the extracted text to the AI analyzer ---
-    print("--- Calling ClaudeAIAnalyzer with the extracted text ---")
-    ai_analyzer = ClaudeAIAnalyzer()
-    
-    try:
-        ai_response = ai_analyzer.analyze_rockwool_pdf(
-            text_content=raw_text,
-            tables=[],  # We focus only on text for this debug
-            filename=pdf_path.name
-        )
-        print("✅ AI analysis completed.\n")
+        print("--- Calling AnalysisService with the extracted text ---")
+        analyzer = AnalysisService()
+        result = await analyzer.analyze_pdf_content(text, tables, pdf_path.name)
         
         # --- Step 3: Print the RAW, unformatted AI response ---
-        print("--- 🤖 Raw AI Response (JSON) ---")
-        print(json.dumps(ai_response, indent=2, ensure_ascii=False))
+        print("\n--- AI Analysis Result ---")
+        print(json.dumps(result, indent=2, ensure_ascii=False))
         
     except Exception as e:
-        print(f"💥 CRITICAL ERROR during AI analysis: {e}")
+        print(f"An error occurred during the debug process: {e}")
 
 
 if __name__ == "__main__":
@@ -63,4 +53,4 @@ if __name__ == "__main__":
     pdf_to_test_path_str = sys.argv[1] if len(sys.argv) > 1 else default_pdf
     target_pdf_path = Path(pdf_to_test_path_str)
         
-    asyncio.run(debug_ai_analysis(target_pdf_path)) 
+    asyncio.run(debug_ai(target_pdf_path)) 
