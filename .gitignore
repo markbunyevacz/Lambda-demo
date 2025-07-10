@@ -174,3 +174,4 @@ downloads/
 .env.local
 .venv312/
 /tools/AI-Cursor-Scraping-Assistant/
+.env.example
