@@ -387,18 +387,13 @@ sequenceDiagram
     P->>N: Render navigation (activeTab: 'dashboard')
     P->>D: Render dashboard
     
-    D->>A: getProducts(1000, 0)
-    A->>B: GET /products?limit=1000&offset=0
-    B-->>A: Product[]
-    A-->>D: Product[]
+    D->>A: getSystemMetrics()
+    A->>B: GET /admin/database/overview
+    B-->>A: DatabaseOverview (JSON)
+    A-->>D: SystemMetrics (transformed)
     
-    D->>A: getManufacturers()
-    A->>B: GET /manufacturers
-    B-->>A: Manufacturer[]
-    A-->>D: Manufacturer[]
-    
-    D->>D: Calculate stats
-    D-->>U: Display dashboard with real data
+    D->>D: Update stats state
+    D-->>U: Display dashboard with real data (129 products)
 ```
 
 ### 2. RAG Search Flow (ChatWidget)
@@ -470,7 +465,7 @@ sequenceDiagram
 │  Dependencies: │    │  Dependencies:   │    │  Dependencies: │
 │  • React hooks│    │  • React hooks   │    │  • React hooks │
 │  • SVG icons  │    │  • api.ts ──────┼────┼──→ api.ts       │
-│  • Tailwind   │    │  • Loading UI    │    │  • Auto-scroll │
+│  • Tailwind   │    │  • Loading UI    │    │  • RAG Search  │
 │                │    │  • Error states │    │  • Complex state│
 └────────────────┘    └──────────────────┘    └────────────────┘
                                 │
@@ -484,12 +479,9 @@ sequenceDiagram
                       │  • Error handling  │
                       │                    │
                       │  Endpoints:        │
-                      │  • Products        │
-                      │  • Categories      │
-                      │  • Manufacturers   │
-                      │  • RAG Search      │
-                      │  • Health Check    │
-                      │  • Admin Actions   │
+                      │  • getSystemMetrics() → /admin/database/overview
+                      │  • searchRAG()      → /search/rag
+                      │  • Admin Actions    → /api/v1/scrape
                       └────────────────────┘
 ```
 
@@ -729,6 +721,6 @@ Testing Pyramid:
 
 ---
 
-*Dokumentáció utolsó frissítése: 2025-01-28*
-*Verzió: 1.0.0*
-*Státusz: Complete Implementation Documentation* 
+*Dokumentáció utolsó frissítése: 2025-07-13*
+*Verzió: 1.1.0*
+*Státusz: Dashboard data flow corrected* 

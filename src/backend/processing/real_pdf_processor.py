@@ -11,65 +11,44 @@ where each service handles a specific aspect of the processing pipeline.
 import sys
 from pathlib import Path
 
-# This must be at the very top to ensure the app module is found
-# We resolve the path to be absolute to avoid any relative path issues.
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+# -- Path Setup --
+_current_dir = Path(__file__).parent
+_backend_root = (_current_dir / "..").resolve()
+sys.path.insert(0, str(_backend_root))
 
+# Standard Library Imports
 import logging
-import warnings
-from typing import Dict, List, Optional, Any
-from dataclasses import dataclass, asdict
-from datetime import datetime
 import asyncio
+from typing import Dict, List, Optional
+from datetime import datetime
 
-from sqlalchemy.orm import Session
+# Third-Party Imports
 from dotenv import load_dotenv
+from sqlalchemy.orm import Session
 
-# Database and Model Imports
+# Local Application Imports
 from app.database import SessionLocal
-from app.models.product import Product  # Assuming these are needed by the script/main
-from app.models.manufacturer import Manufacturer
-from app.models.category import Category
-
-# Service Imports
-from app.services.extraction_service import RealPDFExtractor, AdvancedTableExtractor, TableExtractionResult
+from app.models.processing_models import PDFExtractionResult
+from app.services.extraction_service import (
+    RealPDFExtractor, AdvancedTableExtractor
+)
 from app.services.ingestion_service import DataIngestionService
 from app.processing.file_handler import FileHandler
 from app.processing.analysis_service import AnalysisService
 from app.processing.confidence_scorer import ConfidenceScorer
-
-# Utility Imports
 from app.utils import clean_utf8
 
-
-# Load environment variables
+# -- Environment and Logging Configuration --
 load_dotenv()
-load_dotenv(str(Path(__file__).resolve().parent.parent.parent / ".env"))
+project_root_env = _backend_root.parent.parent / '.env'
+if project_root_env.exists():
+    load_dotenv(dotenv_path=project_root_env)
 
-# Configure logging
 logging.basicConfig(
-    level=logging.INFO, 
-    format="%(asctime)s - %(levelname)s - %(message)s"
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
 logger = logging.getLogger(__name__)
-
-
-@dataclass
-class PDFExtractionResult:
-    """A structured representation of the data extracted from a PDF."""
-    product_name: str
-    extracted_text: str
-    technical_specs: Dict[str, Any]
-    pricing_info: Dict[str, Any]
-    tables_data: List[Dict[str, Any]]
-    confidence_score: float
-    source_filename: str
-    processing_time: float
-    extraction_method: str
-
-    def to_dict(self) -> Dict[str, Any]:
-        """Converts the dataclass instance to a dictionary."""
-        return asdict(self)
 
 
 class RealPDFProcessor:
@@ -79,7 +58,7 @@ class RealPDFProcessor:
         """Initialize with dedicated services."""
         self.db_session = db_session
         self.enable_ai_analysis = enable_ai_analysis
-        
+
         # Initialize services
         self.file_handler = FileHandler(db_session)
         self.extraction_service = RealPDFExtractor()
@@ -87,7 +66,7 @@ class RealPDFProcessor:
         self.analysis_service = AnalysisService()
         self.confidence_scorer = ConfidenceScorer()
         self.ingestion_service = DataIngestionService(db_session)
-        
+
         # Processing stats
         self.processing_stats = {
             "total_processed": 0,
@@ -107,19 +86,21 @@ class RealPDFProcessor:
         # 1. Handle File & Duplicates
         file_hash = self.file_handler.calculate_file_hash(pdf_path)
         if not file_hash:
-            return None # Error handled in calculator
-        
+            return None  # Error handled in calculator
+
         if self.file_handler.is_duplicate(file_hash):
             logger.info(f"Skipping duplicate file: {pdf_path.name}")
             self.processing_stats["skipped_duplicates"] += 1
             return None
-        
+
         # 2. Extract Content
-        text, simple_tables, text_method = self.extraction_service.extract_pdf_content(pdf_path)
-        
+        text, simple_tables, text_method = (
+            self.extraction_service.extract_pdf_content(pdf_path)
+        )
+
         # 3. Extract Tables using Advanced Method
         table_result = self.table_extractor.extract_tables_hybrid(pdf_path)
-        
+
         # 4. Analyze with AI
         ai_analysis = {}
         if self.enable_ai_analysis:
@@ -133,29 +114,37 @@ class RealPDFProcessor:
         consolidated_result = self._consolidate_results(
             pdf_path, start_time, text, text_method, table_result, ai_analysis
         )
-        
+
         # 6. Ingest Data
         self.ingestion_service.ingest_data(consolidated_result, file_hash)
-        
+
         # 7. Update logs and stats
         self.file_handler.add_hash_to_log(file_hash)
         self.processing_stats["successful"] += 1
         self.processing_stats["total_processed"] += 1
         processing_time = (datetime.now() - start_time).total_seconds()
         self.processing_stats["total_extraction_time"] += processing_time
-        
-        logger.info(f"Successfully processed {pdf_path.name} in {processing_time:.2f} seconds.")
+
+        logger.info(
+            f"Successfully processed {pdf_path.name} in {processing_time:.2f}s"
+        )
         return consolidated_result
 
     def _consolidate_results(
         self, pdf_path, start_time, text, text_method, table_result, ai_analysis
     ) -> PDFExtractionResult:
-        """Consolidates all extracted data into the final result object."""
-        
+        """
+        Consolidates all extracted data into the final result object,
+        ensuring it's always well-formed.
+        """
         tables = table_result.tables if table_result else []
         table_method = table_result.extraction_method if table_result else "none"
 
-        # Calculate confidence score using the dedicated service
+        # Ensure ai_analysis is a dict even on failure
+        if not isinstance(ai_analysis, dict):
+            ai_analysis = {}
+
+        # Calculate confidence score
         confidence = self.confidence_scorer.calculate_enhanced_confidence(
             text_content=text,
             tables=tables,
@@ -165,11 +154,17 @@ class RealPDFProcessor:
 
         processing_time = (datetime.now() - start_time).total_seconds()
 
+        product_name = ai_analysis.get("product_identification", {}).get(
+            "product_name", pdf_path.stem
+        )
+        
+        # This now includes the guaranteed 'extraction_metadata' field
         return PDFExtractionResult(
-            product_name=ai_analysis.get("product_identification", {}).get("product_name", pdf_path.stem),
+            product_name=product_name,
             extracted_text=clean_utf8(text),
             technical_specs=ai_analysis.get("technical_specifications", {}),
             pricing_info=ai_analysis.get("pricing_information", {}),
+            extraction_metadata=ai_analysis.get("extraction_metadata", {}),
             tables_data=tables,
             confidence_score=confidence,
             source_filename=pdf_path.name,
@@ -188,36 +183,38 @@ class RealPDFProcessor:
         """
         if not pdf_directory.exists():
             raise FileNotFoundError(f"Directory not found: {pdf_directory}")
-            
+
         pdf_files = list(pdf_directory.glob("*.pdf"))
         if not pdf_files:
             logger.warning(f"No PDF files found in {pdf_directory}")
             return []
-            
+
         logger.info(f"Found {len(pdf_files)} PDF files to process")
         results = []
-        
+
         for pdf_path in pdf_files:
             result = await self.process_pdf(pdf_path)
             if result:
                 results.append(result)
-                
+
         logger.info(
-            f"Processing complete: {len(results)}/{len(pdf_files)} successful"
+            "Processing complete: %d/%d successful",
+            len(results),
+            len(pdf_files)
         )
-        
+
         # Save results if output file specified
         if output_file and results:
             self._save_results(results, output_file)
-            
+
         return results
-    
+
     def _save_results(
         self, results: List[PDFExtractionResult], output_file: Path
     ):
         """Save processing results to JSON file."""
         import json
-        
+
         results_data = [result.to_dict() for result in results]
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(results_data, f, indent=2, ensure_ascii=False)
@@ -230,64 +227,48 @@ class RealPDFProcessor:
 
 async def main():
     """Main function for testing the PDF processor."""
-    
-    # Initialize database session
+    logger.info("🚀 Starting the data ingestion process...")
+    db_session = None
     try:
-        db = SessionLocal()
-    except Exception as e:
-        logger.error(f"Failed to create database session: {e}")
-        print("❌ Database not available - cannot proceed")
-        return
-    
-    try:
-        # Initialize processor
-        processor = RealPDFProcessor(db_session=db)
-        
-        # Define paths
-        pdf_directory = Path("../../src/downloads/rockwool_datasheets")
-        output_file = Path("real_pdf_results.json")
-        
-        # Try alternative paths if main path doesn't exist
+        db_session = SessionLocal()
+        logger.info("✅ Database session created successfully.")
+
+        processor = RealPDFProcessor(db_session=db_session)
+        logger.info("✅ RealPDFProcessor initialized.")
+
+        # Correctly define the project root and PDF directory path
+        project_root = _backend_root.parent
+        pdf_directory = project_root / "downloads" / "rockwool_datasheets"
+        output_file = project_root / "real_pdf_results.json"
+
+        logger.info(f"📁 Target PDF directory: {pdf_directory}")
+
         if not pdf_directory.exists():
-            alternative_paths = [
-                Path("../downloads/rockwool_datasheets"),
-                Path("src/downloads/rockwool_datasheets"),
-                Path("downloads/rockwool_datasheets")
-            ]
-            
-            for alt_path in alternative_paths:
-                if alt_path.exists():
-                    pdf_directory = alt_path
-                    logger.info(f"Using alternative path: {pdf_directory}")
-                    break
-                else:
-                    logger.error("No valid PDF directory found")
-                    return
-        
-        # Process PDFs
-        results = await processor.process_directory(pdf_directory, output_file)
-        
-        # Display results
-        if results:
-            print(f"\n🎉 Processing complete! {len(results)} PDFs processed.")
-            print("\n📋 Sample results:")
-            for i, result in enumerate(results[:3], 1):
-                print(
-                    f"  {i}. {result.product_name} "
-                    f"(confidence: {result.confidence_score:.2f})"
-                )
-        else:
-            print("❌ No PDFs were successfully processed")
-            
-        # Show statistics
+            logger.error(
+                "❌ CRITICAL: PDF directory not found at the specified path: %s",
+                pdf_directory
+            )
+            return
+
+        await processor.process_directory(pdf_directory, output_file)
+
         stats = processor.get_processing_stats()
-        print(f"\n📊 Statistics: {stats}")
-    
+        logger.info("🎉 Ingestion process finished.")
+        logger.info(f"📊 Final Statistics: {stats}")
+
+    except Exception as e:
+        logger.error(
+            "An unexpected error occurred during the ingestion process: %s",
+            e, exc_info=True
+        )
     finally:
-        if db:
-            db.close()
+        if db_session:
+            db_session.close()
+            logger.info("✅ Database session closed.")
 
 
 if __name__ == "__main__":
+    if sys.platform == "win32":
+        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
     asyncio.run(main())
 

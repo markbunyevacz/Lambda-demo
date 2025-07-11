@@ -1,7 +1,7 @@
 
 import logging
 from pathlib import Path
-from typing import Dict, List, Tuple, Any
+from typing import Dict, List, Tuple, Any, Optional
 from dataclasses import dataclass, asdict
 from datetime import datetime
 
@@ -678,20 +678,25 @@ class AdvancedTableExtractor:
         
         return None
     
-    def _check_technical_patterns(self, data: List[List[str]]) -> bool:
-        """Check for ROCKWOOL technical content patterns"""
-        
+    def _check_technical_patterns(
+        self, data: List[List[Optional[str]]]
+    ) -> bool:
+        """Heuristic to check if a table contains technical data."""
+        if not data:
+            return False
+
+        # Robustly join cell content, ignoring None values
+        text_content = ' '.join(
+            ' '.join(str(cell) for cell in row if cell) for row in data
+        ).lower()
+
+        # More specific patterns
         technical_keywords = [
-            'λ', 'lambda', 'w/m', 'kg/m³', 'pa', 'kpa', 'mm', 'cm', 'm²',
-            'thermal', 'conductivity', 'density', 'thickness', 'fire',
-            'hővezetési', 'tényező', 'testsűrűség', 'vastagság', 'tűz'
+            'hővezetési', 'lambda', 'λ', 'tűzvédelmi', 'nyomószilárdság',
+            'testsűrűség', 'páradiffúziós', 'méretpontosság', 'w/mk', 'kpa'
         ]
-        
-        text_content = ' '.join([' '.join(row) for row in data]).lower()
-        
-        matches = sum(1 for keyword in technical_keywords if keyword in text_content)
-        
-        return matches >= 3  # At least 3 technical terms
+
+        return any(keyword in text_content for keyword in technical_keywords)
     
     def get_extraction_stats(self) -> Dict[str, Any]:
         """Get extraction statistics"""

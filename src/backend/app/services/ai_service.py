@@ -52,36 +52,47 @@ class AnalysisService:
                    f"max_tokens={self.model_config.max_tokens}")
 
     async def analyze_pdf_content(
-        self, 
-        text_content: str, 
-        tables_data: List[Dict], 
+        self,
+        text_content: str,
+        tables_data: List[Dict],
         filename: str
     ) -> Dict[str, Any]:
         """
-        Analyze PDF content and return structured data.
+        Analyzes PDF content using a multi-step process:
+        1. Creates a detailed prompt.
+        2. Makes a robust API call to the AI model.
+        3. Parses the structured JSON response.
 
-        This method is used by the admin interface for testing configurations.
-        
+        This method is the primary entry point for AI analysis.
+
         Args:
-            text_content: Raw text extracted from PDF
-            tables_data: List of table dictionaries
-            filename: Name of the source PDF file
-            
+            text_content: Raw text extracted from the PDF.
+            tables_data: List of table dictionaries from the PDF.
+            filename: The name of the source PDF file.
+
         Returns:
-            Dict containing structured analysis results
+            A dictionary containing the structured analysis results.
         """
         try:
-            # Use the existing analyze_rockwool_pdf method
-            result = await self.analyze_rockwool_pdf(text_content, tables_data, filename)
-            return result
+            # Step 1: Create a detailed, externally-configured prompt
+            prompt = self._create_extraction_prompt(
+                text_content=text_content,
+                tables_data=tables_data,
+                filename=filename
+            )
+            
+            # Step 2: Make the API call using the generated prompt
+            response_text = await self._make_api_call(prompt)
+            
+            # Step 3: Parse the structured JSON from the AI's response
+            parsed_response = self._parse_response(response_text)
+            
+            return parsed_response
 
         except Exception as e:
-            logger.error(f"PDF content analysis failed: {e}")
-            return {
-                "product_identification": {"product_name": "Analysis Failed"},
-                "extraction_metadata": {"confidence_score": 0.0},
-                "error": str(e)
-            }
+            logger.error(f"PDF content analysis failed for {filename}: {e}", exc_info=True)
+            # EXTERNALIZED: Use fallback from configuration
+            return self._get_fallback_error_structure(str(e))
 
     def _create_extraction_prompt(
         self, text_content: str, tables_data: List[Dict], filename: str
@@ -214,4 +225,22 @@ class AnalysisService:
             "max_tokens": model_config.max_tokens,
             "timeout_seconds": model_config.timeout_seconds,
             "max_retries": model_config.max_retries
-        } 
+        }
+
+    # Backward compatibility shim
+    async def analyze_rockwool_pdf(
+        self, text: str, tables: List[Dict], filename: str
+    ) -> Dict[str, Any]:
+        """
+        Provides backward compatibility for older components.
+        Delegates to the new, unified analyze_pdf_content method.
+        """
+        logger.warning(
+            "Call to deprecated 'analyze_rockwool_pdf'. "
+            "Update to 'analyze_pdf_content'."
+        )
+        return await self.analyze_pdf_content(
+            text_content=text,
+            tables_data=tables,
+            filename=filename
+        ) 
