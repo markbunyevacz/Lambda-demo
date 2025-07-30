@@ -2,6 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 import os
+from contextlib import contextmanager
 
 # Database URL with proper UTF-8 encoding for Hungarian content
 # Check if we're running inside Docker or external
@@ -58,16 +59,21 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 
 
-def get_db():
+@contextmanager
+def get_session():
     """
-    Adatbázis session dependency FastAPI-hoz és Celery feladatokhoz.
-
-    Ez a "dependency" egy adatbázis session-t biztosít a request-ek vagy
-    feladatok számára, és biztosítja, hogy a session a végén megfelelően
-    lezárásra kerüljön, még hiba esetén is.
+    Context manager for providing a database session.
+    Ensures the session is always closed, even if errors occur.
     """
     db = SessionLocal()
     try:
         yield db
     finally:
-        db.close() 
+        db.close()
+
+def get_db():
+    """
+    Database session dependency for FastAPI and Celery tasks.
+    """
+    with get_session() as db:
+        yield db 

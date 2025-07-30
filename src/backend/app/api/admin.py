@@ -32,12 +32,12 @@ async def test_admin_endpoint():
     🧪 Egyszerű teszt endpoint - adatbázis nélkül
     """
     return {
-        "success": True, 
-        "message": "Admin API működik!", 
+        "success": True,
+        "message": "Admin API működik!",
         "timestamp": "2025-01-27",
         "endpoints": [
             "/admin/database/overview",
-            "/admin/database/products", 
+            "/admin/database/products",
             "/admin/database/manufacturers",
             "/admin/database/categories"
         ]
@@ -50,31 +50,20 @@ async def get_database_overview(db: Session = Depends(get_db)):
     📊 Adatbázis áttekintés - gyors statisztikák
     """
     try:
-        # Simple count queries first
-        try:
-            mfr_count = db.execute("SELECT COUNT(*) FROM manufacturers").scalar()
-        except Exception:
-            mfr_count = 0
-            
-        try:
-            cat_count = db.execute("SELECT COUNT(*) FROM categories").scalar()
-        except Exception:
-            cat_count = 0
-            
-        try:
-            prod_count = db.execute("SELECT COUNT(*) FROM products").scalar()
-        except Exception:
-            prod_count = 0
-        
+        # Use SQLAlchemy ORM for reliable counting
+        mfr_count = db.query(func.count(Manufacturer.id)).scalar()
+        cat_count = db.query(func.count(Category.id)).scalar()
+        prod_count = db.query(func.count(Product.id)).scalar()
+
         stats = {
             "manufacturers": mfr_count,
-            "categories": cat_count, 
+            "categories": cat_count,
             "products": prod_count,
             "processed_files": 0,  # Temporarily disabled: ProcessedFileLog
             "last_updated": datetime.now().isoformat(),
             "database_status": "connected"
         }
-        
+
         # Gyártók szerinti termékszámok
         manufacturer_stats = (
             db.query(
@@ -85,19 +74,23 @@ async def get_database_overview(db: Session = Depends(get_db)):
             .group_by(Manufacturer.id, Manufacturer.name)
             .all()
         )
-        
+
         stats["products_by_manufacturer"] = [
             {"manufacturer": name, "count": count}
             for name, count in manufacturer_stats
         ]
-        
+
         return {"success": True, "data": stats}
-        
+
     except Exception as e:
-        # UTF-8 safe error handling
-        error_msg = str(e).encode('utf-8', errors='ignore').decode('utf-8')
-        logger.error(f"Database overview failed: {error_msg}")
-        raise HTTPException(status_code=500, detail=error_msg)
+        # UTF-8 safe error handling and more detailed logging
+        error_msg = (
+            f"An error occurred while fetching database overview: {e}"
+        )
+        logger.error(error_msg, exc_info=True)
+        raise HTTPException(
+            status_code=500, detail="Could not retrieve database statistics."
+        )
 
 
 @router.get("/database/products")
@@ -119,18 +112,18 @@ async def get_products(
                 joinedload(Product.category)
             )
         )
-        
+
         # Szűrések
         if manufacturer:
             query = query.join(Manufacturer).filter(
                 Manufacturer.name.ilike(f"%{manufacturer}%")
             )
-        
+
         if category:
             query = query.join(Category).filter(
                 Category.name.ilike(f"%{category}%")
             )
-        
+
         # Rendezés és lapozás
         total = query.count()
         products = (
@@ -139,7 +132,7 @@ async def get_products(
             .limit(limit)
             .all()
         )
-        
+
         # Formázás
         product_list = []
         for product in products:
@@ -148,15 +141,27 @@ async def get_products(
                 "name": product.name,
                 "sku": product.sku,
                 "price": product.price,
-                "manufacturer": product.manufacturer.name if product.manufacturer else None,
+                "manufacturer": (
+                    product.manufacturer.name if product.manufacturer else None
+                ),
                 "category": product.category.name if product.category else None,
-                "technical_specs_count": len(product.technical_specs) if product.technical_specs else 0,
+                "technical_specs_count": (
+                    len(product.technical_specs)
+                    if product.technical_specs else 0
+                ),
                 "has_full_text": bool(product.full_text_content),
-                "full_text_length": len(product.full_text_content) if product.full_text_content else 0,
-                "created_at": product.created_at.isoformat() if hasattr(product, 'created_at') and product.created_at else None
+                "full_text_length": (
+                    len(product.full_text_content)
+                    if product.full_text_content else 0
+                ),
+                "created_at": (
+                    product.created_at.isoformat()
+                    if hasattr(product, 'created_at') and product.created_at
+                    else None
+                )
             }
             product_list.append(product_data)
-        
+
         return {
             "success": True,
             "data": {
@@ -169,7 +174,7 @@ async def get_products(
                 }
             }
         }
-        
+
     except Exception as e:
         logger.error(f"Products listing failed: {e}")
         raise HTTPException(status_code=500, detail=str(e))
@@ -190,10 +195,10 @@ async def get_product_detail(product_id: int, db: Session = Depends(get_db)):
             .filter(Product.id == product_id)
             .first()
         )
-        
+
         if not product:
             raise HTTPException(status_code=404, detail="Product not found")
-        
+
         # Teljes adat formázás
         product_detail = {
             "id": product.id,
@@ -213,12 +218,19 @@ async def get_product_detail(product_id: int, db: Session = Depends(get_db)):
             } if product.category else None,
             "technical_specs": product.technical_specs,
             "full_text_content": product.full_text_content,
-            "full_text_length": len(product.full_text_content) if product.full_text_content else 0,
-            "created_at": product.created_at.isoformat() if hasattr(product, 'created_at') and product.created_at else None
+            "full_text_length": (
+                len(product.full_text_content)
+                if product.full_text_content else 0
+            ),
+            "created_at": (
+                product.created_at.isoformat()
+                if hasattr(product, 'created_at') and product.created_at
+                else None
+            )
         }
-        
+
         return {"success": True, "data": product_detail}
-        
+
     except HTTPException:
         raise
     except Exception as e:
@@ -257,7 +269,7 @@ async def get_manufacturers(db: Session = Depends(get_db)):
             .order_by(desc('product_count'))
             .all()
         )
-        
+
         manufacturer_list = []
         for mfr in manufacturers:
             manufacturer_data = {
@@ -267,9 +279,9 @@ async def get_manufacturers(db: Session = Depends(get_db)):
                 "product_count": mfr.product_count
             }
             manufacturer_list.append(manufacturer_data)
-        
+
         return {"success": True, "data": manufacturer_list}
-        
+
     except Exception as e:
         logger.error(f"Manufacturers listing failed: {e}")
         raise HTTPException(status_code=500, detail=str(e))
@@ -293,7 +305,7 @@ async def get_categories(db: Session = Depends(get_db)):
             .order_by(desc('product_count'))
             .all()
         )
-        
+
         category_list = []
         for cat in categories:
             category_data = {
@@ -303,9 +315,9 @@ async def get_categories(db: Session = Depends(get_db)):
                 "product_count": cat.product_count
             }
             category_list.append(category_data)
-        
+
         return {"success": True, "data": category_list}
-        
+
     except Exception as e:
         logger.error(f"Categories listing failed: {e}")
         raise HTTPException(status_code=500, detail=str(e))
@@ -322,7 +334,7 @@ async def search_products(
     """
     try:
         search_term = f"%{q}%"
-        
+
         products = (
             db.query(Product)
             .options(
@@ -337,18 +349,20 @@ async def search_products(
             .limit(limit)
             .all()
         )
-        
+
         search_results = []
         for product in products:
             result = {
                 "id": product.id,
                 "name": product.name,
                 "sku": product.sku,
-                "manufacturer": product.manufacturer.name if product.manufacturer else None,
+                "manufacturer": (
+                    product.manufacturer.name if product.manufacturer else None
+                ),
                 "category": product.category.name if product.category else None
             }
             search_results.append(result)
-        
+
         return {
             "success": True,
             "data": {
@@ -357,10 +371,10 @@ async def search_products(
                 "count": len(search_results)
             }
         }
-        
+
     except Exception as e:
         logger.error(f"Product search failed: {e}")
-        raise HTTPException(status_code=500, detail=str(e)) 
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 @router.get("/analysis/extraction-comparison")
@@ -370,28 +384,37 @@ async def get_extraction_comparison_report():
     """
     # Structured extraction results - try multiple possible locations
     import os
-    
+
     possible_paths = [
         Path("real_pdf_extraction_results.json"),  # Same directory as API
         Path("src/backend/real_pdf_extraction_results.json"),  # From project root
         Path("../real_pdf_extraction_results.json"),  # One level up
         Path("../../real_pdf_extraction_results.json"),  # Two levels up
-        Path(os.getcwd()) / "src" / "backend" / "real_pdf_extraction_results.json"  # Absolute
+        (
+            Path(os.getcwd()) / "src" / "backend" /
+            "real_pdf_extraction_results.json"
+        )
     ]
-    
+
     report_path = None
     for path in possible_paths:
         if path.exists():
             report_path = path
             break
-    
+
     if not report_path:
-        raise HTTPException(status_code=404, detail="Extraction results not found. Please run the PDF processor first.")
-    
+        raise HTTPException(
+            status_code=404,
+            detail=(
+                "Extraction results not found. "
+                "Please run the PDF processor first."
+            )
+        )
+
     try:
         with open(report_path, "r", encoding="utf-8") as f:
             extraction_data = json.load(f)
-        
+
         # Convert to frontend format
         comparison_data = []
         for result in extraction_data.get("results", []):
@@ -400,8 +423,11 @@ async def get_extraction_comparison_report():
                 "structured_extraction": result
             }
             comparison_data.append(comparison_entry)
-        
+
         return {"success": True, "data": comparison_data}
     except Exception as e:
         logger.error(f"Failed to read or parse extraction results: {e}")
-        raise HTTPException(status_code=500, detail="Failed to process extraction results.") 
+        raise HTTPException(
+            status_code=500,
+            detail="Failed to process extraction results."
+        ) 

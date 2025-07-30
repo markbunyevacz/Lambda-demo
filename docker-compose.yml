@@ -50,6 +50,8 @@ services:
     depends_on:
       db:
         condition: service_healthy
+      chroma:
+        condition: service_started
     networks:
       - lambda_network
 
@@ -99,6 +101,7 @@ services:
     restart: unless-stopped
     networks:
       - lambda_network
+
 
 volumes:
   postgres_data:

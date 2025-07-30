@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { materialDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { api } from '@/lib/api'; // Import the centralized api service
 
 interface ExtractionResult {
   product_name?: string;
@@ -15,8 +16,6 @@ interface ComparisonData {
   structured_extraction: ExtractionResult | { error: string };
 }
 
-const API_BASE = 'http://localhost:8001/admin';
-
 const ExtractionAnalysis: React.FC = () => {
   const [report, setReport] = useState<ComparisonData[]>([]);
   const [selectedPdf, setSelectedPdf] = useState<ComparisonData | null>(null);
@@ -27,15 +26,17 @@ const ExtractionAnalysis: React.FC = () => {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch(`${API_BASE}/analysis/extraction-comparison`);
-      if (!response.ok) {
-        const errData = await response.json();
-        throw new Error(errData.detail || 'Failed to fetch analysis report');
+      const response = await api.getExtractionComparisonReport();
+      if (!response.success) {
+        throw new Error('Failed to fetch analysis report from API');
       }
-      const data = await response.json();
-      setReport(data.data);
+      setReport(response.data);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Unknown error');
+      if (err instanceof Error) {
+        setError(err.message.includes('404') ? 'Analysis report file not found on the server. Please run the extraction process first.' : err.message);
+      } else {
+        setError('An unknown error occurred');
+      }
     } finally {
       setLoading(false);
     }

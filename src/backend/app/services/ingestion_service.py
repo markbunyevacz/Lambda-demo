@@ -148,7 +148,10 @@ class DataIngestionService:
                 category_id=category.id,
                 technical_specs=specs,
                 price=self._extract_price_from_result(result),
-                sku=self._generate_sku(result.product_name)
+                # Pass both name and filename for a more unique SKU
+                sku=self._generate_sku(
+                    result.product_name, result.source_filename
+                )
             )
             self.db_session.add(product)
             self.db_session.commit()
@@ -248,16 +251,25 @@ class DataIngestionService:
             return "Hőszigetelés"
         return "Általános"
 
-    def _generate_sku(self, product_name: str) -> str:
+    def _generate_sku(
+        self, product_name: str, source_filename: str
+    ) -> str:
+        """
+        Generates a more robust SKU from product name and source filename.
+        """
         import hashlib
         name_part = "".join(filter(str.isalnum, product_name)).upper()[:8]
-        name_hash = hashlib.sha1(product_name.encode()).hexdigest()[:4]
-        return f"PDF-{name_part}-{name_hash}"
+        # Combine name and filename to create a more unique hash
+        unique_string = f"{product_name}::{source_filename}"
+        unique_hash = hashlib.sha1(unique_string.encode()).hexdigest()[:4]
+        return f"PDF-{name_part}-{unique_hash}"
 
     def _extract_price_from_result(
         self, result: 'PDFExtractionResult'
     ) -> Optional[float]:
         price_info = result.pricing_info
-        if price_info and isinstance(price_info.get('price'), (int, float)):
+        if price_info and isinstance(
+            price_info.get('price'), (int, float)
+        ):
             return float(price_info['price'])
         return None 

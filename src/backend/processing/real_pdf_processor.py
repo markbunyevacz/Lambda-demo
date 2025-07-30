@@ -24,10 +24,9 @@ from datetime import datetime
 
 # Third-Party Imports
 from dotenv import load_dotenv
-from sqlalchemy.orm import Session
 
 # Local Application Imports
-from app.database import SessionLocal
+from app.database import get_session
 from app.models.processing_models import PDFExtractionResult
 from app.services.extraction_service import (
     RealPDFExtractor, AdvancedTableExtractor
@@ -54,20 +53,14 @@ logger = logging.getLogger(__name__)
 class RealPDFProcessor:
     """Orchestrates the PDF processing pipeline using dedicated services."""
 
-    def __init__(self, db_session: Session, enable_ai_analysis: bool = True):
+    def __init__(self):
         """Initialize with dedicated services."""
-        self.db_session = db_session
-        self.enable_ai_analysis = enable_ai_analysis
-
-        # Initialize services
-        self.file_handler = FileHandler(db_session)
+        self.enable_ai_analysis = True  # Always enable AI by default
         self.extraction_service = RealPDFExtractor()
         self.table_extractor = AdvancedTableExtractor()
         self.analysis_service = AnalysisService()
         self.confidence_scorer = ConfidenceScorer()
-        self.ingestion_service = DataIngestionService(db_session)
-
-        # Processing stats
+        
         self.processing_stats = {
             "total_processed": 0,
             "successful": 0,
@@ -78,48 +71,56 @@ class RealPDFProcessor:
 
     async def process_pdf(self, pdf_path: Path) -> Optional[PDFExtractionResult]:
         """
-        Processes a single PDF file using a pipeline of dedicated services.
+        Processes a single PDF file using a pipeline of dedicated services
+        with a dedicated database session for this task.
         """
         start_time = datetime.now()
         logger.info(f"Starting processing for: {pdf_path.name}")
 
-        # 1. Handle File & Duplicates
-        file_hash = self.file_handler.calculate_file_hash(pdf_path)
-        if not file_hash:
-            return None  # Error handled in calculator
+        with get_session() as db_session:
+            # Initialize services that need a DB session
+            file_handler = FileHandler(db_session)
+            ingestion_service = DataIngestionService(db_session)
 
-        if self.file_handler.is_duplicate(file_hash):
-            logger.info(f"Skipping duplicate file: {pdf_path.name}")
-            self.processing_stats["skipped_duplicates"] += 1
-            return None
+            # 1. Handle File & Duplicates
+            file_hash = file_handler.calculate_file_hash(pdf_path)
+            if not file_hash:
+                return None  # Error handled in calculator
 
-        # 2. Extract Content
-        text, simple_tables, text_method = (
-            self.extraction_service.extract_pdf_content(pdf_path)
-        )
+            if file_handler.is_duplicate(file_hash):
+                logger.info(f"Skipping duplicate file: {pdf_path.name}")
+                self.processing_stats["skipped_duplicates"] += 1
+                return None
 
-        # 3. Extract Tables using Advanced Method
-        table_result = self.table_extractor.extract_tables_hybrid(pdf_path)
-
-        # 4. Analyze with AI
-        ai_analysis = {}
-        if self.enable_ai_analysis:
-            ai_analysis = await self.analysis_service.analyze_content(
-                text_content=text,
-                tables=table_result.tables if table_result else simple_tables,
-                pdf_name=pdf_path.name
+            # 2. Extract Content
+            text, simple_tables, text_method = (
+                self.extraction_service.extract_pdf_content(pdf_path)
             )
 
-        # 5. Consolidate and Score
-        consolidated_result = self._consolidate_results(
-            pdf_path, start_time, text, text_method, table_result, ai_analysis
-        )
+            # 3. Extract Tables using Advanced Method
+            table_result = self.table_extractor.extract_tables_hybrid(pdf_path)
 
-        # 6. Ingest Data
-        self.ingestion_service.ingest_data(consolidated_result, file_hash)
+            # 4. Analyze with AI
+            ai_analysis = {}
+            if self.enable_ai_analysis:
+                ai_analysis = await self.analysis_service.analyze_content(
+                    text_content=text,
+                    tables=table_result.tables if table_result else simple_tables,
+                    pdf_name=pdf_path.name
+                )
+
+            # 5. Consolidate and Score
+            consolidated_result = self._consolidate_results(
+                pdf_path, start_time, text, text_method, table_result, ai_analysis
+            )
+
+            # 6. Ingest Data using the dedicated session
+            ingestion_service.ingest_data(consolidated_result, file_hash)
+            
+            # 7. Update logs using the dedicated session
+            file_handler.add_hash_to_log(file_hash)
 
         # 7. Update logs and stats
-        self.file_handler.add_hash_to_log(file_hash)
         self.processing_stats["successful"] += 1
         self.processing_stats["total_processed"] += 1
         processing_time = (datetime.now() - start_time).total_seconds()
@@ -180,6 +181,7 @@ class RealPDFProcessor:
     ) -> List[PDFExtractionResult]:
         """
         Processes all PDF files in a given directory concurrently.
+        The session is now managed inside process_pdf.
         """
         if not pdf_directory.exists():
             raise FileNotFoundError(f"Directory not found: {pdf_directory}")
@@ -226,17 +228,12 @@ class RealPDFProcessor:
 
 
 async def main():
-    """Main function for testing the PDF processor."""
+    """Initializes and runs the PDF processing pipeline."""
     logger.info("🚀 Starting the data ingestion process...")
-    db_session = None
     try:
-        db_session = SessionLocal()
-        logger.info("✅ Database session created successfully.")
-
-        processor = RealPDFProcessor(db_session=db_session)
+        processor = RealPDFProcessor()
         logger.info("✅ RealPDFProcessor initialized.")
 
-        # Correctly define the project root and PDF directory path
         project_root = _backend_root.parent
         pdf_directory = project_root / "downloads" / "rockwool_datasheets"
         output_file = project_root / "real_pdf_results.json"
@@ -245,8 +242,7 @@ async def main():
 
         if not pdf_directory.exists():
             logger.error(
-                "❌ CRITICAL: PDF directory not found at the specified path: %s",
-                pdf_directory
+                "❌ CRITICAL: PDF directory not found: %s", pdf_directory
             )
             return
 
@@ -258,14 +254,8 @@ async def main():
 
     except Exception as e:
         logger.error(
-            "An unexpected error occurred during the ingestion process: %s",
-            e, exc_info=True
+            "An unexpected error occurred: %s", e, exc_info=True
         )
-    finally:
-        if db_session:
-            db_session.close()
-            logger.info("✅ Database session closed.")
-
 
 if __name__ == "__main__":
     if sys.platform == "win32":

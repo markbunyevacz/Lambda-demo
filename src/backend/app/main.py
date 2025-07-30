@@ -35,6 +35,7 @@ from .api import ai_config_admin
 # Create the database tables
 # Base.metadata.create_all(bind=engine)  # Temporarily disabled due to UTF-8 issues
 
+
 # FastAPI alkalmazás példány létrehozása
 app = FastAPI(
     title="Lambda.hu API",
@@ -66,19 +67,26 @@ api_v1_router = APIRouter(prefix="/api/v1")
 
 class ProductFilters:
     """Encapsulates product filtering parameters"""
-    def __init__(self, category_id: Optional[int] = None, 
-                 manufacturer_id: Optional[int] = None):
+    def __init__(
+        self,
+        category_id: Optional[int] = None,
+        manufacturer_id: Optional[int] = None
+    ):
         self.category_id = category_id
         self.manufacturer_id = manufacturer_id
 
 
 class ProductCreationData:
     """Encapsulates product creation parameters"""
-    def __init__(self, name: str, description: Optional[str] = None, 
-                 price: Optional[float] = None,
-                 category_id: Optional[int] = None, 
-                 manufacturer_id: Optional[int] = None,
-                 technical_specs: Optional[dict] = None):
+    def __init__(
+        self,
+        name: str,
+        description: Optional[str] = None,
+        price: Optional[float] = None,
+        category_id: Optional[int] = None,
+        manufacturer_id: Optional[int] = None,
+        technical_specs: Optional[dict] = None
+    ):
         self.name = name
         self.description = description
         self.price = price
@@ -106,7 +114,10 @@ def validate_manufacturer_exists(manufacturer_id: int, db: Session) -> bool:
         models.Manufacturer.id == manufacturer_id
     ).first() is not None
 
-def validate_product_creation_data(data: ProductCreationData, db: Session) -> None:
+
+def validate_product_creation_data(
+    data: ProductCreationData, db: Session
+) -> None:
     """Validates product creation data and raises HTTPException if invalid"""
     if data.category_id and not validate_category_exists(data.category_id, db):
         raise HTTPException(
@@ -114,11 +125,14 @@ def validate_product_creation_data(data: ProductCreationData, db: Session) -> No
             detail="Kategória nem található"
         )
     
-    if data.manufacturer_id and not validate_manufacturer_exists(data.manufacturer_id, db):
+    if data.manufacturer_id and not validate_manufacturer_exists(
+        data.manufacturer_id, db
+    ):
         raise HTTPException(
             status_code=404,
             detail="Gyártó nem található"
         )
+
 
 # ==================== PRODUCT ENDPOINTS ====================
 
@@ -129,6 +143,7 @@ def read_products(
     products = db.query(models.Product).offset(skip).limit(limit).all()
     return products
 
+
 @api_v1_router.get("/categories", response_model=List[schemas.Category])
 def read_categories(
     skip: int = 0, limit: int = 100, db: Session = Depends(get_db)
@@ -136,15 +151,18 @@ def read_categories(
     categories = db.query(models.Category).offset(skip).limit(limit).all()
     return categories
 
+
 app.include_router(api_v1_router)
 app.include_router(admin.router)
 app.include_router(ai_config_admin.router)
+
 
 # Root endpoint for basic health check and redirect to search
 @app.get("/", response_class=RedirectResponse)
 async def root():
     """Redirects root to the main search interface."""
     return "/search"
+
 
 # ==================== KATEGÓRIA ENDPOINTS ====================
 
@@ -154,9 +172,10 @@ async def get_categories(db: Session = Depends(get_db)):
     categories = db.query(models.Category).all()
     return [cat.to_dict() for cat in categories]
 
-@app.post("/categories", include_in_schema=False)  
+
+@app.post("/categories", include_in_schema=False)
 async def create_category(
-    name: str, 
+    name: str,
     description: Optional[str] = None,
     parent_id: Optional[int] = None,
     db: Session = Depends(get_db)
@@ -169,14 +188,14 @@ async def create_category(
         ).first()
         if not parent:
             raise HTTPException(
-                status_code=404, 
+                status_code=404,
                 detail="Szülő kategória nem található"
             )
     
     # Új kategória létrehozása
     new_category = models.Category(
         name=name,
-        description=description, 
+        description=description,
         parent_id=parent_id
     )
     
@@ -187,6 +206,7 @@ async def create_category(
     
     return new_category.to_dict()
 
+
 # ==================== GYÁRTÓ ENDPOINTS ====================
 
 @app.get("/manufacturers", include_in_schema=False)
@@ -194,6 +214,7 @@ async def get_manufacturers(db: Session = Depends(get_db)):
     """Összes gyártó lekérdezése"""
     manufacturers = db.query(models.Manufacturer).all()
     return [mfr.to_dict() for mfr in manufacturers]
+
 
 # ==================== CHROMA DB CONNECTION ====================
 
@@ -211,9 +232,10 @@ def get_chroma_client():
         except Exception as e:
             logging.error(f"ChromaDB connection failed: {e}")
             raise HTTPException(
-                status_code=503, 
+                status_code=503,
                 detail=f"Kereső szolgáltatás nem elérhető: {e}"
             )
+
 
 # ==================== HTML GENERATION FUNCTIONS ====================
 
@@ -336,6 +358,7 @@ def generate_search_interface_html() -> str:
     </html>
     """
 
+
 def generate_product_html(product) -> str:
     """Generate HTML content for a single product view"""
     specs_html = "<h3>Nincsenek megadva</h3>"
@@ -345,7 +368,7 @@ def generate_product_html(product) -> str:
             specs_html += f"<li><strong>{key}:</strong> {value}</li>"
         specs_html += "</ul>"
 
-    return f"""
+    return """
     <!DOCTYPE html>
     <html lang="hu">
     <head>
@@ -376,15 +399,17 @@ def generate_product_html(product) -> str:
     </html>
     """
 
+
 # ==================== SEARCH FUNCTIONS ====================
 
 def execute_vector_search(client, query: str, limit: int):
     """Execute vector search in ChromaDB"""
-    collection = client.get_collection("pdf_products")
+    collection = client.get_collection("rockwool_products")
     return collection.query(
         query_texts=[query],
         n_results=limit
     )
+
 
 def build_search_results(results, db: Session):
     """Build search results from ChromaDB query results"""
@@ -394,23 +419,38 @@ def build_search_results(results, db: Session):
         return search_results
     
     # Get product descriptions from postgres to show clean data
-    product_ids = [meta['product_id'] for meta in results['metadatas'][0] if meta.get('product_id')]
-    products_from_db = db.query(models.Product).filter(models.Product.id.in_(product_ids)).all()
+    product_ids = [
+        meta['product_id']
+        for meta in results['metadatas'][0]
+        if meta.get('product_id')
+    ]
+    products_from_db = (
+        db.query(models.Product)
+        .filter(models.Product.id.in_(product_ids))
+        .all()
+    )
     products_map = {p.id: p for p in products_from_db}
 
     for i, (doc, meta, distance) in enumerate(zip(
-        results['documents'][0], 
+        results['documents'][0],
         results['metadatas'][0],
         results['distances'][0]
     )):
         product = products_map.get(meta.get('product_id'))
-        clean_description = product.description if product and product.description else "Nincs részletes leírás."
+        clean_description = (
+            product.description if product and product.description
+            else "Nincs részletes leírás."
+        )
         
         search_results.append({
             "rank": i + 1,
             "name": meta.get('name', 'Ismeretlen termék'),
             "category": meta.get('category', 'N/A'),
-            "description": clean_description[:300] + "..." if len(clean_description) > 300 else clean_description,
+            "description": (
+                clean_description[:300] + "..."
+                if len(clean_description) > 300
+                else clean_description
+            ),
             "full_content": doc,
             "metadata": meta,
             "similarity_score": 1 - distance
@@ -418,13 +458,15 @@ def build_search_results(results, db: Session):
     
     return search_results
 
+
 def get_collection_size(client):
     """Get the size of the ChromaDB collection"""
     try:
-        collection = client.get_collection("pdf_products")
+        collection = client.get_collection("rockwool_products")
         return collection.count()
     except Exception:
         return 0
+
 
 # ==================== SEARCH ENDPOINTS ====================
 
@@ -433,14 +475,23 @@ async def search_interface():
     """Simple HTML interface for RAG search"""
     return generate_search_interface_html()
 
+
 @app.post("/search/rag", summary="Perform a RAG search")
 async def rag_search(request: schemas.SearchRequest, db: Session = Depends(get_db)):
     """Végrehajt egy szemantikus keresést a vektor adatbázisban"""
     try:
+        logging.info(f"RAG search started for query: '{request.query}'")
         client = get_chroma_client()
+        logging.info("Chroma client obtained.")
+        
         results = execute_vector_search(client, request.query, request.limit)
+        logging.info(f"ChromaDB raw results: {results}")
+        
         search_results = build_search_results(results, db)
+        logging.info(f"Built {len(search_results)} search results.")
+
         collection_size = get_collection_size(client)
+        logging.info(f"Collection size is {collection_size}.")
         
         return {
             "query": request.query,
@@ -450,22 +501,30 @@ async def rag_search(request: schemas.SearchRequest, db: Session = Depends(get_d
         }
         
     except Exception as e:
-        logging.error(f"RAG search failed: {e}")
+        logging.error(f"RAG search failed for query '{request.query}': {e}", exc_info=True)
         raise HTTPException(
             status_code=500,
             detail=f"Search failed: {str(e)}"
         )
 
+
 # ==================== PRODUCT DETAIL VIEW ====================
 
-@app.get("/products/{product_id}/view", response_class=HTMLResponse, include_in_schema=False)
+@app.get(
+    "/products/{product_id}/view",
+    response_class=HTMLResponse,
+    include_in_schema=False
+)
 async def get_product_view(product_id: int, db: Session = Depends(get_db)):
     """Renders a simple HTML page for a single product."""
-    product = db.query(models.Product).filter(models.Product.id == product_id).first()
+    product = db.query(models.Product).filter(
+        models.Product.id == product_id
+    ).first()
     if not product:
         raise HTTPException(status_code=404, detail="A termék nem található")
     
     return generate_product_html(product)
+
 
 # ==================== TERMÉK ENDPOINTS ====================
 
@@ -478,6 +537,7 @@ async def get_products(
     """Termékek lekérdezése lapozási lehetőséggel"""
     products = db.query(models.Product).offset(offset).limit(limit).all()
     return [prod.to_dict() for prod in products]
+
 
 @app.post("/products", include_in_schema=False)
 async def create_product(
@@ -500,57 +560,57 @@ async def create_product(
         technical_specs=technical_specs
     )
     
-    # Validate the data
     validate_product_creation_data(product_data, db)
     
-    # Create the product
-    new_product = models.Product(
-        name=product_data.name,
-        description=product_data.description,
-        price=product_data.price,
-        category_id=product_data.category_id,
-        manufacturer_id=product_data.manufacturer_id,
-        technical_specs=product_data.technical_specs or {}
-    )
+    # Create new product
+    new_product = models.Product(**product_data.__dict__)
     
-    # Save to database
     db.add(new_product)
     db.commit()
     db.refresh(new_product)
     
     return new_product.to_dict()
 
-@app.put("/products/{product_id}", response_model=schemas.Product, include_in_schema=False)
+
+@app.put(
+    "/products/{product_id}",
+    response_model=schemas.Product,
+    include_in_schema=False
+)
 def update_product(
     product_id: int,
     product_update: schemas.ProductUpdate,
     db: Session = Depends(get_db)
 ):
-    """Termék frissítése"""
-    product = db.query(models.Product).filter(models.Product.id == product_id).first()
+    product = db.query(models.Product).filter(
+        models.Product.id == product_id
+    ).first()
+    
     if not product:
         raise HTTPException(status_code=404, detail="A termék nem található")
     
-    # Update fields if provided
-    if product_update.name is not None:
-        product.name = product_update.name
-    if product_update.description is not None:
-        product.description = product_update.description
-    if product_update.price is not None:
-        product.price = product_update.price
-    if product_update.category_id is not None:
-        product.category_id = product_update.category_id
-    if product_update.manufacturer_id is not None:
-        product.manufacturer_id = product_update.manufacturer_id
-    if product_update.technical_specs is not None:
-        product.technical_specs = product_update.technical_specs
-    
+    update_data = product_update.dict(exclude_unset=True)
+    for key, value in update_data.items():
+        setattr(product, key, value)
+        
     db.commit()
     db.refresh(product)
-    
     return product
+
+
+@app.delete("/products/{product_id}", status_code=204, include_in_schema=False)
+def delete_product(product_id: int, db: Session = Depends(get_db)):
+    product = db.query(models.Product).filter(
+        models.Product.id == product_id
+    ).first()
+    if not product:
+        raise HTTPException(status_code=404, detail="A termék nem található")
+    db.delete(product)
+    db.commit()
+
+
+# ==================== HEALTH CHECK ====================
 
 @app.get("/health", include_in_schema=False)
 async def health_check():
-    """Egészség ellenőrzés endpoint"""
-    return {"status": "healthy", "message": "Lambda.hu API működik"} 
+    return {"status": "ok"} 
