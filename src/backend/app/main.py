@@ -447,155 +447,7 @@ def format_pdf_content_simple(content: str) -> str:
     return '\n'.join(formatted_lines) if formatted_lines else "<p>Nincs feldolgozható tartalom.</p>"
 
 
-def analyze_pdf_content_structure(content: str) -> Dict[str, any]:
-    """Analyze PDF content structure and extract relevant information"""
-    analysis = {
-        'content_type': 'unknown',
-        'has_technical_specs': False,
-        'has_tables': False,
-        'sections': [],
-        'technical_data': {},
-        'structured_content': None
-    }
-    
-    if not content:
-        return analysis
-    
-    # Detect content type based on keywords
-    content_lower = content.lower()
-    if any(keyword in content_lower for keyword in ['műszaki adatlap', 'technical datasheet', 'termékadatlap']):
-        analysis['content_type'] = 'technical_datasheet'
-    elif any(keyword in content_lower for keyword in ['árlista', 'price list', 'katalógus']):
-        analysis['content_type'] = 'catalog'
-    elif any(keyword in content_lower for keyword in ['alkalmazás', 'felhasználás', 'application']):
-        analysis['content_type'] = 'application_guide'
-    else:
-        analysis['content_type'] = 'general_info'
-    
-    # Detect table-like structures and technical specifications
-    lines = content.split('\n')
-    table_indicators = ['│', '|', '┌', '┐', '└', '┘', '├', '┤', '┬', '┴', '┼', '\t\t']
-    
-    table_lines = []
-    spec_lines = []
-    
-    for i, line in enumerate(lines):
-        line_stripped = line.strip()
-        if not line_stripped:
-            continue
-            
-        # Check for table indicators
-        if any(indicator in line for indicator in table_indicators):
-            analysis['has_tables'] = True
-            table_lines.append((i, line_stripped))
-        
-        # Look for key-value pairs (technical specs)
-        if ':' in line or '=' in line:
-            tech_terms = [
-                'hővezetési', 'thermal', 'λ', 'tűzvédelmi', 'fire', 'szilárdság', 'strength',
-                'sűrűség', 'density', 'olvadás', 'melting', 'vastagság', 'thickness',
-                'méret', 'size', 'tömeg', 'weight', 'alkalmazás', 'application'
-            ]
-            
-            if any(term in line_stripped.lower() for term in tech_terms):
-                analysis['has_technical_specs'] = True
-                spec_lines.append((i, line_stripped))
-    
-    # Extract technical data using existing function for compatibility
-    analysis['technical_data'] = extract_specs_from_pdf_content(content)
-    
-    # Create structured content based on detected type
-    if analysis['content_type'] == 'technical_datasheet':
-        analysis['structured_content'] = format_technical_datasheet(content, table_lines, spec_lines)
-    elif analysis['has_tables']:
-        analysis['structured_content'] = format_tabular_content(content, table_lines)
-    else:
-        analysis['structured_content'] = format_text_content(content)
-    
-    return analysis
-
-
-def format_technical_datasheet(content: str, table_lines: list, spec_lines: list) -> str:
-    """Format technical datasheet content preserving structure"""
-    lines = content.split('\n')
-    formatted = []
-    
-    for i, line in enumerate(lines):
-        line_stripped = line.strip()
-        if not line_stripped or line_stripped.startswith('--- Page'):
-            continue
-            
-        # Check if this line looks like a section header
-        if (len(line_stripped) < 50 and 
-            any(keyword in line_stripped.lower() for keyword in 
-                ['alkalmazás', 'felhasználás', 'műszaki', 'technical', 'jellemzők', 'adatok', 'tulajdonságok'])):
-            formatted.append(f"<h3>{html.escape(line_stripped)}</h3>")
-        
-        # Format table lines with special styling
-        elif any(table_line[0] == i for table_line in table_lines):
-            formatted.append(f"<div class='table-row'>{html.escape(line_stripped)}</div>")
-        
-        # Format spec lines with emphasis
-        elif any(spec_line[0] == i for spec_line in spec_lines):
-            formatted.append(f"<div class='spec-line'><strong>{html.escape(line_stripped)}</strong></div>")
-        
-        # Regular content - preserve meaningful lines
-        elif len(line_stripped) > 8:
-            formatted.append(f"<p>{html.escape(line_stripped)}</p>")
-    
-    return '\n'.join(formatted)
-
-
-def format_tabular_content(content: str, table_lines: list) -> str:
-    """Format content with tables, preserving table structure"""
-    lines = content.split('\n')
-    formatted = []
-    in_table = False
-    
-    for i, line in enumerate(lines):
-        line_stripped = line.strip()
-        if not line_stripped or line_stripped.startswith('--- Page'):
-            continue
-            
-        is_table_line = any(table_line[0] == i for table_line in table_lines)
-        
-        if is_table_line and not in_table:
-            formatted.append("<div class='table-section'>")
-            in_table = True
-        elif not is_table_line and in_table:
-            formatted.append("</div>")
-            in_table = False
-        
-        if is_table_line:
-            formatted.append(f"<div class='table-row'>{html.escape(line_stripped)}</div>")
-        elif len(line_stripped) > 5:
-            formatted.append(f"<p>{html.escape(line_stripped)}</p>")
-    
-    if in_table:
-        formatted.append("</div>")
-    
-    return '\n'.join(formatted)
-
-
-def format_text_content(content: str) -> str:
-    """Format general text content intelligently"""
-    lines = content.split('\n')
-    formatted = []
-    
-    for line in lines:
-        line_stripped = line.strip()
-        if not line_stripped or line_stripped.startswith('--- Page') or len(line_stripped) < 5:
-            continue
-            
-        # Detect headers (short lines, no punctuation, or specific keywords)
-        if (len(line_stripped) < 50 and 
-            (not any(char in line_stripped for char in '.,:;()') or
-             any(keyword in line_stripped.lower() for keyword in ['termék', 'product', 'alkalmazás', 'használat', 'jellemzők']))):
-            formatted.append(f"<h3>{html.escape(line_stripped)}</h3>")
-        else:
-            formatted.append(f"<p>{html.escape(line_stripped)}</p>")
-    
-    return '\n'.join(formatted)
+# Removed complex content analyzer - keeping it simple and working
 
 
 def generate_product_html(product) -> str:
@@ -636,4 +488,262 @@ def generate_product_html(product) -> str:
         if any(keyword in content_lower for keyword in ['műszaki adatlap', 'technical datasheet', 'termékadatlap']):
             content_type_text = "Műszaki Adatlap"
         elif any(keyword in content_lower for keyword in ['alkalmazás', 'felhasználás', 'application']):
-         
+            content_type_text = "Alkalmazási Útmutató"
+        elif any(keyword in content_lower for keyword in ['árlista', 'price list', 'katalógus']):
+            content_type_text = "Katalógus"
+    
+    # Escape HTML special characters in product data
+    product_name = html.escape(product.name or "Névtelen termék")
+    product_description = html.escape(product.description or "Nincs leírás.")
+    
+    return f"""
+    <!DOCTYPE html>
+    <html lang="hu">
+    <head>
+        <title>{product_name}</title>
+        <meta charset="UTF-8">
+        <style>
+            body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; background-color: #f9f9f9; color: #333; }}
+            h1 {{ color: #2c3e50; border-bottom: 2px solid #007bff; padding-bottom: 10px; }}
+            h2 {{ color: #34495e; }}
+            p {{ line-height: 1.6; }}
+            .specs {{ background-color: white; border: 1px solid #ddd; padding: 20px; border-radius: 5px; }}
+            .specs ul {{ list-style-type: none; padding-left: 0; }}
+            .specs li {{ padding: 8px 0; border-bottom: 1px solid #eee; }}
+            .specs li:last-child {{ border-bottom: none; }}
+            .content {{ background: #f8f9fa; padding: 15px; border-radius: 5px; max-height: 500px; overflow-y: auto; line-height: 1.4; }}
+            .content h3 {{ color: #2c3e50; margin-top: 15px; margin-bottom: 8px; font-size: 1.1em; }}
+            .content p {{ margin: 8px 0; }}
+            .table-row {{ font-family: monospace; padding: 4px 8px; background: #ffffff; border-left: 3px solid #28a745; margin: 2px 0; border-radius: 2px; }}
+            .spec-line {{ font-weight: bold; margin: 6px 0; padding: 8px; background: #e8f4fd; border-left: 4px solid #007bff; border-radius: 3px; }}
+        </style>
+    </head>
+    <body>
+        <h1>{product_name}</h1>
+        <h2>Termékleírás</h2>
+        <p>{product_description}</p>
+        
+        <h2>Műszaki adatok</h2>
+        <div class="specs">{specs_html}</div>
+
+        <h2>PDF Tartalom ({content_type_text})</h2>
+        <div class="content">{formatted_full_text}</div>
+    </body>
+    </html>
+    """
+
+
+# ==================== SEARCH FUNCTIONS ====================
+
+def execute_vector_search(client, query: str, limit: int):
+    """Execute vector search in ChromaDB"""
+    collection = client.get_collection("rockwool_products")
+    return collection.query(
+        query_texts=[query],
+        n_results=limit
+    )
+
+
+def build_search_results(results, db: Session):
+    """Build search results from ChromaDB query results"""
+    search_results = []
+    
+    if not results['documents'] or not results['documents'][0]:
+        return search_results
+    
+    # Get product descriptions from postgres to show clean data
+    product_ids = [
+        meta['product_id']
+        for meta in results['metadatas'][0]
+        if meta.get('product_id')
+    ]
+    products_from_db = (
+        db.query(models.Product)
+        .filter(models.Product.id.in_(product_ids))
+        .all()
+    )
+    products_map = {p.id: p for p in products_from_db}
+
+    for i, (doc, meta, distance) in enumerate(zip(
+        results['documents'][0],
+        results['metadatas'][0],
+        results['distances'][0]
+    )):
+        product = products_map.get(meta.get('product_id'))
+        clean_description = (
+            product.description if product and product.description
+            else "Nincs részletes leírás."
+        )
+        
+        search_results.append({
+            "rank": i + 1,
+            "name": meta.get('name', 'Ismeretlen termék'),
+            "category": meta.get('category', 'N/A'),
+            "description": (
+                clean_description[:300] + "..."
+                if len(clean_description) > 300
+                else clean_description
+            ),
+            "full_content": doc,
+            "metadata": meta,
+            "similarity_score": 1 - distance
+        })
+    
+    return search_results
+
+
+def get_collection_size(client):
+    """Get the size of the ChromaDB collection"""
+    try:
+        collection = client.get_collection("rockwool_products")
+        return collection.count()
+    except Exception:
+        return 0
+
+
+# ==================== SEARCH ENDPOINTS ====================
+
+@app.get("/search", response_class=HTMLResponse, include_in_schema=False)
+async def search_interface():
+    """Simple HTML interface for RAG search"""
+    return generate_search_interface_html()
+
+
+@app.post("/search/rag", summary="Perform a RAG search")
+async def rag_search(request: schemas.SearchRequest, db: Session = Depends(get_db)):
+    """Végrehajt egy szemantikus keresést a vektor adatbázisban"""
+    try:
+        logging.info(f"RAG search started for query: '{request.query}'")
+        client = get_chroma_client()
+        logging.info("Chroma client obtained.")
+        
+        results = execute_vector_search(client, request.query, request.limit)
+        logging.info(f"ChromaDB raw results: {results}")
+        
+        search_results = build_search_results(results, db)
+        logging.info(f"Built {len(search_results)} search results.")
+
+        collection_size = get_collection_size(client)
+        logging.info(f"Collection size is {collection_size}.")
+        
+        return {
+            "query": request.query,
+            "total_results": len(search_results),
+            "collection_size": collection_size,
+            "results": search_results
+        }
+        
+    except Exception as e:
+        logging.error(f"RAG search failed for query '{request.query}': {e}", exc_info=True)
+        raise HTTPException(
+            status_code=500,
+            detail=f"Search failed: {str(e)}"
+        )
+
+
+# ==================== PRODUCT DETAIL VIEW ====================
+
+@app.get(
+    "/products/{product_id}/view",
+    response_class=HTMLResponse,
+    include_in_schema=False
+)
+async def get_product_view(product_id: int, db: Session = Depends(get_db)):
+    """Renders a simple HTML page for a single product."""
+    product = db.query(models.Product).filter(
+        models.Product.id == product_id
+    ).first()
+    if not product:
+        raise HTTPException(status_code=404, detail="A termék nem található")
+    
+    return generate_product_html(product)
+
+
+# ==================== TERMÉK ENDPOINTS ====================
+
+@app.get("/products", include_in_schema=False)
+async def get_products(
+    limit: int = 100,
+    offset: int = 0,
+    db: Session = Depends(get_db)
+):
+    """Termékek lekérdezése lapozási lehetőséggel"""
+    products = db.query(models.Product).offset(offset).limit(limit).all()
+    return [prod.to_dict() for prod in products]
+
+
+@app.post("/products", include_in_schema=False)
+async def create_product(
+    name: str,
+    description: Optional[str] = None,
+    price: Optional[float] = None,
+    category_id: Optional[int] = None,
+    manufacturer_id: Optional[int] = None,
+    technical_specs: Optional[dict] = None,
+    db: Session = Depends(get_db)
+):
+    """Új termék létrehozása"""
+    # Create product data object
+    product_data = ProductCreationData(
+        name=name,
+        description=description,
+        price=price,
+        category_id=category_id,
+        manufacturer_id=manufacturer_id,
+        technical_specs=technical_specs
+    )
+    
+    validate_product_creation_data(product_data, db)
+    
+    # Create new product
+    new_product = models.Product(**product_data.__dict__)
+    
+    db.add(new_product)
+    db.commit()
+    db.refresh(new_product)
+    
+    return new_product.to_dict()
+
+
+@app.put(
+    "/products/{product_id}",
+    response_model=schemas.Product,
+    include_in_schema=False
+)
+def update_product(
+    product_id: int,
+    product_update: schemas.ProductUpdate,
+    db: Session = Depends(get_db)
+):
+    product = db.query(models.Product).filter(
+        models.Product.id == product_id
+    ).first()
+    
+    if not product:
+        raise HTTPException(status_code=404, detail="A termék nem található")
+    
+    update_data = product_update.dict(exclude_unset=True)
+    for key, value in update_data.items():
+        setattr(product, key, value)
+        
+    db.commit()
+    db.refresh(product)
+    return product
+
+
+@app.delete("/products/{product_id}", status_code=204, include_in_schema=False)
+def delete_product(product_id: int, db: Session = Depends(get_db)):
+    product = db.query(models.Product).filter(
+        models.Product.id == product_id
+    ).first()
+    if not product:
+        raise HTTPException(status_code=404, detail="A termék nem található")
+    db.delete(product)
+    db.commit()
+
+
+# ==================== HEALTH CHECK ====================
+
+@app.get("/health", include_in_schema=False)
+async def health_check():
+    return {"status": "ok"} 
