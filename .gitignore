@@ -32,4 +32,27 @@ nvm-installer
 
 # Node
 frontend/node_modules/
-frontend/.next/ 
+frontend/.next/
+
+# Data and downloaded assets
+/src/downloads/
+/src/backend/data/
+/downloads/
+
+# Local databases
+*.sqlite3
+*.db
+/chromadb_data/
+/src/backend/chromadb_data/
+
+# Log files and reports
+/leier_scraping_reports/
+/src/backend/leier_scraping_reports/
+*.log
+
+# Celery artifacts
+celerybeat-schedule
+
+# Chrome data files
+chromadb_products_list.json
+chromadb_products_list.txt 
