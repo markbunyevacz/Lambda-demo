@@ -1,0 +1,166 @@
+{
+  "documents": [
+    {
+      "id": 3678,
+      "name": "LeierPLAN vékonyágyas falazóhabarcs - Biztonságtechnikai adatlap",
+      "is_folder": 0,
+      "parent_id": 3677,
+      "created_at": "2023. május 10.",
+      "parent": {
+        "id": 3677,
+        "name": "Biztonságtechnikai adatlapok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. május 10.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3678",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3706,
+      "name": "LeierFIX univerzális ragasztóhab - Biztonságtechnikai adatlap",
+      "is_folder": 0,
+      "parent_id": 3677,
+      "created_at": "2023. június 15.",
+      "parent": {
+        "id": 3677,
+        "name": "Biztonságtechnikai adatlapok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. május 10.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3706",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3707,
+      "name": "Leier kémény béléscső ragasztó biztonságtechnikai adatlap",
+      "is_folder": 0,
+      "parent_id": 3677,
+      "created_at": "2023. június 15.",
+      "parent": {
+        "id": 3677,
+        "name": "Biztonságtechnikai adatlapok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. május 10.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3707",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3708,
+      "name": "Leier kémény torkolati kúp tömítő - Biztonságtechnikai adatlap",
+      "is_folder": 0,
+      "parent_id": 3677,
+      "created_at": "2023. június 15.",
+      "parent": {
+        "id": 3677,
+        "name": "Biztonságtechnikai adatlapok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. május 10.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3708",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3709,
+      "name": "Sikosító glettanyag Leier mélyépítő elemekhez",
+      "is_folder": 0,
+      "parent_id": 3677,
+      "created_at": "2023. június 15.",
+      "parent": {
+        "id": 3677,
+        "name": "Biztonságtechnikai adatlapok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. május 10.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3709",
+        "extension": "pdf"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 3677,
+    "name": "Biztonságtechnikai adatlapok",
+    "is_folder": 1,
+    "parent_id": 1859,
+    "created_at": "2023. május 10.",
+    "parent": {
+      "id": 1859,
+      "name": "hu",
+      "is_folder": 1,
+      "parent_id": null,
+      "created_at": "2023. február 15.",
+      "parent": null,
+      "file": null
+    },
+    "file": null
+  }
+}

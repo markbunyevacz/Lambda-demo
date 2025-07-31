@@ -1,0 +1,1582 @@
+{
+  "documents": [
+    {
+      "id": 3162,
+      "name": "LKE 200 - 200 - 197 - Keret előfej kezdőelem - hosszmetszet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3162",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3163,
+      "name": "LKE 200 - 200 - 197 - Keret előfej kezdőelem - felülnézet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3163",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3164,
+      "name": "LKE 200 - 200 - 150 - Keret előfej végelem - hosszmetszet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3164",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3165,
+      "name": "LKE 200 - 200 - 150 - Keret előfej végelem - felülnézet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3165",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3166,
+      "name": "LKE 200 - 200 - 100 - Keretelem - keresztmetszet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3166",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3167,
+      "name": "LKE 200 - 200 - 100 - Keretelem - hosszmetszet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3167",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3168,
+      "name": "LKE 180 - 180 - 170 - Keret előfej kezdőelem - hosszmetszet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3168",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3169,
+      "name": "LKE 180 - 180 - 170 - Keret előfej kezdőelem - felülnézet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3169",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3170,
+      "name": "LKE 180 - 180 - 150 - Keret előfej végelem - hosszmetszet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3170",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3171,
+      "name": "LKE 180 - 180 - 150 - Keret előfej végelem - felülnézet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3171",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3172,
+      "name": "LKE 180 - 180 - 100 - Keretelem - keresztmetszet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3172",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3173,
+      "name": "LKE 180 - 180 - 100 - Keretelem - hosszmetszet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3173",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3174,
+      "name": "LKE 150 - 150 - 133 - Keret előfej végelem - hosszmetszet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3174",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3175,
+      "name": "LKE 150 - 150 - 133 - Keret előfej végelem - felülnézet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3175",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3176,
+      "name": "LKE 150 - 150 - 133 - Keret előfej kezdőelem - hosszmetszet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3176",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3177,
+      "name": "LKE 150 - 150 - 133 - Keret előfej kezdőelem - felülnézet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3177",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3178,
+      "name": "LKE 150 - 150 - 100 - Keretelem - keresztmetszet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3178",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3179,
+      "name": "LKE 150 - 150 - 100 - Keretelem - hosszmetszet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3179",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3180,
+      "name": "LKE 120 - 120 - 110 - Keret előfej végelem - hosszmetszet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3180",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3181,
+      "name": "LKE 120 - 120 - 110 - Keret előfej végelem - felülnézet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3181",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3182,
+      "name": "LKE 120 - 120 - 110 - Keret előfej kezdőelem - hosszmetszet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3182",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3183,
+      "name": "LKE 120 - 120 - 110 - Keret előfej kezdőelem - felülnézet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3183",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3184,
+      "name": "LKE 120 - 120 - 100 - Keretelem - keresztmetszet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3184",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3185,
+      "name": "LKE 120 - 120 - 100 - Keretelem - hosszmetszet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3185",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3186,
+      "name": "LKE 100 - 100 - 190 - Keret előfej - hosszmetszet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3186",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3187,
+      "name": "LKE 100 - 100 - 190 - Keret előfej - felülnézet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3187",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3188,
+      "name": "LKE 100 - 100 - 100 - Keretelem - keresztmetszet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3188",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3189,
+      "name": "LKE 100 - 100 - 100 - Keretelem - hosszmetszet",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3189",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3190,
+      "name": "Előregyártott keretelemek",
+      "is_folder": 0,
+      "parent_id": 2881,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2881,
+        "name": "Keretelemek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3190",
+        "extension": "dwg"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 2881,
+    "name": "Keretelemek",
+    "is_folder": 1,
+    "parent_id": 2872,
+    "created_at": "2023. február 16.",
+    "parent": {
+      "id": 2872,
+      "name": "Mélyépítés",
+      "is_folder": 1,
+      "parent_id": 2337,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2337,
+        "name": "Elemrajzok (DWG, PDF)",
+        "is_folder": 1,
+        "parent_id": 1867,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 1867,
+          "name": "Részletrajzok",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

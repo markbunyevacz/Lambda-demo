@@ -1,0 +1,38 @@
+2025-07-01 23:00:42,853 - INFO - 🚀 LEIER Product Scraper Initialized
+2025-07-01 23:00:42,853 - INFO - --- Phase 1: Discovering Product Categories (with JS Rendering via AI Agent) ---
+2025-07-01 23:00:42,854 - INFO - Executing AI-powered rendering command...
+2025-07-01 23:00:44,883 - ERROR - AI rendering script failed with code 1
+2025-07-01 23:00:44,883 - ERROR - 2025-07-01 23:00:44,620 - INFO - \U0001f680 Starting AI-powered scrape for: https://www.leier.hu/hu/termekeink
+Traceback (most recent call last):
+  File "C:\Users\Admin\.cursor\Lambda\src\backend\run_brightdata_mcp.py", line 115, in <module>
+    asyncio.run(main()) 
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\.cursor\Lambda\src\backend\run_brightdata_mcp.py", line 112, in main
+    await run_ai_scraper(args.url, args.objective)
+  File "C:\Users\Admin\.cursor\Lambda\src\backend\run_brightdata_mcp.py", line 61, in run_ai_scraper
+    server_params = StdioServerParameters(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\.cursor\Lambda\.venv312\Lib\site-packages\pydantic\main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for StdioServerParameters
+env.BROWSER_USER
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+env.BROWSER_PASS
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+
+2025-07-01 23:00:44,884 - INFO - --- Phase 2: Discovering Individual Products ---
+2025-07-01 23:00:44,884 - INFO - Discovered 0 total product URLs to scrape.
+2025-07-01 23:00:44,885 - INFO - --- Phase 3: Scraping Product Pages ---
+2025-07-01 23:00:44,886 - INFO - 📊 Product scraping report saved to C:\Users\Admin\.cursor\Lambda\src\backend\leier_scraping_reports\leier_product_report_20250701_230044.json

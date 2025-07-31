@@ -1,0 +1,2222 @@
+{
+    "category_id": "kerti-falazatok",
+    "name": "Kerti falazatok",
+    "description": "",
+    "url": "https://www.leier.hu/hu/termekeink/kerti-falazatok",
+    "products": {
+        "leier-patio-terko-es-falazoko": {
+            "product_id": "leier-patio-terko-es-falazoko",
+            "name": "Leier PATIO térkő és falazókő",
+            "description": "A PATIO térkő és falazó megerősíti a vidéki idill képét és könnyedén illeszkedik az urbánus építészetbe is. Kerítések, kutak, díszfalazatok megépítése sem jelenthet akadályt Patio térkő és falazókővel.",
+            "url": "https://www.leier.hu/hu/termekek/leier-patio-terko-es-falazoko",
+            "category_url": "https://www.leier.hu/hu/termekeink/kerti-falazatok",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55becfb6.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Térkő - Hajdúszoboszló - Teljesítménynyilatkozat_ LE HA1338-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Terko-hajduszoboszlo-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Térkő - Jánosháza - Teljesítménynyilatkozat_ LE JH1338-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Terko-janoshaza-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Térkő - Kiskunlacháza - Teljesítménynyilatkozat_ LE KL1338-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Terko-kiskunlachaza-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Térkő - Pécs - Teljesítménynyilatkozat_ LE PE1338-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Terko-pecs-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "PATIO antik térkő - Termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Kant-Patio-univerzalis-terko-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-63526aaca4ac9.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55be5f02.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6a87a74af.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa67ea7a2a.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55becfb6.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Térkő - Hajdúszoboszló - Teljesítménynyilatkozat_ LE HA1338-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Terko-hajduszoboszlo-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Térkő - Jánosháza - Teljesítménynyilatkozat_ LE JH1338-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Terko-janoshaza-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Térkő - Kiskunlacháza - Teljesítménynyilatkozat_ LE KL1338-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Terko-kiskunlachaza-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Térkő - Pécs - Teljesítménynyilatkozat_ LE PE1338-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Terko-pecs-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "PATIO antik térkő - Termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Kant-Patio-univerzalis-terko-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-63526aaca4ac9.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55be5f02.pdf",
+                    "type": "pdf"
+                },
+                "doc_18": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6a87a74af.pdf",
+                    "type": "pdf"
+                },
+                "doc_19": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa67ea7a2a.pdf",
+                    "type": "pdf"
+                },
+                "doc_20": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55becfb6.pdf",
+                    "type": "pdf"
+                },
+                "doc_21": {
+                    "title": "Patio-agyagbarna-melírozott",
+                    "url": "https://www.leier.hu/uploads/files/Patio-agyagbarna-melírozott.JPG",
+                    "type": "document"
+                },
+                "doc_22": {
+                    "title": "Patio-carbon",
+                    "url": "https://www.leier.hu/uploads/files/Patio-carbon.JPG",
+                    "type": "document"
+                },
+                "doc_23": {
+                    "title": "Patio-téglavörös-melírozott",
+                    "url": "https://www.leier.hu/uploads/files/Patio-téglavörös-melírozott.JPG",
+                    "type": "document"
+                },
+                "doc_24": {
+                    "title": "Patio-voros-sarga-6800c1dd35f73",
+                    "url": "https://www.leier.hu/uploads/files/Patio-voros-sarga-6800c1dd35f73.jpg",
+                    "type": "document"
+                },
+                "doc_25": {
+                    "title": "Patio agyagbarna",
+                    "url": "https://photos.leier.eu/DyzpVqand6KFYaiIyLw6UMUQLPQ=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Patio-agyagbarna-GO-Marcali__21_-66a3904e22509.jpg",
+                    "type": "document"
+                },
+                "doc_26": {
+                    "title": "Leier PATIO térkő és falazókő",
+                    "url": "https://photos.leier.eu/Z_GIYfOpXIzxcj0VYjZ2tIuLvKw=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-patio-terko-es-falazoko%2520%25285%2529-6321cf8c0f123.jpg",
+                    "type": "document"
+                },
+                "doc_27": {
+                    "title": "Patio térkő és falazó carbon",
+                    "url": "https://photos.leier.eu/nA16BPp3Bt9GcvWauHX1Gs1TPvs=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-patio-terko-es-falazoko%2520%25285%2529.jpg",
+                    "type": "document"
+                },
+                "doc_28": {
+                    "title": "Patio térkő és falazó carbon",
+                    "url": "https://photos.leier.eu/zy81UkAlxFrVPRZFxkza6c8IJNg=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-patio-terko-es-falazoko%2520%25286%2529.jpg",
+                    "type": "document"
+                },
+                "doc_29": {
+                    "title": "Patio agyagbarna",
+                    "url": "https://photos.leier.eu/7aXKnK6Jr2aplSqrocr8SuH8T-U=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Patio-agyagbarna-GO-Marcali__39_-66a39021000fb.jpg",
+                    "type": "document"
+                },
+                "doc_30": {
+                    "title": "Patio agyagbarna",
+                    "url": "https://photos.leier.eu/7q4JwKKhQ020gOEr2iBMrRP4Y1E=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Patio-agyagbarna-GO-Marcali__35_.jpg",
+                    "type": "document"
+                },
+                "doc_31": {
+                    "title": "Patio agyagbarna",
+                    "url": "https://photos.leier.eu/dRIIJNhxTUqMprA4hqs-F27gySo=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Patio-agyagbarna-GO-Marcali__21_.jpg",
+                    "type": "document"
+                },
+                "doc_32": {
+                    "title": "Patio agyagbarna",
+                    "url": "https://photos.leier.eu/Je37-vCQ9Tx7hUHjeSZke2h9DCA=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Patio-agyagbarna-GO-Marcali__40_-66a3902102c0d.jpg",
+                    "type": "document"
+                },
+                "doc_33": {
+                    "title": "Patio agyagbarna",
+                    "url": "https://photos.leier.eu/BvJCFbr4R9ZDEuQc38sUje1halE=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-patio-terko-es-falazoko%2520%25281%2529.jpg",
+                    "type": "document"
+                },
+                "doc_34": {
+                    "title": "Leier PATIO térkő és falazókő",
+                    "url": "https://photos.leier.eu/u7O_XVYmL3OZSnOaZCxZ6EfKkPo=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-patio-terko-es-falazoko%2520%25289%2529.jpg",
+                    "type": "document"
+                },
+                "doc_35": {
+                    "title": "Patio agyagbarna Patio agyagbarna",
+                    "url": "https://photos.leier.eu/aoFDNOAnMmKJ9_lBXjIAPfJUEAY=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-patio-terko-es-falazoko%2520%252825%2529.jpg",
+                    "type": "document"
+                },
+                "doc_36": {
+                    "title": "Patio agyagbarna Patio agyagbarna",
+                    "url": "https://photos.leier.eu/RpUi0Py0_ONUnMZGU6hAr3oG1r8=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-patio-terko-es-falazoko%2520%252824%2529.jpg",
+                    "type": "document"
+                },
+                "doc_37": {
+                    "title": "Leier PATIO térkő és falazókő",
+                    "url": "https://photos.leier.eu/V4dFVC8eiRc-S67lu3R0irAsOPY=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-patio-terko-es-falazoko%2520%252812%2529.jpg",
+                    "type": "document"
+                },
+                "doc_38": {
+                    "title": "Leier PATIO térkő és falazókő",
+                    "url": "https://photos.leier.eu/BkNbacO2r-5FPKMsbItQ2qHpR0E=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-patio-terko-es-falazoko%2520%252813%2529.jpg",
+                    "type": "document"
+                },
+                "doc_39": {
+                    "title": "Leier PATIO térkő és falazókő",
+                    "url": "https://photos.leier.eu/nkuat_nWQXQ01Tmjx43ZaYuTrJ0=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-patio-terko-es-falazoko%2520%252814%2529.jpg",
+                    "type": "document"
+                },
+                "doc_40": {
+                    "title": "Leier PATIO térkő és falazókő",
+                    "url": "https://photos.leier.eu/RifKOdGtvEiQisRdTtYzOxm9anI=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-patio-terko-es-falazoko%2520%252815%2529.jpg",
+                    "type": "document"
+                },
+                "doc_41": {
+                    "title": "Leier PATIO térkő és falazókő",
+                    "url": "https://photos.leier.eu/KhlfY7mITC9kl5fg3Nz-FF546BU=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-patio-terko-es-falazoko%2520%252819%2529.jpg",
+                    "type": "document"
+                },
+                "doc_42": {
+                    "title": "Patio téglavörös",
+                    "url": "https://photos.leier.eu/rP6Cmt8k_Km4q3jv73E9mkeD9qU=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-patio-terko-es-falazoko%2520%25283%2529.jpg",
+                    "type": "document"
+                },
+                "doc_43": {
+                    "title": "Leier PATIO térkő és falazókő",
+                    "url": "https://photos.leier.eu/4C-1G9JQyaz9_2pXUh0UnOhQ9pE=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-patio-terko-es-falazoko%2520%252818%2529.jpg",
+                    "type": "document"
+                },
+                "doc_44": {
+                    "title": "Patio carbon",
+                    "url": "https://photos.leier.eu/SVN6qC0xpByv7jmu_tKGHyZq1Os=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Patio-terko__1_-661d33ccd6509.jpg",
+                    "type": "document"
+                },
+                "doc_45": {
+                    "title": "Patio carbon",
+                    "url": "https://photos.leier.eu/04i68UZq-otVHFyVRC0khp-aEJ0=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Patio-terko__2_-661d33ccd743a.jpg",
+                    "type": "document"
+                },
+                "doc_46": {
+                    "title": "Patio carbon",
+                    "url": "https://photos.leier.eu/1fVegIn9HU1A5VTNSol68fCBuHw=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Patio-terko__3_-661d33ccd8261.jpg",
+                    "type": "document"
+                },
+                "doc_47": {
+                    "title": "Térkő - Hajdúszoboszló - Teljesítménynyilatkozat_ LE HA1338-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Terko-hajduszoboszlo-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_48": {
+                    "title": "Térkő - Jánosháza - Teljesítménynyilatkozat_ LE JH1338-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Terko-janoshaza-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_49": {
+                    "title": "Térkő - Kiskunlacháza - Teljesítménynyilatkozat_ LE KL1338-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Terko-kiskunlachaza-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_50": {
+                    "title": "Térkő - Pécs - Teljesítménynyilatkozat_ LE PE1338-01 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Terko-pecs-teljesitmenynyilatkozat.pdf",
+                    "type": "pdf"
+                },
+                "doc_51": {
+                    "title": "PATIO antik térkő - Termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Kant-Patio-univerzalis-terko-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_52": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-63526aaca4ac9.pdf",
+                    "type": "pdf"
+                },
+                "doc_53": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55be5f02.pdf",
+                    "type": "pdf"
+                },
+                "doc_54": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6a87a74af.pdf",
+                    "type": "pdf"
+                },
+                "doc_55": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa67ea7a2a.pdf",
+                    "type": "pdf"
+                },
+                "doc_56": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_57": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_58": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_59": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_60": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 61,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/aThDVttXSvd6bwGu_96i1f8grWI=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-logo-64140c24ef68a.jpg",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/ql0QPEyad_B-SyWxQNLTcQkmXZk=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FPatio-agyagbarna-mel%25C3%25ADrozott.JPG",
+                    "alt": "Patio Agyagbarna"
+                },
+                {
+                    "url": "https://photos.leier.eu/PQatJiS2YP7CdFy-fbV8SJcqJSE=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FPatio-carbon.JPG",
+                    "alt": "Patio Carbon"
+                },
+                {
+                    "url": "https://photos.leier.eu/JFBnlNesyTqYIcw8Ky4evgVAJTI=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FPatio-t%25C3%25A9glav%25C3%25B6r%25C3%25B6s-mel%25C3%25ADrozott.JPG",
+                    "alt": "Patio Téglavörös"
+                }
+            ],
+            "technical_data": {
+                "Vastagság (cm)": "Méret (cm)",
+                "5": "25 × 12,4"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "leier-kaiserstein-architektura-szarazfalazo": {
+            "product_id": "leier-kaiserstein-architektura-szarazfalazo",
+            "name": "Leier Kaiserstein ARCHITEKTURA szárazfalazó",
+            "description": "",
+            "url": "https://www.leier.hu/hu/termekek/leier-kaiserstein-architektura-szarazfalazo",
+            "category_url": "https://www.leier.hu/hu/termekeink/kerti-falazatok",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55becfb6.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Architektúra szárazfalazó termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Architektura-szarazfalazo-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-6352698ad7c1a.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Teljesítménynyilatkozat beton falazóelemek GS771-5-03_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Teljesítménynyilatkozat_beton_falazóelemek_GS771-5-03_HU-63ee25a15a29f.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Termékadatlap Architektúra szárazfalazó (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Termékadatlap_ARCHITEKTURA_szárazfalazó_HU-63ee25a15b8c0.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55be5f02.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6a87a74af.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa67ea7a2a.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55becfb6.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Architektúra szárazfalazó termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Architektura-szarazfalazo-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-6352698ad7c1a.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Teljesítménynyilatkozat beton falazóelemek GS771-5-03_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Teljesítménynyilatkozat_beton_falazóelemek_GS771-5-03_HU-63ee25a15a29f.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Termékadatlap Architektúra szárazfalazó (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Termékadatlap_ARCHITEKTURA_szárazfalazó_HU-63ee25a15b8c0.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55be5f02.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6a87a74af.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa67ea7a2a.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55becfb6.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "Architektura-szarazfalazo-sepia",
+                    "url": "https://www.leier.hu/uploads/files/Architektura-szarazfalazo-sepia.jpg",
+                    "type": "document"
+                },
+                "doc_18": {
+                    "title": "Architektura-szarazfalazo-fustantracit",
+                    "url": "https://www.leier.hu/uploads/files/Architektura-szarazfalazo-fustantracit.jpg",
+                    "type": "document"
+                },
+                "doc_19": {
+                    "title": "Architektura-szarazfalazo-fuoco",
+                    "url": "https://www.leier.hu/uploads/files/Architektura-szarazfalazo-fuoco.jpg",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "Leier Kaiserstein ARCHITEKTURA szárazfalazó",
+                    "url": "https://photos.leier.eu/SLYMD-QMqGTryZWcZL1buny6HQY=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-architektura-szarazfalazo-Castrum-lepcsoblokk-sepia__6_-661d32ab08cf3.jpg",
+                    "type": "document"
+                },
+                "doc_21": {
+                    "title": "Leier Kaiserstein ARCHITEKTURA szárazfalazó",
+                    "url": "https://photos.leier.eu/Lwz1HpahXP87vEajfWCSqqX9W_g=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-kaiserstein-architektura-szarazfalazo%2520%25281%2529.jpg",
+                    "type": "document"
+                },
+                "doc_22": {
+                    "title": "Leier Kaiserstein ARCHITEKTURA szárazfalazó",
+                    "url": "https://photos.leier.eu/o_pNYQZhRl2q9XqkE7KC55vrYoM=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FArchitektura-szarazfalazo__1_.jpg",
+                    "type": "document"
+                },
+                "doc_23": {
+                    "title": "Leier Kaiserstein ARCHITEKTURA szárazfalazó",
+                    "url": "https://photos.leier.eu/DtlO84M1uTiIUv891JyAVGjHSYE=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FArchitektura-szarazfalazo__2_.jpg",
+                    "type": "document"
+                },
+                "doc_24": {
+                    "title": "Leier Kaiserstein ARCHITEKTURA szárazfalazó",
+                    "url": "https://photos.leier.eu/akgJKXEeZLNCeT-_TVOQEtQnR10=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FArchitektura-szarazfalazo__3_.jpg",
+                    "type": "document"
+                },
+                "doc_25": {
+                    "title": "Leier Kaiserstein ARCHITEKTURA szárazfalazó",
+                    "url": "https://photos.leier.eu/w5rB02KfbbkV_kM7QxKepUp5PdY=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FArchitektura-szarazfalazo__4_.jpg",
+                    "type": "document"
+                },
+                "doc_26": {
+                    "title": "Leier Kaiserstein ARCHITEKTURA szárazfalazó",
+                    "url": "https://photos.leier.eu/ZUFTbj3LNmBOLKzAGHGE3o0C1Ww=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FArchitektura-szarazfalazo__5_.jpg",
+                    "type": "document"
+                },
+                "doc_27": {
+                    "title": "Leier Kaiserstein ARCHITEKTURA szárazfalazó sepia",
+                    "url": "https://photos.leier.eu/W7wu6MpGiBBUkaV1WOpQs2L9Cs4=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-architektura-szarazfalazo-Castrum-lepcsoblokk-sepia__1_.jpg",
+                    "type": "document"
+                },
+                "doc_28": {
+                    "title": "Leier Kaiserstein ARCHITEKTURA szárazfalazó sepia",
+                    "url": "https://photos.leier.eu/K0jR5JHjKX8H0J6aSX3H2Y3UNNY=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-architektura-szarazfalazo-Castrum-lepcsoblokk-sepia__2_.jpg",
+                    "type": "document"
+                },
+                "doc_29": {
+                    "title": "Leier Kaiserstein ARCHITEKTURA szárazfalazó sepia",
+                    "url": "https://photos.leier.eu/U8iFAyKFe_Q_zGOQ7gm5anSm6K0=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-architektura-szarazfalazo-Castrum-lepcsoblokk-sepia__4_.jpg",
+                    "type": "document"
+                },
+                "doc_30": {
+                    "title": "Leier Kaiserstein ARCHITEKTURA szárazfalazó sepia",
+                    "url": "https://photos.leier.eu/9Ktol7pDfPQyu_QM9C9K05h6O0Q=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-architektura-szarazfalazo-Castrum-lepcsoblokk-sepia__3_.jpg",
+                    "type": "document"
+                },
+                "doc_31": {
+                    "title": "Leier Kaiserstein ARCHITEKTURA szárazfalazó sepia",
+                    "url": "https://photos.leier.eu/6dDTx8ipKHMbUTznH_bHMnAPE1Q=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-architektura-szarazfalazo-Castrum-lepcsoblokk-sepia__6_.jpg",
+                    "type": "document"
+                },
+                "doc_32": {
+                    "title": "Leier Kaiserstein ARCHITEKTURA szárazfalazó sepia",
+                    "url": "https://photos.leier.eu/WlhgxAVrVsb9S8vEuNySXUrtD8g=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-architektura-szarazfalazo-Castrum-lepcsoblokk-sepia__5_-661d3217686d8.jpg",
+                    "type": "document"
+                },
+                "doc_33": {
+                    "title": "Leier Kaiserstein ARCHITEKTURA szárazfalazó sepia",
+                    "url": "https://photos.leier.eu/7-qZZWHwGWArrtuYAqqMbaYJG5Q=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-architektura-szarazfalazo-Castrum-lepcsoblokk-sepia__7_.jpg",
+                    "type": "document"
+                },
+                "doc_34": {
+                    "title": "Leier Kaiserstein ARCHITEKTURA szárazfalazó sepia",
+                    "url": "https://photos.leier.eu/LE18rniWg3ToEmWiyfkvk_RNDDw=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-architektura-szarazfalazo-Castrum-lepcsoblokk-sepia__8_.jpg",
+                    "type": "document"
+                },
+                "doc_35": {
+                    "title": "Leier Kaiserstein ARCHITEKTURA szárazfalazó füstantracit",
+                    "url": "https://photos.leier.eu/VfguUiwHvn146DkWfnZG9qzlwh0=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-Castrum-natur-sepia-Architektura-szarazfalazo-fustantracit__3_.jpg",
+                    "type": "document"
+                },
+                "doc_36": {
+                    "title": "Leier Kaiserstein ARCHITEKTURA szárazfalazó füstantracit",
+                    "url": "https://photos.leier.eu/uOSw2uu98RAm_K3WuqFjqFUk28M=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-Castrum-natur-sepia-Architektura-szarazfalazo-fustantracit__1_.jpg",
+                    "type": "document"
+                },
+                "doc_37": {
+                    "title": "Architektúra szárazfalazó termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Architektura-szarazfalazo-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_38": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-6352698ad7c1a.pdf",
+                    "type": "pdf"
+                },
+                "doc_39": {
+                    "title": "Teljesítménynyilatkozat beton falazóelemek GS771-5-03_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Teljesítménynyilatkozat_beton_falazóelemek_GS771-5-03_HU-63ee25a15a29f.pdf",
+                    "type": "pdf"
+                },
+                "doc_40": {
+                    "title": "Termékadatlap Architektúra szárazfalazó (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Termékadatlap_ARCHITEKTURA_szárazfalazó_HU-63ee25a15b8c0.pdf",
+                    "type": "pdf"
+                },
+                "doc_41": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55be5f02.pdf",
+                    "type": "pdf"
+                },
+                "doc_42": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6a87a74af.pdf",
+                    "type": "pdf"
+                },
+                "doc_43": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa67ea7a2a.pdf",
+                    "type": "pdf"
+                },
+                "doc_44": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_45": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_46": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_47": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_48": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 49,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/LwMrrHABbfcQxKh3XACk3jzaV00=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fkaiserstein-leier2-64140c31aa916.jpg",
+                    "alt": "Kaiserstein"
+                },
+                {
+                    "url": "https://photos.leier.eu/HvquU5brPJ4AaVppDnB8kAi9QMk=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FArchitektura-szarazfalazo-sepia.jpg",
+                    "alt": "Architektura szárazfalazó sepia"
+                },
+                {
+                    "url": "https://photos.leier.eu/nl1T6WNcw1Sd225A-AI3vty4E7Y=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FArchitektura-szarazfalazo-fustantracit.jpg",
+                    "alt": "Architektura szárazfalazó füstantracit"
+                },
+                {
+                    "url": "https://photos.leier.eu/nCZwzsjxURjtALdCj4ZE4DTdTJQ=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FArchitektura-szarazfalazo-fuoco.jpg",
+                    "alt": "Architektura szárazfalazó fuoco"
+                }
+            ],
+            "technical_data": {
+                "Termék": "Vastagság (cm)",
+                "ARCHITEKTURA szárazfalazó": "6",
+                "ARCHITEKUÚRA szárazfalazó sarokelem": "6"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "leier-kaiserstein-movado-falazoko": {
+            "product_id": "leier-kaiserstein-movado-falazoko",
+            "name": "Leier Kaiserstein MOVADO falazókő",
+            "description": "",
+            "url": "https://www.leier.hu/hu/termekek/leier-kaiserstein-movado-falazoko",
+            "category_url": "https://www.leier.hu/hu/termekeink/kerti-falazatok",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55becfb6.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Movado falazókő termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/movado-falazoko-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-635268c625eb1.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Teljesítménynyilatkozat beton falazóelemek GS771-5-03_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Teljesítménynyilatkozat_beton_falazóelemek_GS771-5-03_HU-63ee37a0106da.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Termékadatlap MOVADO fal_01.2021_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Termékadatlap_MOVADO_fal_01.2021_HU-63ee37a011d53.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55be5f02.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6a87a74af.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa67ea7a2a.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55becfb6.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Movado falazókő termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/movado-falazoko-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-635268c625eb1.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Teljesítménynyilatkozat beton falazóelemek GS771-5-03_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Teljesítménynyilatkozat_beton_falazóelemek_GS771-5-03_HU-63ee37a0106da.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Termékadatlap MOVADO fal_01.2021_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Termékadatlap_MOVADO_fal_01.2021_HU-63ee37a011d53.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55be5f02.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6a87a74af.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa67ea7a2a.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55becfb6.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "leier-movado-sepia",
+                    "url": "https://www.leier.hu/uploads/files/leier-movado-sepia.jpg",
+                    "type": "document"
+                },
+                "doc_18": {
+                    "title": "leier-movado-fuoco-63332f63eb8b4",
+                    "url": "https://www.leier.hu/uploads/files/leier-movado-fuoco-63332f63eb8b4.jpg",
+                    "type": "document"
+                },
+                "doc_19": {
+                    "title": "leier-movado-fustantracit-63332f4fc0002",
+                    "url": "https://www.leier.hu/uploads/files/leier-movado-fustantracit-63332f4fc0002.jpg",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "Leier Kaiserstein MOVADO falazókő füstantracit",
+                    "url": "https://photos.leier.eu/zeMBrw3dkHW6jU-k1ZwUPPl8L3s=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FMovado-falazoko__3_.jpg",
+                    "type": "document"
+                },
+                "doc_21": {
+                    "title": "Leier Kaiserstein MOVADO falazókő füstantracit",
+                    "url": "https://photos.leier.eu/GodZ5FK7Yc4HT36PG_kVxyz0lUs=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FMovado-falazoko__3_-65d7381161c87.jpg",
+                    "type": "document"
+                },
+                "doc_22": {
+                    "title": "Leier Kaiserstein MOVADO falazókő füstantracit",
+                    "url": "https://photos.leier.eu/Mq829VeorRpVARVr_vNhVC0fnAc=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-movado-falazoko%2520%25283%2529.jpg",
+                    "type": "document"
+                },
+                "doc_23": {
+                    "title": "Leier Kaiserstein MOVADO falazókő füstantracit",
+                    "url": "https://photos.leier.eu/09N4ra-0E6zpNY0VdSods0NfI4s=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FMovado-falazoko__4_.jpg",
+                    "type": "document"
+                },
+                "doc_24": {
+                    "title": "Leier Kaiserstein MOVADO falazókő füstantracit",
+                    "url": "https://photos.leier.eu/mqTUGH6WLSssmU8ky7hAk1_h9aU=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FMovado-falazoko__1_.jpg",
+                    "type": "document"
+                },
+                "doc_25": {
+                    "title": "Leier Kaiserstein MOVADO falazókő füstantracit",
+                    "url": "https://photos.leier.eu/20JJSV8M_OdjEgdtzsyjOtUMQro=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FMovado-falazoko__2_.jpg",
+                    "type": "document"
+                },
+                "doc_26": {
+                    "title": "Leier Kaiserstein MOVADO falazókő füstantracit",
+                    "url": "https://photos.leier.eu/AI1qw_XOtAOl1yB2LpT6dfoqkZ0=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-movado-falazoko%2520%25281%2529-6321a9b80fe3f.jpg",
+                    "type": "document"
+                },
+                "doc_27": {
+                    "title": "Leier Kaiserstein MOVADO falazókő füstantracit",
+                    "url": "https://photos.leier.eu/gYNekBeyPAMyVGloQIE9LmUF5mE=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-movado-falazoko%2520%25282%2529.jpg",
+                    "type": "document"
+                },
+                "doc_28": {
+                    "title": "Leier Kaiserstein MOVADO falazókő fuoco",
+                    "url": "https://photos.leier.eu/ztxIuFldd9Fdyrwc6O48UK0vHQc=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-movado-falazoko%2520%25284%2529.jpg",
+                    "type": "document"
+                },
+                "doc_29": {
+                    "title": "Leier Kaiserstein MOVADO falazókő fuoco",
+                    "url": "https://photos.leier.eu/ROvjuVN2KRVotb-Bt_9l7yJG6pk=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-movado-falazoko%2520%25285%2529.jpg",
+                    "type": "document"
+                },
+                "doc_30": {
+                    "title": "Movado falazókő termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/movado-falazoko-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_31": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-635268c625eb1.pdf",
+                    "type": "pdf"
+                },
+                "doc_32": {
+                    "title": "Teljesítménynyilatkozat beton falazóelemek GS771-5-03_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Teljesítménynyilatkozat_beton_falazóelemek_GS771-5-03_HU-63ee37a0106da.pdf",
+                    "type": "pdf"
+                },
+                "doc_33": {
+                    "title": "Termékadatlap MOVADO fal_01.2021_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Termékadatlap_MOVADO_fal_01.2021_HU-63ee37a011d53.pdf",
+                    "type": "pdf"
+                },
+                "doc_34": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55be5f02.pdf",
+                    "type": "pdf"
+                },
+                "doc_35": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6a87a74af.pdf",
+                    "type": "pdf"
+                },
+                "doc_36": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa67ea7a2a.pdf",
+                    "type": "pdf"
+                },
+                "doc_37": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_38": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_39": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_40": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_41": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 42,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/LwMrrHABbfcQxKh3XACk3jzaV00=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fkaiserstein-leier2-64140c31aa916.jpg",
+                    "alt": "Kaiserstein"
+                },
+                {
+                    "url": "https://photos.leier.eu/X1_7pOSa1kDGoc4v9UGsxwFDlls=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-movado-sepia.jpg",
+                    "alt": "Movado sepia"
+                },
+                {
+                    "url": "https://photos.leier.eu/9v8s9W5XPpT4JKN19gzA5Az80lU=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-movado-fuoco-63332f63eb8b4.jpg",
+                    "alt": "Movado fuoco"
+                },
+                {
+                    "url": "https://photos.leier.eu/ZwYwfyAS9mo5WJ0S-6qtEjPGEz4=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-movado-fustantracit-63332f4fc0002.jpg",
+                    "alt": "Movado füstantracit"
+                }
+            ],
+            "technical_data": {
+                "Termék": "Vastagság (cm)",
+                "MOVADO falazókő": "21",
+                "MOVADO falkorona": "6"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "leier-kaiserstein-castrum-falazoko": {
+            "product_id": "leier-kaiserstein-castrum-falazoko",
+            "name": "Leier Kaiserstein CASTRUM falazókő",
+            "description": "",
+            "url": "https://www.leier.hu/hu/termekek/leier-kaiserstein-castrum-falazoko",
+            "category_url": "https://www.leier.hu/hu/termekeink/kerti-falazatok",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55becfb6.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Castrum térkő - Termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Castrum-terko-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Castrum falazókő termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Castrum-falazoko-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-6352680e39891.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Teljesítménynyilatkozat beton falazóelemek GS771-5-03_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Teljesítménynyilatkozat_beton_falazóelemek_GS771-5-03_HU-63ee343359b26.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Termékadatlap Castrum 24cm_Antik_01.2021_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Termékadatlap_Castrum_24cmAntik_01.2021_HU-63ee34335b0bc.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55be5f02.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6a87a74af.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa67ea7a2a.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55becfb6.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Castrum térkő - Termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Castrum-terko-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Castrum falazókő termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Castrum-falazoko-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-6352680e39891.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Teljesítménynyilatkozat beton falazóelemek GS771-5-03_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Teljesítménynyilatkozat_beton_falazóelemek_GS771-5-03_HU-63ee343359b26.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Termékadatlap Castrum 24cm_Antik_01.2021_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Termékadatlap_Castrum_24cmAntik_01.2021_HU-63ee34335b0bc.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55be5f02.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6a87a74af.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa67ea7a2a.pdf",
+                    "type": "pdf"
+                },
+                "doc_18": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55becfb6.pdf",
+                    "type": "pdf"
+                },
+                "doc_19": {
+                    "title": "Castrum-falazoko-sepia-65f05ef957408",
+                    "url": "https://www.leier.hu/uploads/files/Castrum-falazoko-sepia-65f05ef957408.jpg",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "Castrum-falazoko-fustantracit",
+                    "url": "https://www.leier.hu/uploads/files/Castrum-falazoko-fustantracit.jpg",
+                    "type": "document"
+                },
+                "doc_21": {
+                    "title": "Castrum-falazoko-fuoco",
+                    "url": "https://www.leier.hu/uploads/files/Castrum-falazoko-fuoco.jpg",
+                    "type": "document"
+                },
+                "doc_22": {
+                    "title": "Castrum falazókő fuoco",
+                    "url": "https://photos.leier.eu/sSu9Wm3MbkgsNYZ067nrPoTqBEI=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum-falazoko%2520%25285%2529.JPG",
+                    "type": "document"
+                },
+                "doc_23": {
+                    "title": "Castrum falazókő füstantracit",
+                    "url": "https://photos.leier.eu/zPl44xfGNMCMT-JTAGEpywutGxQ=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum-falazoko%2520%25287%2529.jpg",
+                    "type": "document"
+                },
+                "doc_24": {
+                    "title": "Castrum falazókő füstantracit",
+                    "url": "https://photos.leier.eu/ZRj06A3ZILl9AiccLZqgT0xTw2k=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum-falazoko%2520%25288%2529.jpg",
+                    "type": "document"
+                },
+                "doc_25": {
+                    "title": "Castrum falazókő füstantracit",
+                    "url": "https://photos.leier.eu/uk19bDAxXpvs97bR0eskZ5H3734=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum-falazoko%2520%25286%2529.jpg",
+                    "type": "document"
+                },
+                "doc_26": {
+                    "title": "Castrum falazókő sepia",
+                    "url": "https://photos.leier.eu/gTUP212v24TKG95uGsGiQRRGaj4=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum-falazoko%2520%25281%2529.jpg",
+                    "type": "document"
+                },
+                "doc_27": {
+                    "title": "Castrum falazókő füstantracit",
+                    "url": "https://photos.leier.eu/tJpasWTXrCHH4quxGXFWSiOvbFE=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-Castrum-falazoko__3_.jpg",
+                    "type": "document"
+                },
+                "doc_28": {
+                    "title": "Castrum falazókő füstantracit",
+                    "url": "https://photos.leier.eu/UucsXu6sTdE-u7T21tD-NTpdNrA=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-Castrum-falazoko__4_.jpg",
+                    "type": "document"
+                },
+                "doc_29": {
+                    "title": "Castrum falazókő füstantracit",
+                    "url": "https://photos.leier.eu/8VV572EyReKLNAtnhDXAaXi5JaM=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-Castrum-falazoko__5_.jpg",
+                    "type": "document"
+                },
+                "doc_30": {
+                    "title": "Castrum falazókő fuoco",
+                    "url": "https://photos.leier.eu/8LIjYn-r0azixYxDU3Yb3XhHlA4=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum-falazoko%2520%25285%2529-6321d754e1c24.JPG",
+                    "type": "document"
+                },
+                "doc_31": {
+                    "title": "Castrum falazókő fuoco",
+                    "url": "https://photos.leier.eu/JHoivBas6etKIPHbRD9YWL7_1fU=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-Castrum-falazoko__2_.jpg",
+                    "type": "document"
+                },
+                "doc_32": {
+                    "title": "Castrum falazókő sepia",
+                    "url": "https://photos.leier.eu/GMH4THwDk7I2RRryEW-VSzsRlK8=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-Castrum-falazoko__1_.jpg",
+                    "type": "document"
+                },
+                "doc_33": {
+                    "title": "Castrum falazókő fuoco",
+                    "url": "https://photos.leier.eu/kR1UJYWLBTd4cYmRvL1qjrcDDUA=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-Castrum-falazoko__6_.jpg",
+                    "type": "document"
+                },
+                "doc_34": {
+                    "title": "Castrum térkő - Termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Castrum-terko-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_35": {
+                    "title": "Castrum falazókő termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Castrum-falazoko-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_36": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-6352680e39891.pdf",
+                    "type": "pdf"
+                },
+                "doc_37": {
+                    "title": "Teljesítménynyilatkozat beton falazóelemek GS771-5-03_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Teljesítménynyilatkozat_beton_falazóelemek_GS771-5-03_HU-63ee343359b26.pdf",
+                    "type": "pdf"
+                },
+                "doc_38": {
+                    "title": "Termékadatlap Castrum 24cm_Antik_01.2021_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Termékadatlap_Castrum_24cmAntik_01.2021_HU-63ee34335b0bc.pdf",
+                    "type": "pdf"
+                },
+                "doc_39": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55be5f02.pdf",
+                    "type": "pdf"
+                },
+                "doc_40": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6a87a74af.pdf",
+                    "type": "pdf"
+                },
+                "doc_41": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa67ea7a2a.pdf",
+                    "type": "pdf"
+                },
+                "doc_42": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_43": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_44": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_45": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_46": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 47,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/LwMrrHABbfcQxKh3XACk3jzaV00=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fkaiserstein-leier2-64140c31aa916.jpg",
+                    "alt": "Kaiserstein"
+                },
+                {
+                    "url": "https://photos.leier.eu/QTOMf00eKNGyRGtFhoEAnQq3Ge4=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum-falazoko-sepia-65f05ef957408.jpg",
+                    "alt": "Sepia"
+                },
+                {
+                    "url": "https://photos.leier.eu/u2G-L4hvQN_6GtEvn7_5BRXmQY4=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum-falazoko-fustantracit.jpg",
+                    "alt": "Füstantracit"
+                },
+                {
+                    "url": "https://photos.leier.eu/ti_i_p0A99vvkOrGHhHoOnN1oDM=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum-falazoko-fuoco.jpg",
+                    "alt": "Fuoco"
+                }
+            ],
+            "technical_data": {
+                "Termék": "Vastagság (cm)",
+                "CASTRUM falazókő 12 cm falhoz*": "12",
+                "CASTRUM falkorona 12 (egy oldalon hasított)": "6",
+                "CASTRUM falazókő 24 cm falhoz*": "24",
+                "CASTRUM falkorona 24 (két oldalon hasított)": "6",
+                "CASTRUM falkorona kezdőkő 24 (három oldalon hasított)": "6",
+                "CASTRUM pillérkorona (négy oldalon hasított)": "6"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "leier-kaiserstein-castrum-paliszad": {
+            "product_id": "leier-kaiserstein-castrum-paliszad",
+            "name": "Leier Kaiserstein CASTRUM paliszád",
+            "description": "",
+            "url": "https://www.leier.hu/hu/termekek/leier-kaiserstein-castrum-paliszad",
+            "category_url": "https://www.leier.hu/hu/termekeink/kerti-falazatok",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55becfb6.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Castrum paliszád termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Castrum-paliszad-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-635267b02f32b.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55be5f02.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6a87a74af.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa67ea7a2a.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55becfb6.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Castrum paliszád termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Castrum-paliszad-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-635267b02f32b.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55be5f02.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6a87a74af.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa67ea7a2a.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55becfb6.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Fustantracit-65f063f6a114c",
+                    "url": "https://www.leier.hu/uploads/files/Fustantracit-65f063f6a114c.jpg",
+                    "type": "document"
+                },
+                "doc_14": {
+                    "title": "Fuoco",
+                    "url": "https://www.leier.hu/uploads/files/Fuoco.jpg",
+                    "type": "document"
+                },
+                "doc_15": {
+                    "title": "Sepia",
+                    "url": "https://www.leier.hu/uploads/files/Sepia.jpg",
+                    "type": "document"
+                },
+                "doc_16": {
+                    "title": "Leier Kaiserstein CASTRUM paliszád",
+                    "url": "https://photos.leier.eu/M3G6dLXo5zRQB8tXvsBHlZV-LH4=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum-paliszad%2520%25289%2529.jpg",
+                    "type": "document"
+                },
+                "doc_17": {
+                    "title": "Castrum paliszád fuoco",
+                    "url": "https://photos.leier.eu/03bJCUS4jb16ZUh3f9iw4AfoeRQ=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum-paliszad%2520%25289%2529-6321dd4212ff5.jpg",
+                    "type": "document"
+                },
+                "doc_18": {
+                    "title": "Castrum paliszád fuoco",
+                    "url": "https://photos.leier.eu/LpkfH_dFMjz0pA97arLNL78vu-4=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum-paliszad__1_.jpg",
+                    "type": "document"
+                },
+                "doc_19": {
+                    "title": "Castrum paliszád fuoco",
+                    "url": "https://photos.leier.eu/i3wlJaYM9Kmbo8JZudovdUFnPl0=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum-paliszad%2520%252811%2529.jpg",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "Castrum paliszád füstantracit",
+                    "url": "https://photos.leier.eu/-4oK0wX9I_oFABYbgalnSHQjti0=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum-paliszad%2520%252810%2529.jpg",
+                    "type": "document"
+                },
+                "doc_21": {
+                    "title": "Castrum paliszád füstantracit",
+                    "url": "https://photos.leier.eu/kFklESpp2lc9IFSjglpdke3oXtc=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum_terko_es_paliszad-feketemarvany-Csepel__22_.jpg",
+                    "type": "document"
+                },
+                "doc_22": {
+                    "title": "Castrum paliszád füstantracit",
+                    "url": "https://photos.leier.eu/13tP4HTs-76ltksbJrlZM_KynYQ=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum_terko_es_paliszad-feketemarvany-Csepel__9_.jpg",
+                    "type": "document"
+                },
+                "doc_23": {
+                    "title": "Castrum paliszád füstantracit",
+                    "url": "https://photos.leier.eu/22c46BwzIeecD-zJZh23dimmkj0=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum-paliszad%2520%252812%2529.jpg",
+                    "type": "document"
+                },
+                "doc_24": {
+                    "title": "Castrum paliszád sepia",
+                    "url": "https://photos.leier.eu/JE0LbHOwQJTtTBAjmJjil-SxIu8=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum-paliszad__3_.jpg",
+                    "type": "document"
+                },
+                "doc_25": {
+                    "title": "Castrum paliszád termékadatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Castrum-paliszad-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_26": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-635267b02f32b.pdf",
+                    "type": "pdf"
+                },
+                "doc_27": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55be5f02.pdf",
+                    "type": "pdf"
+                },
+                "doc_28": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6a87a74af.pdf",
+                    "type": "pdf"
+                },
+                "doc_29": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa67ea7a2a.pdf",
+                    "type": "pdf"
+                },
+                "doc_30": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_31": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_32": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_33": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_34": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 35,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/LwMrrHABbfcQxKh3XACk3jzaV00=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fkaiserstein-leier2-64140c31aa916.jpg",
+                    "alt": "Kaiserstein"
+                },
+                {
+                    "url": "https://photos.leier.eu/PuTAeGbm97Gcpax0FD3lmi5_Ipc=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FFustantracit-65f063f6a114c.jpg",
+                    "alt": "Castrum paliszád füstantracit"
+                },
+                {
+                    "url": "https://photos.leier.eu/FLczTgdgCBsL0WdZk0AqeuypyC4=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FFuoco.jpg",
+                    "alt": "Castrum paliszád fuoco"
+                },
+                {
+                    "url": "https://photos.leier.eu/w_cZIKjF7uixrtRPIUlgvjesSNg=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FSepia.jpg",
+                    "alt": "Castrum paliszád sepia"
+                }
+            ],
+            "technical_data": {
+                "Termék": "Vastagság (cm)",
+                "CASTRUM paliszád 60 (két hosszoldalon hasított)": "12",
+                "CASTRUM paliszád 30 (három oldalon hasított)": "12"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "leier-kaiserstein-kant-univerzalis-burkoloko": {
+            "product_id": "leier-kaiserstein-kant-univerzalis-burkoloko",
+            "name": "Leier Kaiserstein KANT univerzális burkolókő",
+            "description": "",
+            "url": "https://www.leier.hu/hu/termekek/leier-kaiserstein-kant-univerzalis-burkoloko",
+            "category_url": "https://www.leier.hu/hu/termekeink/kerti-falazatok",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55becfb6.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Kant univerzális térkő adatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Kant-patio-univerzalis-terko-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-635267261f8a2.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Teljesítménynyilatkozat beton lapok GS1339-04_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Teljesítménynyilatkozat_beton_lapok_GS1339-04_HU-63ee38dfd8fe7.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Termékadatlap KANT univerzális burkolókő_12.2022_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Termékadatlap_KANT_universális_burkolókő_12.2022_HU-63ee38dfda6b6.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55be5f02.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6a87a74af.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa67ea7a2a.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55becfb6.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Kant univerzális térkő adatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Kant-patio-univerzalis-terko-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-635267261f8a2.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Teljesítménynyilatkozat beton lapok GS1339-04_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Teljesítménynyilatkozat_beton_lapok_GS1339-04_HU-63ee38dfd8fe7.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Termékadatlap KANT univerzális burkolókő_12.2022_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Termékadatlap_KANT_universális_burkolókő_12.2022_HU-63ee38dfda6b6.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55be5f02.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6a87a74af.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa67ea7a2a.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55becfb6.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "Kant-fustantracit-antik",
+                    "url": "https://www.leier.hu/uploads/files/Kant-fustantracit-antik.jpg",
+                    "type": "document"
+                },
+                "doc_18": {
+                    "title": "Kant-agyagszurke-6322043341a27",
+                    "url": "https://www.leier.hu/uploads/files/Kant-agyagszurke-6322043341a27.jpg",
+                    "type": "document"
+                },
+                "doc_19": {
+                    "title": "Kant-fuoco-antik",
+                    "url": "https://www.leier.hu/uploads/files/Kant-fuoco-antik.jpg",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "Sepia antik",
+                    "url": "https://www.leier.hu/uploads/files/Sepia antik.jpg",
+                    "type": "document"
+                },
+                "doc_21": {
+                    "title": "Kant-tortfeher-natur",
+                    "url": "https://www.leier.hu/uploads/files/Kant-tortfeher-natur.jpg",
+                    "type": "document"
+                },
+                "doc_22": {
+                    "title": "Kant-feketemarvany-natur",
+                    "url": "https://www.leier.hu/uploads/files/Kant-feketemarvany-natur.jpg",
+                    "type": "document"
+                },
+                "doc_23": {
+                    "title": "Kant-agyagszurke",
+                    "url": "https://www.leier.hu/uploads/files/Kant-agyagszurke.jpg",
+                    "type": "document"
+                },
+                "doc_24": {
+                    "title": "Kant-beige-natur",
+                    "url": "https://www.leier.hu/uploads/files/Kant-beige-natur.jpg",
+                    "type": "document"
+                },
+                "doc_25": {
+                    "title": "Leier-Kant-Fuoco-antik",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kant-Fuoco-antik.JPG",
+                    "type": "document"
+                },
+                "doc_26": {
+                    "title": "Kant-sepia-natur",
+                    "url": "https://www.leier.hu/uploads/files/Kant-sepia-natur.jpg",
+                    "type": "document"
+                },
+                "doc_27": {
+                    "title": "Leier Kaiserstein KANT univerzális burkolókő",
+                    "url": "https://photos.leier.eu/FwBd4qQH_OgoE9iVKcVdVynAthk=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FKant-falazo.jpg",
+                    "type": "document"
+                },
+                "doc_28": {
+                    "title": "Kant univerzális térkő adatlap (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Kant-patio-univerzalis-terko-termekadatlap.pdf",
+                    "type": "pdf"
+                },
+                "doc_29": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-635267261f8a2.pdf",
+                    "type": "pdf"
+                },
+                "doc_30": {
+                    "title": "Teljesítménynyilatkozat beton lapok GS1339-04_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Teljesítménynyilatkozat_beton_lapok_GS1339-04_HU-63ee38dfd8fe7.pdf",
+                    "type": "pdf"
+                },
+                "doc_31": {
+                    "title": "Termékadatlap KANT univerzális burkolókő_12.2022_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Termékadatlap_KANT_universális_burkolókő_12.2022_HU-63ee38dfda6b6.pdf",
+                    "type": "pdf"
+                },
+                "doc_32": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55be5f02.pdf",
+                    "type": "pdf"
+                },
+                "doc_33": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6a87a74af.pdf",
+                    "type": "pdf"
+                },
+                "doc_34": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa67ea7a2a.pdf",
+                    "type": "pdf"
+                },
+                "doc_35": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_36": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_37": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_38": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_39": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 40,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/LwMrrHABbfcQxKh3XACk3jzaV00=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fkaiserstein-leier2-64140c31aa916.jpg",
+                    "alt": "Kaiserstein"
+                },
+                {
+                    "url": "https://photos.leier.eu/4YrMmLhgH4VWWCBmqFwoy2bV9z8=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FKant-fustantracit-antik.jpg",
+                    "alt": "Kant füstantracit antik"
+                },
+                {
+                    "url": "https://photos.leier.eu/aT7a-KlavEH6tX0jq1hQnQJKi3c=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FKant-agyagszurke-6322043341a27.jpg",
+                    "alt": "Kant agyagszürke antik"
+                },
+                {
+                    "url": "https://photos.leier.eu/ZQi5OocY8vkVIZj_ocfGDrfudkU=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FKant-fuoco-antik.jpg",
+                    "alt": "Kant fuoco antik"
+                }
+            ],
+            "technical_data": {
+                "Típus": "Vastagság (cm)",
+                "KANT natúr univerzális burkolókő": "6",
+                "KANT antik univerzális burkolókő": "6"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "leier-kaisrstein-block-kerti-falazo": {
+            "product_id": "leier-kaisrstein-block-kerti-falazo",
+            "name": "Leier Kaiserstein BLOCK kerti falazó",
+            "description": "",
+            "url": "https://www.leier.hu/hu/termekek/leier-kaisrstein-block-kerti-falazo",
+            "category_url": "https://www.leier.hu/hu/termekeink/kerti-falazatok",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55becfb6.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-635266df00ff1.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Teljesítménynyilatkozat beton falazóelemek GS771-5-03_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Teljesítménynyilatkozat_beton_falazóelemek_GS771-5-03_HU-63ee366001d93.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Termékadatlap BLOCK falazóelem_natúr_6cm_12.2022 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Termékadatlap_BLOCK_falazóelem_natúr_14_cm_HU-63ee366003432.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55be5f02.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6a87a74af.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa67ea7a2a.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55becfb6.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-635266df00ff1.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Teljesítménynyilatkozat beton falazóelemek GS771-5-03_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Teljesítménynyilatkozat_beton_falazóelemek_GS771-5-03_HU-63ee366001d93.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Termékadatlap BLOCK falazóelem_natúr_6cm_12.2022 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Termékadatlap_BLOCK_falazóelem_natúr_14_cm_HU-63ee366003432.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55be5f02.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6a87a74af.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa67ea7a2a.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55becfb6.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Block-natur-jegszurke",
+                    "url": "https://www.leier.hu/uploads/files/Block-natur-jegszurke.jpg",
+                    "type": "document"
+                },
+                "doc_16": {
+                    "title": "Block-natur-sepia",
+                    "url": "https://www.leier.hu/uploads/files/Block-natur-sepia.jpg",
+                    "type": "document"
+                },
+                "doc_17": {
+                    "title": "Block.natur-fuoco",
+                    "url": "https://www.leier.hu/uploads/files/Block.natur-fuoco.jpg",
+                    "type": "document"
+                },
+                "doc_18": {
+                    "title": "Block-natur-fustantracit",
+                    "url": "https://www.leier.hu/uploads/files/Block-natur-fustantracit.jpg",
+                    "type": "document"
+                },
+                "doc_19": {
+                    "title": "Block-antik-jegszurke",
+                    "url": "https://www.leier.hu/uploads/files/Block-antik-jegszurke.jpg",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "Block-antik-sepia",
+                    "url": "https://www.leier.hu/uploads/files/Block-antik-sepia.jpg",
+                    "type": "document"
+                },
+                "doc_21": {
+                    "title": "Block-antik-fuoco",
+                    "url": "https://www.leier.hu/uploads/files/Block-antik-fuoco.jpg",
+                    "type": "document"
+                },
+                "doc_22": {
+                    "title": "Block-antik-fustantracit",
+                    "url": "https://www.leier.hu/uploads/files/Block-antik-fustantracit.jpg",
+                    "type": "document"
+                },
+                "doc_23": {
+                    "title": "Leier Kaiserstein Block kerti elem",
+                    "url": "https://photos.leier.eu/H_c5wCiezCEMMhdZRAK4hLCR8FU=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaisrstein-BLOCK-kerti-falazo%2520%25282%2529.jpg",
+                    "type": "document"
+                },
+                "doc_24": {
+                    "title": "Block kerti elem füstantracit antik",
+                    "url": "https://photos.leier.eu/MZmSeHpYkehvqrQzYy8aW6MHLgw=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaisrstein-BLOCK-kerti-falazo%2520%25281%2529.jpg",
+                    "type": "document"
+                },
+                "doc_25": {
+                    "title": "Leier Kaiserstein Block kerti elem",
+                    "url": "https://photos.leier.eu/k94qcU66Rj0TkFkwDD68xzYgcas=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaisrstein-BLOCK-kerti-falazo%2520%25282%2529-6321e1494fc22.jpg",
+                    "type": "document"
+                },
+                "doc_26": {
+                    "title": "Leier Kaiserstein Block kerti elem",
+                    "url": "https://photos.leier.eu/3vpgK5qy0p3DU6Ro9t67AYj8Qqs=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-block-kerti-falazo__2_.jpg",
+                    "type": "document"
+                },
+                "doc_27": {
+                    "title": "Leier Kaiserstein Block kerti elem",
+                    "url": "https://photos.leier.eu/xLKmXikjQz1t4bcxFq0WsoNu_q4=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-block-kerti-falazo__1_.jpg",
+                    "type": "document"
+                },
+                "doc_28": {
+                    "title": "Leier Kaiserstein Block kerti elem",
+                    "url": "https://photos.leier.eu/HhS-erTgANZQ0R7k1C1g6zmBLKY=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-block-kerti-falazo__3_.jpg",
+                    "type": "document"
+                },
+                "doc_29": {
+                    "title": "Leier Kaiserstein Block kerti elem",
+                    "url": "https://photos.leier.eu/QuWw0hmbF5CwzootJdG9ZIK9Vbo=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FLeier-Kaiserstein-block-kerti-falazo__4_.jpg",
+                    "type": "document"
+                },
+                "doc_30": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-635266df00ff1.pdf",
+                    "type": "pdf"
+                },
+                "doc_31": {
+                    "title": "Teljesítménynyilatkozat beton falazóelemek GS771-5-03_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Teljesítménynyilatkozat_beton_falazóelemek_GS771-5-03_HU-63ee366001d93.pdf",
+                    "type": "pdf"
+                },
+                "doc_32": {
+                    "title": "Termékadatlap BLOCK falazóelem_natúr_6cm_12.2022 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Termékadatlap_BLOCK_falazóelem_natúr_14_cm_HU-63ee366003432.pdf",
+                    "type": "pdf"
+                },
+                "doc_33": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c55be5f02.pdf",
+                    "type": "pdf"
+                },
+                "doc_34": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6a87a74af.pdf",
+                    "type": "pdf"
+                },
+                "doc_35": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa67ea7a2a.pdf",
+                    "type": "pdf"
+                },
+                "doc_36": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_37": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_38": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_39": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_40": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 41,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/LwMrrHABbfcQxKh3XACk3jzaV00=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fkaiserstein-leier2-64140c31aa916.jpg",
+                    "alt": "Kaiserstein"
+                },
+                {
+                    "url": "https://photos.leier.eu/bh3rAqKPGulX5UwBJmGx5ygfKfQ=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FBlock-natur-jegszurke.jpg",
+                    "alt": "Block kerti falazókő natúr"
+                },
+                {
+                    "url": "https://photos.leier.eu/n0QQeDHMezxX4NEU8CLY3FYuLXM=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FBlock-natur-sepia.jpg",
+                    "alt": "Block kerti falazókő natúr"
+                },
+                {
+                    "url": "https://photos.leier.eu/WzHBePDDmLjFvrLKV1fZV63HQZQ=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FBlock.natur-fuoco.jpg",
+                    "alt": "Block kerti falazókő natúr"
+                }
+            ],
+            "technical_data": {
+                "Termék": "Vastagság (cm)",
+                "BLOCK kerti falazókő natúr": "21",
+                "BLOCK kerti falazókő antik": "21"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        },
+        "castrum-multiblokk-3": {
+            "product_id": "castrum-multiblokk-3",
+            "name": "Leier CASTRUM Multiblokk és lépcsőlap",
+            "description": "",
+            "url": "https://www.leier.hu/hu/termekek/castrum-multiblokk-3",
+            "category_url": "https://www.leier.hu/hu/termekeink/kerti-falazatok",
+            "price_info": "",
+            "specifications": {},
+            "documents": {
+                "doc_0": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5be244ce.pdf",
+                    "type": "pdf"
+                },
+                "doc_1": {
+                    "title": "Castrum Multiblokk beépítési útmutató (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Multiblokk-beepitesi-utmutato.pdf",
+                    "type": "pdf"
+                },
+                "doc_2": {
+                    "title": "Kerti termékek teljesítménynyilatkozat NR: LE JH13198-01 Jánosháza (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Kerti-termekek-teljesitmenynyilatkozat-nr-le-jh13198-01-janoshaza-63cfcb934dac7.pdf",
+                    "type": "pdf"
+                },
+                "doc_3": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-63526683b5b21.pdf",
+                    "type": "pdf"
+                },
+                "doc_4": {
+                    "title": "Teljesítménynyilatkozat beton falazóelemek GS771-5-03 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Teljesítménynyilatkozat_beton_falazóelemek_GS771-5-03_HU-63f31fe164a41.pdf",
+                    "type": "pdf"
+                },
+                "doc_5": {
+                    "title": "Termékadatlap Castrum_falazó_12cm-antik_01.2021_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Termékadatlap_Castrum_12cmAntik_01.2021_HU-63f31fe16de6e.pdf",
+                    "type": "pdf"
+                },
+                "doc_6": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5be20358.pdf",
+                    "type": "pdf"
+                },
+                "doc_7": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6ad71c239.pdf",
+                    "type": "pdf"
+                },
+                "doc_8": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa6b369433.pdf",
+                    "type": "pdf"
+                },
+                "doc_9": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5be244ce.pdf",
+                    "type": "pdf"
+                },
+                "doc_10": {
+                    "title": "Castrum Multiblokk beépítési útmutató (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Multiblokk-beepitesi-utmutato.pdf",
+                    "type": "pdf"
+                },
+                "doc_11": {
+                    "title": "Kerti termékek teljesítménynyilatkozat NR: LE JH13198-01 Jánosháza (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Kerti-termekek-teljesitmenynyilatkozat-nr-le-jh13198-01-janoshaza-63cfcb934dac7.pdf",
+                    "type": "pdf"
+                },
+                "doc_12": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-63526683b5b21.pdf",
+                    "type": "pdf"
+                },
+                "doc_13": {
+                    "title": "Teljesítménynyilatkozat beton falazóelemek GS771-5-03 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Teljesítménynyilatkozat_beton_falazóelemek_GS771-5-03_HU-63f31fe164a41.pdf",
+                    "type": "pdf"
+                },
+                "doc_14": {
+                    "title": "Termékadatlap Castrum_falazó_12cm-antik_01.2021_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Termékadatlap_Castrum_12cmAntik_01.2021_HU-63f31fe16de6e.pdf",
+                    "type": "pdf"
+                },
+                "doc_15": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5be20358.pdf",
+                    "type": "pdf"
+                },
+                "doc_16": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6ad71c239.pdf",
+                    "type": "pdf"
+                },
+                "doc_17": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa6b369433.pdf",
+                    "type": "pdf"
+                },
+                "doc_18": {
+                    "title": "Akciós termékkínálat",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5be244ce.pdf",
+                    "type": "pdf"
+                },
+                "doc_19": {
+                    "title": "castrum-multiblokk-jegszurke",
+                    "url": "https://www.leier.hu/uploads/files/castrum-multiblokk-jegszurke.jpg",
+                    "type": "document"
+                },
+                "doc_20": {
+                    "title": "castrum-multiblokk-homokbeige",
+                    "url": "https://www.leier.hu/uploads/files/castrum-multiblokk-homokbeige.jpg",
+                    "type": "document"
+                },
+                "doc_21": {
+                    "title": "castrum-multiblokk-carbon",
+                    "url": "https://www.leier.hu/uploads/files/castrum-multiblokk-carbon.jpg",
+                    "type": "document"
+                },
+                "doc_22": {
+                    "title": "Leier Castrum multiblokk",
+                    "url": "https://photos.leier.eu/luJJmyjbN9wY3B0aQx8v6Qt8DgI=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum-multiblokk%2520%25282%2529-63329dee0b64d.jpg",
+                    "type": "document"
+                },
+                "doc_23": {
+                    "title": "Leier Castrum multiblokk",
+                    "url": "https://photos.leier.eu/mL5rmbqo-RwwMP70W-JnhKtnv40=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum-multiblokk__1_.jpg",
+                    "type": "document"
+                },
+                "doc_24": {
+                    "title": "Leier Castrum multiblokk",
+                    "url": "https://photos.leier.eu/_jrJJFeOMDOC9bKqeDpPUGFwiuQ=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum-multiblokk__2_.jpg",
+                    "type": "document"
+                },
+                "doc_25": {
+                    "title": "Leier Castrum multiblokk és lépcsőlap",
+                    "url": "https://photos.leier.eu/XHsuIeYeRaPuDnbwMk-odgIt3CE=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum-lepcsolap__1_-63eb4b6ece65b.jpg",
+                    "type": "document"
+                },
+                "doc_26": {
+                    "title": "Leier Castrum multiblokk és lépcsőlap",
+                    "url": "https://photos.leier.eu/hOLMzJMlcF9X7pjveoUIa6P4z2o=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2FCastrum-lepcsolap__3_-63eb4b6ecfb98.jpg",
+                    "type": "document"
+                },
+                "doc_27": {
+                    "title": "Castrum multiblokk termékfotó",
+                    "url": "https://photos.leier.eu/Nr4Qey8cmYPk8cSpRn5ccxuYi4c=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fcastrum-multiblokk-643d4bd4d8d34.jpg",
+                    "type": "document"
+                },
+                "doc_28": {
+                    "title": "Castrum lépcsőlap termékfotó",
+                    "url": "https://photos.leier.eu/SuD_5Wd0vDhvkPcZN7wNS40RhQc=/filters:watermark(https://www.leier.hu/uploads/files/kaiserstein-leier2-64140c31aa916.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fcastrum-lepcso.jpg",
+                    "type": "document"
+                },
+                "doc_29": {
+                    "title": "Castrum Multiblokk beépítési útmutató (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Multiblokk-beepitesi-utmutato.pdf",
+                    "type": "pdf"
+                },
+                "doc_30": {
+                    "title": "Kerti termékek teljesítménynyilatkozat NR: LE JH13198-01 Jánosháza (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Kerti-termekek-teljesitmenynyilatkozat-nr-le-jh13198-01-janoshaza-63cfcb934dac7.pdf",
+                    "type": "pdf"
+                },
+                "doc_31": {
+                    "title": "Díszburkolatok alkalmazástechnika és tervezési segédlet (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_diszburkolatok_alkalmazastechnika-63526683b5b21.pdf",
+                    "type": "pdf"
+                },
+                "doc_32": {
+                    "title": "Teljesítménynyilatkozat beton falazóelemek GS771-5-03 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Teljesítménynyilatkozat_beton_falazóelemek_GS771-5-03_HU-63f31fe164a41.pdf",
+                    "type": "pdf"
+                },
+                "doc_33": {
+                    "title": "Termékadatlap Castrum_falazó_12cm-antik_01.2021_HU (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Termékadatlap_Castrum_12cmAntik_01.2021_HU-63f31fe16de6e.pdf",
+                    "type": "pdf"
+                },
+                "doc_34": {
+                    "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c5be20358.pdf",
+                    "type": "pdf"
+                },
+                "doc_35": {
+                    "title": "Leier Kaiserstein katalógus (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Leier-Kaiserstein-katalogus-2025-web-682d6ad71c239.pdf",
+                    "type": "pdf"
+                },
+                "doc_36": {
+                    "title": "Díszburkolat árlista viszonteladók részére - Érvényes: 2025.04.01-től (frissítve, árváltozás nélkül) (pdf)",
+                    "url": "https://www.leier.hu/uploads/files/Arlista-diszburkolat-2025-685aa6b369433.pdf",
+                    "type": "pdf"
+                },
+                "doc_37": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_38": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_39": {
+                    "title": "Prospektusok",
+                    "url": "https://www.leier.hu/dokumentumtar#1860",
+                    "type": "document"
+                },
+                "doc_40": {
+                    "title": "Letölthető dokumentumok",
+                    "url": "https://www.leier.hu/dokumentumtar#1859",
+                    "type": "document"
+                },
+                "doc_41": {
+                    "title": "Árlisták",
+                    "url": "https://www.leier.hu/dokumentumtar#1861",
+                    "type": "document"
+                }
+            },
+            "document_count": 42,
+            "images": [
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+                    "alt": "Leier"
+                },
+                {
+                    "url": "https://photos.leier.eu/LwMrrHABbfcQxKh3XACk3jzaV00=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fkaiserstein-leier2-64140c31aa916.jpg",
+                    "alt": "Kaiserstein"
+                },
+                {
+                    "url": "https://photos.leier.eu/SvZO5p2Aa1R2bGPBxnbL6MFpWDg=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fcastrum-multiblokk-jegszurke.jpg",
+                    "alt": "Castrum multiblokk jégszürke"
+                },
+                {
+                    "url": "https://photos.leier.eu/MxjD6jH0s-9hsY0vysBj-s2SaYY=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fcastrum-multiblokk-homokbeige.jpg",
+                    "alt": "Leier Castrum multiblokk és lépcsőlap homokbeige"
+                },
+                {
+                    "url": "https://photos.leier.eu/4hkeY38yPr8yahWOfP3iuXhkSw8=/129x129/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fcastrum-multiblokk-carbon.jpg",
+                    "alt": "Leier Castrum multiblokk és lépcsőlap carbon"
+                }
+            ],
+            "technical_data": {
+                "Termék": "Szélesség (cm)",
+                "CASTRUM Multiblokk": "40",
+                "CASTRUM lépcsőlap hasított éllel": "115"
+            },
+            "features": [
+                "Viszonteladóink",
+                "Kalkulátorok",
+                "Letölthető dokumentumok",
+                "Rendszerház - akció"
+            ]
+        }
+    },
+    "product_count": 8,
+    "document_count": 357
+}

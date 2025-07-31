@@ -1,0 +1,575 @@
+{
+  "documents": [
+    {
+      "id": 2767,
+      "name": "leier-p06-kpanel-lepcso",
+      "is_folder": 0,
+      "parent_id": 2720,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2720,
+        "name": "dxf",
+        "is_folder": 1,
+        "parent_id": 2347,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2347,
+          "name": "Kéregelemes födém részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2767",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2768,
+      "name": "leier-p05b-kpanel-terasz2",
+      "is_folder": 0,
+      "parent_id": 2720,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2720,
+        "name": "dxf",
+        "is_folder": 1,
+        "parent_id": 2347,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2347,
+          "name": "Kéregelemes födém részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2768",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2769,
+      "name": "leier-p05a-kpanel-terasz1",
+      "is_folder": 0,
+      "parent_id": 2720,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2720,
+        "name": "dxf",
+        "is_folder": 1,
+        "parent_id": 2347,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2347,
+          "name": "Kéregelemes födém részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2769",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2770,
+      "name": "leier-p04-kpanel-valaszfal",
+      "is_folder": 0,
+      "parent_id": 2720,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2720,
+        "name": "dxf",
+        "is_folder": 1,
+        "parent_id": 2347,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2347,
+          "name": "Kéregelemes födém részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2770",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2771,
+      "name": "leier-p032-kpanel-belsok",
+      "is_folder": 0,
+      "parent_id": 2720,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2720,
+        "name": "dxf",
+        "is_folder": 1,
+        "parent_id": 2347,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2347,
+          "name": "Kéregelemes födém részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2771",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2772,
+      "name": "leier-p031-kpanel-belsok",
+      "is_folder": 0,
+      "parent_id": 2720,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2720,
+        "name": "dxf",
+        "is_folder": 1,
+        "parent_id": 2347,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2347,
+          "name": "Kéregelemes födém részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2772",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2773,
+      "name": "leier-p02c-kpanel-koszoru4",
+      "is_folder": 0,
+      "parent_id": 2720,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2720,
+        "name": "dxf",
+        "is_folder": 1,
+        "parent_id": 2347,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2347,
+          "name": "Kéregelemes födém részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2773",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2774,
+      "name": "leier-p02b-kpanel-koszoru3",
+      "is_folder": 0,
+      "parent_id": 2720,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2720,
+        "name": "dxf",
+        "is_folder": 1,
+        "parent_id": 2347,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2347,
+          "name": "Kéregelemes födém részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2774",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2775,
+      "name": "leier-p02a-kpanel-koszoru2",
+      "is_folder": 0,
+      "parent_id": 2720,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2720,
+        "name": "dxf",
+        "is_folder": 1,
+        "parent_id": 2347,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2347,
+          "name": "Kéregelemes födém részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2775",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2776,
+      "name": "leier-p01-kpanel-koszoru1",
+      "is_folder": 0,
+      "parent_id": 2720,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2720,
+        "name": "dxf",
+        "is_folder": 1,
+        "parent_id": 2347,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2347,
+          "name": "Kéregelemes födém részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2776",
+        "extension": "zip"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 2720,
+    "name": "dxf",
+    "is_folder": 1,
+    "parent_id": 2347,
+    "created_at": "2023. február 16.",
+    "parent": {
+      "id": 2347,
+      "name": "Kéregelemes födém részletrajzok",
+      "is_folder": 1,
+      "parent_id": 2336,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2336,
+        "name": "Csomópontok",
+        "is_folder": 1,
+        "parent_id": 1867,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 1867,
+          "name": "Részletrajzok",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

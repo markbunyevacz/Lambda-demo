@@ -1,0 +1,262 @@
+{
+  "documents": [
+    {
+      "id": 2052,
+      "name": "LTE támfalelemek - Győr - Teljesítménynyilatkozat LE GY15258-02",
+      "is_folder": 0,
+      "parent_id": 1939,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1939,
+        "name": "Előregyártott falak",
+        "is_folder": 1,
+        "parent_id": 1928,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1928,
+          "name": "Magasépítési termékek",
+          "is_folder": 1,
+          "parent_id": 1865,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1865,
+            "name": "Teljesítménynyilatkozatok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2052",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2053,
+      "name": "LTE támfalelem - Jánossomorja - Teljesítménynyilatkozat LE JS15258-02",
+      "is_folder": 0,
+      "parent_id": 1939,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1939,
+        "name": "Előregyártott falak",
+        "is_folder": 1,
+        "parent_id": 1928,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1928,
+          "name": "Magasépítési termékek",
+          "is_folder": 1,
+          "parent_id": 1865,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1865,
+            "name": "Teljesítménynyilatkozatok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2053",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2054,
+      "name": "Falelem - Jánossomorja - Teljesítménynyilatkozat LE JS14992-03",
+      "is_folder": 0,
+      "parent_id": 1939,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1939,
+        "name": "Előregyártott falak",
+        "is_folder": 1,
+        "parent_id": 1928,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1928,
+          "name": "Magasépítési termékek",
+          "is_folder": 1,
+          "parent_id": 1865,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1865,
+            "name": "Teljesítménynyilatkozatok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2054",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 4005,
+      "name": "Falelem - Kiskunlacháza - Teljesítménynyilatkozat LE KL14992-04",
+      "is_folder": 0,
+      "parent_id": 1939,
+      "created_at": "2024. július 17.",
+      "parent": {
+        "id": 1939,
+        "name": "Előregyártott falak",
+        "is_folder": 1,
+        "parent_id": 1928,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1928,
+          "name": "Magasépítési termékek",
+          "is_folder": 1,
+          "parent_id": 1865,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1865,
+            "name": "Teljesítménynyilatkozatok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/4005",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 4006,
+      "name": "Falelem - Győr - Teljesítménynyilatkozat LE GY14992-05",
+      "is_folder": 0,
+      "parent_id": 1939,
+      "created_at": "2024. július 17.",
+      "parent": {
+        "id": 1939,
+        "name": "Előregyártott falak",
+        "is_folder": 1,
+        "parent_id": 1928,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1928,
+          "name": "Magasépítési termékek",
+          "is_folder": 1,
+          "parent_id": 1865,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1865,
+            "name": "Teljesítménynyilatkozatok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/4006",
+        "extension": "pdf"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 1939,
+    "name": "Előregyártott falak",
+    "is_folder": 1,
+    "parent_id": 1928,
+    "created_at": "2023. február 15.",
+    "parent": {
+      "id": 1928,
+      "name": "Magasépítési termékek",
+      "is_folder": 1,
+      "parent_id": 1865,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1865,
+        "name": "Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

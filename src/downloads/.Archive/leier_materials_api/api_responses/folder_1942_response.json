@@ -1,0 +1,487 @@
+{
+  "documents": [
+    {
+      "id": 2070,
+      "name": "Zsaluzóelem - Gönyű - Teljesítménynyilatkozat LE GO15435-02",
+      "is_folder": 0,
+      "parent_id": 1942,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1942,
+        "name": "Beton falazóelemek",
+        "is_folder": 1,
+        "parent_id": 1928,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1928,
+          "name": "Magasépítési termékek",
+          "is_folder": 1,
+          "parent_id": 1865,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1865,
+            "name": "Teljesítménynyilatkozatok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2070",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2071,
+      "name": "Zsaluzóelem - Jánossomorja - Teljesítménynyilatkozat LE JS15435-01",
+      "is_folder": 0,
+      "parent_id": 1942,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1942,
+        "name": "Beton falazóelemek",
+        "is_folder": 1,
+        "parent_id": 1928,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1928,
+          "name": "Magasépítési termékek",
+          "is_folder": 1,
+          "parent_id": 1865,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1865,
+            "name": "Teljesítménynyilatkozatok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2071",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2090,
+      "name": "Zsaluzóelem - Jánosháza - Teljesítménynyilatkozat LE JH15435-01",
+      "is_folder": 0,
+      "parent_id": 1942,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1942,
+        "name": "Beton falazóelemek",
+        "is_folder": 1,
+        "parent_id": 1928,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1928,
+          "name": "Magasépítési termékek",
+          "is_folder": 1,
+          "parent_id": 1865,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1865,
+            "name": "Teljesítménynyilatkozatok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2090",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2091,
+      "name": "Zsaluzóelem - Kiskunlacháza - Teljesítménynyilatkozat LE KL15435-01",
+      "is_folder": 0,
+      "parent_id": 1942,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1942,
+        "name": "Beton falazóelemek",
+        "is_folder": 1,
+        "parent_id": 1928,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1928,
+          "name": "Magasépítési termékek",
+          "is_folder": 1,
+          "parent_id": 1865,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1865,
+            "name": "Teljesítménynyilatkozatok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2091",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3818,
+      "name": "Zsaluzóelem - Pécs - Teljesítménynyilatkozat LE PE15435-02",
+      "is_folder": 0,
+      "parent_id": 1942,
+      "created_at": "2023. november 22.",
+      "parent": {
+        "id": 1942,
+        "name": "Beton falazóelemek",
+        "is_folder": 1,
+        "parent_id": 1928,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1928,
+          "name": "Magasépítési termékek",
+          "is_folder": 1,
+          "parent_id": 1865,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1865,
+            "name": "Teljesítménynyilatkozatok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3818",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3885,
+      "name": "Zsaluzóelem - Hajdúszoboszló - Teljesítménynyilatkozat LE HA15435-02",
+      "is_folder": 0,
+      "parent_id": 1942,
+      "created_at": "2024. március 13.",
+      "parent": {
+        "id": 1942,
+        "name": "Beton falazóelemek",
+        "is_folder": 1,
+        "parent_id": 1928,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1928,
+          "name": "Magasépítési termékek",
+          "is_folder": 1,
+          "parent_id": 1865,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1865,
+            "name": "Teljesítménynyilatkozatok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3885",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3840,
+      "name": "UNI pincefalazó - Jánosháza - Teljesítménynyilatkozat LE JH771-3-UNI-02",
+      "is_folder": 0,
+      "parent_id": 1942,
+      "created_at": "2024. január 15.",
+      "parent": {
+        "id": 1942,
+        "name": "Beton falazóelemek",
+        "is_folder": 1,
+        "parent_id": 1928,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1928,
+          "name": "Magasépítési termékek",
+          "is_folder": 1,
+          "parent_id": 1865,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1865,
+            "name": "Teljesítménynyilatkozatok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3840",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3841,
+      "name": "UNI pincefalazó - Jánossomorja - Teljesítménynyilatkozat LE JS771-3-UNI-03",
+      "is_folder": 0,
+      "parent_id": 1942,
+      "created_at": "2024. január 15.",
+      "parent": {
+        "id": 1942,
+        "name": "Beton falazóelemek",
+        "is_folder": 1,
+        "parent_id": 1928,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1928,
+          "name": "Magasépítési termékek",
+          "is_folder": 1,
+          "parent_id": 1865,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1865,
+            "name": "Teljesítménynyilatkozatok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3841",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3842,
+      "name": "VF10 válaszfalelem - Jánosháza - Teljesítménynyilatkozat LE JH771-3-VF10-02",
+      "is_folder": 0,
+      "parent_id": 1942,
+      "created_at": "2024. január 15.",
+      "parent": {
+        "id": 1942,
+        "name": "Beton falazóelemek",
+        "is_folder": 1,
+        "parent_id": 1928,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1928,
+          "name": "Magasépítési termékek",
+          "is_folder": 1,
+          "parent_id": 1865,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1865,
+            "name": "Teljesítménynyilatkozatok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3842",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3843,
+      "name": "VF10 válaszfalelem - Jánossomorja - Teljesítménynyilatkozat LE JS771-3-VF10-03",
+      "is_folder": 0,
+      "parent_id": 1942,
+      "created_at": "2024. január 15.",
+      "parent": {
+        "id": 1942,
+        "name": "Beton falazóelemek",
+        "is_folder": 1,
+        "parent_id": 1928,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1928,
+          "name": "Magasépítési termékek",
+          "is_folder": 1,
+          "parent_id": 1865,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1865,
+            "name": "Teljesítménynyilatkozatok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3843",
+        "extension": "pdf"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 1942,
+    "name": "Beton falazóelemek",
+    "is_folder": 1,
+    "parent_id": 1928,
+    "created_at": "2023. február 15.",
+    "parent": {
+      "id": 1928,
+      "name": "Magasépítési termékek",
+      "is_folder": 1,
+      "parent_id": 1865,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1865,
+        "name": "Teljesítménynyilatkozatok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

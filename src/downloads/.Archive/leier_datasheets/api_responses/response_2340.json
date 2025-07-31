@@ -1,0 +1,442 @@
+{
+  "documents": [
+    {
+      "id": 2457,
+      "name": "Térdfal kialakítása DSs 37,5-12",
+      "is_folder": 0,
+      "parent_id": 2340,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2340,
+        "name": "Leier Durisol Magasépítő falazórendszer",
+        "is_folder": 1,
+        "parent_id": 2336,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2336,
+          "name": "Csomópontok",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2457",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2458,
+      "name": "Pincefal kialakítása DSs 30-12",
+      "is_folder": 0,
+      "parent_id": 2340,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2340,
+        "name": "Leier Durisol Magasépítő falazórendszer",
+        "is_folder": 1,
+        "parent_id": 2336,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2336,
+          "name": "Csomópontok",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2458",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2459,
+      "name": "Koszorú és áthidaló kialakítása DSs 37,5-12",
+      "is_folder": 0,
+      "parent_id": 2340,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2340,
+        "name": "Leier Durisol Magasépítő falazórendszer",
+        "is_folder": 1,
+        "parent_id": 2336,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2336,
+          "name": "Csomópontok",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2459",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2460,
+      "name": "Erkély-csatlakozás kialakítása DSs 37,5-12",
+      "is_folder": 0,
+      "parent_id": 2340,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2340,
+        "name": "Leier Durisol Magasépítő falazórendszer",
+        "is_folder": 1,
+        "parent_id": 2336,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2336,
+          "name": "Csomópontok",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2460",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2461,
+      "name": "Belső, 50 cm magas áthidaló kialakítása DM 25-16",
+      "is_folder": 0,
+      "parent_id": 2340,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2340,
+        "name": "Leier Durisol Magasépítő falazórendszer",
+        "is_folder": 1,
+        "parent_id": 2336,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2336,
+          "name": "Csomópontok",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2461",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2462,
+      "name": "Belső, 25 cm magas áthidaló kialakítása DM 25-16",
+      "is_folder": 0,
+      "parent_id": 2340,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2340,
+        "name": "Leier Durisol Magasépítő falazórendszer",
+        "is_folder": 1,
+        "parent_id": 2336,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2336,
+          "name": "Csomópontok",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2462",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2463,
+      "name": "Ablak-csatlakozás kialakítása DSs 37,5-12",
+      "is_folder": 0,
+      "parent_id": 2340,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2340,
+        "name": "Leier Durisol Magasépítő falazórendszer",
+        "is_folder": 1,
+        "parent_id": 2336,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2336,
+          "name": "Csomópontok",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2463",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2464,
+      "name": "50 cm magas áthidaló kialakítása DSs 37,5-12",
+      "is_folder": 0,
+      "parent_id": 2340,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2340,
+        "name": "Leier Durisol Magasépítő falazórendszer",
+        "is_folder": 1,
+        "parent_id": 2336,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2336,
+          "name": "Csomópontok",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2464",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2465,
+      "name": "25 cm magas áthidaló kialakítása DSs 37,5-12",
+      "is_folder": 0,
+      "parent_id": 2340,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2340,
+        "name": "Leier Durisol Magasépítő falazórendszer",
+        "is_folder": 1,
+        "parent_id": 2336,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2336,
+          "name": "Csomópontok",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2465",
+        "extension": "pdf"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 2340,
+    "name": "Leier Durisol Magasépítő falazórendszer",
+    "is_folder": 1,
+    "parent_id": 2336,
+    "created_at": "2023. február 16.",
+    "parent": {
+      "id": 2336,
+      "name": "Csomópontok",
+      "is_folder": 1,
+      "parent_id": 1867,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 1867,
+        "name": "Részletrajzok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

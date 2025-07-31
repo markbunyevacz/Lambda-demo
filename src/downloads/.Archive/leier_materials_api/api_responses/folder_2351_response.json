@@ -1,0 +1,840 @@
+{
+  "documents": [
+    {
+      "id": 2356,
+      "name": "f10b-belso-zsalu-alap",
+      "is_folder": 0,
+      "parent_id": 2351,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2351,
+        "name": "dwg",
+        "is_folder": 1,
+        "parent_id": 2338,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2338,
+          "name": "Fal részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2356",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2357,
+      "name": "f10a-belso-uni-alapozas",
+      "is_folder": 0,
+      "parent_id": 2351,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2351,
+        "name": "dwg",
+        "is_folder": 1,
+        "parent_id": 2338,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2338,
+          "name": "Fal részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2357",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2358,
+      "name": "f09c-zsaluko-alap-tv",
+      "is_folder": 0,
+      "parent_id": 2351,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2351,
+        "name": "dwg",
+        "is_folder": 1,
+        "parent_id": 2338,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2338,
+          "name": "Fal részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2358",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2359,
+      "name": "f09b-zsaluko-alap-tn",
+      "is_folder": 0,
+      "parent_id": 2351,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2351,
+        "name": "dwg",
+        "is_folder": 1,
+        "parent_id": 2338,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2338,
+          "name": "Fal részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2359",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2360,
+      "name": "f09a-uni-alapozas-tn",
+      "is_folder": 0,
+      "parent_id": 2351,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2351,
+        "name": "dwg",
+        "is_folder": 1,
+        "parent_id": 2338,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2338,
+          "name": "Fal részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2360",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2361,
+      "name": "f08-vfal-alapozas",
+      "is_folder": 0,
+      "parent_id": 2351,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2351,
+        "name": "dwg",
+        "is_folder": 1,
+        "parent_id": 2338,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2338,
+          "name": "Fal részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2361",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2362,
+      "name": "f07-belsofofal-alapozas",
+      "is_folder": 0,
+      "parent_id": 2351,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2351,
+        "name": "dwg",
+        "is_folder": 1,
+        "parent_id": 2338,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2338,
+          "name": "Fal részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2362",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2363,
+      "name": "f06b-zsaluko-labazat",
+      "is_folder": 0,
+      "parent_id": 2351,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2351,
+        "name": "dwg",
+        "is_folder": 1,
+        "parent_id": 2338,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2338,
+          "name": "Fal részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2363",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2364,
+      "name": "f06a-uni-labazat",
+      "is_folder": 0,
+      "parent_id": 2351,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2351,
+        "name": "dwg",
+        "is_folder": 1,
+        "parent_id": 2338,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2338,
+          "name": "Fal részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2364",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2365,
+      "name": "f05-zsaluko-labazat",
+      "is_folder": 0,
+      "parent_id": 2351,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2351,
+        "name": "dwg",
+        "is_folder": 1,
+        "parent_id": 2338,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2338,
+          "name": "Fal részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2365",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2366,
+      "name": "f04b-kulso-nyilaszaro2",
+      "is_folder": 0,
+      "parent_id": 2351,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2351,
+        "name": "dwg",
+        "is_folder": 1,
+        "parent_id": 2338,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2338,
+          "name": "Fal részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2366",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2367,
+      "name": "f04a-kulso-nyilaszaro1",
+      "is_folder": 0,
+      "parent_id": 2351,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2351,
+        "name": "dwg",
+        "is_folder": 1,
+        "parent_id": 2338,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2338,
+          "name": "Fal részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2367",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2368,
+      "name": "f03-38as-falsarok",
+      "is_folder": 0,
+      "parent_id": 2351,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2351,
+        "name": "dwg",
+        "is_folder": 1,
+        "parent_id": 2338,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2338,
+          "name": "Fal részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2368",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2369,
+      "name": "f02-vfal-t-csatlakozas",
+      "is_folder": 0,
+      "parent_id": 2351,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2351,
+        "name": "dwg",
+        "is_folder": 1,
+        "parent_id": 2338,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2338,
+          "name": "Fal részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2369",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2370,
+      "name": "f01-vfal-bekotes",
+      "is_folder": 0,
+      "parent_id": 2351,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2351,
+        "name": "dwg",
+        "is_folder": 1,
+        "parent_id": 2338,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2338,
+          "name": "Fal részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2370",
+        "extension": "dwg"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 2351,
+    "name": "dwg",
+    "is_folder": 1,
+    "parent_id": 2338,
+    "created_at": "2023. február 16.",
+    "parent": {
+      "id": 2338,
+      "name": "Fal részletrajzok",
+      "is_folder": 1,
+      "parent_id": 2336,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2336,
+        "name": "Csomópontok",
+        "is_folder": 1,
+        "parent_id": 1867,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 1867,
+          "name": "Részletrajzok",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

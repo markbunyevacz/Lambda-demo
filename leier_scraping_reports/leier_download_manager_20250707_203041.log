@@ -1,0 +1,75 @@
+2025-07-07 20:30:41,149 - INFO - 🚀 LEIER Download Manager Scraper Initialized
+2025-07-07 20:30:41,149 - INFO - --- Starting LEIER Download Manager Scraping ---
+2025-07-07 20:30:41,151 - INFO - Scraping 3 entry points...
+2025-07-07 20:30:41,151 - INFO - Fetching page: https://u-ertek-kalkulator.leier.hu/letoltesek-1
+2025-07-07 20:30:41,637 - INFO - Fetching page: https://u-ertek-kalkulator.leier.hu/alkalmazastechnikak
+2025-07-07 20:30:42,007 - INFO - Fetching page: https://u-ertek-kalkulator.leier.hu/teljesitmenynyilatkozat
+2025-07-07 20:30:42,548 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/letoltesek-1 "HTTP/1.1 200 OK"
+2025-07-07 20:30:42,551 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/alkalmazastechnikak "HTTP/1.1 200 OK"
+2025-07-07 20:30:42,567 - INFO - Found 0 new download links on https://u-ertek-kalkulator.leier.hu/letoltesek-1
+2025-07-07 20:30:42,581 - INFO - Found 16 new download links on https://u-ertek-kalkulator.leier.hu/alkalmazastechnikak
+2025-07-07 20:30:42,582 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/teljesitmenynyilatkozat "HTTP/1.1 200 OK"
+2025-07-07 20:30:42,597 - INFO - Found 4 new download links on https://u-ertek-kalkulator.leier.hu/teljesitmenynyilatkozat
+2025-07-07 20:30:42,598 - INFO - Discovery complete. Found 20 unique document links.
+2025-07-07 20:30:42,598 - INFO - --- Downloading 20 documents ---
+2025-07-07 20:30:42,599 - INFO - Downloading: Mélyépítés, felszíni vízelvezetés, környezettechnika - Alkalmazástechnika from https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1250/m/30
+2025-07-07 20:30:42,902 - INFO - Downloading: Információk from https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1949/m/186
+2025-07-07 20:30:43,233 - INFO - Downloading: Durisol Falazóelemek - Alkalmazástechnika és tervezési segédlet from https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/3469/m/30
+2025-07-07 20:30:43,569 - INFO - Downloading: Információk from https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1250/m/30
+2025-07-07 20:30:44,044 - INFO - Downloading: Durisol falazati rendszer - Pozsony - Teljesítménynyilatkozat LE BA15498-02 from https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/3474/m/186
+2025-07-07 20:30:44,499 - INFO - Downloading: TELJESÍTMÉNYNYILATKOZAT Multikeram_NR: LE KLETA-12-0491-MULTIKERAM-02 from https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1949/m/186
+2025-07-07 20:30:44,500 - INFO - Downloading: Információk from https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/956/m/30
+2025-07-07 20:30:44,500 - INFO - Downloading: DÍSZBURKOLATOK ALKALMAZÁSTECHNIKA ÉS TERVEZÉSI SEGÉDLET from https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/3481/m/30
+2025-07-07 20:30:44,501 - INFO - Downloading: Információk from https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/895/m/30
+2025-07-07 20:30:44,501 - INFO - Downloading: Falazóelemek - Alkalmazástechnika és Tervezési segédlet from https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1916/m/30
+2025-07-07 20:30:44,502 - INFO - Downloading: Információk from https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1916/m/30
+2025-07-07 20:30:44,502 - INFO - Downloading: Információk from https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/3469/m/30
+2025-07-07 20:30:44,504 - INFO - Downloading: Információk from https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/920/m/30
+2025-07-07 20:30:44,506 - INFO - Downloading: Információk from https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/3474/m/186
+2025-07-07 20:30:44,506 - INFO - Downloading: Információk from https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1921/m/30
+2025-07-07 20:30:44,507 - INFO - Downloading: Durisol zajárnyékoló rendszer, vasútépítés - Alkalmazástechnika from https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/920/m/30
+2025-07-07 20:30:44,507 - INFO - Downloading: Tetőfedő elemek - Alkalmazástechnika from https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/895/m/30
+2025-07-07 20:30:44,508 - INFO - Downloading: Előregyártott betonelemek - Alkalmazástechnika from https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/956/m/30
+2025-07-07 20:30:44,508 - INFO - Downloading: Falazóelemek - Alkalmazástechnika és Tervezési segédlet Durisol nélkül from https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1921/m/30
+2025-07-07 20:30:44,509 - INFO - Downloading: Információk from https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/3481/m/30
+2025-07-07 20:30:44,715 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1250/m/30 "HTTP/1.1 200 OK"
+2025-07-07 20:30:44,721 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1250/m/30 "HTTP/1.1 200 OK"
+2025-07-07 20:30:44,737 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/3469/m/30 "HTTP/1.1 200 OK"
+2025-07-07 20:30:44,743 - INFO - ✅ Downloaded: Mélyépítés_ felszíni vízelvezetés_ környezettechnika - Alkalmazástechnika
+2025-07-07 20:30:44,753 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1949/m/186 "HTTP/1.1 200 OK"
+2025-07-07 20:30:44,757 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/3474/m/186 "HTTP/1.1 200 OK"
+2025-07-07 20:30:45,336 - INFO - ✅ Downloaded: Információk
+2025-07-07 20:30:45,819 - INFO - ✅ Downloaded: Durisol Falazóelemek - Alkalmazástechnika és tervezési segédlet
+2025-07-07 20:30:46,288 - INFO - ✅ Downloaded: Információk
+2025-07-07 20:30:46,898 - INFO - ✅ Downloaded: Durisol falazati rendszer - Pozsony - Teljesítménynyilatkozat LE BA15498-02
+2025-07-07 20:30:47,502 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/956/m/30 "HTTP/1.1 200 OK"
+2025-07-07 20:30:47,508 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/3481/m/30 "HTTP/1.1 200 OK"
+2025-07-07 20:30:47,515 - INFO - ✅ Downloaded: Információk
+2025-07-07 20:30:47,947 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1949/m/186 "HTTP/1.1 200 OK"
+2025-07-07 20:30:47,948 - INFO - ✅ Downloaded: DÍSZBURKOLATOK ALKALMAZÁSTECHNIKA ÉS TERVEZÉSI SEGÉDLET
+2025-07-07 20:30:47,950 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/895/m/30 "HTTP/1.1 200 OK"
+2025-07-07 20:30:47,953 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1916/m/30 "HTTP/1.1 200 OK"
+2025-07-07 20:30:48,340 - INFO - ✅ Downloaded: TELJESÍTMÉNYNYILATKOZAT Multikeram_NR_ LE KLETA-12-0491-MULTIKERAM-02
+2025-07-07 20:30:48,720 - INFO - ✅ Downloaded: Információk
+2025-07-07 20:30:49,134 - INFO - ✅ Downloaded: Falazóelemek - Alkalmazástechnika és Tervezési segédlet
+2025-07-07 20:30:49,691 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/3469/m/30 "HTTP/1.1 200 OK"
+2025-07-07 20:30:49,699 - INFO - ✅ Downloaded: Információk
+2025-07-07 20:30:50,164 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1916/m/30 "HTTP/1.1 200 OK"
+2025-07-07 20:30:50,167 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/920/m/30 "HTTP/1.1 200 OK"
+2025-07-07 20:30:50,173 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1921/m/30 "HTTP/1.1 200 OK"
+2025-07-07 20:30:50,176 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/3474/m/186 "HTTP/1.1 200 OK"
+2025-07-07 20:30:50,186 - INFO - ✅ Downloaded: Információk
+2025-07-07 20:30:50,607 - INFO - ✅ Downloaded: Információk
+2025-07-07 20:30:50,608 - INFO - ✅ Downloaded: Információk
+2025-07-07 20:30:51,816 - INFO - ✅ Downloaded: Információk
+2025-07-07 20:30:52,726 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/920/m/30 "HTTP/1.1 200 OK"
+2025-07-07 20:30:52,737 - INFO - ✅ Downloaded: Durisol zajárnyékoló rendszer_ vasútépítés - Alkalmazástechnika
+2025-07-07 20:30:52,741 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/895/m/30 "HTTP/1.1 200 OK"
+2025-07-07 20:30:52,751 - INFO - ✅ Downloaded: Tetőfedő elemek - Alkalmazástechnika
+2025-07-07 20:30:52,755 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/1921/m/30 "HTTP/1.1 200 OK"
+2025-07-07 20:30:52,761 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/956/m/30 "HTTP/1.1 200 OK"
+2025-07-07 20:30:52,767 - INFO - HTTP Request: GET https://u-ertek-kalkulator.leier.hu/downloadmanager/details/id/3481/m/30 "HTTP/1.1 200 OK"
+2025-07-07 20:30:52,775 - INFO - ✅ Downloaded: Falazóelemek - Alkalmazástechnika és Tervezési segédlet Durisol nélkül
+2025-07-07 20:30:52,780 - INFO - ✅ Downloaded: Előregyártott betonelemek - Alkalmazástechnika
+2025-07-07 20:30:52,782 - INFO - ✅ Downloaded: Információk
+2025-07-07 20:30:52,786 - INFO - 📊 Report saved to C:\Users\Admin\.cursor\Lambda\leier_scraping_reports\leier_download_manager_report_20250707_203052.json

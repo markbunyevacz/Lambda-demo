@@ -1,0 +1,263 @@
+{
+  "documents": [
+    {
+      "id": 2822,
+      "name": "Szerelési útmutató | Montageanleitung",
+      "is_folder": 1,
+      "parent_id": 2818,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2818,
+        "name": "Előregyártott Falak | Wandelemente",
+        "is_folder": 1,
+        "parent_id": 1874,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 1874,
+          "name": "Szerelési útmutatók",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 2824,
+          "name": "DE",
+          "is_folder": 1,
+          "parent_id": 2822,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2822,
+            "name": "Szerelési útmutató | Montageanleitung",
+            "is_folder": 1,
+            "parent_id": 2818,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2818,
+              "name": "Előregyártott Falak | Wandelemente",
+              "is_folder": 1,
+              "parent_id": 1874,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1874,
+                "name": "Szerelési útmutatók",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        {
+          "id": 2825,
+          "name": "HU",
+          "is_folder": 1,
+          "parent_id": 2822,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2822,
+            "name": "Szerelési útmutató | Montageanleitung",
+            "is_folder": 1,
+            "parent_id": 2818,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2818,
+              "name": "Előregyártott Falak | Wandelemente",
+              "is_folder": 1,
+              "parent_id": 1874,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1874,
+                "name": "Szerelési útmutatók",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        }
+      ],
+      "file": null
+    },
+    {
+      "id": 2823,
+      "name": "Teljesítménynyilatkozat | Leistungerklarung",
+      "is_folder": 1,
+      "parent_id": 2818,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2818,
+        "name": "Előregyártott Falak | Wandelemente",
+        "is_folder": 1,
+        "parent_id": 1874,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 1874,
+          "name": "Szerelési útmutatók",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 2828,
+          "name": "DE",
+          "is_folder": 1,
+          "parent_id": 2823,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2823,
+            "name": "Teljesítménynyilatkozat | Leistungerklarung",
+            "is_folder": 1,
+            "parent_id": 2818,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2818,
+              "name": "Előregyártott Falak | Wandelemente",
+              "is_folder": 1,
+              "parent_id": 1874,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1874,
+                "name": "Szerelési útmutatók",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        {
+          "id": 2829,
+          "name": "HU",
+          "is_folder": 1,
+          "parent_id": 2823,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2823,
+            "name": "Teljesítménynyilatkozat | Leistungerklarung",
+            "is_folder": 1,
+            "parent_id": 2818,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2818,
+              "name": "Előregyártott Falak | Wandelemente",
+              "is_folder": 1,
+              "parent_id": 1874,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 1874,
+                "name": "Szerelési útmutatók",
+                "is_folder": 1,
+                "parent_id": 1859,
+                "created_at": "2023. február 15.",
+                "parent": {
+                  "id": 1859,
+                  "name": "hu",
+                  "is_folder": 1,
+                  "parent_id": null,
+                  "created_at": "2023. február 15.",
+                  "parent": null,
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        }
+      ],
+      "file": null
+    }
+  ],
+  "currentDocument": {
+    "id": 2818,
+    "name": "Előregyártott Falak | Wandelemente",
+    "is_folder": 1,
+    "parent_id": 1874,
+    "created_at": "2023. február 16.",
+    "parent": {
+      "id": 1874,
+      "name": "Szerelési útmutatók",
+      "is_folder": 1,
+      "parent_id": 1859,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1859,
+        "name": "hu",
+        "is_folder": 1,
+        "parent_id": null,
+        "created_at": "2023. február 15.",
+        "parent": null,
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

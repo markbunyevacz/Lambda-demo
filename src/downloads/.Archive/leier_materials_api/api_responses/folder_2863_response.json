@@ -1,0 +1,98 @@
+{
+  "documents": [
+    {
+      "id": 2865,
+      "name": "Leier előregyártott vasbeton lépcsők beépítési útmutató",
+      "is_folder": 0,
+      "parent_id": 2863,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2863,
+        "name": "HU",
+        "is_folder": 1,
+        "parent_id": 2860,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2860,
+          "name": "Szerelési útmutató | Montageanleitung",
+          "is_folder": 1,
+          "parent_id": 2821,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2821,
+            "name": "Lépcső | Treppe",
+            "is_folder": 1,
+            "parent_id": 1874,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1874,
+              "name": "Szerelési útmutatók",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2865",
+        "extension": "pdf"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 2863,
+    "name": "HU",
+    "is_folder": 1,
+    "parent_id": 2860,
+    "created_at": "2023. február 16.",
+    "parent": {
+      "id": 2860,
+      "name": "Szerelési útmutató | Montageanleitung",
+      "is_folder": 1,
+      "parent_id": 2821,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2821,
+        "name": "Lépcső | Treppe",
+        "is_folder": 1,
+        "parent_id": 1874,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 1874,
+          "name": "Szerelési útmutatók",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

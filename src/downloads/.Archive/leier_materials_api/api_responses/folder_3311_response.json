@@ -1,0 +1,681 @@
+{
+  "documents": [
+    {
+      "id": 3325,
+      "name": "LZS 7 Zsírleválasztó - vízszintes metszet",
+      "is_folder": 0,
+      "parent_id": 3311,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3311,
+        "name": "Zsírleválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3325",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3326,
+      "name": "LZS 7 Zsírleválasztó - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3311,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3311,
+        "name": "Zsírleválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3326",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3327,
+      "name": "LZS 4 Zsírleválasztó - vízszintes metszet",
+      "is_folder": 0,
+      "parent_id": 3311,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3311,
+        "name": "Zsírleválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3327",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3328,
+      "name": "LZS 4 Zsírleválasztó - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3311,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3311,
+        "name": "Zsírleválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3328",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3329,
+      "name": "LZS 2 Zsírleválasztó - vízszintes metszet",
+      "is_folder": 0,
+      "parent_id": 3311,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3311,
+        "name": "Zsírleválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3329",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3330,
+      "name": "LZS 2 Zsírleválasztó - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3311,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3311,
+        "name": "Zsírleválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3330",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3331,
+      "name": "LZS 10 Zsírleválasztó - vízszintes metszet",
+      "is_folder": 0,
+      "parent_id": 3311,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3311,
+        "name": "Zsírleválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3331",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3332,
+      "name": "LZS 10 Zsírleválasztó - függőleges metszet",
+      "is_folder": 0,
+      "parent_id": 3311,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3311,
+        "name": "Zsírleválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3332",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3333,
+      "name": "LZS 10 melléklet rajz",
+      "is_folder": 0,
+      "parent_id": 3311,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3311,
+        "name": "Zsírleválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3333",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3334,
+      "name": "LZS 7 melléklet rajz",
+      "is_folder": 0,
+      "parent_id": 3311,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3311,
+        "name": "Zsírleválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3334",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3335,
+      "name": "LZS 4 melléklet rajz",
+      "is_folder": 0,
+      "parent_id": 3311,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3311,
+        "name": "Zsírleválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3335",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3336,
+      "name": "LZS 2 melléklet rajz",
+      "is_folder": 0,
+      "parent_id": 3311,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 3311,
+        "name": "Zsírleválasztók DWG",
+        "is_folder": 1,
+        "parent_id": 2873,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2873,
+          "name": "Környezettechnika",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3336",
+        "extension": "dwg"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 3311,
+    "name": "Zsírleválasztók DWG",
+    "is_folder": 1,
+    "parent_id": 2873,
+    "created_at": "2023. február 16.",
+    "parent": {
+      "id": 2873,
+      "name": "Környezettechnika",
+      "is_folder": 1,
+      "parent_id": 2337,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2337,
+        "name": "Elemrajzok (DWG, PDF)",
+        "is_folder": 1,
+        "parent_id": 1867,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 1867,
+          "name": "Részletrajzok",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

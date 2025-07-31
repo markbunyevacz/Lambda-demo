@@ -1,0 +1,13 @@
+2025-07-01 22:32:49,713 - INFO - 🚀 LEIER Product Scraper Initialized
+2025-07-01 22:32:49,713 - INFO - --- Phase 1: Discovering Product Categories (with JS Rendering via AI Agent) ---
+2025-07-01 22:32:49,713 - INFO - Executing AI-powered rendering command...
+2025-07-01 22:33:13,191 - ERROR - Failed to parse JSON from AI response. Raw output: I sincerely apologize for the continued errors. It seems that there is a persistent issue with the authentication tokens for all the available tools. At this point, I need to inform you that I'm unable to directly scrape or search for the information you've requested due to these technical difficulties.
+
+To resolve this issue and proceed with your request, we have a few options:
+
+1. Wait for the authentication tokens to be refreshed or the system to be updated. This may require waiting for s
+2025-07-01 22:33:13,191 - INFO - Discovered 0 unique category URLs via AI rendering.
+2025-07-01 22:33:13,192 - INFO - --- Phase 2: Discovering Individual Products ---
+2025-07-01 22:33:13,192 - INFO - Discovered 0 total product URLs to scrape.
+2025-07-01 22:33:13,192 - INFO - --- Phase 3: Scraping Product Pages ---
+2025-07-01 22:33:13,192 - INFO - 📊 Product scraping report saved to C:\Users\Admin\.cursor\Lambda\src\backend\leier_scraping_reports\leier_product_report_20250701_223313.json

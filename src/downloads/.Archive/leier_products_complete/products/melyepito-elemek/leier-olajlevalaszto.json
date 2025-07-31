@@ -1,0 +1,1808 @@
+{
+    "product_id": "leier-olajlevalaszto",
+    "name": "Leier olajleválasztó",
+    "description": "",
+    "url": "https://www.leier.hu/hu/termekek/leier-olajlevalaszto",
+    "category_url": "https://www.leier.hu/hu/termekeink/melyepito-elemek",
+    "price_info": "",
+    "specifications": {},
+    "documents": {
+        "doc_0": {
+            "title": "Akciós termékkínálat",
+            "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c6305e386.pdf",
+            "type": "pdf"
+        },
+        "doc_1": {
+            "title": "Olajleválasztó - Jánossomorja - Teljesítménynyilatkozat- LE JS858-1-0 (pdf)",
+            "url": "https://www.leier.hu/uploads/files/olajlevalaszto janossomorja.pdf",
+            "type": "pdf"
+        },
+        "doc_2": {
+            "title": "Mélyépítés, felszíni vízelvezetés, környezettechnika - Alkalmazástechnika (pdf)",
+            "url": "https://www.leier.hu/uploads/files/melyepites-felszini-vizelvezetes-kornyezttechnika-alkalmazastechnika.pdf",
+            "type": "pdf"
+        },
+        "doc_3": {
+            "title": "LOL SUPER 8 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-80-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_4": {
+            "title": "LOL SUPER 8 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-8-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_5": {
+            "title": "LOL SUPER 8 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-8-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_6": {
+            "title": "LOL SUPER 8 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-8-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_7": {
+            "title": "LOL SUPER 8 80 KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-8-80-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_8": {
+            "title": "LOL SUPER 80 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-80-p-melleklet-pdf-63283291d27d5.pdf",
+            "type": "pdf"
+        },
+        "doc_9": {
+            "title": "LOL SUPER 80 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-80-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_10": {
+            "title": "LOL SUPER 80 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-80-max-p-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_11": {
+            "title": "LOL SUPER 80 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-80-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_12": {
+            "title": "LOL SUPER 80 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-80-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_13": {
+            "title": "LOL SUPER 80 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-80-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_14": {
+            "title": "LOL SUPER 6 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-6-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_15": {
+            "title": "LOL SUPER 6 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-6-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_16": {
+            "title": "LOL SUPER 6 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-6-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_17": {
+            "title": "LOL SUPER 6 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-6-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_18": {
+            "title": "LOL SUPER 6 60 P zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-6-60-p-zapor-tulfolyoval-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_19": {
+            "title": "LOL SUPER 6 60 KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-6-60-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_20": {
+            "title": "LOL SUPER 6 30 P zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-6-30-p-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_21": {
+            "title": "LOL SUPER 60 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_22": {
+            "title": "LOL SUPER 60 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_23": {
+            "title": "LOL SUPER 60 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_24": {
+            "title": "LOL SUPER 60 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_25": {
+            "title": "LOL SUPER 60 300 P zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-300-p-zapor-tulfolyoval-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_26": {
+            "title": "LOL SUPER 60 300 KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-300-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_27": {
+            "title": "LOL SUPER 60 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_28": {
+            "title": "LOL SUPER 60 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_29": {
+            "title": "LOL SUPER 50 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_30": {
+            "title": "LOL SUPER 50 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_31": {
+            "title": "LOL SUPER 50 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_32": {
+            "title": "LOL SUPER 50 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_33": {
+            "title": "LOL SUPER 50 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_34": {
+            "title": "LOL SUPER 50 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_35": {
+            "title": "LOL SUPER 50 250 P zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-250-p-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_36": {
+            "title": "LOL SUPER 50 250 KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-250-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_37": {
+            "title": "LOL SUPER 40 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-40-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_38": {
+            "title": "LOL SUPER 40 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-40-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_39": {
+            "title": "LOL SUPER 40 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-40-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_40": {
+            "title": "LOL SUPER 40 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-40-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_41": {
+            "title": "LOL SUPER 40 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-40-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_42": {
+            "title": "LOL SUPER 40 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-40-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_43": {
+            "title": "LOL SUPER 40 200 KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-40-200-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_44": {
+            "title": "LOL SUPER 3 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-3-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_45": {
+            "title": "LOL SUPER 3 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-3-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_46": {
+            "title": "LOL SUPER 3 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-3-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_47": {
+            "title": "LOL SUPER 3 KF melléklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-3-kf-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_48": {
+            "title": "LOL SUPER 30 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-30-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_49": {
+            "title": "LOL SUPER 30 NF melléklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-30-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_50": {
+            "title": "LOL SUPER 30 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-30-max-p-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_51": {
+            "title": "LOL SUPER 30 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-30-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_52": {
+            "title": "LOL SUPER 30 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-30-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_53": {
+            "title": "LOL SUPER 30 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-30-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_54": {
+            "title": "LOL SUPER 30 150 KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-30-150-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_55": {
+            "title": "LOL SUPER 25 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-25-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_56": {
+            "title": "LOL SUPER 25 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-25-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_57": {
+            "title": "LOL SUPER 25 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-25-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_58": {
+            "title": "LOL SUPER 25 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-25-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_59": {
+            "title": "LOL SUPER 25 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-25-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_60": {
+            "title": "LOL SUPER 25 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-25-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_61": {
+            "title": "LOL SUPER 25 125 max KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-25-125-max-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_62": {
+            "title": "LOL SUPER 20 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-20-p-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_63": {
+            "title": "LOL SUPER 20 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-20-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_64": {
+            "title": "LOL SUPER 20 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-20-max-p-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_65": {
+            "title": "LOL SUPER 20 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-20-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_66": {
+            "title": "LOL SUPER 20 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-20-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_67": {
+            "title": "LOL SUPER 20 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-20-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_68": {
+            "title": "LOL SUPER 200 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-200-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_69": {
+            "title": "LOL SUPER 200 P melléklet (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-200-max-p-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_70": {
+            "title": "LOL SUPER 200 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-200-max-kf-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_71": {
+            "title": "LOL SUPER 200 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-200-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_72": {
+            "title": "LOL SUPER 15 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_73": {
+            "title": "LOL SUPER 15 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_74": {
+            "title": "LOL SUPER 15 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_75": {
+            "title": "LOL SUPER 15 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-max-nf-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_76": {
+            "title": "LOL SUPER 15 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_77": {
+            "title": "LOL SUPER 1,5 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-1,5-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_78": {
+            "title": "LOL SUPER 15 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_79": {
+            "title": "LOL SUPER 1,5 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-1,5-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_80": {
+            "title": "LOL SUPER 15 75 max KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-75-max-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_81": {
+            "title": "LOL SUPER 15 150 KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-150-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_82": {
+            "title": "LOL SUPER 150 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-p-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_83": {
+            "title": "LOL SUPER 150 P sullyesztett verzio melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-p-sullyesztett-verzio-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_84": {
+            "title": "LOL SUPER 150 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_85": {
+            "title": "LOL SUPER 150 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_86": {
+            "title": "LOL SUPER 150 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_87": {
+            "title": "LOL SUPER 150 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_88": {
+            "title": "LOL SUPER 150 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_89": {
+            "title": "LOL SUPER 150 300 P zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-300-p-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_90": {
+            "title": "LOL SUPER 125 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-125-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_91": {
+            "title": "LOL SUPER 125 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-125-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_92": {
+            "title": "LOL SUPER 125 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-125-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_93": {
+            "title": "LOL SUPER 125 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-125-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_94": {
+            "title": "LOL SUPER 125 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-125-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_95": {
+            "title": "LOL SUPER 125 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-125-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_96": {
+            "title": "LOL SUPER 10 P melleklet DN 150 PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-10-p-melleklet-dn-150-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_97": {
+            "title": "LOL SUPER 10 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-10-p-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_98": {
+            "title": "LOL SUPER 10 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-10-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_99": {
+            "title": "LOL SUPER 10 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-10-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_100": {
+            "title": "LOL SUPER 10 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-10-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_101": {
+            "title": "LOL SUPER 10 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-10-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_102": {
+            "title": "LOL SUPER 10 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-10-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_103": {
+            "title": "LOL SUPER 100 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-100-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_104": {
+            "title": "LOL SUPER 100 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-100-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_105": {
+            "title": "LOL SUPER 100 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-100-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_106": {
+            "title": "LOL SUPER 100 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-100-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_107": {
+            "title": "LOL SUPER 100 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-100-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_108": {
+            "title": "LOL SUPER 100 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-100-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_109": {
+            "title": "LOL SUPER 100 500 P zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-100-500-p-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_110": {
+            "title": "Leier környezettechnika - Prospektus (pdf)",
+            "url": "https://www.leier.hu/uploads/files/Leier-Kornyezettechnika-HU-web-65fd5870d1c82.pdf",
+            "type": "pdf"
+        },
+        "doc_111": {
+            "title": "Betontartályok - Jánossomorja - Teljesítménynyilatkozat LE JSA-25-01 (pdf)",
+            "url": "https://www.leier.hu/uploads/files/betontartályok_Jánossomorja-66507c6b1194a.pdf",
+            "type": "pdf"
+        },
+        "doc_112": {
+            "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+            "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c63059823.pdf",
+            "type": "pdf"
+        },
+        "doc_113": {
+            "title": "Mélyépítés-környezettechnika árlista viszonteladók részére 2025 (pdf)",
+            "url": "https://www.leier.hu/uploads/files/Arlista-melyepites-kornyezettechnika-2025.pdf",
+            "type": "pdf"
+        },
+        "doc_114": {
+            "title": "Akciós termékkínálat",
+            "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c6305e386.pdf",
+            "type": "pdf"
+        },
+        "doc_115": {
+            "title": "Olajleválasztó - Jánossomorja - Teljesítménynyilatkozat- LE JS858-1-0 (pdf)",
+            "url": "https://www.leier.hu/uploads/files/olajlevalaszto janossomorja.pdf",
+            "type": "pdf"
+        },
+        "doc_116": {
+            "title": "Mélyépítés, felszíni vízelvezetés, környezettechnika - Alkalmazástechnika (pdf)",
+            "url": "https://www.leier.hu/uploads/files/melyepites-felszini-vizelvezetes-kornyezttechnika-alkalmazastechnika.pdf",
+            "type": "pdf"
+        },
+        "doc_117": {
+            "title": "LOL SUPER 8 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-80-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_118": {
+            "title": "LOL SUPER 8 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-8-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_119": {
+            "title": "LOL SUPER 8 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-8-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_120": {
+            "title": "LOL SUPER 8 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-8-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_121": {
+            "title": "LOL SUPER 8 80 KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-8-80-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_122": {
+            "title": "LOL SUPER 80 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-80-p-melleklet-pdf-63283291d27d5.pdf",
+            "type": "pdf"
+        },
+        "doc_123": {
+            "title": "LOL SUPER 80 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-80-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_124": {
+            "title": "LOL SUPER 80 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-80-max-p-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_125": {
+            "title": "LOL SUPER 80 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-80-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_126": {
+            "title": "LOL SUPER 80 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-80-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_127": {
+            "title": "LOL SUPER 80 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-80-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_128": {
+            "title": "LOL SUPER 6 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-6-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_129": {
+            "title": "LOL SUPER 6 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-6-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_130": {
+            "title": "LOL SUPER 6 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-6-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_131": {
+            "title": "LOL SUPER 6 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-6-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_132": {
+            "title": "LOL SUPER 6 60 P zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-6-60-p-zapor-tulfolyoval-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_133": {
+            "title": "LOL SUPER 6 60 KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-6-60-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_134": {
+            "title": "LOL SUPER 6 30 P zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-6-30-p-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_135": {
+            "title": "LOL SUPER 60 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_136": {
+            "title": "LOL SUPER 60 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_137": {
+            "title": "LOL SUPER 60 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_138": {
+            "title": "LOL SUPER 60 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_139": {
+            "title": "LOL SUPER 60 300 P zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-300-p-zapor-tulfolyoval-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_140": {
+            "title": "LOL SUPER 60 300 KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-300-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_141": {
+            "title": "LOL SUPER 60 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_142": {
+            "title": "LOL SUPER 60 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_143": {
+            "title": "LOL SUPER 50 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_144": {
+            "title": "LOL SUPER 50 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_145": {
+            "title": "LOL SUPER 50 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_146": {
+            "title": "LOL SUPER 50 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_147": {
+            "title": "LOL SUPER 50 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_148": {
+            "title": "LOL SUPER 50 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_149": {
+            "title": "LOL SUPER 50 250 P zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-250-p-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_150": {
+            "title": "LOL SUPER 50 250 KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-250-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_151": {
+            "title": "LOL SUPER 40 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-40-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_152": {
+            "title": "LOL SUPER 40 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-40-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_153": {
+            "title": "LOL SUPER 40 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-40-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_154": {
+            "title": "LOL SUPER 40 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-40-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_155": {
+            "title": "LOL SUPER 40 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-40-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_156": {
+            "title": "LOL SUPER 40 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-40-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_157": {
+            "title": "LOL SUPER 40 200 KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-40-200-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_158": {
+            "title": "LOL SUPER 3 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-3-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_159": {
+            "title": "LOL SUPER 3 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-3-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_160": {
+            "title": "LOL SUPER 3 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-3-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_161": {
+            "title": "LOL SUPER 3 KF melléklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-3-kf-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_162": {
+            "title": "LOL SUPER 30 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-30-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_163": {
+            "title": "LOL SUPER 30 NF melléklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-30-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_164": {
+            "title": "LOL SUPER 30 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-30-max-p-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_165": {
+            "title": "LOL SUPER 30 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-30-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_166": {
+            "title": "LOL SUPER 30 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-30-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_167": {
+            "title": "LOL SUPER 30 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-30-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_168": {
+            "title": "LOL SUPER 30 150 KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-30-150-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_169": {
+            "title": "LOL SUPER 25 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-25-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_170": {
+            "title": "LOL SUPER 25 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-25-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_171": {
+            "title": "LOL SUPER 25 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-25-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_172": {
+            "title": "LOL SUPER 25 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-25-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_173": {
+            "title": "LOL SUPER 25 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-25-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_174": {
+            "title": "LOL SUPER 25 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-25-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_175": {
+            "title": "LOL SUPER 25 125 max KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-25-125-max-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_176": {
+            "title": "LOL SUPER 20 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-20-p-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_177": {
+            "title": "LOL SUPER 20 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-20-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_178": {
+            "title": "LOL SUPER 20 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-20-max-p-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_179": {
+            "title": "LOL SUPER 20 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-20-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_180": {
+            "title": "LOL SUPER 20 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-20-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_181": {
+            "title": "LOL SUPER 20 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-20-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_182": {
+            "title": "LOL SUPER 200 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-200-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_183": {
+            "title": "LOL SUPER 200 P melléklet (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-200-max-p-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_184": {
+            "title": "LOL SUPER 200 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-200-max-kf-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_185": {
+            "title": "LOL SUPER 200 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-200-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_186": {
+            "title": "LOL SUPER 15 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_187": {
+            "title": "LOL SUPER 15 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_188": {
+            "title": "LOL SUPER 15 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_189": {
+            "title": "LOL SUPER 15 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-max-nf-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_190": {
+            "title": "LOL SUPER 15 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_191": {
+            "title": "LOL SUPER 1,5 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-1,5-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_192": {
+            "title": "LOL SUPER 15 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_193": {
+            "title": "LOL SUPER 1,5 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-1,5-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_194": {
+            "title": "LOL SUPER 15 75 max KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-75-max-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_195": {
+            "title": "LOL SUPER 15 150 KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-150-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_196": {
+            "title": "LOL SUPER 150 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-p-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_197": {
+            "title": "LOL SUPER 150 P sullyesztett verzio melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-p-sullyesztett-verzio-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_198": {
+            "title": "LOL SUPER 150 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_199": {
+            "title": "LOL SUPER 150 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_200": {
+            "title": "LOL SUPER 150 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_201": {
+            "title": "LOL SUPER 150 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_202": {
+            "title": "LOL SUPER 150 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_203": {
+            "title": "LOL SUPER 150 300 P zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-300-p-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_204": {
+            "title": "LOL SUPER 125 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-125-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_205": {
+            "title": "LOL SUPER 125 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-125-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_206": {
+            "title": "LOL SUPER 125 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-125-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_207": {
+            "title": "LOL SUPER 125 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-125-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_208": {
+            "title": "LOL SUPER 125 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-125-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_209": {
+            "title": "LOL SUPER 125 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-125-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_210": {
+            "title": "LOL SUPER 10 P melleklet DN 150 PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-10-p-melleklet-dn-150-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_211": {
+            "title": "LOL SUPER 10 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-10-p-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_212": {
+            "title": "LOL SUPER 10 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-10-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_213": {
+            "title": "LOL SUPER 10 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-10-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_214": {
+            "title": "LOL SUPER 10 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-10-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_215": {
+            "title": "LOL SUPER 10 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-10-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_216": {
+            "title": "LOL SUPER 10 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-10-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_217": {
+            "title": "LOL SUPER 100 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-100-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_218": {
+            "title": "LOL SUPER 100 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-100-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_219": {
+            "title": "LOL SUPER 100 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-100-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_220": {
+            "title": "LOL SUPER 100 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-100-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_221": {
+            "title": "LOL SUPER 100 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-100-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_222": {
+            "title": "LOL SUPER 100 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-100-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_223": {
+            "title": "LOL SUPER 100 500 P zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-100-500-p-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_224": {
+            "title": "Leier környezettechnika - Prospektus (pdf)",
+            "url": "https://www.leier.hu/uploads/files/Leier-Kornyezettechnika-HU-web-65fd5870d1c82.pdf",
+            "type": "pdf"
+        },
+        "doc_225": {
+            "title": "Betontartályok - Jánossomorja - Teljesítménynyilatkozat LE JSA-25-01 (pdf)",
+            "url": "https://www.leier.hu/uploads/files/betontartályok_Jánossomorja-66507c6b1194a.pdf",
+            "type": "pdf"
+        },
+        "doc_226": {
+            "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+            "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c63059823.pdf",
+            "type": "pdf"
+        },
+        "doc_227": {
+            "title": "Mélyépítés-környezettechnika árlista viszonteladók részére 2025 (pdf)",
+            "url": "https://www.leier.hu/uploads/files/Arlista-melyepites-kornyezettechnika-2025.pdf",
+            "type": "pdf"
+        },
+        "doc_228": {
+            "title": "Akciós termékkínálat",
+            "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c6305e386.pdf",
+            "type": "pdf"
+        },
+        "doc_229": {
+            "title": "Leier olajleválasztó",
+            "url": "https://photos.leier.eu/LQDqWPfw06MllD4CRsfAoWFO4c0=/filters:watermark(https://www.leier.hu/uploads/files/leier-logo-64140c24ef68a.jpg,-20,20,0,20)/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Folajlevalaszto.jpg",
+            "type": "document"
+        },
+        "doc_230": {
+            "title": "Olajleválasztó - Jánossomorja - Teljesítménynyilatkozat- LE JS858-1-0 (pdf)",
+            "url": "https://www.leier.hu/uploads/files/olajlevalaszto janossomorja.pdf",
+            "type": "pdf"
+        },
+        "doc_231": {
+            "title": "Mélyépítés, felszíni vízelvezetés, környezettechnika - Alkalmazástechnika (pdf)",
+            "url": "https://www.leier.hu/uploads/files/melyepites-felszini-vizelvezetes-kornyezttechnika-alkalmazastechnika.pdf",
+            "type": "pdf"
+        },
+        "doc_232": {
+            "title": "LOL SUPER 8 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-80-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_233": {
+            "title": "LOL SUPER 8 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-8-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_234": {
+            "title": "LOL SUPER 8 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-8-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_235": {
+            "title": "LOL SUPER 8 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-8-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_236": {
+            "title": "LOL SUPER 8 80 KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-8-80-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_237": {
+            "title": "LOL SUPER 80 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-80-p-melleklet-pdf-63283291d27d5.pdf",
+            "type": "pdf"
+        },
+        "doc_238": {
+            "title": "LOL SUPER 80 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-80-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_239": {
+            "title": "LOL SUPER 80 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-80-max-p-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_240": {
+            "title": "LOL SUPER 80 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-80-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_241": {
+            "title": "LOL SUPER 80 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-80-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_242": {
+            "title": "LOL SUPER 80 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-80-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_243": {
+            "title": "LOL SUPER 6 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-6-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_244": {
+            "title": "LOL SUPER 6 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-6-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_245": {
+            "title": "LOL SUPER 6 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-6-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_246": {
+            "title": "LOL SUPER 6 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-6-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_247": {
+            "title": "LOL SUPER 6 60 P zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-6-60-p-zapor-tulfolyoval-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_248": {
+            "title": "LOL SUPER 6 60 KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-6-60-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_249": {
+            "title": "LOL SUPER 6 30 P zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-6-30-p-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_250": {
+            "title": "LOL SUPER 60 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_251": {
+            "title": "LOL SUPER 60 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_252": {
+            "title": "LOL SUPER 60 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_253": {
+            "title": "LOL SUPER 60 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_254": {
+            "title": "LOL SUPER 60 300 P zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-300-p-zapor-tulfolyoval-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_255": {
+            "title": "LOL SUPER 60 300 KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-300-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_256": {
+            "title": "LOL SUPER 60 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_257": {
+            "title": "LOL SUPER 60 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-60-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_258": {
+            "title": "LOL SUPER 50 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_259": {
+            "title": "LOL SUPER 50 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_260": {
+            "title": "LOL SUPER 50 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_261": {
+            "title": "LOL SUPER 50 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_262": {
+            "title": "LOL SUPER 50 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_263": {
+            "title": "LOL SUPER 50 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_264": {
+            "title": "LOL SUPER 50 250 P zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-250-p-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_265": {
+            "title": "LOL SUPER 50 250 KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-50-250-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_266": {
+            "title": "LOL SUPER 40 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-40-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_267": {
+            "title": "LOL SUPER 40 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-40-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_268": {
+            "title": "LOL SUPER 40 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-40-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_269": {
+            "title": "LOL SUPER 40 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-40-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_270": {
+            "title": "LOL SUPER 40 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-40-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_271": {
+            "title": "LOL SUPER 40 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-40-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_272": {
+            "title": "LOL SUPER 40 200 KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-40-200-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_273": {
+            "title": "LOL SUPER 3 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-3-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_274": {
+            "title": "LOL SUPER 3 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-3-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_275": {
+            "title": "LOL SUPER 3 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-3-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_276": {
+            "title": "LOL SUPER 3 KF melléklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-3-kf-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_277": {
+            "title": "LOL SUPER 30 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-30-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_278": {
+            "title": "LOL SUPER 30 NF melléklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-30-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_279": {
+            "title": "LOL SUPER 30 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-30-max-p-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_280": {
+            "title": "LOL SUPER 30 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-30-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_281": {
+            "title": "LOL SUPER 30 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-30-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_282": {
+            "title": "LOL SUPER 30 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-30-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_283": {
+            "title": "LOL SUPER 30 150 KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-30-150-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_284": {
+            "title": "LOL SUPER 25 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-25-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_285": {
+            "title": "LOL SUPER 25 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-25-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_286": {
+            "title": "LOL SUPER 25 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-25-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_287": {
+            "title": "LOL SUPER 25 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-25-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_288": {
+            "title": "LOL SUPER 25 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-25-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_289": {
+            "title": "LOL SUPER 25 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-25-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_290": {
+            "title": "LOL SUPER 25 125 max KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-25-125-max-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_291": {
+            "title": "LOL SUPER 20 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-20-p-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_292": {
+            "title": "LOL SUPER 20 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-20-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_293": {
+            "title": "LOL SUPER 20 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-20-max-p-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_294": {
+            "title": "LOL SUPER 20 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-20-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_295": {
+            "title": "LOL SUPER 20 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-20-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_296": {
+            "title": "LOL SUPER 20 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-20-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_297": {
+            "title": "LOL SUPER 200 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-200-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_298": {
+            "title": "LOL SUPER 200 P melléklet (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-200-max-p-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_299": {
+            "title": "LOL SUPER 200 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-200-max-kf-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_300": {
+            "title": "LOL SUPER 200 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-200-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_301": {
+            "title": "LOL SUPER 15 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_302": {
+            "title": "LOL SUPER 15 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_303": {
+            "title": "LOL SUPER 15 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_304": {
+            "title": "LOL SUPER 15 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-max-nf-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_305": {
+            "title": "LOL SUPER 15 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_306": {
+            "title": "LOL SUPER 1,5 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-1,5-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_307": {
+            "title": "LOL SUPER 15 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_308": {
+            "title": "LOL SUPER 1,5 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-1,5-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_309": {
+            "title": "LOL SUPER 15 75 max KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-75-max-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_310": {
+            "title": "LOL SUPER 15 150 KF zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-15-150-kf-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_311": {
+            "title": "LOL SUPER 150 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-p-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_312": {
+            "title": "LOL SUPER 150 P sullyesztett verzio melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-p-sullyesztett-verzio-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_313": {
+            "title": "LOL SUPER 150 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_314": {
+            "title": "LOL SUPER 150 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_315": {
+            "title": "LOL SUPER 150 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_316": {
+            "title": "LOL SUPER 150 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_317": {
+            "title": "LOL SUPER 150 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_318": {
+            "title": "LOL SUPER 150 300 P zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-150-300-p-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_319": {
+            "title": "LOL SUPER 125 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-125-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_320": {
+            "title": "LOL SUPER 125 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-125-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_321": {
+            "title": "LOL SUPER 125 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-125-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_322": {
+            "title": "LOL SUPER 125 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-125-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_323": {
+            "title": "LOL SUPER 125 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-125-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_324": {
+            "title": "LOL SUPER 125 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-125-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_325": {
+            "title": "LOL SUPER 10 P melleklet DN 150 PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-10-p-melleklet-dn-150-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_326": {
+            "title": "LOL SUPER 10 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-10-p-melleklet.pdf",
+            "type": "pdf"
+        },
+        "doc_327": {
+            "title": "LOL SUPER 10 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-10-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_328": {
+            "title": "LOL SUPER 10 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-10-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_329": {
+            "title": "LOL SUPER 10 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-10-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_330": {
+            "title": "LOL SUPER 10 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-10-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_331": {
+            "title": "LOL SUPER 10 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-10-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_332": {
+            "title": "LOL SUPER 100 P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-100-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_333": {
+            "title": "LOL SUPER 100 NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-100-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_334": {
+            "title": "LOL SUPER 100 max P melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-100-max-p-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_335": {
+            "title": "LOL SUPER 100 max NF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-100-max-nf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_336": {
+            "title": "LOL SUPER 100 max KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-100-max-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_337": {
+            "title": "LOL SUPER 100 KF melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-100-kf-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_338": {
+            "title": "LOL SUPER 100 500 P zapor tulfolyoval melleklet PDF (pdf)",
+            "url": "https://www.leier.hu/uploads/files/lol-super-100-500-p-zapor-tulfolyoval-melleklet-pdf.pdf",
+            "type": "pdf"
+        },
+        "doc_339": {
+            "title": "Leier környezettechnika - Prospektus (pdf)",
+            "url": "https://www.leier.hu/uploads/files/Leier-Kornyezettechnika-HU-web-65fd5870d1c82.pdf",
+            "type": "pdf"
+        },
+        "doc_340": {
+            "title": "Betontartályok - Jánossomorja - Teljesítménynyilatkozat LE JSA-25-01 (pdf)",
+            "url": "https://www.leier.hu/uploads/files/betontartályok_Jánossomorja-66507c6b1194a.pdf",
+            "type": "pdf"
+        },
+        "doc_341": {
+            "title": "Leier tavaszi termékkínálat 2025 (pdf)",
+            "url": "https://www.leier.hu/uploads/files/Leier_tavaszi_ajanlat_2025-web-67d7c63059823.pdf",
+            "type": "pdf"
+        },
+        "doc_342": {
+            "title": "Mélyépítés-környezettechnika árlista viszonteladók részére 2025 (pdf)",
+            "url": "https://www.leier.hu/uploads/files/Arlista-melyepites-kornyezettechnika-2025.pdf",
+            "type": "pdf"
+        },
+        "doc_343": {
+            "title": "Letölthető dokumentumok",
+            "url": "https://www.leier.hu/dokumentumtar#1859",
+            "type": "document"
+        },
+        "doc_344": {
+            "title": "Letölthető dokumentumok",
+            "url": "https://www.leier.hu/dokumentumtar#1859",
+            "type": "document"
+        },
+        "doc_345": {
+            "title": "Prospektusok",
+            "url": "https://www.leier.hu/dokumentumtar#1860",
+            "type": "document"
+        },
+        "doc_346": {
+            "title": "Letölthető dokumentumok",
+            "url": "https://www.leier.hu/dokumentumtar#1859",
+            "type": "document"
+        },
+        "doc_347": {
+            "title": "Árlisták",
+            "url": "https://www.leier.hu/dokumentumtar#1861",
+            "type": "document"
+        }
+    },
+    "document_count": 348,
+    "images": [
+        {
+            "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+            "alt": "Leier"
+        },
+        {
+            "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+            "alt": "Leier"
+        },
+        {
+            "url": "https://www.leier.hu/assets/front/images/leier_main_logo.png",
+            "alt": "Leier"
+        },
+        {
+            "url": "https://photos.leier.eu/aThDVttXSvd6bwGu_96i1f8grWI=/125x0/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Fleier-logo-64140c24ef68a.jpg",
+            "alt": "Leier"
+        },
+        {
+            "url": "https://photos.leier.eu/Soq2xnf3-rJfvLip5BuWDFZxfWA=/894x536/https%3A%2F%2Fwww.leier.hu%2Fuploads%2Ffiles%2Folajlevalaszto.jpg",
+            "alt": "Leier olajleválasztó"
+        },
+        {
+            "url": "https://photos.leier.eu/Mx2VOk7udda8sxFINqnmseer4EM=/282x167/smart/http%3A%2F%2Fimg.youtube.com%2Fvi%2F_Z-8VMYV2RQ%2Fhqdefault.jpg",
+            "alt": "Leier olajleválasztó"
+        },
+        {
+            "url": "https://photos.leier.eu/Vc48XPLbIJBNOoQW4H6aYoVI2lI=/647x327/https%3A%2F%2Fwww.leier.hu%2Fassets%2Ffront%2Fimages%2Fproduct-map.png",
+            "alt": "Leier"
+        }
+    ],
+    "technical_data": {
+        "Típus": "Teljesítmény (l/s)",
+        "LOL SUPER 1,5 KF": "1,5",
+        "LOL SUPER 3 KF": "3",
+        "LOL SUPER 6 KF": "6",
+        "LOL SUPER 8 KF": "8",
+        "LOL SUPER 10 KF": "10",
+        "LOL SUPER 15 KF": "15",
+        "LOL SUPER 20 KF": "20",
+        "LOL SUPER 25 KF": "25",
+        "LOL SUPER 30 KF": "30",
+        "LOL SUPER 40 KF": "40",
+        "LOL SUPER 50 KF": "50",
+        "LOL SUPER 60 KF": "60",
+        "LOL SUPER 80 KF": "80",
+        "LOL SUPER 100 KF": "100",
+        "LOL SUPER 125 KF": "125",
+        "LOL SUPER 150 KF": "150",
+        "LOL SUPER 200 KF": "200"
+    },
+    "features": [
+        "Viszonteladóink",
+        "Kalkulátorok",
+        "Letölthető dokumentumok",
+        "Rendszerház - akció"
+    ]
+}

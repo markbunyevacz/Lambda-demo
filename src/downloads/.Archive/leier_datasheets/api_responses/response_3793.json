@@ -1,0 +1,311 @@
+{
+  "documents": [
+    {
+      "id": 3803,
+      "name": "Verlegemuster Atrium 14 Pflaster",
+      "is_folder": 0,
+      "parent_id": 3793,
+      "created_at": "2023. október 24.",
+      "parent": {
+        "id": 3793,
+        "name": "Verlegemuster",
+        "is_folder": 1,
+        "parent_id": 1830,
+        "created_at": "2023. október 24.",
+        "parent": {
+          "id": 1830,
+          "name": "at",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2022. december 8.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3803",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3794,
+      "name": "Verlegemuster Dom Pflaster",
+      "is_folder": 0,
+      "parent_id": 3793,
+      "created_at": "2023. október 24.",
+      "parent": {
+        "id": 3793,
+        "name": "Verlegemuster",
+        "is_folder": 1,
+        "parent_id": 1830,
+        "created_at": "2023. október 24.",
+        "parent": {
+          "id": 1830,
+          "name": "at",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2022. december 8.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3794",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3795,
+      "name": "Verlegemuster Dom-I Pflaster",
+      "is_folder": 0,
+      "parent_id": 3793,
+      "created_at": "2023. október 24.",
+      "parent": {
+        "id": 3793,
+        "name": "Verlegemuster",
+        "is_folder": 1,
+        "parent_id": 1830,
+        "created_at": "2023. október 24.",
+        "parent": {
+          "id": 1830,
+          "name": "at",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2022. december 8.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3795",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3796,
+      "name": "Verlegemuster Dorfplatz Pflaster",
+      "is_folder": 0,
+      "parent_id": 3793,
+      "created_at": "2023. október 24.",
+      "parent": {
+        "id": 3793,
+        "name": "Verlegemuster",
+        "is_folder": 1,
+        "parent_id": 1830,
+        "created_at": "2023. október 24.",
+        "parent": {
+          "id": 1830,
+          "name": "at",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2022. december 8.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3796",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3798,
+      "name": "Verlegemuster Kaiserstein Mauerstein als Mauer",
+      "is_folder": 0,
+      "parent_id": 3793,
+      "created_at": "2023. október 24.",
+      "parent": {
+        "id": 3793,
+        "name": "Verlegemuster",
+        "is_folder": 1,
+        "parent_id": 1830,
+        "created_at": "2023. október 24.",
+        "parent": {
+          "id": 1830,
+          "name": "at",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2022. december 8.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3798",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3799,
+      "name": "Verlegemuster Kaiserstein Mauerstein als Pflaster",
+      "is_folder": 0,
+      "parent_id": 3793,
+      "created_at": "2023. október 24.",
+      "parent": {
+        "id": 3793,
+        "name": "Verlegemuster",
+        "is_folder": 1,
+        "parent_id": 1830,
+        "created_at": "2023. október 24.",
+        "parent": {
+          "id": 1830,
+          "name": "at",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2022. december 8.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3799",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3800,
+      "name": "Verlegemuster Kartäuser Pflasterplatte",
+      "is_folder": 0,
+      "parent_id": 3793,
+      "created_at": "2023. október 24.",
+      "parent": {
+        "id": 3793,
+        "name": "Verlegemuster",
+        "is_folder": 1,
+        "parent_id": 1830,
+        "created_at": "2023. október 24.",
+        "parent": {
+          "id": 1830,
+          "name": "at",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2022. december 8.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3800",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3804,
+      "name": "Verlegemuster Parma Pflaster",
+      "is_folder": 0,
+      "parent_id": 3793,
+      "created_at": "2023. október 24.",
+      "parent": {
+        "id": 3793,
+        "name": "Verlegemuster",
+        "is_folder": 1,
+        "parent_id": 1830,
+        "created_at": "2023. október 24.",
+        "parent": {
+          "id": 1830,
+          "name": "at",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2022. december 8.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3804",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3801,
+      "name": "Verlegemuster Piazza Pflaster",
+      "is_folder": 0,
+      "parent_id": 3793,
+      "created_at": "2023. október 24.",
+      "parent": {
+        "id": 3793,
+        "name": "Verlegemuster",
+        "is_folder": 1,
+        "parent_id": 1830,
+        "created_at": "2023. október 24.",
+        "parent": {
+          "id": 1830,
+          "name": "at",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2022. december 8.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3801",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3802,
+      "name": "Verlegemuster Via Romana Pflaster",
+      "is_folder": 0,
+      "parent_id": 3793,
+      "created_at": "2023. október 24.",
+      "parent": {
+        "id": 3793,
+        "name": "Verlegemuster",
+        "is_folder": 1,
+        "parent_id": 1830,
+        "created_at": "2023. október 24.",
+        "parent": {
+          "id": 1830,
+          "name": "at",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2022. december 8.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3802",
+        "extension": "pdf"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 3793,
+    "name": "Verlegemuster",
+    "is_folder": 1,
+    "parent_id": 1830,
+    "created_at": "2023. október 24.",
+    "parent": {
+      "id": 1830,
+      "name": "at",
+      "is_folder": 1,
+      "parent_id": null,
+      "created_at": "2022. december 8.",
+      "parent": null,
+      "file": null
+    },
+    "file": null
+  }
+}

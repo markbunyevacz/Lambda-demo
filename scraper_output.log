@@ -1,0 +1,54 @@
+2025-07-03 13:12:59,061 - INFO - ­čÜÇ Running Rockwool Datasheet Scraper in standalone mode...
+=== REAL AGENT VALIDATION DEBUG ===
+BRIGHTDATA_API_TOKEN = '298880a20b76001c476fd24bef4fda198e233deb4e2347e5a4619aa91586051e'
+  Ôťů PASSED
+BRIGHTDATA_WEB_UNLOCKER_ZONE = 'web_unlocker'
+  Ôťů PASSED
+ANTHROPIC_API_KEY = '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'
+  Ôťů PASSED
+Missing vars: []
+Setting mcp_available = True
+Final mcp_available: True
+=== END VALIDATION DEBUG ===
+=== INIT DEPENDENCIES DEBUG ===
+self.mcp_available = True
+Proceeding with dependency initialization...
+2025-07-03 13:12:59,062 - INFO - ­čÄ» Starting Rockwool AI-Powered Datasheet Scraper...
+2025-07-03 13:12:59,063 - INFO - Importing MCP dependencies...
+2025-07-03 13:12:59,438 - INFO - Ôťů MCP imports successful
+2025-07-03 13:13:00,665 - INFO - Ôťů langchain_anthropic.ChatAnthropic imported successfully
+2025-07-03 13:13:00,676 - INFO - Ôťů langchain_mcp_adapters.tools.load_mcp_tools imported successfully
+2025-07-03 13:13:00,784 - INFO - Ôťů langgraph.prebuilt.chat_agent_executor imported successfully
+2025-07-03 13:13:00,791 - INFO - BrightData MCP agent sikeresen inicializ├ílva
+2025-07-03 13:13:00,791 - INFO - ­čÄ» Targeting URL: https://www.rockwool.com/hu/muszaki-informaciok/termekadatlapok/
+2025-07-03 13:13:00,792 - INFO - AI-vez├ęrelt scraping ind├şt├ísa: 1 URL
+Checking for required zones...
+Required zone "web_unlocker" already exists
+Starting server...
+2025-07-03 13:13:05,026 - INFO - BrightData MCP tools bet├Âltve: 49 tool el├ęrhet┼Ĺ
+2025-07-03 13:13:05,171 - INFO - URL feldolgoz├ísa (1/1): https://www.rockwool.com/hu/muszaki-informaciok/termekadatlapok/
+2025-07-03 13:13:08,477 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-03 13:13:14,408 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-03 13:13:19,684 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-03 13:13:19,686 - INFO - Parsing AI response for URL: https://www.rockwool.com/hu/muszaki-informaciok/termekadatlapok/
+2025-07-03 13:13:19,686 - INFO - Response preview: Sajn├ílom, de ├║gy t┼▒nik, hogy technikai probl├ęm├íkba ├╝tk├Âztem a weboldal el├ęr├ęs├ęvel kapcsolatban. Ebben az esetben javaslom a k├Âvetkez┼Ĺket:
+
+1. Ellen┼Ĺrizz├╝k, hogy a megadott URL helyes-e, mivel lehet, h...
+2025-07-03 13:13:19,687 - WARNING - No JSON found - creating minimal product data
+2025-07-03 13:13:19,687 - INFO - Sikeres scraping: Termekadatlapok
+2025-07-03 13:13:21,692 - INFO - AI scraping befejezve: 1 term├ęk ├Âsszegy┼▒jtve
+2025-07-03 13:13:21,692 - INFO - ============================================================
+2025-07-03 13:13:21,692 - INFO - ­čÄ» ROCKWOOL PRODUCT SCRAPING RESULTS
+2025-07-03 13:13:21,692 - INFO - ============================================================
+2025-07-03 13:13:21,692 - INFO - ­čôä Products found: 1
+2025-07-03 13:13:21,692 - INFO - ­čôŽ Product 1: Termekadatlapok
+2025-07-03 13:13:21,692 - INFO -     Category: Szigetel┼Ĺanyag
+2025-07-03 13:13:21,692 - INFO - ============================================================
+2025-07-03 13:13:21,692 - INFO - ­čôŐ SCRAPING STATISTICS
+2025-07-03 13:13:21,692 - INFO - ============================================================
+2025-07-03 13:13:21,693 - INFO - Ôťů Successful scrapes: 1
+2025-07-03 13:13:21,693 - INFO - ÔŁî Failed scrapes: 0
+2025-07-03 13:13:21,693 - INFO - ­čôł Success rate: 100.0%
+2025-07-03 13:13:21,693 - INFO - ÔĆ▒´ŞĆ Total requests: 1
+2025-07-03 13:13:21,693 - INFO - ============================================================
+2025-07-03 13:13:21,693 - INFO - Ôťů Rockwool AI-powered scraping completed!

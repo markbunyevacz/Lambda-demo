@@ -1,0 +1,478 @@
+{
+  "documents": [
+    {
+      "id": 2777,
+      "name": "dwg",
+      "is_folder": 1,
+      "parent_id": 2349,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2349,
+        "name": "Előregyártott lépcső részletrajzok",
+        "is_folder": 1,
+        "parent_id": 2336,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2336,
+          "name": "Csomópontok",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 2780,
+          "name": "p10-egy-lepcso2",
+          "is_folder": 0,
+          "parent_id": 2777,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2777,
+            "name": "dwg",
+            "is_folder": 1,
+            "parent_id": 2349,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2349,
+              "name": "Előregyártott lépcső részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2780",
+            "extension": "dwg"
+          }
+        },
+        {
+          "id": 2781,
+          "name": "p09-egy-lepcso1",
+          "is_folder": 0,
+          "parent_id": 2777,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2777,
+            "name": "dwg",
+            "is_folder": 1,
+            "parent_id": 2349,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2349,
+              "name": "Előregyártott lépcső részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2781",
+            "extension": "dwg"
+          }
+        }
+      ],
+      "file": null
+    },
+    {
+      "id": 2778,
+      "name": "pdf",
+      "is_folder": 1,
+      "parent_id": 2349,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2349,
+        "name": "Előregyártott lépcső részletrajzok",
+        "is_folder": 1,
+        "parent_id": 2336,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2336,
+          "name": "Csomópontok",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 2782,
+          "name": "p09-egy-lepcso1",
+          "is_folder": 0,
+          "parent_id": 2778,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2778,
+            "name": "pdf",
+            "is_folder": 1,
+            "parent_id": 2349,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2349,
+              "name": "Előregyártott lépcső részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2782",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 2783,
+          "name": "p10-egy-lepcso2",
+          "is_folder": 0,
+          "parent_id": 2778,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2778,
+            "name": "pdf",
+            "is_folder": 1,
+            "parent_id": 2349,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2349,
+              "name": "Előregyártott lépcső részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2783",
+            "extension": "pdf"
+          }
+        }
+      ],
+      "file": null
+    },
+    {
+      "id": 2779,
+      "name": "pln",
+      "is_folder": 1,
+      "parent_id": 2349,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2349,
+        "name": "Előregyártott lépcső részletrajzok",
+        "is_folder": 1,
+        "parent_id": 2336,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2336,
+          "name": "Csomópontok",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 2784,
+          "name": "p10-egy-lepcso2",
+          "is_folder": 0,
+          "parent_id": 2779,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2779,
+            "name": "pln",
+            "is_folder": 1,
+            "parent_id": 2349,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2349,
+              "name": "Előregyártott lépcső részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2784",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2785,
+          "name": "p09-egy-lepcso1",
+          "is_folder": 0,
+          "parent_id": 2779,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2779,
+            "name": "pln",
+            "is_folder": 1,
+            "parent_id": 2349,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2349,
+              "name": "Előregyártott lépcső részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2785",
+            "extension": "zip"
+          }
+        }
+      ],
+      "file": null
+    }
+  ],
+  "currentDocument": {
+    "id": 2349,
+    "name": "Előregyártott lépcső részletrajzok",
+    "is_folder": 1,
+    "parent_id": 2336,
+    "created_at": "2023. február 16.",
+    "parent": {
+      "id": 2336,
+      "name": "Csomópontok",
+      "is_folder": 1,
+      "parent_id": 1867,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 1867,
+        "name": "Részletrajzok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

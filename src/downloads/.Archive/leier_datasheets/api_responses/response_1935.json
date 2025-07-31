@@ -1,0 +1,140 @@
+{
+  "documents": [
+    {
+      "id": 2160,
+      "name": "Lineárlis szerkezeti elemek - Győr - Teljesítménynyilatkozat - LE GY13225-02",
+      "is_folder": 0,
+      "parent_id": 1935,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1935,
+        "name": "Előregyártott pillérek, gerendák",
+        "is_folder": 1,
+        "parent_id": 1865,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1865,
+          "name": "Teljesítménynyilatkozatok",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2160",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2161,
+      "name": "Előregyártott vasbeton lineáris szerkezeti elemek - Teljesítménynyilatkozat LE JS13225-02",
+      "is_folder": 0,
+      "parent_id": 1935,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1935,
+        "name": "Előregyártott pillérek, gerendák",
+        "is_folder": 1,
+        "parent_id": 1865,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1865,
+          "name": "Teljesítménynyilatkozatok",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2161",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 3787,
+      "name": "Teljesítménynyilatkozat - Leier támfalblokk - LE JS15258-01 LTBE",
+      "is_folder": 0,
+      "parent_id": 1935,
+      "created_at": "2023. október 17.",
+      "parent": {
+        "id": 1935,
+        "name": "Előregyártott pillérek, gerendák",
+        "is_folder": 1,
+        "parent_id": 1865,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1865,
+          "name": "Teljesítménynyilatkozatok",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3787",
+        "extension": "pdf"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 1935,
+    "name": "Előregyártott pillérek, gerendák",
+    "is_folder": 1,
+    "parent_id": 1865,
+    "created_at": "2023. február 15.",
+    "parent": {
+      "id": 1865,
+      "name": "Teljesítménynyilatkozatok",
+      "is_folder": 1,
+      "parent_id": 1859,
+      "created_at": "2023. február 15.",
+      "parent": {
+        "id": 1859,
+        "name": "hu",
+        "is_folder": 1,
+        "parent_id": null,
+        "created_at": "2023. február 15.",
+        "parent": null,
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

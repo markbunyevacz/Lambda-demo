@@ -1,44 +1,115 @@
 services:
+  db:
+    image: postgres:15-alpine
+    container_name: lambda-db-1
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: lambda_db
+      LC_ALL: C.UTF-8
+      LANG: C.UTF-8
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+    networks:
+      - lambda_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d lambda_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  cache:
+    image: redis:6.2-alpine
+    container_name: lambda-cache-1
+    restart: always
+    ports:
+      - "6379:6379"
+    networks:
+      - lambda_network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
   backend:
-    build: ./backend
+    build:
+      context: ./src/backend
+      dockerfile: Dockerfile
+    container_name: lambda-backend-1
+    command: poetry run uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - ./src/backend:/app
     ports:
       - "8000:8000"
-    volumes:
-      - ./backend:/app
     env_file:
       - .env
     depends_on:
-      - db
-      - cache
-    develop:
-      watch:
-        - action: sync
-          path: ./backend
-          target: /app
+      db:
+        condition: service_healthy
+      chroma:
+        condition: service_started
+    networks:
+      - lambda_network
 
-  frontend:
-    build: ./frontend
-    ports:
-      - "3000:3000"
+  celery_worker:
+    build:
+      context: ./src/backend
+      dockerfile: Dockerfile
+    container_name: lambda-celery_worker-1
+    command: poetry run celery -A app.celery_app.app worker --loglevel=info
     volumes:
-      - ./frontend:/app
-    develop:
-      watch:
-        - action: sync
-          path: ./frontend
-          target: /app
-
-  db:
-    image: postgres:15
-    volumes:
-      - postgres_data:/var/lib/postgresql/data/
-    ports:
-      - "5432:5432"
+      - ./src/backend:/app
     env_file:
       - .env
+    depends_on:
+      - backend
+      - cache
+    restart: unless-stopped
+    networks:
+      - lambda_network
 
-  cache:
-    image: redis:latest
+  frontend:
+    build:
+      context: ./src/frontend
+      dockerfile: Dockerfile
+    container_name: lambda-frontend-1
+    environment:
+      - NEXT_PUBLIC_API_URL=http://backend:8000
+    command: npm run dev
+    volumes:
+      - ./src/frontend:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - lambda_network
+
+  chroma:
+    image: chromadb/chroma
+    container_name: lambda-chroma-1
+    ports:
+      - "8001:8000"
+    volumes:
+      - chroma_data:/chroma/.chroma/index
+    restart: unless-stopped
+    networks:
+      - lambda_network
+
 
 volumes:
-  postgres_data: 
+  postgres_data:
+    name: lambda_postgres_data
+  chroma_data:
+    name: lambda_chroma_data
+
+networks:
+  lambda_network:
+    driver: bridge
+    name: lambda_network 

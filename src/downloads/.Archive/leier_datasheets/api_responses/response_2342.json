@@ -1,0 +1,1968 @@
+{
+  "documents": [
+    {
+      "id": 2524,
+      "name": "dwg",
+      "is_folder": 1,
+      "parent_id": 2342,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2342,
+        "name": "Kémény részletrajzok",
+        "is_folder": 1,
+        "parent_id": 2336,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2336,
+          "name": "Csomópontok",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 2529,
+          "name": "k042-kemeny-tetoatvez2",
+          "is_folder": 0,
+          "parent_id": 2524,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2524,
+            "name": "dwg",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2529",
+            "extension": "dwg"
+          }
+        },
+        {
+          "id": 2530,
+          "name": "k05-kemenyatvez-lapost",
+          "is_folder": 0,
+          "parent_id": 2524,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2524,
+            "name": "dwg",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2530",
+            "extension": "dwg"
+          }
+        },
+        {
+          "id": 2531,
+          "name": "k041-kemeny-tetoatvez1",
+          "is_folder": 0,
+          "parent_id": 2524,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2524,
+            "name": "dwg",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2531",
+            "extension": "dwg"
+          }
+        },
+        {
+          "id": 2532,
+          "name": "k03-kemeny-fodemattor3",
+          "is_folder": 0,
+          "parent_id": 2524,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2524,
+            "name": "dwg",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2532",
+            "extension": "dwg"
+          }
+        },
+        {
+          "id": 2533,
+          "name": "k02b-kemeny-fodemattor2",
+          "is_folder": 0,
+          "parent_id": 2524,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2524,
+            "name": "dwg",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2533",
+            "extension": "dwg"
+          }
+        },
+        {
+          "id": 2534,
+          "name": "k02a-kemeny-fodemattor1",
+          "is_folder": 0,
+          "parent_id": 2524,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2524,
+            "name": "dwg",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2534",
+            "extension": "dwg"
+          }
+        },
+        {
+          "id": 2535,
+          "name": "k01-kemeny-alapozas",
+          "is_folder": 0,
+          "parent_id": 2524,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2524,
+            "name": "dwg",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2535",
+            "extension": "dwg"
+          }
+        }
+      ],
+      "file": null
+    },
+    {
+      "id": 2525,
+      "name": "pdf",
+      "is_folder": 1,
+      "parent_id": 2342,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2342,
+        "name": "Kémény részletrajzok",
+        "is_folder": 1,
+        "parent_id": 2336,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2336,
+          "name": "Csomópontok",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 2536,
+          "name": "k042-kemeny-tetoatvez2",
+          "is_folder": 0,
+          "parent_id": 2525,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2525,
+            "name": "pdf",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2536",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 2537,
+          "name": "k05-kemenyatvez-lapost",
+          "is_folder": 0,
+          "parent_id": 2525,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2525,
+            "name": "pdf",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2537",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 2538,
+          "name": "k041-kemeny-tetoatvez1",
+          "is_folder": 0,
+          "parent_id": 2525,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2525,
+            "name": "pdf",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2538",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 2539,
+          "name": "k03-kemeny-fodemattor3",
+          "is_folder": 0,
+          "parent_id": 2525,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2525,
+            "name": "pdf",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2539",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 2540,
+          "name": "k02b-kemeny-fodemattor2",
+          "is_folder": 0,
+          "parent_id": 2525,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2525,
+            "name": "pdf",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2540",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 2541,
+          "name": "k02a-kemeny-fodemattor1",
+          "is_folder": 0,
+          "parent_id": 2525,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2525,
+            "name": "pdf",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2541",
+            "extension": "pdf"
+          }
+        },
+        {
+          "id": 2542,
+          "name": "k01-kemeny-alapozas",
+          "is_folder": 0,
+          "parent_id": 2525,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2525,
+            "name": "pdf",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2542",
+            "extension": "pdf"
+          }
+        }
+      ],
+      "file": null
+    },
+    {
+      "id": 2526,
+      "name": "pln",
+      "is_folder": 1,
+      "parent_id": 2342,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2342,
+        "name": "Kémény részletrajzok",
+        "is_folder": 1,
+        "parent_id": 2336,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2336,
+          "name": "Csomópontok",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 2543,
+          "name": "k05-kemenyatvez-lapost",
+          "is_folder": 0,
+          "parent_id": 2526,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2526,
+            "name": "pln",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2543",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2544,
+          "name": "k042-kemeny-tetoatvez2",
+          "is_folder": 0,
+          "parent_id": 2526,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2526,
+            "name": "pln",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2544",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2545,
+          "name": "k041-kemeny-tetoatvez1",
+          "is_folder": 0,
+          "parent_id": 2526,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2526,
+            "name": "pln",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2545",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2546,
+          "name": "k03-kemeny-fodemattor3",
+          "is_folder": 0,
+          "parent_id": 2526,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2526,
+            "name": "pln",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2546",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2547,
+          "name": "k02b-kemeny-fodemattor2",
+          "is_folder": 0,
+          "parent_id": 2526,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2526,
+            "name": "pln",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2547",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2548,
+          "name": "k02a-kemeny-fodemattor1",
+          "is_folder": 0,
+          "parent_id": 2526,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2526,
+            "name": "pln",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2548",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2549,
+          "name": "k01-kemeny-alapozas",
+          "is_folder": 0,
+          "parent_id": 2526,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2526,
+            "name": "pln",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2549",
+            "extension": "zip"
+          }
+        }
+      ],
+      "file": null
+    },
+    {
+      "id": 2527,
+      "name": "asc",
+      "is_folder": 1,
+      "parent_id": 2342,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2342,
+        "name": "Kémény részletrajzok",
+        "is_folder": 1,
+        "parent_id": 2336,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2336,
+          "name": "Csomópontok",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 2550,
+          "name": "leier-k042-kemeny-tetoatvez2",
+          "is_folder": 0,
+          "parent_id": 2527,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2527,
+            "name": "asc",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2550",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2551,
+          "name": "leier-k041-kemeny-tetoatvez1",
+          "is_folder": 0,
+          "parent_id": 2527,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2527,
+            "name": "asc",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2551",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2552,
+          "name": "leier-k03-kemeny-fodemattor3",
+          "is_folder": 0,
+          "parent_id": 2527,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2527,
+            "name": "asc",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2552",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2553,
+          "name": "leier-k02b-kemeny-fodemattor2",
+          "is_folder": 0,
+          "parent_id": 2527,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2527,
+            "name": "asc",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2553",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2554,
+          "name": "leier-k02a-kemeny-fodemattor1",
+          "is_folder": 0,
+          "parent_id": 2527,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2527,
+            "name": "asc",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2554",
+            "extension": "zip"
+          }
+        },
+        {
+          "id": 2555,
+          "name": "leier-k01-kemeny-alapozas",
+          "is_folder": 0,
+          "parent_id": 2527,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2527,
+            "name": "asc",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2555",
+            "extension": "zip"
+          }
+        }
+      ],
+      "file": null
+    },
+    {
+      "id": 2528,
+      "name": "dxf",
+      "is_folder": 1,
+      "parent_id": 2342,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2342,
+        "name": "Kémény részletrajzok",
+        "is_folder": 1,
+        "parent_id": 2336,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2336,
+          "name": "Csomópontok",
+          "is_folder": 1,
+          "parent_id": 1867,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 1867,
+            "name": "Részletrajzok",
+            "is_folder": 1,
+            "parent_id": 1859,
+            "created_at": "2023. február 15.",
+            "parent": {
+              "id": 1859,
+              "name": "hu",
+              "is_folder": 1,
+              "parent_id": null,
+              "created_at": "2023. február 15.",
+              "parent": null,
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [
+        {
+          "id": 2556,
+          "name": "leier-k041-kemeny-tetoat11",
+          "is_folder": 0,
+          "parent_id": 2528,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2528,
+            "name": "dxf",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2556",
+            "extension": "dxf"
+          }
+        },
+        {
+          "id": 2557,
+          "name": "leier-k042-kemeny-tetoat21",
+          "is_folder": 0,
+          "parent_id": 2528,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2528,
+            "name": "dxf",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2557",
+            "extension": "dxf"
+          }
+        },
+        {
+          "id": 2558,
+          "name": "leier-k03-kemeny-fodem31",
+          "is_folder": 0,
+          "parent_id": 2528,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2528,
+            "name": "dxf",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2558",
+            "extension": "dxf"
+          }
+        },
+        {
+          "id": 2559,
+          "name": "leier-k02b-kemeny-fodem21",
+          "is_folder": 0,
+          "parent_id": 2528,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2528,
+            "name": "dxf",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2559",
+            "extension": "dxf"
+          }
+        },
+        {
+          "id": 2560,
+          "name": "leier-k02a-kemeny-fodem11",
+          "is_folder": 0,
+          "parent_id": 2528,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2528,
+            "name": "dxf",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2560",
+            "extension": "dxf"
+          }
+        },
+        {
+          "id": 2561,
+          "name": "leier-k01-kemeny-alapozas1",
+          "is_folder": 0,
+          "parent_id": 2528,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2528,
+            "name": "dxf",
+            "is_folder": 1,
+            "parent_id": 2342,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 2342,
+              "name": "Kémény részletrajzok",
+              "is_folder": 1,
+              "parent_id": 2336,
+              "created_at": "2023. február 16.",
+              "parent": {
+                "id": 2336,
+                "name": "Csomópontok",
+                "is_folder": 1,
+                "parent_id": 1867,
+                "created_at": "2023. február 16.",
+                "parent": {
+                  "id": 1867,
+                  "name": "Részletrajzok",
+                  "is_folder": 1,
+                  "parent_id": 1859,
+                  "created_at": "2023. február 15.",
+                  "parent": {
+                    "id": 1859,
+                    "name": "hu",
+                    "is_folder": 1,
+                    "parent_id": null,
+                    "created_at": "2023. február 15.",
+                    "parent": null,
+                    "file": null
+                  },
+                  "file": null
+                },
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": {
+            "link": "https://www.leier.hu/hu/dokumentumtar/2561",
+            "extension": "dxf"
+          }
+        }
+      ],
+      "file": null
+    }
+  ],
+  "currentDocument": {
+    "id": 2342,
+    "name": "Kémény részletrajzok",
+    "is_folder": 1,
+    "parent_id": 2336,
+    "created_at": "2023. február 16.",
+    "parent": {
+      "id": 2336,
+      "name": "Csomópontok",
+      "is_folder": 1,
+      "parent_id": 1867,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 1867,
+        "name": "Részletrajzok",
+        "is_folder": 1,
+        "parent_id": 1859,
+        "created_at": "2023. február 15.",
+        "parent": {
+          "id": 1859,
+          "name": "hu",
+          "is_folder": 1,
+          "parent_id": null,
+          "created_at": "2023. február 15.",
+          "parent": null,
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

@@ -1,0 +1,734 @@
+{
+  "documents": [
+    {
+      "id": 2497,
+      "name": "leier-t10-szellozo",
+      "is_folder": 0,
+      "parent_id": 2468,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2468,
+        "name": "asc",
+        "is_folder": 1,
+        "parent_id": 2341,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2341,
+          "name": "Tető részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2497",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2498,
+      "name": "leier-t09a-falcsat-szegely",
+      "is_folder": 0,
+      "parent_id": 2468,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2468,
+        "name": "asc",
+        "is_folder": 1,
+        "parent_id": 2341,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2341,
+          "name": "Tető részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2498",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2499,
+      "name": "leier-t08b-orom-fem",
+      "is_folder": 0,
+      "parent_id": 2468,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2468,
+        "name": "asc",
+        "is_folder": 1,
+        "parent_id": 2341,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2341,
+          "name": "Tető részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2499",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2500,
+      "name": "leier-t08a-orom-cserep",
+      "is_folder": 0,
+      "parent_id": 2468,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2468,
+        "name": "asc",
+        "is_folder": 1,
+        "parent_id": 2341,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2341,
+          "name": "Tető részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2500",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2501,
+      "name": "leier-t072-tetoablak-vizsz",
+      "is_folder": 0,
+      "parent_id": 2468,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2468,
+        "name": "asc",
+        "is_folder": 1,
+        "parent_id": 2341,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2341,
+          "name": "Tető részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2501",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2502,
+      "name": "leier-t071-tetoablak-fugg",
+      "is_folder": 0,
+      "parent_id": 2468,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2468,
+        "name": "asc",
+        "is_folder": 1,
+        "parent_id": 2341,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2341,
+          "name": "Tető részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2502",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2503,
+      "name": "leier-t06-vapa",
+      "is_folder": 0,
+      "parent_id": 2468,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2468,
+        "name": "asc",
+        "is_folder": 1,
+        "parent_id": 2341,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2341,
+          "name": "Tető részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2503",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2504,
+      "name": "leier-t05-elgerinc",
+      "is_folder": 0,
+      "parent_id": 2468,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2468,
+        "name": "asc",
+        "is_folder": 1,
+        "parent_id": 2341,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2341,
+          "name": "Tető részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2504",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2505,
+      "name": "leier-t04-felnyereg-gerinc",
+      "is_folder": 0,
+      "parent_id": 2468,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2468,
+        "name": "asc",
+        "is_folder": 1,
+        "parent_id": 2341,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2341,
+          "name": "Tető részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2505",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2506,
+      "name": "leier-t03-felnyereg-falcs",
+      "is_folder": 0,
+      "parent_id": 2468,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2468,
+        "name": "asc",
+        "is_folder": 1,
+        "parent_id": 2341,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2341,
+          "name": "Tető részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2506",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2507,
+      "name": "leier-t02-gerinc",
+      "is_folder": 0,
+      "parent_id": 2468,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2468,
+        "name": "asc",
+        "is_folder": 1,
+        "parent_id": 2341,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2341,
+          "name": "Tető részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2507",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2508,
+      "name": "leier-t01-eresz",
+      "is_folder": 0,
+      "parent_id": 2468,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2468,
+        "name": "asc",
+        "is_folder": 1,
+        "parent_id": 2341,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2341,
+          "name": "Tető részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2508",
+        "extension": "zip"
+      }
+    },
+    {
+      "id": 2509,
+      "name": "leier-k05-kemenyatvez-lapost",
+      "is_folder": 0,
+      "parent_id": 2468,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2468,
+        "name": "asc",
+        "is_folder": 1,
+        "parent_id": 2341,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2341,
+          "name": "Tető részletrajzok",
+          "is_folder": 1,
+          "parent_id": 2336,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2336,
+            "name": "Csomópontok",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2509",
+        "extension": "zip"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 2468,
+    "name": "asc",
+    "is_folder": 1,
+    "parent_id": 2341,
+    "created_at": "2023. február 16.",
+    "parent": {
+      "id": 2341,
+      "name": "Tető részletrajzok",
+      "is_folder": 1,
+      "parent_id": 2336,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2336,
+        "name": "Csomópontok",
+        "is_folder": 1,
+        "parent_id": 1867,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 1867,
+          "name": "Részletrajzok",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

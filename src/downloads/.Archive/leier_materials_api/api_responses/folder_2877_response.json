@@ -1,0 +1,2112 @@
+{
+  "documents": [
+    {
+      "id": 2981,
+      "name": "TOTA 80 200L - Tokos talpas betoncső tokosmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2981",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2982,
+      "name": "TOTA 80 200L - Tokos talpas betoncső keresztmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2982",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2983,
+      "name": "TOTA 80 200L - Tokos talpas betoncső hosszmetszet vízszintes",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2983",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2984,
+      "name": "TOTA 80 200L - Tokos talpas betoncső hosszmetszet függőleges",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2984",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2985,
+      "name": "TOTA 80 200L - Tokos talpas betoncső csaposmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2985",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2986,
+      "name": "TOTA 50 200L - Tokos talpas betoncső tokosmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2986",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2987,
+      "name": "TOTA 50 200L - Tokos talpas betoncső keresztmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2987",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2988,
+      "name": "TOTA 50 200L - Tokos talpas betoncső hosszmetszet vízszintes",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2988",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2989,
+      "name": "TOTA 50 200L - Tokos talpas betoncső hosszmetszet függőleges",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2989",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2990,
+      "name": "TOTA 50 200L - Tokos talpas betoncső csaposmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2990",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2991,
+      "name": "TOTA 40 200L - Tokos talpas betoncső tokosmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2991",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2992,
+      "name": "TOTA 40 200L - Tokos talpas betoncső keresztmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2992",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2993,
+      "name": "TOTA 40 200L - Tokos talpas betoncső hosszmetszet vízszintes",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2993",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2994,
+      "name": "TOTA 40 200L - Tokos talpas betoncső hosszmetszet függőleges",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2994",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2995,
+      "name": "TOTA 40 200L - Tokos talpas betoncső csaposmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2995",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2996,
+      "name": "TOTA 100 200L - Tokos talpas betoncső tokosmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2996",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2997,
+      "name": "TOTA 100 200L - Tokos talpas betoncső keresztmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2997",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2998,
+      "name": "TOTA 100 200L - Tokos talpas betoncső hosszmetszet vízszintes",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2998",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 2999,
+      "name": "TOTA 100 200L - Tokos talpas betoncső hosszmetszet függőleges",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2999",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3000,
+      "name": "TOTA 100 200L - Tokos talpas betoncső csaposmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3000",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3001,
+      "name": "TO 60 200L - Tokos betoncső tokosmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3001",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3002,
+      "name": "to-60-200l-tokos-betoncso-hosszmetszet.dwg",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3002",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3003,
+      "name": "TO 60 200L - Tokos betoncső csaposmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3003",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3004,
+      "name": "TO 30 200L - Tokos betoncső tokosmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3004",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3005,
+      "name": "TO 30 200L - Tokos betoncső keresztmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3005",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3006,
+      "name": "TO 30 200L - Tokos betoncső hosszmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3006",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3007,
+      "name": "TO 30 200L - Tokos betoncső csaposmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3007",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3008,
+      "name": "TA 80 100 - Talpas betoncső keresztmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3008",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3009,
+      "name": "TA 80 100 - Talpas betoncső hosszmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3009",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3010,
+      "name": "TA 60 100 - Talpas betoncső keresztmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3010",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3011,
+      "name": "TA 60 100 - Talpas betoncső hosszmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3011",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3012,
+      "name": "TA 50 100 - Talpas betoncső keresztmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3012",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3013,
+      "name": "TA 50 100 - Talpas betoncső hosszmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3013",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3014,
+      "name": "TA 40 100 - Talpas betoncső keresztmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3014",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3015,
+      "name": "TA 40 100 - Talpas betoncső hosszmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3015",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3016,
+      "name": "TA 30 100 - Talpas betoncső keresztmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3016",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3017,
+      "name": "TA 30 100 - Talpas betoncső hosszmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3017",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3018,
+      "name": "TA 100 100 - Talpas betoncső keresztmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3018",
+        "extension": "dwg"
+      }
+    },
+    {
+      "id": 3019,
+      "name": "TA 100 100 - Talpas betoncső hosszmetszet",
+      "is_folder": 0,
+      "parent_id": 2877,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2877,
+        "name": "Betoncsövek",
+        "is_folder": 1,
+        "parent_id": 2872,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2872,
+          "name": "Mélyépítés",
+          "is_folder": 1,
+          "parent_id": 2337,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2337,
+            "name": "Elemrajzok (DWG, PDF)",
+            "is_folder": 1,
+            "parent_id": 1867,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1867,
+              "name": "Részletrajzok",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/3019",
+        "extension": "dwg"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 2877,
+    "name": "Betoncsövek",
+    "is_folder": 1,
+    "parent_id": 2872,
+    "created_at": "2023. február 16.",
+    "parent": {
+      "id": 2872,
+      "name": "Mélyépítés",
+      "is_folder": 1,
+      "parent_id": 2337,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2337,
+        "name": "Elemrajzok (DWG, PDF)",
+        "is_folder": 1,
+        "parent_id": 1867,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 1867,
+          "name": "Részletrajzok",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

@@ -1,0 +1,15 @@
+2025-07-01 22:41:11,078 - INFO - 🚀 LEIER Product Scraper Initialized
+2025-07-01 22:41:11,079 - INFO - --- Phase 1: Discovering Product Categories (with JS Rendering via AI Agent) ---
+2025-07-01 22:41:11,079 - INFO - Executing AI-powered rendering command...
+2025-07-01 22:41:29,642 - ERROR - Failed to parse JSON from AI response. Raw output: I apologize for the continued errors. It appears that there might be an issue with the authentication or access to the scraping tools at the moment. In this situation, the best course of action would be to inform you about the problem and suggest an alternative approach.
+
+Since we're unable to use the scraping tools directly, I would recommend the following steps:
+
+1. Inform the system administrators or support team about the "Token expired" errors for both `scrape_as_html` and `scrape_as_ma
+2025-07-01 22:41:29,643 - INFO - Discovered 1 unique category URLs via AI rendering.
+2025-07-01 22:41:29,643 - INFO - --- Phase 2: Discovering Individual Products ---
+2025-07-01 22:41:29,644 - INFO - Fetching: https://www.leier.hu/hu/termekeink
+2025-07-01 22:41:30,720 - INFO - HTTP Request: GET https://www.leier.hu/hu/termekeink "HTTP/1.1 200 OK"
+2025-07-01 22:41:30,848 - INFO - Discovered 0 total product URLs to scrape.
+2025-07-01 22:41:30,848 - INFO - --- Phase 3: Scraping Product Pages ---
+2025-07-01 22:41:30,852 - INFO - 📊 Product scraping report saved to C:\Users\Admin\.cursor\Lambda\src\backend\leier_scraping_reports\leier_product_report_20250701_224130.json

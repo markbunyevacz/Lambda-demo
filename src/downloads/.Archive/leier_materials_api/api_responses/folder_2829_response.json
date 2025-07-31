@@ -1,0 +1,151 @@
+{
+  "documents": [
+    {
+      "id": 2833,
+      "name": "Előregyártott falak Győr Teljesítménynyilatkozat",
+      "is_folder": 0,
+      "parent_id": 2829,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2829,
+        "name": "HU",
+        "is_folder": 1,
+        "parent_id": 2823,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2823,
+          "name": "Teljesítménynyilatkozat | Leistungerklarung",
+          "is_folder": 1,
+          "parent_id": 2818,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2818,
+            "name": "Előregyártott Falak | Wandelemente",
+            "is_folder": 1,
+            "parent_id": 1874,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1874,
+              "name": "Szerelési útmutatók",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2833",
+        "extension": "pdf"
+      }
+    },
+    {
+      "id": 2834,
+      "name": "Előregyártott falak Jánossomorja Teljesítménynyilatkozat",
+      "is_folder": 0,
+      "parent_id": 2829,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2829,
+        "name": "HU",
+        "is_folder": 1,
+        "parent_id": 2823,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 2823,
+          "name": "Teljesítménynyilatkozat | Leistungerklarung",
+          "is_folder": 1,
+          "parent_id": 2818,
+          "created_at": "2023. február 16.",
+          "parent": {
+            "id": 2818,
+            "name": "Előregyártott Falak | Wandelemente",
+            "is_folder": 1,
+            "parent_id": 1874,
+            "created_at": "2023. február 16.",
+            "parent": {
+              "id": 1874,
+              "name": "Szerelési útmutatók",
+              "is_folder": 1,
+              "parent_id": 1859,
+              "created_at": "2023. február 15.",
+              "parent": {
+                "id": 1859,
+                "name": "hu",
+                "is_folder": 1,
+                "parent_id": null,
+                "created_at": "2023. február 15.",
+                "parent": null,
+                "file": null
+              },
+              "file": null
+            },
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "children": [],
+      "file": {
+        "link": "https://www.leier.hu/hu/dokumentumtar/2834",
+        "extension": "pdf"
+      }
+    }
+  ],
+  "currentDocument": {
+    "id": 2829,
+    "name": "HU",
+    "is_folder": 1,
+    "parent_id": 2823,
+    "created_at": "2023. február 16.",
+    "parent": {
+      "id": 2823,
+      "name": "Teljesítménynyilatkozat | Leistungerklarung",
+      "is_folder": 1,
+      "parent_id": 2818,
+      "created_at": "2023. február 16.",
+      "parent": {
+        "id": 2818,
+        "name": "Előregyártott Falak | Wandelemente",
+        "is_folder": 1,
+        "parent_id": 1874,
+        "created_at": "2023. február 16.",
+        "parent": {
+          "id": 1874,
+          "name": "Szerelési útmutatók",
+          "is_folder": 1,
+          "parent_id": 1859,
+          "created_at": "2023. február 15.",
+          "parent": {
+            "id": 1859,
+            "name": "hu",
+            "is_folder": 1,
+            "parent_id": null,
+            "created_at": "2023. február 15.",
+            "parent": null,
+            "file": null
+          },
+          "file": null
+        },
+        "file": null
+      },
+      "file": null
+    },
+    "file": null
+  }
+}

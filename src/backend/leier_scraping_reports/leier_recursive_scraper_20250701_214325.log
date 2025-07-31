@@ -1,0 +1,381 @@
+2025-07-01 21:43:25,869 - INFO - 🚀 LEIER Recursive Scraper Initialized
+2025-07-01 21:43:25,869 - INFO - --- Starting LEIER Recursive Scraping Run ---
+2025-07-01 21:43:25,869 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents
+2025-07-01 21:43:26,373 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents "HTTP/1.1 200 OK"
+2025-07-01 21:43:26,376 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1859
+2025-07-01 21:43:27,056 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1859 "HTTP/1.1 200 OK"
+2025-07-01 21:43:27,071 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1860
+2025-07-01 21:43:27,488 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1860 "HTTP/1.1 200 OK"
+2025-07-01 21:43:27,494 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1861
+2025-07-01 21:43:27,902 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1861 "HTTP/1.1 200 OK"
+2025-07-01 21:43:27,905 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1862
+2025-07-01 21:43:28,404 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1862 "HTTP/1.1 200 OK"
+2025-07-01 21:43:28,409 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/4175
+2025-07-01 21:43:28,921 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/4175 "HTTP/1.1 200 OK"
+2025-07-01 21:43:28,923 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/4176
+2025-07-01 21:43:29,287 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/4176 "HTTP/1.1 200 OK"
+2025-07-01 21:43:29,289 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/4177
+2025-07-01 21:43:29,641 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/4177 "HTTP/1.1 200 OK"
+2025-07-01 21:43:29,643 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/4179
+2025-07-01 21:43:30,008 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/4179 "HTTP/1.1 200 OK"
+2025-07-01 21:43:30,011 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/4182
+2025-07-01 21:43:30,436 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/4182 "HTTP/1.1 200 OK"
+2025-07-01 21:43:30,438 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1863
+2025-07-01 21:43:30,806 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1863 "HTTP/1.1 200 OK"
+2025-07-01 21:43:30,808 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1864
+2025-07-01 21:43:31,159 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1864 "HTTP/1.1 200 OK"
+2025-07-01 21:43:31,163 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1865
+2025-07-01 21:43:31,816 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1865 "HTTP/1.1 200 OK"
+2025-07-01 21:43:31,830 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1928
+2025-07-01 21:43:32,416 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1928 "HTTP/1.1 200 OK"
+2025-07-01 21:43:32,430 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1938
+2025-07-01 21:43:33,089 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1938 "HTTP/1.1 200 OK"
+2025-07-01 21:43:33,110 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1945
+2025-07-01 21:43:33,695 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1945 "HTTP/1.1 200 OK"
+2025-07-01 21:43:33,700 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1951
+2025-07-01 21:43:34,243 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1951 "HTTP/1.1 200 OK"
+2025-07-01 21:43:34,247 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1952
+2025-07-01 21:43:34,612 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1952 "HTTP/1.1 200 OK"
+2025-07-01 21:43:34,616 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1946
+2025-07-01 21:43:35,127 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1946 "HTTP/1.1 200 OK"
+2025-07-01 21:43:35,141 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1974
+2025-07-01 21:43:35,619 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1974 "HTTP/1.1 200 OK"
+2025-07-01 21:43:35,638 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1975
+2025-07-01 21:43:36,103 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1975 "HTTP/1.1 200 OK"
+2025-07-01 21:43:36,107 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1947
+2025-07-01 21:43:36,511 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1947 "HTTP/1.1 200 OK"
+2025-07-01 21:43:36,514 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1948
+2025-07-01 21:43:36,949 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1948 "HTTP/1.1 200 OK"
+2025-07-01 21:43:36,955 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1949
+2025-07-01 21:43:37,314 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1949 "HTTP/1.1 200 OK"
+2025-07-01 21:43:37,316 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1950
+2025-07-01 21:43:37,681 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1950 "HTTP/1.1 200 OK"
+2025-07-01 21:43:37,683 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1939
+2025-07-01 21:43:38,052 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1939 "HTTP/1.1 200 OK"
+2025-07-01 21:43:38,054 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1940
+2025-07-01 21:43:38,413 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1940 "HTTP/1.1 200 OK"
+2025-07-01 21:43:38,415 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1941
+2025-07-01 21:43:38,784 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1941 "HTTP/1.1 200 OK"
+2025-07-01 21:43:38,787 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1942
+2025-07-01 21:43:39,149 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1942 "HTTP/1.1 200 OK"
+2025-07-01 21:43:39,152 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1943
+2025-07-01 21:43:39,497 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1943 "HTTP/1.1 200 OK"
+2025-07-01 21:43:39,499 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1944
+2025-07-01 21:43:39,853 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1944 "HTTP/1.1 200 OK"
+2025-07-01 21:43:39,856 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1929
+2025-07-01 21:43:40,278 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1929 "HTTP/1.1 200 OK"
+2025-07-01 21:43:40,284 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1930
+2025-07-01 21:43:40,693 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1930 "HTTP/1.1 200 OK"
+2025-07-01 21:43:40,696 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1931
+2025-07-01 21:43:41,099 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1931 "HTTP/1.1 200 OK"
+2025-07-01 21:43:41,102 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1932
+2025-07-01 21:43:41,564 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1932 "HTTP/1.1 200 OK"
+2025-07-01 21:43:41,569 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2134
+2025-07-01 21:43:41,961 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2134 "HTTP/1.1 200 OK"
+2025-07-01 21:43:41,975 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2135
+2025-07-01 21:43:42,429 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2135 "HTTP/1.1 200 OK"
+2025-07-01 21:43:42,432 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2136
+2025-07-01 21:43:42,904 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2136 "HTTP/1.1 200 OK"
+2025-07-01 21:43:42,906 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2137
+2025-07-01 21:43:43,279 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2137 "HTTP/1.1 200 OK"
+2025-07-01 21:43:43,281 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2138
+2025-07-01 21:43:43,618 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2138 "HTTP/1.1 200 OK"
+2025-07-01 21:43:43,621 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1933
+2025-07-01 21:43:43,971 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1933 "HTTP/1.1 200 OK"
+2025-07-01 21:43:43,974 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1935
+2025-07-01 21:43:44,334 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1935 "HTTP/1.1 200 OK"
+2025-07-01 21:43:44,338 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/4010
+2025-07-01 21:43:44,736 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/4010 "HTTP/1.1 200 OK"
+2025-07-01 21:43:44,743 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/3677
+2025-07-01 21:43:45,109 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/3677 "HTTP/1.1 200 OK"
+2025-07-01 21:43:45,110 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1866
+2025-07-01 21:43:45,545 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1866 "HTTP/1.1 200 OK"
+2025-07-01 21:43:45,549 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2162
+2025-07-01 21:43:46,102 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2162 "HTTP/1.1 200 OK"
+2025-07-01 21:43:46,117 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2168
+2025-07-01 21:43:46,540 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2168 "HTTP/1.1 200 OK"
+2025-07-01 21:43:46,547 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2169
+2025-07-01 21:43:46,972 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2169 "HTTP/1.1 200 OK"
+2025-07-01 21:43:46,974 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2170
+2025-07-01 21:43:47,453 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2170 "HTTP/1.1 200 OK"
+2025-07-01 21:43:47,457 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2171
+2025-07-01 21:43:47,848 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2171 "HTTP/1.1 200 OK"
+2025-07-01 21:43:47,852 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2163
+2025-07-01 21:43:48,213 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2163 "HTTP/1.1 200 OK"
+2025-07-01 21:43:48,216 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2164
+2025-07-01 21:43:48,763 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2164 "HTTP/1.1 200 OK"
+2025-07-01 21:43:48,781 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2256
+2025-07-01 21:43:49,186 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2256 "HTTP/1.1 200 OK"
+2025-07-01 21:43:49,190 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2257
+2025-07-01 21:43:49,584 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2257 "HTTP/1.1 200 OK"
+2025-07-01 21:43:49,591 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2258
+2025-07-01 21:43:49,995 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2258 "HTTP/1.1 200 OK"
+2025-07-01 21:43:49,998 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2259
+2025-07-01 21:43:50,394 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2259 "HTTP/1.1 200 OK"
+2025-07-01 21:43:50,400 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2260
+2025-07-01 21:43:50,823 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2260 "HTTP/1.1 200 OK"
+2025-07-01 21:43:50,826 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2165
+2025-07-01 21:43:51,272 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2165 "HTTP/1.1 200 OK"
+2025-07-01 21:43:51,275 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2166
+2025-07-01 21:43:51,691 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2166 "HTTP/1.1 200 OK"
+2025-07-01 21:43:51,694 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2326
+2025-07-01 21:43:52,061 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2326 "HTTP/1.1 200 OK"
+2025-07-01 21:43:52,064 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1867
+2025-07-01 21:43:52,450 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1867 "HTTP/1.1 200 OK"
+2025-07-01 21:43:52,453 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2336
+2025-07-01 21:43:53,029 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2336 "HTTP/1.1 200 OK"
+2025-07-01 21:43:53,040 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2338
+2025-07-01 21:43:53,686 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2338 "HTTP/1.1 200 OK"
+2025-07-01 21:43:53,702 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2351
+2025-07-01 21:43:54,131 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2351 "HTTP/1.1 200 OK"
+2025-07-01 21:43:54,134 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2352
+2025-07-01 21:43:54,642 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2352 "HTTP/1.1 200 OK"
+2025-07-01 21:43:54,648 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2353
+2025-07-01 21:43:55,069 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2353 "HTTP/1.1 200 OK"
+2025-07-01 21:43:55,072 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2354
+2025-07-01 21:43:55,461 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2354 "HTTP/1.1 200 OK"
+2025-07-01 21:43:55,464 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2355
+2025-07-01 21:43:55,838 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2355 "HTTP/1.1 200 OK"
+2025-07-01 21:43:55,842 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2339
+2025-07-01 21:43:56,365 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2339 "HTTP/1.1 200 OK"
+2025-07-01 21:43:56,369 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2430
+2025-07-01 21:43:56,787 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2430 "HTTP/1.1 200 OK"
+2025-07-01 21:43:56,792 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2431
+2025-07-01 21:43:57,210 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2431 "HTTP/1.1 200 OK"
+2025-07-01 21:43:57,220 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2340
+2025-07-01 21:43:57,587 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2340 "HTTP/1.1 200 OK"
+2025-07-01 21:43:57,590 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2341
+2025-07-01 21:43:58,143 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2341 "HTTP/1.1 200 OK"
+2025-07-01 21:43:58,155 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2466
+2025-07-01 21:43:58,546 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2466 "HTTP/1.1 200 OK"
+2025-07-01 21:43:58,551 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2467
+2025-07-01 21:43:58,974 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2467 "HTTP/1.1 200 OK"
+2025-07-01 21:43:58,979 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2468
+2025-07-01 21:43:59,399 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2468 "HTTP/1.1 200 OK"
+2025-07-01 21:43:59,402 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2469
+2025-07-01 21:43:59,786 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2469 "HTTP/1.1 200 OK"
+2025-07-01 21:43:59,789 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2470
+2025-07-01 21:44:00,137 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2470 "HTTP/1.1 200 OK"
+2025-07-01 21:44:00,139 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2342
+2025-07-01 21:44:00,621 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2342 "HTTP/1.1 200 OK"
+2025-07-01 21:44:00,626 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2524
+2025-07-01 21:44:01,058 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2524 "HTTP/1.1 200 OK"
+2025-07-01 21:44:01,063 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2525
+2025-07-01 21:44:01,563 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2525 "HTTP/1.1 200 OK"
+2025-07-01 21:44:01,572 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2526
+2025-07-01 21:44:01,970 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2526 "HTTP/1.1 200 OK"
+2025-07-01 21:44:01,978 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2527
+2025-07-01 21:44:02,371 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2527 "HTTP/1.1 200 OK"
+2025-07-01 21:44:02,374 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2528
+2025-07-01 21:44:02,776 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2528 "HTTP/1.1 200 OK"
+2025-07-01 21:44:02,783 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2343
+2025-07-01 21:44:03,358 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2343 "HTTP/1.1 200 OK"
+2025-07-01 21:44:03,371 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2562
+2025-07-01 21:44:03,762 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2562 "HTTP/1.1 200 OK"
+2025-07-01 21:44:03,766 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2563
+2025-07-01 21:44:04,230 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2563 "HTTP/1.1 200 OK"
+2025-07-01 21:44:04,233 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2564
+2025-07-01 21:44:04,606 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2564 "HTTP/1.1 200 OK"
+2025-07-01 21:44:04,609 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2565
+2025-07-01 21:44:04,983 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2565 "HTTP/1.1 200 OK"
+2025-07-01 21:44:04,986 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2566
+2025-07-01 21:44:05,368 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2566 "HTTP/1.1 200 OK"
+2025-07-01 21:44:05,373 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2344
+2025-07-01 21:44:05,840 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2344 "HTTP/1.1 200 OK"
+2025-07-01 21:44:05,850 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2612
+2025-07-01 21:44:06,294 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2612 "HTTP/1.1 200 OK"
+2025-07-01 21:44:06,298 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2613
+2025-07-01 21:44:06,724 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2613 "HTTP/1.1 200 OK"
+2025-07-01 21:44:06,727 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2614
+2025-07-01 21:44:07,116 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2614 "HTTP/1.1 200 OK"
+2025-07-01 21:44:07,122 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2615
+2025-07-01 21:44:07,516 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2615 "HTTP/1.1 200 OK"
+2025-07-01 21:44:07,520 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2345
+2025-07-01 21:44:08,051 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2345 "HTTP/1.1 200 OK"
+2025-07-01 21:44:08,059 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2643
+2025-07-01 21:44:08,488 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2643 "HTTP/1.1 200 OK"
+2025-07-01 21:44:08,491 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2644
+2025-07-01 21:44:08,866 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2644 "HTTP/1.1 200 OK"
+2025-07-01 21:44:08,869 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2645
+2025-07-01 21:44:09,289 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2645 "HTTP/1.1 200 OK"
+2025-07-01 21:44:09,293 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2646
+2025-07-01 21:44:09,674 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2646 "HTTP/1.1 200 OK"
+2025-07-01 21:44:09,677 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2346
+2025-07-01 21:44:10,190 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2346 "HTTP/1.1 200 OK"
+2025-07-01 21:44:10,194 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2687
+2025-07-01 21:44:10,670 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2687 "HTTP/1.1 200 OK"
+2025-07-01 21:44:10,673 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2688
+2025-07-01 21:44:11,048 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2688 "HTTP/1.1 200 OK"
+2025-07-01 21:44:11,051 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2689
+2025-07-01 21:44:11,443 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2689 "HTTP/1.1 200 OK"
+2025-07-01 21:44:11,446 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2690
+2025-07-01 21:44:11,810 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2690 "HTTP/1.1 200 OK"
+2025-07-01 21:44:11,813 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2347
+2025-07-01 21:44:12,408 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2347 "HTTP/1.1 200 OK"
+2025-07-01 21:44:12,430 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2716
+2025-07-01 21:44:12,889 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2716 "HTTP/1.1 200 OK"
+2025-07-01 21:44:12,892 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2717
+2025-07-01 21:44:13,313 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2717 "HTTP/1.1 200 OK"
+2025-07-01 21:44:13,318 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2718
+2025-07-01 21:44:13,714 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2718 "HTTP/1.1 200 OK"
+2025-07-01 21:44:13,717 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2719
+2025-07-01 21:44:14,098 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2719 "HTTP/1.1 200 OK"
+2025-07-01 21:44:14,101 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2720
+2025-07-01 21:44:14,486 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2720 "HTTP/1.1 200 OK"
+2025-07-01 21:44:14,492 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2349
+2025-07-01 21:44:14,991 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2349 "HTTP/1.1 200 OK"
+2025-07-01 21:44:15,002 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2777
+2025-07-01 21:44:15,576 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2777 "HTTP/1.1 200 OK"
+2025-07-01 21:44:15,585 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2778
+2025-07-01 21:44:16,042 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2778 "HTTP/1.1 200 OK"
+2025-07-01 21:44:16,045 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2779
+2025-07-01 21:44:16,459 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2779 "HTTP/1.1 200 OK"
+2025-07-01 21:44:16,463 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2337
+2025-07-01 21:44:17,042 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2337 "HTTP/1.1 200 OK"
+2025-07-01 21:44:17,064 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2872
+2025-07-01 21:44:18,728 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2872 "HTTP/1.1 200 OK"
+2025-07-01 21:44:18,816 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2875
+2025-07-01 21:44:19,331 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2875 "HTTP/1.1 200 OK"
+2025-07-01 21:44:19,345 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2876
+2025-07-01 21:44:19,851 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2876 "HTTP/1.1 200 OK"
+2025-07-01 21:44:19,865 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2877
+2025-07-01 21:44:20,305 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2877 "HTTP/1.1 200 OK"
+2025-07-01 21:44:20,312 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2878
+2025-07-01 21:44:20,746 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2878 "HTTP/1.1 200 OK"
+2025-07-01 21:44:20,750 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2879
+2025-07-01 21:44:21,276 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2879 "HTTP/1.1 200 OK"
+2025-07-01 21:44:21,290 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2880
+2025-07-01 21:44:21,802 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2880 "HTTP/1.1 200 OK"
+2025-07-01 21:44:21,817 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2881
+2025-07-01 21:44:22,290 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2881 "HTTP/1.1 200 OK"
+2025-07-01 21:44:22,296 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2882
+2025-07-01 21:44:23,011 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2882 "HTTP/1.1 200 OK"
+2025-07-01 21:44:23,045 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/3191
+2025-07-01 21:44:23,661 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/3191 "HTTP/1.1 200 OK"
+2025-07-01 21:44:23,670 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/3192
+2025-07-01 21:44:24,127 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/3192 "HTTP/1.1 200 OK"
+2025-07-01 21:44:24,133 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/3193
+2025-07-01 21:44:24,606 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/3193 "HTTP/1.1 200 OK"
+2025-07-01 21:44:24,610 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/3194
+2025-07-01 21:44:24,987 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/3194 "HTTP/1.1 200 OK"
+2025-07-01 21:44:24,991 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/3195
+2025-07-01 21:44:25,365 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/3195 "HTTP/1.1 200 OK"
+2025-07-01 21:44:25,368 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/3196
+2025-07-01 21:44:25,727 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/3196 "HTTP/1.1 200 OK"
+2025-07-01 21:44:25,735 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/3197
+2025-07-01 21:44:26,132 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/3197 "HTTP/1.1 200 OK"
+2025-07-01 21:44:26,136 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2883
+2025-07-01 21:44:26,528 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2883 "HTTP/1.1 200 OK"
+2025-07-01 21:44:26,530 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2884
+2025-07-01 21:44:26,963 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2884 "HTTP/1.1 200 OK"
+2025-07-01 21:44:26,967 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2885
+2025-07-01 21:44:27,452 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2885 "HTTP/1.1 200 OK"
+2025-07-01 21:44:27,457 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2873
+2025-07-01 21:44:28,853 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2873 "HTTP/1.1 200 OK"
+2025-07-01 21:44:28,904 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/3307
+2025-07-01 21:44:29,375 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/3307 "HTTP/1.1 200 OK"
+2025-07-01 21:44:29,379 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/3308
+2025-07-01 21:44:29,810 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/3308 "HTTP/1.1 200 OK"
+2025-07-01 21:44:29,813 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/3309
+2025-07-01 21:44:30,515 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/3309 "HTTP/1.1 200 OK"
+2025-07-01 21:44:30,544 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/3310
+2025-07-01 21:44:31,233 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/3310 "HTTP/1.1 200 OK"
+2025-07-01 21:44:31,252 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/3311
+2025-07-01 21:44:31,715 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/3311 "HTTP/1.1 200 OK"
+2025-07-01 21:44:31,718 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/3312
+2025-07-01 21:44:32,273 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/3312 "HTTP/1.1 200 OK"
+2025-07-01 21:44:32,277 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2874
+2025-07-01 21:44:32,896 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2874 "HTTP/1.1 200 OK"
+2025-07-01 21:44:32,901 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1868
+2025-07-01 21:44:33,322 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1868 "HTTP/1.1 200 OK"
+2025-07-01 21:44:33,324 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1869
+2025-07-01 21:44:33,723 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1869 "HTTP/1.1 200 OK"
+2025-07-01 21:44:33,725 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1870
+2025-07-01 21:44:34,117 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1870 "HTTP/1.1 200 OK"
+2025-07-01 21:44:34,120 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/3968
+2025-07-01 21:44:34,549 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/3968 "HTTP/1.1 200 OK"
+2025-07-01 21:44:34,551 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1871
+2025-07-01 21:44:35,024 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1871 "HTTP/1.1 200 OK"
+2025-07-01 21:44:35,026 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1872
+2025-07-01 21:44:35,501 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1872 "HTTP/1.1 200 OK"
+2025-07-01 21:44:35,503 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1874
+2025-07-01 21:44:35,924 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1874 "HTTP/1.1 200 OK"
+2025-07-01 21:44:35,927 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2818
+2025-07-01 21:44:36,348 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2818 "HTTP/1.1 200 OK"
+2025-07-01 21:44:36,351 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2822
+2025-07-01 21:44:36,787 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2822 "HTTP/1.1 200 OK"
+2025-07-01 21:44:36,793 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2824
+2025-07-01 21:44:37,231 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2824 "HTTP/1.1 200 OK"
+2025-07-01 21:44:37,235 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2825
+2025-07-01 21:44:37,748 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2825 "HTTP/1.1 200 OK"
+2025-07-01 21:44:37,752 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2823
+2025-07-01 21:44:38,257 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2823 "HTTP/1.1 200 OK"
+2025-07-01 21:44:38,260 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2828
+2025-07-01 21:44:38,813 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2828 "HTTP/1.1 200 OK"
+2025-07-01 21:44:38,815 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2829
+2025-07-01 21:44:39,329 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2829 "HTTP/1.1 200 OK"
+2025-07-01 21:44:39,332 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2819
+2025-07-01 21:44:39,790 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2819 "HTTP/1.1 200 OK"
+2025-07-01 21:44:39,792 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2835
+2025-07-01 21:44:40,297 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2835 "HTTP/1.1 200 OK"
+2025-07-01 21:44:40,304 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2837
+2025-07-01 21:44:40,847 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2837 "HTTP/1.1 200 OK"
+2025-07-01 21:44:40,849 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2838
+2025-07-01 21:44:41,311 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2838 "HTTP/1.1 200 OK"
+2025-07-01 21:44:41,313 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2836
+2025-07-01 21:44:41,842 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2836 "HTTP/1.1 200 OK"
+2025-07-01 21:44:41,850 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2841
+2025-07-01 21:44:42,450 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2841 "HTTP/1.1 200 OK"
+2025-07-01 21:44:42,452 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2842
+2025-07-01 21:44:42,919 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2842 "HTTP/1.1 200 OK"
+2025-07-01 21:44:42,920 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2820
+2025-07-01 21:44:43,383 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2820 "HTTP/1.1 200 OK"
+2025-07-01 21:44:43,389 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2850
+2025-07-01 21:44:43,892 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2850 "HTTP/1.1 200 OK"
+2025-07-01 21:44:43,894 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2852
+2025-07-01 21:44:44,362 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2852 "HTTP/1.1 200 OK"
+2025-07-01 21:44:44,366 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2853
+2025-07-01 21:44:44,822 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2853 "HTTP/1.1 200 OK"
+2025-07-01 21:44:44,824 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2851
+2025-07-01 21:44:45,273 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2851 "HTTP/1.1 200 OK"
+2025-07-01 21:44:45,275 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2856
+2025-07-01 21:44:45,716 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2856 "HTTP/1.1 200 OK"
+2025-07-01 21:44:45,719 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2857
+2025-07-01 21:44:46,153 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2857 "HTTP/1.1 200 OK"
+2025-07-01 21:44:46,155 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2821
+2025-07-01 21:44:46,612 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2821 "HTTP/1.1 200 OK"
+2025-07-01 21:44:46,615 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2860
+2025-07-01 21:44:47,121 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2860 "HTTP/1.1 200 OK"
+2025-07-01 21:44:47,123 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2862
+2025-07-01 21:44:47,585 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2862 "HTTP/1.1 200 OK"
+2025-07-01 21:44:47,589 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2863
+2025-07-01 21:44:48,065 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2863 "HTTP/1.1 200 OK"
+2025-07-01 21:44:48,067 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2861
+2025-07-01 21:44:48,570 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2861 "HTTP/1.1 200 OK"
+2025-07-01 21:44:48,575 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2866
+2025-07-01 21:44:49,033 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2866 "HTTP/1.1 200 OK"
+2025-07-01 21:44:49,035 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/2867
+2025-07-01 21:44:49,506 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/2867 "HTTP/1.1 200 OK"
+2025-07-01 21:44:49,508 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1876
+2025-07-01 21:44:49,865 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1876 "HTTP/1.1 200 OK"
+2025-07-01 21:44:49,868 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1830
+2025-07-01 21:44:50,439 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1830 "HTTP/1.1 200 OK"
+2025-07-01 21:44:50,448 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/1852
+2025-07-01 21:44:50,877 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/1852 "HTTP/1.1 200 OK"
+2025-07-01 21:44:50,879 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/3617
+2025-07-01 21:44:51,330 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/3617 "HTTP/1.1 200 OK"
+2025-07-01 21:44:51,334 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/3688
+2025-07-01 21:44:51,780 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/3688 "HTTP/1.1 200 OK"
+2025-07-01 21:44:51,784 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/3622
+2025-07-01 21:44:52,268 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/3622 "HTTP/1.1 200 OK"
+2025-07-01 21:44:52,274 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/3956
+2025-07-01 21:44:52,643 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/3956 "HTTP/1.1 200 OK"
+2025-07-01 21:44:52,648 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/3793
+2025-07-01 21:44:53,146 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/3793 "HTTP/1.1 200 OK"
+2025-07-01 21:44:53,149 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/3989
+2025-07-01 21:44:53,700 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/3989 "HTTP/1.1 200 OK"
+2025-07-01 21:44:53,702 - INFO - Querying API for folder: https://www.leier.hu/hu/documents/api/documents/3683
+2025-07-01 21:44:54,150 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents/3683 "HTTP/1.1 200 OK"
+2025-07-01 21:44:54,153 - INFO - Discovery complete. Found 1588 total documents.
+2025-07-01 21:44:54,153 - INFO - Test mode enabled. Skipping downloads.
+2025-07-01 21:44:54,154 - INFO - 📊 Report saved to C:\Users\Admin\.cursor\Lambda\src\backend\leier_scraping_reports\leier_recursive_report_20250701_214454.json
