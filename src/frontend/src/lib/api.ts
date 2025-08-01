@@ -338,17 +338,8 @@ export class ApiService {
           timestamp: new Date().toISOString()
         },
         database: overview, // Itt használjuk a VALÓDI backend adatot
-        performance: {
-          api_response_time: apiResponseTime,
-          search_accuracy: 0.94, // Placeholder
-          active_connections: Math.floor(Math.random() * 50) + 10, // Placeholder
-          uptime: '2 nap, 14 óra' // Placeholder
-        },
-        resources: {
-          memory_usage: Math.floor(Math.random() * 1000) + 500, // Placeholder
-          cpu_usage: Math.floor(Math.random() * 30) + 10, // Placeholder
-          disk_space: Math.floor(Math.random() * 20) + 60 // Placeholder
-        }
+        performance: await this.getPerformanceMetrics(apiResponseTime),
+        resources: await this.getResourceMetrics()
       };
     } catch (error) {
       console.error('getSystemMetrics hiba:', error);

@@ -33,7 +33,10 @@ from . import models
 from . import schemas
 from .api import admin
 from .api import ai_config_admin
+from .api import ai_endpoint
+from .api import performance_endpoint
 from .services.pdf_processor import PDFProcessor
+from .config.settings import settings
 
 # Create the database tables
 # Base.metadata.create_all(bind=engine)  # Temporarily disabled due to UTF-8 issues
@@ -41,25 +44,20 @@ from .services.pdf_processor import PDFProcessor
 
 # FastAPI alkalmazás példány létrehozása
 app = FastAPI(
-    title="Lambda.hu API",
-    description="API for the Lambda.hu building material intelligence system.",
-    version="1.0.0",
+    title=settings.title,
+    description=settings.description,
+    version=settings.version,
+    debug=settings.debug,
     redoc_url=None,  # Disable redoc
 )
 
 # CORS middleware konfigurálása a frontend integrációhoz
-origins = [
-    "http://localhost",
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-]
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=settings.cors.allowed_origins,
+    allow_credentials=settings.cors.allow_credentials,
+    allow_methods=settings.cors.allow_methods,
+    allow_headers=settings.cors.allow_headers,
 )
 
 # API v1 Router
@@ -159,6 +157,12 @@ app.include_router(api_v1_router)
 app.include_router(admin.router)
 app.include_router(ai_config_admin.router)
 
+# Include AI API routes  
+app.include_router(ai_endpoint.router, prefix="/api/v1")
+
+# Include performance monitoring routes
+app.include_router(performance_endpoint.router)
+
 
 # Root endpoint for basic health check and redirect to search
 @app.get("/", response_class=RedirectResponse)
@@ -224,12 +228,18 @@ async def get_manufacturers(db: Session = Depends(get_db)):
 def get_chroma_client():
     """Get ChromaDB client with fallback connection logic"""
     try:
-        chroma_client = chromadb.HttpClient(host="chroma", port=8000)
+        chroma_client = chromadb.HttpClient(
+            host=settings.chroma.fallback_host, 
+            port=settings.chroma.fallback_port
+        )
         chroma_client.heartbeat()
         return chroma_client
     except Exception:
         try:
-            chroma_client = chromadb.HttpClient(host="localhost", port=8001)
+            chroma_client = chromadb.HttpClient(
+                host=settings.chroma.host, 
+                port=settings.chroma.port
+            )
             chroma_client.heartbeat()
             return chroma_client
         except Exception as e:
@@ -454,7 +464,7 @@ def generate_product_html(product) -> str:
 
 def execute_vector_search(client, query: str, limit: int):
     """Execute vector search in ChromaDB"""
-    collection = client.get_collection("rockwool_products")
+    collection = client.get_collection(settings.chroma.collection_name)
     return collection.query(
         query_texts=[query],
         n_results=limit
@@ -512,7 +522,7 @@ def build_search_results(results, db: Session):
 def get_collection_size(client):
     """Get the size of the ChromaDB collection"""
     try:
-        collection = client.get_collection("rockwool_products")
+        collection = client.get_collection(settings.chroma.collection_name)
         return collection.count()
     except Exception:
         return 0
