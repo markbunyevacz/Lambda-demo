@@ -1,7 +1,0 @@
-2025-07-01 22:27:03,836 - INFO - 🚀 LEIER Product Scraper Initialized
-2025-07-01 22:27:03,836 - INFO - --- Phase 1: Discovering Product Categories (with JS Rendering via BrightData) ---
-2025-07-01 22:27:03,836 - WARNING - SIMULATING successful JS rendering and category discovery.
-2025-07-01 22:27:03,837 - INFO - Discovered 26 unique category URLs via simulation.
-2025-07-01 22:27:03,837 - INFO - --- Phase 2: Discovering Individual Products ---
-2025-07-01 22:27:03,837 - INFO - Fetching: https://www.leier.hu/hu/termekek/elooregyartott-foedemek
-2025-07-01 22:27:04,354 - INFO - HTTP Request: GET https://www.leier.hu/hu/termekek/elooregyartott-foedemek "HTTP/1.1 404 Not Found"

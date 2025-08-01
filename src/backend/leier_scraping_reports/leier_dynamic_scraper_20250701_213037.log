@@ -1,8 +1,0 @@
-2025-07-01 21:30:37,779 - INFO - --- Starting LEIER Dynamic Scraping Run ---
-2025-07-01 21:30:37,780 - INFO - Scraping with JS rendering: https://www.leier.hu/hu/dokumentumtar
-2025-07-01 21:30:37,780 - INFO - Waiting for selector: .documents-list__item
-2025-07-01 21:30:38,287 - INFO - HTTP Request: GET https://www.leier.hu/hu/dokumentumtar "HTTP/1.1 200 OK"
-2025-07-01 21:30:38,303 - INFO - Successfully fetched page, proceeding to parse.
-2025-07-01 21:30:38,309 - INFO - Saved rendered HTML sample to C:\Users\Admin\.cursor\Lambda\src\backend\src\downloads\leier_materials_dynamic\html_samples\leier_rendered_20250701.html
-2025-07-01 21:30:38,327 - INFO - Found 0 potential document links.
-2025-07-01 21:30:38,328 - INFO - Test mode enabled. Skipping downloads.

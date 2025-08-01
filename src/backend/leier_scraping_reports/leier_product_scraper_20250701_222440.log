@@ -1,9 +1,0 @@
-2025-07-01 22:24:40,647 - INFO - 🚀 LEIER Product Scraper Initialized
-2025-07-01 22:24:40,647 - INFO - --- Phase 1: Discovering Product Categories ---
-2025-07-01 22:24:40,647 - INFO - Fetching: https://www.leier.hu/hu/termekeink
-2025-07-01 22:24:41,182 - INFO - HTTP Request: GET https://www.leier.hu/hu/termekeink "HTTP/1.1 200 OK"
-2025-07-01 22:24:41,234 - INFO - Discovered 0 unique category URLs.
-2025-07-01 22:24:41,234 - INFO - --- Phase 2: Discovering Individual Products ---
-2025-07-01 22:24:41,234 - INFO - Discovered 0 total product URLs to scrape.
-2025-07-01 22:24:41,236 - INFO - --- Phase 3: Scraping Product Pages ---
-2025-07-01 22:24:41,237 - INFO - 📊 Product scraping report saved to C:\Users\Admin\.cursor\Lambda\src\backend\leier_scraping_reports\leier_product_report_20250701_222441.json

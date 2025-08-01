@@ -1,9 +1,0 @@
-2025-07-01 21:31:39,174 - INFO - 🚀 LEIER API Scraper Initialized
-2025-07-01 21:31:39,176 - INFO - --- Starting LEIER API Scraping Run ---
-2025-07-01 21:31:39,176 - INFO - Querying LEIER API: https://www.leier.hu/hu/documents/api/documents
-2025-07-01 21:31:39,744 - INFO - HTTP Request: GET https://www.leier.hu/hu/documents/api/documents "HTTP/1.1 200 OK"
-2025-07-01 21:31:39,744 - INFO - Successfully fetched API data.
-2025-07-01 21:31:39,748 - INFO - Saved API response sample to C:\Users\Admin\.cursor\Lambda\src\backend\src\downloads\leier_materials_api\api_responses\leier_api_response_20250701.json
-2025-07-01 21:31:39,750 - ERROR - API data is not a list as expected. Type: <class 'dict'>
-2025-07-01 21:31:39,751 - INFO - Test mode enabled. Skipping downloads.
-2025-07-01 21:31:39,752 - INFO - 📊 Report saved to C:\Users\Admin\.cursor\Lambda\src\backend\leier_scraping_reports\leier_api_report_20250701_213139.json
