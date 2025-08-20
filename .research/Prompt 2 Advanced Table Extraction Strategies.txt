@@ -1,0 +1,26 @@
+Prompt 2: Advanced Table Extraction Strategies
+
+I'm extracting tables from technical PDFs with these specific challenges:
+
+Current Problems:
+- Tables without borders (stream tables)
+- Merged cells and complex headers
+- Mixed orientation (portrait/landscape in same PDF)
+- Tables spanning multiple pages
+- Tables embedded in text paragraphs
+- Technical specifications in key-value format
+- Hungarian special characters (ő, ű, á, é)
+
+Current approach uses Camelot + Tabula fallback but achieves only 60-70% accuracy.
+
+Please provide:
+1. Advanced extraction strategies for each challenge
+2. Pre-processing techniques to improve accuracy
+3. Post-processing methods for table validation
+4. Consensus algorithms for multi-library extraction
+5. Machine learning approaches (if applicable)
+6. Code examples for complex table scenarios
+7. Confidence scoring methodologies
+8. Best practices for production pipelines
+
+Include specific parameter tuning for Camelot (lattice_kwargs, stream_kwargs) and Tabula settings.

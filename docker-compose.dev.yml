@@ -1,0 +1,229 @@
+# ============================================================================
+# Development Docker Compose Configuration
+# ============================================================================
+# Usage:
+#   docker-compose -f docker-compose.dev.yml up
+#   docker-compose -f docker-compose.dev.yml down
+#
+# Features:
+# - Hot reload for development
+# - Volume mounts for live code changes
+# - Debug ports exposed
+# - Development tools included
+
+version: '3.9'
+
+services:
+  # ============================================================================
+  # Database Service
+  # ============================================================================
+  db:
+    image: postgres:15-alpine
+    container_name: lambda-db-dev
+    volumes:
+      - postgres_data_dev:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: lambda_db_dev
+      POSTGRES_HOST_AUTH_METHOD: trust  # Allow connections without password in dev
+    ports:
+      - "5432:5432"
+    networks:
+      - lambda_network_dev
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d lambda_db_dev"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  # ============================================================================
+  # Redis Cache Service
+  # ============================================================================
+  cache:
+    image: redis:7-alpine
+    container_name: lambda-cache-dev
+    command: redis-server --loglevel debug
+    ports:
+      - "6379:6379"
+    networks:
+      - lambda_network_dev
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  # ============================================================================
+  # ChromaDB Vector Database Service
+  # ============================================================================
+  chroma:
+    image: chromadb/chroma:latest
+    container_name: lambda-chroma-dev
+    volumes:
+      - chroma_data_dev:/chroma/chroma
+    environment:
+      - PERSIST_DIRECTORY=/chroma/chroma
+      - ANONYMIZED_TELEMETRY=false
+      - ALLOW_RESET=true  # Allow database reset in development
+    ports:
+      - "8001:8000"
+    networks:
+      - lambda_network_dev
+
+  # ============================================================================
+  # Backend API Service (Development)
+  # ============================================================================
+  backend:
+    build:
+      context: ./src/backend
+      dockerfile: Dockerfile
+      target: development  # Use development stage
+    container_name: lambda-backend-dev
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload --log-level debug
+    volumes:
+      - ./src/backend:/app  # Mount source code for hot reload
+      - backend_cache:/app/.cache
+    env_file:
+      - .env.dev
+    environment:
+      - DATABASE_URL=postgresql://admin:admin@db:5432/lambda_db_dev
+      - REDIS_URL=redis://cache:6379
+      - CHROMA_HOST=chroma
+      - CHROMA_PORT=8000
+      - ENVIRONMENT=development
+      - DEBUG=true
+      - LOG_LEVEL=DEBUG
+    ports:
+      - "8000:8000"
+      - "5678:5678"  # Python debugger port
+    depends_on:
+      - db
+      - cache
+      - chroma
+    networks:
+      - lambda_network_dev
+
+  # ============================================================================
+  # Celery Worker Service (Development)
+  # ============================================================================
+  celery_worker:
+    build:
+      context: ./src/backend
+      dockerfile: Dockerfile
+      target: development
+    container_name: lambda-celery-worker-dev
+    command: watchmedo auto-restart --directory=./app --pattern=*.py --recursive -- celery -A app.celery_app.app worker --loglevel=debug --concurrency=2
+    volumes:
+      - ./src/backend:/app
+      - backend_cache:/app/.cache
+    env_file:
+      - .env.dev
+    environment:
+      - DATABASE_URL=postgresql://admin:admin@db:5432/lambda_db_dev
+      - REDIS_URL=redis://cache:6379
+      - CHROMA_HOST=chroma
+      - CHROMA_PORT=8000
+      - ENVIRONMENT=development
+      - DEBUG=true
+    depends_on:
+      - backend
+      - cache
+    networks:
+      - lambda_network_dev
+
+  # ============================================================================
+  # Celery Flower Monitoring (Development Only)
+  # ============================================================================
+  flower:
+    image: mher/flower:latest
+    container_name: lambda-flower-dev
+    command: celery --broker=redis://cache:6379 flower --port=5555
+    ports:
+      - "5555:5555"
+    environment:
+      - CELERY_BROKER_URL=redis://cache:6379
+      - FLOWER_DEBUG=true
+    depends_on:
+      - cache
+      - celery_worker
+    networks:
+      - lambda_network_dev
+
+  # ============================================================================
+  # Frontend Service (Development)
+  # ============================================================================
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      target: development  # Use development stage
+    container_name: lambda-frontend-dev
+    command: npm run dev
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules  # Exclude node_modules from volume mount
+      - /app/.next  # Exclude build directory
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+      - NODE_ENV=development
+      - WATCHPACK_POLLING=true  # Enable polling for file changes in Docker
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - lambda_network_dev
+
+  # ============================================================================
+  # pgAdmin (Development Only)
+  # ============================================================================
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: lambda-pgadmin-dev
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@lambda.hu
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+      PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: 'False'
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin_data_dev:/var/lib/pgadmin
+    depends_on:
+      - db
+    networks:
+      - lambda_network_dev
+
+  # ============================================================================
+  # Mailhog (Development Only - Email Testing)
+  # ============================================================================
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: lambda-mailhog-dev
+    ports:
+      - "1025:1025"  # SMTP port
+      - "8025:8025"  # Web UI
+    networks:
+      - lambda_network_dev
+
+# ============================================================================
+# Volumes
+# ============================================================================
+volumes:
+  postgres_data_dev:
+    name: lambda_postgres_data_dev
+  chroma_data_dev:
+    name: lambda_chroma_data_dev
+  backend_cache:
+    name: lambda_backend_cache_dev
+  pgadmin_data_dev:
+    name: lambda_pgadmin_data_dev
+
+# ============================================================================
+# Networks
+# ============================================================================
+networks:
+  lambda_network_dev:
+    driver: bridge
+    name: lambda_network_dev

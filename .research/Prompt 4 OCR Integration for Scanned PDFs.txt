@@ -1,0 +1,27 @@
+Prompt 4: OCR Integration for Scanned PDFs
+
+I need to handle both digital and scanned construction PDFs. Design an OCR integration strategy:
+
+Current setup:
+- Digital PDFs: pdfplumber + Camelot
+- Scanned PDFs: Currently failing
+- Mixed PDFs: Partial extraction only
+
+Requirements:
+- Detect if OCR is needed (scanned vs digital)
+- Hungarian language OCR accuracy
+- Technical drawings and diagrams
+- Tables in scanned documents
+- Maintain original layout structure
+
+Compare and recommend:
+1. Tesseract OCR configuration for Hungarian
+2. EasyOCR vs Tesseract vs commercial options
+3. Pre-processing for OCR (deskew, denoise, contrast)
+4. Post-OCR table reconstruction
+5. Hybrid approach for mixed PDFs
+6. Performance optimization (GPU acceleration?)
+7. Quality metrics for OCR output
+8. Integration with existing pipeline
+
+Provide code examples and configuration templates.

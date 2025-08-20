@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { ErrorBoundary } from '../components/ErrorBoundary'
+import { ToastContainer } from '../components/Toast'
 
 export const metadata: Metadata = {
   title: 'Lambda.hu Építőanyag AI',
@@ -13,7 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="hu">
-      <body>{children}</body>
+      <body>
+        <ErrorBoundary>
+          {children}
+          <ToastContainer position="top-right" />
+        </ErrorBoundary>
+      </body>
     </html>
   )
 } 

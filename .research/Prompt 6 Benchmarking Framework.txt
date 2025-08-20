@@ -1,0 +1,31 @@
+Prompt 6: Benchmarking Framework
+
+Create a comprehensive benchmarking framework for PDF extraction libraries:
+
+Test Dataset Requirements:
+- Hungarian construction PDFs
+- Various complexity levels
+- File sizes: 50KB to 300MB
+- Table types: bordered, borderless, nested
+- Text types: digital, scanned, mixed
+
+Metrics to measure:
+1. Extraction accuracy (character-level, word-level)
+2. Table structure preservation
+3. Processing speed (pages/second)
+4. Memory consumption patterns
+5. CPU/GPU utilization
+6. Failure rates and error types
+7. Confidence score distribution
+8. Special character handling
+
+Provide:
+- Benchmarking script structure
+- Ground truth creation methodology
+- Automated comparison framework
+- Visualization of results
+- Statistical analysis methods
+- Library selection decision matrix
+- Performance regression detection
+
+Include code templates and best practices for continuous benchmarking in CI/CD.

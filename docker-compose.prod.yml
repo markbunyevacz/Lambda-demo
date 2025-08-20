@@ -1,0 +1,345 @@
+# ============================================================================
+# Production Docker Compose Configuration
+# ============================================================================
+# Usage:
+#   docker-compose -f docker-compose.prod.yml up -d
+#   docker-compose -f docker-compose.prod.yml down
+#
+# Features:
+# - Production-optimized images
+# - Resource limits
+# - Health checks
+# - Restart policies
+# - Secure networking
+# - Environment file support
+
+version: '3.9'
+
+services:
+  # ============================================================================
+  # Database Service
+  # ============================================================================
+  db:
+    image: postgres:15-alpine
+    container_name: lambda-db
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./scripts/init-db.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    env_file:
+      - .env.prod
+    environment:
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME:-lambda_db}
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8 --locale=C.UTF-8"
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    networks:
+      - lambda_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-postgres} -d ${DB_NAME:-lambda_db}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+
+  # ============================================================================
+  # Redis Cache Service
+  # ============================================================================
+  cache:
+    image: redis:7-alpine
+    container_name: lambda-cache
+    restart: always
+    command: redis-server --maxmemory 256mb --maxmemory-policy allkeys-lru
+    volumes:
+      - redis_data:/data
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
+    networks:
+      - lambda_network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 5s
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+
+  # ============================================================================
+  # ChromaDB Vector Database Service
+  # ============================================================================
+  chroma:
+    image: chromadb/chroma:latest
+    container_name: lambda-chroma
+    restart: always
+    volumes:
+      - chroma_data:/chroma/chroma
+    environment:
+      - CHROMA_SERVER_AUTH_PROVIDER=${CHROMA_AUTH_PROVIDER:-chromadb.auth.token.TokenAuthServerProvider}
+      - CHROMA_SERVER_AUTH_CREDENTIALS=${CHROMA_AUTH_TOKEN}
+      - PERSIST_DIRECTORY=/chroma/chroma
+      - ANONYMIZED_TELEMETRY=false
+    ports:
+      - "${CHROMA_PORT:-8001}:8000"
+    networks:
+      - lambda_network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/heartbeat"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 2G
+        reservations:
+          cpus: '0.5'
+          memory: 1G
+
+  # ============================================================================
+  # Backend API Service
+  # ============================================================================
+  backend:
+    build:
+      context: ./src/backend
+      dockerfile: Dockerfile
+      target: runtime
+      args:
+        - POETRY_VERSION=1.7.1
+    image: lambda-backend:${VERSION:-latest}
+    container_name: lambda-backend
+    restart: always
+    env_file:
+      - .env.prod
+    environment:
+      - DATABASE_URL=postgresql://${DB_USER:-postgres}:${DB_PASSWORD}@db:5432/${DB_NAME:-lambda_db}
+      - REDIS_URL=redis://cache:6379
+      - CHROMA_HOST=chroma
+      - CHROMA_PORT=8000
+      - ENVIRONMENT=production
+    ports:
+      - "${BACKEND_PORT:-8000}:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+      cache:
+        condition: service_healthy
+      chroma:
+        condition: service_healthy
+    networks:
+      - lambda_network
+    volumes:
+      - backend_logs:/app/logs
+      - backend_data:/app/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 2G
+        reservations:
+          cpus: '1'
+          memory: 1G
+
+  # ============================================================================
+  # Celery Worker Service
+  # ============================================================================
+  celery_worker:
+    build:
+      context: ./src/backend
+      dockerfile: Dockerfile
+      target: runtime
+    image: lambda-celery:${VERSION:-latest}
+    container_name: lambda-celery-worker
+    restart: always
+    command: celery -A app.celery_app.app worker --loglevel=info --concurrency=4
+    env_file:
+      - .env.prod
+    environment:
+      - DATABASE_URL=postgresql://${DB_USER:-postgres}:${DB_PASSWORD}@db:5432/${DB_NAME:-lambda_db}
+      - REDIS_URL=redis://cache:6379
+      - CHROMA_HOST=chroma
+      - CHROMA_PORT=8000
+      - ENVIRONMENT=production
+    depends_on:
+      - backend
+      - cache
+    networks:
+      - lambda_network
+    volumes:
+      - celery_logs:/app/logs
+      - backend_data:/app/data:ro
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 2G
+        reservations:
+          cpus: '1'
+          memory: 1G
+
+  # ============================================================================
+  # Celery Beat Scheduler Service
+  # ============================================================================
+  celery_beat:
+    build:
+      context: ./src/backend
+      dockerfile: Dockerfile
+      target: runtime
+    image: lambda-celery:${VERSION:-latest}
+    container_name: lambda-celery-beat
+    restart: always
+    command: celery -A app.celery_app.app beat --loglevel=info
+    env_file:
+      - .env.prod
+    environment:
+      - DATABASE_URL=postgresql://${DB_USER:-postgres}:${DB_PASSWORD}@db:5432/${DB_NAME:-lambda_db}
+      - REDIS_URL=redis://cache:6379
+      - ENVIRONMENT=production
+    depends_on:
+      - backend
+      - cache
+    networks:
+      - lambda_network
+    volumes:
+      - celery_logs:/app/logs
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+
+  # ============================================================================
+  # Frontend Service
+  # ============================================================================
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      target: runner
+      args:
+        - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL:-http://backend:8000}
+    image: lambda-frontend:${VERSION:-latest}
+    container_name: lambda-frontend
+    restart: always
+    environment:
+      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL:-http://backend:8000}
+      - NODE_ENV=production
+    ports:
+      - "${FRONTEND_PORT:-3000}:3000"
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - lambda_network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+
+  # ============================================================================
+  # Nginx Reverse Proxy (Optional)
+  # ============================================================================
+  nginx:
+    image: nginx:alpine
+    container_name: lambda-nginx
+    restart: always
+    ports:
+      - "${NGINX_HTTP_PORT:-80}:80"
+      - "${NGINX_HTTPS_PORT:-443}:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/sites-enabled:/etc/nginx/sites-enabled:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+      - nginx_logs:/var/log/nginx
+    depends_on:
+      - frontend
+      - backend
+    networks:
+      - lambda_network
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+        reservations:
+          cpus: '0.25'
+          memory: 128M
+
+# ============================================================================
+# Volumes
+# ============================================================================
+volumes:
+  postgres_data:
+    driver: local
+    name: lambda_postgres_data
+  redis_data:
+    driver: local
+    name: lambda_redis_data
+  chroma_data:
+    driver: local
+    name: lambda_chroma_data
+  backend_logs:
+    driver: local
+    name: lambda_backend_logs
+  backend_data:
+    driver: local
+    name: lambda_backend_data
+  celery_logs:
+    driver: local
+    name: lambda_celery_logs
+  nginx_logs:
+    driver: local
+    name: lambda_nginx_logs
+
+# ============================================================================
+# Networks
+# ============================================================================
+networks:
+  lambda_network:
+    driver: bridge
+    name: lambda_network
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

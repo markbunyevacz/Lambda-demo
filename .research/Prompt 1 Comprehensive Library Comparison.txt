@@ -1,0 +1,38 @@
+Prompt 1: Comprehensive Library Comparison
+
+I need a detailed comparison of PDF text and table extraction libraries for production use in 2025. My specific requirements:
+
+Context:
+- Processing Hungarian construction industry PDFs (technical datasheets, price lists)
+- PDFs range from 50KB to 300MB
+- Contains complex technical tables with merged cells
+- Mix of scanned and digital PDFs
+- Need confidence scoring for extraction quality
+
+Compare these libraries:
+1. pdfplumber
+2. PyPDF2
+3. PyMuPDF (fitz)
+4. Camelot (lattice vs stream)
+5. Tabula-py
+6. pdfminer.six
+7. Textract
+8. Apache Tika
+9. pdf2image + Tesseract OCR
+10. Amazon Textract (cloud)
+11. Google Document AI (cloud)
+12. Azure Form Recognizer (cloud)
+
+For each library provide:
+- Strengths and weaknesses
+- Table extraction accuracy (%)
+- Performance benchmarks
+- Memory usage patterns
+- Support for non-English characters
+- Handling of complex layouts
+- OCR capabilities
+- Active maintenance status
+- License compatibility (commercial use)
+- Python 3.11+ compatibility
+
+Focus especially on table extraction quality and provide real-world accuracy metrics if available.

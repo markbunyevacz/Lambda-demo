@@ -1,0 +1,27 @@
+Prompt 5: Production Pipeline Optimization
+
+Optimize PDF extraction pipeline for production with these constraints:
+
+Current Performance:
+- Processing time: ~12 seconds/PDF
+- Memory usage: Up to 2GB for large PDFs
+- Confidence scores: 0.19-0.34 (need >0.95)
+- Success rate: ~60% meet quality threshold
+
+Target Metrics:
+- Processing: <30 seconds for 300MB PDF
+- Memory: <1GB per PDF
+- Confidence: >0.95 for 80% of PDFs
+- Parallel processing: 10 concurrent PDFs
+
+Provide solutions for:
+1. Memory-efficient streaming for large PDFs
+2. Parallel processing architecture
+3. Intelligent caching strategies
+4. Failure recovery mechanisms
+5. Quality-based routing (simple vs complex PDFs)
+6. Resource pooling for libraries
+7. Database optimization for results
+8. Monitoring and alerting setup
+
+Include specific code patterns, configuration examples, and production deployment considerations.

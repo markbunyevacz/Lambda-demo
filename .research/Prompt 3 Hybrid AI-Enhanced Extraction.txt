@@ -1,0 +1,27 @@
+Prompt 3: Hybrid AI-Enhanced Extraction
+
+Design a production-ready PDF extraction system combining traditional libraries with AI/LLM enhancement:
+
+Requirements:
+- Primary extraction: Traditional libraries (pdfplumber/Camelot)
+- AI validation: Claude/GPT-4 for quality checking
+- Confidence scoring: Field-level confidence metrics
+- Language: Hungarian construction terminology
+- Volume: 100+ PDFs per day
+- Accuracy target: >95% confidence score
+
+Provide architecture for:
+1. Optimal library combination strategy
+2. When to use AI vs traditional extraction
+3. Cost-effective AI integration (minimize API calls)
+4. Prompt engineering for technical PDF analysis
+5. Confidence score calculation algorithm
+6. Error recovery and fallback patterns
+7. Caching strategies for repeated content
+8. Performance optimization techniques
+
+Include specific examples for:
+- Technical specification extraction
+- Price table parsing
+- Multi-language handling
+- Quality assurance workflow
