@@ -93,13 +93,13 @@ def test_data_persistence(connection_info):
         from app.models.manufacturer import Manufacturer
         from app.models.category import Category
         from app.models.product import Product
-        from models.processed_file_log import ProcessedFileLog
+        from app.models.processed_file_log import ProcessedFileLog
         
         # Create tables if they don't exist
         from app.models.manufacturer import Base as ManufacturerBase
         from app.models.category import Base as CategoryBase
         from app.models.product import Base as ProductBase
-        from models.processed_file_log import Base as LogBase
+        from app.models.processed_file_log import Base as LogBase
         
         print("🏗️ Creating/verifying database tables...")
         ManufacturerBase.metadata.create_all(bind=engine)
@@ -224,4 +224,4 @@ def main():
         print("   💡 Check connection string in app/database.py")
 
 if __name__ == "__main__":
-    main() 
+    main()  
