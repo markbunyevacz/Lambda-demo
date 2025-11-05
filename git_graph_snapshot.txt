@@ -1,0 +1,33 @@
+* b7a5f983 (origin/fix-anthropic-clean-clean, fix-anthropic-clean-clean) Clean up remaining changes before history rewrite
+* 721dd0e4 Remove large binary files from tracking and update .gitignore
+* 658d1093 chore: Refactor Dockerfiles for frontend and backend services
+* cf76dfd5 chore: Update project dependencies and enhance configuration
+* d5ddf38f 321
+* 7c5e714f refactor: Integrate PDF processing into product HTML generation
+* 3159ad4a refactor: Simplify PDF content analysis and enhance product HTML generation
+* ca3b0a52 fix: Implement Docker health checks and AI configuration
+| * afe01c50 Clean up remaining changes before history rewrite
+| * c1c94265 Remove large binary files from tracking and update .gitignore
+| * 41de659f chore: Refactor Dockerfiles for frontend and backend services
+| * 69d16bf9 chore: Update project dependencies and enhance configuration
+| * 9f94bcdc 321
+| * 317a8024 refactor: Integrate PDF processing into product HTML generation
+| * 74a98c17 refactor: Simplify PDF content analysis and enhance product HTML generation
+| * d704ad15 fix: Implement Docker health checks and AI configuration
+|/  
+| * b8370493 (fix-anthropic-clean-fresh) fix: Clean implementation of Docker health checks and AI configuration
+| | * 686e40e7 (fix-anthropic-clean-v2) feat: Add AI configuration support and fix ProductCatalog component
+| | * 5239cf5d Enhance Docker Compose configuration by adding health checks for services
+| | * 95a140d2 Fix Docker health check for ChromaDB
+| |/  
+| | * 6a85efc0 (fix-anthropic-clean) feat: Add AI configuration support and fix ProductCatalog component
+| | * ba22bfdf Enhance Docker Compose configuration by adding health checks for services
+| | * 90155367 Fix Docker health check for ChromaDB
+| |/  
+| * 85f62161 (HEAD -> master, origin/master, origin/HEAD) 123
+| * d599c95a Refactor analysis and ingestion services for improved functionality and error handling
+| * 7d7f8df6 fix: Remove .env.example from gitignore
+| * 04717486 Update .gitignore to include AI-Cursor-Scraping-Assistant directory and add .env.example file for environment configuration
+| * 234962a2 Enhance Docker Compose configuration and backend functionality
+| * 6aba36cf Refactor cleanup_databases.py to improve database cleanup functions and enhance error handling. The PostgreSQL cleanup now uses a session parameter for better management, while ChromaDB collection handling has been streamlined. Additionally, the script structure has been simplified for clarity and maintainability.
+| * 3c988d3f Refactor RealPDFProcessor to use db_session parameter in DataIngestionService initialization for improved clarity and consistency in database operations.
