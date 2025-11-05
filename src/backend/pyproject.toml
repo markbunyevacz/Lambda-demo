@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "The backend service for the Lambda.hu project."
 authors = ["Lambda AI <dev@lambda.hu>"]
 readme = "README.md"
+packages = [{include = "app"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -29,4 +30,4 @@ pytest-asyncio = "==0.21.1"
 
 [build-system]
 requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api" 
+build-backend = "poetry.core.masonry.api"  
