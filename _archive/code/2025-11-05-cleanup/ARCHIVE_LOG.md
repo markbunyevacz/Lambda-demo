@@ -14,6 +14,42 @@ This archive contains duplicated and outdated code modules that were consolidate
 
 ## Archived Items
 
+### 2025-11-05: CI Configuration and Root Dependencies
+
+**What**: Old CI workflow and root-level dependency files
+
+**Files Archived**:
+- `.github/workflows/python-package-conda.yml` (1,061 bytes)
+- `pyproject.toml` (1,416 bytes) - Root level, conflicts with src/backend/pyproject.toml
+- `uv.lock` (349,803 bytes) - UV lock file, conflicts with Poetry
+
+**Why**: 
+- python-package-conda.yml references non-existent environment.yml
+- Root pyproject.toml conflicts with Poetry setup in src/backend/
+- uv.lock is for UV package manager, but project uses Poetry
+- CI workflow was broken and never passing
+
+**Where**: 
+- `_archive/code/2025-11-05-cleanup/ci-configs/`
+- `_archive/code/2025-11-05-cleanup/root-dependencies/`
+
+**Replacement**: 
+- Created `.github/workflows/ci.yml` - GitHub Actions with Poetry
+- Uses Python 3.11 (matches src/backend/pyproject.toml)
+- Backend: Poetry install + import checks
+- Frontend: npm ci + lint
+- Removed conflicting root dependency files
+
+**Impact**: 
+- Working CI pipeline (was broken before)
+- Consistent dependency management (Poetry only)
+- Faster CI runs (no Conda overhead)
+- Reduced repository size (removed 350 KB uv.lock)
+
+**Verification**: CI will run on next push
+
+---
+
 ### 2025-11-05: Legacy Models Directory
 
 **What**: `src/backend/models/` (entire directory)
