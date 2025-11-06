@@ -18,8 +18,7 @@ from ..database import get_db
 from ..models.manufacturer import Manufacturer
 from ..models.category import Category
 from ..models.product import Product
-# ProcessedFileLog is in backend/models/, not app/models/
-# from models.processed_file_log import ProcessedFileLog
+from ..models.processed_file_log import ProcessedFileLog
 
 logger = logging.getLogger(__name__)
 
@@ -55,11 +54,16 @@ async def get_database_overview(db: Session = Depends(get_db)):
         cat_count = db.query(func.count(Category.id)).scalar()
         prod_count = db.query(func.count(Product.id)).scalar()
 
+        try:
+            processed_count = db.query(func.count(ProcessedFileLog.id)).scalar()
+        except Exception:
+            processed_count = 0
+        
         stats = {
             "manufacturers": mfr_count,
             "categories": cat_count,
             "products": prod_count,
-            "processed_files": 0,  # Temporarily disabled: ProcessedFileLog
+            "processed_files": processed_count,
             "last_updated": datetime.now().isoformat(),
             "database_status": "connected"
         }
@@ -430,4 +434,4 @@ async def get_extraction_comparison_report():
         raise HTTPException(
             status_code=500,
             detail="Failed to process extraction results."
-        ) 
+        )  

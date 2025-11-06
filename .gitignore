@@ -153,6 +153,9 @@ pnpm-debug.log*
 # Custom
 src/backend/downloads/
 src/backend/chromadb_data/
+chromadb_data/
+reports/
+leier_scraping_reports/
 *.sqlite3
 test.db
 rockwool_datasheets_complete.json
